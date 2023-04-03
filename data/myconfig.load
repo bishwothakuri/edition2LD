@@ -1,0 +1,6 @@
+LOAD SQL
+  FROM 'adw_nepal-20230221.sql'
+  INTO postgresql://user:password@hostname/database
+
+WITH include drop, create tables, create indexes, reset sequences,
+     foreign keys, batch rows = 10000, batch concurrency = 2;
