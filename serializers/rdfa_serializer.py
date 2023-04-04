@@ -1,10 +1,9 @@
-from rdflib import plugin
-from rdflib.serializer import Serializer
-
-plugin.register("rdfa", Serializer, "rdflib.plugins.serializers.rdfa", "RdfaSerializer")
+from rdflib.plugins.serializers.rdfxml import XMLSerializer
 
 
-def serialize_graph_to_rdfa(graph):
-    serializer = Serializer("rdfa")
-    rdfa = graph.serialize(format="rdfa", destination=None, serializer=serializer)
-    return rdfa
+def serialize_graph_to_rdf_xml(graph):
+    serializer = XMLSerializer()
+    rdf_xml = graph.serialize(
+        format="application/rdf+xml", destination=None, serializer=serializer
+    )
+    return rdf_xml

@@ -2,7 +2,7 @@ from typing import Dict
 
 from rdflib import Graph, Literal, Namespace, URIRef
 
-from serializers.rdfa_serializer import serialize_graph_to_rdfa
+from serializers.rdfa_serializer import serialize_graph_to_rdf_xml
 
 FOAF_NS = Namespace("http://xmlns.com/foaf/0.1/")
 GN_NS = Namespace("http://www.geonames.org/ontology#")
@@ -31,6 +31,7 @@ def create_rdf_graph(metadata: Dict) -> Graph:
     return g
 
 
-def convert_to_rdfa(metadata: Dict) -> str:
+def convert_to_rdf_xml(metadata: Dict) -> bytes:
     g = create_rdf_graph(metadata)
-    return serialize_graph_to_rdfa(g)
+    rdf_xml = g.serialize(format="application/rdf+xml")
+    return rdf_xml.encode("utf-8")
