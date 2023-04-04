@@ -32,7 +32,8 @@ def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
     for i, term in enumerate(terms):
         term_uri = URIRef(f"http://example.org/term/{i}")
         g.add((term_uri, RDF.type, SKOS_NS.Concept))
-        g.add((term_uri, SKOS_NS.prefLabel, Literal(term)))
+        g.add((term_uri, SKOS_NS.prefLabel, Literal(term["term"])))
+        g.add((term_uri, SKOS_NS.definition, Literal(term["meaning"])))
 
     return g
 

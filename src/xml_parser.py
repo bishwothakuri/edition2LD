@@ -1,9 +1,12 @@
 import defusedxml.ElementTree as ET
 
+from .extract_term_meaning import extract_term_meaning
+
 NS = {"tei": "http://www.tei-c.org/ns/1.0"}
 
 
 def extract_metadata(xml_file):
+    base_url = "https://nepalica.hadw-bw.de/nepal/words/viewitem/"
     tree = ET.parse(xml_file)
     root = tree.getroot()
 
@@ -13,20 +16,23 @@ def extract_metadata(xml_file):
 
     metadata = {"persons": [], "places": [], "terms": []}
 
-    for p in persNames:
-        if p.text is not None:
-            p_text = " ".join(p.text.split())
-            metadata["persons"].append(p_text)
+    for persName in persNames:
+        if persName.text is not None:
+            persName_text = " ".join(persName.text.split())
+            metadata["persons"].append(persName_text)
 
-    for pl in placeNames:
-        if pl.text is not None:
-            pl_text = " ".join(pl.text.split())
-            metadata["places"].append(pl_text)
+    for placeName in placeNames:
+        if placeName.text is not None:
+            placeName_text = " ".join(placeName.text.split())
+            metadata["places"].append(placeName_text)
 
-    for t in terms:
-        if t.text is not None:
-            t_text = " ".join(t.text.split())
-            metadata["terms"].append(t_text)
+    for term in terms:
+        if term.text is not None:
+            term_text = " ".join(term.text.split())
+            term_ref = term.get("ref")
+            # Call extract_term_meaning to get the meaning of the term
+            term_meaning = extract_term_meaning(base_url, term_ref)
+            metadata["terms"].append({"term": term_text, "meaning": term_meaning})
 
     print("Metadata extracted successfully from XML file.")
     print(metadata)

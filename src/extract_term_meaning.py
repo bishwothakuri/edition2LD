@@ -1,16 +1,8 @@
-import defusedxml.ElementTree as ET
 import requests
 from bs4 import BeautifulSoup
 
 
-def extract_term_meaning(xml_file_path, base_url):
-    # Parse the XML-TEI file
-    tree = ET.parse(xml_file_path)
-    root = tree.getroot()
-
-    # Extract the 'ref' attribute of the 'term' element using XPath
-    term_ref = root.findall(".//term")[0].get("ref")
-
+def extract_term_meaning(base_url, term_ref):
     # Concatenate the base URL and the 'ref' attribute to form the URL for the term
     term_url = base_url + term_ref
 
@@ -35,10 +27,3 @@ def extract_term_meaning(xml_file_path, base_url):
 
     # Return the meaning
     return meaning
-
-
-if __name__ == "__main__":
-    xml_file_path = "../data/test.xml"
-    base_url = "https://nepalica.hadw-bw.de/nepal/words/viewitem/"
-    meaning = extract_term_meaning(xml_file_path, base_url)
-    print(meaning)

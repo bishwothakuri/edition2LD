@@ -2,6 +2,7 @@ import logging
 import os
 from typing import Dict
 
+# from src.metadata_extractor import extract_metadata
 from src.rdfa_transformer import convert_to_rdf_xml
 from src.xml_parser import extract_metadata
 
@@ -66,7 +67,7 @@ def main(xml_file_path: str, output_file_path: str) -> None:
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
-    xml_file_path = os.path.join("data", "K_0440_0007.xml")
+    xml_file_path = os.path.join("data", "test.xml")
     output_file_path = os.path.join("output", "example.rdf")
     try:
         main(xml_file_path, output_file_path)
