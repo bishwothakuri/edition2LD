@@ -1,6 +1,0 @@
-<rdf:Description rdf:about="http://example.org/term/4">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel>cakrapūjā</skos:prefLabel>
-    <skos:definition>[S.] var. cakrapujā; n. lit. "worship in a circle", a ritual performed by the Kanphaṭṭās in an annual cycle in different localities in Kathmandu Valley (see Unbescheid 1980: 109-127 and passim). t.t.</skos:definition>
-</rdf:Description>
-
