@@ -33,7 +33,7 @@ def main(xml_file_path: str, output_file_path: str) -> None:
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
-    xml_file_path = os.path.join("data", "test.xml")
+    xml_file_path = os.path.join("data", "K_0440_0007.xml")
     output_file_path = os.path.join(
         "output", os.path.splitext(os.path.basename(xml_file_path))[0] + ".rdf"
     )
