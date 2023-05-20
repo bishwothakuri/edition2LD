@@ -133,4 +133,8 @@ testcode/
 dump/
 output/
 *.log
+workplan.txt
+.DS_Store
+
+
 
