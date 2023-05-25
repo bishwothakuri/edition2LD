@@ -3,7 +3,7 @@ import os
 
 from typing import Dict
 from metadata.xml_tei_parser import extract_metadata
-
+from conversion.xml_tei_converter import create_new_xml_tei
 
 
 def main(xml_file_path: str) -> None:
@@ -23,20 +23,20 @@ def main(xml_file_path: str) -> None:
     """
     try:
         metadata = extract_metadata(xml_file_path)
-        # rdf_xml = convert_to_rdf_xml(metadata)
-        # with open(output_file_path, "wb") as f:
-            # f.write(rdf_xml)
-        # logging.info("RDF/XML file generated successfully at %s", output_file_path)
+        xml_tei = create_new_xml_tei(metadata)
+        with open(output_file_path, "wb") as f:
+            f.write(xml_tei)
+        logging.info("XML-TEI file generated successfully at %s", output_file_path)
     except Exception as e:
-        logging.error("Error generating RDF/XML file: %s", e)
+        logging.error("Error generating XML-TEI file: %s", e)
 
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
     xml_file_path = os.path.join("data", "K_0440_0007.xml")
-    # output_file_path = os.path.join(
-    #     "output", os.path.splitext(os.path.basename(xml_file_path))[0] + ".xml"
-    # )
+    output_file_path = os.path.join(
+         "output", os.path.splitext(os.path.basename(xml_file_path))[0] + ".xml"
+    )
     try:
         main(xml_file_path)
     except FileNotFoundError as e:
