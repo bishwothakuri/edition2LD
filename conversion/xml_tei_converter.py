@@ -17,12 +17,13 @@ def create_new_xml_tei(metadata):
     # sorted_terms = sorted(metadata["terms"], key=lambda x: x["term"])
 
     # Add the extracted metadata to the appropriate elements in the base XML
-    for person in metadata["persons"]:
-        person_element = ET.SubElement(list_person_element, "{http://www.tei-c.org/ns/1.0}person")
+    for i, person in enumerate(metadata["persons"]):
+        person_element = ET.SubElement(list_person_element, "persName", attrib={"n": str(i)})
         person_element.text = person
+        
 
     for place in metadata["places"]:
-        place_element = ET.SubElement(list_place_element, "{http://www.tei-c.org/ns/1.0}place")
+        place_element = ET.SubElement(list_place_element, "{http://www.tei-c.org/ns/1.0}placeName")
         place_element.text = place
 
     for term in metadata["terms"]:

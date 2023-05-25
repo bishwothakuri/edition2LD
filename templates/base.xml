@@ -15,7 +15,7 @@
     <text>
         <body>
             <div xml:id="et" type="english_translation" corresp="#ed" xml:lang="eng">
-                <listPerson></listPerson>
+               <listPerson></listPerson>
                 <listPlace></listPlace>
                 <termList></termList>
             </div>
