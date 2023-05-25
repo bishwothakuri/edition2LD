@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xml:id="K_0440_0007"
-    xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="K_0440_0007" xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -9,23 +8,16 @@
                 <title type="sub"></title>
             </titleStmt>
             <physDesc>
-                <p>For details see <ref target="/nepal/catitems/viewitem/8637">entry in database</ref>
-                </p>
+                <p>For details see <ref target="/nepal/catitems/viewitem/8637">entry in database</ref></p>
             </physDesc>
         </fileDesc>
     </teiHeader>
     <text>
         <body>
             <div xml:id="et" type="english_translation" corresp="#ed" xml:lang="eng">
-                <listPerson>
-
-                </listPerson>
-                <listPlace>
-
-                </listPlace>
-                <termList>
-
-                </termList>
+                <listPerson></listPerson>
+                <listPlace></listPlace>
+                <termList></termList>
             </div>
         </body>
     </text>
