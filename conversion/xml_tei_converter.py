@@ -9,9 +9,9 @@ def create_new_xml_tei(metadata):
 
     # Find the relevant elements in the base XML
     ns = {"ns0": "http://www.tei-c.org/ns/1.0"}  # Namespace dictionary
-    list_person_element = base_root.find(".//ns0:listPerson", ns)
-    list_place_element = base_root.find(".//ns0:listPlace", ns)
-    term_list_element = base_root.find(".//ns0:termList", ns)
+    list_person_element = base_root.find(".//ns0:list[@type='person']", ns)
+    list_place_element = base_root.find(".//ns0:list[@type='place']", ns)
+    term_list_element = base_root.find(".//ns0:list[@type='gloss']", ns)
 
     # Sort terms based on a key such as term or index
     # sorted_terms = sorted(metadata["terms"], key=lambda x: x["term"])
@@ -22,9 +22,14 @@ def create_new_xml_tei(metadata):
         person_element.text = person
         
 
-    for place in metadata["places"]:
-        place_element = ET.SubElement(list_place_element, "{http://www.tei-c.org/ns/1.0}placeName")
+    for i, place in enumerate(metadata["places"]):
+        place_element = ET.SubElement(list_place_element, "placesName", attrib={"n": str(i)})
         place_element.text = place
+
+
+    # for place in metadata["places"]:
+    #     place_element = ET.SubElement(list_place_element, "{http://www.tei-c.org/ns/1.0}placeName")
+    #     place_element.text = place
 
     for term in metadata["terms"]:
         term_element = ET.SubElement(term_list_element, "{http://www.tei-c.org/ns/1.0}term")
@@ -32,8 +37,8 @@ def create_new_xml_tei(metadata):
         # term_element.set("meaning", term["meaning"])
 
         # Create orth and def elements inside term element
-        orth_element = ET.SubElement(term_element, "{http://www.tei-c.org/ns/1.0}orth")
-        orth_element.text = term["term"]
+        label_element = ET.SubElement(term_element, "{http://www.tei-c.org/ns/1.0}label")
+        label_element.text = term["term"]
         def_element = ET.SubElement(term_element, "{http://www.tei-c.org/ns/1.0}def")
         def_element.text = term["meaning"]
 
