@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xml:id="K_0440_0007"
-    xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:id="{{id}}" xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="main">A copy of a lālamohara from Pṛthvīnārāyaṇa Śāha re land donations for Yogīs' cakrapūjās (VS 1826)</title>
-                <title type="short">A copy of a lālamohara re land donations for Yogīs' cakrapūjās</title>
-                <title type="sub">K_0440_0007</title>
+                <title type="main">{{title_main}}</title>
+                <title type="short">{{title_short}}</title>
+                <title type="sub">{{title_sub}}</title>
+                <author role="issuer">{{author_role_issuer}}</author>
 
-                <author role="issuer">Pṛthvīnārāyaṇa Śāha</author>
-
+                <respStmt>
+                    <resp>main editor and translator</resp>
+                    <name type="main_editor">{{main_editor}}</name>
+                </respStmt>
             </titleStmt>
             <physDesc>
-                <p>For details see <ref target="/nepal/catitems/viewitem/8637">entry in database</ref>
+                <p>For details see <ref target="{{physDesc_ref_target}}">entry in database</ref>
                 </p>
             </physDesc>
         </fileDesc>

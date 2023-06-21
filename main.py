@@ -2,8 +2,8 @@ import logging
 import os
 
 from typing import Dict
-from metadata.xml_tei_parser import extract_metadata
-from conversion.xml_tei_converter import create_new_xml_tei
+from metadata.xml_tei_parser import extract_metadata_from_xml
+from conversion.xml_tei_converter import generate_xml_tei_from_metadata
 
 
 def main(xml_file_path: str) -> None:
@@ -22,8 +22,8 @@ def main(xml_file_path: str) -> None:
         ValueError: If the specified XML file is empty or invalid.
     """
     try:
-        metadata = extract_metadata(xml_file_path)
-        xml_tei = create_new_xml_tei(metadata)
+        metadata = extract_metadata_from_xml(xml_file_path)
+        xml_tei = generate_xml_tei_from_metadata(metadata)
         with open(output_file_path, "wb") as f:
             f.write(xml_tei)
         logging.info("XML-TEI file generated successfully at %s", output_file_path)
