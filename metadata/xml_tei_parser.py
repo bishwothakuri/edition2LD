@@ -45,12 +45,14 @@ def extract_metadata_from_xml(xml_file):
     for pers_name in pers_names:
         if pers_name.text is not None:
             pers_name_text = " ".join(pers_name.text.split())
-            metadata["persons"].append(pers_name_text)
+            n_value = pers_name.get("n")
+            metadata["persons"].append({"n": n_value, "person_name": pers_name_text})
     
     for place_name in place_names:
         if place_name.text is not None:
             place_name_text = " ".join(place_name.text.split())
-            metadata["places"].append(place_name_text)
+            n_value = pers_name.get("n")
+            metadata["places"].append({"n": n_value,"place_name": place_name_text})
 
     for term in terms:
         if term.text is not None:
