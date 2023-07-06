@@ -1,3 +1,4 @@
+import json
 import defusedxml.ElementTree as ET
 from metadata.term_metadata_scraper import extract_term_meaning
 
@@ -6,6 +7,19 @@ NS = {
     "xml": "http://www.w3.org/XML/1998/namespace"
 
     }
+
+def load_ont_item_occurrences(json_file):
+    with open(json_file, "r") as file:
+        data = json.load(file)
+    return data
+
+
+def get_ont_item_ids_for_n_value(n_value, ont_item_occurrences):
+    ont_item_ids = []
+    for item in ont_item_occurrences:
+        if item["xml_entity_id"] == n_value:
+            ont_item_ids.append(item["ont_item_id"])
+    return ont_item_ids
 
 def extract_metadata_from_xml(xml_file):
     base_url = "https://nepalica.hadw-bw.de/nepal/words/viewitem/"
@@ -51,8 +65,10 @@ def extract_metadata_from_xml(xml_file):
     for place_name in place_names:
         if place_name.text is not None:
             place_name_text = " ".join(place_name.text.split())
-            n_value = pers_name.get("n")
-            metadata["places"].append({"n": n_value,"place_name": place_name_text})
+            n_value = place_name.get("n")
+            # ont_item_ids = get_ont_item_ids_for_n_value(n_value, ont_item_occurrences)
+            metadata["places"].append({"n": n_value, "place_name": place_name_text})
+
 
     for term in terms:
         if term.text is not None:
