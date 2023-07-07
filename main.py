@@ -3,7 +3,6 @@ import os
 
 from typing import Dict
 from metadata.xml_tei_parser import extract_metadata_from_xml
-from metadata.xml_tei_parser import load_ont_item_occurrences
 from conversion.xml_tei_converter import generate_xml_tei_from_metadata
 
 
@@ -23,8 +22,7 @@ def main(xml_file_path: str, json_file_path: str) -> None:
         ValueError: If the specified XML file is empty or invalid.
     """
     try:
-        ont_item_occurrences = load_ont_item_occurrences(json_file_path)
-        metadata = extract_metadata_from_xml(xml_file_path)
+        metadata = extract_metadata_from_xml(xml_file_path, json_file_path)
         xml_tei = generate_xml_tei_from_metadata(metadata)
         with open(output_file_path, "wb") as f:
             f.write(xml_tei)

@@ -4,4 +4,5 @@
     "python.testing.pytestArgs": [
         "tests"
     ],
+    "python.analysis.typeCheckingMode": "basic",
 }
