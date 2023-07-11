@@ -16,7 +16,7 @@ def generate_xml_tei_from_metadata(metadata):
 
     # Parse the modified XML content
     base_xml_tree = ET.fromstring(xml_bytes)
-   
+
     # Find the relevant elements in the base XML
     namespace_dict = {
         "tei": "http://www.tei-c.org/ns/1.0",
@@ -79,11 +79,20 @@ def generate_xml_tei_from_metadata(metadata):
         )
         person_element.text = person["person_name"]
 
-    for i, place in enumerate(metadata["places"]):
+    place_list_element = base_xml_tree.xpath(".//tei:list[@type='place']", namespaces=namespace_dict)[0]
+
+
+    for place in metadata["places"]:
         place_element = ET.SubElement(
-            place_list_element, "placeName", attrib={"n": place["n"]}
+            place_list_element, "{http://www.tei-c.org/ns/1.0}placeName", attrib={"n": place["n"]}
         )
-        place_element.text = place["place_name"]
+        primary_name_element = ET.SubElement(place_element, "{http://www.tei-c.org/ns/1.0}placeName")
+        primary_name_element.text = place["place_name"]
+
+        for alt_name in place.get("alternative_names", []):
+            alt_name_element = ET.SubElement(place_element, "{http://www.tei-c.org/ns/1.0}altName")
+            alt_name_element.text = alt_name
+
 
     for term in metadata["terms"]:
         term_element = ET.SubElement(

@@ -1,7 +1,6 @@
 import logging
 import os
 
-from typing import Dict
 from metadata.xml_tei_parser import extract_metadata_from_xml
 from conversion.xml_tei_converter import generate_xml_tei_from_metadata
 
