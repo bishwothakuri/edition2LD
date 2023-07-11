@@ -3,7 +3,8 @@ import os
 
 from metadata.xml_tei_parser import extract_metadata_from_xml
 from conversion.xml_tei_converter import generate_xml_tei_from_metadata
-
+from conversion.rdf_graph_builder import create_rdf_graph
+from conversion.rdfa_creater import generate_rdfa_from_graph
 
 def main(xml_file_path: str, json_file_path: str) -> None:
     """
