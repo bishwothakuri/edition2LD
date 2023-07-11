@@ -8,8 +8,6 @@ def extract_item_entity_id(tei_id, json_file):
 
     dict_ont_id = {}
 
-    # xml_name = os.path.basename(xml_file)[:-4]
-
     for item in data_occurrences:
         if item.get('type') == 'table' and item.get('name') == 'ont_item_occurrences':
             for entry in item.get('data', []):
