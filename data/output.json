@@ -1,0 +1,205 @@
+{'id': 'K_0440_0007', 'places': [
+        {'n': '1216', 'place_name': 'Dalakāpa'
+        },
+        {'n': '1217', 'place_name': 'Molapāku'
+        },
+        {'n': '1218', 'place_name': 'Molapāku Nadīvārī (° Nadivāri)'
+        },
+        {'n': '566', 'place_name': 'Kiṃḍol'
+        },
+        {'n': '566', 'place_name': 'Kimaḍola'
+        },
+        {'n': '1219', 'place_name': 'Īcaḍol'
+        },
+        {'n': '1219', 'place_name': 'Icāḍola'
+        },
+        {'n': '1220', 'place_name': 'Voṣīmāhā'
+        },
+        {'n': '1220', 'place_name': 'Voṣimahā'
+        },
+        {'n': '1221', 'place_name': 'Bhaṃgal'
+        },
+        {'n': '1221', 'place_name': 'Maṃgal'
+        },
+        {'n': '1222', 'place_name': 'Tapīṃtā'
+        },
+        {'n': '1222', 'place_name': 'Tapiṃtā'
+        },
+        {'n': '1223', 'place_name': 'Māla'
+        },
+        {'n': '1224', 'place_name': 'Ṭhavailī'
+        },
+        {'n': '1224', 'place_name': 'Vaili'
+        },
+        {'n': '1224', 'place_name': 'Ṭhavela'
+        },
+        {'n': '1225', 'place_name': 'Puḍopā'
+        },
+        {'n': '1225', 'place_name': 'Puḍoṃpā'
+        },
+        {'n': '1226,
+            1226', 'place_name': 'Lapaṭṭecokoṭ'
+        },
+        {'n': '1226', 'place_name': 'Lapaṭyaco Koṭa'
+        },
+        {'n': '1226', 'place_name': 'Lapaṭyecokoṭ'
+        },
+        {'n': '1227', 'place_name': 'Īḍā'
+        },
+        {'n': '1227', 'place_name': 'Iṃḍā'
+        },
+        {'n': '1227', 'place_name': 'Īuḍā'
+        },
+        {'n': '1227', 'place_name': 'Īdā'
+        },
+        {'n': '1228', 'place_name': 'Phīva'
+        },
+        {'n': '551', 'place_name': 'Īndracok'
+        },
+        {'n': '551', 'place_name': 'Iṃdracoka'
+        },
+        {'n': '', 'place_name': 'Lakṣamaṇanātha'
+        },
+        {'n': '1142', 'place_name': 'Ogla Ṭola'
+        },
+        {'n': '521', 'place_name': 'Ṭāyemaḍu Ṭola'
+        },
+        {'n': '521', 'place_name': 'Ṭāyamaḍu Ṭola'
+        },
+        {'n': '521', 'place_name': 'Ṭāyamaḍu Ṭola or ° Ṭol'
+        },
+        {'n': '521', 'place_name': 'Ṭhāyemaḍu Ṭola'
+        },
+        {'n': '521', 'place_name': 'Thāya°'
+        },
+        {'n': '1229', 'place_name': 'Ṭepadhu'
+        },
+        {'n': '1230', 'place_name': 'Veṣāvu'
+        },
+        {'n': '1231', 'place_name': 'Vaṃṣuḍola'
+        },
+        {'n': '1231', 'place_name': 'Vaṣuḍol'
+        },
+        {'n': '1232', 'place_name': 'Vaṃsī'
+        },
+        {'n': '1232', 'place_name': 'Vaṃsi'
+        },
+        {'n': '1232', 'place_name': 'Vā̃sī'
+        },
+        {'n': '1233', 'place_name': 'Gaṃḍavālāl'
+        },
+        {'n': '1233', 'place_name': 'Gaṃḍavāhāla'
+        },
+        {'n': '1233', 'place_name': 'Gaṃḍavāla'
+        },
+        {'n': '1233', 'place_name': 'Gaṃḍavīlāla'
+        },
+        {'n': '1234', 'place_name': 'Pāpīgāu'
+        },
+        {'n': '1234', 'place_name': 'Pāpīgāū'
+        },
+        {'n': '1234', 'place_name': 'Pāpigāũ'
+        },
+        {'n': '', 'place_name': '[...
+            ]reṣu'
+        },
+        {'n': '', 'place_name': 'Ṭeṣu'
+        },
+        {'n': '304', 'place_name': 'Asaṃ Ṭol'
+        },
+        {'n': '304', 'place_name': 'Asaṃ Ṭola'
+        },
+        {'n': '304', 'place_name': 'Asan Ṭol'
+        },
+        {'n': '519', 'place_name': 'Dharaṃthalī'
+        },
+        {'n': '519', 'place_name': 'Dharaṃthali'
+        },
+        {'n': '1235', 'place_name': 'Koṣayanāk'
+        },
+        {'n': '1235', 'place_name': 'Koṣayanāka'
+        },
+        {'n': '1235', 'place_name': 'Koṣaṣanāka'
+        },
+        {'n': '1236', 'place_name': 'Paṃbhu'
+        },
+        {'n': '1237', 'place_name': 'Bhaguṣula'
+        },
+        {'n': '1237', 'place_name': 'Bhaguṣolā'
+        },
+        {'n': '1238', 'place_name': 'Tyapadhu'
+        },
+        {'n': '1238', 'place_name': 'Tyapadhuka'
+        },
+        {'n': '1239', 'place_name': 'Jogīṭāra'
+        },
+        {'n': '1239', 'place_name': 'Jogiṭāra'
+        },
+        {'n': '520', 'place_name': 'Deurālī'
+        },
+        {'n': '520', 'place_name': 'Deurāli'
+        },
+        {'n': '119', 'place_name': 'Mṛgasthalī'
+        },
+        {'n': '1240', 'place_name': 'Ṭaugāl'
+        },
+        {'n': '1240', 'place_name': 'Ṭaugāla'
+        },
+        {'n': '1241', 'place_name': 'Ṭoṣa'
+        },
+        {'n': '28', 'place_name': 'Deupāṭhaṃ'
+        },
+        {'n': '28', 'place_name': 'Deupāṭan'
+        },
+        {'n': '28', 'place_name': 'Deupāṭaṃ'
+        },
+        {'n': '1242', 'place_name': 'Caṣu'
+        },
+        {'n': '1243', 'place_name': 'Sāṃlā'
+        },
+        {'n': '1243', 'place_name': 'Sāṅglā'
+        },
+        {'n': '1243', 'place_name': 'Sāṅlā'
+        },
+        {'n': '1244', 'place_name': 'Kvāṭha'
+        },
+        {'n': '1244', 'place_name': 'Kvāṭa'
+        },
+        {'n': '551', 'place_name': 'Īndracok'
+        },
+        {'n': '551', 'place_name': 'Indracoka'
+        },
+        {'n': '1245', 'place_name': 'Syāṃpurī'
+        },
+        {'n': '1245', 'place_name': 'Syāmapuri'
+        },
+        {'n': '1245', 'place_name': 'Syāṃpuri'
+        },
+        {'n': '1245', 'place_name': 'Syāmpurī'
+        },
+        {'n': '1246', 'place_name': 'Ṭukucā'
+        },
+        {'n': '1247', 'place_name': 'Raṣuvu'
+        },
+        {'n': '26', 'place_name': 'Kāntīpura'
+        },
+        {'n': '113', 'place_name': 'Kathmandu Valley'
+        },
+        {'n': '26', 'place_name': 'Kathmandu'
+        },
+        {'n': '549', 'place_name': 'Gauḍa Deśa'
+        },
+        {'n': '610', 'place_name': 'Bengal'
+        },
+        {'n': '553', 'place_name': 'Buṅga'
+        },
+        {'n': '567', 'place_name': 'Ta Bahā'
+        },
+        {'n': '27', 'place_name': 'Patan'
+        },
+        {'n': '28', 'place_name': 'Deopatan'
+        },
+        {'n': '565', 'place_name': 'Bhadrakālī'
+        }
+    ]
+}
