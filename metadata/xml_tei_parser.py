@@ -87,7 +87,7 @@ def extract_metadata_from_xml(xml_file, json_file):
                 term_text = " ".join(term.text.split())
                 term_ref = term.get("ref")
                 term_meaning = extract_term_meaning(base_url, term_ref)
-                metadata["terms"].append({"term": term_text, "meaning": term_meaning})
+                metadata["terms"].append({"term_ref": term_ref, "term": term_text, "meaning": term_meaning})
 
         print("Metadata extracted successfully from XML file.")
         print(metadata)

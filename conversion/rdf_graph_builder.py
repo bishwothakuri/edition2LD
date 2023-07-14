@@ -68,18 +68,20 @@ def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
     )
     for term in terms:
         term_node = URIRef(f"{term_uri}#{term['term'].replace(' ', '_')}")
-        ref_num = term.get(
-            "ref_num"
-        )  # Extract the reference number from the term metadata
+        # ref_num = term.get(
+        #     "ref_num"
+        # )  # Extract the reference number from the term metadata
         g.add((term_node, RDF.type, SKOS_NS.Concept))
         g.add((term_node, SKOS_NS.prefLabel, Literal(term["term"])))
         g.add((term_node, SKOS_NS.comment, Literal(term["meaning"])))
-        if ref_num:
-            ref_num = ref_num.split("/")[
-                -1
-            ]  # Extract the number value from the full URI
-            g.add(
-                (term_node, SKOS_NS.related, URIRef(ref_num))
-            )  # Use prefix in the related gloss term
+        g.add((term_node, rdfs.seeAlso, nepalica_reg[term['term_ref']]))
+
+        # if ref_num:
+        #     ref_num = ref_num.split("/")[
+        #         -1
+        #     ]  # Extract the number value from the full URI
+        #     g.add(
+        #         (term_node, SKOS_NS.related, URIRef(ref_num))
+        #     )  # Use prefix in the related gloss term
 
     return g
