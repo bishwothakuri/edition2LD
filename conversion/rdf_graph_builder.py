@@ -47,7 +47,8 @@ def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
         # Add alternative names as skos:altLabel
         alternative_names = place.get("alternative_names", [])
         for alt_name in alternative_names:
-            g.add((place_node, SKOS_NS.altLabel, Literal(alt_name)))
+            if alt_name != place["place_name"]:  # Exclude the primary name from altLabel
+                g.add((place_node, SKOS_NS.altLabel, Literal(alt_name)))
 
     term_uri_ref = URIRef(str(nepalica) + "term")
     for term in terms:
