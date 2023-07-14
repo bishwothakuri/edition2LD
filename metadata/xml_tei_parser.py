@@ -2,7 +2,7 @@ import json
 import defusedxml.ElementTree as ET
 from metadata.ont_item_mapper import extract_item_entity_id
 from metadata.term_metadata_scraper import extract_term_meaning
-from metadata.place_metadata_scraper import extract_place_meaning
+# from metadata.place_metadata_scraper import extract_place_meaning
 
 
 NS = {

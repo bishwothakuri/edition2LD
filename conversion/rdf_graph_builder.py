@@ -58,6 +58,8 @@ def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
         alternative_names = place.get("alternative_names", [])
         for alt_name in alternative_names:
             g.add((place_node, SKOS_NS.altLabel, Literal(alt_name)))
+        g.add((place_node, rdfs.seeAlso, nepalica_reg[place['n']]))
+
 
     term_uri = (
         URIRef(f"{nepalica}{physDesc_ref_target}")
