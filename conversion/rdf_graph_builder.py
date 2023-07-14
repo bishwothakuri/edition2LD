@@ -24,41 +24,60 @@ def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
     persons = metadata.get("persons", [])
     places = metadata.get("places", [])
     terms = metadata.get("terms", [])
-    physDesc_ref_target = metadata.get("physDesc_ref_target")
+    physDesc_ref_target = metadata.get("physDesc_id")
 
     g = Graph()
     g.bind("foaf", FOAF_NS)
     g.bind("gn", GN_NS)
     g.bind("skos", SKOS_NS)
     g.bind("dc", DC_NS)
-    g.namespace_manager.bind("nepalica", nepalica, override=False)  # Use NamespaceManager to bind the prefix
+    g.namespace_manager.bind(
+        "nepalica", nepalica, override=False
+    )  # Use NamespaceManager to bind the prefix
 
-    person_uri_ref = URIRef(str(nepalica) + "person")
+    person_uri = (
+        URIRef(f"{nepalica}{physDesc_ref_target}")
+        if physDesc_ref_target
+        else URIRef(f"{nepalica}person")
+    )
     for person in persons:
-        person_node = URIRef(f"{person_uri_ref}#{person['n'].replace(' ', '_')}")
+        person_node = URIRef(f"{person_uri}#{person['person_name'].replace(' ', '_')}")
         g.add((person_node, RDF.type, FOAF_NS.Person))
         g.add((person_node, FOAF_NS.name, Literal(person["person_name"])))
 
-    place_uri_ref = URIRef(str(nepalica) + "place")
+    place_uri = (
+        URIRef(f"{nepalica}{physDesc_ref_target}")
+        if physDesc_ref_target
+        else URIRef(f"{nepalica}place")
+    )
     for place in places:
-        place_node = URIRef(f"{place_uri_ref}#{place['n'].replace(' ', '_')}")
+        place_node = URIRef(f"{place_uri}#{place['place_name'].replace(' ', '_')}")
         g.add((place_node, RDF.type, GN_NS.Feature))
         g.add((place_node, GN_NS.name, Literal(place["place_name"])))
         # Add alternative names as skos:altLabel
         alternative_names = place.get("alternative_names", [])
         for alt_name in alternative_names:
-            if alt_name != place["place_name"]:  # Exclude the primary name from altLabel
-                g.add((place_node, SKOS_NS.altLabel, Literal(alt_name)))
+            g.add((place_node, SKOS_NS.altLabel, Literal(alt_name)))
 
-    term_uri_ref = URIRef(str(nepalica) + "term")
+    term_uri = (
+        URIRef(f"{nepalica}{physDesc_ref_target}")
+        if physDesc_ref_target
+        else URIRef(f"{nepalica}term")
+    )
     for term in terms:
-        term_node = URIRef(f"{term_uri_ref}#{term['term'].replace(' ', '_')}")
-        ref_num = term.get("ref_num")  # Extract the reference number from the term metadata
+        term_node = URIRef(f"{term_uri}#{term['term'].replace(' ', '_')}")
+        ref_num = term.get(
+            "ref_num"
+        )  # Extract the reference number from the term metadata
         g.add((term_node, RDF.type, SKOS_NS.Concept))
         g.add((term_node, SKOS_NS.prefLabel, Literal(term["term"])))
         g.add((term_node, SKOS_NS.comment, Literal(term["meaning"])))
         if ref_num:
-            ref_num = ref_num.split("/")[-1]  # Extract the number value from the full URI
-            g.add((term_node, SKOS_NS.related, URIRef(ref_num)))  # Use prefix in the related gloss term
+            ref_num = ref_num.split("/")[
+                -1
+            ]  # Extract the number value from the full URI
+            g.add(
+                (term_node, SKOS_NS.related, URIRef(ref_num))
+            )  # Use prefix in the related gloss term
 
     return g

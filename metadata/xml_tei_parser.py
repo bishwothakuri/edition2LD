@@ -2,6 +2,7 @@ import json
 import defusedxml.ElementTree as ET
 from metadata.ont_item_mapper import extract_item_entity_id
 from metadata.term_metadata_scraper import extract_term_meaning
+from metadata.place_metadata_scraper import extract_place_meaning
 
 
 NS = {
@@ -75,6 +76,10 @@ def extract_metadata_from_xml(xml_file, json_file):
             alternative_names = place_data["alternative_names"]
             if alternative_names:
                 place_entry["alternative_names"] = alternative_names
+            # Extract the notes for each place
+            # place_ref = ont_item_id.rsplit("/", 1)[-1]
+            # place_entry["notes"] = extract_place_meaning(place_ref)
+            # print(place_entry)
             metadata["places"].append(place_entry)
 
         for term in terms:

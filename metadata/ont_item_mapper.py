@@ -1,6 +1,4 @@
 import json
-import os
-
 
 def extract_item_entity_id(tei_id, json_file):
     with open(json_file, 'r') as file:
