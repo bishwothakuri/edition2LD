@@ -44,11 +44,14 @@ def main(xml_file_path: str, json_file_path: str) -> None:
         g.serialize(rdf_xml_file_path, format="xml")
         logging.info("RDF/XML file generated successfully at %s", rdf_xml_file_path)
         # Save Turtle serialization in the output folder
-        # turtle_file_path = os.path.join(
-            # "output", os.path.splitext(os.path.basename(xml_file_path))[0] + ".ttl"
-        # )
-        # save_turtle_serialization(g, turtle_file_path)
-        # logging.info("Turtle serialization file generated successfully at %s", turtle_file_path)
+        turtle_file_path = os.path.join(
+            "output", os.path.splitext(os.path.basename(xml_file_path))[0] + ".ttl"
+        )
+        try:
+            save_turtle_serialization(g, turtle_file_path)
+            logging.info("Turtle serialization file generated successfully at %s", turtle_file_path)
+        except Exception as e:
+            logging.error("An error occurred while saving Turtle serialization: %s", e)
         # with open(output_file_path, "w") as f:
             # f.write(rdfa_html.decode("utf-8"))
         # logging.info("RDFa HTML file generated successfully at %s", output_file_path)
