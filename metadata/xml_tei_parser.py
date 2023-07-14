@@ -36,14 +36,18 @@ def extract_metadata_from_xml(xml_file, json_file):
             "title_sub": title_sub,
             "author_role_issuer": author_role_issuer,
             "main_editor": main_editor,
-            "physDesc_ref_target": None,
+            "physDesc_id": None,
             "persons": [],
             "places": [],
             "terms": []
         }
-
-        if ref_element is not None:
-            metadata["physDesc_ref_target"] = ref_element.attrib["target"]
+        
+        physDesc_id = root.find(".//tei:physDesc", NS)
+        ref_element = physDesc_id.find(".//tei:ref", NS)
+        if ref_element is not None and "target" in ref_element.attrib:
+            target = ref_element.attrib["target"]
+            ref_num = target.rsplit("/", 1)[-1]
+            metadata["physDesc_id"] = ref_num
 
         for pers_name in pers_names:
             if pers_name.text is not None:
