@@ -24,7 +24,7 @@ def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
     persons = metadata.get("persons", [])
     places = metadata.get("places", [])
     terms = metadata.get("terms", [])
-    physDesc_ref_target = metadata.get("physDesc_ref_target")
+    physDescs = metadata.get("physDescs", [])
 
     g = Graph()
     g.bind("foaf", FOAF_NS)
@@ -33,23 +33,19 @@ def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
     g.bind("dc", DC_NS)
     g.namespace_manager.bind("nepalica", nepalica, override=False)  # Use NamespaceManager to bind the prefix
 
-    uri_ref = URIRef(str(nepalica) + physDesc_ref_target[0]) if physDesc_ref_target else URIRef(f"{nepalica}person")
+    uri_ref = URIRef(nepalica + physDescs[0]) if physDescs else URIRef(f"{nepalica}person")
     for person in persons:
-        person_node = URIRef(f"{uri_ref}#{person['n'].replace(' ', '_')}")
+        person_node = URIRef(f"{uri_ref}#{person.replace(' ', '_')}")
         g.add((person_node, RDF.type, FOAF_NS.Person))
-        g.add((person_node, FOAF_NS.name, Literal(person["person_name"])))
+        g.add((person_node, FOAF_NS.name, Literal(person)))
 
-    place_uri = URIRef(str(nepalica) + physDesc_ref_target[0]) if physDesc_ref_target else URIRef(f"{nepalica}person")
+    place_uri = URIRef(nepalica + physDescs[0]) if physDescs else URIRef(f"{nepalica}place")
     for place in places:
-        place_node = URIRef(f"{place_uri}#{place['n'].replace(' ', '_')}")
+        place_node = URIRef(f"{place_uri}#{place.replace(' ', '_')}")
         g.add((place_node, RDF.type, GN_NS.Feature))
-        g.add((place_node, GN_NS.name, Literal(place["place_name"])))
-        # Add alternative names as skos:altLabel
-        alternative_names = place.get("alternative_names", [])
-        for alt_name in alternative_names:
-            g.add((place_node, SKOS_NS.altLabel, Literal(alt_name)))
+        g.add((place_node, GN_NS.name, Literal(place)))
 
-    term_uri = URIRef(str(nepalica) + physDesc_ref_target[0]) if physDesc_ref_target else URIRef(f"{nepalica}person")
+    term_uri = URIRef(nepalica + physDescs[0]) if physDescs else URIRef(f"{nepalica}term")
     for term in terms:
         term_node = URIRef(f"{term_uri}#{term['term'].replace(' ', '_')}")
         ref_num = term.get("ref_num")  # Extract the reference number from the term metadata
