@@ -1,0 +1,40 @@
+{ "word_data":
+    [
+    {
+        "id":"ID-part of URL of nepalica.hadw-bw.de",
+        "geonames":"ID of geonames",
+        "dbr":"identifier of DBpedia",
+        "wiki":"identifier of engl. wikipedia",
+        "wikidata":"Q-ID from Wikidata",
+        "viaf":"ID from Virtual International Authority File",
+        "gnd":"ID from Gemeinsame Normdatei"
+    },
+    {
+        "id":"932",
+        "geonames": "testword_geonames_932",
+        "dbr":"testword_dbr_932",
+        "wiki":"testword_wiki_932",
+        "wikidata":"testword_wikidata_932",
+        "viaf":"testword_viaf_932",
+        "gnd":"testword_gnd_932"
+    },
+    {
+        "id":"2644",
+        "geonames":"testword_geonames_2644",
+        "dbr":"Abbot_(Buddhism)",
+        "wiki":"Abbot_(Buddhism)",
+        "wikidata":"Q1135621",
+        "viaf":"testword_viaf_2644",
+        "gnd":"testword_gnd_2644"
+    },
+    {
+        "id":"2629",
+        "geonames":"",
+        "dbr":"testword_dbr_2629",
+        "wiki":"testword_wiki_2629",
+        "wikidata":"testword_wikidata_2629",
+        "viaf":"",
+        "gnd":""
+    }
+    ]
+}
