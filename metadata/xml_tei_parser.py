@@ -82,12 +82,34 @@ def extract_metadata_from_xml(xml_file, json_file):
             # print(place_entry)
             metadata["places"].append(place_entry)
 
+        terms_dict = {}
         for term in terms:
             if term.text is not None:
                 term_text = " ".join(term.text.split())
                 term_ref = term.get("ref")
                 term_meaning = extract_term_meaning(base_url, term_ref)
-                metadata["terms"].append({"term_ref": term_ref, "term": term_text, "meaning": term_meaning})
+                if term_ref not in terms_dict:
+                    terms_dict[term_ref] = {
+                        "prefLabel": term_text,
+                        "meaning": term_meaning,
+                        "altLabel": []
+                    }
+                else:
+                    terms_dict[term_ref]["altLabel"].append(term_text)
+        
+        for term_ref, term_data in terms_dict.items():
+            pref_label = term_data["prefLabel"]
+            alt_labels = term_data["altLabel"]
+            meaning = term_data["meaning"]
+        
+            term_entry = {"term_ref": term_ref, "prefLabel": pref_label, "meaning": meaning}
+        
+            if alt_labels:
+                term_entry["altLabel"] = alt_labels
+        
+            metadata["terms"].append(term_entry)
+
+                # metadata["terms"].append({"term_ref": term_ref, "term": term_text, "meaning": term_meaning})
 
         print("Metadata extracted successfully from XML file.")
         print(metadata)
