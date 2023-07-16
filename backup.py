@@ -44,25 +44,18 @@ def main(xml_file_path: str, json_file_path: str) -> None:
         
         # Create RDF graph from metadata
         g: Graph = create_rdf_graph(metadata)
-         # Serialize RDF graph to RDF/XML
-        rdf_xml_output_file_path = os.path.join(
-            "output", os.path.splitext(os.path.basename(xml_file_path))[0] + ".rdf"
-        )
-        g.serialize(rdf_xml_output_file_path, format="xml")
-        logging.info("RDF graph serialized to RDF/XML at %s", rdf_xml_output_file_path)
-
-         # Generate RDFa from the graph 
+        
+        # Generate RDFa from the graph 
         rdfa_html = generate_rdfa_from_graph(g, os.path.splitext(os.path.basename(xml_file_path))[0])
         
-        # Write RDFa HTML file
-        rdfa_html_output_file_path = os.path.join(
-            "output", os.path.splitext(os.path.basename(xml_file_path))[0] + ".html"
+        # Save RDF/XML serialization in the output folder
+        rdf_xml_file_path = os.path.join(
+            "output", os.path.splitext(os.path.basename(xml_file_path))[0] + ".rdf"
         )
-        with open(rdfa_html_output_file_path, "wb") as f:
-            f.write(rdfa_html)
-        logging.info("RDFa HTML file generated successfully at %s", rdfa_html_output_file_path)
-
-         # Save Turtle serialization in the output folder
+        g.serialize(rdf_xml_file_path, format="xml")
+        logging.info("RDF/XML file generated successfully at %s", rdf_xml_file_path)
+        
+        # Save Turtle serialization in the output folder
         turtle_file_path = os.path.join(
             "output", os.path.splitext(os.path.basename(xml_file_path))[0] + ".ttl"
         )
@@ -72,6 +65,9 @@ def main(xml_file_path: str, json_file_path: str) -> None:
         except Exception as e:
             logging.error("An error occurred while saving Turtle serialization: %s", e)
         
+        with open(output_file_path, "w") as f:
+            f.write(rdfa_html.decode("utf-8"))
+        logging.info("RDFa HTML file generated successfully at %s", output_file_path)
     except FileNotFoundError as e:
         logging.error("The specified XML file path does not exist: %s", e)
     except ValueError as e:
