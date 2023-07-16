@@ -15,7 +15,7 @@
                 </respStmt>
             </titleStmt>
             <physDesc>
-                <p>For details see <ref target="{{physDesc_ref_target}}">entry in database</ref>
+                <p>For details see <ref target="{{physDesc_id}}">entry in database</ref>
                 </p>
             </physDesc>
         </fileDesc>
