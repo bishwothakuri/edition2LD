@@ -58,23 +58,28 @@ def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
         alternative_names = place.get("alternative_names", [])
         for alt_name in alternative_names:
             g.add((place_node, SKOS_NS.altLabel, Literal(alt_name)))
-        g.add((place_node, rdfs.seeAlso, nepalica_reg[place['n']]))
-
+        g.add((place_node, rdfs.seeAlso, nepalica_reg[place["n"]]))
 
     term_uri = (
         URIRef(f"{nepalica}{physDesc_ref_target}")
         if physDesc_ref_target
         else URIRef(f"{nepalica}term")
     )
+    
     for term in terms:
-        term_node = URIRef(f"{term_uri}#{term['term'].replace(' ', '_')}")
+        term_node = URIRef(f"{term_uri}#{term['prefLabel'].replace(' ', '_')}")
         # ref_num = term.get(
         #     "ref_num"
         # )  # Extract the reference number from the term metadata
         g.add((term_node, RDF.type, SKOS_NS.Concept))
-        g.add((term_node, SKOS_NS.prefLabel, Literal(term["term"])))
+        g.add((term_node, SKOS_NS.prefLabel, Literal(term["prefLabel"])))
         g.add((term_node, SKOS_NS.comment, Literal(term["meaning"])))
-        g.add((term_node, rdfs.seeAlso, nepalica_reg[term['term_ref']]))
+        g.add((term_node, rdfs.seeAlso, nepalica_reg[term["term_ref"]]))
+
+        # Add alternative labels as skos:altLabel
+        alt_labels = term.get("altLabel", [])
+        for alt_label in alt_labels:
+            g.add((term_node, SKOS_NS.altLabel, Literal(alt_label)))
 
         # if ref_num:
         #     ref_num = ref_num.split("/")[
