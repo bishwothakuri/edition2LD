@@ -1,49 +1,31 @@
-@prefix nepalica-gloss: <https://nepalica.hadw-bw.de/nepal/words/viewitem/> .
-@prefix nepalica-reg: <https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/> .
-@prefix nepalica: <https://digi.hadw-bw.de/view/> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+<div class="section">
+  <h2>Places</h2>
+  {% for place_uri, place in places.items() %}
+    <seg about="nepalica:{{ file_name }}_{{ place['name'] }}" property="rdfs:seeAlso" resource="nepalica-reg:{{ place['ref_num'] }}">
+      {%- if place['alternative_names'] %}
+        <w property="rdfs:label" lemma="{{ place['alternative_names']|join(', ') }}">{{ place['name'] }}</w>
+      {%- else %}
+        <w property="rdfs:label">{{ place['name'] }}</w>
+      {%- endif %}
+    </seg>
+  {% endfor %}
+</div>
 
-<!DOCTYPE html>
-<html prefix="foaf: http://xmlns.com/foaf/0.1/ skos: http://www.w3.org/2004/02/skos/core# gn: http://www.geonames.org/ontology# dc: http://purl.org/dc/elements/1.1/" lang="en">
-<head>
-  <link rel="stylesheet" href="../templates/style.css">
-  <title>Edition2LD</title>
-</head>
-<body>
-  <div class="container">
-    <h1>Edition2LD</h1>
 
-    <div class="section">
-      <h2>Persons</h2>
-      {% for person_uri, person in persons.items() %}
-      <seg about="nepalica-doi:{{ file_name }}_{{ person['name'] }}" property="rdfs:seeAlso" resource="nepalica-reg:{{ person['id_value'] }}">
-        <w property="rdfs:label" lemma=" ">{{ person['name'] }}</w>
-      </seg>        
-      {% endfor %}
-    </div>
-    
-    <div class="section">
-      <h2>Places</h2>
-      {% for place_uri, place in places.items() %}
-      <seg about="nepalica-doi:{{ file_name }}_{{ place['name'] }}" property="rdfs:seeAlso" resource="nepalica-reg:{{ place['id_value'] }}">
-        <w property="rdfs:label" lemma=" ">{{ place['name'] }}</w>
-      </seg>
-      {% endfor %}
-    </div>
-    
-    <div class="section">
-      <h2>Terms</h2>
-      {% for term_uri, term in terms.items() %}
-      <seg about="nepalica-doi:{{ file_name }}_{{ term['term'] }}" property="rdfs:seeAlso" resource="nepalica-gloss:{{ term['ref_num'] }}">
-        <w property="rdfs:label" lemma=" " type="n.">{{ term['term'] }}</w>
-        {% if term['meaning'] %}
-        <gloss property="skos:definition">{{ term['meaning'] }}</gloss>
-        {% endif %}
-      </seg>
-      {% endfor %}
-    </div>
-    
-  </div>
-</body>
-</html>
+
+<div class="section">
+  <h2>Terms</h2>
+  {% for term_uri, term in terms.items() %}
+  <seg about="nepalica:{{ file_name }}_{{ term['term'] }}" property="rdfs:seeAlso" resource="nepalica-gloss:{{ term['ref_num'] }}">
+    {%- if term['alt_labels'] %}
+      {%- for alt_label in term['alt_labels'] %}
+      <w property="rdfs:label" lemma="{{ alt_label }}" type="n.">{{ term['term'] }}</w>
+      {%- endfor %}
+    {%- else %}
+      <w property="rdfs:label" type="n.">{{ term['term'] }}</w>
+    {%- endif %}
+    {%- if term['meaning'] is not none %}
+    <gloss property="skos:comment">{{ term['meaning'] }}</gloss>{%- endif %}
+  </seg>
+  {% endfor %}
+</div>

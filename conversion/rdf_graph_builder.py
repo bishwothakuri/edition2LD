@@ -21,7 +21,7 @@ nepalica_gloss = Namespace("https://nepalica.hadw-bw.de/nepal/words/viewitem/")
 
 
 def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
-    persons = metadata.get("persons", [])
+    # persons = metadata.get("persons", [])
     places = metadata.get("places", [])
     terms = metadata.get("terms", [])
     physDesc_ref_target = metadata.get("physDesc_id")
@@ -35,15 +35,17 @@ def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
         "nepalica", nepalica, override=False
     )  # Use NamespaceManager to bind the prefix
 
-    person_uri = (
-        URIRef(f"{nepalica}{physDesc_ref_target}")
-        if physDesc_ref_target
-        else URIRef(f"{nepalica}person")
-    )
-    for person in persons:
-        person_node = URIRef(f"{person_uri}#{person['person_name'].replace(' ', '_')}")
-        g.add((person_node, RDF.type, FOAF_NS.Person))
-        g.add((person_node, FOAF_NS.name, Literal(person["person_name"])))
+    g.bind("nepalica-reg", nepalica_reg)  # Bind the nepalica-reg prefix to the namespace
+
+    # person_uri = (
+        # URIRef(f"{nepalica}{physDesc_ref_target}")
+        # if physDesc_ref_target
+        # else URIRef(f"{nepalica}person")
+    # )
+    # for person in persons:
+        # person_node = URIRef(f"{person_uri}#{person['person_name'].replace(' ', '_')}")
+        # g.add((person_node, RDF.type, FOAF_NS.Person))
+        # g.add((person_node, FOAF_NS.name, Literal(person["person_name"])))
 
     place_uri = (
         URIRef(f"{nepalica}{physDesc_ref_target}")
@@ -54,18 +56,21 @@ def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
         place_node = URIRef(f"{place_uri}#{place['place_name'].replace(' ', '_')}")
         g.add((place_node, RDF.type, GN_NS.Feature))
         g.add((place_node, GN_NS.name, Literal(place["place_name"])))
-        # Add alternative names as skos:altLabel
-        alternative_names = place.get("alternative_names", [])
+       # Extract alternative names and exclude the main place name from the list
+        alternative_names = [alt_name for alt_name in place.get("alternative_names", []) if alt_name != place["place_name"]]
         for alt_name in alternative_names:
             g.add((place_node, SKOS_NS.altLabel, Literal(alt_name)))
-        g.add((place_node, rdfs.seeAlso, nepalica_reg[place["n"]]))
+        # Add the value for nepalica-reg:{{ place['n'] }}
+        place_ref_value = place.get("n")
+        if place_ref_value:
+            g.add((place_node, rdfs.seeAlso, nepalica_reg[place_ref_value]))
+
 
     term_uri = (
         URIRef(f"{nepalica}{physDesc_ref_target}")
         if physDesc_ref_target
         else URIRef(f"{nepalica}term")
     )
-    
     for term in terms:
         term_node = URIRef(f"{term_uri}#{term['prefLabel'].replace(' ', '_')}")
         # ref_num = term.get(
@@ -74,12 +79,14 @@ def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
         g.add((term_node, RDF.type, SKOS_NS.Concept))
         g.add((term_node, SKOS_NS.prefLabel, Literal(term["prefLabel"])))
         g.add((term_node, SKOS_NS.comment, Literal(term["meaning"])))
-        g.add((term_node, rdfs.seeAlso, nepalica_reg[term["term_ref"]]))
-
         # Add alternative labels as skos:altLabel
         alt_labels = term.get("altLabel", [])
         for alt_label in alt_labels:
             g.add((term_node, SKOS_NS.altLabel, Literal(alt_label)))
+        # Add the value for nepalica-gloss:{{ term['term_ref'] }}
+        term_ref_value = term.get("term_ref")
+        if term_ref_value:
+            g.add((term_node, rdfs.seeAlso, nepalica_reg[term_ref_value]))
 
         # if ref_num:
         #     ref_num = ref_num.split("/")[
