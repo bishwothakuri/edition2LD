@@ -1,7 +1,8 @@
-import json
+import os
 import defusedxml.ElementTree as ET
 from metadata.ont_item_mapper import extract_item_entity_id
 from metadata.term_metadata_scraper import extract_term_meaning
+from metadata.lod_identifier_extractor import extract_term_identifiers
 # from metadata.place_metadata_scraper import extract_place_meaning
 
 
@@ -106,10 +107,14 @@ def extract_metadata_from_xml(xml_file, json_file):
         
             if alt_labels:
                 term_entry["altLabel"] = alt_labels
+            
+            # Extract the term identifiers using the term_ref
+            words_enhanced_file_path = os.path.join("data", "words_enhanced_sample.json")
+            term_identifiers = extract_term_identifiers(words_enhanced_file_path, term_ref)
+            if term_identifiers:
+                term_entry.update(term_identifiers)
         
             metadata["terms"].append(term_entry)
-
-                # metadata["terms"].append({"term_ref": term_ref, "term": term_text, "meaning": term_meaning})
 
         print("Metadata extracted successfully from XML file.")
         print(metadata)
