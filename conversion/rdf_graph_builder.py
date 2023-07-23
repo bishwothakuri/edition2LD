@@ -78,7 +78,19 @@ def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
         place_ref_value = place.get("n")
         if place_ref_value:
             g.add((place_node, rdfs.seeAlso, nepalica_reg[place_ref_value]))
-
+        # Use the identifiers from the metadata dictionary
+        if "geonames" in place:
+            g.add((place_node, geonames.geonames, Literal(place["geonames"])))
+        if "dbr" in place:
+            g.add((place_node, dbr.dbr, Literal(place["dbr"])))
+        if "wiki" in place:
+            g.add((place_node, wiki.wiki, Literal(place["wiki"])))
+        if "wikidata" in place:
+            g.add((place_node, wikidata.wikidata, Literal(place["wikidata"])))
+        if "viaf" in place:
+            g.add((place_node, viaf.viaf, Literal(place["viaf"])))
+        if "gnd" in place:
+            g.add((place_node, gnd.gnd, Literal(place["gnd"])))
 
     term_uri = (
         URIRef(f"{nepalica}{physDesc_ref_target}")
