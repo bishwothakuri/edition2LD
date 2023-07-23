@@ -15,9 +15,16 @@ skos = Namespace("http://www.w3.org/2004/02/skos/core#")
 nepalica_reg = Namespace("https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/")
 gn = Namespace("https://www.geonames.org/")
 gn_id = Namespace("https://www.geonames.org/")
-dbr = Namespace("http://dbpedia.org/resource/")
-wiki = Namespace("https://www.wikipedia.org/")
 nepalica_gloss = Namespace("https://nepalica.hadw-bw.de/nepal/words/viewitem/")
+
+geonames = Namespace("https://sws.geonames.org/")
+dbr = Namespace("https://dbpedia.org/resource/")
+wiki = Namespace("https://de.wikipedia.org/wiki/")
+viaf = Namespace("https://viaf.org/viaf/")
+gnd = Namespace("https://d-nb.info/gnd/")
+wikidata = Namespace("https://www.wikidata.org/wiki/")
+
+
 
 
 def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
@@ -31,11 +38,18 @@ def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
     g.bind("gn", GN_NS)
     g.bind("skos", SKOS_NS)
     g.bind("dc", DC_NS)
+    g.bind("dbr", dbr)
+    g.bind("wiki", wiki)
+    g.bind("geonames", geonames)
+    g.bind("viaf", viaf)
+    g.bind("gnd", gnd)
+    g.bind("wikidata", wikidata)
+    # g.bind("", )
+
     g.namespace_manager.bind(
         "nepalica", nepalica, override=False
     )  # Use NamespaceManager to bind the prefix
-
-    g.bind("nepalica-reg", nepalica_reg)  # Bind the nepalica-reg prefix to the namespace
+    g.bind("nepalica-reg", nepalica_reg)
 
     # person_uri = (
         # URIRef(f"{nepalica}{physDesc_ref_target}")
@@ -87,6 +101,19 @@ def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
         term_ref_value = term.get("term_ref")
         if term_ref_value:
             g.add((term_node, rdfs.seeAlso, nepalica_reg[term_ref_value]))
+        # Use the identifiers from the metadata dictionary
+        if "geonames" in term:
+            g.add((term_node, geonames.geonames, Literal(term["geonames"])))
+        if "dbr" in term:
+            g.add((term_node, dbr.dbr, Literal(term["dbr"])))
+        if "wiki" in term:
+            g.add((term_node, wiki.wiki, Literal(term["wiki"])))
+        if "wikidata" in term:
+            g.add((term_node, wikidata.wikidata, Literal(term["wikidata"])))
+        if "viaf" in term:
+            g.add((term_node, viaf.viaf, Literal(term["viaf"])))
+        if "gnd" in term:
+            g.add((term_node, gnd.gnd, Literal(term["gnd"])))
 
         # if ref_num:
         #     ref_num = ref_num.split("/")[
