@@ -6,7 +6,10 @@ from metadata.lod_identifier_extractor import (
     extract_term_identifiers,
     extract_place_identifiers
 )
-# from metadata.place_metadata_scraper import extract_place_meaning
+from metadata.place_metadata_scraper import (
+    extract_item_note,
+    extract_regular_expression
+)
 
 
 NS = {
@@ -18,6 +21,7 @@ NS = {
 def extract_metadata_from_xml(xml_file, json_file):
     try:
         base_url = "https://nepalica.hadw-bw.de/nepal/words/viewitem/"
+        ontology_url = "https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/"
         tree = ET.parse(xml_file)
         root = tree.getroot()
 
@@ -63,6 +67,7 @@ def extract_metadata_from_xml(xml_file, json_file):
         # Extract place names 
         ont_item_occurrences = extract_item_entity_id(tei_id, json_file)
         place_name_dict = {}
+        ont_item_count = 0  # Initialize the counter
 
         for place_name in place_names:
             if place_name.text is not None:
@@ -86,10 +91,15 @@ def extract_metadata_from_xml(xml_file, json_file):
             if place_identifiers:
                 # Update the place_entry with the extracted LOD identifiers
                 place_entry.update(place_identifiers)
-            # Extract the notes for each place
-            # place_ref = ont_item_id.rsplit("/", 1)[-1]
-            # place_entry["notes"] = extract_place_meaning(place_ref)
-            # print(place_entry)
+            # web crawler to get notes text from link ontology_url
+            notes_text = extract_item_note(ontology_url, ont_item_id).replace('\n',' ').replace('\r',' ').replace('\t',' ')
+            place_entry["notes"] =notes_text
+
+            keys, elements = extract_regular_expression(notes_text)
+            
+            for key, element in zip(keys, elements):
+                place_entry[key] = element
+                
             metadata["places"].append(place_entry)
 
         terms_dict = {}
@@ -126,7 +136,7 @@ def extract_metadata_from_xml(xml_file, json_file):
             metadata["terms"].append(term_entry)
 
         print("Metadata extracted successfully from XML file.")
-        print(metadata)
+        # print(metadata)
         return metadata
 
     except Exception as e:
