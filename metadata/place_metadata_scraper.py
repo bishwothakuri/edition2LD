@@ -24,20 +24,27 @@ def extract_regular_expression(notes_text):
     gnd_pattern = r'gnd:(\d+)'
     viaf_pattern = r'viaf:(\d+)'
     wiki_pattern = r'wiki:(\S+)'
+    dbr_pattern = r'dbr:(\S+)'
+    geonames_pattern = r'geonmaes:(\d+)'
 
     gnd_match = re.search(gnd_pattern, notes_text)
     viaf_match = re.search(viaf_pattern,notes_text)
     wiki_match = re.search(wiki_pattern, notes_text)
+    dbr_match = re.search(dbr_pattern, notes_text)
+    geonames_match = re.search(geonames_pattern, notes_text)
 
     gnd_content = gnd_match.group(1) if gnd_match else None
     viaf_content = viaf_match.group(1) if viaf_match else None
     wiki_content = wiki_match.group(1) if wiki_match else None
+    dbr_content = dbr_match.group(1) if dbr_match else None
+    geonames_content = geonames_match.group(1) if geonames_match else None
+    
 
     #print("gnd:", gnd_content)
     #print("viaf:", viaf_content)
     #print("wiki:", wiki_content)
 
-    content_dict = {"gnd": gnd_content, "viaf": viaf_content, "wiki": wiki_content}
+    content_dict = {"gnd": gnd_content, "viaf": viaf_content, "wiki": wiki_content, "dbr": dbr_content, "geonames": geonames_content}
     # print(content_dict)
 
     keys = content_dict.keys()
