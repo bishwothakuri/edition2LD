@@ -8,7 +8,7 @@ from metadata.lod_identifier_extractor import (
 )
 from metadata.place_metadata_scraper import (
     extract_item_note,
-    extract_regular_expression
+    extract_lod_identifiers_from_note
 )
 
 
@@ -67,7 +67,6 @@ def extract_metadata_from_xml(xml_file, json_file):
         # Extract place names 
         ont_item_occurrences = extract_item_entity_id(tei_id, json_file)
         place_name_dict = {}
-        ont_item_count = 0  # Initialize the counter
 
         for place_name in place_names:
             if place_name.text is not None:
@@ -91,16 +90,32 @@ def extract_metadata_from_xml(xml_file, json_file):
             if place_identifiers:
                 # Update the place_entry with the extracted LOD identifiers
                 place_entry.update(place_identifiers)
-            # web crawler to get notes text from link ontology_url
+            # Extract the place LOD identifiers from notes using the first method
             notes_text = extract_item_note(ontology_url, ont_item_id).replace('\n',' ').replace('\r',' ').replace('\t',' ')
-            place_entry["notes"] =notes_text
-
-            keys, elements = extract_regular_expression(notes_text)
+            keys, elements = extract_lod_identifiers_from_note(notes_text)
             
             for key, element in zip(keys, elements):
-                place_entry[key] = element
-                
+                if element is not None:
+                    place_entry[key] = element
+                else:
+                    # If the value is None, try the second method
+                    ont_items_enhanced_file_path = os.path.join("data", "ont_items_enhanced_sample.json")
+                    place_identifiers = extract_place_identifiers(ont_items_enhanced_file_path, ont_item_id)
+                    if place_identifiers.get(key) is not None:
+                        place_entry[key] = place_identifiers[key]
+            
             metadata["places"].append(place_entry)
+
+            # web crawler to get notes text from link ontology_url
+            # notes_text = extract_item_note(ontology_url, ont_item_id).replace('\n',' ').replace('\r',' ').replace('\t',' ')
+            # place_entry["notes"] =notes_text
+# 
+            # keys, elements = extract_lod_identifiers_from_note(notes_text)
+            # 
+            # for key, element in zip(keys, elements):
+                # place_entry[key] = element
+                # 
+            # metadata["places"].append(place_entry)
 
         terms_dict = {}
         for term in terms:
@@ -140,5 +155,5 @@ def extract_metadata_from_xml(xml_file, json_file):
         return metadata
 
     except Exception as e:
-        print("Error generating XML-TEI file:", e)
+        print("Error extracting metadata:", e)
         return None
