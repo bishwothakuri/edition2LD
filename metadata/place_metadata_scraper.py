@@ -13,7 +13,7 @@ def extract_item_note(ontology_url, ont_item_id):
             notes_text = data[1]
     return notes_text
 
-def extract_regular_expression(notes_text):
+def extract_lod_identifiers_from_note(notes_text):
     '''
     Use regular expressions to extract content of specific identifier
     Input: notes_text
