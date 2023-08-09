@@ -1,11 +1,13 @@
 from typing import Dict
-from rdflib import RDF, Graph, Literal, Namespace, URIRef
+from rdflib import RDF, Graph, Literal, Namespace, URIRef, BNode
 
+# Define RDF namespaces for the ontology
 FOAF_NS = Namespace("http://xmlns.com/foaf/0.1/")
 GN_NS = Namespace("http://www.geonames.org/ontology#")
 SKOS_NS = Namespace("http://www.w3.org/2004/02/skos/core#")
 DC_NS = Namespace("http://purl.org/dc/elements/1.1/")
 
+# Define custom namespaces specific to the Nepali ontology
 nepalica = Namespace("https://nepalica.hadw-bw.de/nepal/editions/show/")
 nepalica_doi = Namespace("https://digi.hadw-bw.de/view/")
 nepalica_meta = Namespace("https://nepalica.hadw-bw.de/nepal/catitems/viewitem/")
@@ -32,8 +34,11 @@ def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
     places = metadata.get("places", [])
     terms = metadata.get("terms", [])
     physDesc_ref_target = metadata.get("physDesc_id")
-
+    
+    # Initialize an RDF graph
     g = Graph()
+    
+    # Bind RDF namespaces for use in the graph
     g.bind("foaf", FOAF_NS)
     g.bind("gn", GN_NS)
     g.bind("skos", SKOS_NS)
@@ -44,11 +49,10 @@ def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
     g.bind("viaf", viaf)
     g.bind("gnd", gnd)
     g.bind("wikidata", wikidata)
-    # g.bind("", )
 
-    g.namespace_manager.bind(
-        "nepalica", nepalica, override=False
-    )  # Use NamespaceManager to bind the prefix
+
+    # Bind custom namespaces using the NamespaceManager
+    g.namespace_manager.bind("nepalica", nepalica, override=False)
     g.bind("nepalica-reg", nepalica_reg)
 
     # person_uri = (
@@ -60,13 +64,15 @@ def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
         # person_node = URIRef(f"{person_uri}#{person['person_name'].replace(' ', '_')}")
         # g.add((person_node, RDF.type, FOAF_NS.Person))
         # g.add((person_node, FOAF_NS.name, Literal(person["person_name"])))
-
+    
+    # Loop through place entries and add them to the RDF graph
     place_uri = (
         URIRef(f"{nepalica}{physDesc_ref_target}")
         if physDesc_ref_target
         else URIRef(f"{nepalica}place")
     )
     for place in places:
+        # Create a URI reference for the place node
         place_node = URIRef(f"{place_uri}#{place['place_name'].replace(' ', '_')}")
         g.add((place_node, RDF.type, GN_NS.Feature))
         g.add((place_node, GN_NS.name, Literal(place["place_name"])))
@@ -77,21 +83,27 @@ def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
         # Add the value for nepalica-reg:{{ place['n'] }}
         place_ref_value = place.get("n")
         if place_ref_value:
-            g.add((place_node, rdfs.seeAlso, nepalica_reg[place_ref_value]))
-        # Use the identifiers from the metadata dictionary
-        if "geonames" in place:
-            g.add((place_node, geonames.geonames, Literal(place["geonames"])))
-        if "dbr" in place:
-            g.add((place_node, dbr.dbr, Literal(place["dbr"])))
-        if "wiki" in place:
-            g.add((place_node, wiki.wiki, Literal(place["wiki"])))
-        if "wikidata" in place:
-            g.add((place_node, wikidata.wikidata, Literal(place["wikidata"])))
-        if "viaf" in place:
-            g.add((place_node, viaf.viaf, Literal(place["viaf"])))
-        if "gnd" in place:
-            g.add((place_node, gnd.gnd, Literal(place["gnd"])))
+            rdfs_see_also_parent = nepalica_reg[place_ref_value]
+            g.add((place_node, rdfs.seeAlso, rdfs_see_also_parent))
 
+            # Add the LOD identifiers extracted from the metadata dictionary
+            lod_identifiers = []
+            for lod_identifier_key, lod_identifier_value in place.items():
+                if lod_identifier_key in ["gnd", "viaf", "wiki", "dbr", "geonames"]:
+                    if lod_identifier_value:
+                        lod_uri = URIRef(f"{lod_identifier_key}:{lod_identifier_value}")
+                        lod_identifiers.append(lod_uri)
+
+            # Add the rdfs:seeAlso property for each LOD identifier
+            for lod_uri in lod_identifiers:
+                g.add((place_node, rdfs.seeAlso, lod_uri))
+
+        # Add the note_text to the graph 
+        note_text = place["note_text"]
+        if note_text:
+            g.add((place_node, rdfs.comment, Literal(note_text)))
+
+    # Loop through term entries and add them to the RDF graph
     term_uri = (
         URIRef(f"{nepalica}{physDesc_ref_target}")
         if physDesc_ref_target
@@ -99,9 +111,6 @@ def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
     )
     for term in terms:
         term_node = URIRef(f"{term_uri}#{term['prefLabel'].replace(' ', '_')}")
-        # ref_num = term.get(
-        #     "ref_num"
-        # )  # Extract the reference number from the term metadata
         g.add((term_node, RDF.type, SKOS_NS.Concept))
         g.add((term_node, SKOS_NS.prefLabel, Literal(term["prefLabel"])))
         g.add((term_node, SKOS_NS.comment, Literal(term["meaning"])))
@@ -109,30 +118,9 @@ def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
         alt_labels = term.get("altLabel", [])
         for alt_label in alt_labels:
             g.add((term_node, SKOS_NS.altLabel, Literal(alt_label)))
-        # Add the value for nepalica-gloss:{{ term['term_ref'] }}
+        # Add the value for nepalica-gloss
         term_ref_value = term.get("term_ref")
         if term_ref_value:
             g.add((term_node, rdfs.seeAlso, nepalica_reg[term_ref_value]))
-        # Use the identifiers from the metadata dictionary
-        if "geonames" in term:
-            g.add((term_node, geonames.geonames, Literal(term["geonames"])))
-        if "dbr" in term:
-            g.add((term_node, dbr.dbr, Literal(term["dbr"])))
-        if "wiki" in term:
-            g.add((term_node, wiki.wiki, Literal(term["wiki"])))
-        if "wikidata" in term:
-            g.add((term_node, wikidata.wikidata, Literal(term["wikidata"])))
-        if "viaf" in term:
-            g.add((term_node, viaf.viaf, Literal(term["viaf"])))
-        if "gnd" in term:
-            g.add((term_node, gnd.gnd, Literal(term["gnd"])))
-
-        # if ref_num:
-        #     ref_num = ref_num.split("/")[
-        #         -1
-        #     ]  # Extract the number value from the full URI
-        #     g.add(
-        #         (term_node, SKOS_NS.related, URIRef(ref_num))
-        #     )  # Use prefix in the related gloss term
 
     return g
