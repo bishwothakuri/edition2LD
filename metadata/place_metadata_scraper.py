@@ -51,6 +51,9 @@ def extract_lod_identifiers_from_note(notes_text):
     elements = [content_dict[key] for key in keys]
 
     return keys, elements
-#notes = "born: 1720 at Gorkha; died: 11 January 1775 at Devighat; gender: male; father: Narabhūpāla Śāha, king of Gorkha; spouse: Indra Kumārī Devī, Narendra Rājyalakṣmī Devī; children: Pratāpa Siṃha Śāha, Bahādura Śāha, Vilāsa Kumārī Śāha; details: king of Gorkha (r. 3 April 1743–1768); king of Nepal (r. 1768-1775); normdata: gnd:119173816, viaf:5735314,  #checked#MG:add cross-links#"
-#extract_regular_expression(notes)
 
+
+def clean_note_text(note_text):
+    cleaned_text = re.sub(r'\b(?:gnd|viaf|wiki|dbr|geonames):\S+\b', '', note_text)
+    cleaned_text = cleaned_text.replace('\n', ' ').replace('\r', ' ').replace('\t', ' ')
+    return cleaned_text
