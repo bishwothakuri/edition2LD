@@ -29,10 +29,10 @@
     },
     {
         "ont_item_id":"304",
-        "geonames":"7962207",
-        "dbr":"Asan,_Kathmandu",
-        "wiki":"Asan,_Kathmandu",
-        "wikidata":"testont_wikidata_304",
+        "geonames":"00000000",
+        "dbr":"Asan,_Kathmandu####",
+        "wiki":"Asan,_Kathmandu####",
+        "wikidata":"testont_wikidata_304###",
         "viaf":"testont_viaf_304",
         "gnd":"testont_gnd_304"
     },
@@ -53,6 +53,15 @@
         "wikidata":"testont_wikidata_1232",
         "viaf":"testont_viaf_1232",
         "gnd":"testont_gnd_1232"
+    },
+    {
+        "ont_item_id":"26",
+        "geonames":"testgeonames#",
+        "dbr":"testont_dbr_1232#",
+        "wiki":"testont_wiki_1232#",
+        "wikidata":"testont_wikidata_1232#",
+        "viaf":"testont_viaf_1232#",
+        "gnd":"testont_gnd_1232#"
     }
     ]
 }
