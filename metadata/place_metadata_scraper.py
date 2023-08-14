@@ -25,7 +25,7 @@ def extract_lod_identifiers_from_note(notes_text):
     viaf_pattern = r'viaf:(\d+)'
     wiki_pattern = r'wiki:(\S+)'
     dbr_pattern = r'dbr:(\S+)'
-    geonames_pattern = r'geonmaes:(\d+)'
+    geonames_pattern = r'geonames:(\d+)'
 
     gnd_match = re.search(gnd_pattern, notes_text)
     viaf_match = re.search(viaf_pattern,notes_text)
@@ -54,6 +54,16 @@ def extract_lod_identifiers_from_note(notes_text):
 
 
 def clean_note_text(note_text):
-    cleaned_text = re.sub(r'\b(?:gnd|viaf|wiki|dbr|geonames):\S+\b', '', note_text)
-    cleaned_text = cleaned_text.replace('\n', ' ').replace('\r', ' ').replace('\t', ' ')
+    # Remove square brackets and URI patterns like [gnd:1234], [viaf:5678], etc.
+    cleaned_text = re.sub(r'\[[^\]]+\]', '', note_text)
+    
+    # Remove URI patterns like gnd:1234, viaf:5678, etc.
+    cleaned_text = re.sub(r'\b(?:gnd|viaf|wiki|dbr|geonames):\S+\b', '', cleaned_text)
+    
+    # Replace multiple whitespace characters with a single space
+    cleaned_text = re.sub(r'\s+', ' ', cleaned_text)
+    
+    # Remove leading and trailing whitespace
+    cleaned_text = cleaned_text.strip()
+    
     return cleaned_text
