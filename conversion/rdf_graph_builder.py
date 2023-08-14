@@ -93,9 +93,12 @@ def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
                     if lod_identifier_value:
                         lod_uri = URIRef(f"{lod_identifier_key}:{lod_identifier_value}")
                         lod_identifiers.append(lod_uri)
+            
+            # Sort the LOD identifiers to ensure nepalica-reg comes first
+            sorted_lod_identifiers = sorted(lod_identifiers, key=lambda x: str(x) != str(nepalica_reg[place_ref_value]))
 
-            # Add the rdfs:seeAlso property for each LOD identifier
-            for lod_uri in lod_identifiers:
+            # Add the sorted LOD identifiers to the RDF graph
+            for lod_uri in sorted_lod_identifiers:
                 g.add((place_node, rdfs.seeAlso, lod_uri))
 
         # Add the note_text to the graph 
@@ -121,6 +124,6 @@ def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
         # Add the value for nepalica-gloss
         term_ref_value = term.get("term_ref")
         if term_ref_value:
-            g.add((term_node, rdfs.seeAlso, nepalica_reg[term_ref_value]))
+            g.add((term_node, rdfs.seeAlso, nepalica_gloss[term_ref_value]))
 
     return g
