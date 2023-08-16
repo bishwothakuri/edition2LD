@@ -14,7 +14,9 @@ def save_turtle_serialization(graph: Graph, file_path: str) -> None:
     # Define the namespaces
     namespaces = {
         'nepalica': Namespace("https://nepalica.hadw-bw.de/nepal/editions/show/"),
-        'nepalica_reg': Namespace("https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/")
+        'nepalica_reg': Namespace("https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/"),
+        'nepalica_gloss' : Namespace("https://nepalica.hadw-bw.de/nepal/words/viewitem/")
+
     }
 
     # Serialize the graph in Turtle format
