@@ -110,12 +110,16 @@ def extract_metadata_from_xml(xml_file, json_file):
             place_entry["note_text"] = cleaned_note_text
             metadata["places"].append(place_entry)
 
+        # Initialize an empty dictionary to store terms
         terms_dict = {}
+        # Loop through each term in the list of terms
         for term in terms:
             if term.text is not None:
                 term_text = " ".join(term.text.split())
                 term_ref = term.get("ref")
+                # Extract the meaning of the term using its reference
                 term_meaning = extract_term_meaning(base_url, term_ref)
+                # Check if the term reference is already present in the terms_dict
                 if term_ref not in terms_dict:
                     terms_dict[term_ref] = {
                         "prefLabel": term_text,
@@ -123,7 +127,9 @@ def extract_metadata_from_xml(xml_file, json_file):
                         "altLabel": []
                     }
                 else:
-                    terms_dict[term_ref]["altLabel"].append(term_text)
+                    # Check if the term_text is not already in pefLabel, then append
+                    if term_text != terms_dict[term_ref]["prefLabel"]:
+                        terms_dict[term_ref]["altLabel"].append(term_text)
         
         for term_ref, term_data in terms_dict.items():
             pref_label = term_data["prefLabel"]
