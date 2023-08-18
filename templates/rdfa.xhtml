@@ -1,0 +1,31 @@
+<div class="section">
+  <h2>Places</h2>
+  {% for place_uri, place in places.items() %}
+    <seg about="nepalica-doi:{{ file_name }}_{{ place['name'] }}" property="rdfs:seeAlso" resource="nepalica-reg:{{ place['ref_num'] }}">
+      {%- if place['alternative_names'] %}
+        <w property="rdfs:label" lemma="{{ place['alternative_names']|join(', ') }}">{{ place['name'] }}</w>
+      {%- else %}
+        <w property="rdfs:label">{{ place['name'] }}</w>
+      {%- endif %}
+    </seg>
+  {% endfor %}
+</div>
+
+
+
+<div class="section">
+  <h2>Terms</h2>
+  {% for term_uri, term in terms.items() %}
+  <seg about="nepalica-doi:{{ file_name }}_{{ term['term'] }}" property="rdfs:seeAlso" resource="nepalica-gloss:{{ term['ref_num'] }}">
+    {%- if term['alt_labels'] %}
+      {%- for alt_label in term['alt_labels'] %}
+      <w property="rdfs:label" lemma="{{ alt_label }}" type="n.">{{ term['term'] }}</w>
+      {%- endfor %}
+    {%- else %}
+      <w property="rdfs:label" type="n.">{{ term['term'] }}</w>
+    {%- endif %}
+    {%- if term['meaning'] is not none %}
+    <gloss property="skos:comment">{{ term['meaning'] }}</gloss>{%- endif %}
+  </seg>
+  {% endfor %}
+</div>

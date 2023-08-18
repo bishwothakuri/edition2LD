@@ -59,11 +59,16 @@ def generate_rdfa_from_graph(g: Graph, file_name: str) -> bytes:
                 "alternative_names": [],
                 "place_ref": row.get("place_ref", "").toPython(),
                 "ref_num": ref_num,
+                "lod_identifiers": [],  # Initialize a list for LOD identifiers
             }
         if alt_name is not None:
             places[place_uri]["alternative_names"].append(alt_name.toPython())
+        
+        # Add LOD identifiers to the list
+        lod_identifier = row.get("place_ref", None)
+        if lod_identifier is not None:
+            places[place_uri]["lod_identifiers"].append(lod_identifier.toPython())
 
- 
     terms = {}
     for row in g.query(term_query, initBindings={"skos": SKOS_NS, "nepalica-reg": nepalica_reg}):
         term_uri = row["term"].toPython()
@@ -86,7 +91,7 @@ def generate_rdfa_from_graph(g: Graph, file_name: str) -> bytes:
         
     # Load the Jinja2 template file
     env = jinja2.Environment(loader=jinja2.FileSystemLoader("./templates"))
-    template = env.get_template("rdfa.html")
+    template = env.get_template("rdfa.xhtml")
 
     # Pass the data to the template context
     template_context = {
