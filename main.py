@@ -54,13 +54,13 @@ def main(xml_file_path: str, json_file_path: str) -> None:
          # Generate RDFa from the graph 
         rdfa_html = generate_rdfa_from_graph(g, os.path.splitext(os.path.basename(xml_file_path))[0])
         
-        # Write RDFa HTML file
+        # Write RDFa XHTML file
         rdfa_html_output_file_path = os.path.join(
-            "output", os.path.splitext(os.path.basename(xml_file_path))[0] + ".html"
+            "output", os.path.splitext(os.path.basename(xml_file_path))[0] + ".xhtml"
         )
         with open(rdfa_html_output_file_path, "wb") as f:
             f.write(rdfa_html)
-        logging.info("RDFa HTML file generated successfully at %s", rdfa_html_output_file_path)
+        logging.info("RDFa XHTML file generated successfully at %s", rdfa_html_output_file_path)
 
          # Save Turtle serialization in the output folder
         turtle_file_path = os.path.join(
