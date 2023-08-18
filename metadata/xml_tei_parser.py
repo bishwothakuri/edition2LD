@@ -131,13 +131,15 @@ def extract_metadata_from_xml(xml_file, json_file):
                     if term_text != terms_dict[term_ref]["prefLabel"]:
                         terms_dict[term_ref]["altLabel"].append(term_text)
         
+        # Loop through the collected term information in terms_dict
         for term_ref, term_data in terms_dict.items():
             pref_label = term_data["prefLabel"]
             alt_labels = term_data["altLabel"]
             meaning = term_data["meaning"]
         
             term_entry = {"term_ref": term_ref, "prefLabel": pref_label, "meaning": meaning}
-        
+                
+            # Add altLabel if it exists
             if alt_labels:
                 term_entry["altLabel"] = alt_labels
             
