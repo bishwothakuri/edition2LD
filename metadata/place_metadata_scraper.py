@@ -21,28 +21,63 @@ def extract_lod_identifiers_from_note(notes_text):
 
     Reference example: https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/178
     '''
-    gnd_pattern = r'gnd:(\d+)'
-    viaf_pattern = r'viaf:(\d+)'
-    wiki_pattern = r'wiki:(\S+)'
-    dbr_pattern = r'dbr:(\S+)'
-    geonames_pattern = r'geonames:(\d+)'
+    gnd_pattern = r'gnd:(\d+),|gnd:(\d+).|gnd:(\d+-\d+),|gnd:(\d+-\d+).'
+    viaf_pattern = r'viaf:(\d+),|viaf:(\d+).'
+    wiki_pattern = r'wiki:(\S+),|wiki:(\S+).'
+    geonames_pattern = r'geonames:(\d+),|geonames:(\d+).|geonames:(\s+\d+),|geonames:(\s+\d+).'
+    dbr_pattern = r'dbr:(\S+),|dbr:(\S+).'
 
-    gnd_match = re.search(gnd_pattern, notes_text)
-    viaf_match = re.search(viaf_pattern,notes_text)
-    wiki_match = re.search(wiki_pattern, notes_text)
-    dbr_match = re.search(dbr_pattern, notes_text)
-    geonames_match = re.search(geonames_pattern, notes_text)
 
-    gnd_content = gnd_match.group(1) if gnd_match else None
-    viaf_content = viaf_match.group(1) if viaf_match else None
-    wiki_content = wiki_match.group(1) if wiki_match else None
-    dbr_content = dbr_match.group(1) if dbr_match else None
-    geonames_content = geonames_match.group(1) if geonames_match else None
+    gnd_match = re.findall(gnd_pattern, notes_text)
+    viaf_match = re.findall(viaf_pattern,notes_text)
+    dbr_match = re.findall(dbr_pattern, notes_text)
+    wiki_match = re.findall(wiki_pattern, notes_text)
+    geos_match = re.findall(geonames_pattern, notes_text)
+
+
+    notes_text = re.sub(gnd_pattern, '', notes_text)
+    notes_text = re.sub(viaf_pattern, '', notes_text)
+    notes_text = re.sub(dbr_pattern, '', notes_text)
+    notes_text = re.sub(wiki_pattern, '', notes_text)
+    notes_text = re.sub(geonames_pattern, '', notes_text)
+
+    gnd_content = [item.strip() for match in gnd_match for item in match if item]
+
+
+    gnd_content = []
+    for match in gnd_match:
+        for item in match:
+            if item != '':
+                gnd_content.append(item.strip())
+
+    viaf_content = []
+    for match in viaf_match:
+        for item in match:
+            if item != '':
+                viaf_content.append(item.strip())
     
+    dbr_content = []
+    for match in dbr_match:
+        for item in match:
+            if item != '':
+                dbr_content.append(item.strip())
+    
+    wiki_content = []
+    for match in wiki_match:
+        for item in match:
+            if item != '':
+                wiki_content.append(item.strip())
+    
+    geonames_content = []
+    for match in geos_match:
+        for item in match:
+            if item != '':
+                geonames_content.append(item.strip())
 
-    #print("gnd:", gnd_content)
-    #print("viaf:", viaf_content)
-    #print("wiki:", wiki_content)
+    #Find index of #checked# and delete it and following characterss
+    checked_index = notes_text.find("#checked#")
+    notes_text = notes_text[:checked_index]
+
 
     content_dict = {"gnd": gnd_content, "viaf": viaf_content, "wiki": wiki_content, "dbr": dbr_content, "geonames": geonames_content}
     # print(content_dict)
