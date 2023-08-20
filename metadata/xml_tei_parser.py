@@ -8,8 +8,7 @@ from metadata.lod_identifier_extractor import (
 )
 from metadata.place_metadata_scraper import (
     extract_item_note,
-    extract_lod_identifiers_from_note,
-    clean_note_text
+    extract_lod_identifiers_from_note
 )
 
 
@@ -93,7 +92,7 @@ def extract_metadata_from_xml(xml_file, json_file):
                 place_entry.update(place_identifiers)
             # Extract the place LOD identifiers from notes using the first method
             notes_text = extract_item_note(ontology_url, ont_item_id).replace('\n',' ').replace('\r',' ').replace('\t',' ')
-            keys, elements = extract_lod_identifiers_from_note(notes_text)
+            keys, elements, notes_text = extract_lod_identifiers_from_note(notes_text)
             
             for key, element in zip(keys, elements):
                 if element is not None:
@@ -105,9 +104,7 @@ def extract_metadata_from_xml(xml_file, json_file):
                     if place_identifiers.get(key) is not None:
                         place_entry[key] = place_identifiers[key]
             
-            # Clean the note text to remove LOD identifiers
-            cleaned_note_text = clean_note_text(notes_text)
-            place_entry["note_text"] = cleaned_note_text
+            place_entry["note_text"] = notes_text
             metadata["places"].append(place_entry)
 
         # Initialize an empty dictionary to store terms
