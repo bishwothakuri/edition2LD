@@ -15,20 +15,22 @@ def save_turtle_serialization(graph: Graph, file_path: str) -> None:
     namespaces = {
         'nepalica': Namespace("https://nepalica.hadw-bw.de/nepal/editions/show/"),
         'nepalica_reg': Namespace("https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/"),
-        'nepalica_gloss' : Namespace("https://nepalica.hadw-bw.de/nepal/words/viewitem/")
-
+        'nepalica_gloss': Namespace("https://nepalica.hadw-bw.de/nepal/words/viewitem/")
     }
 
     # Serialize the graph in Turtle format
     turtle_data = graph.serialize(format='turtle')
 
-    # Replace the full URIs with namespace prefixes
-    for prefix, namespace in namespaces.items():
-        turtle_data = turtle_data.replace(str(namespace), f"{prefix}:")
-
-
     # Remove the angle brackets around subject, object, and predicate
     turtle_data = turtle_data.replace("<", "").replace(">", "")
+
+    # Replace full URIs with namespace prefixes
+    for prefix, namespace in namespaces.items():
+        if prefix != 'nepalica_reg':  # Exclude nepalica_reg namespace from this part
+            turtle_data = turtle_data.replace(str(namespace), f"{prefix}:")
+
+    # Add spaces after LOD identifier values in multi-valued properties
+    turtle_data = turtle_data.replace(',\n    ', ',\n        ')
 
     # Save the modified Turtle serialization to the file
     with open(file_path, 'w') as f:
@@ -36,4 +38,6 @@ def save_turtle_serialization(graph: Graph, file_path: str) -> None:
         for prefix, namespace in namespaces.items():
             f.write(f"@prefix {prefix}: <{namespace}> .\n")
         f.write('\n')
+
+        # Write the modified Turtle data
         f.write(turtle_data)
