@@ -27,8 +27,6 @@ gnd = Namespace("https://d-nb.info/gnd/")
 wikidata = Namespace("https://www.wikidata.org/wiki/")
 
 
-
-
 def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
     # persons = metadata.get("persons", [])
     places = metadata.get("places", [])
@@ -88,7 +86,7 @@ def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
 
             # Add the LOD identifiers extracted from the metadata dictionary
             for lod_identifier_key, lod_identifier_values in place.items():
-                if lod_identifier_key in ["gnd", "viaf", "wiki", "dbr", "geonames"]:
+                if lod_identifier_key in ["gnd", "viaf", "wiki", "dbr", "geonames", "wikidata"]:
                     for lod_identifier_value in lod_identifier_values:
                         if lod_identifier_value:
                             lod_uri = URIRef(f"{lod_identifier_key}:{lod_identifier_value}")
