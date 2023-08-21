@@ -10,11 +10,20 @@
         "gnd":"ID from Gemeinsame Normdatei"
     },
     {
+        "ont_item_id":"556",
+        "geonames":"",
+        "dbr":"dbr_from_enhanced_json",
+        "wiki":"Jaya_Prakash_Malla_from_enhanced_json",
+        "wikidata":"hello world",
+        "viaf":"",
+        "gnd":""
+    }, 
+    {
         "ont_item_id":"178",
         "geonames":"",
         "dbr":"Prithvi_Narayan_Sha",
         "wiki":"",
-        "wikidata":"",
+        "wikidata":"this is bishwo",
         "viaf":"",
         "gnd":""
     }, 
