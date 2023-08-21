@@ -53,6 +53,9 @@ def extract_lod_identifiers_from_note(notes_text):
     if checked_index != -1:
         notes_text = notes_text[:checked_index]
     
+    # Remove #new#
+    notes_text = notes_text.replace('#new#', '')
+    
     # Remove leading and trailing spaces
     notes_text = notes_text.strip()
 
