@@ -70,24 +70,24 @@ def extract_metadata_from_xml(xml_file, json_file):
                 for ont_item_id in ont_item_ids:
                     pers_entry = pers_name_dict.setdefault(
                         ont_item_id, {"primary_name": pers_name_text, "alternative_names": []}
-                        )
+                    )
                     pers_entry["alternative_names"].append(pers_name_text) 
-        
-        #metadata["persons"].append({"n": n_value, "person_name": pers_name_text})
+    
+        # Construct metadata["persons"] list
         for ont_item_id, pers_data in pers_name_dict.items():
             pers_entry = {"n": ont_item_id, "person_name": pers_data["primary_name"]}
             alternative_names = pers_data["alternative_names"]
             if alternative_names:
                 pers_entry["alternative_names"] = alternative_names
             notes_text = extract_item_note(ontology_url, ont_item_id).replace('\n',' ').replace('\r',' ').replace('\t',' ')
-            
-
+    
             keys, elements, notes_text = extract_lod_identifiers_from_note(notes_text)
-            pers_entry["notes"] =notes_text
-
+            pers_entry["notes"] = notes_text
+    
             for key, element in zip(keys, elements):
                 pers_entry[key] = element
-                metadata["persons"].append(pers_entry)
+    
+            metadata["persons"].append(pers_entry)
 
                 # metadata["persons"].append({"n": n_value, "person_name": pers_name_text})
 
