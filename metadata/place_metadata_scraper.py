@@ -43,11 +43,11 @@ def extract_lod_identifiers_from_note(notes_text):
     notes_text = re.sub(wiki_pattern, '', notes_text)
     notes_text = re.sub(geonames_pattern, '', notes_text)
 
-    gnd_content = [item.strip() for match in gnd_match for item in match if item]
-    viaf_content = [item.strip() for match in viaf_match for item in match if item]
-    dbr_content = [item.strip() for match in dbr_match for item in match if item]
-    wiki_content = [item.strip() for match in wiki_match for item in match if item]
-    geonames_content = [item.strip() for match in geos_match for item in match if item]
+    gnd_content = [item.strip('.').strip() for match in gnd_match for item in match if item]
+    viaf_content = [item.strip('.').strip() for match in viaf_match for item in match if item]
+    dbr_content = [item.strip('.').strip() for match in dbr_match for item in match if item]
+    wiki_content = [item.strip('.').strip() for match in wiki_match for item in match if item]
+    geonames_content = [item.strip('.').strip() for match in geos_match for item in match if item]
 
     checked_index = notes_text.find("#checked#")
     if checked_index != -1:
