@@ -4,7 +4,8 @@ from metadata.ont_item_mapper import extract_item_entity_id
 from metadata.term_metadata_scraper import extract_term_meaning
 from metadata.lod_identifier_extractor import (
     extract_term_identifiers,
-    extract_place_identifiers
+    extract_place_identifiers,
+    extract_person_identifiers
 )
 from metadata.place_metadata_scraper import (
     extract_item_note,
@@ -72,7 +73,7 @@ def extract_metadata_from_xml(xml_file, json_file):
                         ont_item_id, {"primary_name": pers_name_text, "alternative_names": []}
                     )
                     pers_entry["alternative_names"].append(pers_name_text) 
-    
+
         # Construct metadata["persons"] list
         for ont_item_id, pers_data in pers_name_dict.items():
             pers_entry = {"n": ont_item_id, "person_name": pers_data["primary_name"]}
@@ -80,16 +81,21 @@ def extract_metadata_from_xml(xml_file, json_file):
             if alternative_names:
                 pers_entry["alternative_names"] = alternative_names
             notes_text = extract_item_note(ontology_url, ont_item_id).replace('\n',' ').replace('\r',' ').replace('\t',' ')
-    
+
             keys, elements, notes_text = extract_lod_identifiers_from_note(notes_text)
             pers_entry["notes"] = notes_text
-    
-            for key, element in zip(keys, elements):
-                pers_entry[key] = element
-    
-            metadata["persons"].append(pers_entry)
 
-                # metadata["persons"].append({"n": n_value, "person_name": pers_name_text})
+            for key, element in zip(keys, elements):
+                if element is not None:
+                    pers_entry[key] = element
+                else:
+                    # If the value is None, try to extract from ont_items_enhanced_sample.json
+                    ont_items_enhanced_file_path = os.path.join("data", "ont_items_enhanced_sample.json")
+                    person_identifiers = extract_person_identifiers(ont_items_enhanced_file_path, ont_item_id)
+                    if person_identifiers.get(key) is not None:
+                        pers_entry[key] = person_identifiers[key]
+
+            metadata["persons"].append(pers_entry)
 
 
         # Extract place names 
@@ -111,28 +117,26 @@ def extract_metadata_from_xml(xml_file, json_file):
             alternative_names = place_data["alternative_names"]
             if alternative_names:
                 place_entry["alternative_names"] = alternative_names
-            # Extract the place LOD identifiers using the ont_item_id
-            ont_items_enhanced_file_path = os.path.join("data", "ont_items_enhanced_sample.json")
-            place_identifiers = extract_place_identifiers(ont_items_enhanced_file_path, ont_item_id)
-            if place_identifiers:
-                # Update the place_entry with the extracted LOD identifiers
-                place_entry.update(place_identifiers)
+
             # Extract the place LOD identifiers from notes using the first method
             notes_text = extract_item_note(ontology_url, ont_item_id).replace('\n',' ').replace('\r',' ').replace('\t',' ')
             keys, elements, notes_text = extract_lod_identifiers_from_note(notes_text)
-            
+
             for key, element in zip(keys, elements):
                 if element is not None:
-                    place_entry[key] = element
-                else:
-                    # If the value is None, try the second method
+                    place_entry[key] = [element] if not isinstance(element, list) else element
+
+            # Try to update LOD identifiers from the second method only if they are missing or empty
+            for key in ["gnd", "viaf", "wiki", "wikidata", "dbr", "geonames"]:
+                if not place_entry.get(key):
                     ont_items_enhanced_file_path = os.path.join("data", "ont_items_enhanced_sample.json")
                     place_identifiers = extract_place_identifiers(ont_items_enhanced_file_path, ont_item_id)
                     if place_identifiers.get(key) is not None:
-                        place_entry[key] = place_identifiers[key]
-            
+                        place_entry[key] = [place_identifiers[key]] if not isinstance(place_identifiers[key], list) else place_identifiers[key]
+
             place_entry["note_text"] = notes_text
             metadata["places"].append(place_entry)
+
 
         # Initialize an empty dictionary to store terms
         terms_dict = {}
