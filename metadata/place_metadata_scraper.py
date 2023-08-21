@@ -27,6 +27,8 @@ def extract_lod_identifiers_from_note(notes_text):
     wiki_pattern = r'wiki:(\S+),|wiki:(\S+).'
     geonames_pattern = r'geonames:(\d+),|geonames:(\d+).|geonames:\s+(\d+),|geonames:\s+(\d+).'
     dbr_pattern = r'dbr:(\S+),|dbr:(\S+).'
+    wikidata_pattern = r'wikidata:(\S+),|wikidata:(\S+).'
+
 
     # Replace multiple spaces with a single space
     notes_text = re.sub(r'\s+', ' ', notes_text)
@@ -35,6 +37,7 @@ def extract_lod_identifiers_from_note(notes_text):
     viaf_match = re.findall(viaf_pattern, notes_text)
     dbr_match = re.findall(dbr_pattern, notes_text)
     wiki_match = re.findall(wiki_pattern, notes_text)
+    wikidata_match = re.findall(wikidata_pattern, notes_text)
     geos_match = re.findall(geonames_pattern, notes_text)
 
     notes_text = re.sub(gnd_pattern, '', notes_text)
@@ -47,6 +50,7 @@ def extract_lod_identifiers_from_note(notes_text):
     viaf_content = [item.strip('.').strip() for match in viaf_match for item in match if item]
     dbr_content = [item.strip('.').strip() for match in dbr_match for item in match if item]
     wiki_content = [item.strip('.').strip() for match in wiki_match for item in match if item]
+    wikidata_content = [item.strip('.').strip() for match in wikidata_match for item in match if item]
     geonames_content = [item.strip('.').strip() for match in geos_match for item in match if item]
 
     checked_index = notes_text.find("#checked#")
@@ -55,11 +59,11 @@ def extract_lod_identifiers_from_note(notes_text):
     
     # Remove #new#
     notes_text = notes_text.replace('#new#', '')
-    
+
     # Remove leading and trailing spaces
     notes_text = notes_text.strip()
 
-    content_dict = {"gnd": gnd_content, "viaf": viaf_content, "wiki": wiki_content, "dbr": dbr_content, "geonames": geonames_content}
+    content_dict = {"gnd": gnd_content, "viaf": viaf_content, "wiki": wiki_content, "wikidata": wikidata_content, "dbr": dbr_content, "geonames": geonames_content}
     keys = content_dict.keys()
     elements = [content_dict[key] for key in keys]
 
