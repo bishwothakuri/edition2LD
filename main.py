@@ -41,7 +41,8 @@ def main(xml_file_path: str, json_file_path: str) -> None:
         )
         with open(json_output_file_path, "w") as f:
             json.dump(metadata, f)
-        
+        logging.info("JSON file generated successfully at %s", json_output_file_path)
+
         # Create RDF graph from metadata
         g: Graph = create_rdf_graph(metadata)
          # Serialize RDF graph to RDF/XML
