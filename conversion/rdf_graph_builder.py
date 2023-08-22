@@ -28,7 +28,7 @@ wikidata = Namespace("https://www.wikidata.org/wiki/")
 
 
 def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
-    # persons = metadata.get("persons", [])
+    persons = metadata.get("persons", [])
     places = metadata.get("places", [])
     terms = metadata.get("terms", [])
     physDesc_ref_target = metadata.get("physDesc_id")
@@ -53,16 +53,40 @@ def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
     g.namespace_manager.bind("nepalica", nepalica, override=False)
     g.bind("nepalica-reg", nepalica_reg)
 
-    # person_uri = (
-        # URIRef(f"{nepalica}{physDesc_ref_target}")
-        # if physDesc_ref_target
-        # else URIRef(f"{nepalica}person")
-    # )
-    # for person in persons:
-        # person_node = URIRef(f"{person_uri}#{person['person_name'].replace(' ', '_')}")
-        # g.add((person_node, RDF.type, FOAF_NS.Person))
-        # g.add((person_node, FOAF_NS.name, Literal(person["person_name"])))
-    
+    person_uri = (
+        URIRef(f"{nepalica}{physDesc_ref_target}")
+        if physDesc_ref_target
+        else URIRef(f"{nepalica}person")
+    )
+    for person in persons:
+        person_node = URIRef(f"{person_uri}#{person['person_name'].replace(' ', '_')}")
+        g.add((person_node, RDF.type, FOAF_NS.Person))
+        g.add((person_node, FOAF_NS.name, Literal(person["person_name"])))
+        
+         # Extract alternative names and add them to the RDF graph
+        alternative_names = person.get("alternative_names", [])
+        for alt_name in alternative_names:
+            g.add((person_node, SKOS_NS.altLabel, Literal(alt_name)))
+        
+        # Add the value for nepalica-reg:{{ person['n'] }}
+        person_ref_value = person.get("n")
+        if person_ref_value:
+            rdfs_see_also_parent = nepalica_reg[person_ref_value]
+            g.add((person_node, rdfs.seeAlso, rdfs_see_also_parent))
+        
+        # Add the LOD identifiers extracted from the metadata dictionary
+        for lod_identifier_key, lod_identifier_values in person.items():
+            if lod_identifier_key in ["gnd", "viaf", "wiki", "dbr", "geonames", "wikidata"]:
+                for lod_identifier_value in lod_identifier_values:
+                    if lod_identifier_value:
+                        lod_uri = URIRef(f"{lod_identifier_key}:{lod_identifier_value}")
+                        g.add((person_node, rdfs.seeAlso, lod_uri))
+        
+        # Add the note_text to the graph 
+        note_text = person["note_text"]
+        if note_text:
+            g.add((person_node, rdfs.comment, Literal(note_text)))
+
     # Loop through place entries and add them to the RDF graph
     place_uri = (
         URIRef(f"{nepalica}{physDesc_ref_target}")
