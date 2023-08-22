@@ -82,8 +82,8 @@ def extract_metadata_from_xml(xml_file, json_file):
                 pers_entry["alternative_names"] = alternative_names
             
             # Extract the LOD identifiers from note text using the first method
-            notes_text = extract_item_note(ontology_url, ont_item_id).replace('\n',' ').replace('\r',' ').replace('\t',' ')
-            keys, elements, notes_text = extract_lod_identifiers_from_note(notes_text)
+            note_text = extract_item_note(ontology_url, ont_item_id).replace('\n',' ').replace('\r',' ').replace('\t',' ')
+            keys, elements, note_text = extract_lod_identifiers_from_note(note_text)
 
             for key, element in zip(keys, elements):
                 if element is not None:
@@ -97,7 +97,7 @@ def extract_metadata_from_xml(xml_file, json_file):
                         if person_identifiers.get(key) is not None:
                             pers_entry[key] = [person_identifiers[key]] if not isinstance(person_identifiers[key], list) else person_identifiers[key]
 
-            pers_entry["notes"] = notes_text
+            pers_entry["note_text"] = note_text
             metadata["persons"].append(pers_entry)
 
 
@@ -122,8 +122,8 @@ def extract_metadata_from_xml(xml_file, json_file):
                 place_entry["alternative_names"] = alternative_names
 
             # Extract the place LOD identifiers from notes using the first method
-            notes_text = extract_item_note(ontology_url, ont_item_id).replace('\n',' ').replace('\r',' ').replace('\t',' ')
-            keys, elements, notes_text = extract_lod_identifiers_from_note(notes_text)
+            note_text = extract_item_note(ontology_url, ont_item_id).replace('\n',' ').replace('\r',' ').replace('\t',' ')
+            keys, elements, note_text = extract_lod_identifiers_from_note(note_text)
 
             for key, element in zip(keys, elements):
                 if element is not None:
@@ -137,7 +137,7 @@ def extract_metadata_from_xml(xml_file, json_file):
                     if place_identifiers.get(key) is not None:
                         place_entry[key] = [place_identifiers[key]] if not isinstance(place_identifiers[key], list) else place_identifiers[key]
 
-            place_entry["note_text"] = notes_text
+            place_entry["note_text"] = note_text
             metadata["places"].append(place_entry)
 
 

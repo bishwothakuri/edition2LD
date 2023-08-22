@@ -6,18 +6,18 @@ def extract_item_note(ontology_url, ont_item_id):
     response = requests.get(ontology_url + ont_item_id)
     soup = BeautifulSoup(response.content, "html.parser")
     notes_row = soup.find_all('tr')
-    notes_text = ' '
+    note_text = ' '
     for row in notes_row:
         data = [x.text.strip() for x in row.find_all('td')]
         if 'Notes' in data:
-            notes_text = data[1]
+            note_text = data[1]
             
-    return notes_text
+    return note_text
 
-def extract_lod_identifiers_from_note(notes_text):
+def extract_lod_identifiers_from_note(note_text):
     '''
     Use regular expressions to extract content of specific identifier
-    Input: notes_text
+    Input: note_text
     Output: dictionary includes indentifier name and correspoinding content
 
     Reference example: https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/178
@@ -31,20 +31,20 @@ def extract_lod_identifiers_from_note(notes_text):
 
 
     # Replace multiple spaces with a single space
-    notes_text = re.sub(r'\s+', ' ', notes_text)
+    note_text = re.sub(r'\s+', ' ', note_text)
 
-    gnd_match = re.findall(gnd_pattern, notes_text)
-    viaf_match = re.findall(viaf_pattern, notes_text)
-    dbr_match = re.findall(dbr_pattern, notes_text)
-    wiki_match = re.findall(wiki_pattern, notes_text)
-    wikidata_match = re.findall(wikidata_pattern, notes_text)
-    geos_match = re.findall(geonames_pattern, notes_text)
+    gnd_match = re.findall(gnd_pattern, note_text)
+    viaf_match = re.findall(viaf_pattern, note_text)
+    dbr_match = re.findall(dbr_pattern, note_text)
+    wiki_match = re.findall(wiki_pattern, note_text)
+    wikidata_match = re.findall(wikidata_pattern, note_text)
+    geos_match = re.findall(geonames_pattern, note_text)
 
-    notes_text = re.sub(gnd_pattern, '', notes_text)
-    notes_text = re.sub(viaf_pattern, '', notes_text)
-    notes_text = re.sub(dbr_pattern, '', notes_text)
-    notes_text = re.sub(wiki_pattern, '', notes_text)
-    notes_text = re.sub(geonames_pattern, '', notes_text)
+    note_text = re.sub(gnd_pattern, '', note_text)
+    note_text = re.sub(viaf_pattern, '', note_text)
+    note_text = re.sub(dbr_pattern, '', note_text)
+    note_text = re.sub(wiki_pattern, '', note_text)
+    note_text = re.sub(geonames_pattern, '', note_text)
 
     gnd_content = [item.strip('.').strip() for match in gnd_match for item in match if item]
     viaf_content = [item.strip('.').strip() for match in viaf_match for item in match if item]
@@ -53,18 +53,18 @@ def extract_lod_identifiers_from_note(notes_text):
     wikidata_content = [item.strip('.').strip() for match in wikidata_match for item in match if item]
     geonames_content = [item.strip('.').strip() for match in geos_match for item in match if item]
 
-    checked_index = notes_text.find("#checked#")
+    checked_index = note_text.find("#checked#")
     if checked_index != -1:
-        notes_text = notes_text[:checked_index]
+        note_text = note_text[:checked_index]
     
     # Remove #new#
-    notes_text = notes_text.replace('#new#', '')
+    note_text = note_text.replace('#new#', '')
 
     # Remove leading and trailing spaces
-    notes_text = notes_text.strip()
+    note_text = note_text.strip()
 
     content_dict = {"gnd": gnd_content, "viaf": viaf_content, "wiki": wiki_content, "wikidata": wikidata_content, "dbr": dbr_content, "geonames": geonames_content}
     keys = content_dict.keys()
     elements = [content_dict[key] for key in keys]
 
-    return keys, elements, notes_text
+    return keys, elements, note_text
