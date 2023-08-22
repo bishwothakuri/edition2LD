@@ -11,12 +11,12 @@
     },
     {
         "ont_item_id":"556",
-        "geonames":"",
-        "dbr":"dbr_from_enhanced_json",
-        "wiki":"Jaya_Prakash_Malla_from_enhanced_json",
-        "wikidata":"hello world",
-        "viaf":"",
-        "gnd":""
+        "geonames":"second priority when data is Null",
+        "dbr":"seond priority when data is Null",
+        "wiki":"second priority when data is not Null",
+        "wikidata":"second priority when data is Null",
+        "viaf":"second priority when data is not Null",
+        "gnd":"Second priority when data is not Null"
     }, 
     {
         "ont_item_id":"178",
