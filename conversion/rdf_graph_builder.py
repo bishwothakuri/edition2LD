@@ -63,8 +63,8 @@ def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
         g.add((person_node, RDF.type, FOAF_NS.Person))
         g.add((person_node, FOAF_NS.name, Literal(person["person_name"])))
         
-         # Extract alternative names and add them to the RDF graph
-        alternative_names = person.get("alternative_names", [])
+        # Extract alternative names and add them to the RDF graph
+        alternative_names = [alt_name for alt_name in person.get("alternative_names", []) if alt_name != person["person_name"]]
         for alt_name in alternative_names:
             g.add((person_node, SKOS_NS.altLabel, Literal(alt_name)))
         
