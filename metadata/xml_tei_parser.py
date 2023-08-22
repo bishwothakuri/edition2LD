@@ -80,21 +80,24 @@ def extract_metadata_from_xml(xml_file, json_file):
             alternative_names = pers_data["alternative_names"]
             if alternative_names:
                 pers_entry["alternative_names"] = alternative_names
+            
+            # Extract the LOD identifiers from note text using the first method
             notes_text = extract_item_note(ontology_url, ont_item_id).replace('\n',' ').replace('\r',' ').replace('\t',' ')
-
             keys, elements, notes_text = extract_lod_identifiers_from_note(notes_text)
-            pers_entry["notes"] = notes_text
 
             for key, element in zip(keys, elements):
                 if element is not None:
-                    pers_entry[key] = element
-                else:
-                    # If the value is None, try to extract from ont_items_enhanced_sample.json
-                    ont_items_enhanced_file_path = os.path.join("data", "ont_items_enhanced_sample.json")
-                    person_identifiers = extract_person_identifiers(ont_items_enhanced_file_path, ont_item_id)
-                    if person_identifiers.get(key) is not None:
-                        pers_entry[key] = person_identifiers[key]
+                    pers_entry[key] = [element] if not isinstance(element, list) else element
 
+                # Try to update LOD identifiers from the seond mthod only if there are missing or empty
+                for key in ["gnd", "viaf", "wiki", "wikidata", "dbr", "geonames"]:
+                    if not pers_entry.get(key):
+                        ont_items_enhanced_file_path = os.path.join("data", "ont_items_enhanced_sample.json")
+                        person_identifiers = extract_person_identifiers(ont_items_enhanced_file_path, ont_item_id)
+                        if person_identifiers.get(key) is not None:
+                            pers_entry[key] = [person_identifiers[key]] if not isinstance(person_identifiers[key], list) else person_identifiers[key]
+
+            pers_entry["notes"] = notes_text
             metadata["persons"].append(pers_entry)
 
 
