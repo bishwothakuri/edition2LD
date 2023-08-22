@@ -11,19 +11,19 @@
     },
     {
         "ont_item_id":"556",
-        "geonames":"second priority when data is Null",
-        "dbr":"seond priority when data is Null",
-        "wiki":"second priority when data is not Null",
-        "wikidata":"second priority when data is Null",
-        "viaf":"second priority when data is not Null",
-        "gnd":"Second priority when data is not Null"
+        "geonames":"second_priority_when_data_is_Null",
+        "dbr":"seond_priority_when_data_is_Null",
+        "wiki":"second_priority_when_data_is_not_Null",
+        "wikidata":"second_priority_when_data_is_Null",
+        "viaf":"second_priority_when_data_is_not_Null",
+        "gnd":"Second_priority_when_data_is_not_Null"
     }, 
     {
         "ont_item_id":"178",
         "geonames":"",
         "dbr":"Prithvi_Narayan_Sha",
         "wiki":"",
-        "wikidata":"this is bishwo",
+        "wikidata":"second_priority_when_data_is_Null",
         "viaf":"",
         "gnd":""
     }, 
