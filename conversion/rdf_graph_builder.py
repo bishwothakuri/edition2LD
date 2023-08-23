@@ -7,6 +7,7 @@ GN_NS = Namespace("http://www.geonames.org/ontology#")
 SKOS_NS = Namespace("http://www.w3.org/2004/02/skos/core#")
 DC_NS = Namespace("http://purl.org/dc/elements/1.1/")
 
+
 # Define custom namespaces specific to the Nepali ontology
 nepalica = Namespace("https://nepalica.hadw-bw.de/nepal/editions/show/")
 nepalica_doi = Namespace("https://digi.hadw-bw.de/view/")
@@ -51,7 +52,7 @@ def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
 
     # Bind custom namespaces using the NamespaceManager
     g.namespace_manager.bind("nepalica", nepalica, override=False)
-    g.bind("nepalica-reg", nepalica_reg)
+    g.bind("nepalica_reg", nepalica_reg)
 
     person_uri = (
         URIRef(f"{nepalica}{physDesc_ref_target}")

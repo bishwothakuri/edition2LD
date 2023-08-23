@@ -29,8 +29,11 @@ def save_turtle_serialization(graph: Graph, file_path: str) -> None:
         if prefix != 'nepalica_reg':  # Exclude nepalica_reg namespace from this part
             turtle_data = turtle_data.replace(str(namespace), f"{prefix}:")
 
-    # Add spaces after LOD identifier values in multi-valued properties
-    turtle_data = turtle_data.replace(',\n    ', ',\n        ')
+    # lod_identifier_prefixes = ["gnd:", "viaf:", "wiki:", "dbr:", "geonames:", "wikidata:"]
+    # for prefix in lod_identifier_prefixes:
+    #     replacement = f',\n        {prefix}'  # Add a space after the comma
+    #     turtle_data = turtle_data.replace(f',{prefix}', replacement)
+
 
     # Save the modified Turtle serialization to the file
     with open(file_path, 'w') as f:

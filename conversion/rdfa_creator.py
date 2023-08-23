@@ -33,7 +33,7 @@ def generate_rdfa_from_graph(g: Graph, file_name: str) -> bytes:
       ?term a skos:Concept .
       ?term skos:prefLabel ?term_label .
       OPTIONAL { ?term skos:comment ?meaning . }
-      OPTIONAL { ?term skos:related ?ref_term . ?ref_term nepalica-reg:ref_num ?ref_num . }
+      OPTIONAL { ?term skos:related ?ref_term . ?ref_term nepalica_reg:ref_num ?ref_num . }
       OPTIONAL { ?term skos:altLabel ?alt_label . }
       OPTIONAL { ?term rdfs:seeAlso ?term_ref . }
     }
@@ -48,7 +48,7 @@ def generate_rdfa_from_graph(g: Graph, file_name: str) -> bytes:
         # }
      
     places = {}
-    for row in g.query(place_query, initBindings={"gn": GN_NS, "skos": SKOS_NS, "nepalica-reg": nepalica_reg}):
+    for row in g.query(place_query, initBindings={"gn": GN_NS, "skos": SKOS_NS, "nepalica_reg": nepalica_reg}):
         place_uri = row["place"].toPython()
         ref_num_uri = row.get("place_ref", "")
         ref_num = ref_num_uri.split("/")[-1] if ref_num_uri else ""  # Extract the number part
@@ -70,7 +70,7 @@ def generate_rdfa_from_graph(g: Graph, file_name: str) -> bytes:
             places[place_uri]["lod_identifiers"].append(lod_identifier.toPython())
 
     terms = {}
-    for row in g.query(term_query, initBindings={"skos": SKOS_NS, "nepalica-reg": nepalica_reg}):
+    for row in g.query(term_query, initBindings={"skos": SKOS_NS, "nepalica_reg": nepalica_reg}):
         term_uri = row["term"].toPython()
         ref_num_uri = row.get("term_ref", "") 
         ref_num = ref_num_uri.split("/")[-1] if ref_num_uri else ""  # Extract the number part
