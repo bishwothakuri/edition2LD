@@ -22,7 +22,7 @@ def save_turtle_serialization(graph: Graph, file_path: str) -> None:
     turtle_data = graph.serialize(format='turtle')
 
     # Remove the angle brackets around subject, object, and predicate
-    turtle_data = turtle_data.replace("<", "").replace(">", "")
+    # turtle_data = turtle_data.replace("<", "").replace(">", "")
 
     # Replace full URIs with namespace prefixes
     for prefix, namespace in namespaces.items():
@@ -38,9 +38,9 @@ def save_turtle_serialization(graph: Graph, file_path: str) -> None:
     # Save the modified Turtle serialization to the file
     with open(file_path, 'w') as f:
         # Write the namespaces in the heading
-        for prefix, namespace in namespaces.items():
-            f.write(f"@prefix {prefix}: <{namespace}> .\n")
-        f.write('\n')
+        # for prefix, namespace in namespaces.items():
+            # f.write(f"@prefix {prefix}: <{namespace}> .\n")
+        # f.write('\n')
 
         # Write the modified Turtle data
         f.write(turtle_data)
