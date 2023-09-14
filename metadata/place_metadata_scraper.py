@@ -22,7 +22,8 @@ def extract_lod_identifiers_from_note(note_text):
 
     Reference example: https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/178
     '''
-    gnd_pattern = r'gnd:(\d+),|gnd:(\d+).|gnd:(\d+-\d+),|gnd:(\d+-\d+).'
+    #gnd_pattern = r'gnd:(\d+),|gnd:(\d+).|gnd:(\d+-\d+),|gnd:(\d+-\d+).'
+    gnd_pattern = r'gnd:(\d+(?:-\d+)?).|gnd:(\d+(?:-\d+)?),'
     viaf_pattern = r'viaf:(\d+),|viaf:(\d+).'
     wiki_pattern = r'wiki:(\S+),|wiki:(\S+).'
     geonames_pattern = r'geonames:(\d+),|geonames:(\d+).|geonames:\s+(\d+),|geonames:\s+(\d+).'
@@ -53,13 +54,17 @@ def extract_lod_identifiers_from_note(note_text):
     wikidata_content = [item.strip('.').strip() for match in wikidata_match for item in match if item]
     geonames_content = [item.strip('.').strip() for match in geos_match for item in match if item]
 
+    #Delete #... until end of entry-no matter what comes after it
+    checked_index = note_text.find("#")
+    note_text = note_text[:checked_index]
+    '''
     checked_index = note_text.find("#checked#")
     if checked_index != -1:
         note_text = note_text[:checked_index]
     
     # Remove #new#
     note_text = note_text.replace('#new#', '')
-
+    '''
     # Remove leading and trailing spaces
     note_text = note_text.strip()
 
