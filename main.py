@@ -39,8 +39,8 @@ def main(xml_file_path: str, json_file_path: str) -> None:
         json_output_file_path = os.path.join(
             "output", os.path.splitext(os.path.basename(xml_file_path))[0] + ".json"
         )
-        with open(json_output_file_path, "w") as f:
-            json.dump(metadata, f)
+        with open(json_output_file_path, "w",  encoding="utf-8") as f:
+            json.dump(metadata, f, ensure_ascii=False, indent=4)
         logging.info("JSON file generated successfully at %s", json_output_file_path)
 
         # Create RDF graph from metadata
