@@ -27,13 +27,13 @@ def main(xml_file_path: str, json_file_path: str) -> None:
     """
     try:
         metadata = extract_metadata_from_xml(xml_file_path, json_file_path)
-        xml_tei = generate_xml_tei_from_metadata(metadata)
-        output_file_path = os.path.join(
-            "output", os.path.splitext(os.path.basename(xml_file_path))[0] + ".xml"
-        )
-        with open(output_file_path, "wb") as f:
-            f.write(xml_tei)
-        logging.info("XML-TEI file generated successfully at %s", output_file_path)
+        # xml_tei = generate_xml_tei_from_metadata(metadata)
+        # output_file_path = os.path.join(
+        #     "output", os.path.splitext(os.path.basename(xml_file_path))[0] + ".xml"
+        # )
+        # with open(output_file_path, "wb") as f:
+        #     f.write(xml_tei)
+        # logging.info("XML-TEI file generated successfully at %s", output_file_path)
         
         # Store metadata in a separate JSON file
         json_output_file_path = os.path.join(
