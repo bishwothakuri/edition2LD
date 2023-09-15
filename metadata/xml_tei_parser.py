@@ -1,4 +1,5 @@
 import os
+import re
 import defusedxml.ElementTree as ET
 from metadata.ont_item_mapper import extract_item_entity_id
 from metadata.term_metadata_scraper import extract_term_meaning
@@ -61,45 +62,54 @@ def extract_metadata_from_xml(xml_file, json_file):
 
         ont_item_occurrences = extract_item_entity_id(tei_id, json_file)
 
-        # Extract person names
-        pers_name_dict = {}
-        for pers_name in pers_names:
-            if pers_name.text is not None:
-                pers_name_text = " ".join(pers_name.text.split())
-                n_value = pers_name.get("n")
-                ont_item_ids = ont_item_occurrences.get(n_value, [])
-                for ont_item_id in ont_item_ids:
-                    pers_entry = pers_name_dict.setdefault(
-                        ont_item_id, {"primary_name": pers_name_text, "alternative_names": []}
-                    )
-                    pers_entry["alternative_names"].append(pers_name_text) 
+        # Extract person names and LOD identifiers
+        name_dict = {}  # Dictionary to store names by ont_item_id
+        for pers_name in root.findall(".//tei:persName", NS):
+            n_value = pers_name.get("n", "")
+            pers_name_text = " ".join([re.sub(r'\s+', ' ', w.text or "").strip() for w in pers_name.findall(".//tei:w", NS)] + [re.sub(r'\s+', ' ', pers_name.text or "").strip()])
+            pers_name_text = pers_name_text.strip()
 
-        # Construct metadata["persons"] list
-        for ont_item_id, pers_data in pers_name_dict.items():
-            pers_entry = {"n": ont_item_id, "person_name": pers_data["primary_name"]}
-            alternative_names = pers_data["alternative_names"]
-            if alternative_names:
-                pers_entry["alternative_names"] = alternative_names
-            
-            # Extract the LOD identifiers from note text using the first method
+            # Check if there are tei:w elements inside persName
+            label_name = "devanagari_name" if pers_name.findall(".//tei:w", NS) else "anglicized_name"
+
+            # Retrieve ont_item_id based on xml_identifier
+            ont_item_ids = ont_item_occurrences.get(n_value, [])
+
+            # Group names by ont_item_id
+            for ont_item_id in ont_item_ids:
+                if ont_item_id not in name_dict:
+                    name_dict[ont_item_id] = {"n": ont_item_id}
+
+                if label_name == "devanagari_name":
+                    name_dict[ont_item_id][label_name] = pers_name_text
+                else:
+                    name_info = name_dict.setdefault(ont_item_id, {"n": n_value})
+                    if "anglicized_name" not in name_info:
+                        name_info["anglicized_name"] = pers_name_text
+                    else:
+                        name_info.setdefault("alternative_names", []).append(pers_name_text)
+
+        # Process the name_dict to assign the names correctly and extract LOD identifiers
+        for ont_item_id, name_info in name_dict.items():
+            metadata["persons"].append(name_info)
+
+            # Extract the LOD identifiers from the note
             note_text = extract_item_note(ontology_url, ont_item_id).replace('\n',' ').replace('\r',' ').replace('\t',' ')
             keys, elements, note_text = extract_lod_identifiers_from_note(note_text)
 
             for key, element in zip(keys, elements):
                 if element is not None:
-                    pers_entry[key] = [element] if not isinstance(element, list) else element
+                    name_info[key] = [element] if not isinstance(element, list) else element
 
-                # Try to update LOD identifiers from the seond mthod only if there are missing or empty
+                # Try to update LOD identifiers from the second method only if there are missing or empty
                 for key in ["gnd", "viaf", "wiki", "wikidata", "dbr", "geonames"]:
-                    if not pers_entry.get(key):
+                    if not name_info.get(key):
                         ont_items_enhanced_file_path = os.path.join("data", "ont_items_enhanced_sample.json")
                         person_identifiers = extract_person_identifiers(ont_items_enhanced_file_path, ont_item_id)
                         if person_identifiers.get(key) is not None:
-                            pers_entry[key] = [person_identifiers[key]] if not isinstance(person_identifiers[key], list) else person_identifiers[key]
+                            name_info[key] = [person_identifiers[key]] if not isinstance(person_identifiers[key], list) else person_identifiers[key]
 
-            pers_entry["note_text"] = note_text
-            metadata["persons"].append(pers_entry)
-
+            name_info["note_text"] = note_text
 
         # Extract place names 
         place_name_dict = {}
@@ -183,7 +193,6 @@ def extract_metadata_from_xml(xml_file, json_file):
             metadata["terms"].append(term_entry)
 
         print("Metadata extracted successfully from XML file.")
-        print(metadata)
         return metadata
 
     except Exception as e:
