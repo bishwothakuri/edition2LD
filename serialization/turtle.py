@@ -1,3 +1,4 @@
+import re
 from rdflib import Graph, Namespace
 
 def save_turtle_serialization(graph: Graph, file_path: str) -> None:
@@ -33,6 +34,9 @@ def save_turtle_serialization(graph: Graph, file_path: str) -> None:
     # for prefix in lod_identifier_prefixes:
     #     replacement = f',\n        {prefix}'  # Add a space after the comma
     #     turtle_data = turtle_data.replace(f',{prefix}', replacement)
+
+    # Use regular expressions to add spaces before commas (,) within Turtle objects
+    turtle_data = re.sub(r'([^,])\s*,', r'\1 ,', turtle_data)
 
 
     # Save the modified Turtle serialization to the file
