@@ -60,12 +60,17 @@ def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
         else URIRef(f"{nepalica}person")
     )
     for person in persons:
-        person_node = URIRef(f"{person_uri}#{person['person_name'].replace(' ', '_')}")
+        person_node = URIRef(f"{person_uri}#{person['anglicized_name'].replace(' ', '_')}")
         g.add((person_node, RDF.type, FOAF_NS.Person))
-        g.add((person_node, FOAF_NS.name, Literal(person["person_name"])))
+        g.add((person_node, FOAF_NS.name, Literal(person["anglicized_name"])))
+
+        # Add devanagari_name as a custom property
+        if "devanagari_name" in person:
+            g.add((person_node, rdfs.label, Literal(person["devanagari_name"])))
+
         
         # Extract alternative names and add them to the RDF graph
-        alternative_names = [alt_name for alt_name in person.get("alternative_names", []) if alt_name != person["person_name"]]
+        alternative_names = [alt_name for alt_name in person.get("alternative_names", []) if alt_name != person["anglicized_name"]]
         for alt_name in alternative_names:
             g.add((person_node, SKOS_NS.altLabel, Literal(alt_name)))
         
