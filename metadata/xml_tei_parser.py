@@ -8,9 +8,9 @@ from metadata.lod_identifier_extractor import (
     extract_place_identifiers,
     extract_person_identifiers
 )
-from metadata.place_metadata_scraper import (
-    extract_item_note,
-    extract_lod_identifiers_from_note
+from metadata.webcrawler import (
+    extract_additional_info_from_note,
+    extract_item_note_and_surname
 )
 
 
@@ -35,7 +35,6 @@ def extract_metadata_from_xml(xml_file, json_file):
         author_role_issuer = root.find(".//tei:author[@role='issuer']", NS).text
         main_editor = root.find(".//tei:respStmt/tei:name[@type='main_editor']", NS).text
 
-        pers_names = root.findall(".//tei:persName", NS)
         place_names = root.findall(".//tei:placeName", NS)
         terms = root.findall(".//tei:term", NS)
         ref_element = root.find(".//tei:physDesc//tei:ref", NS)
@@ -93,16 +92,19 @@ def extract_metadata_from_xml(xml_file, json_file):
         for ont_item_id, name_info in name_dict.items():
             metadata["persons"].append(name_info)
 
-            # Extract the LOD identifiers from the note
-            note_text = extract_item_note(ontology_url, ont_item_id).replace('\n',' ').replace('\r',' ').replace('\t',' ')
-            keys, elements, note_text = extract_lod_identifiers_from_note(note_text)
+            # Extract the LOD identifiers and gender from the note
+            note_text_and_surname = extract_item_note_and_surname(ontology_url, ont_item_id)
+            note_text = note_text_and_surname["note_text"].replace('\n',' ').replace('\r',' ').replace('\t',' ')
+            surname = note_text_and_surname["surname"]
+
+            keys, elements, note_text = extract_additional_info_from_note(note_text)
 
             for key, element in zip(keys, elements):
                 if element is not None:
                     name_info[key] = [element] if not isinstance(element, list) else element
 
                 # Try to update LOD identifiers from the second method only if there are missing or empty
-                for key in ["gnd", "viaf", "wiki", "wikidata", "dbr", "geonames"]:
+                for key in ["gnd", "viaf", "wiki", "wikidata", "dbr", "geonames", "gender"]:
                     if not name_info.get(key):
                         ont_items_enhanced_file_path = os.path.join("data", "ont_items_enhanced_sample.json")
                         person_identifiers = extract_person_identifiers(ont_items_enhanced_file_path, ont_item_id)
@@ -110,6 +112,7 @@ def extract_metadata_from_xml(xml_file, json_file):
                             name_info[key] = [person_identifiers[key]] if not isinstance(person_identifiers[key], list) else person_identifiers[key]
 
             name_info["note_text"] = note_text
+            name_info["surname"] = surname
 
         # Extract place names 
         place_name_dict = {}
@@ -131,9 +134,10 @@ def extract_metadata_from_xml(xml_file, json_file):
             if alternative_names:
                 place_entry["alternative_names"] = alternative_names
 
-            # Extract the place LOD identifiers from notes using the first method
-            note_text = extract_item_note(ontology_url, ont_item_id).replace('\n',' ').replace('\r',' ').replace('\t',' ')
-            keys, elements, note_text = extract_lod_identifiers_from_note(note_text)
+            # Extract the LOD identifiers and gender from the note
+            note_text = extract_item_note_and_surname(ontology_url, ont_item_id)["note_text"].replace('\n',' ').replace('\r',' ').replace('\t',' ')
+
+            keys, elements, note_text = extract_additional_info_from_note(note_text)
 
             for key, element in zip(keys, elements):
                 if element is not None:

@@ -26,6 +26,7 @@ wiki = Namespace("https://de.wikipedia.org/wiki/")
 viaf = Namespace("https://viaf.org/viaf/")
 gnd = Namespace("https://d-nb.info/gnd/")
 wikidata = Namespace("https://www.wikidata.org/wiki/")
+gndo = Namespace("https://d-nb.info/standards/elementset/gnd#")
 
 
 def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
@@ -48,6 +49,7 @@ def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
     g.bind("viaf", viaf)
     g.bind("gnd", gnd)
     g.bind("wikidata", wikidata)
+    g.bind("gndo", gndo)
 
 
     # Bind custom namespaces using the NamespaceManager
@@ -62,11 +64,11 @@ def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
     for person in persons:
         person_node = URIRef(f"{person_uri}#{person['anglicized_name'].replace(' ', '_')}")
         g.add((person_node, RDF.type, FOAF_NS.Person))
-        g.add((person_node, FOAF_NS.name, Literal(person["anglicized_name"])))
+        g.add((person_node, FOAF_NS.name, Literal(person["anglicized_name"], lang='ne')))
 
         # Add devanagari_name as a custom property
         if "devanagari_name" in person:
-            g.add((person_node, rdfs.label, Literal(person["devanagari_name"])))
+            g.add((person_node, rdfs.devanagariLabel, Literal(person["devanagari_name"], lang='ne')))
 
         
         # Extract alternative names and add them to the RDF graph
@@ -87,7 +89,17 @@ def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
                     if lod_identifier_value:
                         lod_uri = URIRef(f"{lod_identifier_key}:{lod_identifier_value}")
                         g.add((person_node, rdfs.seeAlso, lod_uri))
+
+        # Add the gender and its value to the RDF graph as a single value
+        gender_value = person.get("gender")
+        if gender_value:
+            g.add((person_node, FOAF_NS.gender, Literal(gender_value[0])))
         
+        # Add surname if available
+        if "surname" in person:
+            g.add((person_node, gndo.surname, Literal(person["surname"])))
+
+
         # Add the note_text to the graph 
         note_text = person["note_text"]
         if note_text:
