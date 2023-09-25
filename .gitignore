@@ -133,7 +133,7 @@ testcode/
 dump/
 output/
 *.log
-workplan.txt
+*.txt
 .DS_Store
 
 
