@@ -1,0 +1,1395 @@
+@prefix : <https://example.org/nepalplaces#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix nplpe: <https://example.org/nepalpeople#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix viaf: <https://viaf.org/viaf/> .
+@base <https://example.org/nepalplaces> .
+
+# range bei Literalen: 	http://www.w3.org/2000/01/rdf-schema#Literal
+
+<https://example.org/nepalplaces> rdf:type owl:Ontology ;
+                                   cc:license <https://creativecommons.org/publicdomain/zero/1.0> ;
+                                   dcterms:rights "CC-Zero" ;
+                                   dcterms:issued "2021-08-03T11:18:00"^^xsd:dateTime ;
+                                   owl:versionInfo 0.1 ;
+                                   dcterms:creator "Sabine Tittel" ;
+                                   vann:preferredNamespacePrefix "nplpl" ;
+                                   dcterms:title "NepalPlaces"@en ;
+                                   dcterms:description "This ontology is build to model place names and geographical names from Nepal that occur in the text corpus build by the research project &quot;Documents on the History of Religion and Law of Pre-modern Nepal&quot;, Heidelberg Academy of Sciences and Humanities. The corpus contains documents and other texts from the early Śāha (1769-1846) and Rāṇā (1846-1951) periods."@en ;
+                                   vann:preferredNamespaceUri "https://example.org/nepalplaces#" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://creativecommons.org/ns#license
+cc:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+dcterms:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+dcterms:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+dcterms:issued rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/rights
+dcterms:rights rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geonames.org/ontology#alternateName
+gn:alternateName rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geonames.org/ontology#countryCode
+gn:countryCode rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#sameAs
+owl:sameAs rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://example.org/nepalplaces#connectsTo
+:connectsTo rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Place ;
+                 rdfs:range :Person ;
+                 rdfs:comment "The 'connectsTo' property is used to establish a link between a place name and a person."@en ;
+                 rdfs:label "connects to"@en .
+
+
+###  https://example.org/nepalplaces#flowsIntoRiverAt
+:flowsIntoRiverAt rdf:type owl:ObjectProperty ;
+                       rdfs:domain :River ;
+                       rdfs:range :Place ;
+                       rdfs:comment "The 'flowsIntoRiverAt' property is used to define the place where a rivers flows into another river."@en ;
+                       rdfs:label "flows into river at"@en .
+
+
+###  https://example.org/nepalplaces#hasTributary
+:hasTributary rdf:type owl:ObjectProperty ;
+                   owl:inverseOf :isTributaryOf ;
+                   rdfs:domain :River ;
+                   rdfs:range :River ;
+                   rdfs:comment "The 'hasTributary' property indicates that the river has a tributary river."@en ;
+                   rdfs:label "has tributary"@en .
+
+
+###  https://example.org/nepalplaces#isCapitalOf
+:isCapitalOf rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Settlement ;
+                  rdfs:range :PopulatedPlace .
+
+
+###  https://example.org/nepalplaces#isLocatedAt
+:isLocatedAt rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Place ;
+                  rdfs:range :Place ;
+                  rdfs:comment "The 'isLocatedAt' property is used to indicate a place an individual is located At, e.g., at the bank of a particular river."@en ;
+                  rdfs:label "is located at"@en .
+
+
+###  https://example.org/nepalplaces#isLocatedIn
+:isLocatedIn rdf:type owl:ObjectProperty ,
+                           owl:TransitiveProperty ;
+                  rdfs:domain :Place ;
+                  rdfs:range :Place ;
+                  rdfs:comment "The 'isLocatedIn' property is used to indicate a larger spatial area an individual is located in." ;
+                  rdfs:label "is located in"@en .
+
+
+###  https://example.org/nepalplaces#isTributaryOf
+:isTributaryOf rdf:type owl:ObjectProperty ;
+                    rdfs:domain :River ;
+                    rdfs:range :River ;
+                    rdfs:comment "The 'isTributaryOf' property indicates that one river is a tributary of another one." ;
+                    rdfs:label "is tributary of"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://example.org/nepalplaces#AdministrativeRegion
+:AdministrativeRegion rdf:type owl:Class ;
+                           rdfs:subClassOf :Region ;
+                           rdfs:comment "An area under the jurisdiction of an administrative body."@en ;
+                           rdfs:label "Verwaltungsregion"@de ,
+                                      "administrative region"@en ;
+                           rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/AdministrativeRegion> .
+
+
+###  https://example.org/nepalplaces#ArchitecturalStructure
+:ArchitecturalStructure rdf:type owl:Class ;
+                             rdfs:subClassOf :Place ;
+                             rdfs:comment "A human-made, free-standing, immobile outdoor construction."@en ;
+                             rdfs:label "Bauliche Struktur"@de ,
+                                        "architectural structure"@en ;
+                             rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/ArchitecturalStructure> .
+
+
+###  https://example.org/nepalplaces#BodyOfWater
+:BodyOfWater rdf:type owl:Class ;
+                  rdfs:subClassOf :NaturalPlace ;
+                  rdfs:comment "A significant accumulation of water on a planet's surface such as ocean, sea, lake, pond, and sim."@en ;
+                  rdfs:label "Gewässer"@de ,
+                             "body of water"@en ;
+                  rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/BodyOfWater> .
+
+
+###  https://example.org/nepalplaces#Bridge
+:Bridge rdf:type owl:Class ;
+             rdfs:subClassOf :RouteOfTransportation ;
+             rdfs:comment "A structure built to span physical obstacles such as a body of water, valley, or road."@en ;
+             rdfs:label "Brücke"@de ,
+                        "bridge"@en ,
+                        "पुल"@ne ;
+             rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/Bridge> .
+
+
+###  https://example.org/nepalplaces#Building
+:Building rdf:type owl:Class ;
+               rdfs:subClassOf :ArchitecturalStructure ;
+               rdfs:comment "A human-made, free-standing, immobile outdoor construction."@en ;
+               rdfs:label "Gebäude"@de ,
+                          "bhavana"@ne ,
+                          "building"@en ,
+                          "भवन"@ne ;
+               rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/Building> .
+
+
+###  https://example.org/nepalplaces#Canal
+:Canal rdf:type owl:Class ;
+            rdfs:subClassOf :Stream ;
+            rdfs:comment "A man-made channel for water."@en ;
+            rdfs:label "Kanal"@de ,
+                       "canal"@en ;
+            rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/Canal> .
+
+
+###  https://example.org/nepalplaces#Capital
+:Capital rdf:type owl:Class ;
+              rdfs:subClassOf :City ;
+              rdfs:comment "A municipality with primary status in a state, country, province, or other region as its seat of government."@en ;
+              rdfs:label "Hauptstadt"@de ,
+                         "capital"@en ,
+                         "rājadhānī"@ne ,
+                         "राजधानी"@ne ;
+              rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/Capital> .
+
+
+###  https://example.org/nepalplaces#CapitalOfRegion
+:CapitalOfRegion rdf:type owl:Class ;
+                      rdfs:subClassOf :City ;
+                      rdfs:comment "The seat of government of a first order administration division."@en ;
+                      rdfs:label "Hauptstadt der Region"@de ,
+                                 "capital of region"@en ;
+                      rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/CapitalOfRegion> .
+
+
+###  https://example.org/nepalplaces#Castle
+:Castle rdf:type owl:Class ;
+             rdfs:subClassOf :Building ;
+             rdfs:comment "A house like structure that serves as a military structure, to live in, for status, pleasure, hunt, and sim."@en ;
+             rdfs:label "Burg"@de ,
+                        "Schloss"@de ,
+                        "castle"@en ;
+             rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/Castle> .
+
+
+###  https://example.org/nepalplaces#Cemetery
+:Cemetery rdf:type owl:Class ;
+               rdfs:subClassOf :Place ;
+               rdfs:comment "A burial place for the remains of dead people or animals."@en ;
+               rdfs:label "Friedhof"@de ,
+                          "cemetery"@en ,
+                          "graveyard"@en ;
+               rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/Cemetery> .
+
+
+###  https://example.org/nepalplaces#Church
+:Church rdf:type owl:Class ;
+             rdfs:subClassOf :ReligiousBuilding ;
+             rdfs:comment "A religious building used for Christian worship services and Christian religious activities."@en ;
+             rdfs:label "Kirche"@de ,
+                        "church"@en ;
+             rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/Church> .
+
+
+###  https://example.org/nepalplaces#City
+:City rdf:type owl:Class ;
+           rdfs:subClassOf :Settlement ;
+           rdfs:comment "A relatively large, permanent, and typically urban settlement."@en ;
+           rdfs:label "Stadt"@de ,
+                      "city"@en ,
+                      "sahara"@ne ,
+                      "सहर"@ne ;
+           rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/City> ,
+                        <https://www.geonames.org/ontology/documentation.html#PPL> .
+
+
+###  https://example.org/nepalplaces#CityDistrict
+:CityDistrict rdf:type owl:Class ;
+                   rdfs:subClassOf :Settlement ;
+                   rdfs:comment "A District, borough, area or neighbourhood in a city or town."@en ;
+                   rdfs:label "Stadtviertel"@de ,
+                              "city district"@en ,
+                              "टोल"@ne ,
+                              "ṭola"@ne ;
+                   rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/CityDistrict> .
+
+
+###  https://example.org/nepalplaces#Country
+:Country rdf:type owl:Class ;
+              rdfs:subClassOf :PopulatedPlace ;
+              rdfs:comment "A distinct territorial body or political entity."@en ;
+              rdfs:label "Land"@de ,
+                         "country"@en ,
+                         "deśa"@ne ,
+                         "देश"@ne ;
+              rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/Country> .
+
+
+###  https://example.org/nepalplaces#CremationGround
+:CremationGround rdf:type owl:Class ;
+                      rdfs:subClassOf :Place ;
+                      rdfs:comment "A place where dead bodies are burnt."@en ;
+                      rdfs:label "Verbrennungsstätte"@de ,
+                                 "cremation ground"@en .
+
+
+###  https://example.org/nepalplaces#CultivatedArea
+:CultivatedArea rdf:type owl:Class ;
+                     rdfs:subClassOf :Place ;
+                     rdfs:comment "A cultivated area used for agriculture and sim."@en ;
+                     rdfs:label "Kulturfläche"@de ,
+                                "cultivated area"@en .
+
+
+###  https://example.org/nepalplaces#District
+:District rdf:type owl:Class ;
+               rdfs:subClassOf :GovernmentalAdministrativeRegion ;
+               rdfs:comment "An administrative division typically managed by a local government."@en ;
+               rdfs:label "Bezirk"@de ,
+                          "district"@en ,
+                          "jillā"@ne ,
+                          "जिल्ला"@ne ;
+               rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/District> .
+
+
+###  https://example.org/nepalplaces#Forest
+:Forest rdf:type owl:Class ;
+             rdfs:subClassOf :NaturalPlace ;
+             rdfs:comment "A natural place grown with trees."@en ;
+             rdfs:label "Wald"@de ,
+                        "bana"@ne ,
+                        "forest"@en ,
+                        "बन"@ne ;
+             rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/Forest> .
+
+
+###  https://example.org/nepalplaces#Fort
+:Fort rdf:type owl:Class ;
+           rdfs:subClassOf :MilitaryStructure ;
+           rdfs:comment "A fortified building or place typically to protect traffic routes or sim."@en ;
+           rdfs:label "Fort"@de ,
+                      "fort"@en ,
+                      "killā"@ne ,
+                      "koṭa"@ne ,
+                      "किल्ला"@ne ,
+                      "कोट"@ne ;
+           rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/Fort> .
+
+
+###  https://example.org/nepalplaces#Garden
+:Garden rdf:type owl:Class ;
+             rdfs:subClassOf :Place ;
+             rdfs:comment "A planned (outdoor) space for the display, cultivation, and enjoyment of plants and other forms of nature."@en ;
+             rdfs:label "Garten"@de ,
+                        "bagaĩcā"@ne ,
+                        "garden"@en ,
+                        "बगैँचा"@ne ;
+             rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/Garden> .
+
+
+###  https://example.org/nepalplaces#Ghat
+:Ghat rdf:type owl:Class ;
+           rdfs:subClassOf :ArchitecturalStructure ;
+           rdfs:comment "A set of steps leading down to a body of water with a platform for bathing typically situated at their base."@en ;
+           rdfs:label "Ghat"@de ,
+                      "ghat"@en .
+
+
+###  https://example.org/nepalplaces#GovernmentalAdministrativeRegion
+:GovernmentalAdministrativeRegion rdf:type owl:Class ;
+                                       rdfs:subClassOf :AdministrativeRegion ;
+                                       rdfs:comment "An administrative body governing a certain territorial unity."@en ;
+                                       rdfs:label "Staatliche Verwaltungsregion"@de ,
+                                                  "governmental administrative region"@en ;
+                                       rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/GovernmentalAdministrativeRegion> .
+
+
+###  https://example.org/nepalplaces#HistoricPlace
+:HistoricPlace rdf:type owl:Class ;
+                    rdfs:subClassOf :Place ;
+                    rdfs:comment "A place of historic value."@en ;
+                    rdfs:label "Historischer Ort"@de ,
+                               "historic place"@en ;
+                    rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/HistoricPlace> .
+
+
+###  https://example.org/nepalplaces#HistoricalAreaOfAuthority
+:HistoricalAreaOfAuthority rdf:type owl:Class ;
+                                rdfs:subClassOf :AdministrativeRegion ;
+                                rdfs:comment "An area of authority of historical value, e.g., a kingdom."@en ;
+                                rdfs:label "Historischer Verantwortungsbereich"@de ,
+                                           "historical area of authority"@en ;
+                                rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/HistoricalAreaOfAuthority> .
+
+
+###  https://example.org/nepalplaces#HistoricalDistrict
+:HistoricalDistrict rdf:type owl:Class ;
+                         rdfs:subClassOf :District ;
+                         rdfs:comment "A district of historical value."@en ;
+                         rdfs:label "Historischer Bezirk"@de ,
+                                    "historical district"@en ;
+                         rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/HistoricalDistrict> .
+
+
+###  https://example.org/nepalplaces#HistoricalSettlement
+:HistoricalSettlement rdf:type owl:Class ;
+                           rdfs:subClassOf :Settlement ;
+                           rdfs:comment "A settlement of historical value."@en ;
+                           rdfs:label "Historische Siedlung"@de ,
+                                      "historical settlement"@en ;
+                           rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/HistoricalSettlement> .
+
+
+###  https://example.org/nepalplaces#Hospital
+:Hospital rdf:type owl:Class ;
+               rdfs:subClassOf :Building ;
+               rdfs:comment "A health care institution providing patient treatment with medical staff and medical equipment."@en ;
+               rdfs:label "Klinik"@de ,
+                          "Krankenhaus"@de ,
+                          "aspatāla"@ne ,
+                          "hospital"@en ,
+                          "अस्पताल"@ne ;
+               rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/Hospital> .
+
+
+###  https://example.org/nepalplaces#Infrastructure
+:Infrastructure rdf:type owl:Class ;
+                     rdfs:subClassOf :ArchitecturalStructure ;
+                     rdfs:comment "A set of facilities, physical components, and services essential to enable and support the economic functionality and societal living conditions of an environment."@en ;
+                     rdfs:label "Infrastrucktur"@de ,
+                                "infrastructure"@en ;
+                     rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/Infrastructure> .
+
+
+###  https://example.org/nepalplaces#Lake
+:Lake rdf:type owl:Class ;
+           rdfs:subClassOf :BodyOfWater ;
+           rdfs:comment "An area filled with water, localized in a basin and surrounded by land, typically but not necessarily fed or drained by a river."@en ;
+           rdfs:label "See"@de ,
+                      "lake"@en ,
+                      "tāla"@ne ,
+                      "ताल"@ne ;
+           rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/Lake> .
+
+
+###  https://example.org/nepalplaces#MilitaryStructure
+:MilitaryStructure rdf:type owl:Class ;
+                        rdfs:subClassOf :ArchitecturalStructure ;
+                        rdfs:comment "A building or complex of buildings that serve for military functions."@en ;
+                        rdfs:label "Militärisches Bauwerk"@de ,
+                                   "military structure"@en ;
+                        rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/MilitaryStructure> .
+
+
+###  https://example.org/nepalplaces#Monastery
+:Monastery rdf:type owl:Class ;
+                rdfs:subClassOf :ReligiousBuilding ;
+                rdfs:comment "A religious building or complex of buildings comprising the domestic quarters and workplaces of monastics (male and female)."@en ;
+                rdfs:label "Kloster"@de ,
+                           "monastery"@en ;
+                rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/Monastery> .
+
+
+###  https://example.org/nepalplaces#MonasteryBuddhist
+:MonasteryBuddhist rdf:type owl:Class ;
+                        rdfs:subClassOf :Monastery ;
+                        rdfs:comment "A religious building or complex of buildings comprising the domestic quarters and workplaces of Buddhist monastics (male and female)."@en ;
+                        rdfs:label "Buddhistisches Kloster"@de ,
+                                   "bahāla"@ne ,
+                                   "buddhist monastery"@en ,
+                                   "बहाल"@ne .
+
+
+###  https://example.org/nepalplaces#MonasteryChristian
+:MonasteryChristian rdf:type owl:Class ;
+                         rdfs:subClassOf :Monastery ;
+                         rdfs:comment "A religious building or complex of buildings comprising the domestic quarters and workplaces of Christian monastics (male and female)."@en ;
+                         rdfs:label "Christliches Kloster"@de ,
+                                    "christian monastery"@en .
+
+
+###  https://example.org/nepalplaces#MonasteryHindu
+:MonasteryHindu rdf:type owl:Class ;
+                     rdfs:subClassOf :Monastery ;
+                     rdfs:comment "A religious building or complex of buildings comprising the domestic quarters and workplaces of Hindu monastics (male and female)."@en ;
+                     rdfs:label "Hinduistisches Kloster"@de ,
+                                "hindu monastery"@en ,
+                                "maṭha"@ne ,
+                                "मठ"@ne .
+
+
+###  https://example.org/nepalplaces#Mosque
+:Mosque rdf:type owl:Class ;
+             rdfs:subClassOf :ReligiousBuilding ;
+             rdfs:comment "A religious building used for Muslim worship services and Muslim religious activities."@en ;
+             rdfs:label "Moschee"@de ,
+                        "mosque"@en ;
+             rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/Mosque> .
+
+
+###  https://example.org/nepalplaces#Mountain
+:Mountain rdf:type owl:Class ;
+               rdfs:subClassOf :NaturalPlace ;
+               rdfs:comment "A natural place rising more than 300m (1000 feet) above the surrounding land, typically with steep sides and one or several."@en ;
+               rdfs:label "Berg"@de ,
+                          "mountain"@en ,
+                          "parbata"@ne ,
+                          "पर्बत"@ne ;
+               rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/Mountain> .
+
+
+###  https://example.org/nepalplaces#MountainPass
+:MountainPass rdf:type owl:Class ;
+                   rdfs:subClassOf :NaturalPlace ;
+                   rdfs:comment "A path allowing for the crossing of a mountain or mountain chain, typically a saddle point in between two areas of higher elevation."@en ;
+                   rdfs:label "Bergpass"@de ,
+                              "bhanjyāṅa"@ne ,
+                              "mountain pass"@en ,
+                              "भन्ज्याङ"@ne ;
+                   rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/MountainPass> .
+
+
+###  https://example.org/nepalplaces#MountainRange
+:MountainRange rdf:type owl:Class ;
+                    rdfs:subClassOf :NaturalPlace ;
+                    rdfs:comment "A chain of continuous mountains."@en ;
+                    rdfs:label "Bergzug"@de ,
+                               "Gebirge"@de ,
+                               "Gebirgskette"@de ,
+                               "mountain range"@en ;
+                    rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/MountainRange> .
+
+
+###  https://example.org/nepalplaces#Municipality
+:Municipality rdf:type owl:Class ;
+                   rdfs:subClassOf :GovernmentalAdministrativeRegion ;
+                   rdfs:comment "An administrative body governing a territorial unity on the lower level, administering one or a few more settlements."@en ;
+                   rdfs:label "Gemeinde"@de ,
+                              "municipality"@en ,
+                              "nagarapālikā"@ne ,
+                              "नगरपालिका"@ne ;
+                   rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/Municipality> .
+
+
+###  https://example.org/nepalplaces#Museum
+:Museum rdf:type owl:Class ;
+             rdfs:subClassOf :Building ;
+             rdfs:comment "An institution that conserves tangible artifacts and other objects of artistic, cultural, historical, or scientific value."@en ;
+             rdfs:label "Museum"@de ,
+                        "museum"@en ;
+             rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/Museum> .
+
+
+###  https://example.org/nepalplaces#NaturalPlace
+:NaturalPlace rdf:type owl:Class ;
+                   rdfs:subClassOf :Place ;
+                   rdfs:comment "A place that encompasses all places occurring naturally in the universe."@en ;
+                   rdfs:label "Natürlicher Ort"@de ,
+                              "natural place"@en ;
+                   rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/NaturalPlace> .
+
+
+###  https://example.org/nepalplaces#Ocean
+:Ocean rdf:type owl:Class ;
+            rdfs:subClassOf :BodyOfWater ;
+            rdfs:comment "A major body of salt water."@en ;
+            rdfs:label "Ozean"@de ,
+                       "ocean"@en ;
+            rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/Ocean> .
+
+
+###  https://example.org/nepalplaces#OldTerritory
+:OldTerritory rdf:type owl:Class ;
+                   rdfs:subClassOf :Territory ;
+                   rdfs:comment "A territory of historic value."@en ;
+                   rdfs:label "Historisches Territorium"@de ,
+                              "old territory"@en ;
+                   rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/OldTerritory> .
+
+
+###  https://example.org/nepalplaces#Palace
+:Palace rdf:type owl:Class ;
+             rdfs:subClassOf :Building ;
+             rdfs:comment "A grand residence."@en ;
+             rdfs:label "Palast"@de ,
+                        "darbāra"@ne ,
+                        "palace"@en .
+
+
+###  https://example.org/nepalplaces#Path
+:Path rdf:type owl:Class ;
+           rdfs:subClassOf :RouteOfTransportation ;
+           rdfs:comment "A route used for physical traffic, typically unpaved."@en ;
+           rdfs:label "Pfad"@de ,
+                      "path"@en ,
+                      "track"@en .
+
+
+###  https://example.org/nepalplaces#Person
+:Person rdf:type owl:Class ;
+             rdfs:seeAlso foaf:Person .
+
+
+###  https://example.org/nepalplaces#Place
+:Place rdf:type owl:Class ;
+            rdfs:comment "Immobile things or locations."@en ;
+            rdfs:label "Ort"@de ,
+                       "place"@en ,
+                       "ठाउँ"@en ,
+                       "ṭhāũ"@en ;
+            rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/Place> .
+
+
+###  https://example.org/nepalplaces#PopulatedPlace
+:PopulatedPlace rdf:type owl:Class ;
+                     rdfs:subClassOf :Place ;
+                     rdfs:comment "A place with clustered or scattered buildings and a permanent human population such as city, settlement, town, or village."@en ;
+                     rdfs:label "Bewohnter Ort"@de ,
+                                "populated place"@en ;
+                     rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/PopulatedPlace> .
+
+
+###  https://example.org/nepalplaces#Prison
+:Prison rdf:type owl:Class ;
+             rdfs:subClassOf :Building ;
+             rdfs:comment "A facility in which inmates are confined and denied a variety of freedoms under the authority of the state as a punishment for various crimes."@en ;
+             rdfs:label "Gefängnis"@de ,
+                        "jail"@en ,
+                        "prison"@en ;
+             rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/Prison> .
+
+
+###  https://example.org/nepalplaces#Province
+:Province rdf:type owl:Class ;
+               rdfs:subClassOf :GovernmentalAdministrativeRegion ;
+               rdfs:comment "An administrative body governing a territorial unity on the intermediate (between local and national) level."@en ;
+               rdfs:label "Provinz"@de ,
+                          "pradeśa"@ne ,
+                          "province"@en ,
+                          "प्रदेश"@ne ;
+               rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/Province> ,
+                            <https://www.geonames.org/ontology/documentation.html#PRVU> .
+
+
+###  https://example.org/nepalplaces#Region
+:Region rdf:type owl:Class ;
+             rdfs:subClassOf :PopulatedPlace ;
+             rdfs:comment "Area divided by physical characteristics, human impact characteristics, and the interaction of humanity and the environment."@en ;
+             rdfs:label "Region"@de ,
+                        "kṣetra"@ne ,
+                        "region"@en ,
+                        "क्षेत्र"@ne ;
+             rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/Region> ,
+                          <https://www.geonames.org/ontology/documentation.html#RGN> .
+
+
+###  https://example.org/nepalplaces#ReligiousBuilding
+:ReligiousBuilding rdf:type owl:Class ;
+                        rdfs:subClassOf :Building ;
+                        rdfs:comment "A building where people go to perform acts of relgious devotion, veneration or study."@en ;
+                        rdfs:label "Religiöses Gebäude"@de ,
+                                   "religious bilding"@en ;
+                        rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/ReligiousBuilding> .
+
+
+###  https://example.org/nepalplaces#ReligiousSite
+:ReligiousSite rdf:type owl:Class ;
+                    rdfs:subClassOf :Place ;
+                    rdfs:comment "A site not built by man dedicated to spiritual rituals and activities, e.g., prayer and sacrifice."@en ;
+                    rdfs:label "Religiöser Ort"@de ,
+                               "religious site"@en .
+
+
+###  https://example.org/nepalplaces#River
+:River rdf:type owl:Class ;
+            rdfs:subClassOf :Stream ;
+            rdfs:comment "A body of freshwater flowing towards an ocean, sea, lake or another river, or trickling of into the ground."@en ;
+            rdfs:label "Fluss"@de ,
+                       "kholo"@ne ,
+                       "nadi"@ne ,
+                       "river"@en ,
+                       "खोलो"@ne ,
+                       "नदि"@ne ;
+            rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/River> .
+
+
+###  https://example.org/nepalplaces#Rivulet
+:Rivulet rdf:type owl:Class ;
+              rdfs:subClassOf :River ;
+              rdfs:comment "a very small stream or flow of water."@en ;
+              rdfs:label "Bach"@de ,
+                         "creek"@en ,
+                         "rivulet"@en .
+
+
+###  https://example.org/nepalplaces#Road
+:Road rdf:type owl:Class ;
+           rdfs:subClassOf :RouteOfTransportation ;
+           rdfs:comment "A structure connecting two places typically used for traffic of vehicles."@en ;
+           rdfs:label "Straße"@de ,
+                      "road"@en ;
+           rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/Road> .
+
+
+###  https://example.org/nepalplaces#RouteOfTransportation
+:RouteOfTransportation rdf:type owl:Class ;
+                            rdfs:subClassOf :Infrastructure ;
+                            rdfs:comment "Construction used for general traffic such as a public road, highway, path or trail or a route on water from one place to another."@en ;
+                            rdfs:label "Transportweg"@de ,
+                                       "route of transportation"@en ;
+                            rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/RouteOfTransportation> .
+
+
+###  https://example.org/nepalplaces#RouteStop
+:RouteStop rdf:type owl:Class ;
+                rdfs:subClassOf :Infrastructure ;
+                rdfs:comment "Place where vehicles stop for passengers to board or alight."@en ;
+                rdfs:label "Haltestelle"@de ,
+                           "route stop"@en ;
+                rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/RouteStop> .
+
+
+###  https://example.org/nepalplaces#Sea
+:Sea rdf:type owl:Class ;
+          rdfs:subClassOf :BodyOfWater ;
+          rdfs:comment "The body of salty water covering approximately 71 percent of the Earth's surface."@en ;
+          rdfs:label "Meer"@de ,
+                     "sea"@en ;
+          rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/Sea> .
+
+
+###  https://example.org/nepalplaces#Settlement
+:Settlement rdf:type owl:Class ;
+                 rdfs:subClassOf :PopulatedPlace ;
+                 rdfs:comment "A community in which people live, ranging from a small number of dwellings grouped together to large cities, including hamlets, villages, towns, and sim."@en ;
+                 rdfs:label "Siedlung"@de ,
+                            "settlement"@en ;
+                 rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/Settlement> .
+
+
+###  https://example.org/nepalplaces#Shrine
+:Shrine rdf:type owl:Class ;
+             rdfs:subClassOf :ReligiousBuilding ;
+             rdfs:comment "A sacred or holy site dedicated to the worship of a specific saint, deity, ancestor, hero, or similar figure of respect."@en ;
+             rdfs:label "Schrein"@de ,
+                        "shrine"@en ;
+             rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/Shrine> .
+
+
+###  https://example.org/nepalplaces#Square
+:Square rdf:type owl:Class ;
+             rdfs:subClassOf :ArchitecturalStructure ;
+             rdfs:comment "An open public space typically found in the heart of a city, town, village or sim."@en ;
+             rdfs:label "Platz"@de ,
+                        "Stadtplatz"@de ,
+                        "square"@en ;
+             rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/Square> .
+
+
+###  https://example.org/nepalplaces#State
+:State rdf:type owl:Class ;
+            rdfs:subClassOf :PopulatedPlace ;
+            rdfs:comment "A polity under a system of governance."@en ;
+            rdfs:label "Staat"@de ,
+                       "state"@en ;
+            rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/State> .
+
+
+###  https://example.org/nepalplaces#Station
+:Station rdf:type owl:Class ;
+              rdfs:subClassOf :Infrastructure ;
+              rdfs:comment "Public transport station such as railway station, metro station, and bus station."@en ;
+              rdfs:label "Bahnhof"@de ,
+                         "station"@en ;
+              rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/Station> .
+
+
+###  https://example.org/nepalplaces#Stream
+:Stream rdf:type owl:Class ;
+             rdfs:subClassOf :BodyOfWater ;
+             rdfs:comment "A body of water flowing within the bed and banks of a channel."@en ;
+             rdfs:label "Strom"@de ,
+                        "stream"@en ;
+             rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/Stream> .
+
+
+###  https://example.org/nepalplaces#Street
+:Street rdf:type owl:Class ;
+             rdfs:subClassOf :PopulatedPlace ;
+             rdfs:comment "An infrastructure connecting two places and used for traffic but with a strong emphasis on social and architectural aspects."@en ;
+             rdfs:label "Straße"@de ,
+                        "street"@en ;
+             rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/Street> .
+
+
+###  https://example.org/nepalplaces#Temple
+:Temple rdf:type owl:Class ;
+             rdfs:subClassOf :ReligiousBuilding ;
+             rdfs:comment "A religious building dedicated to spiritual rituals and activities, e.g., prayer and sacrifice."@en ;
+             rdfs:label "Tempel"@de ,
+                        "devala"@ne ,
+                        "devasthala"@ne ,
+                        "devālaya"@ne ,
+                        "mandira"@ne ,
+                        "temple"@en ,
+                        "thāna"@ne ,
+                        "थान"@ne ,
+                        "देवल"@ne ,
+                        "देवस्थल"@ne ,
+                        "देवालय"@ne ,
+                        "मन्दिर"@ne ;
+             rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/Temple> .
+
+
+###  https://example.org/nepalplaces#Territory
+:Territory rdf:type owl:Class ;
+                rdfs:subClassOf :PopulatedPlace ;
+                rdfs:comment "A populated place referring to a country subdivision, a non-sovereign geographic region."@en ;
+                rdfs:label "Territorium"@de ,
+                           "territory"@en ;
+                rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/Territory> .
+
+
+###  https://example.org/nepalplaces#Tower
+:Tower rdf:type owl:Class ;
+            rdfs:subClassOf :ArchitecturalStructure ;
+            rdfs:comment "An open public space typically found in the heart of a city, town, village or sim."@en ;
+            rdfs:label "Turm"@de ,
+                       "tower"@en ;
+            rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/Tower> .
+
+
+###  https://example.org/nepalplaces#Town
+:Town rdf:type owl:Class ;
+           rdfs:subClassOf :Settlement ;
+           rdfs:comment "A settlement of medium size (larger than a village and smaller than a city)."@en ;
+           rdfs:label "Kleinstadt"@de ,
+                      "nagara"@ne ,
+                      "town"@en ,
+                      "नगर"@ne ;
+           rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/Town> .
+
+
+###  https://example.org/nepalplaces#Valley
+:Valley rdf:type owl:Class ;
+             rdfs:subClassOf :NaturalPlace ;
+             rdfs:comment "A natural place characterized by a depression with predominant extent in one direction."@en ;
+             rdfs:label "Tal"@de ,
+                        "khalṭo"@ne ,
+                        "valley"@en ,
+                        "खल्टो"@ne ;
+             rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/Valley> ,
+                          <https://www.geonames.org/ontology/documentation.html#VAL> .
+
+
+###  https://example.org/nepalplaces#Village
+:Village rdf:type owl:Class ;
+              rdfs:subClassOf :Settlement ;
+              rdfs:comment "A clustered human settlement or community, typically smaller than a town."@en ;
+              rdfs:label "Dorf"@de ,
+                         "gāũ"@ne ,
+                         "village"@en ,
+                         "गाउँ"@ne ;
+              rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/Village> .
+
+
+###  https://example.org/nepalplaces#WorldHeritageSite
+:WorldHeritageSite rdf:type owl:Class ;
+                        rdfs:subClassOf :Place ;
+                        rdfs:comment "A UNESCO World Heritage Site is a site (such as a forest, mountain, lake, desert, monument, building, complex, or city) on the list maintained by the international World Heritage Programme of the UNESCO World Heritage Committee. A World Heritage Site is a place of either cultural or physical significance."@en ;
+                        rdfs:label "Weltkulturerbe"@de ,
+                                   "World Heritage Site"@en ;
+                        rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/WorldHeritageSite> .
+
+
+###  https://example.org/nepalplaces#Zoo
+:Zoo rdf:type owl:Class ;
+          rdfs:subClassOf :ArchitecturalStructure ;
+          rdfs:comment "A facility in which animals are housed within enclosures, typically displayed to the public."@en ;
+          rdfs:label "Tiergarten"@de ,
+                     "Zoo"@de ,
+                     "zoo"@en ,
+                     "zoological garden"@en ;
+          rdfs:seeAlso <http://mappings.dbpedia.org/server/ontology/classes/Zoo> .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://dbpedia.org/resource/Bagmati_Province
+dbr:Bagmati_Province rdf:type owl:NamedIndividual ;
+                     owl:sameAs :Bagmati_Province .
+
+
+###  http://dbpedia.org/resource/Deukhuri
+dbr:Deukhuri rdf:type owl:NamedIndividual ;
+             owl:sameAs :Deukhuri_District .
+
+
+###  http://dbpedia.org/resource/Deukhuri_District
+dbr:Deukhuri_District rdf:type owl:NamedIndividual .
+
+
+###  http://dbpedia.org/resource/Gandaki_River
+dbr:Gandaki_River rdf:type owl:NamedIndividual ;
+                  owl:sameAs :Madi_River .
+
+
+###  http://dbpedia.org/resource/Ghaghara
+dbr:Ghaghara rdf:type owl:NamedIndividual ;
+             owl:sameAs :Karnali_River .
+
+
+###  http://dbpedia.org/resource/Inner_Terai_Valleys_of_Nepal
+dbr:Inner_Terai_Valleys_of_Nepal rdf:type owl:NamedIndividual ;
+                                 owl:sameAs :Dang_Valley .
+
+
+###  http://dbpedia.org/resource/Kathmandu
+dbr:Kathmandu rdf:type owl:NamedIndividual ;
+              owl:sameAs :Kathmandu_City .
+
+
+###  http://dbpedia.org/resource/Kathmandu_District
+dbr:Kathmandu_District rdf:type owl:NamedIndividual ;
+                       owl:sameAs :Kathmandu_District .
+
+
+###  http://dbpedia.org/resource/Nepal
+dbr:Nepal rdf:type owl:NamedIndividual ;
+          owl:sameAs :Nepal .
+
+
+###  http://dbpedia.org/resource/Pashupati_Aryaghat
+dbr:Pashupati_Aryaghat rdf:type owl:NamedIndividual ;
+                       owl:sameAs :Aryaghata .
+
+
+###  http://dbpedia.org/resource/Pashupatinath_Temple
+dbr:Pashupatinath_Temple rdf:type owl:NamedIndividual ;
+                         owl:sameAs :Pasupatinatha_Temple .
+
+
+###  http://dbpedia.org/resource/Trishuli_River
+dbr:Trishuli_River rdf:type owl:NamedIndividual ;
+                   owl:sameAs :Trishuli_River .
+
+
+###  http://dbpedia.org/resource/_Nepal
+dbr:_Nepal rdf:type owl:NamedIndividual ;
+           owl:sameAs :Patan .
+
+
+###  https://d-nb.info/gnd/4030036-5
+<https://d-nb.info/gnd/4030036-5> rdf:type owl:NamedIndividual ;
+                                  owl:sameAs :Kathmandu_City ;
+                                  rdfs:comment "Kathmandu GND"@en .
+
+
+###  https://example.org/nepalpeople#Bhagavantanatha
+nplpe:Bhagavantanatha rdf:type owl:NamedIndividual ,
+                               :Person .
+
+
+###  https://example.org/nepalpeople#Prthvinarayana
+nplpe:Prthvinarayana rdf:type owl:NamedIndividual ,
+                              :Person .
+
+
+###  https://example.org/nepalpeople#Siva_Pasupatinatha
+nplpe:Siva_Pasupatinatha rdf:type owl:NamedIndividual ,
+                                  :Person .
+
+
+###  https://example.org/nepalplaces#Aryaghata
+:Aryaghata rdf:type owl:NamedIndividual ,
+                         :CremationGround ,
+                         :Ghat ;
+                :isLocatedAt :Bagmati_River ;
+                :isLocatedIn :Deopatan ;
+                rdfs:comment "a ghat at the Paśupatinātha temple in Deopatan on the banks of the Bagmati River, which serves as a cremation ground for the Nepalese nobility."@en ;
+                rdfs:label "Ārjyāghāṭa"@ne ,
+                           "Āryāghāṭa"@ne ,
+                           "आर्ज्या"@ne ,
+                           "आर्याघाटमा"@ne ,
+                           "आर्य्या"@ne ,
+                           "आर्य्याघाट्‌मा"@ne ;
+                rdfs:seeAlso <https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/814> .
+
+
+###  https://example.org/nepalplaces#Bagmati_Province
+:Bagmati_Province rdf:type owl:NamedIndividual ,
+                                :Province ;
+                       owl:sameAs <https://www.geonames.org/1283240> ;
+                       :isLocatedIn :Nepal ;
+                       rdfs:comment """Province in Central Nepal, one of the 7 Provinces;
+comprising the districts Sindhuli, Ramechhap, Dolakha, Bhaktapur, Dhading, Kathmandu, Kavrepalanchok, Lalitpur, Nuwakot, Rasuwa, Sindhupalchok, Chitwan and Makwanpur."""@en ;
+                       rdfs:label "Bagmati"@en ;
+                       rdfs:seeAlso <https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/651> .
+
+
+###  https://example.org/nepalplaces#Bagmati_River
+:Bagmati_River rdf:type owl:NamedIndividual ,
+                             :River ;
+                    :isLocatedIn :Nepal ;
+                    gn:alternateName "Bāgmatī"@ne ,
+                                     "Vāgmatī"@ne ,
+                                     "वागमती"@ne ,
+                                     "वाग्मति"@ne ;
+                    rdfs:comment "River in central Nepal."@en ;
+                    rdfs:label "Bagmati"@ne ;
+                    rdfs:seeAlso <https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/504> .
+
+
+###  https://example.org/nepalplaces#Bhinche_Bahala
+:Bhinche_Bahala rdf:type owl:NamedIndividual ,
+                              :MonasteryBuddhist ;
+                     :isLocatedIn :Patan ;
+                     rdfs:comment "Buddhist monastery in Patan and the city quarter surrounding it. NHDP:LAL2060 (https://danam.cats.uni-heidelberg.de/report/711b19a4-ec10-11e9-b125-0242ac130002)."@en ;
+                     rdfs:label "Bhinchẽ Bāhāla"@ne ,
+                                "Bhiṃkṣe Bāhāla"@ne ;
+                     rdfs:seeAlso <https://danam.cats.uni-heidelberg.de/report/711b19a4-ec10-11e9-b125-0242ac130002> ,
+                                  <https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/821> .
+
+
+###  https://example.org/nepalplaces#Caguva
+:Caguva rdf:type owl:NamedIndividual ,
+                      :Settlement ;
+             :connectsTo nplpe:Bhagavantanatha ;
+             :isLocatedIn :Deukhuri_District ;
+             gn:alternateName "चगुव़ा"@ne ;
+             rdfs:comment "Village in Deukhuri district (jillā; cf. K_0469_0045) that was presented to Bhagavantanātha by the king of Chilli (cf. Naraharinātha n.d.: 88; Bouillier 1991: 157)."@en ;
+             rdfs:label "Caguvā"@ne ;
+             rdfs:seeAlso <https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/397> .
+
+
+###  https://example.org/nepalplaces#Chilli
+:Chilli rdf:type owl:NamedIndividual ,
+                      :HistoricalAreaOfAuthority ;
+             :isLocatedIn :Dang_Valley ;
+             rdfs:comment "Former principality at the rim of Dang Valley (Bouillier 1993: 39)."@ne ;
+             rdfs:label "Chīllī"@ne ;
+             rdfs:seeAlso <https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/395> .
+
+
+###  https://example.org/nepalplaces#Dang_District
+:Dang_District rdf:type owl:NamedIndividual ,
+                             :District ;
+                    :isLocatedIn :Nepal ;
+                    gn:alternateName "Dā̃g"@ne ,
+                                     "Dāṃ"@ne ,
+                                     "डाङ्ग"@ne ,
+                                     "दाँग्‌"@ne ,
+                                     "दां"@ne ,
+                                     "दाङ्‌"@ne ;
+                    rdfs:comment "A district in Western Nepal, part of the Lumbini Province; until 1961 together with Deukhurī one of the 32 districts formed in the Rana period."@en ;
+                    rdfs:label "Dang"@ne ;
+                    rdfs:seeAlso <https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/389> .
+
+
+###  https://example.org/nepalplaces#Dang_Valley
+:Dang_Valley rdf:type owl:NamedIndividual ,
+                           :Valley ;
+                  :isLocatedIn :Nepal ;
+                  gn:alternateName "Dā̃g"@ne ,
+                                   "Dāṃ"@ne ,
+                                   "डाङ्ग"@ne ,
+                                   "डाङ्‌"@ne ,
+                                   "दाँग्‌"@ne ,
+                                   "दां"@ne ;
+                  rdfs:comment "A valley located in the Inner Terai in midwest Nepal (north of Deukhurī valley) that was prior to the conquest by the Gorkha troops in 1786 divided among small kingdoms: Dang and Chilli in the valley itself, and Salyan and Phalabang in the hills (cf. Bouillier 1993: 30)."@en ;
+                  rdfs:label "Dang"@ne ;
+                  rdfs:seeAlso <https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/389> .
+
+
+###  https://example.org/nepalplaces#Deopatan
+:Deopatan rdf:type owl:NamedIndividual ,
+                        :HistoricalSettlement ;
+               :isLocatedIn :Kathmandu_District ;
+               rdfs:comment "historic town in the Kathmandu Valley, now part of Kathmandu."@en ;
+               rdfs:label "Deopāṭana"@ne ,
+                          "Deupāṭan"@ne ,
+                          "Deupāṭaṃ"@ne ,
+                          "Deupāṭhaṃ"@ne ,
+                          "देउपाटंछेउको"@ne ,
+                          "देउपाटनको"@ne ,
+                          "देऊपाटंका"@ne ;
+               rdfs:seeAlso <https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/28> .
+
+
+###  https://example.org/nepalplaces#Deukhuri_District
+:Deukhuri_District rdf:type owl:NamedIndividual ;
+                        :isLocatedIn :Nepal ;
+                        gn:alternateName "Deuṣurī"@ne ,
+                                         "देउषुरी"@ne ;
+                        rdfs:comment "Until 1961 together with Dang one of the 32 districts formed in the Rana period."@en ;
+                        rdfs:label "Deukhurī"@ne ;
+                        rdfs:seeAlso <https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/392> .
+
+
+###  https://example.org/nepalplaces#Deukhuri_Valley
+:Deukhuri_Valley rdf:type owl:NamedIndividual ,
+                               :Valley ;
+                      :isLocatedIn :Nepal ;
+                      gn:alternateName "Deuṣurī"@ne ,
+                                       "देउषुरी"@ne ;
+                      rdfs:comment "A valley in midwest Nepal, south of Dang."@en ;
+                      rdfs:label "Deukhurī"@ne ;
+                      rdfs:seeAlso <https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/392> .
+
+
+###  https://example.org/nepalplaces#Devghat
+:Devghat rdf:type owl:NamedIndividual ,
+                       :Town ;
+              :isLocatedIn :Tanahun ;
+              rdfs:label "Devghat"@ne .
+
+
+###  https://example.org/nepalplaces#Devighat
+:Devighat rdf:type owl:NamedIndividual ,
+                        :HistoricPlace ;
+               :isLocatedAt :Trishuli_River ;
+               :isLocatedIn :Nuwakot ;
+               rdfs:label "Devighat"@ne .
+
+
+###  https://example.org/nepalplaces#Gandaki_Province
+:Gandaki_Province rdf:type owl:NamedIndividual ,
+                                :Province ;
+                       :isLocatedIn :Nepal ;
+                       rdfs:comment "Province in Nepal: With the introduction of the federal system (Constitution of Nepal 2015) the districts were reorganised in 7 (federal states) Provinces, replacing the 5 Development Regions and 14 administrative zones. These include, east to west, Province No.1, Province No.2, Bagmati Province, Gandaki Province, Lumbini Province, Karnali Province and Sudurpashchim Province."@en ;
+                       rdfs:label "Gandaki"@ne .
+
+
+###  https://example.org/nepalplaces#Gandaki_River
+:Gandaki_River rdf:type owl:NamedIndividual ,
+                             :River ;
+                    :hasTributary :Madi_River ;
+                    :isLocatedIn :Nepal ;
+                    rdfs:label "Gandaki"@ne .
+
+
+###  https://example.org/nepalplaces#Gorkha
+:Gorkha rdf:type owl:NamedIndividual ,
+                      :Place ;
+             rdfs:label "Gorkha"@ne .
+
+
+###  https://example.org/nepalplaces#Karnali_River
+:Karnali_River rdf:type owl:NamedIndividual ,
+                             :River ;
+                    :isLocatedIn :Nepal ;
+                    gn:alternateName "Ghaghara"@hi ,
+                                     "कर्नाली"@ne ;
+                    rdfs:comment "River in western Nepal."@en ;
+                    rdfs:label "Karṇālī"@ne ;
+                    rdfs:seeAlso <https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/654> .
+
+
+###  https://example.org/nepalplaces#Kathmandu_City
+:Kathmandu_City rdf:type owl:NamedIndividual ,
+                              :City ;
+                     owl:sameAs viaf: ,
+                                <https://www.geonames.org/1283240> ;
+                     :connectsTo nplpe:Prthvinarayana ;
+                     :isCapitalOf :Nepal ;
+                     :isLocatedIn :Nepal ;
+                     gn:alternateName "Kantipur"@ne ,
+                                      "Kāntipura"@ne ,
+                                      "Kāntīpura"@ne ,
+                                      "Kāṭhamāḍau"@ne ,
+                                      "Yẽ"@ne ,
+                                      "कांतिपूर"@ne ,
+                                      "कांतीपुर"@ne ,
+                                      "काठमाडौ"@ne ,
+                                      "काठमाडौको"@ne ,
+                                      "काडमाडौमा"@ne ,
+                                      "कान्ति पुरियश् पुरीयश्"@ne ;
+                     rdfs:comment "Capital of Nepal, declared capital by Pṛthvīnārāyaṇa on 21 March 1770."@en ;
+                     rdfs:label "Kathmandu"@en ;
+                     rdfs:seeAlso <https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/26> .
+
+
+###  https://example.org/nepalplaces#Kathmandu_District
+:Kathmandu_District rdf:type owl:NamedIndividual ,
+                                  :District ;
+                         owl:sameAs <https://www.geonames.org/12095484> ;
+                         :isLocatedIn :Bagmati_Province ;
+                         gn:alternateName "Kantipur"@ne ,
+                                          "Kāntipura"@ne ,
+                                          "Kāntīpura"@ne ,
+                                          "Kāṭhamāḍau"@ne ,
+                                          "Yẽ"@ne ,
+                                          "कांतिपूर"@ne ,
+                                          "कांतीपुर"@ne ,
+                                          "काठमाडौ"@ne ,
+                                          "काठमाडौको"@ne ,
+                                          "काडमाडौमा"@ne ,
+                                          "कान्ति पुरियश् पुरीयश्"@ne ;
+                         rdfs:comment "A district in Central Nepal, part of Bagmati Province."@en ;
+                         rdfs:label "Kathmandu"@en ;
+                         rdfs:seeAlso <https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/26> .
+
+
+###  https://example.org/nepalplaces#Madi_River
+:Madi_River rdf:type owl:NamedIndividual ,
+                          :River ;
+                 :isLocatedIn :Nepal ;
+                 :isTributaryOf :Gandaki_River ;
+                 gn:alternateName "मादीपुर्वका"@ne ;
+                 rdfs:comment "River in West Nepal."@en ;
+                 rdfs:label "Mādī"@ne ;
+                 rdfs:seeAlso <https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/227> .
+
+
+###  https://example.org/nepalplaces#Marsyangdi_River
+:Marsyangdi_River rdf:type owl:NamedIndividual ,
+                                :River ;
+                       :isLocatedIn :Nepal ;
+                       :isTributaryOf :Trishuli_River ;
+                       gn:alternateName "Marsyāndi"@ne ,
+                                        "Marsyāṅdī"@ne ,
+                                        "मर्स्यागदी"@ne ,
+                                        "मर्स्याङ्दी"@ne ,
+                                        "मर्स्यान्दिपश्चीम्‌"@ne ;
+                       rdfs:comment "River in central Nepal, length 150km."@en ;
+                       rdfs:label "Marsyangdi"@ne ;
+                       rdfs:seeAlso <https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/325> .
+
+
+###  https://example.org/nepalplaces#Nandi_River
+:Nandi_River rdf:type owl:NamedIndividual ,
+                           :River ;
+                  :isLocatedIn :Nepal ;
+                  gn:alternateName "नंडीपछी"@ne ;
+                  rdfs:comment "Unidentified river in Nepal, must be located to the east of the Madi river and east of Gorkha."@en ;
+                  rdfs:label "Naṇḍī"@ne ;
+                  rdfs:seeAlso <https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/228> .
+
+
+###  https://example.org/nepalplaces#Narayani_River
+:Narayani_River rdf:type owl:NamedIndividual ,
+                              :River ;
+                     :hasTributary :Trishuli_River ;
+                     :isLocatedIn :Nepal ;
+                     rdfs:label "Narayani"@ne .
+
+
+###  https://example.org/nepalplaces#Nepal
+:Nepal rdf:type owl:NamedIndividual ,
+                     :Country ;
+            gn:alternateName "Nepāla"@ne ,
+                             "नेपाल"@ne ,
+                             "नेपालका"@ne ,
+                             "नेपालको"@ne ,
+                             "नेपालमा"@ne ,
+                             "नेपाल्‌"@ne ;
+            gn:countryCode "NP" ;
+            rdfs:label "Nepal"@de ,
+                       "Nepal"@en ,
+                       "नेपाल"@ne ;
+            rdfs:seeAlso <https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/214> .
+
+
+###  https://example.org/nepalplaces#Nuwakot
+:Nuwakot rdf:type owl:NamedIndividual ,
+                       :District ;
+              rdfs:label "Nuwakot"@ne .
+
+
+###  https://example.org/nepalplaces#Pasupatinatha_Temple
+:Pasupatinatha_Temple rdf:type owl:NamedIndividual ,
+                                    :Temple ;
+                           :connectsTo nplpe:Siva_Pasupatinatha ;
+                           :isLocatedAt :Bagmati_River ;
+                           :isLocatedIn :Deopatan ;
+                           rdfs:comment "a temple dedicated to Śiva Paśupatinātha at the western bank of the Bagmati River in Deopatan and the area surrounding it."@en ;
+                           rdfs:label "Pashupati"@ne ,
+                                      "Paśupati"@ne ,
+                                      "Paśupatinātha"@ne ,
+                                      "पसुपतीनाथ"@ne ;
+                           rdfs:seeAlso <https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/22> .
+
+
+###  https://example.org/nepalplaces#Patan
+:Patan rdf:type owl:NamedIndividual ,
+                     :City ;
+            :isLocatedIn :Kathmandu_District ;
+            rdfs:comment "also known as Lalitpur, Lalitapura; one of the three major cities in the Kathmandu Valley; a district in Central Nepal, part of the Bagmati Province."@en ;
+            rdfs:label "Lalitapura"@ne ,
+                       "Lalitpur"@ne ,
+                       "Patan"@en ,
+                       "Pāṭaṃ"@ne ,
+                       "Pāṭān"@ne ,
+                       "पटानका पाटनका"@ne ,
+                       "पाटं"@ne ,
+                       "पाटंका"@ne ,
+                       "पाटंको"@ne ,
+                       "पाटन्‌"@ne ,
+                       "पाटन्‌का"@ne ;
+            rdfs:seeAlso <https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/27> .
+
+
+###  https://example.org/nepalplaces#Phaudi_Khola_River
+:Phaudi_Khola_River rdf:type owl:NamedIndividual ,
+                                  :River ;
+                         :flowsIntoRiverAt :Tanahun ;
+                         :isLocatedIn :Nepal ;
+                         :isTributaryOf :Marsyangdi_River ;
+                         rdfs:comment "Western tributary of the Marsyangdi river with its mouth in Tanahun; marks the southern border of the thumas of Purkot and Vasantapur (Sañcāra Mantrālaya VS 2031: III, 233, 234, 236)."@ne ;
+                         rdfs:label "Phāũdī Kholā"@ne ;
+                         rdfs:seeAlso <https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/691> .
+
+
+###  https://example.org/nepalplaces#Ranagau
+:Ranagau rdf:type owl:NamedIndividual ,
+                       :Place ;
+              rdfs:label "Rānāgāũ"@ne .
+
+
+###  https://example.org/nepalplaces#Sankhu
+:Sankhu rdf:type owl:NamedIndividual ,
+                      :Town ;
+             :isLocatedIn :Kathmandu_District ;
+             rdfs:comment "also called Śaṅkharāpura; town in the north-eastern corner of Kathmandu Valley, about 17 km away from Kathmandu city."@en ;
+             rdfs:label "Sankhu"@en ,
+                        "Sānkhu"@ne ,
+                        "Śaṅkharāpura"@ne ,
+                        "साँषु"@ne ,
+                        "साषु"@ne ;
+             rdfs:seeAlso <https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/305> .
+
+
+###  https://example.org/nepalplaces#Tanahun
+:Tanahun rdf:type owl:NamedIndividual ,
+                       :District ;
+              :isLocatedIn :Gandaki_Province ;
+              gn:alternateName "Tanahu"@ne ,
+                               "Tanahū̃"@ne ,
+                               "Tanhau"@ne ,
+                               "Trituṅganagara"@sa ;
+              rdfs:comment "District in Western Nepal, part of the Gandaki Province; former kingdom and one of the Caubīsī Rājya."@en ;
+              rdfs:label "Tanahun"@ne ;
+              rdfs:seeAlso <https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/528> .
+
+
+###  https://example.org/nepalplaces#Trishuli_River
+:Trishuli_River rdf:type owl:NamedIndividual ,
+                              :River ;
+                     :flowsIntoRiverAt :Devghat ;
+                     :hasTributary :Marsyangdi_River ;
+                     :isLocatedIn :Nepal ;
+                     :isTributaryOf :Narayani_River ;
+                     gn:alternateName "Trisūlagaṅgā"@ne ,
+                                      "Triśūla Gaṅgā"@ne ,
+                                      "Triśūlī nadī"@ne ,
+                                      "त्रिसुल्‌‌गंगा"@ne ,
+                                      "त्रिसूलगंगा"@ne ;
+                     rdfs:comment "One of the major tributaries of the Narayani River basin in central Nepal; originates in Tibet as a stream and enters Nepal at Gyirong Town; joins the Narayani River at Devghat."@en ;
+                     rdfs:label "Triśūlī"@ne ;
+                     rdfs:seeAlso <https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/213> .
+
+
+###  https://viaf.org/viaf/
+viaf: rdf:type owl:NamedIndividual ;
+      rdfs:comment "Kathmandu VIAF"@en .
+
+
+###  https://www.geonames.org/12095484
+<https://www.geonames.org/12095484> rdf:type owl:NamedIndividual ;
+                                    rdfs:comment "Kathmandu District GeoNames"@en .
+
+
+###  https://www.geonames.org/1283240
+<https://www.geonames.org/1283240> rdf:type owl:NamedIndividual ;
+                                   rdfs:comment "Kathmandu Capital GeoNames"@en ,
+                                                "Kathmandu GeoNames"@en .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( dbr:Deukhuri_District
+                        :Deukhuri_Valley
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Bagmati_Province
+                        :Bagmati_River
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Dang_District
+                        :Dang_Valley
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Kathmandu_City
+                        :Kathmandu_District
+                      )
+] .
+
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi

@@ -1,5 +1,7 @@
 from typing import Dict
 from rdflib import RDF, Graph, Literal, Namespace, URIRef, BNode
+from rdflib.util import guess_format
+
 
 # Define RDF namespaces for the ontology
 FOAF_NS = Namespace("http://xmlns.com/foaf/0.1/")
@@ -19,6 +21,8 @@ nepalica_reg = Namespace("https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/
 gn = Namespace("https://www.geonames.org/")
 gn_id = Namespace("https://www.geonames.org/")
 nepalica_gloss = Namespace("https://nepalica.hadw-bw.de/nepal/words/viewitem/")
+schema = Namespace("http://schema.org/")
+
 
 geonames = Namespace("https://sws.geonames.org/")
 dbr = Namespace("https://dbpedia.org/resource/")
@@ -37,7 +41,7 @@ def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
     
     # Initialize an RDF graph
     g = Graph()
-    
+
     # Bind RDF namespaces for use in the graph
     g.bind("foaf", FOAF_NS)
     g.bind("gn", GN_NS)
@@ -50,6 +54,7 @@ def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
     g.bind("gnd", gnd)
     g.bind("wikidata", wikidata)
     g.bind("gndo", gndo)
+    g.bind("schema", schema)
 
 
     # Bind custom namespaces using the NamespaceManager
@@ -65,6 +70,8 @@ def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
         person_node = URIRef(f"{person_uri}#{person['anglicized_name'].replace(' ', '_')}")
         g.add((person_node, RDF.type, FOAF_NS.Person))
         g.add((person_node, FOAF_NS.name, Literal(person["anglicized_name"], lang='ne')))
+        g.add((person_node, rdfs.label, Literal(person["anglicized_name"], lang='ne')))
+
 
         # Add devanagari_name as a custom property
         if "devanagari_name" in person:
@@ -93,7 +100,7 @@ def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
         # Add the gender and its value to the RDF graph as a single value
         gender_value = person.get("gender")
         if gender_value:
-            g.add((person_node, FOAF_NS.gender, Literal(gender_value[0])))
+            g.add((person_node, schema.gender, Literal(gender_value[0])))
         
         # Add surname if available
         if "surname" in person:
@@ -156,7 +163,7 @@ def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
         term_node = URIRef(f"{term_uri}#{term['prefLabel'].replace(' ', '_')}")
         g.add((term_node, RDF.type, SKOS_NS.Concept))
         g.add((term_node, SKOS_NS.prefLabel, Literal(term["prefLabel"])))
-        g.add((term_node, SKOS_NS.comment, Literal(term["meaning"])))
+        g.add((term_node, SKOS_NS.comment, Literal(term["meaning"],lang='en')))
         # Add alternative labels as skos:altLabel
         alt_labels = term.get("altLabel", [])
         for alt_label in alt_labels:
