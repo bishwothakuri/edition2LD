@@ -1,0 +1,348 @@
+@prefix : <https://example.org/nepalpeople#> .
+@prefix agrelon: <https://d-nb.info/standards/elementset/agrelon#> .
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix gndo: <http://d-nb.info/gnd/> .
+@prefix greg:	<http://www.w3.org/ns/time/gregorian#> .
+@prefix nplpl: <https://example.org/nepalplaces#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix viaf: <https://viaf.org/viaf/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@base <https://example.org/nepalpeople> .
+
+
+<https://example.org/nepalpeople> rdf:type owl:Ontology ;
+     cc:license <https://creativecommons.org/publicdomain/zero/1.0> ;
+     dcterms:rights "CC-Zero" ;
+     owl:versionInfo 0.1 ;
+     dcterms:creator "Sabine Tittel"@de ;
+     dcterms:issued "2021-08-03T11:23:00"^^xsd:dateTime ;
+     vann:preferredNamespacePrefix "nplpe" ;
+     dcterms:description "This ontology is build to model person names from Nepal that occur in the text corpus build by the research project 'Documents on the History of Religion and Law of Pre-modern Nepal', Heidelberg Academy of Sciences and Humanities. The corpus contains documents and other texts from the early Śāha (1769-1846) and Rāṇā (1846-1951) periods."@en ;
+     dcterms:title "NepalPeople"@en ;
+     vann:preferredNamespaceUri "https://example.org/nepalpeople#" .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+###  http://www.w3.org/2001/XMLSchema#gYear
+xsd:gYear rdf:type rdfs:Datatype .
+
+###  http://www.w3.org/2001/XMLSchema#gYearMonth
+xsd:gYearMonth rdf:type rdfs:Datatype .
+
+### http://www.w3.org/2006/time#generalYear
+time:generalYear rdf:type rdfs:Datatype ;
+        rdfs:isDefinedBy <http://www.w3.org/2006/time#generalYear> .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.org/vocab/bio/0.1/birth
+bio:birth rdf:type owl:ObjectProperty ;
+              rdfs:isDefinedBy <http://purl.org/vocab/bio/0.1/birth> .
+
+
+###  http://purl.org/vocab/bio/0.1/child
+bio:child rdf:type owl:ObjectProperty ;
+              rdfs:isDefinedBy <http://purl.org/vocab/bio/0.1/child> .
+
+
+###  http://purl.org/vocab/bio/0.1/death
+bio:death rdf:type owl:ObjectProperty ;
+              rdfs:isDefinedBy <http://purl.org/vocab/bio/0.1/death> .
+
+
+###  http://purl.org/vocab/bio/0.1/event
+bio:event rdf:type owl:AnnotationProperty ;
+              rdfs:isDefinedBy <http://purl.org/vocab/bio/0.1/event> .
+
+
+### http://www.w3.org/2006/time#hasEnd
+time:hasEnd rdf:type owl:ObjectProperty ;
+              rdfs:isDefinedBy <http://www.w3.org/2006/time#hasEnd> .
+
+
+###  https://d-nb.info/standards/elementset/gnd#preferredNameEntityForThePerson
+gndo:preferredNameEntityForThePerson rdf:type owl:ObjectProperty ;
+              rdfs:isDefinedBy <https://d-nb.info/standards/elementset/gnd#preferredNameEntityForThePerson> ;
+              rdfs:domain gndo:DifferentiatedPerson ;
+              rdfs:range gndo:NameOfThePerson .
+
+
+###  https://d-nb.info/standards/elementset/gnd#variantNameEntityForThePerson
+gndo:variantNameEntityForThePerson rdf:type owl:ObjectProperty ;
+              rdfs:isDefinedBy <https://d-nb.info/standards/elementset/gnd#variantNameEntityForThePerson> ;
+              rdfs:domain gndo:DifferentiatedPerson ;
+              rdfs:range gndo:NameOfThePerson .
+
+
+### http://www.w3.org/2006/time#year
+time:year rdf:type owl:ObjectProperty ;
+              rdfs:isDefinedBy <http://www.w3.org/2006/time#year> .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.org/vocab/bio/0.1/Birth
+bio:Birth rdf:type owl:Class ;
+          rdfs:subClassOf bio:Event ;
+          rdfs:isDefinedBy <http://purl.org/vocab/bio/0.1/Birth> ;
+          rdfs:comment "The event of a person entering into life."@en ;
+          rdfs:label "birth"@en .
+
+
+
+###  https://d-nb.info/standards/elementset/gnd#DifferentiatedPerson
+gndo:DifferentiatedPerson rdf:type owl:Class ;
+          rdfs:isDefinedBy <https://d-nb.info/standards/elementset/gnd#DifferentiatedPerson> ;
+          rdfs:label "differentiated person"@en .
+
+
+###  https://d-nb.info/standards/elementset/gnd#EarlierNameOfThePerson
+gndo:EarlierNameOfThePerson rdf:type owl:Class ;
+          rdfs:isDefinedBy <https://d-nb.info/standards/elementset/gnd#EarlierNameOfThePerson> ;
+          rdfs:subClassOf gndo:VariantNameOfThePerson ;
+          rdfs:label "earlier name of the person"@en .
+
+
+###  https://d-nb.info/standards/elementset/gnd#LaterNameOfThePerson
+gndo:LaterNameOfThePerson rdf:type owl:Class ;
+          rdfs:isDefinedBy <https://d-nb.info/standards/elementset/gnd#LaterNameOfThePerson> ;
+          rdfs:subClassOf gndo:VariantNameOfThePerson ;
+          rdfs:label "later name of the person"@en .
+
+
+###  https://d-nb.info/standards/elementset/gnd#NameOfThePerson
+gndo:NameOfThePerson rdf:type owl:Class ;
+          rdfs:isDefinedBy <https://d-nb.info/standards/elementset/gnd#NameOfThePerson> ;
+          rdfs:label "name of the person"@en .
+
+
+###  http://schema.org/Female
+schema:Female rdf:type owl:Class ;
+              rdfs:subClassOf :Gender ;
+              rdfs:isDefinedBy <http://schema.org/Female> ;
+              rdfs:label "female"@en .
+
+
+###  http://schema.org/Male
+schema:Male rdf:type owl:Class ;
+            rdfs:subClassOf :Gender ;
+            rdfs:isDefinedBy <http://schema.org/Male> ;
+            rdfs:label "male"@en .
+
+
+###  https://d-nb.info/standards/elementset/gnd#PreferredNameOfThePerson
+gndo:PreferredNameOfThePerson rdf:type owl:Class ;
+         rdfs:isDefinedBy <https://d-nb.info/standards/elementset/gnd#PreferredNameOfThePerson> ;
+         rdfs:subClassOf gndo:NameOfThePerson ;
+         rdfs:label "preferred name of the person"@en .
+
+
+###  https://d-nb.info/standards/elementset/gnd#VariantNameOfThePerson
+gndo:VariantNameOfThePerson rdf:type owl:Class ;
+         rdfs:isDefinedBy <https://d-nb.info/standards/elementset/gnd#VariantNameOfThePerson> ;
+         rdfs:subClassOf gndo:NameOfThePerson ;
+         rdfs:label "variant name of the person"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+
+###  https://example.org/nepalpeople#Bahadura_Saha
+:Bahadura_Saha rdf:type owl:NamedIndividual ,
+                        :Person , gndo:DifferentiatedPerson ;
+      schema:gender schema:Male ;
+      agrelon:hasParent :Prthvinarayana_Saha ,
+                        :Narendra_Laksmi ;
+      rdfs:label "Bahādura Śāha"@ne ;
+      foaf:name "Bahādura Śāha"@ne ;
+      gndo:personalName "Bahādura Śāha"@ne ;
+      gndo:forename "Bahādura"@ne ;
+      gndo:surname "Śāha"@ne ;
+      rdfs:comment """aka Māhilā Bābā or Māhilā Sāhaba; b. 16 June 1757; d. 24 June 1797 (VS 1954 āṣā 14 gate); second son of Pṛthvīnārayaṇa Śāha by queen Narendra Lakṣmī; m. to Vidyālakṣmī (?), daughter of the Palpa King Mahādatta Sena; father of Śatrubhañjana and Dripu- or Ripubhañjana (J.C. Regmi 1981: 3–4); imprisoned and exiled to Betia after Pṛthvīnārayaṇa's death 1775; regent for his nephew Raṇabahādura 1785– 6 June 1794; expanded the kingdom upto Gadhwal; arrested for misappropriation of money 11 February 1797."""@en ;
+      rdfs:seeAlso <https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/229> .
+
+
+###  https://example.org/nepalpeople#Narabhupala_Saha
+:Narabhupala_Saha rdf:type owl:NamedIndividual ,
+                           :Person ;
+       schema:gender schema:Male ;
+       agrelon:hasBiologicalChild :Prthvinarayana_Saha ;
+       rdfs:label "Narabhūpāla Śāha"@ne ;
+       foaf:name "Narabhūpāla Śāha"@ne ;
+       gndo:personalName "Narabhūpāla Śāha"@ne ;
+       gndo:forename "Narabhūpāla"@ne ;
+       gndo:surname "Śāha"@ne .
+
+
+###  https://example.org/nepalpeople#Narendra_Laksmi
+:Narendra_Laksmi rdf:type owl:NamedIndividual ,
+                           :Person ;
+      schema:gender schema:Female ;
+      rdfs:label "Narendra Lakṣmī"@ne ;
+      foaf:name "Narendra Lakṣmī"@ne ;
+     gndo:personalName "Narendra Lakṣmī"@ne ;
+     gndo:forename "Narendra"@ne ;
+     gndo:surname "Lakṣmī"@ne ;
+     gndo:variantNameOfThePerson "Narendra Rājyalakṣmī Devī"@ne ;
+     gndo:variantNameEntityForThePerson :AltName_Narendra_Laksmi ;
+      agrelon:hasSpouse :Prthvinarayana_Saha ;
+      agrelon:hasBiologicalChild :Pratapa_Simha_Saha ,
+                :Bahadura_Saha ;
+      bio:event :Sati_Narendra_Laksmi ;
+      bio:death :Death_Narendra_Laksmi ;
+      :hasPosition :Position_Narendra_Laksmi ;
+      rdfs:comment """d. 11 January 1775 at Devighat by satī; queen of Pṛthvīnārāyaṇa and mother of Pratāpa Siṃha and Bahādura Śāha"""@en ;
+      rdfs:seeAlso <https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/312> ;
+      owl:sameAs dbr:Queen_Narendra_of_Nepal .
+
+
+###  https://example.org/nepalpeople#Prthvinarayana_Saha
+:Prthvinarayana_Saha rdf:type owl:NamedIndividual ,
+                              :Person ;
+       owl:sameAs viaf:5735314 ,
+                  gndo:119173816 ,
+                  dbr:Prithvi_Narayan_Shah ;
+       agrelon:hasParent :Narabhupala_Saha ;
+       :hasPosition :Position_Prthvinarayana_Saha_1 ,
+                    :Position_Prthvinarayana_Saha_2 ;
+       bio:birth :Birth_Prthvinarayana_Saha ;
+       bio:death :Death_Prthvinarayana_Saha ;
+       rdfs:label "Pṛthvī Nārāyaṇa Śāha"@ne ,
+                  "Pṛthvīnārāyaṇa"@ne ,
+                  "Pṛthvīnārāyaṇa Śāha"@ne ,
+                  "श्रीपृथ्वीनारान्"@ne ;
+      foaf:name "Pṛthvī Nārāyaṇa Śāha"@ne ;
+      gndo:personalName "Pṛthvīnārāyaṇa Śāha"@ne ;
+      gndo:forename "Pṛthvīnārāyaṇa"@ne ;
+      gndo:personalName "Śāha"@ne ;
+      schema:gender schema:Male ;
+      rdfs:comment "b. 1720 at Gorkha; d. 11 January 1775 at Devighat; son of Narabhūpāla Śāha; king of Gorkha (r. 3 April 1743–1768); king of Nepal (r. 1768-1775)."@en ;
+      rdfs:seeAlso <https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/178> .
+
+
+###  https://example.org/nepalpeople#Position_Prthvinarayana_Saha_1
+:Position_Prthvinarayana_Saha_1 rdf:type owl:NamedIndividual ,
+                :King ;
+                :hasPlace nplpl:Gorkha ;
+                :hasTime :Position_Prthvinarayana_Saha_1_Time .
+
+
+###  https://example.org/nepalpeople#Position_Prthvinarayana_Saha_1_Time
+:Position_Prthvinarayana_Saha_1_Time rdf:type time:TemporalEntity ;
+  time:hasBeginning :Position_Prthvinarayana_Saha_1_Time_Beginning ;
+  time:hasEnd :Position_Prthvinarayana_Saha_1_Time_End ;
+  bio:date "1743-04-03 - 1768"@en .
+
+
+###  https://example.org/nepalpeople#Position_Prthvinarayana_Saha_1_Time_Beginning
+:Position_Prthvinarayana_Saha_1_Time_Beginning rdf:type time:Instant ;
+  bio:date "1743-04-03"^^xsd:date ;
+  time:inDateTime :Position_Prthvinarayana_Saha_1_Time_Beginning_Gregorian .
+
+
+###  https://example.org/nepalpeople#Position_Prthvinarayana_Saha_1_Time_Beginning_Gregorian
+:Position_Prthvinarayana_Saha_1_Time_Beginning_Gregorian rdf:type time:DateTimeDescription ;
+  time:year "1743-04"^^xsd:gYearMonth .
+
+
+###  https://example.org/nepalpeople#Position_Prthvinarayana_Saha_1_Time_End
+:Position_Prthvinarayana_Saha_1_Time_End rdf:type time:Instant ;
+    bio:date "1768"^^xsd:date ;
+    time:inDateTime :Position_Prthvinarayana_Saha_1_Time_End_Gregorian .
+
+
+###  https://example.org/nepalpeople#Position_Prthvinarayana_Saha_1_Time_End_Gregorian
+:Position_Prthvinarayana_Saha_1_Time_End_Gregorian rdf:type time:DateTimeDescription ;
+    time:year "1768"^^xsd:gYear .
+
+
+###  https://example.org/nepalpeople#Position_Prthvinarayana_Saha_2
+:Position_Prthvinarayana_Saha_2 rdf:type owl:NamedIndividual ,
+                :King ;
+                :hasPlace nplpl:Nepal ;
+                :hasTime :Position_Prthvinarayana_Saha_2_Time .
+
+
+###  https://example.org/nepalpeople#Position_Prthvinarayana_Saha_2_Time
+:Position_Prthvinarayana_Saha_2_Time rdf:type time:TemporalEntity ;
+  time:hasBeginning :Position_Prthvinarayana_Saha_2_Time_Beginning ;
+  time:hasEnd :Position_Prthvinarayana_Saha_2_Time_End ;
+  bio:date "1768 - 1775"@en .
+
+
+###  https://example.org/nepalpeople#Position_Prthvinarayana_Saha_2_Time_Beginning
+:Position_Prthvinarayana_Saha_2_Time_Beginning rdf:type time:Instant ;
+  time:inDateTime :Position_Prthvinarayana_Saha_2_Time_Beginning_Gregorian ;
+  bio:date "1768"^^xsd:date .
+
+
+###  https://example.org/nepalpeople#Position_Prthvinarayana_Saha_2_Time_Beginning_Gregorian
+:Position_Prthvinarayana_Saha_2_Time_Beginning_Gregorian rdf:type time:DateTimeDescription ;
+  time:year "1768"^^xsd:gYear .
+
+
+###  https://example.org/nepalpeople#Position_Prthvinarayana_Saha_2_Time_End
+:Position_Prthvinarayana_Saha_2_Time_End rdf:type time:Instant ;
+    time:inDateTime :Position_Prthvinarayana_Saha_2_Time_End_Gregorian ;
+    bio:date "1775"^^xsd:date .
+
+
+###  https://example.org/nepalpeople#Position_Prthvinarayana_Saha_2_Time_End_Gregorian
+:Position_Prthvinarayana_Saha_2_Time_End_Gregorian rdf:type time:DateTimeDescription ;
+    time:year "1775"^^xsd:gYear .
+
+
+###  https://example.org/nepalpeople#Birth_Prthvinarayana_Saha
+:Birth_Prthvinarayana_Saha rdf:type owl:NamedIndividual ,
+                           bio:Birth ,
+                           time:Instant ;
+                           bio:date "1720"^^xsd:date ;
+                           rdfs:label "The birth of Pṛthvīnārāyaṇa Śāha"@en ;
+                           bio:place nplpl:Gorkha ;
+                           time:inDateTime :Birth_Prthvinarayana_Saha_Gregorian .
+
+
+###  https://example.org/nepalpeople#Birth_Prthvinarayana_Saha_Gregorian
+:Birth_Prthvinarayana_Saha_Gregorian rdf:type time:DateTimeDescription ;
+                   rdfs:label "The birth of Pṛthvīnārāyaṇa Śāha (Gregorian Calendar)"@en ;
+                   time:year "1720"^^xsd:gYear .
+
+
+###  https://example.org/nepalpeople#Death_Prthvinarayana_Saha
+:Death_Prthvinarayana_Saha rdf:type owl:NamedIndividual ,
+                          bio:Death ,
+                          time:Instant ;
+                          bio:date "1775-01-11"^^xsd:date ;
+                          bio:place nplpl:Devighat ;
+                          rdfs:label "The death of Pṛthvīnārāyaṇa Śāha"@en ;
+                          time:inDateTime :Death_Prthvinarayana_Saha_Gregorian .
+
+
+###  https://example.org/nepalpeople#Death_Prthvinarayana_Saha_Gregorian
+:Death_Prthvinarayana_Saha_Gregorian rdf:type time:DateTimeDescription ;
+                    rdfs:label "The death of Pṛthvīnārāyaṇa Śāha (Gregorian Calendar)"@en ;
+                    time:year "1775-01"^^xsd:gYearMonth .
+
+

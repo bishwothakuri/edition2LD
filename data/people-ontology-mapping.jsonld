@@ -2,63 +2,35 @@
   "@context": {
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-    "owl": "http://www.w3.org/2002/07/owl#",
     "foaf": "http://xmlns.com/foaf/0.1/",
-    "bio": "http://purl.org/vocab/bio/0.1/",
+    "gndo": "https://d-nb.info/standards/elementset/gnd#",
     "schema": "http://schema.org/",
-    "cc": "http://creativecommons.org/ns#",
-    "nplpl": "https://example.org/nepalplaces#",
-    "agrelon": "https://d-nb.info/standards/elementset/agrelon#",
-    "dbr": "http://dbpedia.org/resource/",
-    "gndo": "http://d-nb.info/gnd/",
     "viaf": "https://viaf.org/viaf/",
-    "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "nepalpeople": "https://example.org/nepalpeople#",
-    "owl:NamedIndividual": "rdf:resource",
-    "Person": "rdf:resource",
-    "owl:sameAs": "rdf:resource",
-    "agrelon:hasParent": "rdf:resource",
-    "hasPosition": "rdf:resource",
-    "bio:birth": "rdf:resource",
-    "bio:death": "rdf:resource",
-    "rdfs:label": "rdf:resource",
-    "foaf:name": "rdf:resource",
-    "gndo:personalName": "rdf:resource",
-    "gndo:forename": "rdf:resource",
-    "schema:gender": "rdf:resource",
-    "rdfs:comment": "rdf:resource",
-    "rdfs:seeAlso": "rdf:resource",
-    "rdf:type": "rdf:resource",
-    "agrelon:hasPlace": "rdf:resource",
-    "hasTime": "rdf:resource"
+    "dbr": "http://dbpedia.org/resource/",
+    "geonames": "https://www.geonames.org/",
+    "wikidata": "https://www.wikidata.org/wiki/"
   },
-  "@id": "nepalica:8637#Pṛthvīnārāyaṇa_Śāha",
-  "@type": ["rdf:NamedIndividual", "nepalpeople:Person"],
-  "owl:sameAs": ["viaf:5735314", "gndo:119173816", "dbr:Prithvi_Narayan_Shah"],
-  "agrelon:hasParent": "nepalpeople:Narabhupala_Saha",
-  "hasPosition": ["nepalpeople:Position_Prthvinarayana_Saha_1", "nepalpeople:Position_Prthvinarayana_Saha_2"],
-  "bio:birth": "nepalpeople:Birth_Prthvinarayana_Saha",
-  "bio:death": "nepalpeople:Death_Prthvinarayana_Saha",
-  "rdfs:label": {
-    "@value": "Pṛthvī Nārāyaṇa Śāha",
-    "@language": "ne"
-  },
-  "foaf:name": {
-    "@value": "Pṛthvī Nārāyaṇa Śāha",
-    "@language": "ne"
-  },
-  "gndo:personalName": {
-    "@value": "Pṛthvīnārāyaṇa Śāha",
-    "@language": "ne"
-  },
-  "gndo:forename": {
-    "@value": "Pṛthvīnārāyaṇa",
-    "@language": "ne"
-  },
-  "schema:gender": "schema:Male",
-  "rdfs:comment": {
-    "@value": "b. 1720 at Gorkha; d. 11 January 1775 at Devighat; son of Narabhūpāla Śāha; king of Gorkha (r. 3 April 1743–1768); king of Nepal (r. 1768-1775).",
-    "@language": "en"
-  },
-  "rdfs:seeAlso": "https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/178"
+  "@id": "https://example.org/nepalpeople",
+  "mapping": [
+    {
+      "personProperty": "n",
+      "ontologyProperty": "gndo:preferredNameEntityForThePerson"
+    },
+    {
+      "personProperty": "gender",
+      "ontologyProperty": "schema:gender"
+    },
+    {
+      "personProperty": "anglicized_name",
+      "ontologyProperty": "foaf:name"
+    },
+    {
+      "personProperty": "surname",
+      "ontologyProperty": "foaf:surname"
+    },
+    {
+      "personProperty": "forename",
+      "ontologyProperty": "foaf:forename"
+    }
+  ]
 }
