@@ -100,8 +100,15 @@ def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
         # Add the gender and its value to the RDF graph as a single value
         gender_value = person.get("gender")
         if gender_value:
-            g.add((person_node, schema.gender, Literal(gender_value[0])))
-        
+            if gender_value[0].lower() == "female":
+                gender_uri = schema.Female
+            elif gender_value[0].lower() == "male":
+                gender_uri = schema.Male
+            else:
+                # Handle other cases or use a default URI if necessary
+                gender_uri = schema.OtherGender  # Replace with your desired default URI
+
+            g.add((person_node, schema.gender, gender_uri))
         # Add surname if available
         if "surname" in person:
             g.add((person_node, gndo.surname, Literal(person["surname"])))
