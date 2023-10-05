@@ -111,13 +111,13 @@ def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
             g.add((person_node, schema.gender, gender_uri))
         # Add surname if available
         if "surname" in person:
-            g.add((person_node, gndo.surname, Literal(person["surname"])))
+            g.add((person_node, gndo.surname, Literal(person["surname"], lang='ne')))
 
 
         # Add the note_text to the graph 
         note_text = person["note_text"]
         if note_text:
-            g.add((person_node, rdfs.comment, Literal(note_text)))
+            g.add((person_node, rdfs.comment, Literal(note_text, lang='ne')))
 
     # Loop through place entries and add them to the RDF graph
     place_uri = (
@@ -129,11 +129,11 @@ def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
         # Create a URI reference for the place node
         place_node = URIRef(f"{place_uri}#{place['place_name'].replace(' ', '_')}")
         g.add((place_node, RDF.type, GN_NS.Feature))
-        g.add((place_node, GN_NS.name, Literal(place["place_name"])))
+        g.add((place_node, GN_NS.name, Literal(place["place_name"], lang='ne')))
        # Extract alternative names and exclude the main place name from the list
         alternative_names = [alt_name for alt_name in place.get("alternative_names", []) if alt_name != place["place_name"]]
         for alt_name in alternative_names:
-            g.add((place_node, SKOS_NS.altLabel, Literal(alt_name)))
+            g.add((place_node, SKOS_NS.altLabel, Literal(alt_name, lang='ne')))
         # Add the value for nepalica-reg:{{ place['n'] }}
         place_ref_value = place.get("n")
         if place_ref_value:
@@ -158,7 +158,7 @@ def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
         # Add the note_text to the graph 
         note_text = place["note_text"]
         if note_text:
-            g.add((place_node, rdfs.comment, Literal(note_text)))
+            g.add((place_node, rdfs.comment, Literal(note_text, lang='en')))
 
     # Loop through term entries and add them to the RDF graph
     term_uri = (
@@ -169,12 +169,12 @@ def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
     for term in terms:
         term_node = URIRef(f"{term_uri}#{term['prefLabel'].replace(' ', '_')}")
         g.add((term_node, RDF.type, SKOS_NS.Concept))
-        g.add((term_node, SKOS_NS.prefLabel, Literal(term["prefLabel"])))
+        g.add((term_node, SKOS_NS.prefLabel, Literal(term["prefLabel"], lang='ne')))
         g.add((term_node, SKOS_NS.comment, Literal(term["meaning"],lang='en')))
         # Add alternative labels as skos:altLabel
         alt_labels = term.get("altLabel", [])
         for alt_label in alt_labels:
-            g.add((term_node, SKOS_NS.altLabel, Literal(alt_label)))
+            g.add((term_node, SKOS_NS.altLabel, Literal(alt_label, lang='ne')))
         # Add the value for nepalica-gloss
         term_ref_value = term.get("term_ref")
         if term_ref_value:
