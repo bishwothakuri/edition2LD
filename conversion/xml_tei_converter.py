@@ -1,5 +1,5 @@
-import lxml.etree as ET
-
+#import lxml.etree as ET
+import xml.etree.ElementTree as ET
 
 def generate_xml_tei_from_metadata(metadata):
     base_xml_filepath = "templates/base.xml"  # Path to the base XML-TEI template

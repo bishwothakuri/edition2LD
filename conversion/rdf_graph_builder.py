@@ -43,6 +43,8 @@ g_ontology.parse(ontology_file_path, format="turtle")
 
 def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
     persons = metadata.get("persons", [])
+    places = metadata.get("places", [])
+    terms = metadata.get("terms", [])
     physDesc_ref_target = metadata.get("physDesc_id")
     
     # Initialize an RDF graph
@@ -73,6 +75,7 @@ def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
         if physDesc_ref_target
         else URIRef(f"{nepalica}person")
     )
+    
     for person in persons:
         person_node = URIRef(f"{person_uri}#{person['anglicized_name'].replace(' ', '_')}")
         g.add((person_node, RDF.type, FOAF_NS.Person))
@@ -107,6 +110,29 @@ def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
         if note_text:
             g.add((person_node, rdfs.comment, Literal(note_text)))
         
+    # Add places information to the RDF graph
+    for place in places:
+        place_node = URIRef(f"{geonames}{place['n']}")
+        g.add((place_node, RDF.type, GN_NS.Feature))
+        g.add((place_node, DC_NS.title, Literal(place["place_name"], lang='en')))
+
+        # Add alternative names for the place
+        alternative_names = [alt_name for alt_name in place.get("alternative_names", []) if alt_name != place["place_name"]]
+        for alt_name in alternative_names:
+            g.add((place_node, SKOS_NS.altLabel, Literal(alt_name)))
+
+        # Add note_text to the graph for the place
+        note_text = place["note_text"]
+        if note_text:
+            g.add((place_node, rdfs.comment, Literal(note_text)))
+
+    # Add terms information to the RDF graph
+    for term in terms:
+        term_node = URIRef(f"{nepalica_gloss}{term['term_ref']}")
+        g.add((term_node, RDF.type, SKOS_NS.Concept))
+        g.add((term_node, SKOS_NS.prefLabel, Literal(term["prefLabel"], lang='en')))
+        g.add((term_node, SKOS_NS.definition, Literal(term["meaning"], lang='en')))
+
         # Enrich the RDF graph with data from the sample ontology
         g += g_ontology
 
