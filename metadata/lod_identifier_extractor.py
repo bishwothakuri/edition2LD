@@ -2,29 +2,6 @@ import json
 from typing import Dict
 
 
-def extract_term_identifiers(json_file_path: str, term_ref: str) -> Dict[str, str]:
-    with open(json_file_path, "r") as f:
-        data = json.load(f)
-
-    word_data = data.get("word_data", [])
-    term_identifiers = {}
-
-    for term in word_data:
-        if term["id"] == term_ref:
-            term_identifiers = {
-                "id": term["id"],
-                "geonames": term["geonames"],
-                "dbr": term["dbr"],
-                "wiki": term["wiki"],
-                "wikidata": term["wikidata"],
-                "viaf": term["viaf"],
-                "gnd": term["gnd"]
-            }
-            break
-
-    return term_identifiers
-
-
 def extract_place_identifiers(json_file_path: str, n: str) -> Dict[str, str]:
     with open(json_file_path, "r") as f:
         data = json.load(f)
@@ -68,5 +45,28 @@ def extract_person_identifiers(json_file_path: str, n: str) -> Dict[str, str]:
             }
             break
     return person_identifiers
+
+
+
+def extract_term_identifiers(json_file_path: str, term_ref: str) -> Dict[str, str]:
+    with open(json_file_path, "r") as f:
+        data = json.load(f)
+
+    word_data = data.get("word_data", [])
+    term_identifiers = {}
+
+    for identifier in word_data:
+        if identifier["id"] == term_ref:
+            term_identifiers = {
+                "id": identifier["id"],
+                "geonames": identifier["geonames"],
+                "dbr": identifier["dbr"],
+                "wiki": identifier["wiki"],
+                "wikidata": identifier["wikidata"],
+                "viaf": identifier["viaf"],
+                "gnd": identifier["gnd"]
+            }
+            break
+    return term_identifiers
 
 

@@ -170,14 +170,31 @@ def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
         term_node = URIRef(f"{term_uri}#{term['prefLabel'].replace(' ', '_')}")
         g.add((term_node, RDF.type, SKOS_NS.Concept))
         g.add((term_node, SKOS_NS.prefLabel, Literal(term["prefLabel"], lang='ne')))
-        g.add((term_node, SKOS_NS.comment, Literal(term["meaning"],lang='en')))
+        g.add((term_node, rdfs.comment, Literal(term["meaning"], lang='en')))
+
         # Add alternative labels as skos:altLabel
         alt_labels = term.get("altLabel", [])
         for alt_label in alt_labels:
             g.add((term_node, SKOS_NS.altLabel, Literal(alt_label, lang='ne')))
+
+        # # Add the value for nepalica-gloss
+        # term_ref_value = term.get("term_ref")
+        # if term_ref_value:
+        #     g.add((term_node, SKOS_NS.seeAlso, nepalica_gloss[term_ref_value]))  # Use SKOS_NS.seeAlso
+
         # Add the value for nepalica-gloss
         term_ref_value = term.get("term_ref")
         if term_ref_value:
-            g.add((term_node, rdfs.seeAlso, nepalica_gloss[term_ref_value]))
+            rdfs_see_also_parent = nepalica_gloss[term_ref_value]
+            g.add((term_node, SKOS_NS.related, rdfs_see_also_parent))
+        
+        # Add the LOD identifiers extracted from the metadata dictionary
+        for lod_identifier_key, lod_identifier_values in term.items():
+            if lod_identifier_key in ["gnd", "viaf", "wiki", "dbr", "geonames", "wikidata"]:
+                for lod_identifier_value in lod_identifier_values:
+                    if lod_identifier_value:
+                        lod_uri = URIRef(f"{lod_identifier_key}:{lod_identifier_value}")
+                        g.add((term_node, SKOS_NS.related, lod_uri))
+
 
     return g

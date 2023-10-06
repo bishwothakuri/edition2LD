@@ -156,44 +156,47 @@ def extract_metadata_from_xml(xml_file, json_file):
 
 
         # Initialize an empty dictionary to store terms
-        terms_dict = {}
+        term_name_dict = {}
+
         # Loop through each term in the list of terms
         for term in terms:
             if term.text is not None:
                 term_text = " ".join(term.text.split())
                 term_ref = term.get("ref")
+
                 # Extract the meaning of the term using its reference
                 term_meaning = extract_term_meaning(base_url, term_ref)
-                # Check if the term reference is already present in the terms_dict
-                if term_ref not in terms_dict:
-                    terms_dict[term_ref] = {
+
+                # Check if the term reference is already present in the term_name_dict
+                if term_ref not in term_name_dict:
+                    term_name_dict[term_ref] = {
                         "prefLabel": term_text,
                         "meaning": term_meaning,
                         "altLabel": []
                     }
                 else:
-                    # Check if the term_text is not already in pefLabel, then append
-                    if term_text != terms_dict[term_ref]["prefLabel"]:
-                        terms_dict[term_ref]["altLabel"].append(term_text)
-        
-        # Loop through the collected term information in terms_dict
-        for term_ref, term_data in terms_dict.items():
+                    # Check if the term_text is not already in prefLabel, then append
+                    if term_text != term_name_dict[term_ref]["prefLabel"]:
+                        term_name_dict[term_ref]["altLabel"].append(term_text)
+
+        for term_ref, term_data in term_name_dict.items():
             pref_label = term_data["prefLabel"]
             alt_labels = term_data["altLabel"]
             meaning = term_data["meaning"]
-        
+
             term_entry = {"term_ref": term_ref, "prefLabel": pref_label, "meaning": meaning}
-                
+
             # Add altLabel if it exists
             if alt_labels:
                 term_entry["altLabel"] = alt_labels
-            
-            # Extract the term identifiers using the term_ref
-            words_enhanced_file_path = os.path.join("data", "words_enhanced_sample.json")
-            term_identifiers = extract_term_identifiers(words_enhanced_file_path, term_ref)
-            if term_identifiers:
-                term_entry.update(term_identifiers)
-        
+
+            # Extract the LOD identifiers from the second method
+            ont_items_enhanced_file_path = os.path.join("data", "words_enhanced_sample.json")
+            term_identifiers = extract_term_identifiers(ont_items_enhanced_file_path, term_ref)
+            for key in ["gnd", "viaf", "wiki", "wikidata", "dbr", "geonames"]:
+                if term_identifiers.get(key) is not None:
+                    term_entry[key] = [term_identifiers[key]] if not isinstance(term_identifiers[key], list) else term_identifiers[key]
+
             metadata["terms"].append(term_entry)
 
         print("Metadata extracted successfully from XML file.")
