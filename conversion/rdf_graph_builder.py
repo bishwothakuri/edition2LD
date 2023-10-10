@@ -110,30 +110,66 @@ def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
         if note_text:
             g.add((person_node, rdfs.comment, Literal(note_text)))
         
-    # Add places information to the RDF graph
+    # Loop through place entries and add them to the RDF graph
+    place_uri = (
+        URIRef(f"{nepalica}{physDesc_ref_target}")
+        if physDesc_ref_target
+        else URIRef(f"{nepalica}place")
+    )
     for place in places:
-        place_node = URIRef(f"{geonames}{place['n']}")
+        # Create a URI reference for the place node
+        place_node = URIRef(f"{place_uri}#{place['place_name'].replace(' ', '_')}")
         g.add((place_node, RDF.type, GN_NS.Feature))
-        g.add((place_node, DC_NS.title, Literal(place["place_name"], lang='en')))
-
-        # Add alternative names for the place
+        g.add((place_node, GN_NS.name, Literal(place["place_name"])))
+       # Extract alternative names and exclude the main place name from the list
         alternative_names = [alt_name for alt_name in place.get("alternative_names", []) if alt_name != place["place_name"]]
         for alt_name in alternative_names:
             g.add((place_node, SKOS_NS.altLabel, Literal(alt_name)))
+        # Add the value for nepalica-reg:{{ place['n'] }}
+        place_ref_value = place.get("n")
+        if place_ref_value:
+            rdfs_see_also_parent = nepalica_reg[place_ref_value]
+            g.add((place_node, rdfs.seeAlso, rdfs_see_also_parent))
 
-        # Add note_text to the graph for the place
+            # Add the LOD identifiers extracted from the metadata dictionary
+            for lod_identifier_key, lod_identifier_values in place.items():
+                if lod_identifier_key in ["gnd", "viaf", "wiki", "dbr", "geonames", "wikidata"]:
+                    for lod_identifier_value in lod_identifier_values:
+                        if lod_identifier_value:
+                            lod_uri = URIRef(f"{lod_identifier_key}:{lod_identifier_value}")
+                            g.add((place_node, rdfs.seeAlso, lod_uri))
+            
+            # # Sort the LOD identifiers to ensure nepalica-reg comes first
+            # sorted_lod_identifiers = sorted(lod_identifiers, key=lambda x: str(x) != str(nepalica_reg[place_ref_value]))
+            
+            # # Add the sorted LOD identifiers to the RDF graph
+            # for lod_uri in sorted_lod_identifiers:
+            #     g.add((place_node, rdfs.seeAlso, lod_uri))
+
+        # Add the note_text to the graph 
         note_text = place["note_text"]
         if note_text:
             g.add((place_node, rdfs.comment, Literal(note_text)))
 
-    # Add terms information to the RDF graph
+    # Loop through term entries and add them to the RDF graph
+    term_uri = (
+        URIRef(f"{nepalica}{physDesc_ref_target}")
+        if physDesc_ref_target
+        else URIRef(f"{nepalica}term")
+    )
     for term in terms:
-        term_node = URIRef(f"{nepalica_gloss}{term['term_ref']}")
+        term_node = URIRef(f"{term_uri}#{term['prefLabel'].replace(' ', '_')}")
         g.add((term_node, RDF.type, SKOS_NS.Concept))
-        g.add((term_node, SKOS_NS.prefLabel, Literal(term["prefLabel"], lang='en')))
-        g.add((term_node, SKOS_NS.definition, Literal(term["meaning"], lang='en')))
+        g.add((term_node, SKOS_NS.prefLabel, Literal(term["prefLabel"])))
+        g.add((term_node, SKOS_NS.comment, Literal(term["meaning"])))
+        # Add alternative labels as skos:altLabel
+        alt_labels = term.get("altLabel", [])
+        for alt_label in alt_labels:
+            g.add((term_node, SKOS_NS.altLabel, Literal(alt_label)))
+        # Add the value for nepalica-gloss
+        term_ref_value = term.get("term_ref")
+        if term_ref_value:
+            g.add((term_node, rdfs.seeAlso, nepalica_gloss[term_ref_value]))
 
-        # Enrich the RDF graph with data from the sample ontology
-        g += g_ontology
 
     return g
