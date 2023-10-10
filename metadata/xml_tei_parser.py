@@ -10,7 +10,8 @@ from metadata.lod_identifier_extractor import (
 )
 from metadata.webcrawler import (
     extract_additional_info_from_note,
-    extract_item_note_and_surname
+    extract_item_note_and_surname,
+    extract_metadata_of_the_document
 )
 
 
@@ -29,6 +30,7 @@ def extract_metadata_from_xml(xml_file, json_file):
 
         # Extract the id attribute from the root element
         tei_id = root.attrib[f"{{{NS['xml']}}}id"]
+        print("tei_id is", tei_id)
         title_main = root.find(".//tei:title[@type='main']", NS).text
         title_short = root.find(".//tei:title[@type='short']", NS).text
         title_sub = root.find(".//tei:title[@type='sub']", NS).text
