@@ -51,45 +51,6 @@ def bind_namespaces(g):
     g.namespace_manager.bind("nepalica_reg", nepalica_reg)
 
 
-def add_document_metadata(g, document_metadata, physDesc_ref_target):
-    # Check if "document_metadata" key exists in the metadata dictionary
-    if "document_metadata" in document_metadata:
-        document_node = URIRef(f"{nepalica}{physDesc_ref_target}")
-        g.add((document_node, RDF.type, DC_NS.Document))
-
-        # Iterate over the key-value pairs in "document_metadata" and add RDF triples
-        for key, value in document_metadata.items():
-            if value:
-                # Mapping between document metadata keys and RDF predicates
-                predicates = {
-                    "Identifier:": DC_NS.identifier,
-                    "Title:": DC_NS.title,
-                    "Type, original:": DC_NS.type,
-                    "Abstract:": DC_NS.abstract,
-                    "Issued by and to:": DC_NS.issued_by,
-                    "Place:": DC_NS.place,
-                    "Donor, king:": DC_NS.donor,
-                    "Type of endowment:": DC_NS.type_of_endowment,
-                    "Region of endowment:": DC_NS.region_of_endowment,
-                    "Purpose of endowment:": DC_NS.purpose_of_endowment,
-                    "Amount of endowment:": DC_NS.amount_of_endowment,
-                    "Date:": DC_NS.date,
-                    "Language, script:": DC_NS.language,
-                    "Width, height, and unit:": DC_NS.format,
-                    "Material, binding, and color:": schema.material,
-                    "Condition:": DC_NS.extent,
-                    "Institution and reg. no.:": DC_NS.publisher,
-                    "Source and details:": DC_NS.source,
-                    "Running no., exposures:": DC_NS.hasPart,
-                    "Created, modified, ID:": schema.created,
-                    "Notes:": DC_NS.description,
-                    "Technical terms:": DC_NS.subject
-                }
-
-                if key in predicates:
-                    g.add((document_node, predicates[key], Literal(value, lang='en')))
-
-
 def add_persons(g, persons, physDesc_ref_target):
     person_uri = (
         URIRef(f"{nepalica}{physDesc_ref_target}")
