@@ -87,42 +87,42 @@ def extract_additional_info_from_note(note_text):
 
 
 
-def extract_metadata_of_the_document(web_url):
-    # URL of the webpage to scrape
-    url = "https://nepalica.hadw-bw.de/nepal/catitems/viewitem/8637"
+def extract_metadata_of_the_document(physDesc_id):
+    try:
+        # URL of the webpage to scrape
+        url = f"https://nepalica.hadw-bw.de/nepal/catitems/viewitem/{physDesc_id}"
 
-    # Send an HTTP GET request to the URL
-    response = requests.get(url)
+        # Send an HTTP GET request to the URL
+        response = requests.get(url)
 
-    # Check if the request was successful (status code 200)
-    if response.status_code == 200:
-        # Parse the HTML content of the webpage using BeautifulSoup
-        soup = BeautifulSoup(response.text, "html.parser")
+        # Check if the request was successful (status code 200)
+        if response.status_code == 200:
+            # Parse the HTML content of the webpage using BeautifulSoup
+            soup = BeautifulSoup(response.text, "html.parser")
 
-        # Find the table element containing the data
-        data_table = soup.find("table")
+            # Find the table element containing the data
+            data_table = soup.find("table")
 
-        # Initialize a dictionary to store the scraped data
-        scraped_data = {}
+            # Initialize a dictionary to store the scraped data
+            scraped_data = {}
 
-        # Check if the table was found
-        if data_table:
-            # Loop through the table rows
-            for row in data_table.find_all("tr"):
-                # Extract the table cells (td) in each row
-                cells = row.find_all("td")
-                if len(cells) == 2:
-                    # Get the text content of the first cell as the key and the second cell as the value
-                    key = cells[0].text.strip()
-                    value = cells[1].text.strip()
+            # Check if the table was found
+            if data_table:
+                # Loop through the table rows
+                for row in data_table.find_all("tr"):
+                    # Extract the table cells (td) in each row
+                    cells = row.find_all("td")
+                    if len(cells) == 2:
+                        # Get the text content of the first cell as the key and the second cell as the value
+                        key = cells[0].text.strip()
+                        value = cells[1].text.strip()
 
-                    # Store the key-value pair in the dictionary
-                    scraped_data[key] = value
+                        # Store the key-value pair in the dictionary
+                        scraped_data[key] = value
 
-            # Print the scraped data
-            for key, value in scraped_data.items():
-                print(f"{key}: {value}")
+            return scraped_data  # Return the scraped data as a dictionary
         else:
-            print("Table not found on the webpage.")
-    else:
-        print(f"Failed to retrieve the webpage. Status code: {response.status_code}")
+            print(f"Failed to retrieve the webpage. Status code: {response.status_code}")
+
+    except Exception as e:
+        print("Error extracting metadata from the document:", e)

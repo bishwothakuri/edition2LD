@@ -30,7 +30,6 @@ def extract_metadata_from_xml(xml_file, json_file):
 
         # Extract the id attribute from the root element
         tei_id = root.attrib[f"{{{NS['xml']}}}id"]
-        print("tei_id is", tei_id)
         title_main = root.find(".//tei:title[@type='main']", NS).text
         title_short = root.find(".//tei:title[@type='short']", NS).text
         title_sub = root.find(".//tei:title[@type='sub']", NS).text
@@ -49,6 +48,7 @@ def extract_metadata_from_xml(xml_file, json_file):
             "author_role_issuer": author_role_issuer,
             "main_editor": main_editor,
             "physDesc_id": None,
+            "document_metadata": None,
             "persons": [],
             "places": [],
             "terms": []
@@ -60,7 +60,12 @@ def extract_metadata_from_xml(xml_file, json_file):
             target = ref_element.attrib["target"]
             ref_num = target.rsplit("/", 1)[-1]
             metadata["physDesc_id"] = ref_num
-
+        
+        # Call extract_metadata_of_the_document wiht the physDesc_id
+        document_metadata = extract_metadata_of_the_document(metadata["physDesc_id"]) or {}
+        # Store the document metadata in the 'metadata' dictionary under "document_metadata" key
+        metadata["document_metadata"] = document_metadata
+       
         ont_item_occurrences = extract_item_entity_id(tei_id, json_file)
 
         # Extract person names and LOD identifiers
