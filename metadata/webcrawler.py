@@ -35,6 +35,7 @@ def extract_additional_info_from_note(note_text):
     Output: dictionary includes indentifier name and correspoinding content
 
     Reference example: https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/178
+    https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/304
     '''
     #gnd_pattern = r'gnd:(\d+),|gnd:(\d+).|gnd:(\d+-\d+),|gnd:(\d+-\d+).'
     gnd_pattern = r'gnd:(\d+(?:-\d+)?).|gnd:(\d+(?:-\d+)?),'
@@ -72,6 +73,22 @@ def extract_additional_info_from_note(note_text):
     geonames_content = [item.strip('.').strip() for match in geos_match for item in match if item]
     gender_content = gender_match.group(1).strip() if gender_match else None
 
+    # Define a regular expression pattern to match the first underscore at the start of a word
+    underscore_pattern = r'\b_(\w)'
+
+    # Initialize cleaned content lists
+    wiki_content_cleaned = []
+    dbr_content_cleaned = []
+
+    # Loop through the lists and clean each string
+    for content in wiki_content:
+        cleaned_content = re.sub(underscore_pattern, r'\1', content)
+        wiki_content_cleaned.append(cleaned_content)
+
+    for content in dbr_content:
+        cleaned_content = re.sub(underscore_pattern, r'\1', content)
+        dbr_content_cleaned.append(cleaned_content)
+
     #Delete #... until end of entry-no matter what comes after it
     checked_index = note_text.find("#")
     note_text = note_text[:checked_index]
@@ -79,7 +96,7 @@ def extract_additional_info_from_note(note_text):
     # Remove leading and trailing spaces
     note_text = note_text.strip()
 
-    content_dict = {"gnd": gnd_content, "viaf": viaf_content, "wiki": wiki_content, "wikidata": wikidata_content, "dbr": dbr_content, "geonames": geonames_content, "gender": gender_content}
+    content_dict = {"gnd": gnd_content, "viaf": viaf_content, "wiki": wiki_content_cleaned, "wikidata": wikidata_content, "dbr": dbr_content_cleaned, "geonames": geonames_content, "gender": gender_content}
     keys = content_dict.keys()
     elements = [content_dict[key] for key in keys]
 
