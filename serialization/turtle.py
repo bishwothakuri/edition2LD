@@ -22,30 +22,23 @@ def save_turtle_serialization(graph: Graph, file_path: str) -> None:
     # Serialize the graph in Turtle format
     turtle_data = graph.serialize(format='turtle')
 
-    # Remove the angle brackets around subject, object, and predicate
-    turtle_data = turtle_data.replace("<", "").replace(">", "")
+    # Split the Turtle data into header and data parts
+    header_part, data_part = turtle_data.split('\n\n', 1)
 
-    # Replace full URIs with namespace prefixes
+    # Replace the full URIs with namespace prefixes in the data part
     for prefix, namespace in namespaces.items():
-        if prefix != 'nepalica_reg':  # Exclude nepalica_reg namespace from this part
-            turtle_data = turtle_data.replace(str(namespace), f"{prefix}:")
+        # Use regular expressions to replace full URIs with namespace prefixes
+        data_part = re.sub(r'<{}(.*?)>'.format(namespace), '{}:\\1'.format(prefix), data_part)
 
-    # lod_identifier_prefixes = ["gnd:", "viaf:", "wiki:", "dbr:", "geonames:", "wikidata:"]
-    # for prefix in lod_identifier_prefixes:
-    #     replacement = f',\n        {prefix}'  # Add a space after the comma
-    #     turtle_data = turtle_data.replace(f',{prefix}', replacement)
+    # Remove the angle brackets around subject, object, and predicate in the data part
+    data_part = data_part.replace("<", "").replace(">", "")
 
-    # Use regular expressions to add spaces before commas (,) within Turtle objects
-    turtle_data = re.sub(r'([^,])\s*,', r'\1 ,', turtle_data)
-    #turtle_data = re.sub(r'(:)(\w)', r'\1 \2', turtle_data)
-    turtle_data = re.sub(r'([^,])(,)(?=\w)', r',\1', turtle_data)
+    # Use regular expressions to add spaces before commas (,) within Turtle objects in the data part
+    data_part = re.sub(r'([^,])\s*,', r'\1 ,', data_part)
+
+    # Combine the header and modified data parts
+    modified_turtle_data = header_part + '\n\n' + data_part
 
     # Save the modified Turtle serialization to the file
     with open(file_path, 'w') as f:
-        # Write the namespaces in the heading
-        # for prefix, namespace in namespaces.items():
-            # f.write(f"@prefix {prefix}: <{namespace}> .\n")
-        # f.write('\n')
-
-        # Write the modified Turtle data
-        f.write(turtle_data)
+        f.write(modified_turtle_data)
