@@ -36,10 +36,14 @@ def save_turtle_serialization(graph: Graph, file_path: str) -> None:
     #     turtle_data = turtle_data.replace(f',{prefix}', replacement)
 
     # Use regular expressions to add spaces before commas (,) within Turtle objects
-    turtle_data = re.sub(r'([^,])\s*,', r'\1 ,', turtle_data)
+    #turtle_data = re.sub(r'([^,])\s*,', r'\1 ,', turtle_data)
     #turtle_data = re.sub(r'(:)(\w)', r'\1 \2', turtle_data)
-    turtle_data = re.sub(r'([^,])(,)(?=\w)', r',\1', turtle_data)
+    #turtle_data = re.sub(r'([^,])(,)(?=\w)', r',\1', turtle_data)
+    turtle_data = re.sub(r',\n', ' ,\n', turtle_data)
 
+    #replace # into _ to form link
+    turtle_data = re.sub(r'(nepalica:\d+)#(\w)', r'\1_\2', turtle_data) 
+    
     # Save the modified Turtle serialization to the file
     with open(file_path, 'w') as f:
         # Write the namespaces in the heading
