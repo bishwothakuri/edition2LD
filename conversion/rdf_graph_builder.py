@@ -29,6 +29,7 @@ viaf = Namespace("https://viaf.org/viaf/")
 gnd = Namespace("https://d-nb.info/gnd/")
 wikidata = Namespace("https://www.wikidata.org/wiki/")
 gndo = Namespace("https://d-nb.info/standards/elementset/gnd#")
+agrelon = Namespace("https://d-nb.info/standards/elementset/agrelon#")
 
 
 def bind_namespaces(g):
@@ -45,6 +46,8 @@ def bind_namespaces(g):
     g.bind("wikidata", wikidata)
     g.bind("gndo", gndo)
     g.bind("schema", schema)
+    g.bind("agrelon", agrelon)
+
 
     # Bind custom namespaces using the NamespaceManager
     g.namespace_manager.bind("nepalica", nepalica, override=False)
@@ -85,6 +88,15 @@ def add_persons(g, persons, physDesc_ref_target):
         ]
         for alt_name in alternative_names:
             g.add((person_node, SKOS_NS.altLabel, Literal(alt_name)))
+        if "personal_name" in person:
+            g.add((person_node, gndo.personalName, Literal(person["personal_name"], lang="ne")))
+        if "forename" in person:
+            g.add((person_node, gndo.forename, Literal(person["forename"], lang="ne")))
+        if "lastname" in person:
+            g.add((person_node, gndo.lastname, Literal(person["lastname"], lang="ne")))
+        if "has_parent" in person:
+            g.add((person_node, agrelon.hasParent, Literal(person["has_parent"], lang="ne")))
+
 
         # Add the value for nepalica-reg:{{ person['n'] }}
         person_ref_value = person.get("n")

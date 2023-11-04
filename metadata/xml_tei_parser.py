@@ -13,6 +13,7 @@ from metadata.webcrawler import (
     extract_item_note_and_surname,
     extract_metadata_of_the_document
 )
+from metadata.ontology_query_tool import process_query_by_id
 
 
 NS = {
@@ -98,6 +99,15 @@ def extract_metadata_from_xml(xml_file, json_file):
         # Process the name_dict to assign the names correctly and extract LOD identifiers
         for ont_item_id, name_info in name_dict.items():
             metadata["persons"].append(name_info)
+
+            # Call process_query_by_id with ont_item_id as individual_id and capture the results
+            query_results = process_query_by_id(ont_item_id)
+
+            # Check if query_results is not None before accessing it
+            if query_results:
+                for key, value in query_results.items():
+                    if value is not None:
+                        name_info[key] = value
 
             # Extract the LOD identifiers and gender from the note
             note_text_and_surname = extract_item_note_and_surname(ontology_url, ont_item_id)
