@@ -4,6 +4,7 @@ import json
 
 from rdflib import Graph
 from metadata.xml_tei_parser import extract_metadata_from_xml
+from metadata.xml_word_tokenizer import tokenize_xml_text
 from conversion.xml_tei_converter import generate_xml_tei_from_metadata
 from conversion.rdf_graph_builder import create_rdf_graph
 from conversion.rdfa_creator import generate_rdfa_from_graph
@@ -34,7 +35,16 @@ def main(xml_file_path: str, json_file_path: str) -> None:
         # with open(output_file_path, "wb") as f:
         #     f.write(xml_tei)
         # logging.info("XML-TEI file generated successfully at %s", output_file_path)
-        
+        token_dict = tokenize_xml_text(xml_file_path)
+        # Store the token_dict in a JSON file
+        token_output_file_path = os.path.join(
+            "output", os.path.splitext(os.path.basename(xml_file_path))[0] + "_tokens.json"
+        )
+        with open(token_output_file_path, "w",  encoding="utf-8") as f:
+            json.dump(token_dict, f, ensure_ascii=False, indent=4)
+        logging.info("Token dictionary generated successfully at %s", token_output_file_path)
+            
+
         # Store metadata in a separate JSON file
         json_output_file_path = os.path.join(
             "output", os.path.splitext(os.path.basename(xml_file_path))[0] + ".json"
@@ -44,7 +54,7 @@ def main(xml_file_path: str, json_file_path: str) -> None:
         logging.info("JSON file generated successfully at %s", json_output_file_path)
 
         # Create RDF graph from metadata
-        g: Graph = create_rdf_graph(metadata)
+        g: Graph = create_rdf_graph(metadata, token_dict)
          # Serialize RDF graph to RDF/XML
         rdf_xml_output_file_path = os.path.join(
             "output", os.path.splitext(os.path.basename(xml_file_path))[0] + ".rdf"

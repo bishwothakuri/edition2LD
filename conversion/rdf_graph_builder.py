@@ -242,7 +242,7 @@ def add_terms(g, terms, physDesc_ref_target):
                         g.add((term_node, SKOS_NS.related, lod_uri))
 
 
-def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
+def create_rdf_graph(metadata: Dict[str, list], token_dict: Dict[str, list]) -> Graph:
     document_metadata = metadata.get("document_metadata", {})
     persons = metadata.get("persons", [])
     places = metadata.get("places", [])
@@ -254,6 +254,19 @@ def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
 
     bind_namespaces(g)
 
+    for token_id, token in token_dict.items():
+      token_uri = (
+       URIRef(f"{nepalica}{physDesc_ref_target}")
+       if physDesc_ref_target
+       else URIRef(f"{nepalica}token")
+       )
+      token_node = URIRef(f"{token_uri}#{token_id}")
+      g.add((token_node, RDF.type, DC_NS.Token))
+      g.add((token_node, rdfs.label, Literal(token, lang="en")))
+
+
+    
+    
 
      # Check if "document_metadata" key exists in the metadata dictionary
     if "document_metadata" in metadata:
