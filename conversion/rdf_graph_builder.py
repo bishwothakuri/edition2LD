@@ -6,7 +6,7 @@ from rdflib import RDF, Graph, Literal, Namespace, URIRef
 FOAF_NS = Namespace("http://xmlns.com/foaf/0.1/")
 GN_NS = Namespace("http://www.geonames.org/ontology#")
 SKOS_NS = Namespace("http://www.w3.org/2004/02/skos/core#")
-DC_NS = Namespace("http://purl.org/dc/elements/1.1/")
+DC_NS = Namespace("http://purl.org/dc/terms/")
 
 # Define custom namespaces specific to the Nepali ontology
 nepalica = Namespace("https://nepalica.hadw-bw.de/nepal/editions/show/")
@@ -37,7 +37,7 @@ def bind_namespaces(g):
     g.bind("foaf", FOAF_NS)
     g.bind("gn", GN_NS)
     g.bind("skos", SKOS_NS)
-    g.bind("dc", DC_NS)
+    g.bind("dct", DC_NS)
     g.bind("dbr", dbr)
     g.bind("wiki", wiki)
     g.bind("geonames", geonames)
