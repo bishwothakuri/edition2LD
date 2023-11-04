@@ -20,8 +20,7 @@ gn = Namespace("https://www.geonames.org/")
 gn_id = Namespace("https://www.geonames.org/")
 nepalica_gloss = Namespace("https://nepalica.hadw-bw.de/nepal/words/viewitem/")
 schema = Namespace("http://schema.org/")
-
-
+dbpedia = Namespace("https://dief.tools.dbpedia.org/server/ontology/classes/Place")
 geonames = Namespace("https://sws.geonames.org/")
 dbr = Namespace("https://dbpedia.org/resource/")
 wiki = Namespace("https://de.wikipedia.org/wiki/")
@@ -30,6 +29,9 @@ gnd = Namespace("https://d-nb.info/gnd/")
 wikidata = Namespace("https://www.wikidata.org/wiki/")
 gndo = Namespace("https://d-nb.info/standards/elementset/gnd#")
 agrelon = Namespace("https://d-nb.info/standards/elementset/agrelon#")
+ontolex = Namespace("http://www.w3.org/ns/lemon/ontolex#") 
+lime = Namespace("http://www.w3.org/ns/lemon/lime#")
+lexvo = Namespace("http://lexvo.org/id/iso639-3/")
 
 
 def bind_namespaces(g):
