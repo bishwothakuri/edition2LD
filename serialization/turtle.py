@@ -9,7 +9,9 @@ custom_namespaces = {
     'viaf': Namespace("https://viaf.org/viaf/"),
     'gnd': Namespace("https://d-nb.info/gnd/"),
     'wikidata': Namespace("https://www.wikidata.org/wiki/"),
-    'nepalica_gloss' : Namespace("https://nepalica.hadw-bw.de/nepal/words/viewitem/")
+    'nepalica_gloss' : Namespace("https://nepalica.hadw-bw.de/nepal/words/viewitem/"),
+    'ontolex' : Namespace("http://www.w3.org/ns/lemon/ontolex#") ,
+    'lime' : Namespace("http://www.w3.org/ns/lemon/lime#")
 }
 
 def save_turtle_serialization(graph: Graph, file_path: str) -> None:
@@ -27,7 +29,9 @@ def save_turtle_serialization(graph: Graph, file_path: str) -> None:
     namespaces = {
         'nepalica': Namespace("https://nepalica.hadw-bw.de/nepal/editions/show/"),
         'nepalica_reg': Namespace("https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/"),
-        'nepalica_gloss': Namespace("https://nepalica.hadw-bw.de/nepal/words/viewitem/")
+        'nepalica_gloss': Namespace("https://nepalica.hadw-bw.de/nepal/words/viewitem/"),
+        'lexvo' : Namespace("http://lexvo.org/id/iso639-3/")
+
     }
 
     # Serialize the graph in Turtle format

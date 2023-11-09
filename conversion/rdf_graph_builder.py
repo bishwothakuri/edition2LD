@@ -33,6 +33,7 @@ ontolex = Namespace("http://www.w3.org/ns/lemon/ontolex#")
 lime = Namespace("http://www.w3.org/ns/lemon/lime#")
 lexvo = Namespace("http://lexvo.org/id/iso639-3/")
 
+project_description = "This is a text edition of the project “Documents on the History of Religion and Law of Pre-modern Nepal”, Heidelberg Academy of Sciences and Humanities, https://www.hadw-bw.de/nepal."
 
 def bind_namespaces(g):
     # Bind RDF namespaces for use in the graph
@@ -71,6 +72,9 @@ def add_persons(g, persons, physDesc_ref_target):
             (person_node, FOAF_NS.name, Literal(person["anglicized_name"], lang="ne"))
         )
         g.add((person_node, rdfs.label, Literal(person["anglicized_name"], lang="ne")))
+        g.add((person_node, DC_NS.language, lexvo.ne))
+        g.add((person_node, DC_NS.language, lexvo.en))
+        g.add((person_node, DC_NS.description, Literal(project_description, lang="en")))
 
         # Add devanagari_name as a custom property
         if "devanagari_name" in person:
@@ -163,6 +167,10 @@ def add_places(g, places, physDesc_ref_target):
         ]
         for alt_name in alternative_names:
             g.add((place_node, SKOS_NS.altLabel, Literal(alt_name, lang="ne")))
+        g.add((place_node, DC_NS.language, lexvo.ne))
+        g.add((place_node, DC_NS.language, lexvo.en))
+        g.add((place_node, DC_NS.description, Literal(project_description, lang="en")))
+
         # Add the value for nepalica-reg:{{ place['n'] }}
         place_ref_value = place.get("n")
         if place_ref_value:
@@ -211,6 +219,10 @@ def add_terms(g, terms, physDesc_ref_target):
         g.add((term_node, RDF.type, SKOS_NS.Concept))
         g.add((term_node, SKOS_NS.prefLabel, Literal(term["prefLabel"], lang="ne")))
         g.add((term_node, rdfs.comment, Literal(term["meaning"], lang="en")))
+        g.add((term_node, DC_NS.language, lexvo.ne))
+        g.add((term_node, DC_NS.language, lexvo.en))
+        g.add((term_node, DC_NS.description, Literal(project_description, lang="en")))
+
 
         # Add alternative labels as skos:altLabel
         alt_labels = term.get("altLabel", [])
