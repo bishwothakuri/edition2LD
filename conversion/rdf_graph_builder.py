@@ -1,6 +1,6 @@
 from typing import Dict
 from rdflib import RDF, Graph, Literal, Namespace, URIRef
-
+from itertools import count
 
 # Define RDF namespaces for the ontology
 FOAF_NS = Namespace("http://xmlns.com/foaf/0.1/")
@@ -32,6 +32,7 @@ agrelon = Namespace("https://d-nb.info/standards/elementset/agrelon#")
 ontolex = Namespace("http://www.w3.org/ns/lemon/ontolex#") 
 lime = Namespace("http://www.w3.org/ns/lemon/lime#")
 lexvo = Namespace("http://lexvo.org/id/iso639-3/")
+ex = Namespace("http://example.org/")
 
 project_description = "This is a text edition of the project “Documents on the History of Religion and Law of Pre-modern Nepal”, Heidelberg Academy of Sciences and Humanities, https://www.hadw-bw.de/nepal."
 
@@ -50,12 +51,14 @@ def bind_namespaces(g):
     g.bind("gndo", gndo)
     g.bind("schema", schema)
     g.bind("agrelon", agrelon)
+    g.bind("", ex)
 
 
     # Bind custom namespaces using the NamespaceManager
     g.namespace_manager.bind("nepalica", nepalica, override=False)
     g.namespace_manager.bind("nepalica_reg", nepalica_reg)
 
+id_counter = count(start=0)
 
 def add_persons(g, persons, physDesc_ref_target):
     person_uri = (
@@ -63,11 +66,11 @@ def add_persons(g, persons, physDesc_ref_target):
         if physDesc_ref_target
         else URIRef(f"{nepalica}person")
     )
-    for person in persons:
-        person_node = URIRef(
-            f"{person_uri}#{person['anglicized_name'].replace(' ', '_')}"
-        )
-        g.add((person_node, RDF.type, FOAF_NS.Person))
+    for i, person in enumerate(persons):
+        current_id = next(id_counter)
+        person_node = URIRef(f"{person_uri}#en_{current_id:06}")
+        g.add((person_node, RDF.type, ontolex.LexicalEntry))
+        g.add((person_node, RDF.type, ontolex.Word))
         g.add(
             (person_node, FOAF_NS.name, Literal(person["anglicized_name"], lang="ne"))
         )
@@ -145,6 +148,12 @@ def add_persons(g, persons, physDesc_ref_target):
         note_text = person["note_text"]
         if note_text:
             g.add((person_node, rdfs.comment, Literal(note_text, lang="ne")))
+        # Add rdf.followedBy triple only if there is a next person
+        if i < len(persons) - 1:
+            next_id = current_id + 1
+            next_person_node = URIRef(f"{person_uri}#en_{next_id:06}")
+            g.add((person_node, ex.followedBy, next_person_node))
+
 
 
 def add_places(g, places, physDesc_ref_target):
@@ -154,10 +163,12 @@ def add_places(g, places, physDesc_ref_target):
         if physDesc_ref_target
         else URIRef(f"{nepalica}place")
     )
-    for place in places:
+    for i, place in enumerate(places):
+        current_id = next(id_counter)
         # Create a URI reference for the place node
-        place_node = URIRef(f"{place_uri}#{place['place_name'].replace(' ', '_')}")
-        g.add((place_node, RDF.type, GN_NS.Feature))
+        place_node = URIRef(f"{place_uri}#en_{current_id:06}")
+        g.add((place_node, RDF.type, ontolex.LexicalEntry))
+        g.add((place_node, RDF.type, ontolex.Word))
         g.add((place_node, GN_NS.name, Literal(place["place_name"], lang="ne")))
         # Extract alternative names and exclude the main place name from the list
         alternative_names = [
@@ -205,6 +216,13 @@ def add_places(g, places, physDesc_ref_target):
         note_text = place["note_text"]
         if note_text:
             g.add((place_node, rdfs.comment, Literal(note_text, lang="en")))
+          # Add rdf.followedBy triple only if there is a next person
+        if i < len(places) - 1:
+            next_id = current_id + 1
+            next_place_node = URIRef(f"{place_uri}#en_{next_id:06}")
+            g.add((place_node, rdfs.followedBy, next_place_node))
+
+
 
 
 def add_terms(g, terms, physDesc_ref_target):
@@ -214,9 +232,13 @@ def add_terms(g, terms, physDesc_ref_target):
         if physDesc_ref_target
         else URIRef(f"{nepalica}term")
     )
-    for term in terms:
-        term_node = URIRef(f"{term_uri}#{term['prefLabel'].replace(' ', '_')}")
+    for i, term in enumerate(terms):
+        current_id = next(id_counter)
+        term_node = URIRef(f"{term_uri}#en_{current_id:06}")
         g.add((term_node, RDF.type, SKOS_NS.Concept))
+        g.add((term_node, RDF.type, ontolex.LexicalEntry))
+        g.add((term_node, RDF.type, ontolex.Word))
+        g.add((term_node, RDF.type, ontolex.Form))
         g.add((term_node, SKOS_NS.prefLabel, Literal(term["prefLabel"], lang="ne")))
         g.add((term_node, rdfs.comment, Literal(term["meaning"], lang="en")))
         g.add((term_node, DC_NS.language, lexvo.ne))
@@ -254,6 +276,10 @@ def add_terms(g, terms, physDesc_ref_target):
                     if lod_identifier_value:
                         lod_uri = URIRef(f"{lod_identifier_key}:{lod_identifier_value}")
                         g.add((term_node, SKOS_NS.related, lod_uri))
+        if i < len(terms) - 1:
+           next_id = current_id + 1
+           next_term_node = URIRef(f"{term_uri}#en_{next_id:06}")
+           g.add((term_node, rdfs.followedBy, next_term_node))
 
 
 def create_rdf_graph(metadata: Dict[str, list], token_dict: Dict[str, list]) -> Graph:
@@ -268,18 +294,15 @@ def create_rdf_graph(metadata: Dict[str, list], token_dict: Dict[str, list]) -> 
 
     bind_namespaces(g)
 
-    for token_id, token in token_dict.items():
-      token_uri = (
-       URIRef(f"{nepalica}{physDesc_ref_target}")
-       if physDesc_ref_target
-       else URIRef(f"{nepalica}token")
-       )
-      token_node = URIRef(f"{token_uri}#{token_id}")
-      g.add((token_node, RDF.type, DC_NS.Token))
-      g.add((token_node, rdfs.label, Literal(token, lang="en")))
-
-
-    
+    # for token_id, token in token_dict.items():
+    #   token_uri = (
+    #    URIRef(f"{nepalica}{physDesc_ref_target}")
+    #    if physDesc_ref_target
+    #    else URIRef(f"{nepalica}token")
+    #    )
+    #   token_node = URIRef(f"{token_uri}#{token_id}")
+    #   g.add((token_node, RDF.type, DC_NS.Token))
+    #   g.add((token_node, rdfs.label, Literal(token, lang="en")))
     
 
      # Check if "document_metadata" key exists in the metadata dictionary

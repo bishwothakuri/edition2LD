@@ -5,14 +5,14 @@ from rdflib import Graph, Namespace
 custom_namespaces = {
     'geonames': Namespace("https://sws.geonames.org/"),
     'dbr': Namespace("https://dbpedia.org/resource/"),
-    'wiki':  Namespace("https://de.wikipedia.org/wiki/"),
+    'wiki': Namespace("https://de.wikipedia.org/wiki/"),
     'viaf': Namespace("https://viaf.org/viaf/"),
     'gnd': Namespace("https://d-nb.info/gnd/"),
     'wikidata': Namespace("https://www.wikidata.org/wiki/"),
-    'nepalica_gloss' : Namespace("https://nepalica.hadw-bw.de/nepal/words/viewitem/"),
-    'lime' : Namespace("http://www.w3.org/ns/lemon/lime#"),
-    'lexvo' : Namespace("http://lexvo.org/id/iso639-3/"),
-    'ontolex' : Namespace("http://www.w3.org/ns/lemon/ontolex#")
+    'nepalica_gloss': Namespace("https://nepalica.hadw-bw.de/nepal/words/viewitem/"),
+    'lime': Namespace("http://www.w3.org/ns/lemon/lime#"),
+    'lexvo': Namespace("http://lexvo.org/id/iso639-3/"),
+    'ontolex': Namespace("http://www.w3.org/ns/lemon/ontolex#")
 }
 
 def save_turtle_serialization(graph: Graph, file_path: str) -> None:
@@ -31,8 +31,9 @@ def save_turtle_serialization(graph: Graph, file_path: str) -> None:
         'nepalica': Namespace("https://nepalica.hadw-bw.de/nepal/editions/show/"),
         'nepalica_reg': Namespace("https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/"),
         'nepalica_gloss': Namespace("https://nepalica.hadw-bw.de/nepal/words/viewitem/"),
-        'lexvo' : Namespace("http://lexvo.org/id/iso639-3/"),
-        'ontolex' : Namespace("http://www.w3.org/ns/lemon/ontolex#")
+        'lexvo': Namespace("http://lexvo.org/id/iso639-3/"),
+        'ontolex': Namespace("http://www.w3.org/ns/lemon/ontolex#"),
+        '': Namespace("http://example.org/")  
     }
 
     # Serialize the graph in Turtle format
@@ -46,7 +47,6 @@ def save_turtle_serialization(graph: Graph, file_path: str) -> None:
     for prefix, namespace in custom_namespaces.items():
         custom_namespace_declarations += f'@prefix {prefix}: <{namespace}> .\n'
 
-
     # Replace the full URIs with namespace prefixes in the data part
     for prefix, namespace in namespaces.items():
         # Use regular expressions to replace full URIs with namespace prefixes
@@ -56,12 +56,6 @@ def save_turtle_serialization(graph: Graph, file_path: str) -> None:
     data_part = data_part.replace("<", "").replace(">", "")
 
     data_part = re.sub(r',\n', ' ,\n', data_part)
-
-    #replace # into _ to form link
-    # data_part = re.sub(r'(nepalica:\d+)#(\w)', r'\1#\2', data_part) 
-    
-    # Use regular expressions to add spaces before commas (,) within Turtle objects in the data part
-    # data_part = re.sub(r'([^,])\s*,', r'\1 ,', data_part)
 
     # Combine the header and modified data parts
     modified_turtle_data = header_part + '\n' + custom_namespace_declarations + '\n\n' + data_part
