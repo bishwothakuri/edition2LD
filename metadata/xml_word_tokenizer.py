@@ -14,8 +14,8 @@ except LookupError:
 valid_token_pattern = re.compile(r"^(?!s$)\w+$", flags=re.UNICODE)
 
 def tokenize_xml_text(xml_file_path):
-    # Initialize the dictionary to store token IDs and their corresponding tokens
-    tokens_dict = {}
+    # Initialize the list to store tokens with tag information
+    tokens_list = []
 
     # Create an XML parser with 'xml' option
     parser = etree.XMLParser(recover=True)
@@ -34,26 +34,39 @@ def tokenize_xml_text(xml_file_path):
         et_div = et_div[0]  # Select the first element if there are multiple
 
         # Extract and tokenize text from text() and foreign elements sequentially
-        tokens = []
         id_counter = count(start=1)
 
-        for element in et_div.xpath('.//text() | .//foreign', namespaces=ns):
-            if isinstance(element, str):
-                # If it's a string, tokenize its content
-                tokenizer = RegexpTokenizer(r'\w+|[^\w\s]')
-                text_tokens = tokenizer.tokenize(element)
-                valid_tokens = [token for token in text_tokens if valid_token_pattern.match(token)]
-                tokens.extend([(f"en_{next(id_counter):06}", token) for token in valid_tokens])
-            elif element.tag == '{http://www.tei-c.org/ns/1.0}foreign':
-                # If it's a foreign tag, extract and tokenize its text content
-                foreign_text = ' '.join([t.strip() for t in element.xpath('.//text()', namespaces=ns)])
-                tokenizer = RegexpTokenizer(r'\w+|[^\w\s]')
-                foreign_tokens = tokenizer.tokenize(foreign_text)
-                tokens.extend([(f"en_{next(id_counter):06}", token) for token in foreign_tokens])
+        # Create a set for faster tag name checking
+        valid_tags = {'persName', 'placeName', 'term'}
 
-        # Populate the tokens_dict with token IDs and their corresponding tokens
-        for token_id, token in tokens:
-            tokens_dict[token_id] = token
+        # Create a single tokenizer for reuse
+        tokenizer = RegexpTokenizer(r'\w+|[^\w\s]')
 
-    return tokens_dict
+        # Combine the XPath expressions for better readability and potential optimization
+        for element in et_div.xpath('.//*[not(ancestor-or-self::tei:note)]'
+                                     '| .//*[not(ancestor-or-self::tei:note)]/text()'
+                                     '| .//tei:note/preceding-sibling::text()', namespaces=ns):
+            if isinstance(element, etree._Element):
+                tag_name = etree.QName(element).localname
+                if tag_name in valid_tags:
+                    # If it's a valid tag, tokenize its content
+                    tokenizer = RegexpTokenizer(r'\w+|[^\w\s]')
+                    text_tokens = tokenizer.tokenize(element.text)
+                    valid_tokens = [token for token in text_tokens if valid_token_pattern.match(token)]
+                    tokens_list.extend([{
+                        'token_id': f"en_{next(id_counter):06}",
+                        'text': token,
+                        'tag_name': tag_name
+                    } for token in valid_tokens])
+                elif element.text and element.text.strip():
+                    # If it's normal text, tokenize without tag information
+                    text_tokens = tokenizer.tokenize(element.text)
+                    valid_tokens = [token for token in text_tokens if valid_token_pattern.match(token)]
+                    tokens_list.extend([{
+                        'token_id': f"en_{next(id_counter):06}",
+                        'text': token
+                    } for token in valid_tokens])
+
+    return tokens_list
+
 
