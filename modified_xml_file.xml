@@ -1,0 +1,653 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:TEI xmlns:ns0="http://www.tei-c.org/ns/1.0" xml:id="K_0440_0007">
+   <ns0:teiHeader>
+      <ns0:fileDesc>
+         <ns0:titleStmt>
+            <ns0:title type="main">A copy of a lālamohara from Pṛthvīnārāyaṇa Śāha re land donations for Yogīs' cakrapūjās (VS 1826)</ns0:title>
+            <ns0:title type="short">A copy of a lālamohara re land donations for Yogīs' cakrapūjās</ns0:title>
+            <ns0:title type="sub">K_0440_0007</ns0:title>
+
+            <ns0:author role="issuer">Pṛthvīnārāyaṇa Śāha</ns0:author>
+
+            <ns0:respStmt>
+               <ns0:resp>main editor and translator</ns0:resp>
+               <ns0:name type="main_editor">Christof Zotter</ns0:name>
+            </ns0:respStmt>
+
+            <ns0:respStmt>
+               <ns0:resp>collaborator</ns0:resp>
+               <ns0:name type="collaborator" />
+            </ns0:respStmt>
+         </ns0:titleStmt>
+
+         <ns0:publicationStmt>
+            <ns0:publisher>Heidelberg Academy of Sciences and Humanities: Documents on the History of
+               Religion and Law of Pre-modern Nepal</ns0:publisher>
+            <ns0:pubPlace>Heidelberg, Germany</ns0:pubPlace>
+            <ns0:date>2020</ns0:date>
+            <ns0:availability status="restricted">
+               <ns0:licence target="http://creativecommons.org/licenses/by-sa/4.0/">Distributed under a
+                  Creative Commons Attribution-ShareAlike 4.0 Unported License</ns0:licence>
+               <ns0:p>Published by the courtesy of the National Archives, Kathmandu. The copyright of
+                  the facsimile remains with the Nepal Rashtriya Abhilekhalaya (National Archives,
+                  Government of Nepal).</ns0:p>
+            </ns0:availability>
+         </ns0:publicationStmt>
+
+         <ns0:notesStmt>
+            <ns0:note>This file is based on the template v2_2</ns0:note>
+            <ns0:note />
+         </ns0:notesStmt>
+
+         <ns0:sourceDesc>
+            <ns0:msDesc>
+               <ns0:msIdentifier>
+                  <ns0:settlement>Kathmandu, Bhadrakālī</ns0:settlement>
+                  <ns0:repository>Guṭhi Saṃsthāna</ns0:repository>
+                  <ns0:idno>Po. no. 10, 60/84, no. 22</ns0:idno>
+
+                  <ns0:altIdentifier type="microfilm">
+                     <ns0:settlement>Kathmandu, Berlin</ns0:settlement>
+                     <ns0:collection>Nepal German Manuscript Preservation Project</ns0:collection>
+                     <ns0:idno>NGMPP K 440/7</ns0:idno>
+                  </ns0:altIdentifier>
+               </ns0:msIdentifier>
+
+               <ns0:msContents>
+                  <ns0:textLang mainLang="nep" otherLangs="san" />
+               </ns0:msContents>
+
+               <ns0:physDesc>
+                  <ns0:p>For details see <ns0:ref target="/nepal/catitems/viewitem/8637">entry in database</ns0:ref></ns0:p>
+               </ns0:physDesc>
+
+               <ns0:history>
+                  <ns0:origin>
+                     <ns0:p>Issued in <ns0:origDate>1769 (VS 1826)</ns0:origDate> from <ns0:origPlace>Kāntīpura</ns0:origPlace>
+                     </ns0:p>
+                  </ns0:origin>
+               </ns0:history>
+            </ns0:msDesc>
+         </ns0:sourceDesc>
+      </ns0:fileDesc>
+
+      <ns0:encodingDesc>
+         <ns0:editorialDecl>
+            <ns0:p>The original document from which this e-text was formed is in the Devanāgarī script.
+               The electronic text below contains the following parts: abstract, edition in
+               Devanāgarī, synopsis and optionally commentary.</ns0:p>
+            <ns0:p>The text as it appears in the original document is reproduced as faithfully as
+               possible, including diacritic marks, such as the nukta (़); format features, such as
+               line breaks; and graphical features, such as the middle dot (•) sporadically employed
+               to mark word separation, or macrons and lines of various shapes, often used as
+               placeholders or structuring elements. The editorial techniques applied introduce
+               minimally invasive normalizations (by using <ns0:gi>orig</ns0:gi> and <ns0:gi>reg</ns0:gi> in
+                  <ns0:gi>choice</ns0:gi>) and corrections (by using <ns0:gi>sic</ns0:gi> and <ns0:gi>corr</ns0:gi> in
+                  <ns0:gi>choice</ns0:gi>). Words are separated by <ns0:gi>w</ns0:gi>, even if scriptura continua is
+               used in the original documents. Furthermore, <ns0:gi>s</ns0:gi> is employed to indicate
+               sentence like text units.</ns0:p>
+         </ns0:editorialDecl>
+      </ns0:encodingDesc>
+
+      <ns0:profileDesc>
+         <ns0:creation>
+            <ns0:date>2020-04-14</ns0:date>
+         </ns0:creation>
+      </ns0:profileDesc>
+
+      <ns0:revisionDesc>
+         <ns0:listChange>
+            <ns0:change type="internal" when="2020-04-14" who="#CZ">first draft edition</ns0:change>
+            <ns0:change type="internal" when="2020-05-22" who="#CZ">finished first draft translation, added coordinates</ns0:change>
+            <ns0:change type="internal" when="2020-09-15" who="#CZ">included PhP's corrections</ns0:change>
+            <ns0:change type="internal" when="2020-09-23" who="#CZ">further corrections</ns0:change>
+            <ns0:change type="internal" when="2020-10-16" who="#CZ">further corrections of typos</ns0:change>
+         </ns0:listChange>
+      </ns0:revisionDesc>
+   </ns0:teiHeader>
+
+   <ns0:facsimile>
+      
+      <ns0:surface xml:id="surface1" facs="K_0440_0147.png" ulx="56" uly="296" lrx="1417" lry="2937">
+         <ns0:zone xml:id="space1" ulx="729" uly="424" lrx="1009" lry="471" />
+         <ns0:zone xml:id="space2" ulx="1059" uly="430" lrx="1273" lry="480" />
+         <ns0:zone xml:id="addition" ulx="188" uly="480" lrx="252" lry="536" />
+         <ns0:zone xml:id="seal" ulx="180" uly="828" lrx="271" lry="926" />
+         <ns0:zone xml:id="margin" ulx="185" uly="939" lrx="288" lry="1468" />
+         <ns0:zone xml:id="main_text" ulx="200" uly="626" lrx="1308" lry="2783" />
+      </ns0:surface>
+   </ns0:facsimile>
+
+   <ns0:text>
+      <ns0:body>
+
+         <ns0:div xml:id="abs" type="abstract" xml:lang="eng">
+            <ns0:ab>In the <ns0:foreign>lālamohara</ns0:foreign> of which this is a copy, King Pṛthvīnārāyaṇa
+               Śāha donates one house and 37 plots of land in different named localities amounting
+               to 219 3/4 <ns0:foreign>ropanī</ns0:foreign>s (= 8 <ns0:foreign>kheta</ns0:foreign>s and 79
+                  <ns0:foreign>murī</ns0:foreign>s) to Gorakhanātha in order to finance the
+                  <ns0:foreign>cakrapūjā</ns0:foreign>s of the Yogīs.</ns0:ab>
+         </ns0:div>
+
+         <ns0:div xml:id="ed" type="edition" xml:lang="nep-san">
+            <ns0:pb n="1r" facs="#surface1" />
+            <ns0:ab type="space" corresp="#space1">
+               <ns0:lb n="1" />
+               <ns0:w id="w_1">श्री</ns0:w>
+               <ns0:w id="w_2">गोरषनाथजीकन</ns0:w>
+               <ns0:w id="w_3">२</ns0:w>
+            </ns0:ab>
+            <ns0:p />
+            <ns0:ab type="space" corresp="#space2">
+               <ns0:lb n="1" />
+               <ns0:w id="w_0">श्री</ns0:w>
+               <ns0:w id="w_4">गुह्येस्वरी</ns0:w>
+               <ns0:w id="w_5">३</ns0:w>
+            </ns0:ab>
+            <ns0:p />
+            <ns0:ab type="addition" corresp="#addition">
+               <ns0:lb n="1" />
+               <ns0:add place="in the left margin" hand="second"><ns0:w id="w_6">22</ns0:w></ns0:add>
+            </ns0:ab>
+            <ns0:p />
+            <ns0:ab type="seal" corresp="#seal">[seal of Dhārīnātha]</ns0:ab>
+            <ns0:p />
+            <ns0:ab type="margin" corresp="#margin">
+               <ns0:lb n="1" />
+               <ns0:w id="w_7">सकल</ns0:w>
+               <ns0:w id="w_8">वमोजीं</ns0:w>
+               <ns0:w id="w_9">नकल</ns0:w>
+               <ns0:w id="w_10">दुरुस्त</ns0:w>
+               <ns0:w id="w_11">छ</ns0:w>
+               <ns0:w id="w_12">भनी</ns0:w>
+               <ns0:orig>•</ns0:orig>
+               <ns0:w id="w_13">सहीछाप</ns0:w>
+               <ns0:w id="w_14">गर्न्या</ns0:w>
+               <ns0:lb n="2" />
+               <ns0:w id="w_15">पीरमहंत</ns0:w>
+               <ns0:persName n="1"><ns0:w id="w_16">धारीनातजी</ns0:w></ns0:persName>
+               <ns0:choice>
+                  <ns0:orig>¯¯¯¯¯</ns0:orig>
+                  <ns0:reg>---</ns0:reg>
+               </ns0:choice>
+            </ns0:ab>
+            <ns0:p />
+            <ns0:ab type="maintext" corresp="#main_text">
+               <ns0:lb n="1" />
+               <ns0:s xml:lang="san"><ns0:w id="w_17">स्व<ns0:choice><ns0:orig>स्ती</ns0:orig><ns0:reg>स्ति</ns0:reg></ns0:choice></ns0:w></ns0:s>
+               <ns0:s xml:lang="san"><ns0:w id="w_0">श्री<ns0:choice><ns0:orig>गी</ns0:orig><ns0:reg>गि</ns0:reg></ns0:choice>रिराजचक्रचुडाम<ns0:choice><ns0:orig>णी</ns0:orig><ns0:reg>णि</ns0:reg></ns0:choice>नारायणेत्या<ns0:choice><ns0:orig>दीवीवी</ns0:orig><ns0:reg>दिविवि</ns0:reg></ns0:choice>ध<ns0:choice><ns0:orig>वी</ns0:orig><ns0:reg>वि</ns0:reg></ns0:choice>रुदावली<ns0:choice><ns0:orig>वी</ns0:orig><ns0:reg>वि</ns0:reg></ns0:choice>राजमान<ns0:lb n="2" break="no" />मानो<ns0:choice><ns0:orig>नत्‌</ns0:orig><ns0:reg>न्नत</ns0:reg></ns0:choice>श्री<ns0:choice><ns0:orig>मंमा</ns0:orig><ns0:reg>मन्म</ns0:reg></ns0:choice>हाराजा<ns0:choice><ns0:orig>धी</ns0:orig><ns0:reg>धि</ns0:reg></ns0:choice>राजश्रीश्रीश्रीमत्पृथ्वीनारायणसाहदेवानां</ns0:w>
+                  <ns0:w id="w_18">सदा</ns0:w>
+                  <ns0:w id="w_19">समर<ns0:choice><ns0:orig>वी</ns0:orig><ns0:reg>वि</ns0:reg></ns0:choice>ज<ns0:choice><ns0:orig>ई</ns0:orig><ns0:reg>यि</ns0:reg></ns0:choice><ns0:lb n="3" break="no" />नाम्‌</ns0:w></ns0:s>
+               <ns0:orig>॥•</ns0:orig>
+               <ns0:w id="w_20">आगे</ns0:w>
+               <ns0:choice>
+                  <ns0:orig>¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯¯</ns0:orig>
+                  <ns0:reg>---</ns0:reg>
+               </ns0:choice>
+               <ns0:w id="w_21">चक्रपुजाकन</ns0:w>
+               <ns0:w id="w_22">गुठ</ns0:w>
+               <ns0:w id="w_23">चह्राञौं</ns0:w>
+               <ns0:choice>
+                  <ns0:orig>¯¯¯¯¯¯ ¯¯¯¯¯¯¯¯¯¯</ns0:orig>
+                  <ns0:reg>---</ns0:reg>
+               </ns0:choice>
+               <ns0:lb n="4" />
+               <ns0:persName n="2"><ns0:w id="w_24">पंडुव्राह्मणको</ns0:w></ns0:persName>
+               <ns0:w id="w_25">अपुताली</ns0:w>
+               <ns0:w id="w_26">पर्‍याको</ns0:w>
+               <ns0:w id="w_27">षेत्‌</ns0:w>
+               <ns0:lb n="5" />
+               <ns0:w id="w_28">रोपनी</ns0:w>
+               <ns0:w id="w_29">४०</ns0:w>
+               <ns0:placeName n="3"><ns0:w id="w_30">दलकापको</ns0:w></ns0:placeName><ns0:orig>•</ns0:orig>
+               <ns0:lb n="6" />
+               <ns0:w id="w_27">रोपनी</ns0:w>
+               <ns0:w id="w_4">३</ns0:w>
+               <ns0:w id="w_31">फेरी</ns0:w>
+               <ns0:w id="w_29">दलकापको</ns0:w>
+               <ns0:lb n="7" /><ns0:w id="w_27">रोपनी</ns0:w><ns0:w id="w_32">१०</ns0:w><ns0:placeName n="4"><ns0:w id="w_33">मोलपाकुको</ns0:w></ns0:placeName>
+               <ns0:lb n="8" /><ns0:w id="w_27">रोपनी</ns0:w><ns0:w id="w_34">१२</ns0:w><ns0:placeName n="5"><ns0:w id="w_35">मोलपाकु</ns0:w><ns0:w id="w_36">नदीवारीको</ns0:w></ns0:placeName>
+               <ns0:lb n="9" /><ns0:w id="w_27">रोपनी</ns0:w><ns0:w id="w_37">७</ns0:w><ns0:placeName n="6"><ns0:w id="w_38">कींडोल्‌को</ns0:w></ns0:placeName>
+               <ns0:lb n="10" /><ns0:w id="w_27">रोपनी</ns0:w><ns0:w id="w_4">३</ns0:w><ns0:placeName n="7"><ns0:w id="w_39">ईचाडोलको</ns0:w></ns0:placeName>
+               <ns0:lb n="11" /><ns0:w id="w_27">रोपनी</ns0:w><ns0:w id="w_4">३</ns0:w><ns0:placeName n="8"><ns0:w id="w_40">व<ns0:orig>़</ns0:orig>ोषीमाहाको</ns0:w></ns0:placeName>
+               <ns0:lb n="12" /><ns0:w id="w_27">रोपनी</ns0:w><ns0:w id="w_4">३</ns0:w><ns0:placeName n="9"><ns0:w id="w_41">भंगल्‌को</ns0:w></ns0:placeName>
+               <ns0:lb n="13" /><ns0:choice>
+                  <ns0:orig>¯¯¯¯¯¯¯¯¯¯¯¯</ns0:orig>
+                  <ns0:reg>---</ns0:reg>
+               </ns0:choice>
+               <ns0:lb n="14" /><ns0:w id="w_42">चुल</ns0:w><ns0:w id="w_4">३</ns0:w><ns0:placeName n="10"><ns0:w id="w_43">तपींताको</ns0:w></ns0:placeName>
+               <ns0:lb n="15" /><ns0:w id="w_41">चुल</ns0:w><ns0:w id="w_4">३</ns0:w><ns0:placeName n="11"><ns0:w id="w_44">मालको</ns0:w></ns0:placeName>
+               <ns0:lb n="16" /><ns0:choice>
+                  <ns0:orig>¯¯¯¯¯¯¯¯¯¯¯¯</ns0:orig>
+                  <ns0:reg>---</ns0:reg>
+               </ns0:choice>
+               <ns0:lb n="17" /><ns0:w id="w_27">रोपनी</ns0:w><ns0:w id="w_45">१</ns0:w><ns0:placeName n="12"><ns0:w id="w_46">ठवैलीको</ns0:w></ns0:placeName>
+               <ns0:lb n="18" /><ns0:w id="w_27">रोपनी</ns0:w><ns0:w id="w_47">४</ns0:w><ns0:placeName n="13"><ns0:w id="w_48">पुडोपाको</ns0:w></ns0:placeName>
+               <ns0:lb n="19" /><ns0:w id="w_27">रोपनी</ns0:w><ns0:w id="w_49">५</ns0:w><ns0:placeName n="14"><ns0:w id="w_50">लपट्टेचोकोट्‌को</ns0:w></ns0:placeName>
+               <ns0:lb n="20" /><ns0:w id="w_27">रोपनी</ns0:w><ns0:w id="w_51">२२</ns0:w><ns0:placeName n="15"><ns0:w id="w_52"><ns0:choice>
+                     <ns0:sic>ईउडाछेउको</ns0:sic>
+                     <ns0:corr>ईडाछेउको</ns0:corr>
+                  </ns0:choice></ns0:w></ns0:placeName>
+               <ns0:lb n="21" /><ns0:choice>
+                  <ns0:orig>¯¯¯¯¯¯¯¯¯¯¯¯</ns0:orig>
+                  <ns0:reg>---</ns0:reg>
+               </ns0:choice>
+               <ns0:lb n="22" /><ns0:w id="w_53">चुल्‌</ns0:w><ns0:w id="w_4">३</ns0:w><ns0:placeName n="16"><ns0:w id="w_54">फीवछेउको</ns0:w></ns0:placeName>
+               <ns0:lb n="23" /><ns0:choice>
+                  <ns0:orig>¯¯¯¯¯¯¯¯¯¯¯¯</ns0:orig>
+                  <ns0:reg>---</ns0:reg>
+               </ns0:choice>
+               <ns0:lb n="24" /><ns0:w id="w_55">ज्मा</ns0:w><ns0:w id="w_27">रोपनी</ns0:w><ns0:w id="w_56">११५</ns0:w><ns0:w id="w_52">चुल्‌</ns0:w><ns0:w id="w_44">१</ns0:w>
+               <ns0:lb n="25" /><ns0:choice>
+                  <ns0:orig>¯¯¯¯¯¯¯¯¯¯¯¯</ns0:orig>
+                  <ns0:reg>---</ns0:reg>
+               </ns0:choice>
+               <ns0:lb n="26" /><ns0:placeName n="17"><ns0:w id="w_57">ईन्द्रचोक्‌माहा</ns0:w></ns0:placeName><ns0:persName n="18"><ns0:w id="w_58">ठौढी</ns0:w><ns0:w id="w_59">जोसीको</ns0:w></ns0:persName>
+               <ns0:lb n="27" /><ns0:w id="w_60">घर</ns0:w>
+               <ns0:w id="w_44">१</ns0:w>
+               <ns0:w id="w_61">तावापत्र</ns0:w>
+               <ns0:w id="w_62">गरी</ns0:w>
+               <ns0:w id="w_21">गुठ</ns0:w>
+               <ns0:w id="w_63">राष्याको</ns0:w>
+               <ns0:lb n="28" /><ns0:choice>
+                  <ns0:orig>¯¯¯¯¯¯¯¯¯¯¯¯</ns0:orig>
+                  <ns0:reg>---</ns0:reg>
+               </ns0:choice>
+               <ns0:lb n="29" /><ns0:placeName n="19"><ns0:w id="w_64">टायेमडुटोलको</ns0:w></ns0:placeName><ns0:w id="w_65">चक्रको</ns0:w><ns0:w id="w_21">गुठ</ns0:w>
+               <ns0:lb n="30" /><ns0:w id="w_27">रोपनी</ns0:w><ns0:w id="w_36">७</ns0:w><ns0:placeName n="20"><ns0:w id="w_66">टेपधुको</ns0:w></ns0:placeName>               
+               <ns0:lb n="31" /><ns0:w id="w_27">रोपनी</ns0:w><ns0:w id="w_4">३</ns0:w><ns0:placeName n="21"><ns0:w id="w_67">वेषावुको</ns0:w></ns0:placeName>
+               <ns0:lb n="32" /><ns0:w id="w_27">रोपनी</ns0:w><ns0:w id="w_44">१</ns0:w><ns0:placeName n="22"><ns0:w id="w_68">वंषुडोलको</ns0:w></ns0:placeName>
+               <ns0:lb n="33" /><ns0:w id="w_27">रोपनी</ns0:w><ns0:w id="w_44">१</ns0:w><ns0:placeName n="23"><ns0:w id="w_69">वंसीको</ns0:w></ns0:placeName>
+               <ns0:lb n="34" /><ns0:w id="w_70">रोपनि</ns0:w><ns0:supplied reason="omitted"><ns0:w id="w_44">१</ns0:w></ns0:supplied><ns0:placeName n="24"><ns0:w id="w_71">गंडवालाल्‌को</ns0:w></ns0:placeName>
+               <ns0:lb n="35" /><ns0:w id="w_27">रोपनी</ns0:w><ns0:w id="w_2">२</ns0:w><ns0:w id="w_41">चुल</ns0:w><ns0:w id="w_44">१</ns0:w><ns0:placeName n="25"><ns0:w id="w_72">पापीगाउको</ns0:w></ns0:placeName>
+               <ns0:lb n="36" /><ns0:w id="w_41">चुल</ns0:w><ns0:w id="w_2">२</ns0:w><ns0:placeName n="26"><ns0:w id="w_51"><ns0:gap extent="1 character" />रेषुको</ns0:w></ns0:placeName> 
+               <ns0:lb n="37" /><ns0:choice>
+                  <ns0:orig>¯¯¯¯¯¯¯¯¯¯¯¯</ns0:orig>
+                  <ns0:reg>---</ns0:reg>
+               </ns0:choice>
+               <ns0:lb n="38" /><ns0:w id="w_54">ज्मा</ns0:w><ns0:w id="w_27">रोपनी</ns0:w><ns0:w id="w_73">१५</ns0:w><ns0:w id="w_41">चुल</ns0:w><ns0:w id="w_2">२</ns0:w><ns0:space unit="chars" quantity="4" /><ns0:w id="w_74">१६॥</ns0:w><ns0:orig>•</ns0:orig>
+               <ns0:lb n="39" /><ns0:choice>
+                  <ns0:orig>¯¯¯¯¯¯¯¯¯¯¯¯</ns0:orig>
+                  <ns0:reg>---</ns0:reg>
+               </ns0:choice>
+               <ns0:lb n="40" /><ns0:placeName n="27"><ns0:w id="w_75">असंटोल्‌का</ns0:w></ns0:placeName><ns0:w id="w_64">चक्रको</ns0:w><ns0:w id="w_21">गुठ</ns0:w>
+               <ns0:orig>•</ns0:orig>
+               <ns0:lb n="41" /><ns0:w id="w_27">रोपनी</ns0:w><ns0:w id="w_76">९</ns0:w><ns0:placeName n="28"><ns0:w id="w_77">धरंथलीछेउको</ns0:w></ns0:placeName>
+               <ns0:lb n="42" /><ns0:w id="w_27">रोपनी</ns0:w><ns0:w id="w_46">४</ns0:w><ns0:w id="w_41">चुल</ns0:w><ns0:w id="w_2">२</ns0:w><ns0:placeName n="29"><ns0:w id="w_78">कोषयना<ns0:unclear>क</ns0:unclear>छेउको</ns0:w></ns0:placeName>
+               <ns0:lb n="43" /><ns0:w id="w_27">रोपनी</ns0:w><ns0:w id="w_4">३</ns0:w><ns0:w id="w_41">चुल</ns0:w><ns0:w id="w_4">३</ns0:w><ns0:placeName n="30"><ns0:w id="w_79">पंभुछेउको</ns0:w></ns0:placeName>
+               <ns0:lb n="44" /><ns0:w id="w_27">रोपनी</ns0:w><ns0:w id="w_2">२</ns0:w><ns0:placeName n="31"><ns0:w id="w_80">भगुषुलको</ns0:w></ns0:placeName>
+               <ns0:lb n="45" /><ns0:w id="w_41">चुल</ns0:w><ns0:w id="w_4">३</ns0:w><ns0:placeName n="32"><ns0:w id="w_81">त्यपधुछेउको</ns0:w></ns0:placeName>
+               <ns0:lb n="46" /><ns0:choice>
+                  <ns0:orig>¯¯¯¯¯¯¯¯¯¯¯¯</ns0:orig>
+                  <ns0:reg>---</ns0:reg>
+               </ns0:choice>
+               <ns0:lb n="47" /><ns0:w id="w_54">ज्मा</ns0:w><ns0:w id="w_27">रोपनी</ns0:w><ns0:w id="w_82">२०</ns0:w>
+               <ns0:lb n="48" />
+               <ns0:placeName n="33"><ns0:w id="w_83">देउरालीमाहा</ns0:w></ns0:placeName><ns0:placeName n="34"><ns0:w id="w_84">जोगीटार</ns0:w></ns0:placeName><ns0:w id="w_85">षेतको</ns0:w><ns0:w id="w_86">कुत्‌</ns0:w>
+               <ns0:lb n="49" /><ns0:w id="w_87">मुरी</ns0:w><ns0:w id="w_81">२०</ns0:w><ns0:w id="w_88">धान्‌</ns0:w><ns0:w id="w_89">आउछं</ns0:w><ns0:w id="w_90">येती</ns0:w><ns0:w id="w_91">असं<ns0:lb n="50" break="no" />टोल्‌को</ns0:w><ns0:w id="w_92">गुठी</ns0:w>
+               <ns0:lb n="51" />
+               <ns0:choice>
+                  <ns0:orig>¯¯¯¯¯¯¯¯¯¯¯¯</ns0:orig>
+                  <ns0:reg>---</ns0:reg>
+               </ns0:choice>
+               <ns0:lb n="52" /><ns0:w id="w_93">वालाचतुर्दसिका</ns0:w>
+               <ns0:w id="w_94">दीन</ns0:w>
+               <ns0:w id="w_51"><ns0:choice>
+                     <ns0:orig>¯ ¯ ¯ ¯ </ns0:orig>
+                     <ns0:reg>---</ns0:reg>
+                  </ns0:choice>का</ns0:w>
+               <ns0:w id="w_95">वंमा<ns0:lb n="53" break="no" />हा</ns0:w>
+               <ns0:w id="w_96">चक्रपुजाको</ns0:w><ns0:w id="w_91">गुठी</ns0:w><ns0:choice>
+                  <ns0:orig>¯¯¯¯¯¯¯ ¯¯¯</ns0:orig>
+                  <ns0:reg>---</ns0:reg>
+               </ns0:choice>
+               <ns0:lb n="54" /><ns0:w id="w_27">रोपनी</ns0:w><ns0:w id="w_97">१९</ns0:w><ns0:placeName n="35"><ns0:w id="w_98">टौगाल्‌को</ns0:w></ns0:placeName><ns0:orig>•</ns0:orig>
+               <ns0:lb n="55" /><ns0:w id="w_27">रोपनी</ns0:w><ns0:w id="w_33">१२</ns0:w><ns0:placeName n="36"><ns0:w id="w_99">टोषाछेउको</ns0:w></ns0:placeName>
+               <ns0:lb n="56" /><ns0:w id="w_27">रोपनी</ns0:w><ns0:w id="w_46">४</ns0:w><ns0:placeName n="37"><ns0:w id="w_100">देउपाटंछेउको</ns0:w></ns0:placeName>
+               <ns0:lb n="57" /><ns0:w id="w_27">रोपनी</ns0:w><ns0:w id="w_101">६</ns0:w><ns0:placeName n="38"><ns0:w id="w_102">चषुछेउको</ns0:w></ns0:placeName>
+               <ns0:lb n="58" /><ns0:w id="w_27">रोपनी</ns0:w><ns0:w id="w_36">७</ns0:w><ns0:placeName n="39"><ns0:w id="w_103">सांलाछेउको</ns0:w></ns0:placeName>
+               <ns0:lb n="59" /><ns0:w id="w_27">रोपनी</ns0:w><ns0:w id="w_36">७</ns0:w><ns0:placeName n="40"><ns0:w id="w_104">क्वाठछेउको</ns0:w></ns0:placeName>
+               <ns0:lb n="60" /><ns0:choice>
+                  <ns0:orig>¯¯¯¯¯¯¯¯¯¯¯¯</ns0:orig>
+                  <ns0:reg>---</ns0:reg>
+               </ns0:choice>
+               <ns0:lb n="61" /><ns0:w id="w_54">ज्मा</ns0:w><ns0:w id="w_27">रोपनी</ns0:w><ns0:w id="w_105">५५//५३</ns0:w>
+               <ns0:lb n="62" /><ns0:choice>
+                  <ns0:orig>¯¯¯¯¯¯¯¯¯¯¯¯</ns0:orig>
+                  <ns0:reg>---</ns0:reg>
+               </ns0:choice>
+               <ns0:lb n="63" /><ns0:placeName n="41"><ns0:w id="w_106">ईन्द्रचोक्‌को</ns0:w></ns0:placeName><ns0:w id="w_64">चक्रको</ns0:w><ns0:w id="w_21">गुठ</ns0:w>
+               <ns0:lb n="64" />
+               <ns0:w id="w_27">रोपनी</ns0:w><ns0:w id="w_46">४</ns0:w><ns0:placeName n="42"><ns0:w id="w_51"><ns0:unclear>स्य</ns0:unclear>ाँपुरिको</ns0:w><ns0:w id="w_107">डीहीछेउको</ns0:w></ns0:placeName>               
+               <ns0:lb n="65" /><ns0:w id="w_27">रोपनी</ns0:w><ns0:w id="w_48">५</ns0:w><ns0:placeName n="43"><ns0:w id="w_108">टुकुचाछेउको</ns0:w></ns0:placeName>
+               <ns0:lb n="66" /><ns0:w id="w_27">रोपनी</ns0:w><ns0:w id="w_100">६</ns0:w><ns0:placeName n="44"><ns0:w id="w_109">रषुवुछेउको</ns0:w></ns0:placeName>
+               <ns0:lb n="67" /><ns0:choice>
+                  <ns0:orig>¯¯¯¯¯¯¯¯¯¯¯¯</ns0:orig>
+                  <ns0:reg>---</ns0:reg>
+               </ns0:choice>
+               <ns0:lb n="68" /><ns0:w id="w_54">ज्मा</ns0:w><ns0:w id="w_27">रोपनी</ns0:w><ns0:w id="w_72">१५</ns0:w>
+               <ns0:lb n="69" /><ns0:choice>
+                  <ns0:orig>¯¯¯¯¯¯¯¯¯¯¯¯</ns0:orig>
+                  <ns0:reg>---</ns0:reg>
+               </ns0:choice>
+               <ns0:lb n="70" /><ns0:s><ns0:w id="w_110">सव</ns0:w><ns0:w id="w_54">ज्मा</ns0:w><ns0:w id="w_27">रोपनी</ns0:w><ns0:w id="w_111">२१९।।।</ns0:w><ns0:w id="w_112">तस्को</ns0:w>
+               <ns0:lb n="71" /><ns0:w id="w_113">सये</ns0:w><ns0:w id="w_114">मुरिको</ns0:w><ns0:w id="w_115">हिसाव</ns0:w><ns0:w id="w_116">गर्दा</ns0:w>
+               <ns0:lb n="72" /><ns0:w id="w_109">सव</ns0:w>
+                  <ns0:w id="w_54">ज्मा</ns0:w><ns0:w id="w_117">षेत</ns0:w><ns0:w id="w_118">८</ns0:w><ns0:w id="w_86">मुरी</ns0:w><ns0:w id="w_119">७९</ns0:w><ns0:w id="w_120">हुं<ns0:lb n="73" break="no" />छ</ns0:w></ns0:s>
+               <ns0:s><ns0:w id="w_121">सम्वत्‌</ns0:w><ns0:w id="w_122">१८२६</ns0:w><ns0:w id="w_123">का<ns0:lb n="74" break="no" />र्तिक</ns0:w><ns0:w id="w_124">सुदी</ns0:w>
+               <ns0:lb n="75" /><ns0:w id="w_46">४</ns0:w><ns0:w id="w_125">रोज</ns0:w><ns0:w id="w_48">५</ns0:w><ns0:w id="w_126">मुकां</ns0:w>
+               <ns0:lb n="76" /><ns0:placeName n="45"><ns0:w id="w_127">कांतीपुर</ns0:w></ns0:placeName></ns0:s><ns0:s><ns0:w id="w_128">सुभ्म्‌</ns0:w></ns0:s><ns0:choice>
+                  <ns0:orig> ॥    ॥ ॥ ॥ ॥</ns0:orig>
+                  <ns0:reg>---</ns0:reg>
+               </ns0:choice>
+               
+            </ns0:ab>
+         </ns0:div>
+
+         <ns0:div xml:id="et" type="english_translation" corresp="#ed" xml:lang="eng">
+            <ns0:p>To the Glorious (<ns0:term ref="1869">Śrī</ns0:term>) Gorakhanāthajī – 2 <ns0:note place="end">In
+                  Naraharinātha's edition, the document starts with the invocation
+                     "<ns0:foreign>śrīdurgāsahāyaḥ 1</ns0:foreign>" (<ns0:bibl corresp="883">Naraharinātha VS
+                     2013</ns0:bibl>: 287). According to a copy kept in the documents of the Yogīcakra
+                  Guṭhī, the invocation is simply "<ns0:foreign>śrī</ns0:foreign>" (K_0132_0008). Other
+                  copies (for details, see note 45 below) do not record this diplomatic
+                  detail.</ns0:note></ns0:p>
+            <ns0:p>Glorious Guhyesvarī – 3</ns0:p>
+            <ns0:p>22<ns0:note place="end">This archival note probably indicates the document number (inside
+                  bundle 10, 60/84, of the Bhadrakālī Guṭhī Lagata Jā̃ca records).</ns0:note></ns0:p>
+            <ns0:p>[seal of Dhārīnātha]<ns0:note place="end">The legend of the seal reads: <ns0:foreign>śrī pīra
+                     dhārīnātha mṛgasthālī 62</ns0:foreign>.</ns0:note></ns0:p>
+            <ns0:p> Attesting that the copy is true to the original, the abbot (<ns0:term ref="2644">pīramahanta</ns0:term>) <ns0:persName n="46">Dhārīnātha</ns0:persName>
+            </ns0:p>
+            <ns0:p>[main text:]</ns0:p>
+            <ns0:p>Hail! [A decree] of him who is shining with manifold rows of eulogy [such as] "The
+               venerable crest-jewel of the multitude of mountain kings" and Naranārāyaṇa (an
+               epithet of Kṛṣṇa) etc., high in honour, the venerable supreme king of great kings,
+               the thrice venerable great king, <ns0:persName n="47">Pṛthvīnārāyaṇa Śāha</ns0:persName>, the brave
+               swordsman, the divine king always triumphant in war</ns0:p>
+            <ns0:p><ns0:term ref="2017">Āge</ns0:term>: We have offered the [below mentioned] trusts (<ns0:term ref="932">guṭha</ns0:term>) for the <ns0:term ref="2002">cakrapūjā</ns0:term>s [to the
+               Glorious Gorakhanāthajī].<ns0:note place="end">Inserted from the space above the main
+                  text.</ns0:note>[The following plots of land are donated:]</ns0:p>
+            <ns0:p>Fields among the escheated property (<ns0:term ref="2629">aputālī</ns0:term>) of a Brahmin
+               named <ns0:persName n="48">Paṇḍu</ns0:persName> (text: <ns0:persName n="49">Paṃḍu</ns0:persName>):<ns0:note place="end">Given the structure in the rest of the document, I assume that this line is not a
+                  separate item of the list but serves as a kind of heading, and therefore
+                     translate<ns0:foreign> kheta</ns0:foreign> as "fields".</ns0:note></ns0:p>
+            <ns0:p>40 <ns0:term ref="2051"> ropanī</ns0:term>s in <ns0:placeName n="50">Dalakāpa</ns0:placeName>,<ns0:note place="end">The place names are given as spelled in the document. The variant
+                  (often standardized) readings found in the editions of the document by Yogī
+                  Naraharinātha (Naraharinātha VS 2013: 287-288) and Nayarāja Panta et al. (<ns0:bibl corresp="43">N.R. Panta et al. VS 2025</ns0:bibl>: 1063-1064) are noted in
+                  brackets. Further variants found in other copies of the document are mentioned in
+                  footnotes. </ns0:note></ns0:p>
+            <ns0:p>3 <ns0:foreign>ropanī</ns0:foreign>s again in Dalakāpa,</ns0:p>
+            <ns0:p>10 <ns0:foreign>ropanī</ns0:foreign>s in <ns0:placeName n="51">Molapāku</ns0:placeName>, </ns0:p>
+            <ns0:p>12 <ns0:foreign>ropanī</ns0:foreign>s in <ns0:placeName n="52">Molapāku Nadīvārī (°
+                  Nadivāri)</ns0:placeName>,</ns0:p>
+            <ns0:p>7 <ns0:foreign>ropanī</ns0:foreign>s in <ns0:placeName n="53">Kiṃḍol</ns0:placeName>
+                  (<ns0:placeName n="54">Kimaḍola</ns0:placeName>),</ns0:p>
+            <ns0:p>3 <ns0:foreign>ropanī</ns0:foreign>s in <ns0:placeName n="55">Īcaḍol</ns0:placeName> (<ns0:placeName n="56">Icāḍola</ns0:placeName>),</ns0:p>
+            <ns0:p>3 <ns0:foreign>ropanī</ns0:foreign>s in <ns0:placeName n="57">Voṣīmāhā</ns0:placeName>
+                  (<ns0:placeName n="58">Voṣimahā</ns0:placeName>),</ns0:p>
+            <ns0:p>3 <ns0:foreign>ropanī</ns0:foreign>s in <ns0:placeName n="59">Bhaṃgal</ns0:placeName> (<ns0:placeName n="59">Maṃgal</ns0:placeName>),</ns0:p>
+            <ns0:p>3 <ns0:term ref="2628">cula</ns0:term>s in <ns0:placeName n="60">Tapīṃtā</ns0:placeName>
+                  (<ns0:placeName n="61">Tapiṃtā</ns0:placeName>),</ns0:p>
+            <ns0:p>3 <ns0:foreign>cula</ns0:foreign>s in <ns0:placeName n="62">Māla</ns0:placeName>,</ns0:p>
+            <ns0:p>1 <ns0:foreign>ropanī</ns0:foreign> in <ns0:placeName n="63">Ṭhavailī</ns0:placeName>,<ns0:note place="end">Naraharinātha (VS 2013: 287) mistakenly reads <ns0:foreign>ṭha</ns0:foreign> as
+                     <ns0:foreign>8</ns0:foreign> and gives the line as "<ns0:foreign>ropani 18
+                     vailikā</ns0:foreign>" (see also N.R. Panta et al. VS 2025: 1063), which does not
+                  fit the batch total given below. The reading of the place name as Ṭhavailī and not
+                     <ns0:placeName n="64">Vaili</ns0:placeName> is found elsewhere too (see K_0440_0019,
+                  K_0574_0058). Other available copies have <ns0:placeName n="65">Ṭhavela</ns0:placeName> (see
+                  K_0044_0056A, K_0044_0058B, and K_0132_0008).</ns0:note></ns0:p>
+            <ns0:p>4 <ns0:foreign>ropanī</ns0:foreign>s in <ns0:placeName n="66">Puḍopā</ns0:placeName>
+                  (<ns0:placeName n="67">Puḍoṃpā</ns0:placeName>),</ns0:p>
+            <ns0:p>5 <ns0:foreign>ropanī</ns0:foreign>s in <ns0:placeName n="68">Lapaṭṭecokoṭ</ns0:placeName>
+                  (<ns0:placeName n="69">Lapaṭyaco Koṭa</ns0:placeName>), <ns0:note place="end">The place name could
+                  possibly be read as <ns0:placeName n="70">Lapaṭyecokoṭ</ns0:placeName> in the present document,
+                  but on the basis of other copies (see K_0044_0056A, K_0132_0008, and K_0440_0019)
+                  Lapaṭṭe° seems more plausible. K_0044_0058B has Lapaṭe° and K_0574_0058, like
+                  Naraharīnātha (VS 2013: 288) and N.R. Panta et al. (VS 2025: 1063),
+                  Lapaṭya°.</ns0:note></ns0:p>
+            <ns0:p>22 <ns0:foreign>ropanī</ns0:foreign>s near <ns0:placeName n="71">Īḍā</ns0:placeName>
+                  (<ns0:placeName n="72">Iṃḍā</ns0:placeName>), <ns0:note place="end">My correction of
+                     <ns0:placeName n="73">Īuḍā</ns0:placeName> to Īḍā is based on the readings of other copies
+                  (K_0044_0058B, K_0132_0008, K_0574_0058). K_0440_0019 has
+                     <ns0:placeName n="74">Īdā</ns0:placeName>.</ns0:note></ns0:p>
+            <ns0:p>[and] 3 <ns0:foreign>cula</ns0:foreign>s near <ns0:placeName n="75">Phīva</ns0:placeName>;</ns0:p>
+            <ns0:p>in total 115 <ns0:foreign>ropanī</ns0:foreign>s and 1 <ns0:foreign>cula</ns0:foreign></ns0:p>
+            <ns0:p />
+            <ns0:p>A <ns0:foreign>guṭha</ns0:foreign> was established, after a copperplate
+                  (<ns0:foreign>tāvāpatra</ns0:foreign>) was issued for the house of one <ns0:persName n="76">Ṭauḍhī
+                  Josī</ns0:persName> (<ns0:persName n="77">Ṭauḍhi Josi</ns0:persName>) in
+                  <ns0:placeName n="78">Īndracok</ns0:placeName> (<ns0:placeName n="79">Iṃdracoka</ns0:placeName>). <ns0:note place="end">This is not the first house the Yogīs owned in the Indracok area.
+                  Already in 1764 (NS 884) one Yogī <ns0:placeName n="80">Lakṣamaṇanātha</ns0:placeName> together
+                  with one female <ns0:term ref="2647">tulādhāra</ns0:term> (<ns0:foreign>tulādhāranī</ns0:foreign>,
+                  cf. K_0044_0043) named <ns0:persName n="81">Bhikhvālamayī</ns0:persName> bought a house in
+                     <ns0:placeName n="82">Ogla Ṭola</ns0:placeName> for 50 <ns0:term ref="2645">kavīndramallī
+                     ṭaṃkā</ns0:term>s and donated it to Gorakhanātha (see K_0044_0044). Just two months
+                  later, the same two person were appointed as trust members
+                     (<ns0:foreign>guṭhijana</ns0:foreign> ) to oversee a house (in the street east of Ogla
+                  Ṭola) that was donated by King <ns0:persName n="83">Jayaprakāśa Malla</ns0:persName> to the cult
+                  (see K_0044_0042).</ns0:note></ns0:p>
+            <ns0:p />
+            <ns0:p>The <ns0:foreign>guṭha</ns0:foreign> for the
+               <ns0:foreign>cakra</ns0:foreign>[<ns0:foreign>pūjā</ns0:foreign>s] in <ns0:placeName n="84">Ṭāyemaḍu
+                  Ṭola</ns0:placeName> (<ns0:placeName n="85">Ṭāyamaḍu Ṭola</ns0:placeName>): <ns0:note place="end">Most of
+                  the other copies spell the name as <ns0:placeName n="86">Ṭāyamaḍu Ṭola or ° Ṭol</ns0:placeName>
+                  (K_0044_0056A, K_0132_0008, K_0440_0019). Other variants found are
+                     <ns0:placeName n="87">Ṭhāyemaḍu Ṭola</ns0:placeName> (K_0044_0058B) and
+                     <ns0:placeName n="88">Thāya°</ns0:placeName> (K_0574_0058).</ns0:note></ns0:p>
+            <ns0:p>7 <ns0:foreign>ropanī</ns0:foreign>s in <ns0:placeName n="89">Ṭepadhu</ns0:placeName>,</ns0:p>
+            <ns0:p>3 <ns0:foreign>ropanī</ns0:foreign>s in <ns0:placeName n="90">Veṣāvu</ns0:placeName>,</ns0:p>
+            <ns0:p>1 <ns0:note place="end">The published editions (Naraharīnātha VS 2013: 288 and N.R. Panta
+                  et al. VS 2025: 1063) and two other copies (K_0132_0008 and K_0440_0019) give the
+                  number as "1॥" (one and a half). In another copy (K_0574_0058), Pīramahanta
+                     <ns0:persName n="91">Bharapuranātha</ns0:persName> states in a note in the left margin that
+                  (in the original) for the present and the next entry 1/2 <ns0:foreign>ropanī</ns0:foreign>
+                  are written in a different ink (... <ns0:foreign>ādhā ropanī lekhemā masī pharaka
+                     pareko</ns0:foreign>).</ns0:note>
+               <ns0:foreign>ropanī</ns0:foreign> in <ns0:placeName n="92">Vaṃṣuḍola</ns0:placeName>, <ns0:note place="end">K_0044_0056A and K_0044_0058B have <ns0:placeName n="93">Vaṣuḍol</ns0:placeName>.</ns0:note></ns0:p>
+            <ns0:p>1<ns0:note place="end">The published editions (Naraharīnātha VS 2013: 288 and N.R. Panta
+                  et al. VS 2025: 1063) and four copies (K_0044_0056A, K_0044_0058B, K_0132_0008 and
+                  K_0440_0019) give the number as "1॥" (one and a half). See also note 12.</ns0:note>
+               <ns0:foreign>ropanī</ns0:foreign> in <ns0:placeName n="94">Vaṃsī</ns0:placeName>
+                  (<ns0:placeName n="95">Vaṃsi</ns0:placeName>), <ns0:note place="end">K_0440_0019 and K_0574_0058 have
+                     <ns0:placeName n="96">Vā̃sī</ns0:placeName>.</ns0:note></ns0:p>
+            <ns0:p>1
+               <ns0:foreign>ropanī</ns0:foreign> in <ns0:placeName n="97">Gaṃḍavālāl</ns0:placeName><ns0:note place="end">See
+                  also K_0044_0056A and K_0132_0008.</ns0:note> (<ns0:placeName n="98">Gaṃḍavāhāla</ns0:placeName>),
+                  <ns0:note place="end">Two copies have <ns0:placeName n="99">Gaṃḍavāla</ns0:placeName> (K_0440_0019
+                  and K_0574_0058). Only K_0044_0058B has <ns0:placeName n="100">Gaṃḍavīlāla</ns0:placeName>.</ns0:note></ns0:p>
+            <ns0:p>2 <ns0:foreign>ropanī</ns0:foreign>s 1 <ns0:foreign>cula</ns0:foreign><ns0:note place="end">According to
+                  Naraharīnātha (VS 2013: 288) and N.R. Panta et al. (VS 2025: 1064) 2
+                     <ns0:foreign>cula</ns0:foreign>s were donated.</ns0:note> in
+                  <ns0:placeName n="101">Pāpīgāu</ns0:placeName><ns0:note place="end">With the exception of K_0574_0058
+                     (<ns0:placeName n="102">Pāpīgāū</ns0:placeName>) all copies have the same spelling.</ns0:note>
+                  (<ns0:placeName n="103">Pāpigāũ</ns0:placeName>),</ns0:p>
+            <ns0:p>[and] 2 <ns0:foreign>cula</ns0:foreign>s in <ns0:placeName n="104">[...]reṣu</ns0:placeName><ns0:note place="end">According to the two published editions (Naraharīnātha VS 2013: 288
+                  and N.R. Panta et al. VS 2025: 1064) the line reads "<ns0:foreign>ropani 23
+                     Ṭeṣuko</ns0:foreign>" but none of the available copies give the place name as
+                     <ns0:placeName n="105">Ṭeṣu</ns0:placeName>. All clearly have
+                     ...<ns0:foreign>reṣu</ns0:foreign>. The sign which Naraharinātha reads as 3 is
+                  questionable. In some copies it might be indeed interpreted as an oddly written 3
+                  (but it always differs from the 3 given a few lines before). In most copies, the
+                  sign has a head line, which suggests that it is an <ns0:term ref="2631">akṣara</ns0:term>
+                     (<ns0:foreign>kṛ</ns0:foreign> or <ns0:foreign>dṛ</ns0:foreign>?) and not a number. Anyhow,
+                  neither 2 nor 23 <ns0:foreign>cula</ns0:foreign>s yield the batch sum given below (see
+                  next note).</ns0:note>;</ns0:p>
+            <ns0:p>in total 15 <ns0:foreign>ropanī</ns0:foreign>s 2 <ns0:foreign>cula</ns0:foreign>s, <ns0:note place="end">This batch sum is not correct, and not only in the copy edited here. Even in
+                  Naraharinātha's  "corrected" version (see nn. 12, 14 and 18) the numbers would
+                  yield the sum only if the last dubious line (see previous note) is ignored.</ns0:note>
+               16 1/2.<ns0:note place="end">This second number, written as "16 ||" after some space at
+                  the end of the line, is found in all copies. It is seemingly a correction made
+                  (already in the original?) to fit the total account given at the end of the
+                  document (see note 36). The addition of a half <ns0:foreign>ropanī</ns0:foreign> in two
+                  items found in some of the copies (see nn. 12 and 14) was probably made at the
+                  same time.</ns0:note></ns0:p>
+            <ns0:p>The <ns0:foreign>guṭha</ns0:foreign> for the
+               <ns0:foreign>cakra</ns0:foreign>[<ns0:foreign>pūjā</ns0:foreign>s] in <ns0:placeName n="106">Asaṃ Ṭol</ns0:placeName>
+                  (<ns0:placeName n="107">Asaṃ Ṭola</ns0:placeName>):<ns0:note place="end">The
+                     <ns0:foreign>cakrapūjā</ns0:foreign> at <ns0:placeName n="108">Asan Ṭol</ns0:placeName> is still
+                  performed. According to Unbescheid it takes place on the 9th of the bright
+                  fortnight of Caitra when the chariot (<ns0:foreign>ratha</ns0:foreign>) of Kathmandu's
+                  Seto Matsyendranātha makes the first halt in front of the Annapūrṇa temple (<ns0:bibl corresp="110">Unbescheid 1980</ns0:bibl>: 119).</ns0:note></ns0:p>
+            <ns0:p>9 <ns0:foreign>ropanī</ns0:foreign>s near <ns0:placeName n="109">Dharaṃthalī</ns0:placeName>
+                  (<ns0:placeName n="110">Dharaṃthali</ns0:placeName>), </ns0:p>
+            <ns0:p>4 <ns0:foreign>ropanī</ns0:foreign>s 2 <ns0:foreign>cula</ns0:foreign>s near
+                  <ns0:placeName n="111">Koṣayanāk</ns0:placeName>
+               <ns0:note place="end">Given the fact that all other available copies have
+                     <ns0:placeName n="112">Koṣayanāka</ns0:placeName> or °nāk, I take the place name's last
+                     <ns0:foreign>akṣara</ns0:foreign>, which could be also read as <ns0:foreign>n</ns0:foreign> or
+                     <ns0:foreign>t</ns0:foreign> (with <ns0:term ref="2630">virāma</ns0:term>), as an obscurely
+                  written <ns0:foreign>k</ns0:foreign>.</ns0:note> (<ns0:placeName n="113">Koṣaṣanāka</ns0:placeName>),</ns0:p>
+            <ns0:p>3 <ns0:foreign>ropanī</ns0:foreign>s 3 <ns0:foreign>cula</ns0:foreign>s near
+                  <ns0:placeName n="114">Paṃbhu</ns0:placeName>,</ns0:p>
+            <ns0:p>2 <ns0:foreign>ropanī</ns0:foreign>s in <ns0:placeName n="115">Bhaguṣula</ns0:placeName>, <ns0:note place="end">Only K_0044_0058B has <ns0:placeName n="116">Bhaguṣolā</ns0:placeName>.</ns0:note></ns0:p>
+            <ns0:p>3 <ns0:foreign>cula</ns0:foreign>s near <ns0:placeName n="117">Tyapadhu</ns0:placeName>; <ns0:note place="end">Only K_0044_0058B has <ns0:placeName n="118">Tyapadhuka</ns0:placeName>.</ns0:note></ns0:p>
+            <ns0:p>in total 20 <ns0:foreign>ropanī</ns0:foreign>s.</ns0:p>
+            
+            <ns0:p>[Furthermore, there is] the <ns0:placeName n="119">Jogīṭāra</ns0:placeName>
+                  (<ns0:placeName n="120">Jogiṭāra</ns0:placeName>) field in <ns0:placeName n="121">Deurālī</ns0:placeName>
+                  (<ns0:placeName n="122">Deurāli</ns0:placeName> ) [that] brings 20 <ns0:foreign>murī</ns0:foreign>s of
+               unhusked rice (<ns0:foreign>dhāna</ns0:foreign>) as rent (<ns0:term ref="2504">kuta</ns0:term>). This
+               much [belongs to] the <ns0:term ref="932">guṭhī</ns0:term> of Asaṃ Tol. <ns0:note place="end">In
+                  all available copies of the document (and therefore probably in the original as
+                  well) these lines are written at the end of the first column before the text
+                  continues in the second column. In the published editions (Naraharinātha VS 2013:
+                  288 and N.R. Panta et al. VS 2025: 1064), they appear at the very end of the
+                  document after the date and <ns0:foreign>apprecatio</ns0:foreign>.</ns0:note></ns0:p>
+            <ns0:p />
+            <ns0:p>The <ns0:foreign>guṭhī</ns0:foreign> for the <ns0:foreign>cakrapūjā</ns0:foreign> in the forest of
+               the [Glorious Guhyeśvarī]<ns0:note place="end">Inserted from the space above the main
+                  text.</ns0:note> on the day of Bālācaturdaśī: <ns0:note place="end">This
+                     <ns0:foreign>pūjā</ns0:foreign>, held at <ns0:placeName n="123">Mṛgasthalī</ns0:placeName> on the 14th
+                  day of the dark fortnight of Mārga, marks the beginning of the annual cycle of
+                     <ns0:foreign>cakrapūjā</ns0:foreign>s performed by the Kanphaṭṭās throughout the
+                  Valley, and is also known as <ns0:foreign>mahācakrapūjā</ns0:foreign> or
+                     <ns0:foreign>gaṇacakrapūjā</ns0:foreign> (<ns0:bibl corresp="110">Unbescheid 1980</ns0:bibl>:
+                  117). For the other ritual activities of this day—also known as the "sowing of one
+                  hundred seeds" (<ns0:foreign>śatabījāropaṇa</ns0:foreign>)—in the Paśupati temple area and
+                  the Yogīs' interpretation of the event, see Unbescheid 1980: 105-107.</ns0:note></ns0:p>
+            <ns0:p>19 <ns0:foreign>ropanī</ns0:foreign>s in <ns0:placeName n="124">Ṭaugāl</ns0:placeName>
+                  (<ns0:placeName n="125">Ṭaugāla</ns0:placeName>),</ns0:p>
+            <ns0:p>12 <ns0:foreign>ropanī</ns0:foreign>s near <ns0:placeName n="126">Ṭoṣa</ns0:placeName>, </ns0:p>
+            <ns0:p>4 <ns0:foreign>ropanī</ns0:foreign>s near <ns0:placeName n="127">Deupāṭhaṃ</ns0:placeName>
+                  (<ns0:placeName n="128">Deupāṭan</ns0:placeName>), <ns0:note place="end">With the exception of
+                  K_0044_0056A (also Deupāṭan), all other copies spell the name as
+                     <ns0:placeName n="129">Deupāṭaṃ</ns0:placeName>.</ns0:note></ns0:p>
+            <ns0:p>6 <ns0:foreign>ropanī</ns0:foreign>s near <ns0:placeName n="130">Caṣu</ns0:placeName>,</ns0:p>
+            <ns0:p>7 <ns0:foreign>ropanī</ns0:foreign>s near <ns0:placeName n="131">Sāṃlā</ns0:placeName>
+                  (<ns0:placeName n="132">Sāṅglā</ns0:placeName>), <ns0:note place="end">While K_0044_0056A has Sāṅglā
+                  and K_0132_0008 Sāṃlā, all other copies spell the name as
+                     <ns0:placeName n="133">Sāṅlā</ns0:placeName>.</ns0:note></ns0:p>
+            <ns0:p>[and] 7 <ns0:foreign>ropanī</ns0:foreign>s near <ns0:placeName n="134">Kvāṭha</ns0:placeName>; <ns0:note place="end">Only K_0574_0058 has <ns0:placeName n="135">Kvāṭa</ns0:placeName>.</ns0:note></ns0:p>
+            <ns0:p>in total 55 // 53 <ns0:foreign>ropanī</ns0:foreign>s <ns0:note place="end">The total amount of
+                  land mentioned in this portion of the list is 55 <ns0:foreign>ropanī</ns0:foreign>s, but
+                  with the exception of K_0574_0058 (having only "55") all copies and editions give
+                  the number as "55//53". As elsewhere in this document (see note 22), this batch
+                  sum was probably corrected to fit the total sum given at the end of the document
+                  (see note 36).</ns0:note>
+            </ns0:p>
+         
+            <ns0:p>The <ns0:foreign>cakraguṭha</ns0:foreign> of <ns0:placeName n="136">Īndracok</ns0:placeName>
+                  (<ns0:placeName n="137">Indracoka</ns0:placeName>): </ns0:p>
+            <ns0:p>4<ns0:note place="end">Naraharinātha (VS 2013: 287) and N.R. Panta et al. (VS 2025: 1064)
+                  mistakenly give the number as 7.</ns0:note>
+               <ns0:foreign>ropanī</ns0:foreign>s near the mound (<ns0:foreign>ḍīhī</ns0:foreign>) of
+                  <ns0:placeName n="138">Syāṃpurī</ns0:placeName> (<ns0:placeName n="139">Syāmapuri</ns0:placeName>),<ns0:note place="end">Other spellings found are <ns0:placeName n="140">Syāṃpuri</ns0:placeName>
+                  (K_0440_0019) and <ns0:placeName n="141">Syāmpurī</ns0:placeName> (K_0574_0005). </ns0:note></ns0:p>
+            <ns0:p>5 <ns0:foreign>ropanī</ns0:foreign>s near <ns0:placeName n="142">Ṭukucā</ns0:placeName>,</ns0:p>
+            <ns0:p>6 <ns0:foreign>ropanī</ns0:foreign>s near <ns0:placeName n="143">Raṣuvu</ns0:placeName>;</ns0:p>
+            <ns0:p>in total 15 <ns0:foreign>ropanī</ns0:foreign>s.</ns0:p>
+            <ns0:p>All in all 219 3/4 <ns0:term ref="2051">ropanī</ns0:term>s, <ns0:note place="end">This sum is
+                  correct if the corrected numbers (see notes 22 and 33) are used.</ns0:note>[or],
+               calculated in hundreds of <ns0:term ref="1045">murī</ns0:term>s,<ns0:note place="end">What is
+                  meant here is a system of land measurement used in the hill region according to
+                  which 1 <ns0:foreign>kheta</ns0:foreign>, consisting of 100 <ns0:foreign>murī</ns0:foreign>s,
+                  equals 25 <ns0:foreign>ropanī</ns0:foreign>s. </ns0:note> 8 <ns0:term ref="1957">kheta</ns0:term>s and
+               79 <ns0:foreign>murī</ns0:foreign>s. </ns0:p>
+            <ns0:p>Thursday, the 4th of the bright fortnight of Kārtika in the [Vikrama] era year 1826
+               (1769 CE).<ns0:note place="end">The lunar date corresponds to 2 November
+               1769.</ns0:note>Residence: <ns0:placeName n="144">Kāntīpura</ns0:placeName>. Auspiciousness. </ns0:p>
+         </ns0:div>
+
+         <ns0:div xml:id="commentary" type="commentary" xml:lang="eng">
+            <ns0:p>As Unbescheid aptly observes, the present document marks a turning point in the
+               history of the <ns0:foreign>cakrapūjā</ns0:foreign>, a ritual of central importance for the
+               cult of the Yogīs in the <ns0:placeName n="145">Kathmandu Valley</ns0:placeName> (Unbescheid 1980: 114,
+               178). We have evidence of privately financed <ns0:foreign>cakra</ns0:foreign>s among the
+               Yogīs at the Kāṣṭhamaṇḍapa in <ns0:placeName n="146">Kathmandu</ns0:placeName> from the 15th century
+                  onward,<ns0:note place="end">According to Unbescheid (1980: 67, 113) a copperplate
+                  issued in 1379 CE (see K_0055_0005) ordered the Darśana(dhārīs) to perform the
+                     <ns0:foreign>gaṇapūjā</ns0:foreign> (=<ns0:foreign>cakrapūjā</ns0:foreign>) at the
+                  Kāṣṭhamaṇḍapa. This assertion, which caused some confusion (see <ns0:bibl corresp="886">Bouillier 1993</ns0:bibl>: 86 n. 20), cannot be confirmed. The first
+                  reference to an annual <ns0:foreign>cakra</ns0:foreign> among the Yogīs there is found
+                  only later, in a copperplate issued in 1465 CE which commemorates the donation of
+                  9 <ns0:foreign>ropanī</ns0:foreign>s of land made by one
+                     <ns0:persName n="147">Caitanyanātha</ns0:persName>, a Yogī from <ns0:placeName n="148">Gauḍa
+                     Deśa</ns0:placeName> (a kingdom in the region of modern-day
+                     <ns0:placeName n="149">Bengal</ns0:placeName>), to the venerable <ns0:foreign>avadhūta</ns0:foreign>s
+                  (see K_0055_0004). Other donations for a <ns0:foreign>yogīcakra</ns0:foreign> at the
+                  Kāṣṭhamaṇḍapa followed in 1485 CE (see K_0054_0057) and 1512 CE (see
+                  K_0055_0001).</ns0:note> and in the 17th century the Patan king <ns0:persName n="150">Śrīnivāsa
+                  Malla</ns0:persName>, who adopted Avalokiteśvara-Karuṇamaya of
+                  <ns0:placeName n="151">Buṅga</ns0:placeName> as his tutelary deity and made the god's annual
+               procession a state ritual,<ns0:note place="end"><ns0:bibl corresp="398">Locke 1980</ns0:bibl>:
+                  308 n. 68, 414-415</ns0:note> financed a “<ns0:foreign>jogīcakraguthi</ns0:foreign>” at the
+               Rāto Machindranātha temple at <ns0:placeName n="152">Ta Bahā</ns0:placeName> in
+                  <ns0:placeName n="153">Patan</ns0:placeName> in the name of his mother
+                  <ns0:persName n="154">Bhānumatī</ns0:persName>.<ns0:note place="end">A long stone inscription dated NS
+                  793 (1673 CE) which regulated many details of the cult of the deity lists the
+                  plots of land assigned to this <ns0:foreign>guṭhī</ns0:foreign>, which was established to
+                  supply the <ns0:foreign>jogīcakra</ns0:foreign> with food after the <ns0:term ref="2657">ghaṭasthāpana</ns0:term> on the new moon day of Caitra (<ns0:bibl corresp="51">D.R.
+                     Regmi 1966</ns0:bibl>: 156; <ns0:bibl corresp="881">Tevārī, Rāmajī et al. VS
+                     2020</ns0:bibl>: 10 and Locke 1980: 311).</ns0:note> King Pṛthvīnārāyaṇa's support of
+               the <ns0:foreign>cakra</ns0:foreign> was on a bigger scale. Soon after his conquest of the
+               Kathmandu Valley he issued this <ns0:term ref="992">lālamohara</ns0:term> from his new
+               residence, Kāntīpura (Kathmandu), and assigned land to finance no fewer than four
+               such <ns0:foreign>pūjā</ns0:foreign>s in different places. Among these rituals is the
+               so-called "Great <ns0:foreign>cakrapūjā</ns0:foreign>"
+                  (<ns0:foreign>mahācakrapūjā</ns0:foreign>),<ns0:note place="end">See note 29.</ns0:note> which was
+               supported by a major grant of 55 (or in the corrected version, 53)
+                  <ns0:foreign>ropanī</ns0:foreign>s of land. When Unbescheid conducted his fieldwork in the
+               late 1970s, this ritual marked the beginning of a cycle of altogether 34
+                  <ns0:foreign>cakrapūjā</ns0:foreign>s performed in different localities, and usually
+               linked with the beginning of a procession of the local deity.<ns0:note place="end">Concerning these <ns0:foreign>pūjā</ns0:foreign>s, see Unbescheid 1980: 117-127; see also
+                  Locke 1980: 442 n. 105.</ns0:note> According to Unbescheid, the widespread performance
+               of these <ns0:foreign>pūjā</ns0:foreign>s throughout the whole Valley represented an
+               important factor when it came to projecting power. Without the Yogīs’
+                  <ns0:foreign>pūjā</ns0:foreign>s the other rituals could not start (Unbescheid 1980: 114).
+               But Unbescheid also observed signs of decline in the 20th century. Fields were lost
+               and rituals had to be cancelled.<ns0:note place="end">He gives as examples the
+                     <ns0:foreign>pūjā</ns0:foreign>s terminated at the Kāṣṭhamaṇḍapa and in
+                     <ns0:placeName n="155">Deopatan</ns0:placeName> (Unbescheid 1980: 115).</ns0:note></ns0:p>
+            <ns0:p>The importance of Pṛthvīnārāyaṇa's <ns0:foreign>lālamohara</ns0:foreign> is also evident from
+               the relatively great number of copies kept in the records of different trusts. The
+               copy from the Gorakhanātha Cakrapūjā Guṭhī documents filmed by the NGMPP in the
+               record office in <ns0:placeName n="156">Bhadrakālī</ns0:placeName>—the one edited here—was attested
+               by Dhārīnātha, who served as abbot (<ns0:foreign>pīramahanta</ns0:foreign>) of the
+               Gorakhanātha monastery at Mṛgasthalī from 1905 to 1916, and bears great resemblance
+               to the other available copies.<ns0:note place="end">The following copies were filmed by
+                  the NGMPP in Bhadrakali: a copy kept in the Gorakhanātha Guṭhī records (as doc.
+                  1?), the name of whose attester can unfortuanately not be deciphered in the
+                  available photo (K_0044_0056A); a copy of this copy, the attester this time not
+                  named, Gorakhanātha Guṭhī doc. 17 (K_0044_0058B); another copy attested by
+                  Dhārīnātha, Jogīcakra Guṭhī Poka 2 kha (K_0132_0008); a copy attested by
+                  Pīramahanta <ns0:persName n="157">Nārāṃnātha Jogī</ns0:persName>, Guhyeśvarī Guṭhī Poka 10, 60/84
+                  under no. 182 (K_0440_0019); and a copy attested by Pīramahanta
+                     <ns0:persName n="158">Bharapuranātha</ns0:persName>, Poka 3 of Bha. Gu. La. Ta. Aḍḍā, Ta. no.
+                  165 (K_0574_0058).</ns0:note> As indicated in the notes to the translation, this
+               material helped to solve some of the problems regarding the numbers in
+               Naraharinātha's edition that caught N.R. Panta's attention but could not be verified
+               by him and his team because "the original was not available". <ns0:note place="end"><ns0:foreign>Mūla patra napāieko hũdā</ns0:foreign> (N.R. Panta et al. VS 2025: 1064
+                  note).</ns0:note></ns0:p>
+            <ns0:p>The great number of copies may be indicative of contested interests and the need to
+               prove claims. A study of the mass of other documents and copies relating to the
+                  <ns0:foreign>cakraguṭhī</ns0:foreign>s and the other trusts dedicated to Gorakhanātha and
+               his Yogīs could probably help to place the copies consulted here in historical
+               context, and to shed further light on the history of the Yogīs' ritual culture in the
+               Kathmandu Valley. </ns0:p>
+            <ns0:p> </ns0:p>
+         </ns0:div>
+
+      </ns0:body>
+   </ns0:text>
+</ns0:TEI>
