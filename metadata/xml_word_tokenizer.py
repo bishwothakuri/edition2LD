@@ -36,9 +36,6 @@ def tokenize_xml_text(xml_file_path):
         # Extract and tokenize text from text() and foreign elements sequentially
         id_counter = count(start=1)
 
-        # Create a set for faster tag name checking
-        valid_tags = {'persName', 'placeName', 'term'}
-
         # Create a single tokenizer for reuse
         tokenizer = RegexpTokenizer(r'\w+|[^\w\s]')
 
@@ -48,7 +45,7 @@ def tokenize_xml_text(xml_file_path):
                                      '| .//tei:note/preceding-sibling::text()', namespaces=ns):
             if isinstance(element, etree._Element):
                 tag_name = etree.QName(element).localname
-                if tag_name in valid_tags:
+                if tag_name in {'persName', 'placeName', 'term'}:
                     # If it's a valid tag, tokenize its content
                     tokenizer = RegexpTokenizer(r'\w+|[^\w\s]')
                     text_tokens = tokenizer.tokenize(element.text)
@@ -67,6 +64,4 @@ def tokenize_xml_text(xml_file_path):
                         'text': token
                     } for token in valid_tokens])
 
-    return tokens_list
-
-
+    return {'words': tokens_list}
