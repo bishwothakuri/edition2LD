@@ -282,7 +282,7 @@ def add_terms(g, terms, physDesc_ref_target):
            g.add((term_node, rdfs.followedBy, next_term_node))
 
 
-def create_rdf_graph(metadata: Dict[str, list], token_dict: Dict[str, list]) -> Graph:
+def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
     document_metadata = metadata.get("document_metadata", {})
     persons = metadata.get("persons", [])
     places = metadata.get("places", [])
