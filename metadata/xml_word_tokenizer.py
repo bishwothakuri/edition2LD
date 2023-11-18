@@ -41,7 +41,7 @@ def tokenize_xml_text(xml_file_path):
 
         # Combine the XPath expressions for better readability and potential optimization
         for element in et_div.xpath('.//*[not(ancestor-or-self::tei:note)]'
-                                     '| .//*[not(ancestor-or-self::tei:note)]/text()'
+                                     '| .//*[not(ancestor-or-self::tei:note) and not(ancestor::tei:note)]/text()'
                                      '| .//tei:note/preceding-sibling::text()', namespaces=ns):
             if isinstance(element, etree._Element):
                 tag_name = etree.QName(element).localname
