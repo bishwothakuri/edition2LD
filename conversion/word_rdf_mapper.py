@@ -29,7 +29,7 @@ gnd = Namespace("https://d-nb.info/gnd/")
 wikidata = Namespace("https://www.wikidata.org/wiki/")
 gndo = Namespace("https://d-nb.info/standards/elementset/gnd#")
 agrelon = Namespace("https://d-nb.info/standards/elementset/agrelon#")
-ontolex = Namespace("http://www.w3.org/ns/lemon/ontolex#") 
+ontolex = Namespace("http://www.w3.org/ns/lemon/ontolex#")
 lime = Namespace("http://www.w3.org/ns/lemon/lime#")
 lexvo = Namespace("http://lexvo.org/id/iso639-3/")
 ex = Namespace("http://example.org/")
@@ -54,15 +54,25 @@ def bind_namespaces(g):
     g.bind("ontolex", ontolex)
     g.bind("", ex)
 
-
     # Bind custom namespaces using the NamespaceManager
     g.namespace_manager.bind("nepalica", nepalica, override=False)
     g.namespace_manager.bind("nepalica_reg", nepalica_reg)
 
+def copy_rdf_section_by_text(rdf_graph, text):
+    # Iterate over all RDF triples in the graph
+    for s, p, o in rdf_graph:
+        # Check if the object is a Literal with the specified text
+        if isinstance(o, Literal) and o.value == text:
+            # Retrieve the subject URI
+            subject_uri = s
+            # Retrieve all triples with the subject URI
+            section_triples = list(rdf_graph.triples((subject_uri, None, None)))
+            return section_triples
+    return None
+
 id_counter = count(start=0)
-
-
-def add_tokenize_text(g, words, physDesc_ref_target):
+document_description = "This is a text edition of the project “Documents on the History of Religion and Law of Pre-modern Nepal”, Heidelberg Academy of Sciences and Humanities, https://www.hadw-bw.de/nepal.”@en"
+def add_tokenize_text(g, words, physDesc_ref_target, rdf_graph):
     token_uri = (
         URIRef(f"{nepalica}{physDesc_ref_target}")
         if physDesc_ref_target
@@ -73,17 +83,22 @@ def add_tokenize_text(g, words, physDesc_ref_target):
         token_node = URIRef(f"{token_uri}#en_{current_id:06}")
         g.add((token_node, RDF.type, ontolex.LexicalEntry))
         g.add((token_node, RDF.type, ontolex.Word))
+        g.add((token_node, DC_NS.language, lexvo.ne))
+        g.add((token_node, DC_NS.language, lexvo.en))
+        g.add((token_node, DC_NS.description, Literal(document_description)))
+
 
         # Check if the word has a tag_name
         if "tag_name" in word:
             # Retrieve the corresponding section from the RDF graph
             tag_name = word["tag_name"]
-            # section_uri = URIRef(f"{nepalica}{tag_name}")
-            # section_triples = list(rdf_graph.triples((section_uri, None, None)))
-            
-            # # Add the triples from the section to the current graph
-            # for triple in section_triples:
-            #     g.add(triple)
+            section_triples = copy_rdf_section_by_text(rdf_graph, word["text"])
+
+            # Add the triples from the section to the current graph
+            if section_triples:
+                for triple in section_triples:
+                    subject_uri = URIRef(token_node)
+                    g.add((subject_uri, triple[1], triple[2]))
         else:
             # Add triples for the word without a tag_name
             g.add((token_node, ontolex.writtenRep, Literal(word["text"], lang="en")))
@@ -93,10 +108,7 @@ def add_tokenize_text(g, words, physDesc_ref_target):
             next_token_node = URIRef(f"{token_uri}#en_{next_id:06}")
             g.add((token_node, ex.followedBy, next_token_node))
 
-
-       
-
-def create_rdf_graph_from_tokenized_word(metadata: Dict[str, list], token_dict: Dict[str, list]) -> Graph:
+def create_rdf_graph_from_tokenized_word(metadata: Dict[str, list], token_dict: Dict[str, list], rdf_graph: Graph) -> Graph:
     physDesc_ref_target = metadata.get("physDesc_id")
     words = token_dict.get("words", [])
 
@@ -104,7 +116,7 @@ def create_rdf_graph_from_tokenized_word(metadata: Dict[str, list], token_dict: 
     g = Graph()
 
     bind_namespaces(g)
-        
-    add_tokenize_text(g, words, physDesc_ref_target)
+
+    add_tokenize_text(g, words, physDesc_ref_target, rdf_graph)
 
     return g

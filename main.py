@@ -65,7 +65,7 @@ def main(xml_file_path: str, json_file_path: str) -> None:
 
 
         # Create RDF graph from tokenized words
-        g_tokenized: Graph = create_rdf_graph_from_tokenized_word(metadata, token_dict)
+        g_tokenized: Graph = create_rdf_graph_from_tokenized_word(metadata, token_dict, g_metadata)
          # Serialize RDF graph to RDF/XML
         rdf_xml_output_file_path = os.path.join(
             "output", os.path.splitext(os.path.basename(xml_file_path))[0] + "_tokenized.rdf"
