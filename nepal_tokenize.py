@@ -1,7 +1,7 @@
 import xml.etree.ElementTree as ET
 import os
 from rdflib import RDF, Graph, Literal, Namespace, URIRef, BNode
-
+from serialization.turtle import save_turtle_serialization
 
 def judge_repetition(word, word_list):
     if not word_list:
@@ -24,7 +24,7 @@ tree = ET.parse(xml_file_path)
 root = tree.getroot()
 
 
-DOI = root.get("{http://www.w3.org/XML/1998/namespace}id").lower()
+#DOI = root.get("{http://www.w3.org/XML/1998/namespace}id").lower()
 
 #get physDesc_id
 physDesc_id = root.find(".//tei:physDesc", NS)
@@ -42,8 +42,10 @@ g = Graph()
 
 nepaltokens = Namespace("http://example.com/nepaltokens")
 ontolex = Namespace("http://www.w3.org/ns/lemon/ontolex#")
+example = Namespace("http://example.org/")
 
 g.bind('ontolex', ontolex)
+g.bind('', example)
 
 # Add an id attribute to each <w> element
 for i, w_element in enumerate(w_elements, start=1):
@@ -58,15 +60,22 @@ for i, w_element in enumerate(w_elements, start=1):
 
 for i, word in enumerate(w_list):
     format_id = "{:06}".format(i+1)
+    format_next_id = "{:06}".format(i+2)
     nepaltokens_node = URIRef(f"nepalica:{physDesc_id}#ne{format_id}")
-    g.add((nepaltokens_node, ontolex.Form, Literal(word, lang = "ne")))
-
+    nepaltokens_node_form = URIRef(f"nepalica:{physDesc_id}#ne{format_id}_form")
+    #g.add((nepaltokens_node, ontolex.Form, Literal(word, lang = "ne")))
+    g.add((nepaltokens_node, ontolex.LexicalEntry, ontolex.Word))
+    g.add((nepaltokens_node, ontolex.canonicalForm, nepaltokens_node_form))
+    g.add((nepaltokens_node, example.followedBy, URIRef(f"nepalica:{physDesc_id}#ne{format_next_id}")))
+    
+    g.add((nepaltokens_node_form, ontolex.Form, Literal(word, lang = "ne")))
 
 # Save the modified XML to a new file
 tree.write("modified_xml_file.xml", encoding="utf-8", xml_declaration=True, default_namespace="")
 
 
 rdf_xml_output_file_path = os.path.join(os.getcwd(), "output", "nepaltokens.ttl")
-g.serialize(rdf_xml_output_file_path, format="turtle")
+#g.serialize(rdf_xml_output_file_path, format="turtle")
+save_turtle_serialization(g, rdf_xml_output_file_path)
 
 
