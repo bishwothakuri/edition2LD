@@ -81,12 +81,16 @@ def add_tokenize_text(g, words, physDesc_ref_target, rdf_graph):
     for i, word in enumerate(words):
         current_id = next(id_counter)
         token_node = URIRef(f"{token_uri}#en_{current_id:06}")
-        g.add((token_node, RDF.type, ontolex.LexicalEntry))
-        g.add((token_node, RDF.type, ontolex.Word))
+        # Check if the word is numeric
+        if word["text"].isnumeric():
+            g.add((token_node, RDF.type, dbr.Number))
+        else:
+            g.add((token_node, RDF.type, ontolex.LexicalEntry))
+            g.add((token_node, RDF.type, ontolex.Word))
+
         g.add((token_node, DC_NS.language, lexvo.ne))
         g.add((token_node, DC_NS.language, lexvo.en))
         g.add((token_node, DC_NS.description, Literal(document_description)))
-
 
         # Check if the word has a tag_name
         if "tag_name" in word:
