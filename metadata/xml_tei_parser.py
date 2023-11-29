@@ -134,25 +134,48 @@ def extract_metadata_from_xml(xml_file, json_file):
         # Extract place names 
         place_name_dict = {}
 
-        for place_name in place_names:
-            if place_name.text is not None:
-                place_name_text = " ".join(place_name.text.split())
-                n_value = place_name.get("n")
-                ont_item_ids = ont_item_occurrences.get(n_value, [])
-                for ont_item_id in ont_item_ids:
-                    place_entry = place_name_dict.setdefault(
-                        ont_item_id, {"primary_name": place_name_text, "alternative_names": []}
-                    )
-                    place_entry["alternative_names"].append(place_name_text)
+        for place_name in root.findall(".//tei:placeName", NS):
+            n_value = place_name.get("n")
+            place_name_text = " ".join([re.sub(r'\s+', ' ', w.text or "").strip() for w in place_name.findall(".//tei:w", NS)] + [re.sub(r'\s+', ' ', place_name.text or "").strip()])
+            place_name_text = place_name_text.strip()
 
+            # Check if there is tei:w element inside placeName
+            label_name = "devanagari_name" if place_name.findall(".//tei:w", NS) else "primary_name"
+
+            # Retrieve ont_item_id based on xml_identifier
+            ont_item_ids = ont_item_occurrences.get(n_value, [])
+
+            # Group place names by ont_item_id
+            for ont_item_id in ont_item_ids:
+                if ont_item_id not in place_name_dict:
+                    place_name_dict[ont_item_id] = {"n": ont_item_id, "primary_name": "", "devanagari_name": "", "alternative_names": []}
+
+                place_data = place_name_dict[ont_item_id]
+
+                if label_name == "devanagari_name":
+                    place_data[label_name] = place_name_text
+                else:
+                    if not place_data["primary_name"]:
+                        place_data["primary_name"] = place_name_text
+                    elif label_name == "primary_name" and place_data["primary_name"] != place_name_text:
+                        place_data["alternative_names"].append(place_name_text)
+
+        # Extracting metadata for each ont_item_id
         for ont_item_id, place_data in place_name_dict.items():
             place_entry = {"n": ont_item_id, "place_name": place_data["primary_name"]}
+
+            # Adding devanagari_place_name if present
+            devanagari_place_name = place_data["devanagari_name"]
+            if devanagari_place_name:
+                place_entry["devanagari_name"] = devanagari_place_name
+
+            # Adding alternative_names if present
             alternative_names = place_data["alternative_names"]
             if alternative_names:
                 place_entry["alternative_names"] = alternative_names
 
             # Extract the LOD identifiers and gender from the note
-            note_text = extract_item_note_and_surname(ontology_url, ont_item_id)["note_text"].replace('\n',' ').replace('\r',' ').replace('\t',' ')
+            note_text = extract_item_note_and_surname(ontology_url, ont_item_id)["note_text"].replace('\n', ' ').replace('\r', ' ').replace('\t', '')
 
             keys, elements, note_text = extract_additional_info_from_note(note_text)
 
@@ -170,6 +193,7 @@ def extract_metadata_from_xml(xml_file, json_file):
 
             place_entry["note_text"] = note_text
             metadata["places"].append(place_entry)
+
 
 
         # Initialize an empty dictionary to store terms
