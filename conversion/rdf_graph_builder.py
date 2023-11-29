@@ -72,7 +72,7 @@ def add_persons(g, persons, physDesc_ref_target):
             g.add(
                 (
                     person_node,
-                    rdfs.devanagariLabel,
+                    rdfs.label,
                     Literal(person["devanagari_name"], lang="ne"),
                 )
             )
@@ -141,13 +141,13 @@ def add_places(g, places, physDesc_ref_target):
         place_node = URIRef(f"{place_uri}#{place['place_name'].replace(' ', '_')}")
         g.add((place_node, RDF.type, GN_NS.Feature))
         g.add((place_node, GN_NS.name, Literal(place["place_name"], lang="ne")))
-
+        g.add((place_node, rdfs.label, Literal(place["place_name"], lang="ne")))
         # Add devanagari_name as a custom property
         if "devanagari_name" in place:
             g.add(
                 (
                     place_node,
-                    rdfs.devanagariLabel,
+                    rdfs.label,
                     Literal(place["devanagari_name"], lang="ne"),
                 )
             )
