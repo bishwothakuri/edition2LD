@@ -141,6 +141,16 @@ def add_places(g, places, physDesc_ref_target):
         place_node = URIRef(f"{place_uri}#{place['place_name'].replace(' ', '_')}")
         g.add((place_node, RDF.type, GN_NS.Feature))
         g.add((place_node, GN_NS.name, Literal(place["place_name"], lang="ne")))
+
+        # Add devanagari_name as a custom property
+        if "devanagari_name" in place:
+            g.add(
+                (
+                    place_node,
+                    rdfs.devanagariLabel,
+                    Literal(place["devanagari_name"], lang="ne"),
+                )
+            )
         # Extract alternative names and exclude the main place name from the list
         alternative_names = [
             alt_name
