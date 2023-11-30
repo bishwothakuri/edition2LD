@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:id="DNA_0001_0021"
+    xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">An arjī from Jasapāu Thāpā re Raṇajit Siṃ's failure to gain victory
+(VS 1871)</title>
+                <title type="short">An arjī re Raṇajit Siṃ's failure to gain victory</title>
+                <title type="sub">DNA_0001_0021</title>
+
+
+                <author role="issuer">Jasapāu Thāpā</author>
+
+                <respStmt>
+                    <resp>main editor and translator</resp>
+                    <name type="main_editor">Manik Bajracharya</name>
+                </respStmt>
+
+                <respStmt>
+                    <resp>collaborator</resp>
+                    <name type="collaborator">Rajan Khatiwoda and Axel Michaels</name>
+                </respStmt>
+            </titleStmt>
+
+            <publicationStmt>
+                <publisher>Heidelberg Academy of Sciences and Humanities: Documents on the History of
+Religion and Law of Pre-modern Nepal</publisher>
+                <pubPlace>Heidelberg, Germany</pubPlace>
+                <date>2018</date>
+                <availability status="restricted">
+                    <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Distributed under a
+Creative Commons Attribution-ShareAlike 4.0 Unported License</licence>
+                    <p>Published by the courtesy of the National Archives, Kathmandu. The copyright of
+the facsimile remains with the Nepal Rashtriya Abhilekhalaya (National Archives,
+Government of Nepal).</p>
+                </availability>
+            </publicationStmt>
+
+            <notesStmt>
+                <note>This file is based on the template v2_0</note>
+                <note/>
+            </notesStmt>
+
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Kathmandu</settlement>
+                        <repository>National Archives</repository>
+                        <idno>Ms. no. 21</idno>
+
+                        <altIdentifier type="microfilm">
+                            <settlement>Kathmandu, Berlin</settlement>
+                            <collection>Nepal German Manuscript Preservation Project</collection>
+                            <idno>NGMPP DNA 1/21</idno>
+                        </altIdentifier>
+                    </msIdentifier>
+
+                    <msContents>
+                        <textLang mainLang="nep"/>
+                    </msContents>
+
+                    <physDesc>
+                        <p>For details see <ref target="/nepal/catitems/viewitem/431">entry in database</ref>
+                        </p>
+                    </physDesc>
+
+                    <history>
+                        <origin>
+                            <p>Issued in <origDate>1814 (VS 1871)</origDate> from
+                                <origPlace>Arki</origPlace>
+                            </p>
+                        </origin>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+
+        <encodingDesc>
+            <editorialDecl>
+                <p>The original document from which this e-text was formed is in the Devanāgarī script.
+The electronic text below contains the following parts: abstract, edition in
+Devanāgarī, English translation and optionally commentary.</p>
+                <p>The text as it appears in the original document is reproduced as faithfully as
+possible, including diacritic marks, such as the nukta (़); format features, such as
+line breaks; and graphical features, such as the middle dot (•) sporadically employed
+to mark word separation, or macrons and lines of various shapes, often used as
+placeholders or structuring elements. The editorial techniques applied introduce
+minimally invasive normalizations (by using <gi>orig</gi> and <gi>reg</gi> in
+                    <gi>choice</gi>) and corrections (by using <gi>sic</gi> and <gi>corr</gi> in
+                    <gi>choice</gi>). Words are separated by <gi>w</gi>, even if scriptura continua is
+used in the original documents. Furthermore, <gi>s</gi> is employed to indicate
+sentence like text units.</p>
+            </editorialDecl>
+        </encodingDesc>
+
+        <profileDesc>
+            <creation>
+                <date>2014-12-12</date>
+            </creation>
+        </profileDesc>
+
+        <revisionDesc>
+            <listChange>
+                <change type="internal" when="2016-03-08" who="#MB">adopted to v_2.0, added the
+devanagari edition, encoded the necessary tags and added zone coordinates</change>
+                <change type="internal" when="2016-03-08" who="#AZ">prepared for UB</change>
+                <change type="internal" when="2018-10-22" who="#MB">tags revised, commentary added,
+prepared for UB</change>
+                <change type="internal" when="2018-10-22" who="#AZ">rechecked, ready for UB</change>
+                <change type="published" when="2018-11-23" who="#CZ">Authorized for publication</change>
+
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+
+    <facsimile>
+        <!--The coordinates refer to picture(s) with the shorter side having 1600 pixels. -->
+        <surface xml:id="surface1" facs="DNA_0001_0116.png" ulx="312" uly="635" lrx="1364" lry="1426">
+            <zone xml:id="addition" ulx="334" uly="806" lrx="393" lry="848"/>
+            <zone xml:id="main_text" ulx="383" uly="744" lrx="1361" lry="1417"/>
+        </surface>
+    </facsimile>
+
+    <text>
+        <body>
+
+            <div xml:id="abs" type="abstract" xml:lang="eng">
+                <ab>This is a letter of Jaspāu Thāpā from Arki in India to the authority concerned
+stating about the unsuccessful attack of a fort in Kashmir by Raṇajit Siṃ. It also
+mentions about the sender's reaction about reported British advances upon the town of
+Butwal in Nepal.</ab>
+            </div>
+
+            <div xml:id="ed" type="edition" xml:lang="nep">
+                <pb n="1r" facs="#surface1"/>
+                <ab type="addition" corresp="#addition">
+                    <lb n="1"/>
+                    <add hand="second" place="in the left margin">
+                        <w>नं.</w>
+                        <w>२१</w>
+                    </add>
+                </ab>
+                <p/>
+                <ab type="maintext" corresp="#main_text">
+                    <lb n="1"/>
+                    <s>
+                        <w>उप्रान्त</w>
+                        <orig>•</orig>
+                        <w>ग्रहणमा</w>
+                        <choice>
+                            <orig>¯२¯ ¯</orig>
+                            <reg>-२-</reg>
+                        </choice>
+                        <w>नुहाव                            <orig>़</orig>न
+                        </w>
+                        <w>जाँदा</w>
+                        <orig>•</orig>
+                        <persName n="1">
+                            <w>कहलुर्या</w>
+                            <w>राजाले</w>
+                        </persName>
+                        <orig>•</orig>
+                        <w>मछेउ</w>
+                        <w>भन्याको</w>
+                        <w>
+                            <choice>
+                                <sic>स्माचार</sic>
+                                <corr>समाचार</corr>
+                            </choice>
+                        </w>
+                    </s>
+                    <orig>•</orig>
+                    <s>
+                        <persName n="2">
+                            <w>रणजीत</w>
+                            <w>सिं</w>
+                        </persName>
+                        <lb n="2"/>
+                        <w>जाई</w>
+                        <orig>•</orig>
+                        <placeName n="3">
+                            <w>काश्मेरको</w>
+                        </placeName>
+                        <placeName n="4">
+                            <w>भरमगढ</w>
+                        </placeName>
+                        <orig>•</orig>
+                        <w>किल्ला</w>
+                        <w>हान्न</w>
+                        <w>जाँदा</w>
+                        <orig>•</orig>
+                        <w>दुई</w>
+                        <w>हज्जार</w>
+                        <orig>•</orig>
+                        <w>
+                            <choice>
+                                <sic>पचिस्सै</sic>
+                                <corr>पचीससय</corr>
+                            </choice>
+                        </w>
+                        <w>जवान</w>
+                        <orig>•</orig>
+                        <persName n="22">
+                            <w>रनजीत्&#x200c;</w>
+                            <w>सिंको</w>
+                        </persName>
+                        <w>षर्च</w>
+                        <w>पनी</w>
+                        <orig>•</orig>
+                        <lb n="3"/>
+                        <w>भयेछ</w>
+                    </s>
+                    <orig>•</orig>
+                    <s>
+                        <w>सिकस्त</w>
+                        <w>षाई</w>
+                        <orig>•</orig>
+                        <w>लस्कर</w>
+                        <orig>•</orig>
+                        <w>व                            <orig>़</orig>र
+                        </w>
+                        <w>सरिरहेछ</w>
+                    </s>
+                    <orig>•</orig>
+                    <s>
+                        <w>आजकाल</w>
+                        <persName n="23">
+                            <w>रनजीत</w>
+                            <w>सिं</w>
+                        </persName>
+                        <orig>•</orig>
+                        <w>आफ्ना</w>
+                        <w>गोल्दार</w>
+                        <orig>•</orig>
+                        <w>सिपाहिका</w>
+                        <lb n="4"/>
+                        <w>डेरा</w>
+                        <w>डेरा</w>
+                        <w>जाई</w>
+                        <orig>•</orig>
+                        <w>कसैलाई</w>
+                        <w>विर्ता</w>
+                        <w>दिउँला</w>
+                        <w>कसैलाई</w>
+                        <w>५|७</w>
+                        <w>हज्जार</w>
+                        <orig>•</orig>
+                        <w>रूपैय                            <orig>़</orig>ा
+                        </w>
+                        <w>दिउँला</w>
+                        <orig>•</orig>
+                        <w>कसैलाई</w>
+                        <w>दर्माह</w>
+                        <w>वढा                            <lb n="5" break="no"/>
+ई</w>
+                        <w>दिउँला</w>
+                        <orig>•</orig>
+                        <w>काश्मेर</w>
+                        <w>लिई</w>
+                        <w>देउ</w>
+                        <w>भनि</w>
+                        <orig>•</orig>
+                        <w>भन्न</w>
+                        <w>लागीरहेछ</w>
+                    </s>
+                    <orig>•</orig>
+                    <s>
+                        <w>य                            <orig>़</orig>ो
+                        </w>
+                        <w>साव                            <orig>़</orig>न
+                        </w>
+                        <w>भदौमा</w>
+                        <orig>•</orig>
+                        <w>केही</w>
+                        <w>भय                            <orig>़</orig>ो
+                        </w>
+                        <w>त</w>
+                        <w>भय                            <orig>़</orig>ो
+                        </w>
+                        <orig>•</orig>
+                        <w>भयेन</w>
+                        <w>भ                            <lb n="6" break="no"/>
+न्या</w>
+                        <w>लिनु</w>
+                        <w>गाह्रै</w>
+                        <w>छ</w>
+                        <w>भंन्न्या</w>
+                        <w>
+                            <choice>
+                                <sic>स्माचार</sic>
+                                <corr>समाचार</corr>
+                            </choice>
+                        </w>
+                        <w>छ</w>
+                        <w>भन्या</w>
+                    </s>
+                    <orig>•</orig>
+                    <s>
+                        <w>रणजीत</w>
+                        <w>सिं</w>
+                        <w>काश्मेरमा</w>
+                        <w>चढ्दा</w>
+                        <orig>•</orig>
+                        <persName n="5">
+                            <w>कावेलको</w>
+                        </persName>
+                        <w>पनि</w>
+                        <w>घर</w>
+                        <w>सचि                            <lb n="7" break="no"/>
+यो</w>
+                    </s>
+                    <orig>•</orig>
+                    <s>
+                        <persName n="6">
+                            <w>फत्ते</w>
+                            <w>षाँ                                <add place="above the line" hand="first">को</add>
+                            </w>
+                        </persName>
+                        <w>
+                            <add place="above the line" hand="first">लस्कर</add>
+                        </w>
+                        <w>पनि</w>
+                        <w>काश्मेर</w>
+                        <w>आयो</w>
+                        <w>भंन्या</w>
+                        <w>षवर</w>
+                        <w>छ</w>
+                    </s>
+                    <orig>•</orig>
+                    <s>
+                        <w>अव</w>
+                        <w>उप्रान्त</w>
+                        <orig>•</orig>
+                        <w>जो</w>
+                        <w>षवर</w>
+                        <w>आउला</w>
+                        <orig>•</orig>
+                        <w>सो</w>
+                        <w>विन्ति</w>
+                        <w>लेषुला</w>
+                    </s>
+                    <s>
+                        <w>वा                            <lb n="8" break="no"/>
+कि</w>
+                        <orig>•</orig>
+                        <w>आषाढ</w>
+                        <w>वदि</w>
+                        <w>१४</w>
+                        <w>रोज</w>
+                        <w>५</w>
+                        <w>मा</w>
+                        <orig>•</orig>
+                        <w>पठाउनुभयाको</w>
+                        <orig>•</orig>
+                        <w>कृपापत्र</w>
+                        <orig>•</orig>
+                        <w>श्राव                            <orig>़</orig>ण
+                        </w>
+                        <w>शुदि</w>
+                        <w>५</w>
+                        <w>रोज</w>
+                        <w>५</w>
+                        <w>मा</w>
+                        <w>आईपुग्यो</w>
+                        <orig>•</orig>
+                    </s>
+                    <lb n="9"/>
+                    <s>
+                        <w>हरप</w>
+                        <orig>•</orig>
+                        <w>हरप</w>
+                        <w>हेरि</w>
+                        <orig>•</orig>
+                        <w>शिर</w>
+                        <w>चह्रायाँ</w>
+                    </s>
+                    <orig>•</orig>
+                    <s>
+                        <placeName n="7">
+                            <w>वटौल</w>
+                        </placeName>
+                        <orig>•</orig>
+                        <placeName n="8">
+                            <w>सिउराजमा</w>
+                        </placeName>
+                        <orig>•</orig>
+                        <w>फिरंगी</w>
+                        <w>चढ्याको</w>
+                        <orig>•</orig>
+                        <w>अघि</w>
+                        <w>वुढाकाजीलाई</w>
+                        <orig>•</orig>
+                        <w>आया                            <lb n="10" break="no"/>
+को</w>
+                        <w>समाचार</w>
+                        <orig>•</orig>
+                        <w>सुनाव                            <orig>़</orig>नुभयो
+                        </w>
+                        <w>र</w>
+                        <w>पनि</w>
+                        <orig>•</orig>
+                        <w>ताहाँको</w>
+                        <w>संदेह</w>
+                        <w>मान्याको</w>
+                        <w>थियेन</w>
+                    </s>
+                    <orig>•</orig>
+                    <s>
+                        <w>अवर</w>
+                        <orig>•</orig>
+                        <w>मलाई</w>
+                        <w>आयाको</w>
+                        <orig>•</orig>
+                        <w>कृपा                            <lb n="11" break="no"/>
+पत्र</w>
+                        <w>देषदा</w>
+                        <orig>•</orig>
+                        <w>ताहाँको</w>
+                        <w>संदेह</w>
+                        <w>फिकृ</w>
+                        <w>कत्ति</w>
+                        <w>रहेन</w>
+                    </s>
+                    <orig>•</orig>
+                    <s>
+                        <w>षातिरदारि</w>
+                        <w>भयाँ</w>
+                    </s>
+                    <s>
+                        <w>
+                            <choice>
+                                <orig>¯ ¯३¯ ¯ ¯को</orig>
+                                <reg>-३-को</reg>
+                            </choice>
+                        </w>
+                        <w>मेहेरले</w>
+                        <w>र</w>
+                        <orig>•</orig>
+                        <w>षामिदको</w>
+                        <lb n="12"/>
+                        <w>प्रतापले</w>
+                        <orig>•</orig>
+                        <w>सर्वत्रै</w>
+                        <w>फत्तै</w>
+                        <w>हुन्या</w>
+                        <w>छ</w>
+                    </s>
+                    <orig>•</orig>
+                    <s>
+                        <w>अर्जि</w>
+                        <w>जानि</w>
+                        <w>नजानि</w>
+                        <w>लेष्याको</w>
+                        <orig>•</orig>
+                        <w>माफ्&#x200c;</w>
+                        <w>भयाजाला</w>
+                    </s>
+                    <orig>•</orig>
+                    <s>
+                        <w>ईति</w>
+                        <w>सम्वत्</w>
+                        <w>१                            <lb n="13" break="no"/>
+८७१</w>
+                        <w>साल</w>
+                        <w>मिति</w>
+                        <w>श्राव                            <orig>़</orig>ण
+                        </w>
+                        <w>सुदि</w>
+                        <w>६</w>
+                        <w>रोज</w>
+                        <w>६</w>
+                    </s>
+                    <s>
+                        <w>मोकाम</w>
+                        <placeName n="10">
+                            <w>अर्कि</w>
+                        </placeName>
+                    </s>
+                    <s>
+                        <w>शुभम्</w>
+                    </s>
+                    <choice>
+                        <orig>¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯</orig>
+                        <reg>---</reg>
+                    </choice>
+                    <lb/>
+                    <lb n="14"/>
+                    <s>
+                        <w>ईत</w>
+                        <w>सेव                            <orig>़</orig>क
+                        </w>
+                        <w>वन्दा</w>
+                        <orig>•</orig>
+                        <persName n="11">
+                            <w>जसपाऊ</w>
+                            <w>थापाको</w>
+                        </persName>
+                        <orig>•</orig>
+                        <w>वंदगी</w>
+                        <orig>•</orig>
+                        <w>कुर्णेस्&#x200c;</w>
+                        <orig>•</orig>
+                        <w>सलाम</w>
+                        <orig>•</orig>
+                        <w>सलाम</w>
+                        <orig>•</orig>
+                        <w>सलाम्&#x200c;</w>
+                        <orig>•</orig>
+                        <w>शुभम्</w>
+                    </s>
+                    <choice>
+                        <orig>¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯</orig>
+                        <reg>---</reg>
+                    </choice>
+                </ab>
+            </div>
+
+            <div xml:id="et" type="english_translation" corresp="#ed" xml:lang="eng">
+                <pb n="1r"/>
+                <p>Number 21</p>
+                <p>
+                    <term ref="1997">Uprānta</term>: While -2-<note place="end">The name of the referent of
+this number is missing; it could be on the back side of the document.</note> went
+to take a bath during the eclipse, <persName n="12">Kahaluryā Rājā</persName> brought
+to me this news: it has transpired that [between] two thousand to twenty-five hundred
+soldiers of <persName n="13">Raṇajit Siṃ</persName> were lost in an attack upon
+                    <placeName n="14">Bharama Gaḍha</placeName> in <placeName n="15">Kashmir</placeName>. Having encountered many difficulties, the troops are
+withdrawing. These days Raṇajit Siṃ has been going from temporary lodging
+(                    <foreign>ḍerā</foreign>) of his cannoneers and soldiers, and telling that he
+would provide <term ref="891">birtā</term> to some, [between] 5 to 7 thousand rupees
+to others, and increase the pay (<term ref="1821">darmāha</term>) to still others if
+they take Kashmir [for him]. If it is done this Śrāvaṇa [or in the following month,]
+Bhādra [months], it is done; if not it will be difficult [for him] to take. This was
+the news conveyed [to me]. After Rāṇajit Siṃ attacked Kashmir, the house of <persName n="16">Kāvela</persName>
+                    <note place="end"> Perhaps the residence of <persName n="24">E.B. Cowell</persName>.
+                    </note> was also restored. It is reported that
+                    <persName n="17">Phatte Khā̃</persName>'s troops have also come to Kashmir.
+Whatever news comes hereafter, I will report [to you] in writing. </p>
+
+                <p>As for the rest, the letter<note place="end">
+                    <foreign>Kṛpāpatra</foreign>, lit. the
+letter one is favoured with. This may be a letter containing some formal
+blessings. But here, the editor has understood it simply as a polite expression
+for "letter".</note> sent [by you] on Thursday, the 14th of dark fortnight of
+Āṣāḍha, arrived on Thursday, the 5th of bright fortnight of Śrāvaṇa. Having gone
+through it line by line I bowed my head. Even though the Buḍhākājī<note place="end">Probably Buḍhākājī <persName n="25">Amvara Siṃha Thāpā</persName>.
+            </note> told
+[us] the news of the British arriving at <placeName n="18">Butwal</placeName> [and]
+            <placeName n="19">Śivarāja</placeName> that had been conveyed to him earlier, we
+felt no concern [about the situation] there. Upon going through the letter that
+reached me, I no longer have any concern [about the situation] there whatsoever. I am
+much obliged [to you for the letter]. By the kindness of -3-<note place="end">The
+name of the referent of this number is missing.</note> and his praiseworthy
+valour, there will be success everywhere. Please forgive [me for any] consciously or
+unconsciously written [mistakes] in [this] <term ref="855">arjī</term>.
+        </p>
+        <p>Friday, the 6th of the bright fortnight of Śrāvaṇa in the [Vikrama] era year 1871
+(1814 CE) from the station at <placeName n="20">Arki</placeName>. [Let there be]
+auspices.</p>
+        <p>From here, praises, bows, salutation, salutation, salutation of your servant
+            <persName n="21">Jasapāu Thāpā</persName>. [Let there be] auspiciousness. </p>
+    </div>
+
+    <div xml:id="commentary" type="commentary" xml:lang="eng">
+        <p>This document is a report sent in to the palace in Kathmandu by Jasapāu Thāpā from
+Arki. Arki lies in the hill state of <placeName n="26">Baghal</placeName> in <placeName n="27">Himachal Pradesh</placeName>, India. It was
+captured by the Gorkhas in 1806 until the end of Anglo-Nepalese war in 1816. The
+document reports of one of the incidents of Mahārāja Raṇajit Siṃ's unsuccessful
+attempt to expand into Kashmir in 1813-1814.</p>
+        <p>The issuer of the document, Jasapāu Thāpā, is one of the <term ref="960">kājī</term>s
+during <persName n="28">Bhīmasena Thāpā</persName>'s rule. However, he is not linked to the prominent Thāpā
+families of the time (<bibl corresp="89">M.C. Regmi 1995</bibl>: 44).</p>
+    </div>
+
+</body>
+</text>
+</TEI>

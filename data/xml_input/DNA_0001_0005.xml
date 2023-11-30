@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:id="DNA_0001_0005"
+    xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">An arjī from Raṇadala Pā̃ḍe re the capturing of elephants (VS
+1894)</title>
+                <title type="short">An arjī on the capturing of elephants</title>
+                <title type="sub">DNA_0001_0005</title>
+
+
+                <author role="issuer">Raṇadala Pā̃ḍe</author>
+
+                <respStmt>
+                    <resp>main editor and translator</resp>
+                    <name type="main_editor">Axel Michaels, Manik Bajracharya and Rajan Khatiwoda</name>
+                </respStmt>
+
+                <respStmt>
+                    <resp>collaborator</resp>
+                    <name type="collaborator">Philip Pierce</name>
+                </respStmt>
+            </titleStmt>
+
+            <publicationStmt>
+                <publisher>Heidelberg Academy of Sciences and Humanities: Documents on the History of
+Religion and Law of Pre-modern Nepal</publisher>
+                <pubPlace>Heidelberg, Germany</pubPlace>
+                <date>2017</date>
+                <availability status="restricted">
+                    <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Distributed under a
+Creative Commons Attribution-ShareAlike 4.0 Unported License</licence>
+                    <p>Published by the courtesy of the National Archives, Kathmandu. The copyright of
+the facsimile remains with the Nepal Rashtriya Abhilekhalaya (National Archives,
+Government of Nepal).</p>
+                </availability>
+            </publicationStmt>
+
+            <notesStmt>
+                <note>This file is based on the template v2_0</note>
+                <note/>
+            </notesStmt>
+
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Kathmandu</settlement>
+                        <repository>National Archives</repository>
+                        <idno>Ms. no. 5</idno>
+
+                        <altIdentifier type="microfilm">
+                            <settlement>Kathmandu, Berlin</settlement>
+                            <collection>Nepal German Manuscript Preservation Project</collection>
+                            <idno>NGMPP DNA 1/5</idno>
+                        </altIdentifier>
+                    </msIdentifier>
+
+                    <msContents>
+                        <textLang mainLang="nep" otherLangs="san"/>
+                    </msContents>
+
+                    <physDesc>
+                        <p>For details see <ref target="http://abhilekha.adw.uni-heidelberg.de/nepal/catitems/viewitem/1100">entry in database</ref>
+                        </p>
+                    </physDesc>
+
+                    <history>
+                        <origin>
+                            <p>Issued in <origDate>1838 (VS 1894)</origDate> from
+                                <origPlace>Tānasen</origPlace>
+                            </p>
+                        </origin>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+
+        <encodingDesc>
+            <editorialDecl>
+                <p>The original document from which this e-text was formed is in the Devanāgarī script.
+The electronic text below contains the following parts: abstract, edition in
+Devanāgarī, English translation and optionally commentary.</p>
+                <p>The text as it appears in the original document is reproduced as faithfully as
+possible, including diacritic marks, such as the nukta (़); format features, such as
+line breaks; and graphical features, such as the middle dot (•) sporadically employed
+to mark word separation, or macrons and lines of various shapes, often used as
+placeholders or structuring elements. The editorial techniques applied introduce
+minimally invasive normalizations (by using <gi>orig</gi> and <gi>reg</gi> in
+                    <gi>choice</gi>) and corrections (by using <gi>sic</gi> and <gi>corr</gi> in
+                    <gi>choice</gi>). Words are separated by <gi>w</gi>, even if scriptura continua is
+used in the original documents. Furthermore, <gi>s</gi> is employed to indicate
+sentence like text units.</p>
+            </editorialDecl>
+        </encodingDesc>
+
+        <profileDesc>
+            <creation>
+                <date>2014-12-04</date>
+            </creation>
+        </profileDesc>
+
+        <revisionDesc>
+            <listChange>
+                <change type="internal" when="2015-07-07" who="RKh">finalized file</change>
+                <change type="internal" when="2016-03-08" who="AZ">converted to template_v2_0 and
+revised annotation</change>
+                <change type="internal" when="2016-03-09" who="MB">encoded the zones, corrected the
+bibliographic references etc.</change>
+                <change type="internal" when="2017-09-27" who="#CZ">checked annotations, ready for
+UB</change>
+                <change type="published" when="2017-09-27" who="#CZ">Authorized for publication</change>
+                <change type="published" when="2018-06-14" who="#MB">Adapted for relaunch</change>
+                <change type="published" when="2020-10-25" who="#AZ">word separation corrected</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+
+    <facsimile>
+        <!--The coordinates refer to picture(s) with the shorter side having 1600 pixels. -->
+        <surface xml:id="surface1" facs="DNA_0001_0026.png" ulx="257" uly="631" lrx="1470" lry="1518">
+            <zone xml:id="main_text" ulx="370" uly="758" lrx="1396" lry="1418"/>
+        </surface>
+    </facsimile>
+
+    <text>
+        <body>
+
+            <div xml:id="abs" type="abstract" xml:lang="eng">
+                <ab>Raṇadala Pā̃ḍe writes this letter to the authority concerned in respect of offering
+an elephant named Raṇa Prakāśā from Citavana, Nepal.</ab>
+            </div>
+
+            <div xml:id="ed" type="edition" xml:lang="nep-san">
+                <pb n="1r" facs="#surface1"/>
+
+                <ab type="maintext" corresp="#main_text">
+                    <lb n="1"/>
+                    <w>अर्जि</w>
+                    <choice>
+                        <orig>¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯
+¯</orig>
+                        <reg>- - -</reg>
+                    </choice>
+                    <space quantity="2" unit="lines"/>
+                    <lb n="2"/>
+                    <s>
+                        <w>उप्रान्त</w>
+                        <orig>•</orig>
+                        <w>येस्‌&#x200c;</w>
+                        <w>पटक</w>
+                        <placeName n="18">
+                            <w>चितवन्‌को</w>
+                        </placeName>
+                        <w>तप्पामा</w>
+                        <orig>•</orig>
+                        <w>पक्रियाको</w>
+                        <w>ठुलो</w>
+                        <w>मत्ता</w>
+                        <orig>•</orig>
+                        <persName type="elephant" n="1">
+                            <w>रण</w>
+                            <w>प्रकास</w>
+                        </persName>
+                        <w>हाति</w>
+                        <w>१</w>
+                        <w>हजुरमा</w>
+                        <w>चर्&#8205;हा<lb n="3" break="no"/>
+ई</w>
+                        <w>पठायाको</w>
+                        <w>छ</w>
+                    </s>
+                    <s>
+                        <w>दाषिल</w>
+                        <w>होला</w>
+                        <orig>•</orig>
+                    </s>
+                    <s>
+                        <persName type="elephant" n="2">
+                            <w>हैदरवेग्‌</w>
+                        </persName>
+                        <w>हाति</w>
+                        <orig>•</orig>
+                        <w>सधै</w>
+                        <w>उस्तो</w>
+                        <w>काम्‌&#x200c;</w>
+                        <w>लाग्न्या</w>
+                        <w>होइन</w>
+                    </s>
+                    <orig>•</orig>
+                    <s>
+                        <w>ये‌स्‌&#x200c;</w>
+                        <w>पाला</w>
+                        <w>दा                            <lb n="4" break="no"/>
+रोगा</w>
+                        <w>राउत्‌&#x200c;</w>
+                        <w>माहुत्‌&#x200c;हरूले</w>
+                        <w>धेरै</w>
+                        <w>मिहिनेत्‌&#x200c;</w>
+                        <w>गर्दा</w>
+                        <orig>•</orig>
+                        <w>हैदरवेग्‌&#x200c;ले</w>
+                        <w>पक्र्यो</w>
+                    </s>
+                    <orig>•</orig>
+                    <s>
+                        <placeName n="4">
+                            <w>पाल्‌&#x200c;पा</w>
+                        </placeName>
+                        <w>हातिसारको</w>
+                        <w>नांज्या                            <lb n="5" break="no"/>
+दा</w>
+                        <w>मुल्‌&#x200c;हाति</w>
+                        <orig>•</orig>
+                        <w>हातिषेदामा</w>
+                        <w>सधै</w>
+                        <w>काम्‌&#x200c;</w>
+                        <w>लाग्न्या</w>
+                        <orig>•</orig>
+                        <w>सवारि</w>
+                        <w>माफिक्‌&#x200c;का</w>
+                        <w>हातिहरु</w>
+                        <w>पक्रन्या</w>
+                        <persName type="elephant" n="5">
+                            <w>अडंग</w>
+                            <lb n="6"/>
+                            <w>वाहादुर</w>
+                        </persName>
+                        <w>हाति</w>
+                        <w>हो</w>
+                    </s>
+                    <orig>•</orig>
+                    <s>
+                        <w>ञाहाको</w>
+                        <w>हातिसारमा</w>
+                        <w>अडंग</w>
+                        <w>वाहादूर</w>
+                        <w>हाति</w>
+                        <w>पनि</w>
+                        <w>पठाइवक्सनु</w>
+                        <w>भया</w>
+                        <w>ञाँहा                            <lb n="7" break="no"/>
+को</w>
+                        <w>हातिसार</w>
+                        <w>वेस्&#x200c;</w>
+                        <w>गरी</w>
+                        <w>जम्‌न्या</w>
+                        <w>
+                            <supplied reason="lost">र</supplied>
+                        </w>
+                        <w>
+                            <supplied reason="lost">स</supplied>वारि
+                        </w>
+                        <w>माफिक्‌&#x200c;का</w>
+                        <w>हातिहरू</w>
+                        <w>पनि</w>
+                        <w>पक्रि</w>
+                        <w>हजूरमा</w>
+                        <w>दाषिल</w>
+                        <lb n="8"/>
+                        <w>हुँदै</w>
+                        <w>रहदा</w>
+                        <w>हुन्‌</w>
+                    </s>
+                    <orig>•</orig>
+                    <s>
+                        <w>जो</w>
+                        <w>हुकुम्</w>
+                    </s>
+                    <orig>•</orig>
+                    <s xml:lang="san">
+                        <w>विज्ञप्रभुचरणकमलेषु</w>
+                        <w>किमधिकम्‌</w>
+                    </s>
+                    <s>
+                        <w>इति</w>
+                        <w>सम्वत्‌</w>
+                        <w>१८९४</w>
+                        <w>सा                            <lb n="9" break="no"/>
+ल</w>
+                        <w>मिति</w>
+                        <w>चैत्र</w>
+                        <w>शुदि</w>
+                        <w>१५</w>
+                        <w>रोज</w>
+                        <w>२</w>
+                        <w>मुकाम्‌</w>
+                        <placeName n="7">
+                            <w>तानसेन्‌&#x200c;</w>
+                        </placeName>
+                    </s>
+                    <s>
+                        <w>शुभम्&#x200c;</w>
+                    </s>
+                    <choice>
+                        <orig>¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯ ¯</orig>
+                        <reg>- - -</reg>
+                    </choice>
+                    <space quantity="2" unit="lines"/>
+                    <lb n="10"/>
+                    <s xml:lang="san">
+                        <w>सदा</w>
+                        <w>सेवकस्य</w>
+                        <persName n="8">
+                            <w>रणदल</w>
+                            <w>पाँडेकस्य</w>
+                        </persName>
+                        <w>कोटि</w>
+                        <w>कोटि</w>
+                        <w>कुर्नेस</w>
+                        <w>साष्टांगदंडवत्</w>
+                        <w>सेवा</w>
+                        <w>सेवा</w>
+                        <w>सेवा</w>
+                        <w>सहस्रम्‌</w>
+                        <w>शुभम्</w>
+                    </s>
+                </ab>
+            </div>
+
+            <div xml:id="et" type="english_translation" corresp="#ed" xml:lang="eng">
+                <pb n="1r"/>
+                <p>
+                    <term ref="855">Arjī</term> –
+                </p>
+                <p>[Regarding the] following: This time a big ruttish (<foreign>mattā</foreign>)                    <note place="end">An elephant who is erotic for female elephants and whose ear-glands
+are flowing.</note> elephant captured in an area of <placeName n="9">Citavana</placeName> [and given the name] <persName type="elephant" n="10">Raṇa
+Prakāśa</persName> has been sent to you. [Hopefully], it will have reached you.
+The elephant [named] <persName type="elephant" n="11">Haidaraveg</persName> is not
+always so useful. This time, thanks to the hard labour of the elephant stable manager
+(                    <term ref="1889">dārogā</term>)                    <note place="end">Cp. <bibl corresp="18">Edwards
+1975</bibl>: 109; <bibl corresp="37">Krauskopff and Meyer 2000</bibl>: 183,
+                        <bibl corresp="141">Locke 2006</bibl>: 149</note>, head of the elephant care
+team (<term ref="1890">rāut</term>)                    <note place="end">Locke 2006: 148f.: "In the
+modern era, <foreign>raut</foreign> is responsible for managing the team of
+elephant driving staff (the <foreign>mahuts</foreign>,
+                        <foreign>patchuwas</foreign>, and <foreign>phanets</foreign>)"; also a Tharu
+surname: <bibl corresp="37">Krauskopff and Meyer 2000</bibl>: 185.</note> and
+elephant riders (<term ref="1891">māhut</term>), Haidaraveg caught [Raṇa Prakāśa].
+The popular chief elephant <persName type="elephant" n="13">Aḍaṅga
+Bahādura</persName> from the elephant stable (<foreign>hātisāra</foreign>) in
+                    <placeName n="14">Pālpā</placeName> is the one who is always useful for elephant
+hunts,<note place="end">Hunt by stockade methode or a "fenced enclosure into which
+wild elephants were herded before being subjected to training" (<bibl corresp="141">Locke 2006</bibl>): 26.</note> and catches elephants best suited
+for your outings. The elephant stable here would [therefore] be much better, if you
+could also send the elephant Aḍaṅga Bahādura. Once elephants suited for outings are
+caught, they would be continously turned over to you. [We will do] as you order. What
+more [to say] to our learned lord whose feet are lotuses!</p>
+            <p>Monday, the 15th of the bright fortnight of Caitra in the [Vikrama] era 1894 from the
+                <placeName n="16">Tānasen</placeName> residence. [Let it be] auspicious.</p>
+            <p>Tens of millions of eightfold salutations<note place="end">An expression for a
+greeting gesture with eight body parts, i.e., the whole body.</note> from [your]
+always [faithful] servant <persName n="17">Raṇadala Pā̃ḍe</persName>, at [your]
+service. Three times reverence. [Let it be] thousandfold auspicious.</p>
+        </div>
+        <div xml:id="commentary" type="commentary" xml:lang="eng">
+            <p>Most documents on elephants deal with elephants used for hunting and riding for kings
+and nobility. They are regarded as a prized symbol of status and, due to their
+association with Gaṇeśa, of power combined with auspicious qualities. This became
+last evident in 1975 when King <persName n="19">Vīrendra</persName> and Queen
+                <persName n="20">Aiśvaryā</persName> undertook their coronation proccession on the
+back of an elephant. The Śāhas and Rāṇās were famous for organizing hunts which could
+last several weeks and involve hundreds of elephants (<bibl corresp="141">Locke
+2006</bibl>: 11). <persName n="21">Jaṅga Bahādura Rāṇā</persName>’s fondness for
+elephants and his courage in dealing with them is well-known.</p>
+            <p>Elephants were important for the economy and lucrative trading commodity (<bibl corresp="149">Regmi 1984</bibl>: 198-199). They were also used in war and in
+controlling the borders, as is clear from a <term ref="992">lālamohara</term> issued
+by King <persName n="22">Gīrvāṇayuddha</persName> dated Mārga sudi 1, VS 1867, to all
+officials where elephant stables had been established and in which the <term ref="1889">dārogā</term>s, <term ref="1890">rāuta</term>s, <term ref="1891">māhuta</term>s etc. are told: “In case you vacate a single inch of the territory
+under our occupation, you shall be held to have committed a serious crime” (<bibl corresp="429">Regmi 1972: 46</bibl> referring to RRC, vol. 38, p. 645).</p>
+        </div>
+    </body>
+</text>
+</TEI>

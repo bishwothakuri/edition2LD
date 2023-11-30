@@ -10,9 +10,10 @@ from conversion.rdf_graph_builder import create_rdf_graph
 from conversion.word_rdf_mapper import create_rdf_graph_from_tokenized_word
 from conversion.rdfa_creator import generate_rdfa_from_graph
 from serialization.turtle import save_turtle_serialization
+from pathlib import Path
 
 
-def main(xml_file_path: str, json_file_path: str) -> None:
+def process_single_file(xml_file_path: str, json_file_path: str) -> None:
     """
     Extracts metadata from an XML file, converts it to RDF graph and serializes it in RDF/XML format.
 
@@ -107,12 +108,19 @@ def main(xml_file_path: str, json_file_path: str) -> None:
         logging.error("An error occurred: %s", e)
 
 
+
+def process_batch(directory, json_file_path):
+    for path in Path(directory).rglob("*.xml"):
+        process_single_file(str(path), json_file_path)
+
+
+
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
-    xml_file_path = os.path.join("data", "K_0440_0007.xml")
+    xml_dir_path = "data/xml_input"
     json_file_path = os.path.join("data", "ont_item_occurrences.json")
     try:
-        main(xml_file_path, json_file_path)
+        process_batch(xml_dir_path, json_file_path)
     except FileNotFoundError as e:
         logging.error("The specified XML file path does not exist: %s", e)
     except ValueError as e:

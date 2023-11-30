@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:id="DNA_0001_0001"
+    xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">A letter from Aravindanātha Gajuryāla to General Bhīmasena Thāpā
+requesting a study allowance (VS 1878)</title>
+                <title type="short">A letter to General Bhīmasena Thāpā requesting a study
+allowance</title>
+                <title type="sub">DNA_0001_0001</title>
+
+                <author role="issuer">Aravindanātha Gajuryāla</author>
+
+                <respStmt>
+                    <resp>main editor and translator</resp>
+                    <name type="main_editor">Rajan Khatiwoda</name>
+                </respStmt>
+
+                <respStmt>
+                    <resp>collaborator</resp>
+                    <name type="collaborator">Axel Michaels</name>
+                </respStmt>
+            </titleStmt>
+
+            <publicationStmt>
+                <publisher>Heidelberg Academy of Sciences and Humanities: Documents on the History of
+Religion and Law of Pre-modern Nepal</publisher>
+                <pubPlace>Heidelberg, Germany</pubPlace>
+                <date>2018</date>
+                <availability status="restricted">
+                    <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Distributed under a
+Creative Commons Attribution-ShareAlike 4.0 Unported License</licence>
+                    <p>Published by the courtesy of the National Archives, Kathmandu. The copyright of
+the facsimile remains with the Nepal Rashtriya Abhilekhalaya (National Archives,
+Government of Nepal).</p>
+                </availability>
+            </publicationStmt>
+
+            <notesStmt>
+                <note>This file is based on the template v2_0</note>
+                <note/>
+            </notesStmt>
+
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Kathmandu</settlement>
+                        <repository>National Archives</repository>
+                        <idno>Ms. no. 1</idno>
+
+                        <altIdentifier type="microfilm">
+                            <settlement>Kathmandu, Berlin</settlement>
+                            <collection>Nepal German Manuscript Preservation Project</collection>
+                            <idno>NGMPP DNA 1/1</idno>
+                        </altIdentifier>
+                    </msIdentifier>
+
+                    <msContents>
+                        <textLang mainLang="nep" otherLangs="san"/>
+                    </msContents>
+
+                    <physDesc>
+                        <p>For details see <ref target="/nepal/catitems/viewitem/1650/1">entry in database</ref>
+                        </p>
+                    </physDesc>
+
+                    <history>
+                        <origin>
+                            <p>Issued in <origDate>1821 (VS 1878)</origDate> from
+                                <origPlace>Varanasi</origPlace>
+                            </p>
+                        </origin>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+
+        <encodingDesc>
+            <editorialDecl>
+                <p>The original document from which this e-text was formed is in the Devanāgarī script.
+The electronic text below contains the following parts: abstract, edition in
+Devanāgarī, English translation and optionally commentary.</p>
+                <p>The text as it appears in the original document is reproduced as faithfully as
+possible, including diacritic marks, such as the nukta (़); format features, such as
+line breaks; and graphical features, such as the middle dot (•) sporadically employed
+to mark word separation, or macrons and lines of various shapes, often used as
+placeholders or structuring elements. The editorial techniques applied introduce
+minimally invasive normalizations (by using <gi>orig</gi> and <gi>reg</gi> in
+                    <gi>choice</gi>) and corrections (by using <gi>sic</gi> and <gi>corr</gi> in
+                    <gi>choice</gi>). Words are separated by <gi>w</gi>, even if scriptura continua is
+used in the original documents. Furthermore, <gi>s</gi> is employed to indicate
+sentence like text units.</p>
+            </editorialDecl>
+        </encodingDesc>
+
+        <profileDesc>
+            <creation>
+                <date>2015-01-16</date>
+            </creation>
+        </profileDesc>
+
+        <revisionDesc>
+            <listChange>
+                <change type="internal" when="2015-01-16" who="#RKh, #AM">prepared edition and
+translation</change>
+                <change type="internal" when="2016-07-07" who="#RT">revised</change>
+                <change type="internal" when="2016-07-07" who="#MB">added zone coordinates,
+revised</change>
+                <change type="internal" when="2017-04-06" who="#RKh">revised</change>
+                <change type="internal" when="2017-04-06" who="#CZ">updated editorial declaration and
+made other formal adjustments</change>
+                <change type="internal" when="2017-04-21" who="#RKh, #CZ">Prepared for UB</change>
+                <change type="internal" when="2017-10-16" who="#AZ">Ready for UB, open
+questions</change>
+                <change type="internal" when="2018-03-26" who="#RKh, #AZ">added commentary</change>
+                <change type="internal" when="2018-06-29" who="#RKh">Applied Philip's
+correction</change>
+                <change type="internal" when="2018-07-12" who="#RKh">Further minor corrections</change>
+                <change type="internal" when="2018-07-12" who="#RKh, #MB">tags improved</change>
+                <change type="internal" when="2018-10-22" who="#RKh">Changed some facts on the basis of
+the DNA 4/38</change>
+                <change type="internal" when="2018-10-29" who="#RKh">again minor revision</change>
+                <change type="internal" when="2018-10-29" who="#AZ">checked, added tag, ready for UB
+after reindexing</change>
+                <change type="published" when="2018-11-23" who="#CZ">Authorized for publication</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+
+    <facsimile>
+        <!--The coordinates refer to picture(s) with the shorter side having 1600 pixels. -->
+        <surface xml:id="surface1" facs="DNA_0001_0006.png" ulx="340" uly="574" lrx="1098" lry="1718">
+            <zone xml:id="invocatio" ulx="371" uly="606" lrx="1051" lry="1689"/>
+            <zone xml:id="addition" ulx="381" uly="628" lrx="433" lry="680"/>
+            <zone xml:id="space1" ulx="655" uly="693" lrx="751" lry="725"/>
+            <zone xml:id="space2" ulx="546" uly="763" lrx="631" lry="799"/>
+            <zone xml:id="space3" ulx="665" uly="759" lrx="795" lry="791"/>
+            <zone xml:id="main_text" ulx="461" uly="1041" lrx="1042" lry="1684"/>
+        </surface>
+    </facsimile>
+
+    <text>
+        <body>
+
+            <div xml:id="abs" type="abstract" xml:lang="eng">
+                <ab>In this letter to General Bhīmasena Thāpā, Aravindanātha Gajuryāla requests an
+allowance to allow him to continue his study at Varanasi.</ab>
+            </div>
+
+            <div xml:id="ed" type="edition" xml:lang="nep-san">
+                <pb n="1r" facs="#surface1"/>
+                <ab type="invocatio" corresp="#invocatio">
+                    <lb n="1"/>
+                    <w>श्रीः\</w>
+                </ab>
+                <p/>
+                <ab type="addition" corresp="#addition">
+                    <add place="in the upper margin" hand="second">
+                        <lb n="1"/>
+                        <w>नं</w>
+                        <lb n="2"/>
+                        <w>१</w>
+                    </add>
+                </ab>
+                <p/>
+                <ab type="space" corresp="#space1">
+                    <lb n="1"/>
+                    <w>श्री</w>
+                    <w>संकटा</w>
+                    <w>३</w>
+                </ab>
+                <p/>
+                <ab type="space" corresp="#space2">
+                    <lb n="1"/>
+                    <w>श्री</w>
+                    <w>सर्कार</w>
+                    <w>१</w>
+                </ab>
+                <p/>
+                <ab type="space" corresp="#space3">
+                    <lb n="1"/>
+                    <w>श्री</w>
+                    <w>५</w>
+                    <w>महाराजा</w>
+                    <w>२</w>
+                </ab>
+                <p/>
+                <ab type="maintext" corresp="#main_text">
+                    <lb n="1"/>
+                    <s>
+                        <w>स्वस्ति</w>
+                    </s>
+                    <s xml:lang="san">
+                        <w>श्रीमन्मेधावद्&#8205;गुरूपशिक्षितनिर्मलसुमंत्रणकर्मचातुरीप्रवर्द्धितनिजक्षोणीनायकक्षो<lb n="2" break="no" />
+णीमण्डलसमृद्धिसंभावितराजात्मानुकूलप्रजानुरंजनादिसत्कर्मकुसुमावलीसुरभिसुवा                        <lb n="3" break="no"/>
+सितसत्कीर्त्तिवनितेषु</w>
+                    <persName n="7">
+                        <w>श्रीश्रीश्रीजनरलसाहेवभीमसेनथापाकैषु</w>
+                    </persName>
+                    <w>ज्योतिर्विद्</w>
+                    <persName n="1">
+                        <w>अरविन्दना                            <lb n="4" break="no"/>
+थ</w>
+                        <w>गजुर्यालको</w>
+                    </persName>
+                    <w>शुभाशीर्वचनपूर्वकम्</w>
+                    <w>पत्रमिदम्&#x200c;</w>
+                </s>
+                <s>
+                    <w>ञाहा</w>
+                    <w>कुशल</w>
+                    <w>तपाञिका</w>
+                    <w>चरणको</w>
+                    <w>क्षेम</w>
+                    <w>कौश                        <lb n="5" break="no"/>
+ल्य</w>
+                    <w>प्रतिदिन</w>
+                    <w>स्मरण</w>
+                    <w>गर्छौं</w>
+                </s>
+                <s>
+                    <w>उप्रान्त</w>
+                    <w>
+                        <choice>
+                            <orig>¯१¯ ¯का</orig>
+                            <reg>-१-का</reg>
+                        </choice>
+                    </w>
+                    <w>निमित्त</w>
+                    <w>
+                        <choice>
+                            <orig>¯३¯ ¯को</orig>
+                            <reg>-३-को</reg>
+                        </choice>
+                    </w>
+                    <w>जप</w>
+                    <w>पूजा</w>
+                    <w>गर्नु</w>
+                    <w>अध्ययन</w>
+                    <w>पनी</w>
+                    <lb n="6"/>
+                    <w>गर्नु</w>
+                    <w>भनि</w>
+                    <w>
+                        <choice>
+                            <orig>¯१¯ ¯वाट</orig>
+                            <reg>-१-वाट</reg>
+                        </choice>
+                    </w>
+                    <w>काम</w>
+                    <w>वक्सनुभया</w>
+                    <w>माफिक्&#x200c;</w>
+                    <w>ञाहा</w>
+                    <w>आई</w>
+                    <w>निरंतर</w>
+                    <w>‌अनुष्ठान</w>
+                    <w>पनी</w>
+                    <w>अध्ययन</w>
+                    <lb n="7"/>
+                    <w>पनि</w>
+                    <w>गर्दै</w>
+                    <w>थिञा</w>
+                </s>
+                <s>
+                    <w>अनुष्ठान</w>
+                    <w>
+                        <choice>
+                            <orig>¯१¯ ¯वाट</orig>
+                            <reg>-१-वाट</reg>
+                        </choice>
+                    </w>
+                    <w>अन्यत्र</w>
+                    <w>वक्सनु</w>
+                    <w>भयेछ</w>
+                </s>
+                <s>
+                    <w>तपनि</w>
+                    <w>आफ्नु</w>
+                    <w>कृत्य</w>
+                    <w>छोड्‌&#x200c;न्या</w>
+                    <w>होइ                        <lb n="8" break="no"/>
+न</w>
+                </s>
+                <s>
+                    <w>जय</w>
+                    <w>मनाउनु</w>
+                    <w>हाम्रो</w>
+                    <w>कामै</w>
+                    <w>हो</w>
+                    <w>भनि</w>
+                    <w>छोड्याको</w>
+                    <w>छैन</w>
+                </s>
+                <s>
+                    <w>‌अध्ययनका</w>
+                    <w>अर्थकन</w>
+                    <w>सिद्धान्तकौमुदी</w>
+                    <lb n="9"/>
+                    <w>सूर्यसिद्धान्त</w>
+                    <w>लीलावती</w>
+                    <w>वीजगणित</w>
+                    <w>मुहूर्त्तचिन्तामणि</w>
+                    <orig>•</orig>
+                    <w>कर्णकुतूहल</w>
+                    <orig>•</orig>
+                    <w>मकरंद</w>
+                    <orig>•</orig>
+                    <w>ग्रहलाघ                        <lb n="10" break="no"/>
+व</w>
+                    <w>रत्नमाला</w>
+                    <w>
+                        <choice>
+                            <orig>वृहज्जातक</orig>
+                            <reg>बृहज्जातक</reg>
+                        </choice>
+                    </w>
+                    <w>केशवीपद्धति</w>
+                    <w>श्रीपतिपद्धति</w>
+                    <w>विट्ठलपद्धति</w>
+                    <w>ताँहि</w>
+                    <w>भयाका</w>
+                    <w>थिया</w>
+                </s>
+                <lb n="11"/>
+                <s>
+                    <w>ञाहा</w>
+                    <w>आयापछि</w>
+                    <w>
+                        <choice>
+                            <sic>सिद्धान्ततत्वविवेक</sic>
+                            <corr>सिद्धान्ततत्त्वविवेक</corr>
+                        </choice>
+                    </w>
+                    <w>
+                        <choice>
+                            <orig>शव्देन्दुशेषर</orig>
+                            <reg>शब्देन्दुशेखर</reg>
+                        </choice>
+                    </w>
+                    <w>मनोरमा</w>
+                    <orig>•</orig>
+                    <w>सम्राट्&#x200c;सिद्धान्त</w>
+                    <w>वशिष्ठसि                        <lb n="12" break="no"/>
+द्धान्त</w>
+                    <w>
+                        <choice>
+                            <orig>व्रह्मसिद्धान्त</orig>
+                            <reg>ब्रह्मसिद्धान्त</reg>
+                        </choice>
+                    </w>
+                    <orig>•</orig>
+                    <w>सोमसिद्धान्त</w>
+                    <orig>•</orig>
+                    <w>मुक्तावली</w>
+                    <w>भैसकिया</w>
+                </s>
+                <s>
+                    <w>वाकि</w>
+                    <w>
+                        <choice>
+                            <orig>¯१¯ ¯वाट</orig>
+                            <reg>-१-वाट</reg>
+                        </choice>
+                    </w>
+                    <w>जो</w>
+                    <w>वर्षाशन</w>
+                    <lb n="13"/>
+                    <w>वक्सनुभयाको</w>
+                    <w>थियो</w>
+                    <orig>•</orig>
+                    <w>सो</w>
+                    <w>वीचमा</w>
+                    <w>यद्यपि</w>
+                    <w>विछिन्न</w>
+                    <w>भयो</w>
+                    <w>तपनि</w>
+                    <w>
+                        <choice>
+                            <orig>¯१¯ ¯देखी</orig>
+                            <reg>-१-देखी</reg>
+                        </choice>
+                    </w>
+                    <w>अन्यत्र</w>
+                    <w>हामि                        <lb n="14" break="no"/>
+ले</w>
+                    <w>याचन्&#x200c;</w>
+                    <w>गर्न्या</w>
+                    <w>होइन</w>
+                    <w>भनि</w>
+                    <w>ऋण</w>
+                    <w>गरी</w>
+                    <w>पनि</w>
+                    <w>आजसम्म</w>
+                    <w>यथाकथंचित्&#x200c;</w>
+                    <w>वर्त्तमान</w>
+                    <w>गर्दा</w>
+                    <w>ऋ                        <lb n="15" break="no"/>
+ण</w>
+                    <w>पनि</w>
+                    <w>भैरहेछ</w>
+                </s>
+                <s>
+                    <w>
+                        <choice>
+                            <orig>¯२¯ ¯</orig>
+                            <reg>-२-</reg>
+                        </choice>
+                    </w>
+                    <w>अर्द्धांग</w>
+                    <w>हुनुहुंछ</w>
+                </s>
+                <s>
+                    <w>तपाञिका</w>
+                    <w>चरणको</w>
+                    <w>कीर्त्ति</w>
+                    <w>जस्तै</w>
+                    <w>दिगंतमा</w>
+                    <lb n="16"/>
+                    <w>फैल्याको</w>
+                    <w>छ</w>
+                    <w>तस्तै</w>
+                    <w>हाम्रो</w>
+                    <w>पनि</w>
+                    <w>मनोरथ</w>
+                    <w>तपाञिका</w>
+                    <w>चरणवाट</w>
+                    <w>हुन्यैछ</w>
+                </s>
+                <s>
+                    <w>हामि</w>
+                    <w>जस्ता</w>
+                    <w>अनन्य</w>
+                    <w>ग                        <lb n="17" break="no"/>
+तिका</w>
+                    <w>शरण्य</w>
+                    <w>हुनुहुंछ</w>
+                </s>
+                <s>
+                    <w>‌आजतक्&#x200c;</w>
+                    <w>तपाञिका</w>
+                    <w>चरणवाट</w>
+                    <w>पालना</w>
+                    <w>भैआयाको</w>
+                    <w>छ</w>
+                    <orig>•</orig>
+                </s>
+                <s>
+                    <w>ज्यादा</w>
+                    <w>२।४</w>
+                    <w>अ                        <lb n="18" break="no"/>
+पूर्व</w>
+                    <w>ग्रंथको</w>
+                    <w>संग्रह</w>
+                    <w>गर्नु</w>
+                    <w>छ</w>
+                </s>
+                <s>
+                    <w>द्रव्य</w>
+                    <w>विना</w>
+                    <w>संग्रह</w>
+                    <w>भैसकिदैन</w>
+                    <orig>•</orig>
+                </s>
+                <s>
+                    <w>जो</w>
+                    <w>आज्ञा</w>
+                </s>
+                <s>
+                    <w>लेखनाको</w>
+                    <w>न्यूनाधिक्य</w>
+                    <w>क्ष                        <lb n="19" break="no"/>
+मा</w>
+                    <w>भयाजाला</w>
+                </s>
+                <s xml:lang="san">
+                    <w>किं</w>
+                    <w>
+                        <choice>
+                            <orig>वहु</orig>
+                            <reg>बहु</reg>
+                        </choice>
+                    </w>
+                </s>
+                <s>
+                    <w>इति</w>
+                    <w>संवत्</w>
+                    <w>१८७८</w>
+                    <w>आश्विन</w>
+                    <w>वदि</w>
+                    <w>६</w>
+                    <w>रोज</w>
+                    <w>२</w>
+                </s>
+                <s>
+                    <w>मोकाम</w>
+                    <placeName n="8">
+                        <w>वाराणसी</w>
+                    </placeName>
+                    <w>पुरी</w>
+                </s>
+                <s>
+                    <w>शुभम्&#x200c;</w>
+                </s>
+                <lb n="20"/>
+                <s xml:lang="san">
+                    <w>भवतामहमिव</w>
+                    <w>
+                        <choice>
+                            <orig>वहवो</orig>
+                            <reg>बहवो</reg>
+                        </choice>
+                    </w>
+                    <w>मम</w>
+                    <w>तु</w>
+                    <w>भवानिव</w>
+                    <w>भवानेकः</w>
+                    <orig>॥</orig>
+                </s>
+                <s xml:lang="san">
+                    <w>कुमुदिन्यः</w>
+                    <w>कति</w>
+                    <w>न</w>
+                    <w>विधोर्वि                        <lb n="21" break="no"/>
+धुरिव</w>
+                    <w>विधुरेकः</w>
+                    <w>कुमुदिनीनाम्</w>
+                    <orig>॥</orig>
+                </s>
+            </ab>
+        </div>
+
+        <div xml:id="et" type="english_translation" corresp="#ed" xml:lang="eng">
+            <pb n="1r"/>
+            <p>
+                <term ref="1869">Śrī</term>
+            </p>
+            <p>No. 1<note place="end">This number, added by a second hand, is the manuscript number
+given by the National Archives, Kathmandu.</note>
+            </p>
+            <p>Glorious Saṃkaṭā – 3</p>
+            <p>Venerable <term ref="1963">Sarkāra</term> – 1</p>
+            <p>The fivefold venerable great king – 2</p>
+            <p>Hail! This letter of <persName n="3">Aravindanātha Gajuryāla</persName> together with
+words of auspicious blessing to thrice venerable General <persName n="15">Bhīmasena
+Thāpā</persName>, who has been taught by brilliant teachers, who is esteemed for
+the riches of his own and his leader’s earthly territory, who has been promoted
+because of the astuteness of his pure counsel and deeds, and who is honoured by
+reason of his sweet, aromatic enduring fame, [which is like] a garland of blossoms
+consisting of such virtues as loyalty to the King and making subjects joyful.</p>
+            <p>Here [everything] is fine. We daily carry the welfare of your feet in our
+thoughts.</p>
+            <p>
+                <term ref="1997">Uprānta</term>: Since coming here (to <placeName n="5">Vārāṇasī</placeName>) we have been continuously studying and carrying out the
+                <foreign>anuṣṭhāna</foreign>
+                <note place="end">This denotes any form of religious
+practice.</note> as instructed by -1-<note place="end">The honorific reference,
+written in the top margin of the manuscript, is to be inserted here and in the
+following occurrences.</note> (i.e. Queen Grandmother <persName n="16">Lalitatripurasundarī</persName>),                <note place="end">According to <bibl corresp="457">Regmi et al (1981: 89-90)</bibl>, Lalitatripurasundarī was regent
+from 1812 to 1832.</note> who said that [we] should study so as to [be able] to
+mutter the names and perform the worship of -3- (i.e. Venerable Saṅkaṭā) for -1-. The
+                <foreign>anuṣṭhāna</foreign> has (now) been given to another party by -1-.
+Nevertheless, one should not give up one's tasks; [therefore we] have not given up
+[ours], thinking that it is our work to celebrate [her] victories. Regarding [our]
+studies, [the texts we studied] there (i.e. in <placeName n="6">Kathmandu</placeName>) are: the <foreign>Siddhāntakaumudī</foreign>,
+                <foreign>Sūryasiddhānta</foreign>,                <foreign>Līlāvatī</foreign>,
+                <foreign>Bījagaṇita</foreign>,                <foreign>Muhūrttacintāmaṇi</foreign>,
+                <foreign>Karṇakutūhala</foreign>,                <foreign>Makaranda</foreign>,
+                <foreign>Grahalāghava</foreign>,                <foreign>Ratnamālā</foreign>,
+                <foreign>Bṛhajjātaka</foreign>,                <foreign>Keśavīpaddhati</foreign>,
+                <foreign>Śrīpatipaddhati</foreign> [and] <foreign>Viṭṭhalapaddhati</foreign>. [We]
+have been studying [the following texts] since coming here: the
+                <foreign>Siddhāntatattvaviveka</foreign>,                <foreign>Śabdenduśekhara</foreign>,
+                <foreign>Manoramā</foreign>,                <foreign>Samrāṭsiddhānta</foreign>,
+                <foreign>Vaśiṣṭhasiddhānta</foreign>,                <foreign>Brahmasiddhānta</foreign>,
+                <foreign>Somasiddhānta</foreign> and <foreign>Muktāvalī</foreign>. [Regarding] the
+rest, the annual sum granted by-1-, has meanwhile ended. Nevertheless, thinking that
+we should not ask [for support] from anybody else than -1-, and having taken a loan
+to sustain [ourselves] somehow until today, [we] find [ourselves] in debt. -2-<note place="end">The honorific reference, written in the top margin of the manuscript,
+is to be inserted here.</note> (i.e. The fivefold venerable great king)<note place="end">From the date of the document, the ruling king would have been
+                <persName n="17">Rājendra</persName>.
+            </note> is the other half of [our] body.
+As the glory of your feet has spread out endlessly, in the same way our heart's wish
+will be fulfilled by your feet. You are the salvation for those like us who have no
+other refuge. Until today your feet have provided protection. Moreover, [we] need to
+acquire 2-4 recent books. Without the means [we] cannot do so. [We shall do] as you
+order. Forgiveness will doubtlessly be granted for any excesses and omissions in what
+we have written. What more [to say to the knowledgeable]?</p>
+        <p>Monday, the 6th of the dark fortnight of Āśvina, in the [Vikrama] era year 1878 (1821
+CE). Residence: Vārāṇasī city. Auspiciousness.</p>
+        <p>For you there are many like me; [but] for me there is only one like you, [namely] you
+[yourself]. Are there not numerous water-lilies for the moon? But for water-lilies
+there is only one like the moon, [namely] the moon [itself].</p>
+    </div>
+
+    <div xml:id="commentary" type="commentary" xml:lang="eng">
+        <p>This document is part of an extant set of three letters sent by Aravindanātha
+Gajuryāla from Varanasi (see DNA_0002_0069, also addressed to Bhīmasena Thāpā;
+DNA_0004_0038, scribed on the same day as the present letter but addressed to the
+queen grandmother Lalitatripurasundarī). The names of the texts mentioned indicate
+that Aravindanātha was sent to India’s reknowned seat of learning by
+Lalitatripurasundarī to study Sanskrit grammar and astrology. These fields were
+highly prestigious ones at royal courts of the time. The Śāha court seems to have had
+an especially keen interest in astrology, and indeed astrologists were important
+court counsellors. The two astrologists of <persName n="10">Pṛthvīnārāyaṇa
+Śāha</persName>,            <persName n="11">Kulānanda</persName> and <persName n="12">Bhānu
+Jaisī</persName> predicted, for example, that he would conquer the Kathmandu
+Valley (see <bibl corresp="449">D.R. Panta VS 2073</bibl>: 11-12).</p>
+        <p>DNA_0004_0038 was written in almost the same wording to the queen grandmother
+Lalitatripurasundarī, one of the wives of King <persName n="18">Raṇa
+Bahādura</persName> and regent of his son <persName n="19">Gīrvāṇayuddha</persName>, and grandson Rājendra (see, <bibl corresp="457">Regmi
+et al 1981</bibl>: 145-146). One question, then, is whether Aravindanātha
+Gajuryāla’s studies were being sponsored by different persons simultaneously. In his
+letter to the queen grandmother, he writes of being told by Pandit <persName n="14">Raghunātha</persName> that he was to discontinue his studies. One can for the
+time being only speculate whether this was the unnamed <foreign>paṇḍita</foreign>
+alluded to in the present document as having stepped into Aravindanātha’s shoes.</p>
+    </div>
+
+</body>
+</text>
+</TEI>
