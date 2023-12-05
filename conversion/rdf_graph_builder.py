@@ -251,62 +251,6 @@ def create_rdf_graph(metadata: Dict[str, list]) -> Graph:
     g = Graph()
 
     bind_namespaces(g)
-
-
-    # # Check if "document_metadata" key exists in the metadata dictionary
-    # if "document_metadata" in metadata:
-    #     document_metadata = metadata["document_metadata"]
-    #     document_node = URIRef(f"{nepalica}{physDesc_ref_target}")
-    #     g.add((document_node, RDF.type, DC_NS.Document))
-
-    #     # Iterate over the key-value pairs in "document_metadata" and add RDF triples
-    #     for key, value in document_metadata.items(): # type: ignore
-    #         # Check if the value is present for the current key
-    #         if value:
-    #             if key == "Identifier:":
-    #                 g.add((document_node, DC_NS.identifier, Literal(value, lang='en')))
-    #             elif key == "Title:":
-    #                 g.add((document_node, DC_NS.title, Literal(value, lang='en')))
-    #             elif key == "Type, original:":
-    #                 g.add((document_node, DC_NS.type, Literal(value, lang='en')))
-    #             elif key == "Abstract:":
-    #                 g.add((document_node, DC_NS.abstract, Literal(value, lang='en')))
-    #             elif key == "Issued by and to:":
-    #                 g.add((document_node, DC_NS.issued_by, Literal(value, lang='en')))
-    #             elif key == "Place:":
-    #                g.add((document_node, DC_NS.place, Literal(value, lang='en')))
-    #             elif key == "Donor, king:":
-    #                 g.add((document_node, DC_NS.donor, Literal(value, lang='en')))
-    #             elif key == "Type of endowment:":
-    #                 g.add((document_node, DC_NS.type_of_endowment, Literal(value, lang='en')))
-    #             elif key == "Region of endowment:":
-    #                 g.add((document_node, DC_NS.region_of_endowment, Literal(value, lang='en')))
-    #             elif key == "Purpose of endowment:":
-    #                 g.add((document_node, DC_NS.purpose_of_endowment, Literal(value, lang='en')))
-    #             elif key == "Amount of endowment:":
-    #                 g.add((document_node, DC_NS.amount_of_endowment, Literal(value, lang='en')))
-    #             elif key == "Date:":
-    #                 g.add((document_node, DC_NS.date, Literal(value, lang='en')))
-    #             elif key == "Language, script:":
-    #                 g.add((document_node, DC_NS.language, Literal(value, lang='en')))
-    #             elif key == "Width, height, and unit:":
-    #                 g.add((document_node, DC_NS["format"], Literal(value, lang='en')))
-    #             elif key == "Material, binding, and color:":
-    #                 g.add((document_node, schema.material, Literal(value, lang='en')))
-    #             elif key == "Condition:":
-    #                 g.add((document_node, DC_NS.extent, Literal(value, lang='en')))
-    #             elif key == "Institution and reg. no.:":
-    #                 g.add((document_node, DC_NS.publisher, Literal(value, lang='en')))
-    #             elif key == "Source and details:":
-    #                 g.add((document_node, DC_NS.source, Literal(value, lang='en')))
-    #             elif key == "Running no., exposures:":
-    #                 g.add((document_node, DC_NS.hasPart, Literal(value, lang='en')))
-    #             elif key == "Created, modified, ID:":
-    #                 g.add((document_node, schema.created, Literal(value, lang='en')))
-    #             elif key == "Notes:":
-    #                 g.add((document_node, DC_NS.description, Literal(value, lang='en')))
-    #             elif key == "Technical terms:":
-    #                 g.add((document_node, DC_NS.subject, Literal(value, lang='en')))
                        
 
     add_persons(g, persons, physDesc_ref_target)
