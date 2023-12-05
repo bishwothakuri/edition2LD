@@ -59,7 +59,7 @@ def process_single_file(xml_file_path: str, json_file_path: str) -> None:
         g_metadata: Graph = create_rdf_graph(metadata)
          # Serialize RDF graph to RDF/XML
         rdf_xml_output_file_path = os.path.join(
-            "output", os.path.splitext(os.path.basename(xml_file_path))[0] + "_metadata.rdf"
+            "output", os.path.splitext(os.path.basename(xml_file_path))[0] + "_named_entities.rdf"
         )
         g_metadata.serialize(rdf_xml_output_file_path, format="xml")
         logging.info("RDF graph serialized to RDF/XML at %s", rdf_xml_output_file_path)
