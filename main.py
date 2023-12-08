@@ -29,6 +29,13 @@ def process_single_file(xml_file_path: str, json_file_path: str) -> None:
         ValueError: If the specified XML file is empty or invalid.
     """
     try:
+        # Extract file name without extension
+        file_name = os.path.splitext(os.path.basename(xml_file_path))[0]
+
+        # Create a directory with the file name in the output directory
+        output_dir = os.path.join("output", file_name)
+        os.makedirs(output_dir, exist_ok=True)
+
         metadata = extract_metadata_from_xml(xml_file_path, json_file_path)
         # xml_tei = generate_xml_tei_from_metadata(metadata)
         # output_file_path = os.path.join(
@@ -39,38 +46,30 @@ def process_single_file(xml_file_path: str, json_file_path: str) -> None:
         # logging.info("XML-TEI file generated successfully at %s", output_file_path)
         token_dict = tokenize_xml_text(xml_file_path)
         # Store the token_dict in a JSON file
-        token_output_file_path = os.path.join(
-            "output", os.path.splitext(os.path.basename(xml_file_path))[0] + "_tokens.json"
-        )
+        token_output_file_path = os.path.join(output_dir, f"{file_name}_tokens.json")
         with open(token_output_file_path, "w",  encoding="utf-8") as f:
             json.dump(token_dict, f, ensure_ascii=False, indent=4)
         logging.info("Token dictionary generated successfully at %s", token_output_file_path)
             
 
         # Store metadata in a separate JSON file
-        json_output_file_path = os.path.join(
-            "output", os.path.splitext(os.path.basename(xml_file_path))[0] + ".json"
-        )
+        json_output_file_path = os.path.join(output_dir, f"{file_name}.json")
         with open(json_output_file_path, "w",  encoding="utf-8") as f:
             json.dump(metadata, f, ensure_ascii=False, indent=4)
         logging.info("JSON file generated successfully at %s", json_output_file_path)
 
         # Create RDF graph from metadata
         g_metadata: Graph = create_rdf_graph(metadata)
-         # Serialize RDF graph to RDF/XML
-        rdf_xml_output_file_path = os.path.join(
-            "output", os.path.splitext(os.path.basename(xml_file_path))[0] + "_named_entities.rdf"
-        )
+        # Serialize RDF graph to RDF/XML
+        rdf_xml_output_file_path = os.path.join(output_dir, f"{file_name}_named_entities.rdf")
         g_metadata.serialize(rdf_xml_output_file_path, format="xml")
         logging.info("RDF graph serialized to RDF/XML at %s", rdf_xml_output_file_path)
 
 
         # Create RDF graph from tokenized words
         g_tokenized: Graph = create_rdf_graph_from_tokenized_word(metadata, token_dict, g_metadata)
-         # Serialize RDF graph to RDF/XML
-        rdf_xml_output_file_path = os.path.join(
-            "output", os.path.splitext(os.path.basename(xml_file_path))[0] + "_tokenized.rdf"
-        )
+        # Serialize RDF graph to RDF/XML
+        rdf_xml_output_file_path = os.path.join(output_dir, f"{file_name}_named_entities.rdf")
         g_tokenized.serialize(rdf_xml_output_file_path, format="xml")
         logging.info("RDF graph serialized to RDF/XML for tokenized words at %s", rdf_xml_output_file_path)
 
@@ -79,24 +78,18 @@ def process_single_file(xml_file_path: str, json_file_path: str) -> None:
         rdfa_html = generate_rdfa_from_graph(g_metadata, os.path.splitext(os.path.basename(xml_file_path))[0])
         
         # Write RDFa XHTML file
-        rdfa_html_output_file_path = os.path.join(
-            "output", os.path.splitext(os.path.basename(xml_file_path))[0] + ".xhtml"
-        )
+        rdfa_html_output_file_path = os.path.join(output_dir, f"{file_name}.xhtml")
         with open(rdfa_html_output_file_path, "wb") as f:
             f.write(rdfa_html)
         logging.info("RDFa XHTML file generated successfully at %s", rdfa_html_output_file_path)
 
         # Save Turtle serialization for the first graph (metadata)
-        turtle_metadata_file_path = os.path.join(
-            "output", os.path.splitext(os.path.basename(xml_file_path))[0] + "_metadata.ttl"
-        )
+        turtle_metadata_file_path = os.path.join(output_dir, f"{file_name}_metadata.ttl")
         save_turtle_serialization(g_metadata, turtle_metadata_file_path)
         logging.info("Turtle serialization file for metadata generated successfully at %s", turtle_metadata_file_path)
 
         # Save Turtle serialization for the second graph (tokenized words)
-        turtle_tokenized_file_path = os.path.join(
-            "output", os.path.splitext(os.path.basename(xml_file_path))[0] + "_tokenized.ttl"
-        )
+        turtle_tokenized_file_path = os.path.join(output_dir, f"{file_name}_tokenized.ttl")
         save_turtle_serialization(g_tokenized, turtle_tokenized_file_path)
         logging.info("Turtle serialization file for tokenized words generated successfully at %s", turtle_tokenized_file_path)
 
