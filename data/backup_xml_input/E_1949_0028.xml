@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:id="E_1949_0028"
+    xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">A letter from Raṅganātha Pauḍyāla to the amālī of Patan re the term of boys who perform at the Kārttika dance (VS 1894)</title>
+                <title type="short">A letter to the amālī of Patan re the term of boys who perform at the Kārttika dance</title>
+                <title type="sub">E_1949_0028</title>
+
+
+                <author role="issuer">Raṅganātha Pauḍyāla</author>
+
+                <respStmt>
+                    <resp>main editor and translator</resp>
+                    <name type="main_editor">Simon Cubelic, Rajan Khatiwoda</name>
+                </respStmt>
+
+                <respStmt>
+                    <resp>collaborator</resp>
+                    <name type="collaborator">Ramhari Timalsina</name>
+                </respStmt>
+            </titleStmt>
+
+            <publicationStmt>
+                <publisher>Heidelberg Academy of Sciences and Humanities: Documents on the History of Religion and Law of Pre-modern Nepal</publisher>
+                <pubPlace>Heidelberg, Germany</pubPlace>
+                <date>2017</date>
+                <availability status="restricted">
+                    <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Distributed under a Creative Commons Attribution-ShareAlike 4.0 Unported License</licence>
+                    <p>Published by the courtesy of the National Archives, Kathmandu. The copyright of the facsimile remains with the Nepal Rashtriya Abhilekhalaya (National Archives, Government of Nepal).</p>
+                </availability>
+            </publicationStmt>
+
+            <notesStmt>
+                <note>This file is based on the template v2_1</note>
+                <note></note>
+            </notesStmt>
+
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Patan</settlement>
+                        <repository>Bhadra Rāja Śākya</repository>
+                        <idno>private</idno>
+
+                        <altIdentifier type="microfilm">
+                            <settlement>Kathmandu, Berlin</settlement>
+                            <collection>Nepal German Manuscript Preservation Project</collection>
+                            <idno>NGMPP E 1949/28</idno>
+                        </altIdentifier>
+                    </msIdentifier>
+
+                    <msContents>
+                        <textLang mainLang="nep" otherLangs="san"/>
+                    </msContents>
+
+                    <physDesc>
+                        <p>For details see <ref target="/nepal/catitems/viewitem/17638/1">entry in database</ref>
+                        </p>
+                    </physDesc>
+
+                    <history>
+                        <origin>
+                            <p>Issued in <origDate>1838 (VS 1894)</origDate>
+                            </p>
+                        </origin>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+
+        <encodingDesc>
+            <editorialDecl>
+                <p>The original document from which this e-text was formed is in the Devanāgarī script.
+The electronic text below contains the following parts: abstract, edition in
+Devanāgarī, English translation and commentary.</p>
+                <p>The text as it appears in the original document is reproduced as faithfully as possible, including diacritic marks, such as the nukta (़); format features, such as line breaks; and graphical features, such as the middle dot (•) sporadically employed to mark word separation, or macrons and lines of various shapes, often used as placeholders or structuring elements. The editorial techniques applied introduce minimally invasive normalizations (by using <gi>orig</gi> and <gi>reg</gi> in <gi>choice</gi>) and corrections (by using <gi>sic</gi> and <gi>corr</gi> in <gi>choice</gi>). Words are separated by <gi>w</gi>, even if scriptura continua is used in the original documents. Furthermore, <gi>s</gi> is employed to indicate sentence like text units.</p>
+            </editorialDecl>
+        </encodingDesc>
+
+        <profileDesc>
+            <creation>
+                <date>2016-10-11</date>
+            </creation>
+        </profileDesc>
+
+        <revisionDesc>
+            <listChange>
+                <change type= "internal" when="2016-11-16" who="#SC">Added translation and commentary</change>
+                <change type= "internal" when="2017-02-20" who="#SC">Added PP's corrections</change>
+                <change type= "internal" when="2017-06-09" who="#MB">added zone coordinates, checked tags</change>
+                <change type= "internal" when="2017-06-26" who="#RKh, #SC">Made file ready for UB publication</change>
+                <change type="published" when="2017-06-26" who="#CZ">Authorized for publication</change>
+                <change type="internal" when="2018-06-23" who="#CZ">sourceDesc rearranged</change>
+                <change type="published" when="2018-06-23" who="#CZ">Adapted for relaunch</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+
+    <facsimile>        <!--The coordinates refer to picture(s) with the shorter side having 1600 pixels. -->
+        <surface xml:id="surface1" facs="E_1949_0003.png" ulx="174" uly="114" lrx="1553" lry="1654">
+            <zone xml:id="invocatio" ulx="837" uly="162" lrx="1197" lry="345"/>
+            <zone xml:id="space" ulx="560" uly="292" lrx="861" lry="362"/>
+            <zone xml:id="seal" ulx="339" uly="833" lrx="607" lry="1091"/>
+            <zone xml:id="main_text" ulx="428" uly="1040" lrx="1520" lry="1586"/>
+        </surface>
+    </facsimile>
+
+    <text>
+        <body>
+
+            <div type="abstract">
+                <ab>In this letter Guru Paṇḍitarāja Raṅganātha Pauḍyāla orders the Patan <foreign>amālī</foreign> responsible for doing so to make sure that the decreed three-year term for boys performing at Patan’s Kārttika-Nāc is enforced.</ab>
+            </div>
+
+            <div xml:id="ed" type="edition" xml:lang="nep-san">
+                <pb n="1r" facs="#surface1"/>
+                <ab type="invocatio" corresp="#invocatio">
+                    <w>श्री\</w>
+                </ab>
+                <p/>
+
+                <ab type="space" corresp="#space">
+                    <persName n="13">
+                        <w>सिद्धिनरसिंहराज</w>
+                    </persName>
+                </ab>
+                <p/>
+
+
+                <ab type="seal" corresp="#seal">[Seal of Guru Paṇḍitarāja <persName n="14">Raṅganātha Pauḍyāla</persName>]
+                </ab>
+                <p/>
+
+                <ab type="maintext" corresp="#main_text">
+                    <lb n="1"/>
+                    <s xml:lang="san">
+                        <w>स्वस्ति</w>
+                    </s>
+                    <s xml:lang="san">
+                        <w>श्री</w>
+                        <w>गुरु</w>
+                        <w>पण्डीतराज</w>
+                        <w>श्री</w>
+                        <persName n="15">
+                            <w>रंगनाथपंडीतज्यूकस्य</w>
+                        </persName>
+                        <w>पत्रम्</w>
+                    </s>
+                    <choice>
+                        <orig>¯ ¯ ¯ ¯ ¯</orig>
+                        <reg>---</reg>
+                    </choice>
+                    <lb n="2"/>
+                    <s>
+                        <w>आगे</w>
+                        <orig>•</orig>
+                        <w>सहर</w>
+                        <placeName n="4">
+                            <w>पाटन्&#x200C;का</w>
+                        </placeName>
+                        <w>अमालीके</w>
+                    </s>
+                    <s>
+                        <w>यथोचित्&#x200C;</w>
+                        <w>उप्रांत</w>
+                        <orig>•</orig>
+                        <w>ताहा</w>
+                        <choice>
+                            <orig>¯ ¯ ¯ ¯ ¯</orig>
+                            <reg>---</reg>
+                        </choice>
+                        <w>ले</w>
+                        <w>वनाया                            <lb n="3" break="no"/>
+को</w>
+                        <w>कार्तिक्&#x200C;</w>
+                        <w>महातम्&#x200C;का</w>
+                        <w>नाच</w>
+                        <w>३।३</w>
+                        <w>वर्षमा</w>
+                        <w>नाचन्या</w>
+                        <w>केटाहरू</w>
+                        <w>फेर्नु</w>
+                        <w>भंन्या</w>
+                        <w>वंदेज                            <lb n="4" break="no"/>
+का</w>
+                        <w>मोहर</w>
+                        <w>गरीवक्सनुभयाको</w>
+                        <w>हो</w>
+                        <orig>•</orig>
+                    </s>
+                    <s>
+                        <w>तेस</w>
+                        <w>नाचलाई</w>
+                        <orig>•</orig>
+                        <w>चाहिन्या</w>
+                        <w>केटाहरु</w>
+                        <w>लिदा</w>
+                        <orig>•</orig>
+                        <w>हि                            <lb n="5" break="no"/>
+मायत्&#x200C;</w>
+                        <w>गरी</w>
+                        <w>केटाहरु</w>
+                        <w>दिदैन</w>
+                        <w>भनी</w>
+                        <orig>•</orig>
+                        <w>नाचको</w>
+                        <w>नाईक्या</w>
+                        <orig>•</orig>
+                        <persName n="16">
+                            <w>गौरीनाथ</w>
+                        </persName>
+                        <w>व्राह्मण</w>
+                        <orig>•</orig>
+                        <w>ञाँ                            <lb n="6" break="no"/>
+हाँ</w>
+                        <orig>•</orig>
+                        <w>कराउन</w>
+                        <w>आयो</w>
+                        <orig>•</orig>
+                    </s>
+                    <s>
+                        <w>तसर्थ</w>
+                        <orig>•</orig>
+                        <w>कसैले</w>
+                        <orig>•</orig>
+                        <w>हर्हिमायत्</w>&#x200C;
+                        <w>गरी</w>
+                        <orig>•</orig>
+                        <w>चाहिन्या</w>
+                        <w>केटाहरु</w>
+                        <orig>•</orig>
+                        <w>अ                            <lb n="7" break="no"/>
+टकायो</w>
+                        <w>भन्या</w>
+                        <orig>•</orig>
+                        <w>अमालीले</w>
+                        <orig>•</orig>
+                        <w>अडियाको</w>
+                        <w>केटा</w>
+                        <w>झिकीदिनू</w>
+                        <w>ईति</w>
+                    </s>
+                    <orig>•</orig>
+                    <s>
+                        <w>सम्वत</w>
+                        <w>१८                            <lb n="8" break="no"/>
+९४</w>
+                        <w>साल</w>
+                        <w>मिति</w>
+                        <w>पौष</w>
+                        <w>वदि</w>
+                        <w>३०</w>
+                        <w>रोज</w>
+                        <w>४</w>
+                        <w>शुभंम्</w>
+                    </s>
+                    <choice>
+                        <orig>¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯</orig>
+                        <reg>---</reg>
+                    </choice>
+                </ab>
+            </div>
+            <div xml:id="et" type="english_translation" corresp="#ed" xml:lang="en-Latn">
+                <pb n="1r" facs="#surface1"/>
+                <p>Śrī</p>
+                <p>The Venerable King <persName n="17">Siddhinarasiṃha</persName>
+                </p>
+                <p>[Seal of Guru Paṇḍitarāja <persName n="18">Raṅganātha Pauḍyāla</persName>]
+                </p>
+                <p>Hail! [This is] a letter from the Venerable Guru Paṇḍitarāja, the Venerable <persName n="19">Raṅganātha Paṇḍita</persName>.
+                </p>
+                <p>To the <term ref="846">amālī</term> of the city of <placeName n="9">Patan</placeName>
+                </p>
+                <p>
+                    <term ref="2132">Yathocita uprānta</term>: The Brahmin <persName n="20">Gaurīnātha</persName>, who is the head of the [Kārttika] dance, came here to complain, saying: “A decree has been issued that the boys who perform the Kārttikamāhātmya dance instituted by -- (i.e. the Venerable King Siddhinarasiṃha) there [in Patan] shall be replaced every three years. When the boys needed for that dance are being taken [away], [some persons] contemptuously do not provide their boys.” Therefore, [if] someone out of sheer contempt prevents the needed boys [from dancing], the <foreign>amālī</foreign> shall haul forth the boys who have been held back.</p>
+                <p>Wednesday, the 30th of the dark fortnight of Pauṣa in the [Vikrama] era year 1894 (1838 CE). Auspiciousness.</p>
+
+            </div>
+
+            <div xml:id="commentary" type="commentary" xml:lang="eng">
+                <p>The event referred to here is the Kārttika or Narasiṃha dance
+(                    <foreign>nāca</foreign>) performed in Patan during the month of Kārttika. It was
+instituted by King <persName n="21">Siddhinarasiṃha Malla</persName> of Patan (1619–1661) as
+part of his religious policy of spreading and consolidating Kṛṣṇaism in <placeName n="12">Nepal</placeName> (                    <bibl corresp="205">Lienhard 1992</bibl>: 229). Not
+coincidentally, it takes place at that time of year associated with many Krṣṇaitic
+festivals (<bibl corresp="205">Lienhard 1992</bibl>: 231). All this is reflected in
+what the dance is called in the Padmagiri Chronicle: Kṛṣṇalīlā (<bibl corresp="170">Hasrat 1970</bibl>: 69). The performances in question here, however, have to do
+with different emanations (<foreign>avatāra</foreign>) of Viṣṇu and do not
+specifically focus on Kṛṣṇa (<bibl corresp="206">Kropf 2003</bibl>: 82 n. 18). The
+successor of Siddhinarasiṃha, King <persName n="22">Śrīnivāsa Malla</persName>, is credited
+with extending the dancing period by ten days to twenty-five days in total (<bibl corresp="137">Bajracharya/Gutschow/Michaels 2015</bibl>: I 127). According to
+Siegfried Lienhard, originally its duration was one month, but in later times it was
+reduced to ten days (<bibl corresp="205">Lienhard 1992</bibl>: 231).</p>
+            </div>
+
+        </body>
+    </text>
+</TEI>
