@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:id="E_1544_0020"
+    xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">A loan agreement involving the debtor's own son put up as collateral
+(VS 1942)</title>
+                <title type="short">A loan agreement involving the debtor's own son put up as
+collateral</title>
+                <title type="sub">E_1544_0020</title>
+
+
+                <author role="issuer">Bhānidās</author>
+
+                <respStmt>
+                    <resp>main editor and translator</resp>
+                    <name type="main_editor">Manik Bajracharya</name>
+                </respStmt>
+
+                <respStmt>
+                    <resp>collaborator</resp>
+                    <name type="collaborator"/>
+                </respStmt>
+            </titleStmt>
+
+            <publicationStmt>
+                <publisher>Heidelberg Academy of Sciences and Humanities: Documents on the History of
+Religion and Law of Pre-modern Nepal</publisher>
+                <pubPlace>Heidelberg, Germany</pubPlace>
+                <date>2017</date>
+                <availability status="restricted">
+                    <licence target="http://creativecommons.org/licenses/by-sa/4.0/">Distributed under a
+Creative Commons Attribution-ShareAlike 4.0 Unported License</licence>
+                    <p>Published by the courtesy of the National Archives, Kathmandu. The copyright of
+the facsimile remains with the Nepal Rashtriya Abhilekhalaya (National Archives,
+Government of Nepal).</p>
+                </availability>
+            </publicationStmt>
+
+            <notesStmt>
+                <note>This file is based on the template v2_1</note>
+                <note/>
+            </notesStmt>
+
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Patan</settlement>
+                        <repository>B. R. Vajrācārya</repository>
+                        <idno>private</idno>
+
+                        <altIdentifier type="microfilm">
+                            <settlement>Kathmandu, Berlin</settlement>
+                            <collection>Nepal German Manuscript Preservation Project</collection>
+                            <idno>NGMPP E 1544/20</idno>
+                        </altIdentifier>
+                    </msIdentifier>
+
+                    <msContents>
+                        <textLang mainLang="nep"/>
+                    </msContents>
+
+                    <physDesc>
+                        <p>For details see <ref target="/nepal/catitems/viewitem/26422">entry in database</ref>
+                        </p>
+                    </physDesc>
+
+                    <history>
+                        <origin>
+                            <p>Issued in <origDate>1885 (VS 1942)</origDate>
+                            </p>
+                        </origin>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+
+        <encodingDesc>
+            <editorialDecl>
+                <p>The original document from which this e-text was formed is in the Devanāgarī script.
+The electronic text below contains the following parts: abstract, edition in
+Devanāgarī, English translation and optionally commentary.</p>
+                <p>The text as it appears in the original document is reproduced as faithfully as
+possible, including diacritic marks, such as the nukta (़); format features, such as
+line breaks; and graphical features, such as the middle dot (•) sporadically employed
+to mark word separation, or macrons and lines of various shapes, often used as
+placeholders or structuring elements. The editorial techniques applied introduce
+minimally invasive normalizations (by using <gi>orig</gi> and <gi>reg</gi> in
+                    <gi>choice</gi>) and corrections (by using <gi>sic</gi> and <gi>corr</gi> in
+                    <gi>choice</gi>). Words are separated by <gi>w</gi>, even if scriptura continua is
+used in the original documents. Furthermore, <gi>s</gi> is employed to indicate
+sentence like text units.</p>
+            </editorialDecl>
+        </encodingDesc>
+
+        <profileDesc>
+            <creation>
+                <date>2017-10-12</date>
+            </creation>
+        </profileDesc>
+
+        <revisionDesc>
+            <listChange>
+                <change type="internal" when="2017-10-13" who="#MB">tags rechecked, added translation and commentary</change>
+                <change type="internal" when="2017-10-23" who="#MB">applied Philip's correction, prepared for UB</change>
+                <change type="internal" when="2017-10-25" who="#CZ">checked annotations, ready for UB</change>
+                <change type="published" when="2017-10-25" who="#CZ">Authorized for publication</change>
+                <change type="internal" when="2018-06-23" who="#CZ">sourceDesc rearranged</change>
+                <change type="published" when="2018-06-23" who="#CZ">Adapted for relaunch</change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+
+    <facsimile>
+        <!--The coordinates refer to picture(s) with the shorter side having 1600 pixels. -->
+        <surface xml:id="surface1" facs="E_1544_0726.png" ulx="227" uly="593" lrx="1493" lry="1530">
+            <zone xml:id="invocatio" ulx="753" uly="621" lrx="828" lry="787"/>
+            <zone xml:id="main_text" ulx="363" uly="941" lrx="1460" lry="1498"/>
+        </surface>
+    </facsimile>
+
+    <text>
+        <body>
+
+            <div xml:id="abs" type="abstract" xml:lang="eng">
+                <ab>This document formalizes a loan of <foreign>mohara rupaiyā</foreign>s 24 taken by
+Bhānidās of Patan. He puts up his own son as collateral.</ab>
+            </div>
+
+            <div xml:id="ed" type="edition" xml:lang="nep">
+                <pb n="1r" facs="#surface1"/>
+                <ab type="invocatio" corresp="#invocatio">
+                    <lb n="1"/>
+                    <w>श्री</w>\
+                </ab>
+                <p/>
+                <ab type="maintext" corresp="#main_text">
+                    <lb n="1"/>
+                    <s>
+                        <w>स्वस्ति</w>
+                        <w>श्री</w>
+                        <w>सम्वत्&#x200c;</w>
+                        <w>१९४२</w>
+                        <w>साल</w>
+                        <w>मिति</w>
+                        <w>श्राव                            <orig>़</orig>ण
+                        </w>
+                        <w>शुदि</w>
+                        <w>७</w>
+                        <w>रोज</w>
+                        <w>२</w>
+                        <w>तद्दीन्ये</w>
+                        <w>लिषितम्&#x200c;</w>
+                        <w>धनिक</w>
+                        <w>नाम्&#x200c;</w>
+                        <orig>•</orig>
+                        <w>सहर</w>
+                        <orig>•</orig>
+                        <placeName n="1">
+                            <w>पाटन्&#x200c;</w>
+                        </placeName>
+                        <placeName n="2">
+                            <w>गुइत                                <lb n="2"/>
+ल्&#x200c;</w>
+                            <w>ते                                <unclear cert="medium">भ्</unclear>
+                            </w>
+                        </placeName>
+                        <w>वस्न्या</w>
+                        <persName n="3">
+                            <w>मुनिधं</w>
+                            <orig>•</orig>
+                            <w>वाडा</w>
+                        </persName>
+                        <orig>•</orig>
+                        <w>रिनिक्&#x200c;</w>
+                        <w>नाम्&#x200c;</w>
+                        <w>निज</w>
+                        <w>पाटन्&#x200c;</w>
+                        <placeName n="4">
+                            <w>व                                <orig>़</orig>ाछु
+                            </w>
+                            <w>ननि</w>
+                        </placeName>
+                        <w>वस्न्या</w>
+                        <persName n="5">
+                            <w>भानिदास्&#x200c;</w>
+                        </persName>
+                        <w>लिहलगत</w>
+                        <w>चादीका</w>
+                        <w>मो                            <lb n="3" break="no"/>
+हर</w>
+                        <w>रूपैञा</w>
+                        <w>२४</w>
+                        <w>अक्षेरूपि</w>
+                        <w>चौविस्&#x200c;</w>
+                        <orig>•</orig>
+                        <w>कर्जा</w>
+                        <w>लि                            <supplied reason="omitted">या</supplied>
+                        </w>
+                        <w>वावत्&#x200c;</w>
+                        <w>मेरो</w>
+                        <w>छोराको</w>
+                        <w>वर्तमन्&#x200c;</w>
+                        <w>निमित</w>
+                        <w>लियाको</w>
+                        <w>ईन</w>
+                        <w>रूपैञाको</w>
+                        <lb n="4"/>
+                        <w>व्यास्&#x200c;</w>
+                        <w>दसौदका</w>
+                        <w>हिसापले</w>
+                        <w>तिरूलां</w>
+                    </s>
+                    <s>
+                        <w>रूपै                            <supplied reason="omitted">ञा</supplied>
+                        </w>
+                        <w>तिर्नको</w>
+                        <w>भाषा</w>
+                        <w>यसै</w>
+                        <w>साल्का</w>
+                        <w>मंगसिर</w>
+                        <orig>•</orig>
+                        <w>मैन्हाभरमा</w>
+                        <w>चुक्ति</w>
+                        <w>गरि</w>
+                        <lb n="5"/>
+                        <w>बुझाउला</w>
+                    </s>
+                    <s>
+                        <w>ईन</w>
+                        <w>रूपैञामध्ये</w>
+                        <w>धितो</w>
+                        <w>मेरो</w>
+                        <w>छोरा</w>
+                        <w>लेषिदिञ्यू</w>
+                    </s>
+                    <s>
+                        <w>सो</w>
+                        <w>भाषामा</w>
+                        <w>रूपैञा</w>
+                        <w>चुक्ति</w>
+                        <w>गरि</w>
+                        <w>वुझाउन</w>
+                        <w>सके                            <lb n="6" break="no"/>
+न</w>
+                        <w>भन्ये</w>
+                        <w>सो</w>
+                        <w>धितो</w>
+                        <w>
+                            <choice>
+                                <sic>लेलिदियाको</sic>
+                                <sic>लेषिदियाको</sic>
+                            </choice>
+                        </w>
+                        <w>साहुका</w>
+                        <w>घरमा</w>
+                        <w>ल्याई</w>
+                        <w>राषनु</w>
+                        <w>भनि</w>
+                        <w>मेरा</w>
+                        <w>मनोमान</w>
+                        <w>षुसिराजिसंग</w>
+                        <orig>•</orig>
+                        <w>तम                            <lb n="7" break="no"/>
+सुक</w>
+                        <w>लेषि</w>
+                        <w>निज</w>
+                        <w>साहुलाई</w>
+                        <w>दिञ्यू</w>
+                    </s>
+                    <s>
+                        <w>येस</w>
+                        <w>वाटका</w>
+                        <orig>•</orig>
+                        <w>साछी</w>
+                        <w>काका</w>
+                        <persName n="6">
+                            <w>धि                                <orig>•</orig>वसिं
+                            </w>
+                            <w>वाडा</w>
+                        </persName>
+                        <orig>•</orig>
+                        <persName n="7">
+                            <w>न्हुसिधं</w>
+                            <w>वाडा</w>
+                        </persName>
+                        <orig>•</orig>
+                        <w>लेषक</w>
+                        <w>सा                            <lb n="8"/>
+छी</w>
+                        <persName n="8">
+                            <w>सितिदास्&#x200c;</w>
+                        </persName>
+                    </s>
+                    <s>
+                        <w>मिति</w>
+                        <w>सदर</w>
+                        <w>शुभ्&#x200c;</w>
+                    </s>
+                    <choice>
+                        <orig>¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯</orig>
+                        <reg>---</reg>
+                    </choice>
+                </ab>
+            </div>
+
+            <div xml:id="et" type="english_translation" corresp="#ed" xml:lang="eng">
+                <pb n="1r"/>
+                <p>
+                    <term ref="1869">Śrī</term>
+                </p>
+                <p>Hail! Written on Monday, the 7th of the bright fortnight of Śrāvaṇa in the [Vikarama] era year 1942 (1885 CE).</p>
+                <p>[I], the debtor named <persName n="9">Bhānidās</persName>, resident of <placeName n="10">Vāchu Nani</placeName> in <placeName n="11">Patan</placeName>, have taken a loan of <term ref="1027">mohara rupaiyā</term>s 24 in silver legal currency (<term ref="2187">lihalagata</term>), in words twenty-four, from the creditor named <persName n="12">Munidhaṃ Bāḍā</persName>, resident of <placeName n="13">Guital Tebh</placeName> in the city of Patan. The interest on this money, which I have taken for my son's <foreign>bartaman</foreign>,                    <note place="end">
+                        <foreign>Bartaman</foreign> (Skt. <foreign>vratabandhana</foreign>, "binding to an observance") is the life-cyclic initiation ritual by which a boy becomes a full-fledged member of his caste and lineage (cf. <bibl corresp="435">C. Zotter 2010</bibl>: 17).</note> I will pay at a rate of ten percent. As for the solemn promise to return the money, I will pay it in full by the month of Mārgaśīrṣa of this current year. For the [borrowed] money, I have put up my [own] son as collateral. If I cannot pay the money in full by the promised [date], the collateral shall be taken to the house of the aforementioned creditor. I have written this agreement (<term ref="1998">tamasuka</term>) willingly, and have handed it over to the creditor.</p>
+                <p>The witnesses to this deed are: [my] father's younger brother(s) <persName n="14">Dhivasiṃ Bāḍā</persName> [and] <persName n="15">Nhusidhaṃ Bāḍā</persName>; and the scribe [and] witness <persName n="16">Sitidās</persName>. The date is valid. Auspiciousness.</p>
+            </div>
+
+            <div xml:id="commentary" type="commentary" xml:lang="eng">
+                <p>This document is an example of how debt bondage functioned in Nepal. Bhānidās had to borrow money for his son's <foreign>vratabandha</foreign> ritual, but had nothing other than his own son (probably the same one) to put up as surety for it. Failure to return this money would result in his son becoming a bondservant (Nep. <foreign>bā̃dhā</foreign>) in the creditor's house. For more on bondage, see <bibl corresp="433">Maske 1996</bibl>: 32-33 and <bibl corresp="436">Regmi 1971</bibl>: 117-118.</p>
+            </div>
+
+        </body>
+    </text>
+</TEI>

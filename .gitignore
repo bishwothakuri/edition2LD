@@ -135,6 +135,7 @@ output/
 *.log
 *.txt
 .DS_Store
+*.db
 
 
 

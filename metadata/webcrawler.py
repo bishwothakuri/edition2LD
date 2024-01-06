@@ -1,31 +1,93 @@
+import logging
 import requests
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, NavigableString
 import re
+import shelve
+from datetime import datetime
+
+logging.basicConfig(level=logging.INFO)
+
 
 def fetch_ontology_page(ontology_url, ont_item_id):
-    response = requests.get(ontology_url + ont_item_id)
-    return BeautifulSoup(response.content, "html.parser")
+    cache_filename = "ontology_cache.db"
+
+    try:
+        with shelve.open(cache_filename, writeback=True) as cache:
+            # Check if the page is already in the cache and get the cached timestamp
+            if ont_item_id in cache:
+                cached_data = cache[ont_item_id]
+                cached_time = cached_data.get("timestamp")
+
+                if cached_time and is_cache_old(cached_time):
+                    try:
+                        # Fetch the page because the cached data is older than 7 days
+                        response = requests.get(ontology_url + ont_item_id)
+                        response.raise_for_status()  # Raise an HTTPError for bad responses
+
+                        content = response.content
+
+                        # Save the fetched page to the cache with the current timestamp
+                        cache[ont_item_id] = {
+                            "content": content,
+                            "timestamp": datetime.now(),  # Timestamp when the data was cached
+                        }
+                        return BeautifulSoup(content, "html.parser")
+                    except requests.RequestException as e:
+                        print("Error fetching page:", e)
+                else:
+                    # Use the cached data directly
+                    return BeautifulSoup(cached_data["content"], "html.parser")
+
+            else:
+                # If the page is not in the cache, fetch the page and store it in the cache
+                response = requests.get(ontology_url + ont_item_id)
+                content = response.content
+
+                cache[ont_item_id] = {
+                    "content": content,
+                    "timestamp": datetime.now(),  # Timestamp when the data was cached
+                }
+                return BeautifulSoup(content, "html.parser")
+
+    except Exception as e:
+        print("Error in fetch_ontology_page:", e)
+        return None
+
+
+def is_cache_old(cached_time):
+    # Check if the cache timestamp is older than 7 days
+    time_difference = datetime.now() - cached_time
+    return time_difference.days > 7
+
 
 def extract_item_note_and_surname(ontology_url, ont_item_id):
+    # Fetch the ontology page content
     soup = fetch_ontology_page(ontology_url, ont_item_id)
-    
-    notes_row = None
-    surname_row = None
-    
-    # Find all table rows
-    rows = soup.find_all('tr')
-    
-    for row in rows:
-        data = [x.text.strip() for x in row.find_all('td')]
-        if 'Notes' in data:
-            notes_row = row
-        elif 'Surname' in data:
-            surname_row = row
-            
-    note_text = notes_row.find_all('td')[1].text.strip() if notes_row else ''
-    surname_text = surname_row.find_all('td')[1].text.strip() if surname_row else ''
-    
-    return {"note_text": note_text, "surname": surname_text}
+
+    # Check if the page content is not None
+    if soup is not None:
+        notes_row = None
+        surname_row = None
+
+        # Find all table rows
+        rows = soup.find_all('tr')
+
+        for row in rows:
+            data = [x.text.strip() for x in row.find_all('td')]
+            if 'Notes' in data:
+                notes_row = row
+            elif 'Surname' in data:
+                surname_row = row
+
+        note_text = notes_row.find_all('td')[1].text.strip() if notes_row else ''
+        surname_text = surname_row.find_all('td')[1].text.strip() if surname_row else ''
+
+        return {"note_text": note_text, "surname": surname_text}
+    else:
+        # Handle the case where the page content is None
+        print("Error: Page content is None.")
+        return None
+
 
 
 def extract_additional_info_from_note(note_text):
@@ -104,19 +166,67 @@ def extract_additional_info_from_note(note_text):
 
 
 
+def fetch_with_caching(url, cache_key):
+    cache_filename = "metadata_cache.db"
+
+    try:
+        with shelve.open(cache_filename, writeback=True) as cache:
+            # Check if the URL is already in the cache and get the cached timestamp
+            if cache_key in cache:
+                cached_data = cache[cache_key]
+                cached_time = cached_data.get("timestamp")
+
+                # Check if the cache is older than 7 days
+                if cached_time and is_cache_old(cached_time):
+                    try:
+                        # Fetch the page because the cached data is older than 7 days
+                        response = requests.get(url)
+                        response.raise_for_status()  # Raise an HTTPError for bad responses
+
+                        content = response.content
+
+                        # Save the fetched page to the cache with the current timestamp
+                        cache[cache_key] = {
+                            "content": content,
+                            "timestamp": datetime.now(),  # Timestamp when the data was cached
+                        }
+                        return BeautifulSoup(content, "html.parser")
+                    except requests.RequestException as e:
+                        print(f"Error fetching {url}:", e)
+                        # Handle the error (e.g., return None, log the error, etc.)
+                else:
+                    # Use the cached data directly
+                    return BeautifulSoup(cached_data["content"], "html.parser")
+
+        # If the URL is not in the cache or the cache is older than 7 days, fetch the page
+        response = requests.get(url)
+        content = response.content
+
+        # Save the fetched page to the cache with the current timestamp
+        with shelve.open(cache_filename, writeback=True) as cache:
+            cache[cache_key] = {
+                "content": content,
+                "timestamp": datetime.now(),  # Timestamp when the data was cached
+            }
+
+        print(f"Fetched new data for {url}")
+        return BeautifulSoup(content, "html.parser")
+
+    except Exception as e:
+        print(f"Error fetching {url}:", e)
+        return None
+
+
 def extract_metadata_of_the_document(physDesc_id):
     try:
         # URL of the webpage to scrape
         url = f"https://nepalica.hadw-bw.de/nepal/catitems/viewitem/{physDesc_id}"
 
-        # Send an HTTP GET request to the URL
-        response = requests.get(url)
+        # Fetch the webpage content with caching
+        soup = fetch_with_caching(url, f"metadata_{physDesc_id}")
 
-        # Check if the request was successful (status code 200)
-        if response.status_code == 200:
-            # Parse the HTML content of the webpage using BeautifulSoup
-            soup = BeautifulSoup(response.text, "html.parser")
-
+        # Check if the page content is not None
+        if soup is not None:
             # Find the table element containing the data
             data_table = soup.find("table")
 
@@ -124,7 +234,7 @@ def extract_metadata_of_the_document(physDesc_id):
             scraped_data = {}
 
             # Check if the table was found
-            if data_table:
+            if data_table and not isinstance(data_table, NavigableString):
                 # Loop through the table rows
                 for row in data_table.find_all("tr"):
                     # Extract the table cells (td) in each row
@@ -139,7 +249,9 @@ def extract_metadata_of_the_document(physDesc_id):
 
             return scraped_data  # Return the scraped data as a dictionary
         else:
-            print(f"Failed to retrieve the webpage. Status code: {response.status_code}")
+            # Handle the case where the page content is None
+            print(f"Error: Page content is None for {url}")
+            return None
 
     except Exception as e:
-        print("Error extracting metadata from the document:", e)
+        print(f"Error extracting metadata from the document:", e)

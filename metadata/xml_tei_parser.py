@@ -111,65 +111,92 @@ def extract_metadata_from_xml(xml_file, json_file):
 
             # Extract the LOD identifiers and gender from the note
             note_text_and_surname = extract_item_note_and_surname(ontology_url, ont_item_id)
-            note_text = note_text_and_surname["note_text"].replace('\n',' ').replace('\r',' ').replace('\t',' ')
-            surname = note_text_and_surname["surname"]
+            if note_text_and_surname is not None:
+                note_text = note_text_and_surname["note_text"].replace('\n',' ').replace('\r',' ').replace('\t',' ')
+                surname = note_text_and_surname["surname"]
 
-            keys, elements, note_text = extract_additional_info_from_note(note_text)
+                keys, elements, note_text = extract_additional_info_from_note(note_text)
 
-            for key, element in zip(keys, elements):
-                if element is not None:
-                    name_info[key] = [element] if not isinstance(element, list) else element
+                for key, element in zip(keys, elements):
+                    if element is not None:
+                        name_info[key] = [element] if not isinstance(element, list) else element
 
-                # Try to update LOD identifiers from the second method only if there are missing or empty
-                for key in ["gnd", "viaf", "wiki", "wikidata", "dbr", "geonames", "gender"]:
-                    if not name_info.get(key):
-                        ont_items_enhanced_file_path = os.path.join("data", "ont_items_enhanced_sample.json")
-                        person_identifiers = extract_person_identifiers(ont_items_enhanced_file_path, ont_item_id)
-                        if person_identifiers.get(key) is not None:
-                            name_info[key] = [person_identifiers[key]] if not isinstance(person_identifiers[key], list) else person_identifiers[key]
+                    # Try to update LOD identifiers from the second method only if there are missing or empty
+                    for key in ["gnd", "viaf", "wiki", "wikidata", "dbr", "geonames", "gender"]:
+                        if not name_info.get(key):
+                            ont_items_enhanced_file_path = os.path.join("data", "ont_items_enhanced_sample.json")
+                            person_identifiers = extract_person_identifiers(ont_items_enhanced_file_path, ont_item_id)
+                            if person_identifiers.get(key) is not None:
+                                name_info[key] = [person_identifiers[key]] if not isinstance(person_identifiers[key], list) else person_identifiers[key]
 
-            name_info["note_text"] = note_text
-            name_info["surname"] = surname
+                name_info["note_text"] = note_text
+                name_info["surname"] = surname
 
         # Extract place names 
         place_name_dict = {}
 
-        for place_name in place_names:
-            if place_name.text is not None:
-                place_name_text = " ".join(place_name.text.split())
-                n_value = place_name.get("n")
-                ont_item_ids = ont_item_occurrences.get(n_value, [])
-                for ont_item_id in ont_item_ids:
-                    place_entry = place_name_dict.setdefault(
-                        ont_item_id, {"primary_name": place_name_text, "alternative_names": []}
-                    )
-                    place_entry["alternative_names"].append(place_name_text)
+        for place_name in root.findall(".//tei:placeName", NS):
+            n_value = place_name.get("n")
+            place_name_text = " ".join([re.sub(r'\s+', ' ', w.text or "").strip() for w in place_name.findall(".//tei:w", NS)] + [re.sub(r'\s+', ' ', place_name.text or "").strip()])
+            place_name_text = place_name_text.strip()
 
+            # Check if there is tei:w element inside placeName
+            label_name = "devanagari_name" if place_name.findall(".//tei:w", NS) else "primary_name"
+
+            # Retrieve ont_item_id based on xml_identifier
+            ont_item_ids = ont_item_occurrences.get(n_value, [])
+
+            # Group place names by ont_item_id
+            for ont_item_id in ont_item_ids:
+                if ont_item_id not in place_name_dict:
+                    place_name_dict[ont_item_id] = {"n": ont_item_id, "primary_name": "", "devanagari_name": "", "alternative_names": []}
+
+                place_data = place_name_dict[ont_item_id]
+
+                if label_name == "devanagari_name":
+                    place_data[label_name] = place_name_text
+                else:
+                    if not place_data["primary_name"]:
+                        place_data["primary_name"] = place_name_text
+                    elif label_name == "primary_name" and place_data["primary_name"] != place_name_text:
+                        place_data["alternative_names"].append(place_name_text)
+
+        # Extracting metadata for each ont_item_id
         for ont_item_id, place_data in place_name_dict.items():
             place_entry = {"n": ont_item_id, "place_name": place_data["primary_name"]}
+
+            # Adding devanagari_place_name if present
+            devanagari_place_name = place_data["devanagari_name"]
+            if devanagari_place_name:
+                place_entry["devanagari_name"] = devanagari_place_name
+
+            # Adding alternative_names if present
             alternative_names = place_data["alternative_names"]
             if alternative_names:
                 place_entry["alternative_names"] = alternative_names
 
             # Extract the LOD identifiers and gender from the note
-            note_text = extract_item_note_and_surname(ontology_url, ont_item_id)["note_text"].replace('\n',' ').replace('\r',' ').replace('\t',' ')
+            note_text_and_surname = extract_item_note_and_surname(ontology_url, ont_item_id)
+            if note_text_and_surname is not None:
+                note_text = note_text_and_surname.get("note_text", "").replace('\n', ' ').replace('\r', ' ').replace('\t', '')
 
-            keys, elements, note_text = extract_additional_info_from_note(note_text)
 
-            for key, element in zip(keys, elements):
-                if element is not None:
-                    place_entry[key] = [element] if not isinstance(element, list) else element
+                keys, elements, note_text = extract_additional_info_from_note(note_text)
 
-            # Try to update LOD identifiers from the second method only if they are missing or empty
-            for key in ["gnd", "viaf", "wiki", "wikidata", "dbr", "geonames"]:
-                if not place_entry.get(key):
-                    ont_items_enhanced_file_path = os.path.join("data", "ont_items_enhanced_sample.json")
-                    place_identifiers = extract_place_identifiers(ont_items_enhanced_file_path, ont_item_id)
-                    if place_identifiers.get(key) is not None:
-                        place_entry[key] = [place_identifiers[key]] if not isinstance(place_identifiers[key], list) else place_identifiers[key]
+                for key, element in zip(keys, elements):
+                    if element is not None:
+                        place_entry[key] = [element] if not isinstance(element, list) else element
 
-            place_entry["note_text"] = note_text
-            metadata["places"].append(place_entry)
+                # Try to update LOD identifiers from the second method only if they are missing or empty
+                for key in ["gnd", "viaf", "wiki", "wikidata", "dbr", "geonames"]:
+                    if not place_entry.get(key):
+                        ont_items_enhanced_file_path = os.path.join("data", "ont_items_enhanced_sample.json")
+                        place_identifiers = extract_place_identifiers(ont_items_enhanced_file_path, ont_item_id)
+                        if place_identifiers.get(key) is not None:
+                            place_entry[key] = [place_identifiers[key]] if not isinstance(place_identifiers[key], list) else place_identifiers[key]
+
+                place_entry["note_text"] = note_text
+                metadata["places"].append(place_entry)
 
 
         # Initialize an empty dictionary to store terms
