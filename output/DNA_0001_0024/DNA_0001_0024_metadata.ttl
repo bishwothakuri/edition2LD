@@ -1,0 +1,81 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix gndo: <https://d-nb.info/standards/elementset/gnd#> .
+@prefix nepalica_reg: <https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix geonames: <https://sws.geonames.org/> .
+@prefix dbr: <https://dbpedia.org/resource/> .
+@prefix wiki: <https://de.wikipedia.org/wiki/> .
+@prefix viaf: <https://viaf.org/viaf/> .
+@prefix gnd: <https://d-nb.info/gnd/> .
+@prefix wikidata: <https://www.wikidata.org/wiki/> .
+@prefix nepalica_gloss: <https://nepalica.hadw-bw.de/nepal/words/viewitem/> .
+@prefix lime: <http://www.w3.org/ns/lemon/lime#> .
+@prefix lexvo: <http://lexvo.org/id/iso639-3/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+
+
+nepalica:1#Ambara_city a gn:Feature ;
+    rdfs:label "Ambara city"@ne ,
+        "अम्वर सहर"@ne ;
+    gn:name "Ambara city"@ne ;
+    rdfs:comment "also Ambara Sahara?, Ambarsar, Amṛtasara; a city in the state of Punjab, India;"@en ;
+    rdfs:seeAlso gnd:4079760-0 ,
+        nepalica_reg:606 ,
+        wiki:Amritsar ;
+    skos:altLabel "Amritsar"@ne .
+
+nepalica:1#Lahore a gn:Feature ;
+    rdfs:label "Lahore"@ne ,
+        "लाहूर"@ne ;
+    gn:name "Lahore"@ne ;
+    rdfs:comment "a city in Pakistan; capital of the Pakistani province of Punjab;"@en ;
+    rdfs:seeAlso dbr:Lahore ,
+        nepalica_reg:50 ,
+        wiki:Lahore .
+
+nepalica:1#Lāṭha_Sāheba a skos:Concept ;
+    rdfs:comment "var. lāṭha sāhaba, lāṭha sāhap; n. the governor-general of British-India t.t."@en ;
+    skos:prefLabel "Lāṭha Sāheba"@ne ;
+    skos:related nepalica_gloss:1910 .
+
+nepalica:1#Naunihāla_Siṃ a foaf:Person ;
+    rdfs:label "Naunihāla Siṃ"@ne ,
+        "नौनि सिंलाई"@ne ;
+    schema:gender schema:Male ;
+    rdfs:comment "also known as: Yuvraj Kunwar Nau Nihal Singh, Bhanwar Singh, Bhanwar Sa, Kunwar Sa; born: 9 March 1821 in Lahore; died: 5 November 1840 in Lahore;  details: the third Maharaja of the Sikh Empire (r. 8 October 1839 – 5 November 1840); in nominal command of the Sikh army during the Battle of Peshawar in 1834 (Cunningham 1853: 204); normdata:"@ne ;
+    rdfs:seeAlso nepalica_reg:1336 ,
+        wiki:Nau_Nihal_Singh ;
+    foaf:name "Naunihāla Siṃ"@ne ;
+    gndo:surname "Singh"@ne .
+
+nepalica:1#Raṇajita_Siṃ a foaf:Person ;
+    rdfs:label "Raṇajita Siṃ"@ne ,
+        "रंजित सिं"@ne ;
+    schema:gender schema:Male ;
+    rdfs:comment "also known as Ranajīta Siṃha; born: 13 November 1780; died: 27 June 1839;  details: first Maharaja (r. 1801–1839) of the Sikh Empire, which ruled the northwest Indian subcontinent in the early half of the 19th century; normdata:"@ne ;
+    rdfs:seeAlso dbr:Ranjit_Singh ,
+        nepalica_reg:57 ,
+        wiki:Ranjit_Singh ;
+    foaf:name "Raṇajita Siṃ"@ne ;
+    gndo:surname "Singh"@ne .
+
+nepalica:1#arjī a skos:Concept ;
+    rdfs:comment "var. arji; n. 1) request, petition, application. 2) a respectful letter to a superior authority, especially the king. t.t."@en ;
+    skos:prefLabel "arjī"@ne ;
+    skos:related nepalica_gloss:855 .
+
+nepalica:1#sardāra a skos:Concept ;
+    rdfs:comment "n.  “a top-ranking official next in hierarchy to a kājī“ (M.R. Pant 2002: 135; cf. Pant and Pierce 1989: 94; M.C. Regmi 1978: 163 ; M.C. Regmi 1978: 229 ; M.C. Regmi 1978: 865; M.C. Regmi 1999: 137); \"A military officer in the early Shah period; later, the designation of a civil officer also.\" (Kumar 1967: 167 ); \"Kumar states they were of the nobility and \"occupied civil and military offices of importance\". Our sources place four of them in charge of the districts of Ilam, Salyan, Jumla, and Pokhara, and one at the fort at Chisapani. One was in China (perhaps as a member of the mission sent to the Emperor); one was a dittha of the courts; two were dadas (see below); and two or three were designated as \"hajuria\". Hajurias were \"always present\" with the King and served as personal attendants and body guards.\" (Edwards 1975: 105 ). t.t."@en ;
+    skos:prefLabel "sardāra"@ne ;
+    skos:related nepalica_gloss:1098 .
+
+nepalica:1#Āluvaleke_Kaṭare a gn:Feature ;
+    rdfs:label "Āluvaleke Kaṭare"@ne ,
+        "आलुवालेके कटरे"@ne ;
+    gn:name "Āluvaleke Kaṭare"@ne ;
+    rdfs:comment "the location needs to be verified; the document suggests a locality in Amritsar (DNA_0001_0024)."@en ;
+    rdfs:seeAlso nepalica_reg:1445 .
+

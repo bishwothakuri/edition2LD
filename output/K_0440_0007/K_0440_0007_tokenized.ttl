@@ -1,0 +1,2411 @@
+@prefix : <http://example.org/> .
+@prefix dbr: <https://dbpedia.org/resource/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix gndo: <https://d-nb.info/standards/elementset/gnd#> .
+@prefix lime: <http://www.w3.org/ns/lemon/lime#> .
+@prefix nepalica: <https://nepalica.hadw-bw.de/nepal/editions/show/> .
+@prefix nepalica_reg: <https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix geonames: <https://sws.geonames.org/> .
+@prefix dbr: <https://dbpedia.org/resource/> .
+@prefix wiki: <https://de.wikipedia.org/wiki/> .
+@prefix viaf: <https://viaf.org/viaf/> .
+@prefix gnd: <https://d-nb.info/gnd/> .
+@prefix wikidata: <https://www.wikidata.org/wiki/> .
+@prefix nepalica_gloss: <https://nepalica.hadw-bw.de/nepal/words/viewitem/> .
+@prefix lime: <http://www.w3.org/ns/lemon/lime#> .
+@prefix lexvo: <http://lexvo.org/id/iso639-3/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+
+
+nepalica:8637 a dct:Document ,
+        lime:Lexicon ;
+    dct:abstract "This lālamohara dated VS 1826 Kārttika śudi 4 Thursday deals with grants of land for the support of the cakra pūjā of Gorakhanātha located at different localities as specified in the document."@en ;
+    dct:amount_of_endowment "219 ropanis, 12 ānnās"@en ;
+    dct:date "VS 1826 Kārttika bright 4 Thursday"@en ;
+    dct:description "This is a text edition of the project “Documents on the History of Religion and Law of Pre-modern Nepal”, Heidelberg Academy of Sciences and Humanities, https://www.hadw-bw.de/nepal.”@en" ;
+    dct:donor "King Pṛthvi Nārāyaṇa Śāha"@en ;
+    dct:extent "good; complete"@en ;
+    dct:format "23.5; 48; cm"@en ;
+    dct:hasPart "K 28599; 1"@en ;
+    dct:identifier "K_0440_0007"@en ;
+    dct:issued_by "King Prithvi Nārāyaṇa Śāha; Gorakhanātha"@en ;
+    dct:language lexvo:en ,
+        lexvo:ne ;
+    dct:place "Kathmandu (Kāntipur); Gorakhanātha Cakra Pūjā; Nātha"@en ;
+    dct:publisher "Bhadrakālī; card no. 22; Pokā no. 10 60/84; Bha. Gu. La. Ta. Ms. no. 1"@en ;
+    dct:source "NGMPP catalogue card; Microfilmed on 09/05/1995 as NGMPP K 440/7"@en ;
+    dct:subject "lālamohara, cakrapūjā, ropanī, ānnā"@en ;
+    dct:title "A copy of a lālamohara from Pṛthvīnārāyaṇa Śāha re land donations for Yogīs' cakrapūjās (VS 1826)"@en ;
+    dct:type "lālamohara; copy"@en ;
+    dct:type_of_endowment "land"@en ;
+    schema:created "5/26/21, 6:15 AM"@en ;
+    lime:language "Nepali; Devanagari"@en .
+
+nepalica:8637#en000792 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000793 ;
+    ontolex:canonicalForm nepalica:8637#en000792_form .
+
+nepalica:8637#en000792_form a ontolex:Form ;
+    ontolex:writtenRep "To"@en .
+
+nepalica:8637#en000793 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000794 ;
+    ontolex:canonicalForm nepalica:8637#en000793_form .
+
+nepalica:8637#en000793_form a ontolex:Form ;
+    ontolex:writtenRep "the"@en .
+
+nepalica:8637#en000794 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000795 ;
+    ontolex:canonicalForm nepalica:8637#en000794_form .
+
+nepalica:8637#en000794_form a ontolex:Form ;
+    ontolex:writtenRep "Glorious"@en .
+
+nepalica:8637#en000795 a skos:Concept ;
+    :followedBy nepalica:8637#en000796 ;
+    rdfs:comment "[S.] n. word of blessing, can be used as apprecatio, in which case it means 'good fortune' (Pant and Pierce 1989: 12), can be used as a prefix to names of persons and gods, in which case it means 'venerable' or 'glorious' respectively. The number of śrīs used varies, depending on context. t.t."@en ;
+    skos:prefLabel "Śrī"@ne ;
+    skos:related nepalica_gloss:1869 .
+
+nepalica:8637#en000796 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000797 ;
+    ontolex:canonicalForm nepalica:8637#en000796_form .
+
+nepalica:8637#en000796_form a ontolex:Form ;
+    ontolex:writtenRep "Gorakhanāthajī"@en .
+
+nepalica:8637#en000797 a dbr:Number ;
+    :followedBy nepalica:8637#en000798 ;
+    ontolex:writtenRep "2"@en .
+
+nepalica:8637#en000798 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000799 ;
+    ontolex:canonicalForm nepalica:8637#en000798_form .
+
+nepalica:8637#en000798_form a ontolex:Form ;
+    ontolex:writtenRep "Glorious"@en .
+
+nepalica:8637#en000799 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000800 ;
+    ontolex:canonicalForm nepalica:8637#en000799_form .
+
+nepalica:8637#en000799_form a ontolex:Form ;
+    ontolex:writtenRep "Guhyesvarī"@en .
+
+nepalica:8637#en000800 a dbr:Number ;
+    :followedBy nepalica:8637#en000801 ;
+    ontolex:writtenRep "3"@en .
+
+nepalica:8637#en000801 a dbr:Number ;
+    :followedBy nepalica:8637#en000802 ;
+    ontolex:writtenRep "22"@en .
+
+nepalica:8637#en000802 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000803 ;
+    ontolex:canonicalForm nepalica:8637#en000802_form .
+
+nepalica:8637#en000802_form a ontolex:Form ;
+    ontolex:writtenRep "seal"@en .
+
+nepalica:8637#en000803 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000804 ;
+    ontolex:canonicalForm nepalica:8637#en000803_form .
+
+nepalica:8637#en000803_form a ontolex:Form ;
+    ontolex:writtenRep "of"@en .
+
+nepalica:8637#en000804 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000805 ;
+    ontolex:canonicalForm nepalica:8637#en000804_form .
+
+nepalica:8637#en000804_form a ontolex:Form ;
+    ontolex:writtenRep "Dhārīnātha"@en .
+
+nepalica:8637#en000805 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000806 ;
+    ontolex:canonicalForm nepalica:8637#en000805_form .
+
+nepalica:8637#en000805_form a ontolex:Form ;
+    ontolex:writtenRep "Attesting"@en .
+
+nepalica:8637#en000806 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000807 ;
+    ontolex:canonicalForm nepalica:8637#en000806_form .
+
+nepalica:8637#en000806_form a ontolex:Form ;
+    ontolex:writtenRep "that"@en .
+
+nepalica:8637#en000807 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000808 ;
+    ontolex:canonicalForm nepalica:8637#en000807_form .
+
+nepalica:8637#en000807_form a ontolex:Form ;
+    ontolex:writtenRep "the"@en .
+
+nepalica:8637#en000808 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000809 ;
+    ontolex:canonicalForm nepalica:8637#en000808_form .
+
+nepalica:8637#en000808_form a ontolex:Form ;
+    ontolex:writtenRep "copy"@en .
+
+nepalica:8637#en000809 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000810 ;
+    ontolex:canonicalForm nepalica:8637#en000809_form .
+
+nepalica:8637#en000809_form a ontolex:Form ;
+    ontolex:writtenRep "is"@en .
+
+nepalica:8637#en000810 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000811 ;
+    ontolex:canonicalForm nepalica:8637#en000810_form .
+
+nepalica:8637#en000810_form a ontolex:Form ;
+    ontolex:writtenRep "true"@en .
+
+nepalica:8637#en000811 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000812 ;
+    ontolex:canonicalForm nepalica:8637#en000811_form .
+
+nepalica:8637#en000811_form a ontolex:Form ;
+    ontolex:writtenRep "to"@en .
+
+nepalica:8637#en000812 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000813 ;
+    ontolex:canonicalForm nepalica:8637#en000812_form .
+
+nepalica:8637#en000812_form a ontolex:Form ;
+    ontolex:writtenRep "the"@en .
+
+nepalica:8637#en000813 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000814 ;
+    ontolex:canonicalForm nepalica:8637#en000813_form .
+
+nepalica:8637#en000813_form a ontolex:Form ;
+    ontolex:writtenRep "original"@en .
+
+nepalica:8637#en000814 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000815 ;
+    ontolex:canonicalForm nepalica:8637#en000814_form .
+
+nepalica:8637#en000814_form a ontolex:Form ;
+    ontolex:writtenRep "the"@en .
+
+nepalica:8637#en000815 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000816 ;
+    ontolex:canonicalForm nepalica:8637#en000815_form .
+
+nepalica:8637#en000815_form a ontolex:Form ;
+    ontolex:writtenRep "abbot"@en .
+
+nepalica:8637#en000816 a skos:Concept ;
+    :followedBy nepalica:8637#en000817 ;
+    rdfs:comment "[P. pīra + S. mahanta] var. pīramahaṃta; n. (esp. in the Nātha tradition) title of the head of a monastery (maṭha), esp. a pañcāyātī maṭha (cf. Bouillier 2017: 60 and passim). t.t."@en ;
+    skos:prefLabel "pīramahanta"@ne ;
+    skos:related dbr:Abbot_(Buddhism) ,
+        geonames:testword_geonames_2644 ,
+        gnd:testword_gnd_2644 ,
+        nepalica_gloss:2644 ,
+        viaf:testword_viaf_2644 ,
+        wiki:Abbot_(Buddhism) ,
+        wikidata:Q1135621 .
+
+nepalica:8637#en000817 a foaf:Person ;
+    rdfs:label "Dhārīnātha"@ne ,
+        "धारीनातजी"@ne ;
+    :followedBy nepalica:8637#en000818 ;
+    schema:gender schema:Male ;
+    rdfs:comment "also known as: Dhārīnātha; flourished: 1905 (VS 1962)–1916;  details: a nāthayogī; appointed as abbot (pīramahanta) of the monastery of Gorakhanātha at Mṛgasthalī by Premier Candra Samśera in 1905 (VS 1962, K_0283_0035; cf. also K_0044_0067G; K_0441_0021); head of the Jogi Cakra Guṭhī (cf. K_0054_0052; K_0543_0062); imprisoned because of adultery with an Upadhyānī Bāhunī in 1916 (VS 1973, K_0168_0003); replaced as abbot by Paramahaṃsanātha in 1916 (VS 1973, K_0168_0001)."@ne ;
+    rdfs:seeAlso nepalica_reg:117 ;
+    foaf:name "Dhārīnātha"@ne ;
+    gndo:surname "Nātha"@ne .
+
+nepalica:8637#en000818 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000819 ;
+    ontolex:canonicalForm nepalica:8637#en000818_form .
+
+nepalica:8637#en000818_form a ontolex:Form ;
+    ontolex:writtenRep "main"@en .
+
+nepalica:8637#en000819 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000820 ;
+    ontolex:canonicalForm nepalica:8637#en000819_form .
+
+nepalica:8637#en000819_form a ontolex:Form ;
+    ontolex:writtenRep "text"@en .
+
+nepalica:8637#en000820 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000821 ;
+    ontolex:canonicalForm nepalica:8637#en000820_form .
+
+nepalica:8637#en000820_form a ontolex:Form ;
+    ontolex:writtenRep "Hail"@en .
+
+nepalica:8637#en000821 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000822 ;
+    ontolex:canonicalForm nepalica:8637#en000821_form .
+
+nepalica:8637#en000821_form a ontolex:Form ;
+    ontolex:writtenRep "A"@en .
+
+nepalica:8637#en000822 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000823 ;
+    ontolex:canonicalForm nepalica:8637#en000822_form .
+
+nepalica:8637#en000822_form a ontolex:Form ;
+    ontolex:writtenRep "decree"@en .
+
+nepalica:8637#en000823 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000824 ;
+    ontolex:canonicalForm nepalica:8637#en000823_form .
+
+nepalica:8637#en000823_form a ontolex:Form ;
+    ontolex:writtenRep "of"@en .
+
+nepalica:8637#en000824 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000825 ;
+    ontolex:canonicalForm nepalica:8637#en000824_form .
+
+nepalica:8637#en000824_form a ontolex:Form ;
+    ontolex:writtenRep "him"@en .
+
+nepalica:8637#en000825 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000826 ;
+    ontolex:canonicalForm nepalica:8637#en000825_form .
+
+nepalica:8637#en000825_form a ontolex:Form ;
+    ontolex:writtenRep "who"@en .
+
+nepalica:8637#en000826 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000827 ;
+    ontolex:canonicalForm nepalica:8637#en000826_form .
+
+nepalica:8637#en000826_form a ontolex:Form ;
+    ontolex:writtenRep "is"@en .
+
+nepalica:8637#en000827 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000828 ;
+    ontolex:canonicalForm nepalica:8637#en000827_form .
+
+nepalica:8637#en000827_form a ontolex:Form ;
+    ontolex:writtenRep "shining"@en .
+
+nepalica:8637#en000828 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000829 ;
+    ontolex:canonicalForm nepalica:8637#en000828_form .
+
+nepalica:8637#en000828_form a ontolex:Form ;
+    ontolex:writtenRep "with"@en .
+
+nepalica:8637#en000829 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000830 ;
+    ontolex:canonicalForm nepalica:8637#en000829_form .
+
+nepalica:8637#en000829_form a ontolex:Form ;
+    ontolex:writtenRep "manifold"@en .
+
+nepalica:8637#en000830 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000831 ;
+    ontolex:canonicalForm nepalica:8637#en000830_form .
+
+nepalica:8637#en000830_form a ontolex:Form ;
+    ontolex:writtenRep "rows"@en .
+
+nepalica:8637#en000831 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000832 ;
+    ontolex:canonicalForm nepalica:8637#en000831_form .
+
+nepalica:8637#en000831_form a ontolex:Form ;
+    ontolex:writtenRep "of"@en .
+
+nepalica:8637#en000832 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000833 ;
+    ontolex:canonicalForm nepalica:8637#en000832_form .
+
+nepalica:8637#en000832_form a ontolex:Form ;
+    ontolex:writtenRep "eulogy"@en .
+
+nepalica:8637#en000833 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000834 ;
+    ontolex:canonicalForm nepalica:8637#en000833_form .
+
+nepalica:8637#en000833_form a ontolex:Form ;
+    ontolex:writtenRep "such"@en .
+
+nepalica:8637#en000834 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000835 ;
+    ontolex:canonicalForm nepalica:8637#en000834_form .
+
+nepalica:8637#en000834_form a ontolex:Form ;
+    ontolex:writtenRep "as"@en .
+
+nepalica:8637#en000835 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000836 ;
+    ontolex:canonicalForm nepalica:8637#en000835_form .
+
+nepalica:8637#en000835_form a ontolex:Form ;
+    ontolex:writtenRep "The"@en .
+
+nepalica:8637#en000836 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000837 ;
+    ontolex:canonicalForm nepalica:8637#en000836_form .
+
+nepalica:8637#en000836_form a ontolex:Form ;
+    ontolex:writtenRep "venerable"@en .
+
+nepalica:8637#en000837 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000838 ;
+    ontolex:canonicalForm nepalica:8637#en000837_form .
+
+nepalica:8637#en000837_form a ontolex:Form ;
+    ontolex:writtenRep "crest"@en .
+
+nepalica:8637#en000838 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000839 ;
+    ontolex:canonicalForm nepalica:8637#en000838_form .
+
+nepalica:8637#en000838_form a ontolex:Form ;
+    ontolex:writtenRep "jewel"@en .
+
+nepalica:8637#en000839 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000840 ;
+    ontolex:canonicalForm nepalica:8637#en000839_form .
+
+nepalica:8637#en000839_form a ontolex:Form ;
+    ontolex:writtenRep "of"@en .
+
+nepalica:8637#en000840 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000841 ;
+    ontolex:canonicalForm nepalica:8637#en000840_form .
+
+nepalica:8637#en000840_form a ontolex:Form ;
+    ontolex:writtenRep "the"@en .
+
+nepalica:8637#en000841 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000842 ;
+    ontolex:canonicalForm nepalica:8637#en000841_form .
+
+nepalica:8637#en000841_form a ontolex:Form ;
+    ontolex:writtenRep "multitude"@en .
+
+nepalica:8637#en000842 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000843 ;
+    ontolex:canonicalForm nepalica:8637#en000842_form .
+
+nepalica:8637#en000842_form a ontolex:Form ;
+    ontolex:writtenRep "of"@en .
+
+nepalica:8637#en000843 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000844 ;
+    ontolex:canonicalForm nepalica:8637#en000843_form .
+
+nepalica:8637#en000843_form a ontolex:Form ;
+    ontolex:writtenRep "mountain"@en .
+
+nepalica:8637#en000844 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000845 ;
+    ontolex:canonicalForm nepalica:8637#en000844_form .
+
+nepalica:8637#en000844_form a ontolex:Form ;
+    ontolex:writtenRep "kings"@en .
+
+nepalica:8637#en000845 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000846 ;
+    ontolex:canonicalForm nepalica:8637#en000845_form .
+
+nepalica:8637#en000845_form a ontolex:Form ;
+    ontolex:writtenRep "and"@en .
+
+nepalica:8637#en000846 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000847 ;
+    ontolex:canonicalForm nepalica:8637#en000846_form .
+
+nepalica:8637#en000846_form a ontolex:Form ;
+    ontolex:writtenRep "Naranārāyaṇa"@en .
+
+nepalica:8637#en000847 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000848 ;
+    ontolex:canonicalForm nepalica:8637#en000847_form .
+
+nepalica:8637#en000847_form a ontolex:Form ;
+    ontolex:writtenRep "an"@en .
+
+nepalica:8637#en000848 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000849 ;
+    ontolex:canonicalForm nepalica:8637#en000848_form .
+
+nepalica:8637#en000848_form a ontolex:Form ;
+    ontolex:writtenRep "epithet"@en .
+
+nepalica:8637#en000849 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000850 ;
+    ontolex:canonicalForm nepalica:8637#en000849_form .
+
+nepalica:8637#en000849_form a ontolex:Form ;
+    ontolex:writtenRep "of"@en .
+
+nepalica:8637#en000850 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000851 ;
+    ontolex:canonicalForm nepalica:8637#en000850_form .
+
+nepalica:8637#en000850_form a ontolex:Form ;
+    ontolex:writtenRep "Kṛṣṇa"@en .
+
+nepalica:8637#en000851 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000852 ;
+    ontolex:canonicalForm nepalica:8637#en000851_form .
+
+nepalica:8637#en000851_form a ontolex:Form ;
+    ontolex:writtenRep "etc"@en .
+
+nepalica:8637#en000852 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000853 ;
+    ontolex:canonicalForm nepalica:8637#en000852_form .
+
+nepalica:8637#en000852_form a ontolex:Form ;
+    ontolex:writtenRep "high"@en .
+
+nepalica:8637#en000853 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000854 ;
+    ontolex:canonicalForm nepalica:8637#en000853_form .
+
+nepalica:8637#en000853_form a ontolex:Form ;
+    ontolex:writtenRep "in"@en .
+
+nepalica:8637#en000854 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000855 ;
+    ontolex:canonicalForm nepalica:8637#en000854_form .
+
+nepalica:8637#en000854_form a ontolex:Form ;
+    ontolex:writtenRep "honour"@en .
+
+nepalica:8637#en000855 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000856 ;
+    ontolex:canonicalForm nepalica:8637#en000855_form .
+
+nepalica:8637#en000855_form a ontolex:Form ;
+    ontolex:writtenRep "the"@en .
+
+nepalica:8637#en000856 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000857 ;
+    ontolex:canonicalForm nepalica:8637#en000856_form .
+
+nepalica:8637#en000856_form a ontolex:Form ;
+    ontolex:writtenRep "venerable"@en .
+
+nepalica:8637#en000857 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000858 ;
+    ontolex:canonicalForm nepalica:8637#en000857_form .
+
+nepalica:8637#en000857_form a ontolex:Form ;
+    ontolex:writtenRep "supreme"@en .
+
+nepalica:8637#en000858 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000859 ;
+    ontolex:canonicalForm nepalica:8637#en000858_form .
+
+nepalica:8637#en000858_form a ontolex:Form ;
+    ontolex:writtenRep "king"@en .
+
+nepalica:8637#en000859 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000860 ;
+    ontolex:canonicalForm nepalica:8637#en000859_form .
+
+nepalica:8637#en000859_form a ontolex:Form ;
+    ontolex:writtenRep "of"@en .
+
+nepalica:8637#en000860 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000861 ;
+    ontolex:canonicalForm nepalica:8637#en000860_form .
+
+nepalica:8637#en000860_form a ontolex:Form ;
+    ontolex:writtenRep "great"@en .
+
+nepalica:8637#en000861 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000862 ;
+    ontolex:canonicalForm nepalica:8637#en000861_form .
+
+nepalica:8637#en000861_form a ontolex:Form ;
+    ontolex:writtenRep "kings"@en .
+
+nepalica:8637#en000862 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000863 ;
+    ontolex:canonicalForm nepalica:8637#en000862_form .
+
+nepalica:8637#en000862_form a ontolex:Form ;
+    ontolex:writtenRep "the"@en .
+
+nepalica:8637#en000863 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000864 ;
+    ontolex:canonicalForm nepalica:8637#en000863_form .
+
+nepalica:8637#en000863_form a ontolex:Form ;
+    ontolex:writtenRep "thrice"@en .
+
+nepalica:8637#en000864 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000865 ;
+    ontolex:canonicalForm nepalica:8637#en000864_form .
+
+nepalica:8637#en000864_form a ontolex:Form ;
+    ontolex:writtenRep "venerable"@en .
+
+nepalica:8637#en000865 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000866 ;
+    ontolex:canonicalForm nepalica:8637#en000865_form .
+
+nepalica:8637#en000865_form a ontolex:Form ;
+    ontolex:writtenRep "great"@en .
+
+nepalica:8637#en000866 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000867 ;
+    ontolex:canonicalForm nepalica:8637#en000866_form .
+
+nepalica:8637#en000866_form a ontolex:Form ;
+    ontolex:writtenRep "king"@en .
+
+nepalica:8637#en000867 :followedBy nepalica:8637#en000868 .
+
+nepalica:8637#en000868 a foaf:Person ;
+    rdfs:label "Pṛthvīnārāyaṇa Śāha"@ne ;
+    :followedBy nepalica:8637#en000869 ;
+    schema:gender schema:Male ;
+    rdfs:comment "born: 1720 at Gorkha; died: 11 January 1775 at Devighat;  father: Narabhūpāla Śāha, king of Gorkha; spouse: Indra Kumārī Devī, Narendra Rājyalakṣmī Devī; children: Pratāpa Siṃha Śāha, Bahādura Śāha, Vilāsa Kumārī Śāha; details: king of Gorkha (r. 3 April 1743–1768); king of Nepal (r. 1768-1775); normdata:"@ne ;
+    rdfs:seeAlso dbr:Prithvi_Narayan_Sha ,
+        gnd:119173816 ,
+        nepalica_reg:178 ,
+        viaf:5735314 ,
+        wiki:Prithvi_Narayan_Shah ,
+        wikidata:second_priority_when_data_is_Null ;
+    foaf:name "Pṛthvīnārāyaṇa Śāha"@ne ;
+    gndo:surname "Śāha"@ne .
+
+nepalica:8637#en000869 a skos:Concept ;
+    :followedBy nepalica:8637#en000870 ;
+    rdfs:comment "[fr. S. agre] adv. lit. \"henceforeward\" (Riccardi 1976: 150 n. 6), especially used in administrative and legal documents to mark the beginning of a text or paragraph. In its function it is similar to uprānta. t.t."@en ;
+    skos:prefLabel "Āge"@ne ;
+    skos:related nepalica_gloss:2017 .
+
+nepalica:8637#en000870 a skos:Concept ;
+    :followedBy nepalica:8637#en000871 ;
+    rdfs:comment "[fr. S. goṣṭhī] var. guṭh, guthi; n. 1) a socio-religious organization that manages and finances religious and charitable functions, a trust. 2) “endowed lands or other sources of revenue for financing religious and charitable functions“ (M.R. Pant 2002: 132; cf. M.C. Regmi 1988: 267). t.t."@en ;
+    skos:altLabel "guṭhī"@ne ;
+    skos:prefLabel "guṭha"@ne ;
+    skos:related dbr:testword_dbr_932 ,
+        geonames:testword_geonames_932 ,
+        gnd:testword_gnd_932 ,
+        nepalica_gloss:932 ,
+        viaf:testword_viaf_932 ,
+        wiki:testword_wiki_932 ,
+        wikidata:testword_wikidata_932 .
+
+nepalica:8637#en000871 a skos:Concept ;
+    :followedBy nepalica:8637#en000872 ;
+    rdfs:comment "[S.] var. cakrapujā; n. lit. \"worship in a circle\", a ritual performed by the Kanphaṭṭās in an annual cycle in different localities in Kathmandu Valley (see Unbescheid 1980: 109-127 and passim). t.t."@en ;
+    skos:prefLabel "cakrapūjā"@ne ;
+    skos:related nepalica_gloss:2002 .
+
+nepalica:8637#en000872 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000873 ;
+    ontolex:canonicalForm nepalica:8637#en000872_form .
+
+nepalica:8637#en000872_form a ontolex:Form ;
+    ontolex:writtenRep "Fields"@en .
+
+nepalica:8637#en000873 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000874 ;
+    ontolex:canonicalForm nepalica:8637#en000873_form .
+
+nepalica:8637#en000873_form a ontolex:Form ;
+    ontolex:writtenRep "among"@en .
+
+nepalica:8637#en000874 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000875 ;
+    ontolex:canonicalForm nepalica:8637#en000874_form .
+
+nepalica:8637#en000874_form a ontolex:Form ;
+    ontolex:writtenRep "the"@en .
+
+nepalica:8637#en000875 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000876 ;
+    ontolex:canonicalForm nepalica:8637#en000875_form .
+
+nepalica:8637#en000875_form a ontolex:Form ;
+    ontolex:writtenRep "escheated"@en .
+
+nepalica:8637#en000876 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000877 ;
+    ontolex:canonicalForm nepalica:8637#en000876_form .
+
+nepalica:8637#en000876_form a ontolex:Form ;
+    ontolex:writtenRep "property"@en .
+
+nepalica:8637#en000877 a skos:Concept ;
+    :followedBy nepalica:8637#en000878 ;
+    rdfs:comment "var. aputāli; also maryo aputālī / moroaputālī; n. escheatable property that falls to the state if a person dies without heirs. t.t."@en ;
+    skos:prefLabel "aputālī"@ne ;
+    skos:related dbr:testword_dbr_2629 ,
+        nepalica_gloss:2629 ,
+        wiki:testword_wiki_2629 ,
+        wikidata:testword_wikidata_2629 .
+
+nepalica:8637#en000878 a foaf:Person ;
+    rdfs:label "Paṇḍu"@ne ,
+        "पंडुव्राह्मणको"@ne ;
+    :followedBy nepalica:8637#en000879 ;
+    schema:gender schema:Male ;
+    rdfs:comment "died: before 1769;  details: a brahmin."@ne ;
+    rdfs:seeAlso nepalica_reg:560 ;
+    skos:altLabel "Paṃḍu" ;
+    foaf:name "Paṇḍu"@ne ;
+    gndo:surname ""@ne .
+
+nepalica:8637#en000879 a foaf:Person ;
+    rdfs:label "Paṇḍu"@ne ,
+        "पंडुव्राह्मणको"@ne ;
+    :followedBy nepalica:8637#en000880 ;
+    schema:gender schema:Male ;
+    rdfs:comment "died: before 1769;  details: a brahmin."@ne ;
+    rdfs:seeAlso nepalica_reg:560 ;
+    skos:altLabel "Paṃḍu" ;
+    foaf:name "Paṇḍu"@ne ;
+    gndo:surname ""@ne .
+
+nepalica:8637#en000880 a dbr:Number ;
+    :followedBy nepalica:8637#en000881 ;
+    ontolex:writtenRep "40"@en .
+
+nepalica:8637#en000881 a skos:Concept ;
+    :followedBy nepalica:8637#en000882 ;
+    rdfs:comment "[fr. S.] var. ropani; n. unit of land measurement in the hill region, including the Kathmandu Valley, comprising four murīs. The area may vary according to the grade, but current standard area for a ropanī comprises 5,476 square feet (cf. M.C. Regmi 1999: 235 ; M.C. Regmi 1978: 864; Whelpton 1991: 286; M.C. Regmi 1995: 77; M.C. Regmi 1978: 163; M.C. Regmi 1988: 270). t.t."@en ;
+    skos:prefLabel "ropanī"@ne ;
+    skos:related nepalica_gloss:2051 .
+
+nepalica:8637#en000882 a gn:Feature ;
+    rdfs:label "Dalakāpa"@ne ,
+        "दलकापको"@ne ;
+    :followedBy nepalica:8637#en000883 ;
+    gn:name "Dalakāpa"@ne ;
+    rdfs:comment "also known as Dalakāpa; a locality in Kabhresthali, Kathmandu district; https://www.mindat.org/feature-7962135.html, https://nepal.places-in-the-world.com/7962135-place-dalkap.html."@en ;
+    rdfs:seeAlso nepalica_reg:1216 .
+
+nepalica:8637#en000883 a dbr:Number ;
+    :followedBy nepalica:8637#en000884 ;
+    ontolex:writtenRep "3"@en .
+
+nepalica:8637#en000884 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000885 ;
+    ontolex:canonicalForm nepalica:8637#en000884_form .
+
+nepalica:8637#en000884_form a ontolex:Form ;
+    ontolex:writtenRep "ropanī"@en .
+
+nepalica:8637#en000885 a dbr:Number ;
+    :followedBy nepalica:8637#en000886 ;
+    ontolex:writtenRep "10"@en .
+
+nepalica:8637#en000886 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000887 ;
+    ontolex:canonicalForm nepalica:8637#en000886_form .
+
+nepalica:8637#en000886_form a ontolex:Form ;
+    ontolex:writtenRep "ropanī"@en .
+
+nepalica:8637#en000887 a gn:Feature ;
+    rdfs:label "Molapāku"@ne ,
+        "मोलपाकुको"@ne ;
+    :followedBy nepalica:8637#en000888 ;
+    gn:name "Molapāku"@ne ;
+    rdfs:comment "location needs to be verified; document suggests a locality in the Kathmandu Valley."@en ;
+    rdfs:seeAlso nepalica_reg:1217 .
+
+nepalica:8637#en000888 a dbr:Number ;
+    :followedBy nepalica:8637#en000889 ;
+    ontolex:writtenRep "12"@en .
+
+nepalica:8637#en000889 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000890 ;
+    ontolex:canonicalForm nepalica:8637#en000889_form .
+
+nepalica:8637#en000889_form a ontolex:Form ;
+    ontolex:writtenRep "ropanī"@en .
+
+nepalica:8637#en000890 a gn:Feature ;
+    rdfs:label "Molapāku"@ne ,
+        "मोलपाकुको"@ne ;
+    :followedBy nepalica:8637#en000891 ;
+    gn:name "Molapāku"@ne ;
+    rdfs:comment "location needs to be verified; document suggests a locality in the Kathmandu Valley."@en ;
+    rdfs:seeAlso nepalica_reg:1217 .
+
+nepalica:8637#en000891 :followedBy nepalica:8637#en000892 .
+
+nepalica:8637#en000892 :followedBy nepalica:8637#en000893 .
+
+nepalica:8637#en000893 a dbr:Number ;
+    :followedBy nepalica:8637#en000894 ;
+    ontolex:writtenRep "7"@en .
+
+nepalica:8637#en000894 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000895 ;
+    ontolex:canonicalForm nepalica:8637#en000894_form .
+
+nepalica:8637#en000894_form a ontolex:Form ;
+    ontolex:writtenRep "ropanī"@en .
+
+nepalica:8637#en000895 a gn:Feature ;
+    rdfs:label "Kiṃḍol"@ne ,
+        "कींडोल्‌को"@ne ;
+    :followedBy nepalica:8637#en000896 ;
+    gn:name "Kiṃḍol"@ne ;
+    rdfs:comment "a locality west of Svayambhunātha."@en ;
+    rdfs:seeAlso nepalica_reg:566 ;
+    skos:altLabel "Kimaḍola"@ne .
+
+nepalica:8637#en000896 a gn:Feature ;
+    rdfs:label "Kiṃḍol"@ne ,
+        "कींडोल्‌को"@ne ;
+    :followedBy nepalica:8637#en000897 ;
+    gn:name "Kiṃḍol"@ne ;
+    rdfs:comment "a locality west of Svayambhunātha."@en ;
+    rdfs:seeAlso nepalica_reg:566 ;
+    skos:altLabel "Kimaḍola"@ne .
+
+nepalica:8637#en000897 a dbr:Number ;
+    :followedBy nepalica:8637#en000898 ;
+    ontolex:writtenRep "3"@en .
+
+nepalica:8637#en000898 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000899 ;
+    ontolex:canonicalForm nepalica:8637#en000898_form .
+
+nepalica:8637#en000898_form a ontolex:Form ;
+    ontolex:writtenRep "ropanī"@en .
+
+nepalica:8637#en000899 a gn:Feature ;
+    rdfs:label "Īcaḍol"@ne ,
+        "ईचाडोलको"@ne ;
+    :followedBy nepalica:8637#en000900 ;
+    gn:name "Īcaḍol"@ne ;
+    rdfs:comment "location needs to be verified; document suggests a locality in the Kathmandu Valley."@en ;
+    rdfs:seeAlso nepalica_reg:1219 ;
+    skos:altLabel "Icāḍola"@ne .
+
+nepalica:8637#en000900 a gn:Feature ;
+    rdfs:label "Īcaḍol"@ne ,
+        "ईचाडोलको"@ne ;
+    :followedBy nepalica:8637#en000901 ;
+    gn:name "Īcaḍol"@ne ;
+    rdfs:comment "location needs to be verified; document suggests a locality in the Kathmandu Valley."@en ;
+    rdfs:seeAlso nepalica_reg:1219 ;
+    skos:altLabel "Icāḍola"@ne .
+
+nepalica:8637#en000901 a dbr:Number ;
+    :followedBy nepalica:8637#en000902 ;
+    ontolex:writtenRep "3"@en .
+
+nepalica:8637#en000902 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000903 ;
+    ontolex:canonicalForm nepalica:8637#en000902_form .
+
+nepalica:8637#en000902_form a ontolex:Form ;
+    ontolex:writtenRep "ropanī"@en .
+
+nepalica:8637#en000903 a gn:Feature ;
+    rdfs:label "Voṣīmāhā"@ne ,
+        "व"@ne ;
+    :followedBy nepalica:8637#en000904 ;
+    gn:name "Voṣīmāhā"@ne ;
+    rdfs:comment "location needs to be verified; document suggests a locality in the Kathmandu Valley."@en ;
+    rdfs:seeAlso nepalica_reg:1220 ;
+    skos:altLabel "Voṣimahā"@ne .
+
+nepalica:8637#en000904 a gn:Feature ;
+    rdfs:label "Voṣīmāhā"@ne ,
+        "व"@ne ;
+    :followedBy nepalica:8637#en000905 ;
+    gn:name "Voṣīmāhā"@ne ;
+    rdfs:comment "location needs to be verified; document suggests a locality in the Kathmandu Valley."@en ;
+    rdfs:seeAlso nepalica_reg:1220 ;
+    skos:altLabel "Voṣimahā"@ne .
+
+nepalica:8637#en000905 a dbr:Number ;
+    :followedBy nepalica:8637#en000906 ;
+    ontolex:writtenRep "3"@en .
+
+nepalica:8637#en000906 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000907 ;
+    ontolex:canonicalForm nepalica:8637#en000906_form .
+
+nepalica:8637#en000906_form a ontolex:Form ;
+    ontolex:writtenRep "ropanī"@en .
+
+nepalica:8637#en000907 a gn:Feature ;
+    rdfs:label "Bhaṃgal"@ne ,
+        "भंगल्‌को"@ne ;
+    :followedBy nepalica:8637#en000908 ;
+    gn:name "Bhaṃgal"@ne ;
+    rdfs:comment "location needs to be verified; document suggests a locality in the Kathmandu Valley."@en ;
+    rdfs:seeAlso nepalica_reg:1221 ;
+    skos:altLabel "Maṃgal"@ne .
+
+nepalica:8637#en000908 a gn:Feature ;
+    rdfs:label "Bhaṃgal"@ne ,
+        "भंगल्‌को"@ne ;
+    :followedBy nepalica:8637#en000909 ;
+    gn:name "Bhaṃgal"@ne ;
+    rdfs:comment "location needs to be verified; document suggests a locality in the Kathmandu Valley."@en ;
+    rdfs:seeAlso nepalica_reg:1221 ;
+    skos:altLabel "Maṃgal"@ne .
+
+nepalica:8637#en000909 a dbr:Number ;
+    :followedBy nepalica:8637#en000910 ;
+    ontolex:writtenRep "3"@en .
+
+nepalica:8637#en000910 a skos:Concept ;
+    :followedBy nepalica:8637#en000911 ;
+    rdfs:comment "var. cul, cura, cu; n. unit of land measurement, one fourth of a ropanī or khā. t.t."@en ;
+    skos:prefLabel "cula"@ne ;
+    skos:related nepalica_gloss:2628 .
+
+nepalica:8637#en000911 a gn:Feature ;
+    rdfs:label "Tapīṃtā"@ne ,
+        "तपींताको"@ne ;
+    :followedBy nepalica:8637#en000912 ;
+    gn:name "Tapīṃtā"@ne ;
+    rdfs:comment "location needs to be verified; document suggests a locality in the Kathmandu Valley."@en ;
+    rdfs:seeAlso nepalica_reg:1222 ;
+    skos:altLabel "Tapiṃtā"@ne .
+
+nepalica:8637#en000912 a gn:Feature ;
+    rdfs:label "Tapīṃtā"@ne ,
+        "तपींताको"@ne ;
+    :followedBy nepalica:8637#en000913 ;
+    gn:name "Tapīṃtā"@ne ;
+    rdfs:comment "location needs to be verified; document suggests a locality in the Kathmandu Valley."@en ;
+    rdfs:seeAlso nepalica_reg:1222 ;
+    skos:altLabel "Tapiṃtā"@ne .
+
+nepalica:8637#en000913 a dbr:Number ;
+    :followedBy nepalica:8637#en000914 ;
+    ontolex:writtenRep "3"@en .
+
+nepalica:8637#en000914 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000915 ;
+    ontolex:canonicalForm nepalica:8637#en000914_form .
+
+nepalica:8637#en000914_form a ontolex:Form ;
+    ontolex:writtenRep "cula"@en .
+
+nepalica:8637#en000915 a gn:Feature ;
+    rdfs:label "Māla"@ne ,
+        "मालको"@ne ;
+    :followedBy nepalica:8637#en000916 ;
+    gn:name "Māla"@ne ;
+    rdfs:comment "location needs to be verified; document suggests a locality in the Kathmandu Valley."@en ;
+    rdfs:seeAlso nepalica_reg:1223 .
+
+nepalica:8637#en000916 a dbr:Number ;
+    :followedBy nepalica:8637#en000917 ;
+    ontolex:writtenRep "1"@en .
+
+nepalica:8637#en000917 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000918 ;
+    ontolex:canonicalForm nepalica:8637#en000917_form .
+
+nepalica:8637#en000917_form a ontolex:Form ;
+    ontolex:writtenRep "ropanī"@en .
+
+nepalica:8637#en000918 a gn:Feature ;
+    rdfs:label "ठवैलीको"@ne ,
+        "Ṭhavailī"@ne ;
+    :followedBy nepalica:8637#en000919 ;
+    gn:name "Ṭhavailī"@ne ;
+    rdfs:comment "location needs to be verified; document suggests a locality in the Kathmandu Valley."@en ;
+    rdfs:seeAlso nepalica_reg:1224 ;
+    skos:altLabel "Vaili"@ne ,
+        "Ṭhavela"@ne .
+
+nepalica:8637#en000919 a dbr:Number ;
+    :followedBy nepalica:8637#en000920 ;
+    ontolex:writtenRep "4"@en .
+
+nepalica:8637#en000920 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000921 ;
+    ontolex:canonicalForm nepalica:8637#en000920_form .
+
+nepalica:8637#en000920_form a ontolex:Form ;
+    ontolex:writtenRep "ropanī"@en .
+
+nepalica:8637#en000921 a gn:Feature ;
+    rdfs:label "Puḍopā"@ne ,
+        "पुडोपाको"@ne ;
+    :followedBy nepalica:8637#en000922 ;
+    gn:name "Puḍopā"@ne ;
+    rdfs:comment "location needs to be verified; document suggests a locality in the Kathmandu Valley."@en ;
+    rdfs:seeAlso nepalica_reg:1225 ;
+    skos:altLabel "Puḍoṃpā"@ne .
+
+nepalica:8637#en000922 a gn:Feature ;
+    rdfs:label "Puḍopā"@ne ,
+        "पुडोपाको"@ne ;
+    :followedBy nepalica:8637#en000923 ;
+    gn:name "Puḍopā"@ne ;
+    rdfs:comment "location needs to be verified; document suggests a locality in the Kathmandu Valley."@en ;
+    rdfs:seeAlso nepalica_reg:1225 ;
+    skos:altLabel "Puḍoṃpā"@ne .
+
+nepalica:8637#en000923 a dbr:Number ;
+    :followedBy nepalica:8637#en000924 ;
+    ontolex:writtenRep "5"@en .
+
+nepalica:8637#en000924 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000925 ;
+    ontolex:canonicalForm nepalica:8637#en000924_form .
+
+nepalica:8637#en000924_form a ontolex:Form ;
+    ontolex:writtenRep "ropanī"@en .
+
+nepalica:8637#en000925 a gn:Feature ;
+    rdfs:label "Lapaṭṭecokoṭ"@ne ,
+        "लपट्टेचोकोट्‌को"@ne ;
+    :followedBy nepalica:8637#en000926 ;
+    gn:name "Lapaṭṭecokoṭ"@ne ;
+    rdfs:comment "location needs to be verified; document suggests a locality in the Kathmandu Valley."@en ;
+    rdfs:seeAlso nepalica_reg:1226 ;
+    skos:altLabel "Lapaṭyaco Koṭa"@ne ,
+        "Lapaṭyecokoṭ"@ne .
+
+nepalica:8637#en000926 :followedBy nepalica:8637#en000927 .
+
+nepalica:8637#en000927 :followedBy nepalica:8637#en000928 .
+
+nepalica:8637#en000928 a dbr:Number ;
+    :followedBy nepalica:8637#en000929 ;
+    ontolex:writtenRep "22"@en .
+
+nepalica:8637#en000929 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000930 ;
+    ontolex:canonicalForm nepalica:8637#en000929_form .
+
+nepalica:8637#en000929_form a ontolex:Form ;
+    ontolex:writtenRep "ropanī"@en .
+
+nepalica:8637#en000930 a gn:Feature ;
+    rdfs:label "Īḍā"@ne ;
+    :followedBy nepalica:8637#en000931 ;
+    gn:name "Īḍā"@ne ;
+    rdfs:comment "location needs to be verified; document suggests a locality in the Kathmandu Valley."@en ;
+    rdfs:seeAlso nepalica_reg:1227 ;
+    skos:altLabel "Iṃḍā"@ne ,
+        "Īdā"@ne ,
+        "Īuḍā"@ne .
+
+nepalica:8637#en000931 a gn:Feature ;
+    rdfs:label "Īḍā"@ne ;
+    :followedBy nepalica:8637#en000932 ;
+    gn:name "Īḍā"@ne ;
+    rdfs:comment "location needs to be verified; document suggests a locality in the Kathmandu Valley."@en ;
+    rdfs:seeAlso nepalica_reg:1227 ;
+    skos:altLabel "Iṃḍā"@ne ,
+        "Īdā"@ne ,
+        "Īuḍā"@ne .
+
+nepalica:8637#en000932 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000933 ;
+    ontolex:canonicalForm nepalica:8637#en000932_form .
+
+nepalica:8637#en000932_form a ontolex:Form ;
+    ontolex:writtenRep "and"@en .
+
+nepalica:8637#en000933 a dbr:Number ;
+    :followedBy nepalica:8637#en000934 ;
+    ontolex:writtenRep "3"@en .
+
+nepalica:8637#en000934 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000935 ;
+    ontolex:canonicalForm nepalica:8637#en000934_form .
+
+nepalica:8637#en000934_form a ontolex:Form ;
+    ontolex:writtenRep "cula"@en .
+
+nepalica:8637#en000935 a gn:Feature ;
+    rdfs:label "Phīva"@ne ,
+        "फीवछेउको"@ne ;
+    :followedBy nepalica:8637#en000936 ;
+    gn:name "Phīva"@ne ;
+    rdfs:comment "location needs to be verified; document suggests a locality in the Kathmandu Valley."@en ;
+    rdfs:seeAlso nepalica_reg:1228 .
+
+nepalica:8637#en000936 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000937 ;
+    ontolex:canonicalForm nepalica:8637#en000936_form .
+
+nepalica:8637#en000936_form a ontolex:Form ;
+    ontolex:writtenRep "in"@en .
+
+nepalica:8637#en000937 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000938 ;
+    ontolex:canonicalForm nepalica:8637#en000937_form .
+
+nepalica:8637#en000937_form a ontolex:Form ;
+    ontolex:writtenRep "total"@en .
+
+nepalica:8637#en000938 a dbr:Number ;
+    :followedBy nepalica:8637#en000939 ;
+    ontolex:writtenRep "115"@en .
+
+nepalica:8637#en000939 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000940 ;
+    ontolex:canonicalForm nepalica:8637#en000939_form .
+
+nepalica:8637#en000939_form a ontolex:Form ;
+    ontolex:writtenRep "ropanī"@en .
+
+nepalica:8637#en000940 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000941 ;
+    ontolex:canonicalForm nepalica:8637#en000940_form .
+
+nepalica:8637#en000940_form a ontolex:Form ;
+    ontolex:writtenRep "cula"@en .
+
+nepalica:8637#en000941 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000942 ;
+    ontolex:canonicalForm nepalica:8637#en000941_form .
+
+nepalica:8637#en000941_form a ontolex:Form ;
+    ontolex:writtenRep "A"@en .
+
+nepalica:8637#en000942 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000943 ;
+    ontolex:canonicalForm nepalica:8637#en000942_form .
+
+nepalica:8637#en000942_form a ontolex:Form ;
+    ontolex:writtenRep "guṭha"@en .
+
+nepalica:8637#en000943 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000944 ;
+    ontolex:canonicalForm nepalica:8637#en000943_form .
+
+nepalica:8637#en000943_form a ontolex:Form ;
+    ontolex:writtenRep "tāvāpatra"@en .
+
+nepalica:8637#en000944 :followedBy nepalica:8637#en000945 .
+
+nepalica:8637#en000945 a foaf:Person ;
+    rdfs:label "ठौढी जोसीको"@ne ,
+        "Ṭauḍhī Josī"@ne ;
+    :followedBy nepalica:8637#en000946 ;
+    schema:gender schema:Male ;
+    rdfs:comment "died: before 1769;  details: owned a house in Indracoka."@ne ;
+    rdfs:seeAlso nepalica_reg:561 ;
+    skos:altLabel "Ṭauḍhi Josi" ;
+    foaf:name "Ṭauḍhī Josī"@ne ;
+    gndo:surname "Josī"@ne .
+
+nepalica:8637#en000946 :followedBy nepalica:8637#en000947 .
+
+nepalica:8637#en000947 :followedBy nepalica:8637#en000948 .
+
+nepalica:8637#en000948 a gn:Feature ;
+    rdfs:label "Īndracok"@ne ,
+        "ईन्द्रचोक्‌को"@ne ;
+    :followedBy nepalica:8637#en000949 ;
+    gn:name "Īndracok"@ne ;
+    rdfs:comment "also known as: Indrachok; a central market square in Kathmandu and the area surrounding it (see also Ogla Ṭola)"@en ;
+    rdfs:seeAlso dbr:Indrachok,_Kathmandu ,
+        nepalica_reg:551 ,
+        wiki:Indrachok,_Kathmandu ,
+        wikidata:tQ2913856 ;
+    skos:altLabel "Indracoka"@ne ,
+        "Iṃdracoka"@ne .
+
+nepalica:8637#en000949 a gn:Feature ;
+    rdfs:label "Īndracok"@ne ,
+        "ईन्द्रचोक्‌को"@ne ;
+    :followedBy nepalica:8637#en000950 ;
+    gn:name "Īndracok"@ne ;
+    rdfs:comment "also known as: Indrachok; a central market square in Kathmandu and the area surrounding it (see also Ogla Ṭola)"@en ;
+    rdfs:seeAlso dbr:Indrachok,_Kathmandu ,
+        nepalica_reg:551 ,
+        wiki:Indrachok,_Kathmandu ,
+        wikidata:tQ2913856 ;
+    skos:altLabel "Indracoka"@ne ,
+        "Iṃdracoka"@ne .
+
+nepalica:8637#en000950 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000951 ;
+    ontolex:canonicalForm nepalica:8637#en000950_form .
+
+nepalica:8637#en000950_form a ontolex:Form ;
+    ontolex:writtenRep "The"@en .
+
+nepalica:8637#en000951 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000952 ;
+    ontolex:canonicalForm nepalica:8637#en000951_form .
+
+nepalica:8637#en000951_form a ontolex:Form ;
+    ontolex:writtenRep "guṭha"@en .
+
+nepalica:8637#en000952 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000953 ;
+    ontolex:canonicalForm nepalica:8637#en000952_form .
+
+nepalica:8637#en000952_form a ontolex:Form ;
+    ontolex:writtenRep "cakra"@en .
+
+nepalica:8637#en000953 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000954 ;
+    ontolex:canonicalForm nepalica:8637#en000953_form .
+
+nepalica:8637#en000953_form a ontolex:Form ;
+    ontolex:writtenRep "pūjā"@en .
+
+nepalica:8637#en000954 :followedBy nepalica:8637#en000955 .
+
+nepalica:8637#en000955 :followedBy nepalica:8637#en000956 .
+
+nepalica:8637#en000956 :followedBy nepalica:8637#en000957 .
+
+nepalica:8637#en000957 :followedBy nepalica:8637#en000958 .
+
+nepalica:8637#en000958 a dbr:Number ;
+    :followedBy nepalica:8637#en000959 ;
+    ontolex:writtenRep "7"@en .
+
+nepalica:8637#en000959 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000960 ;
+    ontolex:canonicalForm nepalica:8637#en000959_form .
+
+nepalica:8637#en000959_form a ontolex:Form ;
+    ontolex:writtenRep "ropanī"@en .
+
+nepalica:8637#en000960 a gn:Feature ;
+    rdfs:label "टेपधुको"@ne ,
+        "Ṭepadhu"@ne ;
+    :followedBy nepalica:8637#en000961 ;
+    gn:name "Ṭepadhu"@ne ;
+    rdfs:comment "location needs to be verified; document suggests a locality in the Kathmandu Valley."@en ;
+    rdfs:seeAlso nepalica_reg:1229 .
+
+nepalica:8637#en000961 a dbr:Number ;
+    :followedBy nepalica:8637#en000962 ;
+    ontolex:writtenRep "3"@en .
+
+nepalica:8637#en000962 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000963 ;
+    ontolex:canonicalForm nepalica:8637#en000962_form .
+
+nepalica:8637#en000962_form a ontolex:Form ;
+    ontolex:writtenRep "ropanī"@en .
+
+nepalica:8637#en000963 a gn:Feature ;
+    rdfs:label "Veṣāvu"@ne ,
+        "वेषावुको"@ne ;
+    :followedBy nepalica:8637#en000964 ;
+    gn:name "Veṣāvu"@ne ;
+    rdfs:comment "location needs to be verified; document suggests a locality in the Kathmandu Valley."@en ;
+    rdfs:seeAlso nepalica_reg:1230 .
+
+nepalica:8637#en000964 a dbr:Number ;
+    :followedBy nepalica:8637#en000965 ;
+    ontolex:writtenRep "1"@en .
+
+nepalica:8637#en000965 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000966 ;
+    ontolex:canonicalForm nepalica:8637#en000965_form .
+
+nepalica:8637#en000965_form a ontolex:Form ;
+    ontolex:writtenRep "ropanī"@en .
+
+nepalica:8637#en000966 a gn:Feature ;
+    rdfs:label "Vaṃṣuḍola"@ne ,
+        "वंषुडोलको"@ne ;
+    :followedBy nepalica:8637#en000967 ;
+    gn:name "Vaṃṣuḍola"@ne ;
+    rdfs:comment "location needs to be verified; document suggests a locality in the Kathmandu Valley."@en ;
+    rdfs:seeAlso nepalica_reg:1231 ;
+    skos:altLabel "Vaṣuḍol"@ne .
+
+nepalica:8637#en000967 a dbr:Number ;
+    :followedBy nepalica:8637#en000968 ;
+    ontolex:writtenRep "1"@en .
+
+nepalica:8637#en000968 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000969 ;
+    ontolex:canonicalForm nepalica:8637#en000968_form .
+
+nepalica:8637#en000968_form a ontolex:Form ;
+    ontolex:writtenRep "ropanī"@en .
+
+nepalica:8637#en000969 a gn:Feature ;
+    rdfs:label "Vaṃsī"@ne ,
+        "वंसीको"@ne ;
+    :followedBy nepalica:8637#en000970 ;
+    gn:name "Vaṃsī"@ne ;
+    rdfs:comment "location needs to be verified; document suggests a locality in the Kathmandu Valley."@en ;
+    rdfs:seeAlso dbr:testont_dbr_1232 ,
+        geonames:testont_geoname_1232 ,
+        gnd:testont_gnd_1232 ,
+        nepalica_reg:1232 ,
+        viaf:testont_viaf_1232 ,
+        wiki:testont_wiki_1232 ,
+        wikidata:testont_wikidata_1232 ;
+    skos:altLabel "Vaṃsi"@ne ,
+        "Vā̃sī"@ne .
+
+nepalica:8637#en000970 a gn:Feature ;
+    rdfs:label "Vaṃsī"@ne ,
+        "वंसीको"@ne ;
+    :followedBy nepalica:8637#en000971 ;
+    gn:name "Vaṃsī"@ne ;
+    rdfs:comment "location needs to be verified; document suggests a locality in the Kathmandu Valley."@en ;
+    rdfs:seeAlso dbr:testont_dbr_1232 ,
+        geonames:testont_geoname_1232 ,
+        gnd:testont_gnd_1232 ,
+        nepalica_reg:1232 ,
+        viaf:testont_viaf_1232 ,
+        wiki:testont_wiki_1232 ,
+        wikidata:testont_wikidata_1232 ;
+    skos:altLabel "Vaṃsi"@ne ,
+        "Vā̃sī"@ne .
+
+nepalica:8637#en000971 a dbr:Number ;
+    :followedBy nepalica:8637#en000972 ;
+    ontolex:writtenRep "1"@en .
+
+nepalica:8637#en000972 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000973 ;
+    ontolex:canonicalForm nepalica:8637#en000972_form .
+
+nepalica:8637#en000972_form a ontolex:Form ;
+    ontolex:writtenRep "ropanī"@en .
+
+nepalica:8637#en000973 a gn:Feature ;
+    rdfs:label "Gaṃḍavālāl"@ne ,
+        "गंडवालाल्‌को"@ne ;
+    :followedBy nepalica:8637#en000974 ;
+    gn:name "Gaṃḍavālāl"@ne ;
+    rdfs:comment "location needs to be verified; document suggests a locality in the Kathmandu Valley."@en ;
+    rdfs:seeAlso nepalica_reg:1233 ;
+    skos:altLabel "Gaṃḍavāhāla"@ne ,
+        "Gaṃḍavāla"@ne ,
+        "Gaṃḍavīlāla"@ne .
+
+nepalica:8637#en000974 a gn:Feature ;
+    rdfs:label "Gaṃḍavālāl"@ne ,
+        "गंडवालाल्‌को"@ne ;
+    :followedBy nepalica:8637#en000975 ;
+    gn:name "Gaṃḍavālāl"@ne ;
+    rdfs:comment "location needs to be verified; document suggests a locality in the Kathmandu Valley."@en ;
+    rdfs:seeAlso nepalica_reg:1233 ;
+    skos:altLabel "Gaṃḍavāhāla"@ne ,
+        "Gaṃḍavāla"@ne ,
+        "Gaṃḍavīlāla"@ne .
+
+nepalica:8637#en000975 a dbr:Number ;
+    :followedBy nepalica:8637#en000976 ;
+    ontolex:writtenRep "2"@en .
+
+nepalica:8637#en000976 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000977 ;
+    ontolex:canonicalForm nepalica:8637#en000976_form .
+
+nepalica:8637#en000976_form a ontolex:Form ;
+    ontolex:writtenRep "ropanī"@en .
+
+nepalica:8637#en000977 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000978 ;
+    ontolex:canonicalForm nepalica:8637#en000977_form .
+
+nepalica:8637#en000977_form a ontolex:Form ;
+    ontolex:writtenRep "cula"@en .
+
+nepalica:8637#en000978 a gn:Feature ;
+    rdfs:label "Pāpīgāu"@ne ,
+        "पापीगाउको"@ne ;
+    :followedBy nepalica:8637#en000979 ;
+    gn:name "Pāpīgāu"@ne ;
+    rdfs:comment "location needs to be verified; document suggests a locality in the Kathmandu Valley."@en ;
+    rdfs:seeAlso nepalica_reg:1234 ;
+    skos:altLabel "Pāpigāũ"@ne ,
+        "Pāpīgāū"@ne .
+
+nepalica:8637#en000979 :followedBy nepalica:8637#en000980 .
+
+nepalica:8637#en000980 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000981 ;
+    ontolex:canonicalForm nepalica:8637#en000980_form .
+
+nepalica:8637#en000980_form a ontolex:Form ;
+    ontolex:writtenRep "and"@en .
+
+nepalica:8637#en000981 a dbr:Number ;
+    :followedBy nepalica:8637#en000982 ;
+    ontolex:writtenRep "2"@en .
+
+nepalica:8637#en000982 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000983 ;
+    ontolex:canonicalForm nepalica:8637#en000982_form .
+
+nepalica:8637#en000982_form a ontolex:Form ;
+    ontolex:writtenRep "cula"@en .
+
+nepalica:8637#en000983 :followedBy nepalica:8637#en000984 .
+
+nepalica:8637#en000984 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000985 ;
+    ontolex:canonicalForm nepalica:8637#en000984_form .
+
+nepalica:8637#en000984_form a ontolex:Form ;
+    ontolex:writtenRep "in"@en .
+
+nepalica:8637#en000985 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000986 ;
+    ontolex:canonicalForm nepalica:8637#en000985_form .
+
+nepalica:8637#en000985_form a ontolex:Form ;
+    ontolex:writtenRep "total"@en .
+
+nepalica:8637#en000986 a dbr:Number ;
+    :followedBy nepalica:8637#en000987 ;
+    ontolex:writtenRep "15"@en .
+
+nepalica:8637#en000987 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000988 ;
+    ontolex:canonicalForm nepalica:8637#en000987_form .
+
+nepalica:8637#en000987_form a ontolex:Form ;
+    ontolex:writtenRep "ropanī"@en .
+
+nepalica:8637#en000988 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000989 ;
+    ontolex:canonicalForm nepalica:8637#en000988_form .
+
+nepalica:8637#en000988_form a ontolex:Form ;
+    ontolex:writtenRep "cula"@en .
+
+nepalica:8637#en000989 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000990 ;
+    ontolex:canonicalForm nepalica:8637#en000989_form .
+
+nepalica:8637#en000989_form a ontolex:Form ;
+    ontolex:writtenRep "The"@en .
+
+nepalica:8637#en000990 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000991 ;
+    ontolex:canonicalForm nepalica:8637#en000990_form .
+
+nepalica:8637#en000990_form a ontolex:Form ;
+    ontolex:writtenRep "guṭha"@en .
+
+nepalica:8637#en000991 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000992 ;
+    ontolex:canonicalForm nepalica:8637#en000991_form .
+
+nepalica:8637#en000991_form a ontolex:Form ;
+    ontolex:writtenRep "cakra"@en .
+
+nepalica:8637#en000992 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000993 ;
+    ontolex:canonicalForm nepalica:8637#en000992_form .
+
+nepalica:8637#en000992_form a ontolex:Form ;
+    ontolex:writtenRep "pūjā"@en .
+
+nepalica:8637#en000993 :followedBy nepalica:8637#en000994 .
+
+nepalica:8637#en000994 :followedBy nepalica:8637#en000995 .
+
+nepalica:8637#en000995 :followedBy nepalica:8637#en000996 .
+
+nepalica:8637#en000996 :followedBy nepalica:8637#en000997 .
+
+nepalica:8637#en000997 a dbr:Number ;
+    :followedBy nepalica:8637#en000998 ;
+    ontolex:writtenRep "9"@en .
+
+nepalica:8637#en000998 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en000999 ;
+    ontolex:canonicalForm nepalica:8637#en000998_form .
+
+nepalica:8637#en000998_form a ontolex:Form ;
+    ontolex:writtenRep "ropanī"@en .
+
+nepalica:8637#en000999 a gn:Feature ;
+    rdfs:label "Dharaṃthalī"@ne ,
+        "धरंथलीछेउको"@ne ;
+    :followedBy nepalica:8637#en001000 ;
+    gn:name "Dharaṃthalī"@ne ;
+    rdfs:comment "also known as Dharaṃthalī, Dharmathalī; a village and former village development committee in Kathmandu district, north west of Kathmandu;"@en ;
+    rdfs:seeAlso dbr:Dharmasthali ,
+        nepalica_reg:519 ,
+        wiki:Dharmasthali ;
+    skos:altLabel "Dharaṃthali"@ne .
+
+nepalica:8637#en001000 a gn:Feature ;
+    rdfs:label "Dharaṃthalī"@ne ,
+        "धरंथलीछेउको"@ne ;
+    :followedBy nepalica:8637#en001001 ;
+    gn:name "Dharaṃthalī"@ne ;
+    rdfs:comment "also known as Dharaṃthalī, Dharmathalī; a village and former village development committee in Kathmandu district, north west of Kathmandu;"@en ;
+    rdfs:seeAlso dbr:Dharmasthali ,
+        nepalica_reg:519 ,
+        wiki:Dharmasthali ;
+    skos:altLabel "Dharaṃthali"@ne .
+
+nepalica:8637#en001001 a dbr:Number ;
+    :followedBy nepalica:8637#en001002 ;
+    ontolex:writtenRep "4"@en .
+
+nepalica:8637#en001002 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001003 ;
+    ontolex:canonicalForm nepalica:8637#en001002_form .
+
+nepalica:8637#en001002_form a ontolex:Form ;
+    ontolex:writtenRep "ropanī"@en .
+
+nepalica:8637#en001003 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001004 ;
+    ontolex:canonicalForm nepalica:8637#en001003_form .
+
+nepalica:8637#en001003_form a ontolex:Form ;
+    ontolex:writtenRep "cula"@en .
+
+nepalica:8637#en001004 a gn:Feature ;
+    rdfs:label "Koṣayanāk"@ne ,
+        "कोषयना"@ne ;
+    :followedBy nepalica:8637#en001005 ;
+    gn:name "Koṣayanāk"@ne ;
+    rdfs:comment "location needs to be verified; document suggests a locality in the Kathmandu Valley."@en ;
+    rdfs:seeAlso nepalica_reg:1235 ;
+    skos:altLabel "Koṣayanāka"@ne ,
+        "Koṣaṣanāka"@ne .
+
+nepalica:8637#en001005 a gn:Feature ;
+    rdfs:label "Koṣayanāk"@ne ,
+        "कोषयना"@ne ;
+    :followedBy nepalica:8637#en001006 ;
+    gn:name "Koṣayanāk"@ne ;
+    rdfs:comment "location needs to be verified; document suggests a locality in the Kathmandu Valley."@en ;
+    rdfs:seeAlso nepalica_reg:1235 ;
+    skos:altLabel "Koṣayanāka"@ne ,
+        "Koṣaṣanāka"@ne .
+
+nepalica:8637#en001006 a dbr:Number ;
+    :followedBy nepalica:8637#en001007 ;
+    ontolex:writtenRep "3"@en .
+
+nepalica:8637#en001007 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001008 ;
+    ontolex:canonicalForm nepalica:8637#en001007_form .
+
+nepalica:8637#en001007_form a ontolex:Form ;
+    ontolex:writtenRep "ropanī"@en .
+
+nepalica:8637#en001008 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001009 ;
+    ontolex:canonicalForm nepalica:8637#en001008_form .
+
+nepalica:8637#en001008_form a ontolex:Form ;
+    ontolex:writtenRep "cula"@en .
+
+nepalica:8637#en001009 a gn:Feature ;
+    rdfs:label "Paṃbhu"@ne ,
+        "पंभुछेउको"@ne ;
+    :followedBy nepalica:8637#en001010 ;
+    gn:name "Paṃbhu"@ne ;
+    rdfs:comment "location needs to be verified; document suggests a locality in the Kathmandu Valley."@en ;
+    rdfs:seeAlso nepalica_reg:1236 .
+
+nepalica:8637#en001010 a dbr:Number ;
+    :followedBy nepalica:8637#en001011 ;
+    ontolex:writtenRep "2"@en .
+
+nepalica:8637#en001011 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001012 ;
+    ontolex:canonicalForm nepalica:8637#en001011_form .
+
+nepalica:8637#en001011_form a ontolex:Form ;
+    ontolex:writtenRep "ropanī"@en .
+
+nepalica:8637#en001012 a gn:Feature ;
+    rdfs:label "Bhaguṣula"@ne ,
+        "भगुषुलको"@ne ;
+    :followedBy nepalica:8637#en001013 ;
+    gn:name "Bhaguṣula"@ne ;
+    rdfs:comment "location needs to be verified; document suggests a locality in the Kathmandu Valley."@en ;
+    rdfs:seeAlso nepalica_reg:1237 ;
+    skos:altLabel "Bhaguṣolā"@ne .
+
+nepalica:8637#en001013 a dbr:Number ;
+    :followedBy nepalica:8637#en001014 ;
+    ontolex:writtenRep "3"@en .
+
+nepalica:8637#en001014 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001015 ;
+    ontolex:canonicalForm nepalica:8637#en001014_form .
+
+nepalica:8637#en001014_form a ontolex:Form ;
+    ontolex:writtenRep "cula"@en .
+
+nepalica:8637#en001015 a gn:Feature ;
+    rdfs:label "Tyapadhu"@ne ,
+        "त्यपधुछेउको"@ne ;
+    :followedBy nepalica:8637#en001016 ;
+    gn:name "Tyapadhu"@ne ;
+    rdfs:comment "location needs to be verified; document suggests a locality in the Kathmandu Valley."@en ;
+    rdfs:seeAlso nepalica_reg:1238 ;
+    skos:altLabel "Tyapadhuka"@ne .
+
+nepalica:8637#en001016 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001017 ;
+    ontolex:canonicalForm nepalica:8637#en001016_form .
+
+nepalica:8637#en001016_form a ontolex:Form ;
+    ontolex:writtenRep "in"@en .
+
+nepalica:8637#en001017 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001018 ;
+    ontolex:canonicalForm nepalica:8637#en001017_form .
+
+nepalica:8637#en001017_form a ontolex:Form ;
+    ontolex:writtenRep "total"@en .
+
+nepalica:8637#en001018 a dbr:Number ;
+    :followedBy nepalica:8637#en001019 ;
+    ontolex:writtenRep "20"@en .
+
+nepalica:8637#en001019 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001020 ;
+    ontolex:canonicalForm nepalica:8637#en001019_form .
+
+nepalica:8637#en001019_form a ontolex:Form ;
+    ontolex:writtenRep "ropanī"@en .
+
+nepalica:8637#en001020 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001021 ;
+    ontolex:canonicalForm nepalica:8637#en001020_form .
+
+nepalica:8637#en001020_form a ontolex:Form ;
+    ontolex:writtenRep "Furthermore"@en .
+
+nepalica:8637#en001021 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001022 ;
+    ontolex:canonicalForm nepalica:8637#en001021_form .
+
+nepalica:8637#en001021_form a ontolex:Form ;
+    ontolex:writtenRep "there"@en .
+
+nepalica:8637#en001022 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001023 ;
+    ontolex:canonicalForm nepalica:8637#en001022_form .
+
+nepalica:8637#en001022_form a ontolex:Form ;
+    ontolex:writtenRep "is"@en .
+
+nepalica:8637#en001023 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001024 ;
+    ontolex:canonicalForm nepalica:8637#en001023_form .
+
+nepalica:8637#en001023_form a ontolex:Form ;
+    ontolex:writtenRep "the"@en .
+
+nepalica:8637#en001024 a gn:Feature ;
+    rdfs:label "Jogīṭāra"@ne ,
+        "जोगीटार"@ne ;
+    :followedBy nepalica:8637#en001025 ;
+    gn:name "Jogīṭāra"@ne ;
+    rdfs:comment "location needs to be verified; document suggests a field in Deurali."@en ;
+    rdfs:seeAlso nepalica_reg:1239 ;
+    skos:altLabel "Jogiṭāra"@ne .
+
+nepalica:8637#en001025 a gn:Feature ;
+    rdfs:label "Jogīṭāra"@ne ,
+        "जोगीटार"@ne ;
+    :followedBy nepalica:8637#en001026 ;
+    gn:name "Jogīṭāra"@ne ;
+    rdfs:comment "location needs to be verified; document suggests a field in Deurali."@en ;
+    rdfs:seeAlso nepalica_reg:1239 ;
+    skos:altLabel "Jogiṭāra"@ne .
+
+nepalica:8637#en001026 a gn:Feature ;
+    rdfs:label "Deurālī"@ne ,
+        "देउरालीमाहा"@ne ;
+    :followedBy nepalica:8637#en001027 ;
+    gn:name "Deurālī"@ne ;
+    rdfs:comment "also Deurālī; a village in Kaski district"@en ;
+    rdfs:seeAlso nepalica_reg:520 ;
+    skos:altLabel "Deurāli"@ne .
+
+nepalica:8637#en001027 a gn:Feature ;
+    rdfs:label "Deurālī"@ne ,
+        "देउरालीमाहा"@ne ;
+    :followedBy nepalica:8637#en001028 ;
+    gn:name "Deurālī"@ne ;
+    rdfs:comment "also Deurālī; a village in Kaski district"@en ;
+    rdfs:seeAlso nepalica_reg:520 ;
+    skos:altLabel "Deurāli"@ne .
+
+nepalica:8637#en001028 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001029 ;
+    ontolex:canonicalForm nepalica:8637#en001028_form .
+
+nepalica:8637#en001028_form a ontolex:Form ;
+    ontolex:writtenRep "murī"@en .
+
+nepalica:8637#en001029 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001030 ;
+    ontolex:canonicalForm nepalica:8637#en001029_form .
+
+nepalica:8637#en001029_form a ontolex:Form ;
+    ontolex:writtenRep "dhāna"@en .
+
+nepalica:8637#en001030 a skos:Concept ;
+    :followedBy nepalica:8637#en001031 ;
+    rdfs:comment "var. kut; n. a system of tenancy under which a cultivator paid a fixed quantity of produce or a fixed amount of money as rent to the owner of the field. t.t."@en ;
+    skos:prefLabel "kuta"@ne ;
+    skos:related nepalica_gloss:2504 .
+
+nepalica:8637#en001031 a skos:Concept ;
+    :followedBy nepalica:8637#en001032 ;
+    rdfs:comment "[fr. S. goṣṭhī] var. guṭh, guthi; n. 1) a socio-religious organization that manages and finances religious and charitable functions, a trust. 2) “endowed lands or other sources of revenue for financing religious and charitable functions“ (M.R. Pant 2002: 132; cf. M.C. Regmi 1988: 267). t.t."@en ;
+    skos:altLabel "guṭhī"@ne ;
+    skos:prefLabel "guṭha"@ne ;
+    skos:related dbr:testword_dbr_932 ,
+        geonames:testword_geonames_932 ,
+        gnd:testword_gnd_932 ,
+        nepalica_gloss:932 ,
+        viaf:testword_viaf_932 ,
+        wiki:testword_wiki_932 ,
+        wikidata:testword_wikidata_932 .
+
+nepalica:8637#en001032 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001033 ;
+    ontolex:canonicalForm nepalica:8637#en001032_form .
+
+nepalica:8637#en001032_form a ontolex:Form ;
+    ontolex:writtenRep "The"@en .
+
+nepalica:8637#en001033 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001034 ;
+    ontolex:canonicalForm nepalica:8637#en001033_form .
+
+nepalica:8637#en001033_form a ontolex:Form ;
+    ontolex:writtenRep "guṭhī"@en .
+
+nepalica:8637#en001034 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001035 ;
+    ontolex:canonicalForm nepalica:8637#en001034_form .
+
+nepalica:8637#en001034_form a ontolex:Form ;
+    ontolex:writtenRep "cakrapūjā"@en .
+
+nepalica:8637#en001035 a dbr:Number ;
+    :followedBy nepalica:8637#en001036 ;
+    ontolex:writtenRep "19"@en .
+
+nepalica:8637#en001036 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001037 ;
+    ontolex:canonicalForm nepalica:8637#en001036_form .
+
+nepalica:8637#en001036_form a ontolex:Form ;
+    ontolex:writtenRep "ropanī"@en .
+
+nepalica:8637#en001037 a gn:Feature ;
+    rdfs:label "टौगाल्‌को"@ne ,
+        "Ṭaugāl"@ne ;
+    :followedBy nepalica:8637#en001038 ;
+    gn:name "Ṭaugāl"@ne ;
+    rdfs:comment "location needs to be verified; document suggests a locality in the Kathmandu Valley."@en ;
+    rdfs:seeAlso nepalica_reg:1240 ;
+    skos:altLabel "Ṭaugāla"@ne .
+
+nepalica:8637#en001038 a gn:Feature ;
+    rdfs:label "टौगाल्‌को"@ne ,
+        "Ṭaugāl"@ne ;
+    :followedBy nepalica:8637#en001039 ;
+    gn:name "Ṭaugāl"@ne ;
+    rdfs:comment "location needs to be verified; document suggests a locality in the Kathmandu Valley."@en ;
+    rdfs:seeAlso nepalica_reg:1240 ;
+    skos:altLabel "Ṭaugāla"@ne .
+
+nepalica:8637#en001039 a dbr:Number ;
+    :followedBy nepalica:8637#en001040 ;
+    ontolex:writtenRep "12"@en .
+
+nepalica:8637#en001040 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001041 ;
+    ontolex:canonicalForm nepalica:8637#en001040_form .
+
+nepalica:8637#en001040_form a ontolex:Form ;
+    ontolex:writtenRep "ropanī"@en .
+
+nepalica:8637#en001041 a gn:Feature ;
+    rdfs:label "टोषाछेउको"@ne ,
+        "Ṭoṣa"@ne ;
+    :followedBy nepalica:8637#en001042 ;
+    gn:name "Ṭoṣa"@ne ;
+    rdfs:comment "location needs to be verified; document suggests a locality in the Kathmandu Valley."@en ;
+    rdfs:seeAlso dbr:testont_dbr_1241 ,
+        geonames:testont_geoname_1241 ,
+        gnd:testont_gnd_1241 ,
+        nepalica_reg:1241 ,
+        viaf:testont_viaf_1241 ,
+        wiki:testont_wiki_1241 ,
+        wikidata:testont_wikidata_1241 .
+
+nepalica:8637#en001042 a dbr:Number ;
+    :followedBy nepalica:8637#en001043 ;
+    ontolex:writtenRep "4"@en .
+
+nepalica:8637#en001043 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001044 ;
+    ontolex:canonicalForm nepalica:8637#en001043_form .
+
+nepalica:8637#en001043_form a ontolex:Form ;
+    ontolex:writtenRep "ropanī"@en .
+
+nepalica:8637#en001044 a gn:Feature ;
+    rdfs:label "Deupāṭhaṃ"@ne ,
+        "देउपाटंछेउको"@ne ;
+    :followedBy nepalica:8637#en001045 ;
+    gn:name "Deupāṭhaṃ"@ne ;
+    rdfs:comment "also known as: Deupāṭaṃ, Deupāṭana, Deūpāṭaṃ; historic town in the Kathmandu Valley, now part of Kathmandu;"@en ;
+    rdfs:seeAlso gnd:4354945-7 ,
+        nepalica_reg:28 ;
+    skos:altLabel "Deopatan"@ne ,
+        "Deupāṭan"@ne ,
+        "Deupāṭaṃ"@ne .
+
+nepalica:8637#en001045 a gn:Feature ;
+    rdfs:label "Deupāṭhaṃ"@ne ,
+        "देउपाटंछेउको"@ne ;
+    :followedBy nepalica:8637#en001046 ;
+    gn:name "Deupāṭhaṃ"@ne ;
+    rdfs:comment "also known as: Deupāṭaṃ, Deupāṭana, Deūpāṭaṃ; historic town in the Kathmandu Valley, now part of Kathmandu;"@en ;
+    rdfs:seeAlso gnd:4354945-7 ,
+        nepalica_reg:28 ;
+    skos:altLabel "Deopatan"@ne ,
+        "Deupāṭan"@ne ,
+        "Deupāṭaṃ"@ne .
+
+nepalica:8637#en001046 a dbr:Number ;
+    :followedBy nepalica:8637#en001047 ;
+    ontolex:writtenRep "6"@en .
+
+nepalica:8637#en001047 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001048 ;
+    ontolex:canonicalForm nepalica:8637#en001047_form .
+
+nepalica:8637#en001047_form a ontolex:Form ;
+    ontolex:writtenRep "ropanī"@en .
+
+nepalica:8637#en001048 a gn:Feature ;
+    rdfs:label "Caṣu"@ne ,
+        "चषुछेउको"@ne ;
+    :followedBy nepalica:8637#en001049 ;
+    gn:name "Caṣu"@ne ;
+    rdfs:comment "location needs to be verified; document suggests a locality in the Kathmandu Valley."@en ;
+    rdfs:seeAlso nepalica_reg:1242 .
+
+nepalica:8637#en001049 a dbr:Number ;
+    :followedBy nepalica:8637#en001050 ;
+    ontolex:writtenRep "7"@en .
+
+nepalica:8637#en001050 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001051 ;
+    ontolex:canonicalForm nepalica:8637#en001050_form .
+
+nepalica:8637#en001050_form a ontolex:Form ;
+    ontolex:writtenRep "ropanī"@en .
+
+nepalica:8637#en001051 a gn:Feature ;
+    rdfs:label "Sāṃlā"@ne ,
+        "सांलाछेउको"@ne ;
+    :followedBy nepalica:8637#en001052 ;
+    gn:name "Sāṃlā"@ne ;
+    rdfs:comment "also known as Sāṅlā or Sāṅglā; a village and former Village Development Committee in Kathmandu district;  _Nepal."@en ;
+    rdfs:seeAlso gnd:7962433 ,
+        nepalica_reg:1243 ,
+        wiki:Sangla ;
+    skos:altLabel "Sāṅglā"@ne ,
+        "Sāṅlā"@ne .
+
+nepalica:8637#en001052 a gn:Feature ;
+    rdfs:label "Sāṃlā"@ne ,
+        "सांलाछेउको"@ne ;
+    :followedBy nepalica:8637#en001053 ;
+    gn:name "Sāṃlā"@ne ;
+    rdfs:comment "also known as Sāṅlā or Sāṅglā; a village and former Village Development Committee in Kathmandu district;  _Nepal."@en ;
+    rdfs:seeAlso gnd:7962433 ,
+        nepalica_reg:1243 ,
+        wiki:Sangla ;
+    skos:altLabel "Sāṅglā"@ne ,
+        "Sāṅlā"@ne .
+
+nepalica:8637#en001053 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001054 ;
+    ontolex:canonicalForm nepalica:8637#en001053_form .
+
+nepalica:8637#en001053_form a ontolex:Form ;
+    ontolex:writtenRep "and"@en .
+
+nepalica:8637#en001054 a dbr:Number ;
+    :followedBy nepalica:8637#en001055 ;
+    ontolex:writtenRep "7"@en .
+
+nepalica:8637#en001055 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001056 ;
+    ontolex:canonicalForm nepalica:8637#en001055_form .
+
+nepalica:8637#en001055_form a ontolex:Form ;
+    ontolex:writtenRep "ropanī"@en .
+
+nepalica:8637#en001056 a gn:Feature ;
+    rdfs:label "Kvāṭha"@ne ,
+        "क्वाठछेउको"@ne ;
+    :followedBy nepalica:8637#en001057 ;
+    gn:name "Kvāṭha"@ne ;
+    rdfs:comment "location needs to be verified; document suggests a locality in the Kathmandu Valley."@en ;
+    rdfs:seeAlso nepalica_reg:1244 ;
+    skos:altLabel "Kvāṭa"@ne .
+
+nepalica:8637#en001057 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001058 ;
+    ontolex:canonicalForm nepalica:8637#en001057_form .
+
+nepalica:8637#en001057_form a ontolex:Form ;
+    ontolex:writtenRep "in"@en .
+
+nepalica:8637#en001058 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001059 ;
+    ontolex:canonicalForm nepalica:8637#en001058_form .
+
+nepalica:8637#en001058_form a ontolex:Form ;
+    ontolex:writtenRep "total"@en .
+
+nepalica:8637#en001059 a dbr:Number ;
+    :followedBy nepalica:8637#en001060 ;
+    ontolex:writtenRep "55"@en .
+
+nepalica:8637#en001060 a dbr:Number ;
+    :followedBy nepalica:8637#en001061 ;
+    ontolex:writtenRep "53"@en .
+
+nepalica:8637#en001061 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001062 ;
+    ontolex:canonicalForm nepalica:8637#en001061_form .
+
+nepalica:8637#en001061_form a ontolex:Form ;
+    ontolex:writtenRep "ropanī"@en .
+
+nepalica:8637#en001062 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001063 ;
+    ontolex:canonicalForm nepalica:8637#en001062_form .
+
+nepalica:8637#en001062_form a ontolex:Form ;
+    ontolex:writtenRep "The"@en .
+
+nepalica:8637#en001063 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001064 ;
+    ontolex:canonicalForm nepalica:8637#en001063_form .
+
+nepalica:8637#en001063_form a ontolex:Form ;
+    ontolex:writtenRep "cakraguṭha"@en .
+
+nepalica:8637#en001064 a gn:Feature ;
+    rdfs:label "Īndracok"@ne ,
+        "ईन्द्रचोक्‌को"@ne ;
+    :followedBy nepalica:8637#en001065 ;
+    gn:name "Īndracok"@ne ;
+    rdfs:comment "also known as: Indrachok; a central market square in Kathmandu and the area surrounding it (see also Ogla Ṭola)"@en ;
+    rdfs:seeAlso dbr:Indrachok,_Kathmandu ,
+        nepalica_reg:551 ,
+        wiki:Indrachok,_Kathmandu ,
+        wikidata:tQ2913856 ;
+    skos:altLabel "Indracoka"@ne ,
+        "Iṃdracoka"@ne .
+
+nepalica:8637#en001065 a gn:Feature ;
+    rdfs:label "Īndracok"@ne ,
+        "ईन्द्रचोक्‌को"@ne ;
+    :followedBy nepalica:8637#en001066 ;
+    gn:name "Īndracok"@ne ;
+    rdfs:comment "also known as: Indrachok; a central market square in Kathmandu and the area surrounding it (see also Ogla Ṭola)"@en ;
+    rdfs:seeAlso dbr:Indrachok,_Kathmandu ,
+        nepalica_reg:551 ,
+        wiki:Indrachok,_Kathmandu ,
+        wikidata:tQ2913856 ;
+    skos:altLabel "Indracoka"@ne ,
+        "Iṃdracoka"@ne .
+
+nepalica:8637#en001066 a dbr:Number ;
+    :followedBy nepalica:8637#en001067 ;
+    ontolex:writtenRep "4"@en .
+
+nepalica:8637#en001067 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001068 ;
+    ontolex:canonicalForm nepalica:8637#en001067_form .
+
+nepalica:8637#en001067_form a ontolex:Form ;
+    ontolex:writtenRep "ropanī"@en .
+
+nepalica:8637#en001068 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001069 ;
+    ontolex:canonicalForm nepalica:8637#en001068_form .
+
+nepalica:8637#en001068_form a ontolex:Form ;
+    ontolex:writtenRep "ḍīhī"@en .
+
+nepalica:8637#en001069 a gn:Feature ;
+    rdfs:label "Syāṃpurī"@ne ,
+        "डीहीछेउको"@ne ;
+    :followedBy nepalica:8637#en001070 ;
+    gn:name "Syāṃpurī"@ne ;
+    rdfs:comment "location needs to be verified; document suggests a locality in the Kathmandu Valley."@en ;
+    rdfs:seeAlso nepalica_reg:1245 ;
+    skos:altLabel "Syāmapuri"@ne ,
+        "Syāmpurī"@ne ,
+        "Syāṃpuri"@ne .
+
+nepalica:8637#en001070 a gn:Feature ;
+    rdfs:label "Syāṃpurī"@ne ,
+        "डीहीछेउको"@ne ;
+    :followedBy nepalica:8637#en001071 ;
+    gn:name "Syāṃpurī"@ne ;
+    rdfs:comment "location needs to be verified; document suggests a locality in the Kathmandu Valley."@en ;
+    rdfs:seeAlso nepalica_reg:1245 ;
+    skos:altLabel "Syāmapuri"@ne ,
+        "Syāmpurī"@ne ,
+        "Syāṃpuri"@ne .
+
+nepalica:8637#en001071 a dbr:Number ;
+    :followedBy nepalica:8637#en001072 ;
+    ontolex:writtenRep "5"@en .
+
+nepalica:8637#en001072 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001073 ;
+    ontolex:canonicalForm nepalica:8637#en001072_form .
+
+nepalica:8637#en001072_form a ontolex:Form ;
+    ontolex:writtenRep "ropanī"@en .
+
+nepalica:8637#en001073 a gn:Feature ;
+    rdfs:label "टुकुचाछेउको"@ne ,
+        "Ṭukucā"@ne ;
+    :followedBy nepalica:8637#en001074 ;
+    gn:name "Ṭukucā"@ne ;
+    rdfs:comment "location needs to be verified; document suggests a locality in the Kathmandu Valley."@en ;
+    rdfs:seeAlso nepalica_reg:1246 .
+
+nepalica:8637#en001074 a dbr:Number ;
+    :followedBy nepalica:8637#en001075 ;
+    ontolex:writtenRep "6"@en .
+
+nepalica:8637#en001075 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001076 ;
+    ontolex:canonicalForm nepalica:8637#en001075_form .
+
+nepalica:8637#en001075_form a ontolex:Form ;
+    ontolex:writtenRep "ropanī"@en .
+
+nepalica:8637#en001076 a gn:Feature ;
+    rdfs:label "Raṣuvu"@ne ,
+        "रषुवुछेउको"@ne ;
+    :followedBy nepalica:8637#en001077 ;
+    gn:name "Raṣuvu"@ne ;
+    rdfs:comment "location needs to be verified; document suggests a locality in the Kathmandu Valley."@en ;
+    rdfs:seeAlso nepalica_reg:1247 .
+
+nepalica:8637#en001077 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001078 ;
+    ontolex:canonicalForm nepalica:8637#en001077_form .
+
+nepalica:8637#en001077_form a ontolex:Form ;
+    ontolex:writtenRep "in"@en .
+
+nepalica:8637#en001078 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001079 ;
+    ontolex:canonicalForm nepalica:8637#en001078_form .
+
+nepalica:8637#en001078_form a ontolex:Form ;
+    ontolex:writtenRep "total"@en .
+
+nepalica:8637#en001079 a dbr:Number ;
+    :followedBy nepalica:8637#en001080 ;
+    ontolex:writtenRep "15"@en .
+
+nepalica:8637#en001080 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001081 ;
+    ontolex:canonicalForm nepalica:8637#en001080_form .
+
+nepalica:8637#en001080_form a ontolex:Form ;
+    ontolex:writtenRep "ropanī"@en .
+
+nepalica:8637#en001081 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001082 ;
+    ontolex:canonicalForm nepalica:8637#en001081_form .
+
+nepalica:8637#en001081_form a ontolex:Form ;
+    ontolex:writtenRep "All"@en .
+
+nepalica:8637#en001082 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001083 ;
+    ontolex:canonicalForm nepalica:8637#en001082_form .
+
+nepalica:8637#en001082_form a ontolex:Form ;
+    ontolex:writtenRep "in"@en .
+
+nepalica:8637#en001083 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001084 ;
+    ontolex:canonicalForm nepalica:8637#en001083_form .
+
+nepalica:8637#en001083_form a ontolex:Form ;
+    ontolex:writtenRep "all"@en .
+
+nepalica:8637#en001084 a dbr:Number ;
+    :followedBy nepalica:8637#en001085 ;
+    ontolex:writtenRep "219"@en .
+
+nepalica:8637#en001085 a dbr:Number ;
+    :followedBy nepalica:8637#en001086 ;
+    ontolex:writtenRep "3"@en .
+
+nepalica:8637#en001086 a dbr:Number ;
+    :followedBy nepalica:8637#en001087 ;
+    ontolex:writtenRep "4"@en .
+
+nepalica:8637#en001087 a skos:Concept ;
+    :followedBy nepalica:8637#en001088 ;
+    rdfs:comment "[fr. S.] var. ropani; n. unit of land measurement in the hill region, including the Kathmandu Valley, comprising four murīs. The area may vary according to the grade, but current standard area for a ropanī comprises 5,476 square feet (cf. M.C. Regmi 1999: 235 ; M.C. Regmi 1978: 864; Whelpton 1991: 286; M.C. Regmi 1995: 77; M.C. Regmi 1978: 163; M.C. Regmi 1988: 270). t.t."@en ;
+    skos:prefLabel "ropanī"@ne ;
+    skos:related nepalica_gloss:2051 .
+
+nepalica:8637#en001088 a skos:Concept ;
+    :followedBy nepalica:8637#en001089 ;
+    rdfs:comment "n. 1) also khetamuri; unit of land measurement in the hill region, comprising 1/4 ropanī with 100 muris in 1 kheta. The area varied according to the grade: 1190 sq. ft. for lands of the best grade, and 1339 sq. ft., 1487 sq. ft., and 1785 sq. ft. for lands of inferior grades. 2) volumetric unit comprising 20 pāthis (with 8 mānas to a pāthi), equivalent to 90.919 (M.R. Pant 2002: 134 ) or 87.23 (Pant and Pierce 1989: 93) liters. (M.C. Regmi 1978: 163; M.C. Regmi 1999: 235 ; M.C. Regmi 1978a: 228 ; M.C. Regmi 1978b: 862 ; Adhikari 1984: 354; M.C. Regmi 1988: 269). t.t."@en ;
+    skos:prefLabel "murī"@ne ;
+    skos:related nepalica_gloss:1045 .
+
+nepalica:8637#en001089 a skos:Concept ;
+    :followedBy nepalica:8637#en001090 ;
+    rdfs:comment "[fr. S. kṣetra] var. khet, kheṭ; n. 1) irrigated land in the hill region suitable for the cultivation of rice and wheat. 2) a measure of land in the hill region equal to 25 ropanīs or 100 murīs (ca. 1.25 hectares) (M.C. Regmi 1999: 136-137 ; cf. M.C. Regmi 1999: 234 ; M.C. Regmi 1978: 162 ; M.C. Regmi 1978: 227 ; M.C. Regmi 1978: 860 ; M.C. Regmi 1995: 77; Adhikari 1984: 351; M.R. Pant 2002: 133; Whelpton 1991: 284 ). t.t."@en ;
+    skos:prefLabel "kheta"@ne ;
+    skos:related nepalica_gloss:1957 .
+
+nepalica:8637#en001090 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001091 ;
+    ontolex:canonicalForm nepalica:8637#en001090_form .
+
+nepalica:8637#en001090_form a ontolex:Form ;
+    ontolex:writtenRep "murī"@en .
+
+nepalica:8637#en001091 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001092 ;
+    ontolex:canonicalForm nepalica:8637#en001091_form .
+
+nepalica:8637#en001091_form a ontolex:Form ;
+    ontolex:writtenRep "Thursday"@en .
+
+nepalica:8637#en001092 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001093 ;
+    ontolex:canonicalForm nepalica:8637#en001092_form .
+
+nepalica:8637#en001092_form a ontolex:Form ;
+    ontolex:writtenRep "the"@en .
+
+nepalica:8637#en001093 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001094 ;
+    ontolex:canonicalForm nepalica:8637#en001093_form .
+
+nepalica:8637#en001093_form a ontolex:Form ;
+    ontolex:writtenRep "4th"@en .
+
+nepalica:8637#en001094 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001095 ;
+    ontolex:canonicalForm nepalica:8637#en001094_form .
+
+nepalica:8637#en001094_form a ontolex:Form ;
+    ontolex:writtenRep "of"@en .
+
+nepalica:8637#en001095 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001096 ;
+    ontolex:canonicalForm nepalica:8637#en001095_form .
+
+nepalica:8637#en001095_form a ontolex:Form ;
+    ontolex:writtenRep "the"@en .
+
+nepalica:8637#en001096 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001097 ;
+    ontolex:canonicalForm nepalica:8637#en001096_form .
+
+nepalica:8637#en001096_form a ontolex:Form ;
+    ontolex:writtenRep "bright"@en .
+
+nepalica:8637#en001097 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001098 ;
+    ontolex:canonicalForm nepalica:8637#en001097_form .
+
+nepalica:8637#en001097_form a ontolex:Form ;
+    ontolex:writtenRep "fortnight"@en .
+
+nepalica:8637#en001098 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001099 ;
+    ontolex:canonicalForm nepalica:8637#en001098_form .
+
+nepalica:8637#en001098_form a ontolex:Form ;
+    ontolex:writtenRep "of"@en .
+
+nepalica:8637#en001099 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001100 ;
+    ontolex:canonicalForm nepalica:8637#en001099_form .
+
+nepalica:8637#en001099_form a ontolex:Form ;
+    ontolex:writtenRep "Kārtika"@en .
+
+nepalica:8637#en001100 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001101 ;
+    ontolex:canonicalForm nepalica:8637#en001100_form .
+
+nepalica:8637#en001100_form a ontolex:Form ;
+    ontolex:writtenRep "in"@en .
+
+nepalica:8637#en001101 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001102 ;
+    ontolex:canonicalForm nepalica:8637#en001101_form .
+
+nepalica:8637#en001101_form a ontolex:Form ;
+    ontolex:writtenRep "the"@en .
+
+nepalica:8637#en001102 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001103 ;
+    ontolex:canonicalForm nepalica:8637#en001102_form .
+
+nepalica:8637#en001102_form a ontolex:Form ;
+    ontolex:writtenRep "Vikrama"@en .
+
+nepalica:8637#en001103 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001104 ;
+    ontolex:canonicalForm nepalica:8637#en001103_form .
+
+nepalica:8637#en001103_form a ontolex:Form ;
+    ontolex:writtenRep "era"@en .
+
+nepalica:8637#en001104 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001105 ;
+    ontolex:canonicalForm nepalica:8637#en001104_form .
+
+nepalica:8637#en001104_form a ontolex:Form ;
+    ontolex:writtenRep "year"@en .
+
+nepalica:8637#en001105 a dbr:Number ;
+    :followedBy nepalica:8637#en001106 ;
+    ontolex:writtenRep "1826"@en .
+
+nepalica:8637#en001106 a dbr:Number ;
+    :followedBy nepalica:8637#en001107 ;
+    ontolex:writtenRep "1769"@en .
+
+nepalica:8637#en001107 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:8637#en001108 ;
+    ontolex:canonicalForm nepalica:8637#en001107_form .
+
+nepalica:8637#en001107_form a ontolex:Form ;
+    ontolex:writtenRep "CE"@en .
+
+nepalica:8637#en001108 a gn:Feature ;
+    rdfs:label "Kāntīpura"@ne ,
+        "कांतीपुर"@ne ;
+    gn:name "Kāntīpura"@ne ;
+    rdfs:comment "also known as: Kāḍamāḍau, Kantipur, Kāṣthamaṇḍapa, Kāṭhamāḍau, Kāṭhmāḍu, Yẽ; capital of Nepal, declared capital by Pṛthvīnārāyaṇa Śāha on 21 March 1770; a district in Central Nepal, part of Bagmati Province;"@en ;
+    rdfs:seeAlso dbr:Kathmandu ,
+        geonames:12095484 ,
+        geonames:1283240 ,
+        gnd:4030036-5 ,
+        nepalica_reg:26 ,
+        viaf:158284130 ,
+        wiki:Kathmandu ,
+        wiki:Kathmandu_District ,
+        wikidata:testont_wikidata_1232 ;
+    skos:altLabel "Kathmandu"@ne .
+

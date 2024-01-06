@@ -1,0 +1,153 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix gndo: <https://d-nb.info/standards/elementset/gnd#> .
+@prefix nepalica_reg: <https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix geonames: <https://sws.geonames.org/> .
+@prefix dbr: <https://dbpedia.org/resource/> .
+@prefix wiki: <https://de.wikipedia.org/wiki/> .
+@prefix viaf: <https://viaf.org/viaf/> .
+@prefix gnd: <https://d-nb.info/gnd/> .
+@prefix wikidata: <https://www.wikidata.org/wiki/> .
+@prefix nepalica_gloss: <https://nepalica.hadw-bw.de/nepal/words/viewitem/> .
+@prefix lime: <http://www.w3.org/ns/lemon/lime#> .
+@prefix lexvo: <http://lexvo.org/id/iso639-3/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+
+
+nepalica:1100#Aiśvaryā a foaf:Person ;
+    rdfs:label "Aiśvaryā"@ne ;
+    schema:gender schema:Female ;
+    rdfs:comment "also known as: Aishwarya of Nepal, Chadani Shah; born: 7 November 1949 in Patan; died: 1 June 2001 in Narāyaṇahiṭi Palace (killed in royal massacre);  father: General Kendra Śamśera Jaṅga Bahādura Rāṇā; mother: Śrī Rājyalakṣmī Devī; spouse: King Vīrendra Vikrama Śāha (married 1970); children: King Dīpendra Vikrama Śāha, Princess Śrutī Rājyalakṣmī Devī, Prince Nirājan Vikrama Śāha; details: queen of Nepal (31 January 1972 – 1 June 2001); was also a poet under the pen name Chadani Shah and song composer; normdata:"@ne ;
+    rdfs:seeAlso gnd:1018114203 ,
+        nepalica_reg:1345 ,
+        viaf:11090985 ,
+        wiki:Queen_Aishwarya_of_Nepal ;
+    foaf:name "Aiśvaryā"@ne ;
+    gndo:surname "Śāha"@ne .
+
+nepalica:1100#Arjī a skos:Concept ;
+    rdfs:comment "var. arji; n. 1) request, petition, application. 2) a respectful letter to a superior authority, especially the king. t.t."@en ;
+    skos:prefLabel "Arjī"@ne ;
+    skos:related nepalica_gloss:855 .
+
+nepalica:1100#Aḍaṅga_Bahādura a foaf:Person ;
+    rdfs:label "Aḍaṅga Bahādura"@ne ,
+        "अडंग वाहादुर"@ne ;
+    schema:gender schema:Male ;
+    rdfs:comment "flourished: 1838 (VS 1894, DNA_0001_0005) – 1840 (VS 1897, DNA_0001_0010);  details: elephant in the stable of Palpa."@ne ;
+    rdfs:seeAlso nepalica_reg:11 ;
+    foaf:name "Aḍaṅga Bahādura"@ne ;
+    gndo:surname ""@ne .
+
+nepalica:1100#Citavana a gn:Feature ;
+    rdfs:label "Citavana"@ne ,
+        "चितवन्‌को"@ne ;
+    gn:name "Citavana"@ne ;
+    rdfs:comment "also known as Citavana; a district in the subtropical area in the inner Tarai lowlands of south-central Nepal, part of the Bagmati Province; a valley lying in the districts of Makwanpur, Parsa, Chitwan and Nawalpur, parts of which were established as the Chitwan National Park in 1974, granted the status of a World Heritage Site in 1984;"@en ;
+    rdfs:seeAlso geonames:1283304 ,
+        gnd:4394798-0 ,
+        nepalica_reg:9 ,
+        viaf:126724905 ,
+        wiki:Chitwan_District ,
+        wiki:Chitwan_Valley .
+
+nepalica:1100#Gīrvāṇayuddha a foaf:Person ;
+    rdfs:label "Gīrvāṇayuddha"@ne ;
+    rdfs:comment "born: 1 October 1797 (VS 1854 āśv 19 gate / āśv śu 11 Sunday, according to Panta VS 2023a: 50), according to Buyers 19 October; died: 20 November 1816; father: King Raṇabahādura; mother: Queen Kāntavatī; spouses: Siddhilakṣmī, Gorakṣya Rājyalakṣmī; children: Nārendra Vikrama, King Rājendra Vikrama, Satyarūpā Rājyalakṣmī Devī, Subhāgyasundarī Rājyalakṣmī Devī; details: King of Nepal (r. 8 March 1799 (VS 1855 phāl 28 gate / phāl śu 2 Friday) – 20 November 1816); his vratabandha and marriage took place in May 1808 (VS 1865 pūrvāṅga on vai 23 gate, beginning vivāha 26 gate, Panta VS 2023b: 37-39, bāṭo chekne ritual VS 1865 vai śu 15, DNA_0015_0076); normdata:"@ne ;
+    rdfs:seeAlso gnd:1024019136 ,
+        nepalica_reg:209 ,
+        viaf:252190742 ,
+        wiki:Girvan_Yuddha_Bikram_Shah ;
+    foaf:name "Gīrvāṇayuddha"@ne ;
+    gndo:surname "Śāha"@ne .
+
+nepalica:1100#Haidaraveg a foaf:Person ;
+    rdfs:label "Haidaraveg"@ne ,
+        "हैदरवेग्‌"@ne ;
+    schema:gender schema:Male ;
+    rdfs:comment "flourished: 1838 (VS 1894, DNA_0001_0005);  details: elephant in the stable of Chitwan."@ne ;
+    rdfs:seeAlso nepalica_reg:10 ;
+    foaf:name "Haidaraveg"@ne ;
+    gndo:surname ""@ne .
+
+nepalica:1100#Jaṅga_Bahādura_Rāṇā a foaf:Person ;
+    rdfs:label "Jaṅga Bahādura Rāṇā"@ne ;
+    schema:gender schema:Male ;
+    rdfs:comment "also known as: Jaṃga Bahādura Kavara, Jaṃga Bahādūra Kũvara, Vīra Narasiṃha Kũvara;  born: 18 June 1817 (as Vīra Narasiṃha Kũvara) in Borlang, Gorkha; died: 25 February 1877, in Patharghat, Rautahat; father: Bālanarasiṃha Kũvara; mother: Gaṇeśa Kumārī; children: Bhīma Pratāpa (excluded from Roll of Succession), Jagata Jaṅga, Jīta Jaṅga, Baber Jaṅga, Padma Jaṅga, Raṇavīra Jaṅga, Nara Jaṅga, Ḍambara Jaṅga, Juddha Jaṅga, Lalita Jaṅga, Raṇa Jaṅga, Harṣa Jaṅga and Bīra Jaṅga (see http://www.royalark.net/Nepal/lamb3.htm, the vaṃśavṛkṣa leaves out Jagata Jaṅga, Jīta Jaṅga and others: Śamaśera 1999: vaṃśavṛkṣa 7); details: sacrificed buffaloes at Mūlacoka, Kathmandu in 1843 (VS 1900, E_2775_0040) and 1845 (VS 1902, E_2779_0019); held the title of kājī between 1843 (VS 1900, E_2775_0040) and April 1845 (VS 1902 vai, K_0031_0019C); held the title of general in October 1845 (VS 1902 āśv, E_2779_0019); appointed Prime Minister and Commander-in-chief in 1846; conferred the title of Mahārājā of Kaski and Lamjung 6 August 1856 (Kumar 1967: 78–79);"@ne ;
+    rdfs:seeAlso gnd:120237504 ,
+        nepalica_reg:12 ,
+        viaf:18627957 ;
+    foaf:name "Jaṅga Bahādura Rāṇā"@ne ;
+    gndo:surname "Kũvara Rāṇā"@ne .
+
+nepalica:1100#Pālpā a gn:Feature ;
+    rdfs:label "Pālpā"@ne ,
+        "पाल्‌‌पा"@ne ;
+    gn:name "Pālpā"@ne ;
+    rdfs:comment "also known as: Pālapā, Pālpā; a district in Western Nepal, part of the Lumbini Province province; former principality and last of the independent Caubīsī Rājya, annexed by Raṇabahādura Śāha after his return from exile in 1804 (Kumar 1967: 12); one of three \"first courts of appeal\" known as gauḍās (Kumar 1967: 130)."@en ;
+    rdfs:seeAlso nepalica_reg:5 ,
+        wiki:Kingdom_of_Palpa ,
+        wiki:Palpa_District .
+
+nepalica:1100#Raṇa_Prakāśa a foaf:Person ;
+    rdfs:label "Raṇa Prakāśa"@ne ,
+        "रण प्रकास"@ne ;
+    schema:gender schema:Male ;
+    rdfs:comment "flourished: 1838 (VS 1894, DNA_0001_0005);  details: elephant captured in Chitwan in VS 1894."@ne ;
+    rdfs:seeAlso nepalica_reg:8 ;
+    foaf:name "Raṇa Prakāśa"@ne ;
+    gndo:surname ""@ne .
+
+nepalica:1100#Raṇadala_Pā̃ḍe a foaf:Person ;
+    rdfs:label "Raṇadala Pā̃ḍe"@ne ,
+        "रणदल पाँडेकस्य"@ne ;
+    schema:gender schema:Male ;
+    rdfs:comment "flourished: 1838 (VS 1894) – 1840 (VS1897);  details: held the title of officer posted in Tansen in 1838 (VS 1894); posted in Banjariya, Palhi of Nawalparasi district in 1840 (VS 1897)."@ne ;
+    rdfs:seeAlso nepalica_reg:21 ;
+    foaf:name "Raṇadala Pā̃ḍe"@ne ;
+    gndo:surname "Pā̃ḍe / Pāṇḍe"@ne .
+
+nepalica:1100#Tānasen a gn:Feature ;
+    rdfs:label "Tānasen"@ne ,
+        "तानसेन्‌‌"@ne ;
+    gn:name "Tānasen"@ne ;
+    rdfs:comment "also known as Tānasiṃ, Tānaseṃ, Tānasena; a municipality and the administrative centre of Palpa district; _Nepal."@en ;
+    rdfs:seeAlso nepalica_reg:20 ,
+        wiki:Tansen .
+
+nepalica:1100#Vīrendra a foaf:Person ;
+    rdfs:label "Vīrendra"@ne ;
+    schema:gender schema:Male ;
+    rdfs:comment "born: 28 December 1945 in Narāyaṇahiṭi Palace; died: 1 June 2001 in Narāyaṇahiṭi Palace (killed in the royal massacre);  father: King Mahendra Vikrama Śāha; mother: Indra Rājyalakṣmī Devī; spouse: Aiśvaryā Rājyalakṣmī Devī (married 1970); children: King Dipendra Vikrama Śāha, Princess Śrutī Rājyalakṣmī Devī, Prince Nirājan Vikrama Śāha; details: King of Nepal (r. 31 January 1972 – 1 June 2001); lifted the ban on political parties and agreed to become a constitutional monarch in April 1990; normdata:"@ne ;
+    rdfs:seeAlso gnd:124485308 ,
+        nepalica_reg:1344 ,
+        viaf:28005924 ,
+        wiki:Birendra_of_Nepal ;
+    foaf:name "Vīrendra"@ne ;
+    gndo:surname "Śāha"@ne .
+
+nepalica:1100#dārogā a skos:Concept ;
+    rdfs:comment "n. elephant stable manager; cp. Edwards 1975: 109; Krauskopff and Meyer 2000: 183; Locke 2006: 149. t.t."@en ;
+    skos:prefLabel "dārogā"@ne ;
+    skos:related nepalica_gloss:1889 .
+
+nepalica:1100#lālamohara a skos:Concept ;
+    rdfs:comment "var. lālmohara, lālamohar, lālmohora; abbreviated mohara; n. royal document bearing the red seal. t.t."@en ;
+    skos:prefLabel "lālamohara"@ne ;
+    skos:related nepalica_gloss:992 .
+
+nepalica:1100#māhut a skos:Concept ;
+    rdfs:comment "var. māhut; n. elephant rider. t.t."@en ;
+    skos:altLabel "māhuta"@ne ;
+    skos:prefLabel "māhut"@ne ;
+    skos:related nepalica_gloss:1891 .
+
+nepalica:1100#rāut a skos:Concept ;
+    rdfs:comment "n. head of the elephant care team; a Tharu surname; cp. Locke 2006: 148f., Krauskopff and Meyer 2000: 185. t.t."@en ;
+    skos:altLabel "rāuta"@ne ;
+    skos:prefLabel "rāut"@ne ;
+    skos:related nepalica_gloss:1890 .
+

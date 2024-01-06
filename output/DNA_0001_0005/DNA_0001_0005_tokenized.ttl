@@ -1,0 +1,375 @@
+@prefix : <http://example.org/> .
+@prefix dbr: <https://dbpedia.org/resource/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix gndo: <https://d-nb.info/standards/elementset/gnd#> .
+@prefix lime: <http://www.w3.org/ns/lemon/lime#> .
+@prefix nepalica: <https://nepalica.hadw-bw.de/nepal/editions/show/> .
+@prefix nepalica_reg: <https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix geonames: <https://sws.geonames.org/> .
+@prefix dbr: <https://dbpedia.org/resource/> .
+@prefix wiki: <https://de.wikipedia.org/wiki/> .
+@prefix viaf: <https://viaf.org/viaf/> .
+@prefix gnd: <https://d-nb.info/gnd/> .
+@prefix wikidata: <https://www.wikidata.org/wiki/> .
+@prefix nepalica_gloss: <https://nepalica.hadw-bw.de/nepal/words/viewitem/> .
+@prefix lime: <http://www.w3.org/ns/lemon/lime#> .
+@prefix lexvo: <http://lexvo.org/id/iso639-3/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+
+
+nepalica:1100 a dct:Document ,
+        lime:Lexicon ;
+    dct:abstract "Raṇa Dala Pā̃ḍe writes this letter to the authority concerned in respect of offering an elephant named Raṇa Prakāśā from Citavana."@en ;
+    dct:date "VS 1894 Caitra bright 15 Monday"@en ;
+    dct:description "This is a text edition of the project “Documents on the History of Religion and Law of Pre-modern Nepal”, Heidelberg Academy of Sciences and Humanities, https://www.hadw-bw.de/nepal.”@en" ;
+    dct:extent "damaged by moths; complete"@en ;
+    dct:format "30; 21; cm"@en ;
+    dct:hasPart "5"@en ;
+    dct:identifier "DNA_0001_0005"@en ;
+    dct:language lexvo:en ,
+        lexvo:ne ;
+    dct:publisher "National Archives Kathmandu; Ms. no. 5"@en ;
+    dct:source "NGMPP catalogue card; Microfilmed on 21/02/2000 as NGMPP DNA 1/5"@en ;
+    dct:title "An arjī from Raṇadala Pā̃ḍe re the capturing of elephants (VS 1894)"@en ;
+    dct:type "ciṭṭhīpatra, arjī; unspecified"@en ;
+    schema:created "12/7/16, 3:44 PM"@en ;
+    lime:language "unspecified; Devanagari"@en .
+
+nepalica:1100#en000617 a skos:Concept ;
+    :followedBy nepalica:1100#en000618 ;
+    rdfs:comment "var. arji; n. 1) request, petition, application. 2) a respectful letter to a superior authority, especially the king. t.t."@en ;
+    skos:prefLabel "Arjī"@ne ;
+    skos:related nepalica_gloss:855 .
+
+nepalica:1100#en000618 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1100#en000619 ;
+    ontolex:canonicalForm nepalica:1100#en000618_form .
+
+nepalica:1100#en000618_form a ontolex:Form ;
+    ontolex:writtenRep "Regarding"@en .
+
+nepalica:1100#en000619 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1100#en000620 ;
+    ontolex:canonicalForm nepalica:1100#en000619_form .
+
+nepalica:1100#en000619_form a ontolex:Form ;
+    ontolex:writtenRep "the"@en .
+
+nepalica:1100#en000620 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1100#en000621 ;
+    ontolex:canonicalForm nepalica:1100#en000620_form .
+
+nepalica:1100#en000620_form a ontolex:Form ;
+    ontolex:writtenRep "following"@en .
+
+nepalica:1100#en000621 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1100#en000622 ;
+    ontolex:canonicalForm nepalica:1100#en000621_form .
+
+nepalica:1100#en000621_form a ontolex:Form ;
+    ontolex:writtenRep "This"@en .
+
+nepalica:1100#en000622 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1100#en000623 ;
+    ontolex:canonicalForm nepalica:1100#en000622_form .
+
+nepalica:1100#en000622_form a ontolex:Form ;
+    ontolex:writtenRep "time"@en .
+
+nepalica:1100#en000623 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1100#en000624 ;
+    ontolex:canonicalForm nepalica:1100#en000623_form .
+
+nepalica:1100#en000623_form a ontolex:Form ;
+    ontolex:writtenRep "a"@en .
+
+nepalica:1100#en000624 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1100#en000625 ;
+    ontolex:canonicalForm nepalica:1100#en000624_form .
+
+nepalica:1100#en000624_form a ontolex:Form ;
+    ontolex:writtenRep "big"@en .
+
+nepalica:1100#en000625 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1100#en000626 ;
+    ontolex:canonicalForm nepalica:1100#en000625_form .
+
+nepalica:1100#en000625_form a ontolex:Form ;
+    ontolex:writtenRep "ruttish"@en .
+
+nepalica:1100#en000626 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1100#en000627 ;
+    ontolex:canonicalForm nepalica:1100#en000626_form .
+
+nepalica:1100#en000626_form a ontolex:Form ;
+    ontolex:writtenRep "mattā"@en .
+
+nepalica:1100#en000627 a gn:Feature ;
+    rdfs:label "Citavana"@ne ,
+        "चितवन्‌को"@ne ;
+    :followedBy nepalica:1100#en000628 ;
+    gn:name "Citavana"@ne ;
+    rdfs:comment "also known as Citavana; a district in the subtropical area in the inner Tarai lowlands of south-central Nepal, part of the Bagmati Province; a valley lying in the districts of Makwanpur, Parsa, Chitwan and Nawalpur, parts of which were established as the Chitwan National Park in 1974, granted the status of a World Heritage Site in 1984;"@en ;
+    rdfs:seeAlso geonames:1283304 ,
+        gnd:4394798-0 ,
+        nepalica_reg:9 ,
+        viaf:126724905 ,
+        wiki:Chitwan_District ,
+        wiki:Chitwan_Valley .
+
+nepalica:1100#en000628 :followedBy nepalica:1100#en000629 .
+
+nepalica:1100#en000629 :followedBy nepalica:1100#en000630 .
+
+nepalica:1100#en000630 a foaf:Person ;
+    rdfs:label "Haidaraveg"@ne ,
+        "हैदरवेग्‌"@ne ;
+    :followedBy nepalica:1100#en000631 ;
+    schema:gender schema:Male ;
+    rdfs:comment "flourished: 1838 (VS 1894, DNA_0001_0005);  details: elephant in the stable of Chitwan."@ne ;
+    rdfs:seeAlso nepalica_reg:10 ;
+    foaf:name "Haidaraveg"@ne ;
+    gndo:surname ""@ne .
+
+nepalica:1100#en000631 a skos:Concept ;
+    :followedBy nepalica:1100#en000632 ;
+    rdfs:comment "n. elephant stable manager; cp. Edwards 1975: 109; Krauskopff and Meyer 2000: 183; Locke 2006: 149. t.t."@en ;
+    skos:prefLabel "dārogā"@ne ;
+    skos:related nepalica_gloss:1889 .
+
+nepalica:1100#en000632 a skos:Concept ;
+    :followedBy nepalica:1100#en000633 ;
+    rdfs:comment "n. head of the elephant care team; a Tharu surname; cp. Locke 2006: 148f., Krauskopff and Meyer 2000: 185. t.t."@en ;
+    skos:altLabel "rāuta"@ne ;
+    skos:prefLabel "rāut"@ne ;
+    skos:related nepalica_gloss:1890 .
+
+nepalica:1100#en000633 a skos:Concept ;
+    :followedBy nepalica:1100#en000634 ;
+    rdfs:comment "var. māhut; n. elephant rider. t.t."@en ;
+    skos:altLabel "māhuta"@ne ;
+    skos:prefLabel "māhut"@ne ;
+    skos:related nepalica_gloss:1891 .
+
+nepalica:1100#en000634 :followedBy nepalica:1100#en000635 .
+
+nepalica:1100#en000635 :followedBy nepalica:1100#en000636 .
+
+nepalica:1100#en000636 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1100#en000637 ;
+    ontolex:canonicalForm nepalica:1100#en000636_form .
+
+nepalica:1100#en000636_form a ontolex:Form ;
+    ontolex:writtenRep "hātisāra"@en .
+
+nepalica:1100#en000637 a gn:Feature ;
+    rdfs:label "Pālpā"@ne ,
+        "पाल्‌‌पा"@ne ;
+    :followedBy nepalica:1100#en000638 ;
+    gn:name "Pālpā"@ne ;
+    rdfs:comment "also known as: Pālapā, Pālpā; a district in Western Nepal, part of the Lumbini Province province; former principality and last of the independent Caubīsī Rājya, annexed by Raṇabahādura Śāha after his return from exile in 1804 (Kumar 1967: 12); one of three \"first courts of appeal\" known as gauḍās (Kumar 1967: 130)."@en ;
+    rdfs:seeAlso nepalica_reg:5 ,
+        wiki:Kingdom_of_Palpa ,
+        wiki:Palpa_District .
+
+nepalica:1100#en000638 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1100#en000639 ;
+    ontolex:canonicalForm nepalica:1100#en000638_form .
+
+nepalica:1100#en000638_form a ontolex:Form ;
+    ontolex:writtenRep "Monday"@en .
+
+nepalica:1100#en000639 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1100#en000640 ;
+    ontolex:canonicalForm nepalica:1100#en000639_form .
+
+nepalica:1100#en000639_form a ontolex:Form ;
+    ontolex:writtenRep "the"@en .
+
+nepalica:1100#en000640 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1100#en000641 ;
+    ontolex:canonicalForm nepalica:1100#en000640_form .
+
+nepalica:1100#en000640_form a ontolex:Form ;
+    ontolex:writtenRep "15th"@en .
+
+nepalica:1100#en000641 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1100#en000642 ;
+    ontolex:canonicalForm nepalica:1100#en000641_form .
+
+nepalica:1100#en000641_form a ontolex:Form ;
+    ontolex:writtenRep "of"@en .
+
+nepalica:1100#en000642 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1100#en000643 ;
+    ontolex:canonicalForm nepalica:1100#en000642_form .
+
+nepalica:1100#en000642_form a ontolex:Form ;
+    ontolex:writtenRep "the"@en .
+
+nepalica:1100#en000643 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1100#en000644 ;
+    ontolex:canonicalForm nepalica:1100#en000643_form .
+
+nepalica:1100#en000643_form a ontolex:Form ;
+    ontolex:writtenRep "bright"@en .
+
+nepalica:1100#en000644 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1100#en000645 ;
+    ontolex:canonicalForm nepalica:1100#en000644_form .
+
+nepalica:1100#en000644_form a ontolex:Form ;
+    ontolex:writtenRep "fortnight"@en .
+
+nepalica:1100#en000645 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1100#en000646 ;
+    ontolex:canonicalForm nepalica:1100#en000645_form .
+
+nepalica:1100#en000645_form a ontolex:Form ;
+    ontolex:writtenRep "of"@en .
+
+nepalica:1100#en000646 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1100#en000647 ;
+    ontolex:canonicalForm nepalica:1100#en000646_form .
+
+nepalica:1100#en000646_form a ontolex:Form ;
+    ontolex:writtenRep "Caitra"@en .
+
+nepalica:1100#en000647 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1100#en000648 ;
+    ontolex:canonicalForm nepalica:1100#en000647_form .
+
+nepalica:1100#en000647_form a ontolex:Form ;
+    ontolex:writtenRep "in"@en .
+
+nepalica:1100#en000648 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1100#en000649 ;
+    ontolex:canonicalForm nepalica:1100#en000648_form .
+
+nepalica:1100#en000648_form a ontolex:Form ;
+    ontolex:writtenRep "the"@en .
+
+nepalica:1100#en000649 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1100#en000650 ;
+    ontolex:canonicalForm nepalica:1100#en000649_form .
+
+nepalica:1100#en000649_form a ontolex:Form ;
+    ontolex:writtenRep "Vikrama"@en .
+
+nepalica:1100#en000650 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1100#en000651 ;
+    ontolex:canonicalForm nepalica:1100#en000650_form .
+
+nepalica:1100#en000650_form a ontolex:Form ;
+    ontolex:writtenRep "era"@en .
+
+nepalica:1100#en000651 a dbr:Number ;
+    :followedBy nepalica:1100#en000652 ;
+    ontolex:writtenRep "1894"@en .
+
+nepalica:1100#en000652 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1100#en000653 ;
+    ontolex:canonicalForm nepalica:1100#en000652_form .
+
+nepalica:1100#en000652_form a ontolex:Form ;
+    ontolex:writtenRep "from"@en .
+
+nepalica:1100#en000653 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1100#en000654 ;
+    ontolex:canonicalForm nepalica:1100#en000653_form .
+
+nepalica:1100#en000653_form a ontolex:Form ;
+    ontolex:writtenRep "the"@en .
+
+nepalica:1100#en000654 a gn:Feature ;
+    rdfs:label "Tānasen"@ne ,
+        "तानसेन्‌‌"@ne ;
+    :followedBy nepalica:1100#en000655 ;
+    gn:name "Tānasen"@ne ;
+    rdfs:comment "also known as Tānasiṃ, Tānaseṃ, Tānasena; a municipality and the administrative centre of Palpa district; _Nepal."@en ;
+    rdfs:seeAlso nepalica_reg:20 ,
+        wiki:Tansen .
+
+nepalica:1100#en000655 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1100#en000656 ;
+    ontolex:canonicalForm nepalica:1100#en000655_form .
+
+nepalica:1100#en000655_form a ontolex:Form ;
+    ontolex:writtenRep "Tens"@en .
+
+nepalica:1100#en000656 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1100#en000657 ;
+    ontolex:canonicalForm nepalica:1100#en000656_form .
+
+nepalica:1100#en000656_form a ontolex:Form ;
+    ontolex:writtenRep "of"@en .
+
+nepalica:1100#en000657 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1100#en000658 ;
+    ontolex:canonicalForm nepalica:1100#en000657_form .
+
+nepalica:1100#en000657_form a ontolex:Form ;
+    ontolex:writtenRep "millions"@en .
+
+nepalica:1100#en000658 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1100#en000659 ;
+    ontolex:canonicalForm nepalica:1100#en000658_form .
+
+nepalica:1100#en000658_form a ontolex:Form ;
+    ontolex:writtenRep "of"@en .
+
+nepalica:1100#en000659 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1100#en000660 ;
+    ontolex:canonicalForm nepalica:1100#en000659_form .
+
+nepalica:1100#en000659_form a ontolex:Form ;
+    ontolex:writtenRep "eightfold"@en .
+
+nepalica:1100#en000660 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1100#en000661 ;
+    ontolex:canonicalForm nepalica:1100#en000660_form .
+
+nepalica:1100#en000660_form a ontolex:Form ;
+    ontolex:writtenRep "salutations"@en .
+
+nepalica:1100#en000661 :followedBy nepalica:1100#en000662 .
+
+nepalica:1100#en000662 :followedBy nepalica:1100#en000663 .
+

@@ -1,0 +1,61 @@
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix nepalica_reg: <https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix geonames: <https://sws.geonames.org/> .
+@prefix dbr: <https://dbpedia.org/resource/> .
+@prefix wiki: <https://de.wikipedia.org/wiki/> .
+@prefix viaf: <https://viaf.org/viaf/> .
+@prefix gnd: <https://d-nb.info/gnd/> .
+@prefix wikidata: <https://www.wikidata.org/wiki/> .
+@prefix nepalica_gloss: <https://nepalica.hadw-bw.de/nepal/words/viewitem/> .
+@prefix lime: <http://www.w3.org/ns/lemon/lime#> .
+@prefix lexvo: <http://lexvo.org/id/iso639-3/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+
+
+nepalica:26422#Guital_Tebh a gn:Feature ;
+    rdfs:label "Guital Tebh"@ne ,
+        "गुइत ते"@ne ;
+    gn:name "Guital Tebh"@ne ;
+    rdfs:comment "a locality in Patan."@en ;
+    rdfs:seeAlso nepalica_reg:962 .
+
+nepalica:26422#Patan a gn:Feature ;
+    rdfs:label "Patan"@ne ,
+        "पाटन्‌"@ne ;
+    gn:name "Patan"@ne ;
+    rdfs:comment "also known as Lalitpur, Lalitapura; one of the three major cities in the Kathmandu Valley; a district in Central Nepal, part of the Bagmati Province;  _Nepal."@en ;
+    rdfs:seeAlso dbr:Lalitpur ,
+        nepalica_reg:27 ,
+        wiki:Lalitpur,Nepal .
+
+nepalica:26422#Vāchu_Nani a gn:Feature ;
+    rdfs:label "Vāchu Nani"@ne ,
+        "व ननि"@ne ;
+    gn:name "Vāchu Nani"@ne ;
+    rdfs:comment "a dwelling cluster (nani) in Patan."@en ;
+    rdfs:seeAlso nepalica_reg:961 .
+
+nepalica:26422#lihalagata a skos:Concept ;
+    rdfs:comment "var. gatalīhal, gatalihala, gataliha; adj. 1) current legal currency. 2) legally borrowed (money) with a written agreement (cf. NBŚ s.v. lihala). t.t."@en ;
+    skos:prefLabel "lihalagata"@ne ;
+    skos:related nepalica_gloss:2187 .
+
+nepalica:26422#mohara_rupaiyā a skos:Concept ;
+    rdfs:comment """var. mohararupaiyām, mohararūpaiyā, moharaṭaṃkā (New.); often abbreviated as moru, morū, moharu, moharū, moharru, mohorru; n. monetary unit based on and equivalent to two eight-anna silver coins (moharas); in calculations usually broken down into four sukās, 16 ānās or 64 paisās (cf. Pant and Pierce 1989: 93) or 256 dāmas; the exchange ratio with paisās was calculated differently at different times and in different parts of the kingdom, depending on the relative values of silver and copper, ranging between 52 and 80 paisās (Regmi 1982: 73).\r
+\r
+In documents sums are represented in four numerical fractions, with the rupaiyā represented by numbers; the sukās by one to three daṇḍas or the avagraha sign representing zero; the ānās by one to three diagonal dashes, sometimes as a loop with two or three jags; the paisās again by daṇḍas or numbers; the dāmas by numbers or horizontal dashes. t.t."""@en ;
+    skos:prefLabel "mohara rupaiyā"@ne ;
+    skos:related nepalica_gloss:1027 .
+
+nepalica:26422#tamasuka a skos:Concept ;
+    rdfs:comment "var. tamasuk, tamsuk; n. a deed of loan transaction. t.t."@en ;
+    skos:prefLabel "tamasuka"@ne ;
+    skos:related nepalica_gloss:1998 .
+
+nepalica:26422#Śrī a skos:Concept ;
+    rdfs:comment "[S.] n. word of blessing, can be used as apprecatio, in which case it means 'good fortune' (Pant and Pierce 1989: 12), can be used as a prefix to names of persons and gods, in which case it means 'venerable' or 'glorious' respectively. The number of śrīs used varies, depending on context. t.t."@en ;
+    skos:prefLabel "Śrī"@ne ;
+    skos:related nepalica_gloss:1869 .
+

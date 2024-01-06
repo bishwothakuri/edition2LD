@@ -1,0 +1,526 @@
+{
+    "words": [
+        {
+            "token_id": "en_000001",
+            "text": "Śrī",
+            "tag_name": "term"
+        },
+        {
+            "token_id": "en_000002",
+            "text": "No"
+        },
+        {
+            "token_id": "en_000003",
+            "text": "1"
+        },
+        {
+            "token_id": "en_000004",
+            "text": "Glorious"
+        },
+        {
+            "token_id": "en_000005",
+            "text": "Saṃkaṭā"
+        },
+        {
+            "token_id": "en_000006",
+            "text": "3"
+        },
+        {
+            "token_id": "en_000007",
+            "text": "Venerable"
+        },
+        {
+            "token_id": "en_000008",
+            "text": "Sarkāra",
+            "tag_name": "term"
+        },
+        {
+            "token_id": "en_000009",
+            "text": "The"
+        },
+        {
+            "token_id": "en_000010",
+            "text": "fivefold"
+        },
+        {
+            "token_id": "en_000011",
+            "text": "venerable"
+        },
+        {
+            "token_id": "en_000012",
+            "text": "great"
+        },
+        {
+            "token_id": "en_000013",
+            "text": "king"
+        },
+        {
+            "token_id": "en_000014",
+            "text": "2"
+        },
+        {
+            "token_id": "en_000015",
+            "text": "Hail"
+        },
+        {
+            "token_id": "en_000016",
+            "text": "This"
+        },
+        {
+            "token_id": "en_000017",
+            "text": "letter"
+        },
+        {
+            "token_id": "en_000018",
+            "text": "of"
+        },
+        {
+            "token_id": "en_000019",
+            "text": "Aravindanātha",
+            "tag_name": "persName"
+        },
+        {
+            "token_id": "en_000020",
+            "text": "Gajuryāla",
+            "tag_name": "persName"
+        },
+        {
+            "token_id": "en_000021",
+            "text": "Bhīmasena",
+            "tag_name": "persName"
+        },
+        {
+            "token_id": "en_000022",
+            "text": "Thāpā",
+            "tag_name": "persName"
+        },
+        {
+            "token_id": "en_000023",
+            "text": "Here"
+        },
+        {
+            "token_id": "en_000024",
+            "text": "everything"
+        },
+        {
+            "token_id": "en_000025",
+            "text": "is"
+        },
+        {
+            "token_id": "en_000026",
+            "text": "fine"
+        },
+        {
+            "token_id": "en_000027",
+            "text": "We"
+        },
+        {
+            "token_id": "en_000028",
+            "text": "daily"
+        },
+        {
+            "token_id": "en_000029",
+            "text": "carry"
+        },
+        {
+            "token_id": "en_000030",
+            "text": "the"
+        },
+        {
+            "token_id": "en_000031",
+            "text": "welfare"
+        },
+        {
+            "token_id": "en_000032",
+            "text": "of"
+        },
+        {
+            "token_id": "en_000033",
+            "text": "your"
+        },
+        {
+            "token_id": "en_000034",
+            "text": "feet"
+        },
+        {
+            "token_id": "en_000035",
+            "text": "in"
+        },
+        {
+            "token_id": "en_000036",
+            "text": "our"
+        },
+        {
+            "token_id": "en_000037",
+            "text": "thoughts"
+        },
+        {
+            "token_id": "en_000038",
+            "text": "Uprānta",
+            "tag_name": "term"
+        },
+        {
+            "token_id": "en_000039",
+            "text": "Vārāṇasī",
+            "tag_name": "placeName"
+        },
+        {
+            "token_id": "en_000040",
+            "text": "anuṣṭhāna"
+        },
+        {
+            "token_id": "en_000041",
+            "text": "Lalitatripurasundarī",
+            "tag_name": "persName"
+        },
+        {
+            "token_id": "en_000042",
+            "text": "anuṣṭhāna"
+        },
+        {
+            "token_id": "en_000043",
+            "text": "Kathmandu",
+            "tag_name": "placeName"
+        },
+        {
+            "token_id": "en_000044",
+            "text": "Siddhāntakaumudī"
+        },
+        {
+            "token_id": "en_000045",
+            "text": "Sūryasiddhānta"
+        },
+        {
+            "token_id": "en_000046",
+            "text": "Līlāvatī"
+        },
+        {
+            "token_id": "en_000047",
+            "text": "Bījagaṇita"
+        },
+        {
+            "token_id": "en_000048",
+            "text": "Muhūrttacintāmaṇi"
+        },
+        {
+            "token_id": "en_000049",
+            "text": "Karṇakutūhala"
+        },
+        {
+            "token_id": "en_000050",
+            "text": "Makaranda"
+        },
+        {
+            "token_id": "en_000051",
+            "text": "Grahalāghava"
+        },
+        {
+            "token_id": "en_000052",
+            "text": "Ratnamālā"
+        },
+        {
+            "token_id": "en_000053",
+            "text": "Bṛhajjātaka"
+        },
+        {
+            "token_id": "en_000054",
+            "text": "Keśavīpaddhati"
+        },
+        {
+            "token_id": "en_000055",
+            "text": "Śrīpatipaddhati"
+        },
+        {
+            "token_id": "en_000056",
+            "text": "Viṭṭhalapaddhati"
+        },
+        {
+            "token_id": "en_000057",
+            "text": "Siddhāntatattvaviveka"
+        },
+        {
+            "token_id": "en_000058",
+            "text": "Śabdenduśekhara"
+        },
+        {
+            "token_id": "en_000059",
+            "text": "Manoramā"
+        },
+        {
+            "token_id": "en_000060",
+            "text": "Samrāṭsiddhānta"
+        },
+        {
+            "token_id": "en_000061",
+            "text": "Vaśiṣṭhasiddhānta"
+        },
+        {
+            "token_id": "en_000062",
+            "text": "Brahmasiddhānta"
+        },
+        {
+            "token_id": "en_000063",
+            "text": "Somasiddhānta"
+        },
+        {
+            "token_id": "en_000064",
+            "text": "Muktāvalī"
+        },
+        {
+            "token_id": "en_000065",
+            "text": "Monday"
+        },
+        {
+            "token_id": "en_000066",
+            "text": "the"
+        },
+        {
+            "token_id": "en_000067",
+            "text": "6th"
+        },
+        {
+            "token_id": "en_000068",
+            "text": "of"
+        },
+        {
+            "token_id": "en_000069",
+            "text": "the"
+        },
+        {
+            "token_id": "en_000070",
+            "text": "dark"
+        },
+        {
+            "token_id": "en_000071",
+            "text": "fortnight"
+        },
+        {
+            "token_id": "en_000072",
+            "text": "of"
+        },
+        {
+            "token_id": "en_000073",
+            "text": "Āśvina"
+        },
+        {
+            "token_id": "en_000074",
+            "text": "in"
+        },
+        {
+            "token_id": "en_000075",
+            "text": "the"
+        },
+        {
+            "token_id": "en_000076",
+            "text": "Vikrama"
+        },
+        {
+            "token_id": "en_000077",
+            "text": "era"
+        },
+        {
+            "token_id": "en_000078",
+            "text": "year"
+        },
+        {
+            "token_id": "en_000079",
+            "text": "1878"
+        },
+        {
+            "token_id": "en_000080",
+            "text": "1821"
+        },
+        {
+            "token_id": "en_000081",
+            "text": "CE"
+        },
+        {
+            "token_id": "en_000082",
+            "text": "Residence"
+        },
+        {
+            "token_id": "en_000083",
+            "text": "Vārāṇasī"
+        },
+        {
+            "token_id": "en_000084",
+            "text": "city"
+        },
+        {
+            "token_id": "en_000085",
+            "text": "Auspiciousness"
+        },
+        {
+            "token_id": "en_000086",
+            "text": "For"
+        },
+        {
+            "token_id": "en_000087",
+            "text": "you"
+        },
+        {
+            "token_id": "en_000088",
+            "text": "there"
+        },
+        {
+            "token_id": "en_000089",
+            "text": "are"
+        },
+        {
+            "token_id": "en_000090",
+            "text": "many"
+        },
+        {
+            "token_id": "en_000091",
+            "text": "like"
+        },
+        {
+            "token_id": "en_000092",
+            "text": "me"
+        },
+        {
+            "token_id": "en_000093",
+            "text": "but"
+        },
+        {
+            "token_id": "en_000094",
+            "text": "for"
+        },
+        {
+            "token_id": "en_000095",
+            "text": "me"
+        },
+        {
+            "token_id": "en_000096",
+            "text": "there"
+        },
+        {
+            "token_id": "en_000097",
+            "text": "is"
+        },
+        {
+            "token_id": "en_000098",
+            "text": "only"
+        },
+        {
+            "token_id": "en_000099",
+            "text": "one"
+        },
+        {
+            "token_id": "en_000100",
+            "text": "like"
+        },
+        {
+            "token_id": "en_000101",
+            "text": "you"
+        },
+        {
+            "token_id": "en_000102",
+            "text": "namely"
+        },
+        {
+            "token_id": "en_000103",
+            "text": "you"
+        },
+        {
+            "token_id": "en_000104",
+            "text": "yourself"
+        },
+        {
+            "token_id": "en_000105",
+            "text": "Are"
+        },
+        {
+            "token_id": "en_000106",
+            "text": "there"
+        },
+        {
+            "token_id": "en_000107",
+            "text": "not"
+        },
+        {
+            "token_id": "en_000108",
+            "text": "numerous"
+        },
+        {
+            "token_id": "en_000109",
+            "text": "water"
+        },
+        {
+            "token_id": "en_000110",
+            "text": "lilies"
+        },
+        {
+            "token_id": "en_000111",
+            "text": "for"
+        },
+        {
+            "token_id": "en_000112",
+            "text": "the"
+        },
+        {
+            "token_id": "en_000113",
+            "text": "moon"
+        },
+        {
+            "token_id": "en_000114",
+            "text": "But"
+        },
+        {
+            "token_id": "en_000115",
+            "text": "for"
+        },
+        {
+            "token_id": "en_000116",
+            "text": "water"
+        },
+        {
+            "token_id": "en_000117",
+            "text": "lilies"
+        },
+        {
+            "token_id": "en_000118",
+            "text": "there"
+        },
+        {
+            "token_id": "en_000119",
+            "text": "is"
+        },
+        {
+            "token_id": "en_000120",
+            "text": "only"
+        },
+        {
+            "token_id": "en_000121",
+            "text": "one"
+        },
+        {
+            "token_id": "en_000122",
+            "text": "like"
+        },
+        {
+            "token_id": "en_000123",
+            "text": "the"
+        },
+        {
+            "token_id": "en_000124",
+            "text": "moon"
+        },
+        {
+            "token_id": "en_000125",
+            "text": "namely"
+        },
+        {
+            "token_id": "en_000126",
+            "text": "the"
+        },
+        {
+            "token_id": "en_000127",
+            "text": "moon"
+        },
+        {
+            "token_id": "en_000128",
+            "text": "itself"
+        }
+    ]
+}

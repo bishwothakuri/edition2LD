@@ -131,7 +131,6 @@ dmypy.json
 # project specific
 testcode/
 dump/
-output/
 *.log
 *.txt
 .DS_Store

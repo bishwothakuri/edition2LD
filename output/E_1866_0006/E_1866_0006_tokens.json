@@ -1,0 +1,187 @@
+{
+    "words": [
+        {
+            "token_id": "en_000001",
+            "text": "Extended"
+        },
+        {
+            "token_id": "en_000002",
+            "text": "Abstract"
+        },
+        {
+            "token_id": "en_000003",
+            "text": "The"
+        },
+        {
+            "token_id": "en_000004",
+            "text": "rukkā",
+            "tag_name": "term"
+        },
+        {
+            "token_id": "en_000005",
+            "text": "Rājendra",
+            "tag_name": "persName"
+        },
+        {
+            "token_id": "en_000006",
+            "text": "Ṭhiṭhubā",
+            "tag_name": "persName"
+        },
+        {
+            "token_id": "en_000007",
+            "text": "Biṣṭa",
+            "tag_name": "persName"
+        },
+        {
+            "token_id": "en_000008",
+            "text": "Silin",
+            "tag_name": "persName"
+        },
+        {
+            "token_id": "en_000009",
+            "text": "Namgyāla",
+            "tag_name": "persName"
+        },
+        {
+            "token_id": "en_000010",
+            "text": "Biṣṭa",
+            "tag_name": "persName"
+        },
+        {
+            "token_id": "en_000011",
+            "text": "Guṃgyāla",
+            "tag_name": "persName"
+        },
+        {
+            "token_id": "en_000012",
+            "text": "Biṣṭa",
+            "tag_name": "persName"
+        },
+        {
+            "token_id": "en_000013",
+            "text": "ciṭhi"
+        },
+        {
+            "token_id": "en_000014",
+            "text": "Bhīmasena",
+            "tag_name": "persName"
+        },
+        {
+            "token_id": "en_000015",
+            "text": "Thāpā",
+            "tag_name": "persName"
+        },
+        {
+            "token_id": "en_000016",
+            "text": "Pokhara",
+            "tag_name": "placeName"
+        },
+        {
+            "token_id": "en_000017",
+            "text": "Nepal",
+            "tag_name": "placeName"
+        },
+        {
+            "token_id": "en_000018",
+            "text": "rukkā"
+        },
+        {
+            "token_id": "en_000019",
+            "text": "sirto",
+            "tag_name": "term"
+        },
+        {
+            "token_id": "en_000020",
+            "text": "cākhurā",
+            "tag_name": "term"
+        },
+        {
+            "token_id": "en_000021",
+            "text": "The"
+        },
+        {
+            "token_id": "en_000022",
+            "text": "document"
+        },
+        {
+            "token_id": "en_000023",
+            "text": "is"
+        },
+        {
+            "token_id": "en_000024",
+            "text": "dated"
+        },
+        {
+            "token_id": "en_000025",
+            "text": "Friday"
+        },
+        {
+            "token_id": "en_000026",
+            "text": "the"
+        },
+        {
+            "token_id": "en_000027",
+            "text": "1st"
+        },
+        {
+            "token_id": "en_000028",
+            "text": "day"
+        },
+        {
+            "token_id": "en_000029",
+            "text": "of"
+        },
+        {
+            "token_id": "en_000030",
+            "text": "the"
+        },
+        {
+            "token_id": "en_000031",
+            "text": "bright"
+        },
+        {
+            "token_id": "en_000032",
+            "text": "fortnight"
+        },
+        {
+            "token_id": "en_000033",
+            "text": "of"
+        },
+        {
+            "token_id": "en_000034",
+            "text": "Pauṣa"
+        },
+        {
+            "token_id": "en_000035",
+            "text": "of"
+        },
+        {
+            "token_id": "en_000036",
+            "text": "the"
+        },
+        {
+            "token_id": "en_000037",
+            "text": "Vikrama"
+        },
+        {
+            "token_id": "en_000038",
+            "text": "era"
+        },
+        {
+            "token_id": "en_000039",
+            "text": "year"
+        },
+        {
+            "token_id": "en_000040",
+            "text": "1877"
+        },
+        {
+            "token_id": "en_000041",
+            "text": "1821"
+        },
+        {
+            "token_id": "en_000042",
+            "text": "CE"
+        }
+    ]
+}
