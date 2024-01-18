@@ -87,14 +87,13 @@ nepalica:1#en000005 a foaf:Person ;
 nepalica:1#en000006 :followedBy nepalica:1#en000007 .
 
 nepalica:1#en000007 a foaf:Person ;
-    rdfs:label "ठिठुवा विष्ट"@ne ,
-        "Ṭhiṭhubā Biṣṭa"@ne ;
+    rdfs:label "Silin Namgyāla Biṣṭa"@ne ,
+        "सिलिन्नम्‌ग्याल विष्ट"@ne ;
     :followedBy nepalica:1#en000008 ;
     schema:gender schema:Male ;
-    rdfs:comment "flourished: 1820 (VS 1877);  details: together with Guṃgyāla Biṣṭa and Silin Namgyāla Biṣṭa wrote a letter to Bhīmasena Thāpā asking whether they should continue their journey from Pokhara delivering a horse to the Kathmandu Valley upon hearing news about smallpox being rampant in the three cities in the valley (E_1866_0006); further literature: for his occurence in documents Pant and Pierce 1989: 28f. n 1; for the cooperation of the influential khri-thog-pa Biṣṭa family with the Gorkhālī rulers, see Dhungel 2002: 122f., 139f. n 38."@ne ;
-    rdfs:seeAlso nepalica_reg:181 ;
-    skos:altLabel "Ṭhiṭubā Biṣṭa" ;
-    foaf:name "Ṭhiṭhubā Biṣṭa"@ne ;
+    rdfs:comment "flourished: 1821 (VS 1877, E_1866_0006);  details: together with Ṭhiṭhubā Biṣṭa and Guṃgyāla Biṣṭa wrote a letter to Bhīmasena Thāpā asking whether they should continue their journey from Pokhara delivering a horse to the Kathmandu Valley upon hearing news about smallpox being rampant in the three cities in the valley (E_1866_0006)."@ne ;
+    rdfs:seeAlso nepalica_reg:182 ;
+    foaf:name "Silin Namgyāla Biṣṭa"@ne ;
     gndo:surname "Biṣṭa"@ne .
 
 nepalica:1#en000008 :followedBy nepalica:1#en000009 .
@@ -102,27 +101,25 @@ nepalica:1#en000008 :followedBy nepalica:1#en000009 .
 nepalica:1#en000009 :followedBy nepalica:1#en000010 .
 
 nepalica:1#en000010 a foaf:Person ;
-    rdfs:label "ठिठुवा विष्ट"@ne ,
-        "Ṭhiṭhubā Biṣṭa"@ne ;
+    rdfs:label "Silin Namgyāla Biṣṭa"@ne ,
+        "सिलिन्नम्‌ग्याल विष्ट"@ne ;
     :followedBy nepalica:1#en000011 ;
     schema:gender schema:Male ;
-    rdfs:comment "flourished: 1820 (VS 1877);  details: together with Guṃgyāla Biṣṭa and Silin Namgyāla Biṣṭa wrote a letter to Bhīmasena Thāpā asking whether they should continue their journey from Pokhara delivering a horse to the Kathmandu Valley upon hearing news about smallpox being rampant in the three cities in the valley (E_1866_0006); further literature: for his occurence in documents Pant and Pierce 1989: 28f. n 1; for the cooperation of the influential khri-thog-pa Biṣṭa family with the Gorkhālī rulers, see Dhungel 2002: 122f., 139f. n 38."@ne ;
-    rdfs:seeAlso nepalica_reg:181 ;
-    skos:altLabel "Ṭhiṭubā Biṣṭa" ;
-    foaf:name "Ṭhiṭhubā Biṣṭa"@ne ;
+    rdfs:comment "flourished: 1821 (VS 1877, E_1866_0006);  details: together with Ṭhiṭhubā Biṣṭa and Guṃgyāla Biṣṭa wrote a letter to Bhīmasena Thāpā asking whether they should continue their journey from Pokhara delivering a horse to the Kathmandu Valley upon hearing news about smallpox being rampant in the three cities in the valley (E_1866_0006)."@ne ;
+    rdfs:seeAlso nepalica_reg:182 ;
+    foaf:name "Silin Namgyāla Biṣṭa"@ne ;
     gndo:surname "Biṣṭa"@ne .
 
 nepalica:1#en000011 :followedBy nepalica:1#en000012 .
 
 nepalica:1#en000012 a foaf:Person ;
-    rdfs:label "ठिठुवा विष्ट"@ne ,
-        "Ṭhiṭhubā Biṣṭa"@ne ;
+    rdfs:label "Silin Namgyāla Biṣṭa"@ne ,
+        "सिलिन्नम्‌ग्याल विष्ट"@ne ;
     :followedBy nepalica:1#en000013 ;
     schema:gender schema:Male ;
-    rdfs:comment "flourished: 1820 (VS 1877);  details: together with Guṃgyāla Biṣṭa and Silin Namgyāla Biṣṭa wrote a letter to Bhīmasena Thāpā asking whether they should continue their journey from Pokhara delivering a horse to the Kathmandu Valley upon hearing news about smallpox being rampant in the three cities in the valley (E_1866_0006); further literature: for his occurence in documents Pant and Pierce 1989: 28f. n 1; for the cooperation of the influential khri-thog-pa Biṣṭa family with the Gorkhālī rulers, see Dhungel 2002: 122f., 139f. n 38."@ne ;
-    rdfs:seeAlso nepalica_reg:181 ;
-    skos:altLabel "Ṭhiṭubā Biṣṭa" ;
-    foaf:name "Ṭhiṭhubā Biṣṭa"@ne ;
+    rdfs:comment "flourished: 1821 (VS 1877, E_1866_0006);  details: together with Ṭhiṭhubā Biṣṭa and Guṃgyāla Biṣṭa wrote a letter to Bhīmasena Thāpā asking whether they should continue their journey from Pokhara delivering a horse to the Kathmandu Valley upon hearing news about smallpox being rampant in the three cities in the valley (E_1866_0006)."@ne ;
+    rdfs:seeAlso nepalica_reg:182 ;
+    foaf:name "Silin Namgyāla Biṣṭa"@ne ;
     gndo:surname "Biṣṭa"@ne .
 
 nepalica:1#en000013 a ontolex:LexicalEntry ,

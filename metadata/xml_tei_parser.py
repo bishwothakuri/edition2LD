@@ -70,7 +70,7 @@ def extract_metadata_from_xml(xml_file, json_file):
         ont_item_occurrences = extract_item_entity_id(tei_id, json_file)
 
         # Extract person names and LOD identifiers
-        name_dict = {}  # Dictionary to store names by ont_item_id
+        name_dict = {}
         for pers_name in root.findall(".//tei:persName", NS):
             n_value = pers_name.get("n", "")
             pers_name_text = " ".join([re.sub(r'\s+', ' ', w.text or "").strip() for w in pers_name.findall(".//tei:w", NS)] + [re.sub(r'\s+', ' ', pers_name.text or "").strip()])
