@@ -3,7 +3,7 @@
 @prefix gndo: <https://d-nb.info/standards/elementset/gnd#> .
 @prefix nepalica_reg: <https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema: <http://schema.org/> .
+@prefix schema1: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix geonames: <https://sws.geonames.org/> .
 @prefix dbr: <https://dbpedia.org/resource/> .
@@ -20,7 +20,7 @@
 nepalica:1#Aravindanātha_Gajuryāla a foaf:Person ;
     rdfs:label "Aravindanātha Gajuryāla"@ne ,
         "अरविन्दना गजुर्यालको"@ne ;
-    schema:gender schema:Male ;
+    schema1:gender schema1:Male ;
     rdfs:comment "flourished: 1821–1822;  details: astrologer studying in Varanasi."@ne ;
     rdfs:seeAlso nepalica_reg:498 ;
     foaf:name "Aravindanātha Gajuryāla"@ne ;
@@ -28,7 +28,7 @@ nepalica:1#Aravindanātha_Gajuryāla a foaf:Person ;
 
 nepalica:1#Bhānu_Jaisī a foaf:Person ;
     rdfs:label "Bhānu Jaisī"@ne ;
-    schema:gender schema:Male ;
+    schema1:gender schema1:Male ;
     rdfs:comment "also known as: Bhānu Jaisī; flourished: 18th century;  father: Jamadagni of Gorkha; details: royal astrologuer under Pṛthvīnārayaṇa Śāha; built the Śrī Bhairaveśa Mahādeva temple at Nuwakot's Devīghāṭ in 1752 (VS 1809; Vajrācārya and Śreṣṭha VS 2032: 76, appendix p. inscription no. 30)."@ne ;
     rdfs:seeAlso nepalica_reg:598 ;
     foaf:name "Bhānu Jaisī"@ne ;
@@ -37,7 +37,7 @@ nepalica:1#Bhānu_Jaisī a foaf:Person ;
 nepalica:1#Bhīmasena_Thāpā a foaf:Person ;
     rdfs:label "Bhīmasena Thāpā"@ne ,
         "श्रीश्रीश्रीजनरलसाहेवभीमसेनथापाकैषु"@ne ;
-    schema:gender schema:Male ;
+    schema1:gender schema1:Male ;
     rdfs:comment "also known as: Bhimsen Thapa; born: August 1775; died: 28 July 1839;  father: Amara Siṃha Thāpā; details: held the titles of general, kājī (appointed April 1804; M.C. Regmi 1995: 59 n. 6), prime minister (mukhtiyāra) and regent for the infant kings Girvāṇayuddha and Surendra from 1806 to 1837, later also addressed as svāmī; normdata:"@ne ;
     rdfs:seeAlso dbr:Bhimsen_Thapa ,
         gnd:1024044661 ,
@@ -73,7 +73,7 @@ nepalica:1#Kathmandu a gn:Feature ;
 
 nepalica:1#Kulānanda a foaf:Person ;
     rdfs:label "Kulānanda"@ne ;
-    schema:gender schema:Male ;
+    schema1:gender schema1:Male ;
     rdfs:comment "flourished: 18th century;  details: held the title of royal astrologer under Pṛthvīnārayaṇa Śāha; together with Bhānu Jaisī predicted that Pṛthvīnārayaṇa Śāha would conquer the Kathmandu Valley (D.R. Panta VS 2073: 11-12)."@ne ;
     rdfs:seeAlso nepalica_reg:813 ;
     foaf:name "Kulānanda"@ne ;
@@ -90,7 +90,7 @@ nepalica:1#Lalitatripurasundarī a foaf:Person ;
 
 nepalica:1#Pṛthvīnārāyaṇa_Śāha a foaf:Person ;
     rdfs:label "Pṛthvīnārāyaṇa Śāha"@ne ;
-    schema:gender schema:Male ;
+    schema1:gender schema1:Male ;
     rdfs:comment "born: 1720 at Gorkha; died: 11 January 1775 at Devighat;  father: Narabhūpāla Śāha, king of Gorkha; spouse: Indra Kumārī Devī, Narendra Rājyalakṣmī Devī; children: Pratāpa Siṃha Śāha, Bahādura Śāha, Vilāsa Kumārī Śāha; details: king of Gorkha (r. 3 April 1743–1768); king of Nepal (r. 1768-1775); normdata:"@ne ;
     rdfs:seeAlso dbr:Prithvi_Narayan_Sha ,
         gnd:119173816 ,
@@ -103,7 +103,7 @@ nepalica:1#Pṛthvīnārāyaṇa_Śāha a foaf:Person ;
 
 nepalica:1#Raghunātha a foaf:Person ;
     rdfs:label "Raghunātha"@ne ;
-    schema:gender schema:Male ;
+    schema1:gender schema1:Male ;
     rdfs:comment "flourished: 1821 (VS 1878) - 1834 (VS 1890);  details: served the royal family as purohita."@ne ;
     rdfs:seeAlso nepalica_reg:210 ;
     foaf:name "Raghunātha"@ne ;
@@ -111,7 +111,7 @@ nepalica:1#Raghunātha a foaf:Person ;
 
 nepalica:1#Raṇa_Bahādura a foaf:Person ;
     rdfs:label "Raṇa Bahādura"@ne ;
-    schema:gender schema:Male ;
+    schema1:gender schema1:Male ;
     rdfs:comment "also known as: Paramanirguṇānanda Svāmī (after his abdication in 1799);  born: 25 May 1775; died: 25 April 1806 (killed); father: King Pratāpa Siṃha; mother: Maharānī Rājendra Rājyalakṣmī Devī; spouses: Mahārānī Rājarājeśvarī Devī (married: 1789), Mahārānī Suvarṇaprabhā Devī, Mahārānī Kāntavatī Devī (married: January 1797), Mahārānī Candrāvatī Devī (married: 1804?, cf. Stiller 1993: 47 n. 12), Mahārānī Amara Rājeśvarī Devī (married: 1804?, cf. Stiller 1993: 47 n. 12), Mahārānī Lalitatripurasundarī Devī (married: 1805), Jeṭhā Nāni Sahaba/Bhitryānī Pūrṇeśvarī, Māhilā Nāni Sahaba/Bhitryānī Mahatab, Sāhilā Nāni Sahaba/Bhitryānī Lakṣmīśvarī (married: 1804), Kānchā Bhitryānī Kasi Jāla (DNA_0013_0086, K_0096_0059) (http://www.royalark.net/Nepal/nepal6.htm); children: Raṇodyota Śāha (by Mahārānī Suvarṇaprabhā Devī), Samaraśera Śāha, (by Mahārānī Suvarṇaprabhā Devī), King Gīrvāṇayuddha (by Mahārānī Kāntavatī Devī); details: King of Nepal (r. 17 November 1777–8 March 1799, abdicated in favor of his son Gīrvāṇayuddha); left Nepal for Varanasi in April 1800, returned March 1804; became mukhtiyāra on 26 February 1806 (VS 1862 phā śu 8); assassinated by this half-brother Śerabahādura Śāha on 25 April (Nepālī 2020: 74–75; Stiller 1993: 44). normadata:"@ne ;
     rdfs:seeAlso nepalica_reg:177 ,
         wiki:Rana_Bahadur_Shah ;

@@ -9,7 +9,7 @@
 @prefix nepalica_reg: <https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/> .
 @prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema: <http://schema.org/> .
+@prefix schema1: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix geonames: <https://sws.geonames.org/> .
 @prefix dbr: <https://dbpedia.org/resource/> .
@@ -41,7 +41,7 @@ nepalica:1 a dct:Document ,
     dct:subject "jogī, ānā"@en ;
     dct:title "A copy of a lālamohara from King Pṛthvīnārāyaṇa appointing Gosāī̃ Bhagavantanātha as central overseer of jogīs (VS 1827)"@en ;
     dct:type "lālamohara; copy"@en ;
-    schema:created "4/6/16, 12:56 PM; 6/11/21, 11:28 AM; 12"@en ;
+    schema1:created "4/6/16, 12:56 PM; 6/11/21, 11:28 AM; 12"@en ;
     lime:language "Nepali; Devanagari"@en .
 
 nepalica:1#en000522 a skos:Concept ;
@@ -380,7 +380,7 @@ nepalica:1#en000564 a foaf:Person ;
     rdfs:label "Sundarīprasāda"@ne ,
         "सुन्दरीप्रसाद"@ne ;
     :followedBy nepalica:1#en000565 ;
-    schema:gender schema:Male ;
+    schema1:gender schema1:Male ;
     rdfs:comment "flourished: 1840 (VS 1897, DNA_0001_0010);  details: elephant in the stable of Pālhi."@ne ;
     rdfs:seeAlso nepalica_reg:120 ;
     foaf:name "Sundarīprasāda"@ne ;
@@ -431,7 +431,7 @@ nepalica:1#en000572 a foaf:Person ;
     rdfs:label "Jasivaṃta Kãvara"@ne ,
         "जसिवंत कँव"@ne ;
     :followedBy nepalica:1#en000573 ;
-    schema:gender schema:Male ;
+    schema1:gender schema1:Male ;
     rdfs:comment "flourished: 1840 (VS1897);  details: resided in Śrīgāũ, Dang; held the title of subedāra."@ne ;
     rdfs:seeAlso nepalica_reg:1442 ;
     foaf:name "Jasivaṃta Kãvara"@ne ;
@@ -443,7 +443,7 @@ nepalica:1#en000574 a foaf:Person ;
     rdfs:label "Lachiman Adhikāri"@ne ,
         "लछिमन् अधिकारिले"@ne ;
     :followedBy nepalica:1#en000575 ;
-    schema:gender schema:Male ;
+    schema1:gender schema1:Male ;
     rdfs:comment "flourished: 1840 (VS 1897) – 1851 (VS 1908);  details: resided in Śrīgāũ, Dang; held the title of jamadāra; sacrificed buffaloes at Mūlacoka, Kathmandu in 1851 (VS 1908); remarks: note that these might be two different persons."@ne ;
     rdfs:seeAlso nepalica_reg:1443 ;
     foaf:name "Lachiman Adhikāri"@ne ;

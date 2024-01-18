@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+   xmlns:gn="http://www.geonames.org/ontology#"
+   xmlns:gndo="https://d-nb.info/standards/elementset/gnd#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:schema1="http://schema.org/"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Jayaprakāśa_Malla">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name xml:lang="ne">Jayaprakāśa Malla</foaf:name>
+    <rdfs:label xml:lang="ne">Jayaprakāśa Malla</rdfs:label>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/556"/>
+    <rdfs:seeAlso rdf:resource="gnd:120152622"/>
+    <rdfs:seeAlso rdf:resource="viaf:8211319"/>
+    <rdfs:seeAlso rdf:resource="wiki:Jaya_Prakash_Malla"/>
+    <rdfs:seeAlso rdf:resource="wikidata:second_priority_when_data_is_Null"/>
+    <rdfs:seeAlso rdf:resource="dbr:seond_priority_when_data_is_Null"/>
+    <rdfs:seeAlso rdf:resource="geonames:second_priority_when_data_is_Null"/>
+    <gndo:surname xml:lang="ne">Malla</gndo:surname>
+    <rdfs:comment xml:lang="ne">d. 1768; king of Kathmandu (r. 1736–1746, and 1750–1768);</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Dhārīnātha">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name xml:lang="ne">Dhārīnātha</foaf:name>
+    <rdfs:label xml:lang="ne">Dhārīnātha</rdfs:label>
+    <rdfs:devanagariLabel xml:lang="ne">धारीनातजी</rdfs:devanagariLabel>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/117"/>
+    <schema1:gender rdf:resource="http://schema.org/Male"/>
+    <gndo:surname xml:lang="ne">Nātha</gndo:surname>
+    <rdfs:comment xml:lang="ne">also known as: Dhārīnātha; flourished: 1905 (VS 1962)–1916;  details: a nāthayogī; appointed as abbot (pīramahanta) of the monastery of Gorakhanātha at Mṛgasthalī by Premier Candra Samśera in 1905 (VS 1962, K_0283_0035; cf. also K_0044_0067G; K_0441_0021); head of the Jogi Cakra Guṭhī (cf. K_0054_0052; K_0543_0062); imprisoned because of adultery with an Upadhyānī Bāhunī in 1916 (VS 1973, K_0168_0003); replaced as abbot by Paramahaṃsanātha in 1916 (VS 1973, K_0168_0001).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Voṣīmāhā">
+    <rdf:type rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <gn:name xml:lang="ne">Voṣīmāhā</gn:name>
+    <skos:altLabel xml:lang="ne">Voṣimahā</skos:altLabel>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/1220"/>
+    <rdfs:comment xml:lang="en">location needs to be verified; document suggests a locality in the Kathmandu Valley.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Paṃbhu">
+    <rdf:type rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <gn:name xml:lang="ne">Paṃbhu</gn:name>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/1236"/>
+    <rdfs:comment xml:lang="en">location needs to be verified; document suggests a locality in the Kathmandu Valley.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Kvāṭha">
+    <rdf:type rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <gn:name xml:lang="ne">Kvāṭha</gn:name>
+    <skos:altLabel xml:lang="ne">Kvāṭa</skos:altLabel>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/1244"/>
+    <rdfs:comment xml:lang="en">location needs to be verified; document suggests a locality in the Kathmandu Valley.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Īcaḍol">
+    <rdf:type rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <gn:name xml:lang="ne">Īcaḍol</gn:name>
+    <skos:altLabel xml:lang="ne">Icāḍola</skos:altLabel>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/1219"/>
+    <rdfs:comment xml:lang="en">location needs to be verified; document suggests a locality in the Kathmandu Valley.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#tulādhāra">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="ne">tulādhāra</skos:prefLabel>
+    <rdfs:comment xml:lang="en">[S.] n. a Newar Buddhist subcaste of the Urāy. t.t.</rdfs:comment>
+    <skos:related rdf:resource="https://nepalica.hadw-bw.de/nepal/words/viewitem/2647"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Vaṃsī">
+    <rdf:type rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <gn:name xml:lang="ne">Vaṃsī</gn:name>
+    <skos:altLabel xml:lang="ne">Vaṃsi</skos:altLabel>
+    <skos:altLabel xml:lang="ne">Vā̃sī</skos:altLabel>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/1232"/>
+    <rdfs:seeAlso rdf:resource="gnd:testont_gnd_1232"/>
+    <rdfs:seeAlso rdf:resource="viaf:testont_viaf_1232"/>
+    <rdfs:seeAlso rdf:resource="wiki:testont_wiki_1232"/>
+    <rdfs:seeAlso rdf:resource="wikidata:testont_wikidata_1232"/>
+    <rdfs:seeAlso rdf:resource="dbr:testont_dbr_1232"/>
+    <rdfs:seeAlso rdf:resource="geonames:testont_geoname_1232"/>
+    <rdfs:comment xml:lang="en">location needs to be verified; document suggests a locality in the Kathmandu Valley.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Ṭoṣa">
+    <rdf:type rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <gn:name xml:lang="ne">Ṭoṣa</gn:name>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/1241"/>
+    <rdfs:seeAlso rdf:resource="gnd:testont_gnd_1241"/>
+    <rdfs:seeAlso rdf:resource="viaf:testont_viaf_1241"/>
+    <rdfs:seeAlso rdf:resource="wiki:testont_wiki_1241"/>
+    <rdfs:seeAlso rdf:resource="wikidata:testont_wikidata_1241"/>
+    <rdfs:seeAlso rdf:resource="dbr:testont_dbr_1241"/>
+    <rdfs:seeAlso rdf:resource="geonames:testont_geoname_1241"/>
+    <rdfs:comment xml:lang="en">location needs to be verified; document suggests a locality in the Kathmandu Valley.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#kavīndramallī_ṭaṃkā">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="ne">kavīndramallī ṭaṃkā</skos:prefLabel>
+    <rdfs:comment xml:lang="en">n. a coin circulated by Pratāpa Malla; often abbreviated as kaṭaṃ. t.t.</rdfs:comment>
+    <skos:related rdf:resource="https://nepalica.hadw-bw.de/nepal/words/viewitem/2645"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Molapāku">
+    <rdf:type rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <gn:name xml:lang="ne">Molapāku</gn:name>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/1217"/>
+    <rdfs:comment xml:lang="en">location needs to be verified; document suggests a locality in the Kathmandu Valley.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#lālamohara">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="ne">lālamohara</skos:prefLabel>
+    <rdfs:comment xml:lang="en">var. lālmohara, lālamohar, lālmohora; abbreviated mohara; n. royal document bearing the red seal. t.t.</rdfs:comment>
+    <skos:related rdf:resource="https://nepalica.hadw-bw.de/nepal/words/viewitem/992"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Ogla_Ṭola">
+    <rdf:type rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <gn:name xml:lang="ne">Ogla Ṭola</gn:name>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/1142"/>
+    <rdfs:comment xml:lang="en">also known as Vāghaḥ (Toffin 1994: 451–452, 454); a city quarter (ṭola) in upper Kathmandu around Indracoka.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Gaṃḍavālāl">
+    <rdf:type rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <gn:name xml:lang="ne">Gaṃḍavālāl</gn:name>
+    <skos:altLabel xml:lang="ne">Gaṃḍavāhāla</skos:altLabel>
+    <skos:altLabel xml:lang="ne">Gaṃḍavāla</skos:altLabel>
+    <skos:altLabel xml:lang="ne">Gaṃḍavīlāla</skos:altLabel>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/1233"/>
+    <rdfs:comment xml:lang="en">location needs to be verified; document suggests a locality in the Kathmandu Valley.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Ṭhavailī">
+    <rdf:type rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <gn:name xml:lang="ne">Ṭhavailī</gn:name>
+    <skos:altLabel xml:lang="ne">Vaili</skos:altLabel>
+    <skos:altLabel xml:lang="ne">Ṭhavela</skos:altLabel>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/1224"/>
+    <rdfs:comment xml:lang="en">location needs to be verified; document suggests a locality in the Kathmandu Valley.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Pṛthvīnārāyaṇa_Śāha">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name xml:lang="ne">Pṛthvīnārāyaṇa Śāha</foaf:name>
+    <rdfs:label xml:lang="ne">Pṛthvīnārāyaṇa Śāha</rdfs:label>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/178"/>
+    <rdfs:seeAlso rdf:resource="gnd:119173816"/>
+    <rdfs:seeAlso rdf:resource="viaf:5735314"/>
+    <rdfs:seeAlso rdf:resource="wiki:Prithvi_Narayan_Shah"/>
+    <rdfs:seeAlso rdf:resource="wikidata:second_priority_when_data_is_Null"/>
+    <rdfs:seeAlso rdf:resource="dbr:Prithvi_Narayan_Sha"/>
+    <schema1:gender rdf:resource="http://schema.org/Male"/>
+    <gndo:surname xml:lang="ne">Śāha</gndo:surname>
+    <rdfs:comment xml:lang="ne">born: 1720 at Gorkha; died: 11 January 1775 at Devighat;  father: Narabhūpāla Śāha, king of Gorkha; spouse: Indra Kumārī Devī, Narendra Rājyalakṣmī Devī; children: Pratāpa Siṃha Śāha, Bahādura Śāha, Vilāsa Kumārī Śāha; details: king of Gorkha (r. 3 April 1743–1768); king of Nepal (r. 1768-1775); normdata:</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Asaṃ_Ṭol">
+    <rdf:type rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <gn:name xml:lang="ne">Asaṃ Ṭol</gn:name>
+    <skos:altLabel xml:lang="ne">Asaṃ Ṭola</skos:altLabel>
+    <skos:altLabel xml:lang="ne">Asan Ṭol</skos:altLabel>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/304"/>
+    <rdfs:seeAlso rdf:resource="gnd:testont_gnd_304"/>
+    <rdfs:seeAlso rdf:resource="viaf:testont_viaf_304"/>
+    <rdfs:seeAlso rdf:resource="wiki:Asan,Kathmandu"/>
+    <rdfs:seeAlso rdf:resource="wikidata:testont_wikidata_304###"/>
+    <rdfs:seeAlso rdf:resource="dbr:Asan,Kathmandu"/>
+    <rdfs:seeAlso rdf:resource="geonames:7962207"/>
+    <rdfs:comment xml:lang="en">also known as: Asan Ṭol, Asana Ṭola, Asaṃ; a city quarter (ṭola) in upper (thane) Kathmandu and a central market place whose prices formed a reference point for official pricing in Nepal;</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Īndracok">
+    <rdf:type rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <gn:name xml:lang="ne">Īndracok</gn:name>
+    <skos:altLabel xml:lang="ne">Iṃdracoka</skos:altLabel>
+    <skos:altLabel xml:lang="ne">Indracoka</skos:altLabel>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/551"/>
+    <rdfs:seeAlso rdf:resource="wiki:Indrachok,_Kathmandu"/>
+    <rdfs:seeAlso rdf:resource="wikidata:tQ2913856"/>
+    <rdfs:seeAlso rdf:resource="dbr:Indrachok,_Kathmandu"/>
+    <rdfs:comment xml:lang="en">also known as: Indrachok; a central market square in Kathmandu and the area surrounding it (see also Ogla Ṭola)</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Koṣayanāk">
+    <rdf:type rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <gn:name xml:lang="ne">Koṣayanāk</gn:name>
+    <skos:altLabel xml:lang="ne">Koṣayanāka</skos:altLabel>
+    <skos:altLabel xml:lang="ne">Koṣaṣanāka</skos:altLabel>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/1235"/>
+    <rdfs:comment xml:lang="en">location needs to be verified; document suggests a locality in the Kathmandu Valley.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#ghaṭasthāpana">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="ne">ghaṭasthāpana</skos:prefLabel>
+    <rdfs:comment xml:lang="en">[S.] n. lit. "setting up the jar", a ritual that marks the beginning of the Navarātra festival. t.t.</rdfs:comment>
+    <skos:related rdf:resource="https://nepalica.hadw-bw.de/nepal/words/viewitem/2657"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Ṭaugāl">
+    <rdf:type rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <gn:name xml:lang="ne">Ṭaugāl</gn:name>
+    <skos:altLabel xml:lang="ne">Ṭaugāla</skos:altLabel>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/1240"/>
+    <rdfs:comment xml:lang="en">location needs to be verified; document suggests a locality in the Kathmandu Valley.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Veṣāvu">
+    <rdf:type rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <gn:name xml:lang="ne">Veṣāvu</gn:name>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/1230"/>
+    <rdfs:comment xml:lang="en">location needs to be verified; document suggests a locality in the Kathmandu Valley.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Molapāku_Nadīvārī_(°_Nadivāri)">
+    <rdf:type rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <gn:name xml:lang="ne">Molapāku Nadīvārī (° Nadivāri)</gn:name>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/1218"/>
+    <rdfs:comment xml:lang="en">location needs to be verified; document suggests a locality in the Kathmandu Valley.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#cula">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="ne">cula</skos:prefLabel>
+    <rdfs:comment xml:lang="en">var. cul, cura, cu; n. unit of land measurement, one fourth of a ropanī or khā. t.t.</rdfs:comment>
+    <skos:related rdf:resource="https://nepalica.hadw-bw.de/nepal/words/viewitem/2628"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Dharaṃthalī">
+    <rdf:type rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <gn:name xml:lang="ne">Dharaṃthalī</gn:name>
+    <skos:altLabel xml:lang="ne">Dharaṃthali</skos:altLabel>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/519"/>
+    <rdfs:seeAlso rdf:resource="wiki:Dharmasthali"/>
+    <rdfs:seeAlso rdf:resource="dbr:Dharmasthali"/>
+    <rdfs:comment xml:lang="en">also known as Dharaṃthalī, Dharmathalī; a village and former village development committee in Kathmandu district, north west of Kathmandu;</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Ṭauḍhī_Josī">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name xml:lang="ne">Ṭauḍhī Josī</foaf:name>
+    <rdfs:label xml:lang="ne">Ṭauḍhī Josī</rdfs:label>
+    <rdfs:devanagariLabel xml:lang="ne">ठौढी जोसीको</rdfs:devanagariLabel>
+    <skos:altLabel>Ṭauḍhi Josi</skos:altLabel>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/561"/>
+    <schema1:gender rdf:resource="http://schema.org/Male"/>
+    <gndo:surname xml:lang="ne">Josī</gndo:surname>
+    <rdfs:comment xml:lang="ne">died: before 1769;  details: owned a house in Indracoka.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Bhaṃgal">
+    <rdf:type rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <gn:name xml:lang="ne">Bhaṃgal</gn:name>
+    <skos:altLabel xml:lang="ne">Maṃgal</skos:altLabel>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/1221"/>
+    <rdfs:comment xml:lang="en">location needs to be verified; document suggests a locality in the Kathmandu Valley.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Bhaguṣula">
+    <rdf:type rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <gn:name xml:lang="ne">Bhaguṣula</gn:name>
+    <skos:altLabel xml:lang="ne">Bhaguṣolā</skos:altLabel>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/1237"/>
+    <rdfs:comment xml:lang="en">location needs to be verified; document suggests a locality in the Kathmandu Valley.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Tyapadhu">
+    <rdf:type rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <gn:name xml:lang="ne">Tyapadhu</gn:name>
+    <skos:altLabel xml:lang="ne">Tyapadhuka</skos:altLabel>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/1238"/>
+    <rdfs:comment xml:lang="en">location needs to be verified; document suggests a locality in the Kathmandu Valley.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Jogīṭāra">
+    <rdf:type rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <gn:name xml:lang="ne">Jogīṭāra</gn:name>
+    <skos:altLabel xml:lang="ne">Jogiṭāra</skos:altLabel>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/1239"/>
+    <rdfs:comment xml:lang="en">location needs to be verified; document suggests a field in Deurali.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637">
+    <rdf:type rdf:resource="http://purl.org/dc/elements/1.1/Document"/>
+    <dc:identifier xml:lang="en">K_0440_0007</dc:identifier>
+    <dc:title xml:lang="en">A copy of a lālamohara from Pṛthvīnārāyaṇa Śāha re land donations for Yogīs' cakrapūjās (VS 1826)</dc:title>
+    <dc:type xml:lang="en">lālamohara; copy</dc:type>
+    <dc:abstract xml:lang="en">This lālamohara dated VS 1826 Kārttika śudi 4 Thursday deals with grants of land for the support of the cakra pūjā of Gorakhanātha located at different localities as specified in the document.</dc:abstract>
+    <dc:issued_by xml:lang="en">King Prithvi Nārāyaṇa Śāha; Gorakhanātha</dc:issued_by>
+    <dc:place xml:lang="en">Kathmandu (Kāntipur); Gorakhanātha Cakra Pūjā; Nātha</dc:place>
+    <dc:donor xml:lang="en">King Pṛthvi Nārāyaṇa Śāha</dc:donor>
+    <dc:type_of_endowment xml:lang="en">land</dc:type_of_endowment>
+    <dc:amount_of_endowment xml:lang="en">219 ropanis, 12 ānnās</dc:amount_of_endowment>
+    <dc:date xml:lang="en">VS 1826 Kārttika bright 4 Thursday</dc:date>
+    <dc:language xml:lang="en">Nepali; Devanagari</dc:language>
+    <dc:format xml:lang="en">23.5; 48; cm</dc:format>
+    <dc:extent xml:lang="en">good; complete</dc:extent>
+    <dc:publisher xml:lang="en">Bhadrakālī; card no. 22; Pokā no. 10 60/84; Bha. Gu. La. Ta. Ms. no. 1</dc:publisher>
+    <dc:source xml:lang="en">NGMPP catalogue card; Microfilmed on 09/05/1995 as NGMPP K 440/7</dc:source>
+    <dc:hasPart xml:lang="en">K 28599; 1</dc:hasPart>
+    <schema1:created xml:lang="en">5/26/21, 6:15 AM</schema1:created>
+    <dc:subject xml:lang="en">lālamohara, cakrapūjā, ropanī, ānnā</dc:subject>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Vaṃṣuḍola">
+    <rdf:type rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <gn:name xml:lang="ne">Vaṃṣuḍola</gn:name>
+    <skos:altLabel xml:lang="ne">Vaṣuḍol</skos:altLabel>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/1231"/>
+    <rdfs:comment xml:lang="en">location needs to be verified; document suggests a locality in the Kathmandu Valley.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Lapaṭṭecokoṭ">
+    <rdf:type rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <gn:name xml:lang="ne">Lapaṭṭecokoṭ</gn:name>
+    <skos:altLabel xml:lang="ne">Lapaṭyaco Koṭa</skos:altLabel>
+    <skos:altLabel xml:lang="ne">Lapaṭyecokoṭ</skos:altLabel>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/1226"/>
+    <rdfs:comment xml:lang="en">location needs to be verified; document suggests a locality in the Kathmandu Valley.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Ṭāyemaḍu_Ṭola">
+    <rdf:type rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <gn:name xml:lang="ne">Ṭāyemaḍu Ṭola</gn:name>
+    <skos:altLabel xml:lang="ne">Ṭāyamaḍu Ṭola</skos:altLabel>
+    <skos:altLabel xml:lang="ne">Ṭāyamaḍu Ṭola or ° Ṭol</skos:altLabel>
+    <skos:altLabel xml:lang="ne">Ṭhāyemaḍu Ṭola</skos:altLabel>
+    <skos:altLabel xml:lang="ne">Thāya°</skos:altLabel>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/521"/>
+    <rdfs:comment xml:lang="en">Newari name for Bangemudha (Bāṅgemuḍhā); a city quarter (ṭola) in Kathmandu</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#ropanī">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="ne">ropanī</skos:prefLabel>
+    <rdfs:comment xml:lang="en">[fr. S.] var. ropani; n. unit of land measurement in the hill region, including the Kathmandu Valley, comprising four murīs. The area may vary according to the grade, but current standard area for a ropanī comprises 5,476 square feet (cf. M.C. Regmi 1999: 235 ; M.C. Regmi 1978: 864; Whelpton 1991: 286; M.C. Regmi 1995: 77; M.C. Regmi 1978: 163; M.C. Regmi 1988: 270). t.t.</rdfs:comment>
+    <skos:related rdf:resource="https://nepalica.hadw-bw.de/nepal/words/viewitem/2051"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Śrīnivāsa_Malla">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name xml:lang="ne">Śrīnivāsa Malla</foaf:name>
+    <rdfs:label xml:lang="ne">Śrīnivāsa Malla</rdfs:label>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/552"/>
+    <gndo:surname xml:lang="ne">Malla</gndo:surname>
+    <rdfs:comment xml:lang="ne">king of Patan (r. 1661–1685). normdata: wiki: Srinivasa_Malla</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Sāṃlā">
+    <rdf:type rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <gn:name xml:lang="ne">Sāṃlā</gn:name>
+    <skos:altLabel xml:lang="ne">Sāṅglā</skos:altLabel>
+    <skos:altLabel xml:lang="ne">Sāṅlā</skos:altLabel>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/1243"/>
+    <rdfs:seeAlso rdf:resource="gnd:7962433"/>
+    <rdfs:seeAlso rdf:resource="wiki:Sangla"/>
+    <rdfs:comment xml:lang="en">also known as Sāṅlā or Sāṅglā; a village and former Village Development Committee in Kathmandu district;  _Nepal.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Patan">
+    <rdf:type rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <gn:name xml:lang="ne">Patan</gn:name>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/27"/>
+    <rdfs:seeAlso rdf:resource="wiki:Lalitpur,Nepal"/>
+    <rdfs:seeAlso rdf:resource="dbr:Lalitpur"/>
+    <rdfs:comment xml:lang="en">also known as Lalitpur, Lalitapura; one of the three major cities in the Kathmandu Valley; a district in Central Nepal, part of the Bagmati Province;  _Nepal.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Gauḍa_Deśa">
+    <rdf:type rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <gn:name xml:lang="ne">Gauḍa Deśa</gn:name>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/549"/>
+    <rdfs:comment xml:lang="en">a kingdom in the region of modern-day Bengal</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Deupāṭhaṃ">
+    <rdf:type rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <gn:name xml:lang="ne">Deupāṭhaṃ</gn:name>
+    <skos:altLabel xml:lang="ne">Deupāṭan</skos:altLabel>
+    <skos:altLabel xml:lang="ne">Deupāṭaṃ</skos:altLabel>
+    <skos:altLabel xml:lang="ne">Deopatan</skos:altLabel>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/28"/>
+    <rdfs:seeAlso rdf:resource="gnd:4354945-7"/>
+    <rdfs:comment xml:lang="en">also known as: Deupāṭaṃ, Deupāṭana, Deūpāṭaṃ; historic town in the Kathmandu Valley, now part of Kathmandu;</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#cakrapūjā">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="ne">cakrapūjā</skos:prefLabel>
+    <rdfs:comment xml:lang="en">[S.] var. cakrapujā; n. lit. "worship in a circle", a ritual performed by the Kanphaṭṭās in an annual cycle in different localities in Kathmandu Valley (see Unbescheid 1980: 109-127 and passim). t.t.</rdfs:comment>
+    <skos:related rdf:resource="https://nepalica.hadw-bw.de/nepal/words/viewitem/2002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#aputālī">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="ne">aputālī</skos:prefLabel>
+    <rdfs:comment xml:lang="en">var. aputāli; also maryo aputālī / moroaputālī; n. escheatable property that falls to the state if a person dies without heirs. t.t.</rdfs:comment>
+    <skos:related rdf:resource="https://nepalica.hadw-bw.de/nepal/words/viewitem/2629"/>
+    <skos:related rdf:resource="wiki:testword_wiki_2629"/>
+    <skos:related rdf:resource="wikidata:testword_wikidata_2629"/>
+    <skos:related rdf:resource="dbr:testword_dbr_2629"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Caṣu">
+    <rdf:type rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <gn:name xml:lang="ne">Caṣu</gn:name>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/1242"/>
+    <rdfs:comment xml:lang="en">location needs to be verified; document suggests a locality in the Kathmandu Valley.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Nārāṃnātha_Jogī">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name xml:lang="ne">Nārāṃnātha Jogī</foaf:name>
+    <rdfs:label xml:lang="ne">Nārāṃnātha Jogī</rdfs:label>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/130"/>
+    <gndo:surname xml:lang="ne">Nātha</gndo:surname>
+    <rdfs:comment xml:lang="ne">Also Nārāṃnātha Jogī. A nāthayogī. A number of document copies are assented to by him as abbot (pīra or pīrajī) probably of the Mṛgasthalī monastery (cf. K 44/56; K 451/56-59). Date uncertain (but after 1876 (VS 1933))</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Ta_Bahā">
+    <rdf:type rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <gn:name xml:lang="ne">Ta Bahā</gn:name>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/567"/>
+    <rdfs:comment xml:lang="en">also known as: Taḥ Bāhāḥ; a Buddhist monastery in Patan and the city quarter (ṭola) surrounding it</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Bhānumatī">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name xml:lang="ne">Bhānumatī</foaf:name>
+    <rdfs:label xml:lang="ne">Bhānumatī</rdfs:label>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/555"/>
+    <schema1:gender rdf:resource="http://schema.org/Female"/>
+    <gndo:surname xml:lang="ne">Malla</gndo:surname>
+    <rdfs:comment xml:lang="ne">flourished: 17th century;  spouse: King Siddhinarasiṃha Malla of Patan; children: King Śrīnivāsa Malla of Patan; details: in her name King Śrīnivāsa Malla financed a "jogīcakraguthi" at the Rāto Machindranātha temple at Ta Bahāla, Patan (NHDP_0001_0138) in 1673 (NS 793).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Phīva">
+    <rdf:type rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <gn:name xml:lang="ne">Phīva</gn:name>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/1228"/>
+    <rdfs:comment xml:lang="en">location needs to be verified; document suggests a locality in the Kathmandu Valley.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Kāntīpura">
+    <rdf:type rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <gn:name xml:lang="ne">Kāntīpura</gn:name>
+    <skos:altLabel xml:lang="ne">Kathmandu</skos:altLabel>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/26"/>
+    <rdfs:seeAlso rdf:resource="gnd:4030036-5"/>
+    <rdfs:seeAlso rdf:resource="viaf:158284130"/>
+    <rdfs:seeAlso rdf:resource="wiki:Kathmandu"/>
+    <rdfs:seeAlso rdf:resource="wiki:Kathmandu_District"/>
+    <rdfs:seeAlso rdf:resource="wikidata:testont_wikidata_1232#"/>
+    <rdfs:seeAlso rdf:resource="dbr:Kathmandu"/>
+    <rdfs:seeAlso rdf:resource="geonames:1283240"/>
+    <rdfs:seeAlso rdf:resource="geonames:12095484"/>
+    <rdfs:comment xml:lang="en">also known as: Kāḍamāḍau, Kantipur, Kāṣthamaṇḍapa, Kāṭhamāḍau, Kāṭhmāḍu, Yẽ; capital of Nepal, declared capital by Pṛthvīnārāyaṇa Śāha on 21 March 1770; a district in Central Nepal, part of Bagmati Province;</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Īḍā">
+    <rdf:type rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <gn:name xml:lang="ne">Īḍā</gn:name>
+    <skos:altLabel xml:lang="ne">Iṃḍā</skos:altLabel>
+    <skos:altLabel xml:lang="ne">Īuḍā</skos:altLabel>
+    <skos:altLabel xml:lang="ne">Īdā</skos:altLabel>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/1227"/>
+    <rdfs:comment xml:lang="en">location needs to be verified; document suggests a locality in the Kathmandu Valley.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#pīramahanta">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="ne">pīramahanta</skos:prefLabel>
+    <rdfs:comment xml:lang="en">[P. pīra + S. mahanta] var. pīramahaṃta; n. (esp. in the Nātha tradition) title of the head of a monastery (maṭha), esp. a pañcāyātī maṭha (cf. Bouillier 2017: 60 and passim). t.t.</rdfs:comment>
+    <skos:related rdf:resource="https://nepalica.hadw-bw.de/nepal/words/viewitem/2644"/>
+    <skos:related rdf:resource="gnd:testword_gnd_2644"/>
+    <skos:related rdf:resource="viaf:testword_viaf_2644"/>
+    <skos:related rdf:resource="wiki:Abbot_(Buddhism)"/>
+    <skos:related rdf:resource="wikidata:Q1135621"/>
+    <skos:related rdf:resource="dbr:Abbot_(Buddhism)"/>
+    <skos:related rdf:resource="geonames:testword_geonames_2644"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#kheta">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="ne">kheta</skos:prefLabel>
+    <rdfs:comment xml:lang="en">[fr. S. kṣetra] var. khet, kheṭ; n. 1) irrigated land in the hill region suitable for the cultivation of rice and wheat. 2) a measure of land in the hill region equal to 25 ropanīs or 100 murīs (ca. 1.25 hectares) (M.C. Regmi 1999: 136-137 ; cf. M.C. Regmi 1999: 234 ; M.C. Regmi 1978: 162 ; M.C. Regmi 1978: 227 ; M.C. Regmi 1978: 860 ; M.C. Regmi 1995: 77; Adhikari 1984: 351; M.R. Pant 2002: 133; Whelpton 1991: 284 ). t.t.</rdfs:comment>
+    <skos:related rdf:resource="https://nepalica.hadw-bw.de/nepal/words/viewitem/1957"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Āge">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="ne">Āge</skos:prefLabel>
+    <rdfs:comment xml:lang="en">[fr. S. agre] adv. lit. "henceforeward" (Riccardi 1976: 150 n. 6), especially used in administrative and legal documents to mark the beginning of a text or paragraph. In its function it is similar to uprānta. t.t.</rdfs:comment>
+    <skos:related rdf:resource="https://nepalica.hadw-bw.de/nepal/words/viewitem/2017"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Tapīṃtā">
+    <rdf:type rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <gn:name xml:lang="ne">Tapīṃtā</gn:name>
+    <skos:altLabel xml:lang="ne">Tapiṃtā</skos:altLabel>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/1222"/>
+    <rdfs:comment xml:lang="en">location needs to be verified; document suggests a locality in the Kathmandu Valley.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#guṭha">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="ne">guṭha</skos:prefLabel>
+    <rdfs:comment xml:lang="en">[fr. S. goṣṭhī] var. guṭh, guthi; n. 1) a socio-religious organization that manages and finances religious and charitable functions, a trust. 2) “endowed lands or other sources of revenue for financing religious and charitable functions“ (M.R. Pant 2002: 132; cf. M.C. Regmi 1988: 267). t.t.</rdfs:comment>
+    <skos:altLabel xml:lang="ne">guṭhī</skos:altLabel>
+    <skos:related rdf:resource="https://nepalica.hadw-bw.de/nepal/words/viewitem/932"/>
+    <skos:related rdf:resource="gnd:testword_gnd_932"/>
+    <skos:related rdf:resource="viaf:testword_viaf_932"/>
+    <skos:related rdf:resource="wiki:testword_wiki_932"/>
+    <skos:related rdf:resource="wikidata:testword_wikidata_932"/>
+    <skos:related rdf:resource="dbr:testword_dbr_932"/>
+    <skos:related rdf:resource="geonames:testword_geonames_932"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Deurālī">
+    <rdf:type rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <gn:name xml:lang="ne">Deurālī</gn:name>
+    <skos:altLabel xml:lang="ne">Deurāli</skos:altLabel>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/520"/>
+    <rdfs:comment xml:lang="en">also Deurālī; a village in Kaski district</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#kuta">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="ne">kuta</skos:prefLabel>
+    <rdfs:comment xml:lang="en">var. kut; n. a system of tenancy under which a cultivator paid a fixed quantity of produce or a fixed amount of money as rent to the owner of the field. t.t.</rdfs:comment>
+    <skos:related rdf:resource="https://nepalica.hadw-bw.de/nepal/words/viewitem/2504"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Kathmandu_Valley">
+    <rdf:type rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <gn:name xml:lang="ne">Kathmandu Valley</gn:name>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/113"/>
+    <rdfs:seeAlso rdf:resource="gnd:4030037-7"/>
+    <rdfs:seeAlso rdf:resource="viaf:315526926"/>
+    <rdfs:seeAlso rdf:resource="wiki:Kathmandu_Valley"/>
+    <rdfs:comment xml:lang="en">also known as: Nepāla, Nepālakhalaṭā, Nepālamaṇḍala, Nepāla Upatyakā; details: a bowl-shaped valley of 665 square km with a lower altitude of 1,425 metres (4,675 ft) above sea level consisting of the areas of Kathmandu, Patan, Bhaktapur, Kirtipur and Thimi and a number of smaller municipalities; normdata:</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Ṭepadhu">
+    <rdf:type rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <gn:name xml:lang="ne">Ṭepadhu</gn:name>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/1229"/>
+    <rdfs:comment xml:lang="en">location needs to be verified; document suggests a locality in the Kathmandu Valley.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Paṇḍu">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name xml:lang="ne">Paṇḍu</foaf:name>
+    <rdfs:label xml:lang="ne">Paṇḍu</rdfs:label>
+    <rdfs:devanagariLabel xml:lang="ne">पंडुव्राह्मणको</rdfs:devanagariLabel>
+    <skos:altLabel>Paṃḍu</skos:altLabel>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/560"/>
+    <schema1:gender rdf:resource="http://schema.org/Male"/>
+    <gndo:surname xml:lang="ne"></gndo:surname>
+    <rdfs:comment xml:lang="ne">died: before 1769;  details: a brahmin.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#murī">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="ne">murī</skos:prefLabel>
+    <rdfs:comment xml:lang="en">n. 1) also khetamuri; unit of land measurement in the hill region, comprising 1/4 ropanī with 100 muris in 1 kheta. The area varied according to the grade: 1190 sq. ft. for lands of the best grade, and 1339 sq. ft., 1487 sq. ft., and 1785 sq. ft. for lands of inferior grades. 2) volumetric unit comprising 20 pāthis (with 8 mānas to a pāthi), equivalent to 90.919 (M.R. Pant 2002: 134 ) or 87.23 (Pant and Pierce 1989: 93) liters. (M.C. Regmi 1978: 163; M.C. Regmi 1999: 235 ; M.C. Regmi 1978a: 228 ; M.C. Regmi 1978b: 862 ; Adhikari 1984: 354; M.C. Regmi 1988: 269). t.t.</rdfs:comment>
+    <skos:related rdf:resource="https://nepalica.hadw-bw.de/nepal/words/viewitem/1045"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Syāṃpurī">
+    <rdf:type rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <gn:name xml:lang="ne">Syāṃpurī</gn:name>
+    <skos:altLabel xml:lang="ne">Syāmapuri</skos:altLabel>
+    <skos:altLabel xml:lang="ne">Syāṃpuri</skos:altLabel>
+    <skos:altLabel xml:lang="ne">Syāmpurī</skos:altLabel>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/1245"/>
+    <rdfs:comment xml:lang="en">location needs to be verified; document suggests a locality in the Kathmandu Valley.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Dalakāpa">
+    <rdf:type rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <gn:name xml:lang="ne">Dalakāpa</gn:name>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/1216"/>
+    <rdfs:comment xml:lang="en">also known as Dalakāpa; a locality in Kabhresthali, Kathmandu district; https://www.mindat.org/feature-7962135.html, https://nepal.places-in-the-world.com/7962135-place-dalkap.html.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Bhadrakālī">
+    <rdf:type rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <gn:name xml:lang="ne">Bhadrakālī</gn:name>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/565"/>
+    <rdfs:comment xml:lang="en">an open air shrine (pīṭha) of the goddess Bhadrakālī east of Ṭuṇḍikhela, Kathmandu, and the area surrounding it.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Kiṃḍol">
+    <rdf:type rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <gn:name xml:lang="ne">Kiṃḍol</gn:name>
+    <skos:altLabel xml:lang="ne">Kimaḍola</skos:altLabel>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/566"/>
+    <rdfs:comment xml:lang="en">a locality west of Svayambhunātha.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#virāma">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="ne">virāma</skos:prefLabel>
+    <rdfs:comment xml:lang="en">[S.] var. virām; n. a diacritic mark placed below a consonant to suppress the inherent vowel that otherwise occurs with every consonant letter. t.t.</rdfs:comment>
+    <skos:related rdf:resource="https://nepalica.hadw-bw.de/nepal/words/viewitem/2630"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Śrī">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="ne">Śrī</skos:prefLabel>
+    <rdfs:comment xml:lang="en">[S.] n. word of blessing, can be used as apprecatio, in which case it means 'good fortune' (Pant and Pierce 1989: 12), can be used as a prefix to names of persons and gods, in which case it means 'venerable' or 'glorious' respectively. The number of śrīs used varies, depending on context. t.t.</rdfs:comment>
+    <skos:related rdf:resource="https://nepalica.hadw-bw.de/nepal/words/viewitem/1869"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Pāpīgāu">
+    <rdf:type rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <gn:name xml:lang="ne">Pāpīgāu</gn:name>
+    <skos:altLabel xml:lang="ne">Pāpīgāū</skos:altLabel>
+    <skos:altLabel xml:lang="ne">Pāpigāũ</skos:altLabel>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/1234"/>
+    <rdfs:comment xml:lang="en">location needs to be verified; document suggests a locality in the Kathmandu Valley.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Buṅga">
+    <rdf:type rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <gn:name xml:lang="ne">Buṅga</gn:name>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/553"/>
+    <rdfs:comment xml:lang="en">also Buṅga; small Newar town near Patan</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Ṭukucā">
+    <rdf:type rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <gn:name xml:lang="ne">Ṭukucā</gn:name>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/1246"/>
+    <rdfs:comment xml:lang="en">location needs to be verified; document suggests a locality in the Kathmandu Valley.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Puḍopā">
+    <rdf:type rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <gn:name xml:lang="ne">Puḍopā</gn:name>
+    <skos:altLabel xml:lang="ne">Puḍoṃpā</skos:altLabel>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/1225"/>
+    <rdfs:comment xml:lang="en">location needs to be verified; document suggests a locality in the Kathmandu Valley.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Mṛgasthalī">
+    <rdf:type rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <gn:name xml:lang="ne">Mṛgasthalī</gn:name>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/119"/>
+    <rdfs:comment xml:lang="en">a forest located between the Paśupatinātha temple and the Guhyeśvarī Temple in Deopatan; seat of a monastery of the Nātha tradition; list of mahantas (cf. Naraharinātha n.d.: 123-124; for Naraharinātha and his successors, see Anonymous VS 2074: ta-tha): ... Chāyānātha Guhānātha Kṛpānātha Kamalanātha Jvālānātha Māyānātha Siddhanātha Buddhinātha Prayoganātha Bālakanātha Hukaṃnātha Haṃsanātha (VS 1933-</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Raṣuvu">
+    <rdf:type rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <gn:name xml:lang="ne">Raṣuvu</gn:name>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/1247"/>
+    <rdfs:comment xml:lang="en">location needs to be verified; document suggests a locality in the Kathmandu Valley.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Māla">
+    <rdf:type rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <gn:name xml:lang="ne">Māla</gn:name>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/1223"/>
+    <rdfs:comment xml:lang="en">location needs to be verified; document suggests a locality in the Kathmandu Valley.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Bengal">
+    <rdf:type rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <gn:name xml:lang="ne">Bengal</gn:name>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/610"/>
+    <rdfs:seeAlso rdf:resource="wiki:Bengal"/>
+    <rdfs:seeAlso rdf:resource="dbr:Bengal"/>
+    <rdfs:comment xml:lang="en">a region in the Indian subcontinent, now shared between India (West Bengal) and Bangladesh;</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#Bharapuranātha">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name xml:lang="ne">Bharapuranātha</foaf:name>
+    <rdfs:label xml:lang="ne">Bharapuranātha</rdfs:label>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/548"/>
+    <schema1:gender rdf:resource="http://schema.org/Male"/>
+    <gndo:surname xml:lang="ne">Nātha</gndo:surname>
+    <rdfs:comment xml:lang="ne">also known as: Bharapūranātha, Bharapuranātha Jogī, Bharpurnāthajī; born: 1880 (VS 1937/38) at the Jvālājīmaṭha in Dailekh (K_0252_0022);  father: Lachīmananātha; details: succeeded Paramahaṃsanātha as abbot (pīramahanta) of Mṛgasthalī in 1921 (VS 1978, K_0252_0018 – K_0252_0022); grandson of Uttamanātha (K_0177_0017).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/8637#akṣara">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="ne">akṣara</skos:prefLabel>
+    <rdfs:comment xml:lang="en">[S.] n. letter of the alphabet; syllable. t.t.</rdfs:comment>
+    <skos:related rdf:resource="https://nepalica.hadw-bw.de/nepal/words/viewitem/2631"/>
+  </rdf:Description>
+</rdf:RDF>

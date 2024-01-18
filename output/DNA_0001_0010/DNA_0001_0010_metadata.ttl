@@ -3,7 +3,7 @@
 @prefix gndo: <https://d-nb.info/standards/elementset/gnd#> .
 @prefix nepalica_reg: <https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema: <http://schema.org/> .
+@prefix schema1: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix geonames: <https://sws.geonames.org/> .
 @prefix dbr: <https://dbpedia.org/resource/> .
@@ -25,7 +25,7 @@ nepalica:1#Arjī a skos:Concept ;
 nepalica:1#Aḍaṅga_Bahādura a foaf:Person ;
     rdfs:label "Aḍaṅga Bahādura"@ne ,
         "अडंग वाहादूरका"@ne ;
-    schema:gender schema:Male ;
+    schema1:gender schema1:Male ;
     rdfs:comment "flourished: 1838 (VS 1894, DNA_0001_0005) – 1840 (VS 1897, DNA_0001_0010);  details: elephant in the stable of Palpa."@ne ;
     rdfs:seeAlso nepalica_reg:11 ;
     foaf:name "Aḍaṅga Bahādura"@ne ;
@@ -52,7 +52,7 @@ nepalica:1#Dā̃g a gn:Feature ;
 nepalica:1#Jasivaṃta_Kãvara a foaf:Person ;
     rdfs:label "Jasivaṃta Kãvara"@ne ,
         "जसिवंत कँव"@ne ;
-    schema:gender schema:Male ;
+    schema1:gender schema1:Male ;
     rdfs:comment "flourished: 1840 (VS1897);  details: resided in Śrīgāũ, Dang; held the title of subedāra."@ne ;
     rdfs:seeAlso nepalica_reg:1442 ;
     foaf:name "Jasivaṃta Kãvara"@ne ;
@@ -61,7 +61,7 @@ nepalica:1#Jasivaṃta_Kãvara a foaf:Person ;
 nepalica:1#Lachiman_Adhikāri a foaf:Person ;
     rdfs:label "Lachiman Adhikāri"@ne ,
         "लछिमन् अधिकारिले"@ne ;
-    schema:gender schema:Male ;
+    schema1:gender schema1:Male ;
     rdfs:comment "flourished: 1840 (VS 1897) – 1851 (VS 1908);  details: resided in Śrīgāũ, Dang; held the title of jamadāra; sacrificed buffaloes at Mūlacoka, Kathmandu in 1851 (VS 1908); remarks: note that these might be two different persons."@ne ;
     rdfs:seeAlso nepalica_reg:1443 ;
     foaf:name "Lachiman Adhikāri"@ne ;
@@ -80,7 +80,7 @@ nepalica:1#Pālhi a gn:Feature ;
 nepalica:1#Raṇadala_Pā̃ḍe a foaf:Person ;
     rdfs:label "Raṇadala Pā̃ḍe"@ne ,
         "रणदलपाँडेकस्य"@ne ;
-    schema:gender schema:Male ;
+    schema1:gender schema1:Male ;
     rdfs:comment "flourished: 1838 (VS 1894) – 1840 (VS1897);  details: held the title of officer posted in Tansen in 1838 (VS 1894); posted in Banjariya, Palhi of Nawalparasi district in 1840 (VS 1897)."@ne ;
     rdfs:seeAlso nepalica_reg:21 ;
     foaf:name "Raṇadala Pā̃ḍe"@ne ;
@@ -98,7 +98,7 @@ nepalica:1#Siragāũ a gn:Feature ;
 nepalica:1#Sundarīprasāda a foaf:Person ;
     rdfs:label "Sundarīprasāda"@ne ,
         "सुन्दरीप्रसाद"@ne ;
-    schema:gender schema:Male ;
+    schema1:gender schema1:Male ;
     rdfs:comment "flourished: 1840 (VS 1897, DNA_0001_0010);  details: elephant in the stable of Pālhi."@ne ;
     rdfs:seeAlso nepalica_reg:120 ;
     foaf:name "Sundarīprasāda"@ne ;

@@ -3,7 +3,7 @@
 @prefix gndo: <https://d-nb.info/standards/elementset/gnd#> .
 @prefix nepalica_reg: <https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema: <http://schema.org/> .
+@prefix schema1: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix geonames: <https://sws.geonames.org/> .
 @prefix dbr: <https://dbpedia.org/resource/> .
@@ -20,7 +20,7 @@
 nepalica:person#Baṃba_Sāha a foaf:Person ;
     rdfs:label "Baṃba Sāha"@ne ,
         "वंव साहथि"@ne ;
-    schema:gender schema:Male ;
+    schema1:gender schema1:Male ;
     rdfs:comment "also known as: Baṃba Śāha, Bamma Sāhī; flourished: 1802–1818;  father: Vīrabāhu Śāha; sibling: Dilip Śāha, Hastidala Śāhī, Rudravīra Śāha / Śāhī; details: held the title of cautariyā; appointed Governor (subbā) of Kumaon in 1797 (RRS 4(4): 64"@ne ;
     rdfs:seeAlso dbr:Bam_Shah ,
         nepalica_reg:799 ,
@@ -42,7 +42,7 @@ nepalica:person#Gīrvāṇayuddha_Vikrama_Śāha a foaf:Person ;
 nepalica:person#Rudravīra_Sāha a foaf:Person ;
     rdfs:label "Rudravīra Sāha"@ne ,
         "रूद्रवीर साहथि"@ne ;
-    schema:gender schema:Male ;
+    schema1:gender schema1:Male ;
     rdfs:comment "also known as: Rudrabīra Śāha, Rudrabīra Śāhī, Rudravīra Sāha, Rudravīra Sāhī; flourished: 1802–1809;  father: Vīrabāhu Śāha; sibling: Cautariyā Bam Śāha; details: subbā of Kumaon until 1803 (VS 1860, RRC_0005_0549) sent to the western front to help his brother Hastidala Śāhī in the siege of Kangra fort in 1805 (VS 1862); appointed subbā of Salyan in 1809 (VS 1866, Regmi 1987: 146); in 1810 (VS 1867), ordered to examine (together with Jyūṃdhana Khatrī and Raghuvira Rānā) the [corresponding] documents and, if ascertained to be correct, confirm the guṭha birtās that were given by the kings of Salyan to Bhagavantanātha (Naraharinātha VS 2022: 460, see also the summary of the lālamohara in K_0469_0017 [[doc. 15]]); subbā of Jumla in 1817 (VS 1874, K_0093_0002W)."@ne ;
     rdfs:seeAlso nepalica_reg:1702 ;
     foaf:name "Rudravīra Sāha"@ne ;
@@ -50,7 +50,7 @@ nepalica:person#Rudravīra_Sāha a foaf:Person ;
 
 nepalica:person#Rāmānanda_Bā̃ḍā a foaf:Person ;
     rdfs:label "Rāmānanda Bā̃ḍā"@ne ;
-    schema:gender schema:Male ;
+    schema1:gender schema1:Male ;
     rdfs:comment "also known as: Rāmānanda Bāḍā, Ramānanda Bāḍā, Rāmānanda Śākya;  flourished: 1802 (VS 1859, E_2253_0015B)–1852 (VS 1876, K_0015_0021); father: Sarvānanda (M. Śākya 2002: 66); sibling: Ghanānanda; spouse: Jayalakṣmī; children: Amṛtānanda Vandya, Sundarānanda Vandya; details: lived in Mahābuddha, Patan; leading person of the Luthāma Guṭhī related to Bungadyo, regained the overseership of the guṭhi after a legal dispute in 1802-1803; appointed head (hākima) of Nepāla Rājakīya Pustakālaya in 1852 (M. Śākya 2002: 11); further literature: M. Śākya 2002."@ne ;
     rdfs:seeAlso nepalica_reg:1411 ;
     foaf:name "Rāmānanda Bā̃ḍā"@ne ;
@@ -58,7 +58,7 @@ nepalica:person#Rāmānanda_Bā̃ḍā a foaf:Person ;
 
 nepalica:person#Vīrabāhu_Sāha a foaf:Person ;
     rdfs:label "Vīrabāhu Sāha"@ne ;
-    schema:gender schema:Male ;
+    schema1:gender schema1:Male ;
     rdfs:comment "also known as: Bīrabāhu Sāha, Vīrabāhu Sāha; flourished: ?;  father: Candrarūpa Śāha; children: Dilip Śāha, Bam Śāha, Hastidala Śāhī, Rudravīra Śāha / Śāhī."@ne ;
     rdfs:seeAlso nepalica_reg:1703 ;
     foaf:name "Vīrabāhu Sāha"@ne ;

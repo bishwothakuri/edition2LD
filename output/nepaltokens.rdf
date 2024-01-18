@@ -1,0 +1,258 @@
+@prefix ns1: <http://example.com/> .
+
+<nepalica:8637#ne000001> ns1:nepaltokenspredicate "श्री"@ne .
+
+<nepalica:8637#ne000002> ns1:nepaltokenspredicate "गोरषनाथजीकन"@ne .
+
+<nepalica:8637#ne000003> ns1:nepaltokenspredicate "२"@ne .
+
+<nepalica:8637#ne000004> ns1:nepaltokenspredicate "गुह्येस्वरी"@ne .
+
+<nepalica:8637#ne000005> ns1:nepaltokenspredicate "३"@ne .
+
+<nepalica:8637#ne000006> ns1:nepaltokenspredicate "22"@ne .
+
+<nepalica:8637#ne000007> ns1:nepaltokenspredicate "सकल"@ne .
+
+<nepalica:8637#ne000008> ns1:nepaltokenspredicate "वमोजीं"@ne .
+
+<nepalica:8637#ne000009> ns1:nepaltokenspredicate "नकल"@ne .
+
+<nepalica:8637#ne000010> ns1:nepaltokenspredicate "दुरुस्त"@ne .
+
+<nepalica:8637#ne000011> ns1:nepaltokenspredicate "छ"@ne .
+
+<nepalica:8637#ne000012> ns1:nepaltokenspredicate "भनी"@ne .
+
+<nepalica:8637#ne000013> ns1:nepaltokenspredicate "सहीछाप"@ne .
+
+<nepalica:8637#ne000014> ns1:nepaltokenspredicate "गर्न्या"@ne .
+
+<nepalica:8637#ne000015> ns1:nepaltokenspredicate "पीरमहंत"@ne .
+
+<nepalica:8637#ne000016> ns1:nepaltokenspredicate "धारीनातजी"@ne .
+
+<nepalica:8637#ne000017> ns1:nepaltokenspredicate "स्व"@ne .
+
+<nepalica:8637#ne000018> ns1:nepaltokenspredicate "सदा"@ne .
+
+<nepalica:8637#ne000019> ns1:nepaltokenspredicate "समर"@ne .
+
+<nepalica:8637#ne000020> ns1:nepaltokenspredicate "आगे"@ne .
+
+<nepalica:8637#ne000021> ns1:nepaltokenspredicate "चक्रपुजाकन"@ne .
+
+<nepalica:8637#ne000022> ns1:nepaltokenspredicate "गुठ"@ne .
+
+<nepalica:8637#ne000023> ns1:nepaltokenspredicate "चह्राञौं"@ne .
+
+<nepalica:8637#ne000024> ns1:nepaltokenspredicate "पंडुव्राह्मणको"@ne .
+
+<nepalica:8637#ne000025> ns1:nepaltokenspredicate "अपुताली"@ne .
+
+<nepalica:8637#ne000026> ns1:nepaltokenspredicate "पर्‍याको"@ne .
+
+<nepalica:8637#ne000027> ns1:nepaltokenspredicate "षेत्‌"@ne .
+
+<nepalica:8637#ne000028> ns1:nepaltokenspredicate "रोपनी"@ne .
+
+<nepalica:8637#ne000029> ns1:nepaltokenspredicate "४०"@ne .
+
+<nepalica:8637#ne000030> ns1:nepaltokenspredicate "दलकापको"@ne .
+
+<nepalica:8637#ne000031> ns1:nepaltokenspredicate "फेरी"@ne .
+
+<nepalica:8637#ne000032> ns1:nepaltokenspredicate "१०"@ne .
+
+<nepalica:8637#ne000033> ns1:nepaltokenspredicate "मोलपाकुको"@ne .
+
+<nepalica:8637#ne000034> ns1:nepaltokenspredicate "१२"@ne .
+
+<nepalica:8637#ne000035> ns1:nepaltokenspredicate "मोलपाकु"@ne .
+
+<nepalica:8637#ne000036> ns1:nepaltokenspredicate "नदीवारीको"@ne .
+
+<nepalica:8637#ne000037> ns1:nepaltokenspredicate "७"@ne .
+
+<nepalica:8637#ne000038> ns1:nepaltokenspredicate "कींडोल्‌को"@ne .
+
+<nepalica:8637#ne000039> ns1:nepaltokenspredicate "ईचाडोलको"@ne .
+
+<nepalica:8637#ne000040> ns1:nepaltokenspredicate "व"@ne .
+
+<nepalica:8637#ne000041> ns1:nepaltokenspredicate "भंगल्‌को"@ne .
+
+<nepalica:8637#ne000042> ns1:nepaltokenspredicate "चुल"@ne .
+
+<nepalica:8637#ne000043> ns1:nepaltokenspredicate "तपींताको"@ne .
+
+<nepalica:8637#ne000044> ns1:nepaltokenspredicate "मालको"@ne .
+
+<nepalica:8637#ne000045> ns1:nepaltokenspredicate "१"@ne .
+
+<nepalica:8637#ne000046> ns1:nepaltokenspredicate "ठवैलीको"@ne .
+
+<nepalica:8637#ne000047> ns1:nepaltokenspredicate "४"@ne .
+
+<nepalica:8637#ne000048> ns1:nepaltokenspredicate "पुडोपाको"@ne .
+
+<nepalica:8637#ne000049> ns1:nepaltokenspredicate "५"@ne .
+
+<nepalica:8637#ne000050> ns1:nepaltokenspredicate "लपट्टेचोकोट्‌को"@ne .
+
+<nepalica:8637#ne000051> ns1:nepaltokenspredicate "२२"@ne .
+
+<nepalica:8637#ne000052> ns1:nepaltokenspredicate "None"@ne .
+
+<nepalica:8637#ne000053> ns1:nepaltokenspredicate "चुल्‌"@ne .
+
+<nepalica:8637#ne000054> ns1:nepaltokenspredicate "फीवछेउको"@ne .
+
+<nepalica:8637#ne000055> ns1:nepaltokenspredicate "ज्मा"@ne .
+
+<nepalica:8637#ne000056> ns1:nepaltokenspredicate "११५"@ne .
+
+<nepalica:8637#ne000057> ns1:nepaltokenspredicate "ईन्द्रचोक्‌माहा"@ne .
+
+<nepalica:8637#ne000058> ns1:nepaltokenspredicate "ठौढी"@ne .
+
+<nepalica:8637#ne000059> ns1:nepaltokenspredicate "जोसीको"@ne .
+
+<nepalica:8637#ne000060> ns1:nepaltokenspredicate "घर"@ne .
+
+<nepalica:8637#ne000061> ns1:nepaltokenspredicate "तावापत्र"@ne .
+
+<nepalica:8637#ne000062> ns1:nepaltokenspredicate "गरी"@ne .
+
+<nepalica:8637#ne000063> ns1:nepaltokenspredicate "राष्याको"@ne .
+
+<nepalica:8637#ne000064> ns1:nepaltokenspredicate "टायेमडुटोलको"@ne .
+
+<nepalica:8637#ne000065> ns1:nepaltokenspredicate "चक्रको"@ne .
+
+<nepalica:8637#ne000066> ns1:nepaltokenspredicate "टेपधुको"@ne .
+
+<nepalica:8637#ne000067> ns1:nepaltokenspredicate "वेषावुको"@ne .
+
+<nepalica:8637#ne000068> ns1:nepaltokenspredicate "वंषुडोलको"@ne .
+
+<nepalica:8637#ne000069> ns1:nepaltokenspredicate "वंसीको"@ne .
+
+<nepalica:8637#ne000070> ns1:nepaltokenspredicate "रोपनि"@ne .
+
+<nepalica:8637#ne000071> ns1:nepaltokenspredicate "गंडवालाल्‌को"@ne .
+
+<nepalica:8637#ne000072> ns1:nepaltokenspredicate "पापीगाउको"@ne .
+
+<nepalica:8637#ne000073> ns1:nepaltokenspredicate "१५"@ne .
+
+<nepalica:8637#ne000074> ns1:nepaltokenspredicate "१६॥"@ne .
+
+<nepalica:8637#ne000075> ns1:nepaltokenspredicate "असंटोल्‌का"@ne .
+
+<nepalica:8637#ne000076> ns1:nepaltokenspredicate "९"@ne .
+
+<nepalica:8637#ne000077> ns1:nepaltokenspredicate "धरंथलीछेउको"@ne .
+
+<nepalica:8637#ne000078> ns1:nepaltokenspredicate "कोषयना"@ne .
+
+<nepalica:8637#ne000079> ns1:nepaltokenspredicate "पंभुछेउको"@ne .
+
+<nepalica:8637#ne000080> ns1:nepaltokenspredicate "भगुषुलको"@ne .
+
+<nepalica:8637#ne000081> ns1:nepaltokenspredicate "त्यपधुछेउको"@ne .
+
+<nepalica:8637#ne000082> ns1:nepaltokenspredicate "२०"@ne .
+
+<nepalica:8637#ne000083> ns1:nepaltokenspredicate "देउरालीमाहा"@ne .
+
+<nepalica:8637#ne000084> ns1:nepaltokenspredicate "जोगीटार"@ne .
+
+<nepalica:8637#ne000085> ns1:nepaltokenspredicate "षेतको"@ne .
+
+<nepalica:8637#ne000086> ns1:nepaltokenspredicate "कुत्‌"@ne .
+
+<nepalica:8637#ne000087> ns1:nepaltokenspredicate "मुरी"@ne .
+
+<nepalica:8637#ne000088> ns1:nepaltokenspredicate "धान्‌"@ne .
+
+<nepalica:8637#ne000089> ns1:nepaltokenspredicate "आउछं"@ne .
+
+<nepalica:8637#ne000090> ns1:nepaltokenspredicate "येती"@ne .
+
+<nepalica:8637#ne000091> ns1:nepaltokenspredicate "असं"@ne .
+
+<nepalica:8637#ne000092> ns1:nepaltokenspredicate "गुठी"@ne .
+
+<nepalica:8637#ne000093> ns1:nepaltokenspredicate "वालाचतुर्दसिका"@ne .
+
+<nepalica:8637#ne000094> ns1:nepaltokenspredicate "दीन"@ne .
+
+<nepalica:8637#ne000095> ns1:nepaltokenspredicate "वंमा"@ne .
+
+<nepalica:8637#ne000096> ns1:nepaltokenspredicate "चक्रपुजाको"@ne .
+
+<nepalica:8637#ne000097> ns1:nepaltokenspredicate "१९"@ne .
+
+<nepalica:8637#ne000098> ns1:nepaltokenspredicate "टौगाल्‌को"@ne .
+
+<nepalica:8637#ne000099> ns1:nepaltokenspredicate "टोषाछेउको"@ne .
+
+<nepalica:8637#ne000100> ns1:nepaltokenspredicate "देउपाटंछेउको"@ne .
+
+<nepalica:8637#ne000101> ns1:nepaltokenspredicate "६"@ne .
+
+<nepalica:8637#ne000102> ns1:nepaltokenspredicate "चषुछेउको"@ne .
+
+<nepalica:8637#ne000103> ns1:nepaltokenspredicate "सांलाछेउको"@ne .
+
+<nepalica:8637#ne000104> ns1:nepaltokenspredicate "क्वाठछेउको"@ne .
+
+<nepalica:8637#ne000105> ns1:nepaltokenspredicate "५५//५३"@ne .
+
+<nepalica:8637#ne000106> ns1:nepaltokenspredicate "ईन्द्रचोक्‌को"@ne .
+
+<nepalica:8637#ne000107> ns1:nepaltokenspredicate "डीहीछेउको"@ne .
+
+<nepalica:8637#ne000108> ns1:nepaltokenspredicate "टुकुचाछेउको"@ne .
+
+<nepalica:8637#ne000109> ns1:nepaltokenspredicate "रषुवुछेउको"@ne .
+
+<nepalica:8637#ne000110> ns1:nepaltokenspredicate "सव"@ne .
+
+<nepalica:8637#ne000111> ns1:nepaltokenspredicate "२१९।।।"@ne .
+
+<nepalica:8637#ne000112> ns1:nepaltokenspredicate "तस्को"@ne .
+
+<nepalica:8637#ne000113> ns1:nepaltokenspredicate "सये"@ne .
+
+<nepalica:8637#ne000114> ns1:nepaltokenspredicate "मुरिको"@ne .
+
+<nepalica:8637#ne000115> ns1:nepaltokenspredicate "हिसाव"@ne .
+
+<nepalica:8637#ne000116> ns1:nepaltokenspredicate "गर्दा"@ne .
+
+<nepalica:8637#ne000117> ns1:nepaltokenspredicate "षेत"@ne .
+
+<nepalica:8637#ne000118> ns1:nepaltokenspredicate "८"@ne .
+
+<nepalica:8637#ne000119> ns1:nepaltokenspredicate "७९"@ne .
+
+<nepalica:8637#ne000120> ns1:nepaltokenspredicate "हुं"@ne .
+
+<nepalica:8637#ne000121> ns1:nepaltokenspredicate "सम्वत्‌"@ne .
+
+<nepalica:8637#ne000122> ns1:nepaltokenspredicate "१८२६"@ne .
+
+<nepalica:8637#ne000123> ns1:nepaltokenspredicate "का"@ne .
+
+<nepalica:8637#ne000124> ns1:nepaltokenspredicate "सुदी"@ne .
+
+<nepalica:8637#ne000125> ns1:nepaltokenspredicate "रोज"@ne .
+
+<nepalica:8637#ne000126> ns1:nepaltokenspredicate "मुकां"@ne .
+
+<nepalica:8637#ne000127> ns1:nepaltokenspredicate "कांतीपुर"@ne .
+
+<nepalica:8637#ne000128> ns1:nepaltokenspredicate "सुभ्म्‌"@ne .
+

@@ -7,7 +7,7 @@
 @prefix nepalica_reg: <https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/> .
 @prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema: <http://schema.org/> .
+@prefix schema1: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix geonames: <https://sws.geonames.org/> .
 @prefix dbr: <https://dbpedia.org/resource/> .
@@ -39,7 +39,7 @@ nepalica:1 a dct:Document ,
     dct:subject "jogī, ānā"@en ;
     dct:title "A copy of a lālamohara from King Pṛthvīnārāyaṇa appointing Gosāī̃ Bhagavantanātha as central overseer of jogīs (VS 1827)"@en ;
     dct:type "lālamohara; copy"@en ;
-    schema:created "4/6/16, 12:56 PM; 6/11/21, 11:28 AM; 12"@en ;
+    schema1:created "4/6/16, 12:56 PM; 6/11/21, 11:28 AM; 12"@en ;
     lime:language "Nepali; Devanagari"@en .
 
 nepalica:1#en000091 a skos:Concept ;

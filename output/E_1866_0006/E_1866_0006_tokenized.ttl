@@ -9,7 +9,7 @@
 @prefix nepalica_reg: <https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/> .
 @prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema: <http://schema.org/> .
+@prefix schema1: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix geonames: <https://sws.geonames.org/> .
 @prefix dbr: <https://dbpedia.org/resource/> .
@@ -41,7 +41,7 @@ nepalica:1 a dct:Document ,
     dct:subject "jogī, ānā"@en ;
     dct:title "A copy of a lālamohara from King Pṛthvīnārāyaṇa appointing Gosāī̃ Bhagavantanātha as central overseer of jogīs (VS 1827)"@en ;
     dct:type "lālamohara; copy"@en ;
-    schema:created "4/6/16, 12:56 PM; 6/11/21, 11:28 AM; 12"@en ;
+    schema1:created "4/6/16, 12:56 PM; 6/11/21, 11:28 AM; 12"@en ;
     lime:language "Nepali; Devanagari"@en .
 
 nepalica:1#en000001 a ontolex:LexicalEntry ,
@@ -87,14 +87,13 @@ nepalica:1#en000005 a foaf:Person ;
 nepalica:1#en000006 :followedBy nepalica:1#en000007 .
 
 nepalica:1#en000007 a foaf:Person ;
-    rdfs:label "ठिठुवा विष्ट"@ne ,
-        "Ṭhiṭhubā Biṣṭa"@ne ;
+    rdfs:label "Silin Namgyāla Biṣṭa"@ne ,
+        "सिलिन्नम्‌ग्याल विष्ट"@ne ;
     :followedBy nepalica:1#en000008 ;
-    schema:gender schema:Male ;
-    rdfs:comment "flourished: 1820 (VS 1877);  details: together with Guṃgyāla Biṣṭa and Silin Namgyāla Biṣṭa wrote a letter to Bhīmasena Thāpā asking whether they should continue their journey from Pokhara delivering a horse to the Kathmandu Valley upon hearing news about smallpox being rampant in the three cities in the valley (E_1866_0006); further literature: for his occurence in documents Pant and Pierce 1989: 28f. n 1; for the cooperation of the influential khri-thog-pa Biṣṭa family with the Gorkhālī rulers, see Dhungel 2002: 122f., 139f. n 38."@ne ;
-    rdfs:seeAlso nepalica_reg:181 ;
-    skos:altLabel "Ṭhiṭubā Biṣṭa" ;
-    foaf:name "Ṭhiṭhubā Biṣṭa"@ne ;
+    schema1:gender schema1:Male ;
+    rdfs:comment "flourished: 1821 (VS 1877, E_1866_0006);  details: together with Ṭhiṭhubā Biṣṭa and Guṃgyāla Biṣṭa wrote a letter to Bhīmasena Thāpā asking whether they should continue their journey from Pokhara delivering a horse to the Kathmandu Valley upon hearing news about smallpox being rampant in the three cities in the valley (E_1866_0006)."@ne ;
+    rdfs:seeAlso nepalica_reg:182 ;
+    foaf:name "Silin Namgyāla Biṣṭa"@ne ;
     gndo:surname "Biṣṭa"@ne .
 
 nepalica:1#en000008 :followedBy nepalica:1#en000009 .
@@ -102,27 +101,25 @@ nepalica:1#en000008 :followedBy nepalica:1#en000009 .
 nepalica:1#en000009 :followedBy nepalica:1#en000010 .
 
 nepalica:1#en000010 a foaf:Person ;
-    rdfs:label "ठिठुवा विष्ट"@ne ,
-        "Ṭhiṭhubā Biṣṭa"@ne ;
+    rdfs:label "Silin Namgyāla Biṣṭa"@ne ,
+        "सिलिन्नम्‌ग्याल विष्ट"@ne ;
     :followedBy nepalica:1#en000011 ;
-    schema:gender schema:Male ;
-    rdfs:comment "flourished: 1820 (VS 1877);  details: together with Guṃgyāla Biṣṭa and Silin Namgyāla Biṣṭa wrote a letter to Bhīmasena Thāpā asking whether they should continue their journey from Pokhara delivering a horse to the Kathmandu Valley upon hearing news about smallpox being rampant in the three cities in the valley (E_1866_0006); further literature: for his occurence in documents Pant and Pierce 1989: 28f. n 1; for the cooperation of the influential khri-thog-pa Biṣṭa family with the Gorkhālī rulers, see Dhungel 2002: 122f., 139f. n 38."@ne ;
-    rdfs:seeAlso nepalica_reg:181 ;
-    skos:altLabel "Ṭhiṭubā Biṣṭa" ;
-    foaf:name "Ṭhiṭhubā Biṣṭa"@ne ;
+    schema1:gender schema1:Male ;
+    rdfs:comment "flourished: 1821 (VS 1877, E_1866_0006);  details: together with Ṭhiṭhubā Biṣṭa and Guṃgyāla Biṣṭa wrote a letter to Bhīmasena Thāpā asking whether they should continue their journey from Pokhara delivering a horse to the Kathmandu Valley upon hearing news about smallpox being rampant in the three cities in the valley (E_1866_0006)."@ne ;
+    rdfs:seeAlso nepalica_reg:182 ;
+    foaf:name "Silin Namgyāla Biṣṭa"@ne ;
     gndo:surname "Biṣṭa"@ne .
 
 nepalica:1#en000011 :followedBy nepalica:1#en000012 .
 
 nepalica:1#en000012 a foaf:Person ;
-    rdfs:label "ठिठुवा विष्ट"@ne ,
-        "Ṭhiṭhubā Biṣṭa"@ne ;
+    rdfs:label "Silin Namgyāla Biṣṭa"@ne ,
+        "सिलिन्नम्‌ग्याल विष्ट"@ne ;
     :followedBy nepalica:1#en000013 ;
-    schema:gender schema:Male ;
-    rdfs:comment "flourished: 1820 (VS 1877);  details: together with Guṃgyāla Biṣṭa and Silin Namgyāla Biṣṭa wrote a letter to Bhīmasena Thāpā asking whether they should continue their journey from Pokhara delivering a horse to the Kathmandu Valley upon hearing news about smallpox being rampant in the three cities in the valley (E_1866_0006); further literature: for his occurence in documents Pant and Pierce 1989: 28f. n 1; for the cooperation of the influential khri-thog-pa Biṣṭa family with the Gorkhālī rulers, see Dhungel 2002: 122f., 139f. n 38."@ne ;
-    rdfs:seeAlso nepalica_reg:181 ;
-    skos:altLabel "Ṭhiṭubā Biṣṭa" ;
-    foaf:name "Ṭhiṭhubā Biṣṭa"@ne ;
+    schema1:gender schema1:Male ;
+    rdfs:comment "flourished: 1821 (VS 1877, E_1866_0006);  details: together with Ṭhiṭhubā Biṣṭa and Guṃgyāla Biṣṭa wrote a letter to Bhīmasena Thāpā asking whether they should continue their journey from Pokhara delivering a horse to the Kathmandu Valley upon hearing news about smallpox being rampant in the three cities in the valley (E_1866_0006)."@ne ;
+    rdfs:seeAlso nepalica_reg:182 ;
+    foaf:name "Silin Namgyāla Biṣṭa"@ne ;
     gndo:surname "Biṣṭa"@ne .
 
 nepalica:1#en000013 a ontolex:LexicalEntry ,
@@ -138,7 +135,7 @@ nepalica:1#en000014 :followedBy nepalica:1#en000015 .
 nepalica:1#en000015 a foaf:Person ;
     rdfs:label "Bhīmasena Thāpā"@ne ;
     :followedBy nepalica:1#en000016 ;
-    schema:gender schema:Male ;
+    schema1:gender schema1:Male ;
     rdfs:comment "also known as: Bhimsen Thapa; born: August 1775; died: 28 July 1839;  father: Amara Siṃha Thāpā; details: held the titles of general, kājī (appointed April 1804; M.C. Regmi 1995: 59 n. 6), prime minister (mukhtiyāra) and regent for the infant kings Girvāṇayuddha and Surendra from 1806 to 1837, later also addressed as svāmī; normdata:"@ne ;
     rdfs:seeAlso dbr:Bhimsen_Thapa ,
         gnd:1024044661 ,

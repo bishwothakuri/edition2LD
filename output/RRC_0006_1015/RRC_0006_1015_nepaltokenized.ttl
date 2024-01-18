@@ -1,0 +1,3826 @@
+@prefix : <http://example.org/> .
+@prefix dbr: <https://dbpedia.org/resource/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix gndo: <https://d-nb.info/standards/elementset/gnd#> .
+@prefix nepalica_reg: <https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+nepalica:1#ne000001 a dbr:Number ;
+    :followedBy nepalica:1#ne000002 ;
+    ontolex:canonicalForm nepalica:1#ne000001_form ;
+    ontolex:writtenRep "३६७"@en .
+
+nepalica:1#ne000001_form a ontolex:Form ;
+    ontolex:writtenRep "३६७"@ne .
+
+nepalica:1#ne000002 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000003 ;
+    ontolex:canonicalForm nepalica:1#ne000002_form .
+
+nepalica:1#ne000002_form a ontolex:Form ;
+    ontolex:writtenRep "मीती"@ne .
+
+nepalica:1#ne000003 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000004 ;
+    ontolex:canonicalForm nepalica:1#ne000003_form .
+
+nepalica:1#ne000003_form a ontolex:Form ;
+    ontolex:writtenRep "प्रथम"@ne .
+
+nepalica:1#ne000004 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000005 ;
+    ontolex:canonicalForm nepalica:1#ne000004_form .
+
+nepalica:1#ne000004_form a ontolex:Form ;
+    ontolex:writtenRep "आषाड्‌"@ne .
+
+nepalica:1#ne000005 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000006 ;
+    ontolex:canonicalForm nepalica:1#ne000005_form .
+
+nepalica:1#ne000005_form a ontolex:Form ;
+    ontolex:writtenRep "सुदी"@ne .
+
+nepalica:1#ne000006 a dbr:Number ;
+    :followedBy nepalica:1#ne000007 ;
+    ontolex:canonicalForm nepalica:1#ne000006_form ;
+    ontolex:writtenRep "४"@en .
+
+nepalica:1#ne000006_form a ontolex:Form ;
+    ontolex:writtenRep "४"@ne .
+
+nepalica:1#ne000007 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000008 ;
+    ontolex:canonicalForm nepalica:1#ne000007_form .
+
+nepalica:1#ne000007_form a ontolex:Form ;
+    ontolex:writtenRep "रोज"@ne .
+
+nepalica:1#ne000008 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000009 ;
+    ontolex:canonicalForm nepalica:1#ne000008_form .
+
+nepalica:1#ne000008_form a ontolex:Form ;
+    ontolex:writtenRep "None"@ne .
+
+nepalica:1#ne000009 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000010 ;
+    ontolex:canonicalForm nepalica:1#ne000009_form .
+
+nepalica:1#ne000009_form a ontolex:Form ;
+    ontolex:writtenRep "आगे"@ne .
+
+nepalica:1#ne000010 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000011 ;
+    ontolex:canonicalForm nepalica:1#ne000010_form .
+
+nepalica:1#ne000010_form a ontolex:Form ;
+    ontolex:writtenRep "सुवेदार"@ne .
+
+nepalica:1#ne000011 a ontolex:LexicalEntry ,
+        ontolex:Word ,
+        foaf:Person ;
+    rdfs:label "Balabhadra Khatrī"@ne ;
+    :followedBy nepalica:1#ne000012 ;
+    schema1:gender schema1:Male ;
+    rdfs:comment "flourished: 1809 (VS 1866);  details: held the title of subedāra."@ne ;
+    rdfs:devanagariLabel "वलभद्र् षत्री"@ne ;
+    rdfs:seeAlso nepalica_reg:1657 ;
+    ontolex:canonicalForm nepalica:1#ne000011_form ;
+    foaf:name "Balabhadra Khatrī"@ne ;
+    gndo:surname "Khatrī"@ne .
+
+nepalica:1#ne000011_form a ontolex:Form ;
+    ontolex:writtenRep "वलभद्र्"@ne .
+
+nepalica:1#ne000012 a ontolex:LexicalEntry ,
+        ontolex:Word ,
+        foaf:Person ;
+    rdfs:label "Balabhadra Khatrī"@ne ;
+    :followedBy nepalica:1#ne000013 ;
+    schema1:gender schema1:Male ;
+    rdfs:comment "flourished: 1809 (VS 1866);  details: held the title of subedāra."@ne ;
+    rdfs:devanagariLabel "वलभद्र् षत्री"@ne ;
+    rdfs:seeAlso nepalica_reg:1657 ;
+    ontolex:canonicalForm nepalica:1#ne000012_form ;
+    foaf:name "Balabhadra Khatrī"@ne ;
+    gndo:surname "Khatrī"@ne .
+
+nepalica:1#ne000012_form a ontolex:Form ;
+    ontolex:writtenRep "षत्री"@ne .
+
+nepalica:1#ne000013 a ontolex:LexicalEntry ,
+        ontolex:Word ,
+        foaf:Person ;
+    rdfs:label "Dharmānanda Khavāsa"@ne ;
+    :followedBy nepalica:1#ne000014 ;
+    schema1:gender schema1:Male ;
+    rdfs:comment "flourished: 1809 (VS 1866);  details: held the title of subedāra."@ne ;
+    rdfs:devanagariLabel "धर्मानंद ष"@ne ;
+    rdfs:seeAlso nepalica_reg:1658 ;
+    ontolex:canonicalForm nepalica:1#ne000013_form ;
+    foaf:name "Dharmānanda Khavāsa"@ne ;
+    gndo:surname "Khavāsa"@ne .
+
+nepalica:1#ne000013_form a ontolex:Form ;
+    ontolex:writtenRep "धर्मानंद"@ne .
+
+nepalica:1#ne000014 a ontolex:LexicalEntry ,
+        ontolex:Word ,
+        foaf:Person ;
+    rdfs:label "Dharmānanda Khavāsa"@ne ;
+    :followedBy nepalica:1#ne000015 ;
+    schema1:gender schema1:Male ;
+    rdfs:comment "flourished: 1809 (VS 1866);  details: held the title of subedāra."@ne ;
+    rdfs:devanagariLabel "धर्मानंद ष"@ne ;
+    rdfs:seeAlso nepalica_reg:1658 ;
+    ontolex:canonicalForm nepalica:1#ne000014_form ;
+    foaf:name "Dharmānanda Khavāsa"@ne ;
+    gndo:surname "Khavāsa"@ne .
+
+nepalica:1#ne000014_form a ontolex:Form ;
+    ontolex:writtenRep "ष"@ne .
+
+nepalica:1#ne000015 a gn:Feature ,
+        ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000016 ;
+    gn:name ""@ne ;
+    rdfs:comment "also known as Dharaṃthalī , Dharmathalī; a village and former village development committee in Kathmandu district , north west of Kathmandu;"@en ;
+    rdfs:seeAlso dbr:Dharmasthali ,
+        nepalica_reg:519 ,
+        wiki:Dharmasthali ;
+    skos:altLabel "Dharmathalī"@ne ;
+    ontolex:canonicalForm nepalica:1#ne000015_form .
+
+nepalica:1#ne000015_form a ontolex:Form ;
+    ontolex:writtenRep "धर्मथली"@ne .
+
+nepalica:1#ne000016 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000017 ;
+    ontolex:canonicalForm nepalica:1#ne000016_form .
+
+nepalica:1#ne000016_form a ontolex:Form ;
+    ontolex:writtenRep "पस्चीं"@ne .
+
+nepalica:1#ne000017 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000018 ;
+    ontolex:canonicalForm nepalica:1#ne000017_form .
+
+nepalica:1#ne000017_form a ontolex:Form ;
+    ontolex:writtenRep "जमुना"@ne .
+
+nepalica:1#ne000018 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000019 ;
+    ontolex:canonicalForm nepalica:1#ne000018_form .
+
+nepalica:1#ne000018_form a ontolex:Form ;
+    ontolex:writtenRep "पुर्व"@ne .
+
+nepalica:1#ne000019 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000020 ;
+    ontolex:canonicalForm nepalica:1#ne000019_form .
+
+nepalica:1#ne000019_form a ontolex:Form ;
+    ontolex:writtenRep "जगा"@ne .
+
+nepalica:1#ne000020 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000021 ;
+    ontolex:canonicalForm nepalica:1#ne000020_form .
+
+nepalica:1#ne000020_form a ontolex:Form ;
+    ontolex:writtenRep "जगामा"@ne .
+
+nepalica:1#ne000021 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000022 ;
+    ontolex:canonicalForm nepalica:1#ne000021_form .
+
+nepalica:1#ne000021_form a ontolex:Form ;
+    ontolex:writtenRep "जाई"@ne .
+
+nepalica:1#ne000022 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000023 ;
+    ontolex:canonicalForm nepalica:1#ne000022_form .
+
+nepalica:1#ne000022_form a ontolex:Form ;
+    ontolex:writtenRep "गर्न्या"@ne .
+
+nepalica:1#ne000023 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000024 ;
+    ontolex:canonicalForm nepalica:1#ne000023_form .
+
+nepalica:1#ne000023_form a ontolex:Form ;
+    ontolex:writtenRep "काजको"@ne .
+
+nepalica:1#ne000024 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000025 ;
+    ontolex:canonicalForm nepalica:1#ne000024_form .
+
+nepalica:1#ne000024_form a ontolex:Form ;
+    ontolex:writtenRep "सव"@ne .
+
+nepalica:1#ne000025 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000026 ;
+    ontolex:canonicalForm nepalica:1#ne000025_form .
+
+nepalica:1#ne000025_form a ontolex:Form ;
+    ontolex:writtenRep "गरीवक्स्यौं"@ne .
+
+nepalica:1#ne000026 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000027 ;
+    ontolex:canonicalForm nepalica:1#ne000026_form .
+
+nepalica:1#ne000026_form a ontolex:Form ;
+    ontolex:writtenRep "वमोजींको"@ne .
+
+nepalica:1#ne000027 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000028 ;
+    ontolex:canonicalForm nepalica:1#ne000027_form .
+
+nepalica:1#ne000027_form a ontolex:Form ;
+    ontolex:writtenRep "काज"@ne .
+
+nepalica:1#ne000028 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000029 ;
+    ontolex:canonicalForm nepalica:1#ne000028_form .
+
+nepalica:1#ne000028_form a ontolex:Form ;
+    ontolex:writtenRep "गर्दा"@ne .
+
+nepalica:1#ne000029 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000030 ;
+    ontolex:canonicalForm nepalica:1#ne000029_form .
+
+nepalica:1#ne000029_form a ontolex:Form ;
+    ontolex:writtenRep "कसैको"@ne .
+
+nepalica:1#ne000030 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000031 ;
+    ontolex:canonicalForm nepalica:1#ne000030_form .
+
+nepalica:1#ne000030_form a ontolex:Form ;
+    ontolex:writtenRep "मुलाहीजा"@ne .
+
+nepalica:1#ne000031 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000032 ;
+    ontolex:canonicalForm nepalica:1#ne000031_form .
+
+nepalica:1#ne000031_form a ontolex:Form ;
+    ontolex:writtenRep "नप"@ne .
+
+nepalica:1#ne000032 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000033 ;
+    ontolex:canonicalForm nepalica:1#ne000032_form .
+
+nepalica:1#ne000032_form a ontolex:Form ;
+    ontolex:writtenRep "हाम्रा"@ne .
+
+nepalica:1#ne000033 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000034 ;
+    ontolex:canonicalForm nepalica:1#ne000033_form .
+
+nepalica:1#ne000033_form a ontolex:Form ;
+    ontolex:writtenRep "नीमकको"@ne .
+
+nepalica:1#ne000034 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000035 ;
+    ontolex:canonicalForm nepalica:1#ne000034_form .
+
+nepalica:1#ne000034_form a ontolex:Form ;
+    ontolex:writtenRep "सो"@ne .
+
+nepalica:1#ne000035 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000036 ;
+    ontolex:canonicalForm nepalica:1#ne000035_form .
+
+nepalica:1#ne000035_form a ontolex:Form ;
+    ontolex:writtenRep "गरी"@ne .
+
+nepalica:1#ne000036 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000037 ;
+    ontolex:canonicalForm nepalica:1#ne000036_form .
+
+nepalica:1#ne000036_form a ontolex:Form ;
+    ontolex:writtenRep "लाय"@ne .
+
+nepalica:1#ne000037 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000038 ;
+    ontolex:canonicalForm nepalica:1#ne000037_form .
+
+nepalica:1#ne000037_form a ontolex:Form ;
+    ontolex:writtenRep "कांमा"@ne .
+
+nepalica:1#ne000038 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000039 ;
+    ontolex:canonicalForm nepalica:1#ne000038_form .
+
+nepalica:1#ne000038_form a ontolex:Form ;
+    ontolex:writtenRep "तत्पर"@ne .
+
+nepalica:1#ne000039 a dbr:Number ;
+    :followedBy nepalica:1#ne000040 ;
+    ontolex:canonicalForm nepalica:1#ne000039_form ;
+    ontolex:writtenRep "१९३"@en .
+
+nepalica:1#ne000039_form a ontolex:Form ;
+    ontolex:writtenRep "१९३"@ne .
+
+nepalica:1#ne000040 a dbr:Number ;
+    :followedBy nepalica:1#ne000041 ;
+    ontolex:canonicalForm nepalica:1#ne000040_form ;
+    ontolex:writtenRep "444"@en .
+
+nepalica:1#ne000040_form a ontolex:Form ;
+    ontolex:writtenRep "444"@ne .
+
+nepalica:1#ne000041 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000042 ;
+    ontolex:canonicalForm nepalica:1#ne000041_form .
+
+nepalica:1#ne000041_form a ontolex:Form ;
+    ontolex:writtenRep "भै"@ne .
+
+nepalica:1#ne000042 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000043 ;
+    ontolex:canonicalForm nepalica:1#ne000042_form .
+
+nepalica:1#ne000042_form a ontolex:Form ;
+    ontolex:writtenRep "गर"@ne .
+
+nepalica:1#ne000043 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000044 ;
+    ontolex:canonicalForm nepalica:1#ne000043_form .
+
+nepalica:1#ne000043_form a ontolex:Form ;
+    ontolex:writtenRep "भेरी"@ne .
+
+nepalica:1#ne000044 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000045 ;
+    ontolex:canonicalForm nepalica:1#ne000044_form .
+
+nepalica:1#ne000044_form a ontolex:Form ;
+    ontolex:writtenRep "ची"@ne .
+
+nepalica:1#ne000045 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000046 ;
+    ontolex:canonicalForm nepalica:1#ne000045_form .
+
+nepalica:1#ne000045_form a ontolex:Form ;
+    ontolex:writtenRep "हुलाक"@ne .
+
+nepalica:1#ne000046 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000047 ;
+    ontolex:canonicalForm nepalica:1#ne000046_form .
+
+nepalica:1#ne000046_form a ontolex:Form ;
+    ontolex:writtenRep "राष्य"@ne .
+
+nepalica:1#ne000047 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000048 ;
+    ontolex:canonicalForm nepalica:1#ne000047_form .
+
+nepalica:1#ne000047_form a ontolex:Form ;
+    ontolex:writtenRep "मोहर"@ne .
+
+nepalica:1#ne000048 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000049 ;
+    ontolex:canonicalForm nepalica:1#ne000048_form .
+
+nepalica:1#ne000048_form a ontolex:Form ;
+    ontolex:writtenRep "वमोजीं"@ne .
+
+nepalica:1#ne000049 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000050 ;
+    ontolex:canonicalForm nepalica:1#ne000049_form .
+
+nepalica:1#ne000049_form a ontolex:Form ;
+    ontolex:writtenRep "वसे"@ne .
+
+nepalica:1#ne000050 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000051 ;
+    ontolex:canonicalForm nepalica:1#ne000050_form .
+
+nepalica:1#ne000050_form a ontolex:Form ;
+    ontolex:writtenRep "नवसेको"@ne .
+
+nepalica:1#ne000051 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000052 ;
+    ontolex:canonicalForm nepalica:1#ne000051_form .
+
+nepalica:1#ne000051_form a ontolex:Form ;
+    ontolex:writtenRep "षसोषास"@ne .
+
+nepalica:1#ne000052 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000053 ;
+    ontolex:canonicalForm nepalica:1#ne000052_form .
+
+nepalica:1#ne000052_form a ontolex:Form ;
+    ontolex:writtenRep "जाची"@ne .
+
+nepalica:1#ne000053 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000054 ;
+    ontolex:canonicalForm nepalica:1#ne000053_form .
+
+nepalica:1#ne000053_form a ontolex:Form ;
+    ontolex:writtenRep "अघीको"@ne .
+
+nepalica:1#ne000054 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000055 ;
+    ontolex:canonicalForm nepalica:1#ne000054_form .
+
+nepalica:1#ne000054_form a ontolex:Form ;
+    ontolex:writtenRep "हुलाकीलाई"@ne .
+
+nepalica:1#ne000055 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000056 ;
+    ontolex:canonicalForm nepalica:1#ne000055_form .
+
+nepalica:1#ne000055_form a ontolex:Form ;
+    ontolex:writtenRep "साउंने"@ne .
+
+nepalica:1#ne000056 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000057 ;
+    ontolex:canonicalForm nepalica:1#ne000056_form .
+
+nepalica:1#ne000056_form a ontolex:Form ;
+    ontolex:writtenRep "फागुको"@ne .
+
+nepalica:1#ne000057 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000058 ;
+    ontolex:canonicalForm nepalica:1#ne000057_form .
+
+nepalica:1#ne000057_form a ontolex:Form ;
+    ontolex:writtenRep "आधा"@ne .
+
+nepalica:1#ne000058 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000059 ;
+    ontolex:canonicalForm nepalica:1#ne000058_form .
+
+nepalica:1#ne000058_form a ontolex:Form ;
+    ontolex:writtenRep "वेथ"@ne .
+
+nepalica:1#ne000059 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000060 ;
+    ontolex:canonicalForm nepalica:1#ne000059_form .
+
+nepalica:1#ne000059_form a ontolex:Form ;
+    ontolex:writtenRep "वेगार"@ne .
+
+nepalica:1#ne000060 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000061 ;
+    ontolex:canonicalForm nepalica:1#ne000060_form .
+
+nepalica:1#ne000060_form a ontolex:Form ;
+    ontolex:writtenRep "घरवारी"@ne .
+
+nepalica:1#ne000061 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000062 ;
+    ontolex:canonicalForm nepalica:1#ne000061_form .
+
+nepalica:1#ne000061_form a ontolex:Form ;
+    ontolex:writtenRep "सेर्मा"@ne .
+
+nepalica:1#ne000062 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000063 ;
+    ontolex:canonicalForm nepalica:1#ne000062_form .
+
+nepalica:1#ne000062_form a ontolex:Form ;
+    ontolex:writtenRep "माफ्‌"@ne .
+
+nepalica:1#ne000063 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000064 ;
+    ontolex:canonicalForm nepalica:1#ne000063_form .
+
+nepalica:1#ne000063_form a ontolex:Form ;
+    ontolex:writtenRep "हुलाकीले"@ne .
+
+nepalica:1#ne000064 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000065 ;
+    ontolex:canonicalForm nepalica:1#ne000064_form .
+
+nepalica:1#ne000064_form a ontolex:Form ;
+    ontolex:writtenRep "कमाय"@ne .
+
+nepalica:1#ne000065 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000066 ;
+    ontolex:canonicalForm nepalica:1#ne000065_form .
+
+nepalica:1#ne000065_form a ontolex:Form ;
+    ontolex:writtenRep "षेत्‌"@ne .
+
+nepalica:1#ne000066 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000067 ;
+    ontolex:canonicalForm nepalica:1#ne000066_form .
+
+nepalica:1#ne000066_form a ontolex:Form ;
+    ontolex:writtenRep "अधीञा"@ne .
+
+nepalica:1#ne000067 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000068 ;
+    ontolex:canonicalForm nepalica:1#ne000067_form .
+
+nepalica:1#ne000067_form a ontolex:Form ;
+    ontolex:writtenRep "नषोस्"@ne .
+
+nepalica:1#ne000068 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000069 ;
+    ontolex:canonicalForm nepalica:1#ne000068_form .
+
+nepalica:1#ne000068_form a ontolex:Form ;
+    ontolex:writtenRep "भनी"@ne .
+
+nepalica:1#ne000069 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000070 ;
+    ontolex:canonicalForm nepalica:1#ne000069_form .
+
+nepalica:1#ne000069_form a ontolex:Form ;
+    ontolex:writtenRep "गरीवक्सेको"@ne .
+
+nepalica:1#ne000070 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000071 ;
+    ontolex:canonicalForm nepalica:1#ne000070_form .
+
+nepalica:1#ne000070_form a ontolex:Form ;
+    ontolex:writtenRep "हो"@ne .
+
+nepalica:1#ne000071 a dbr:Number ;
+    :followedBy nepalica:1#ne000072 ;
+    ontolex:canonicalForm nepalica:1#ne000071_form ;
+    ontolex:writtenRep "६६"@en .
+
+nepalica:1#ne000071_form a ontolex:Form ;
+    ontolex:writtenRep "६६"@ne .
+
+nepalica:1#ne000072 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000073 ;
+    ontolex:canonicalForm nepalica:1#ne000072_form .
+
+nepalica:1#ne000072_form a ontolex:Form ;
+    ontolex:writtenRep "सालदे"@ne .
+
+nepalica:1#ne000073 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000074 ;
+    ontolex:canonicalForm nepalica:1#ne000073_form .
+
+nepalica:1#ne000073_form a ontolex:Form ;
+    ontolex:writtenRep "साउंन्य"@ne .
+
+nepalica:1#ne000074 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000075 ;
+    ontolex:canonicalForm nepalica:1#ne000074_form .
+
+nepalica:1#ne000074_form a ontolex:Form ;
+    ontolex:writtenRep "फागु"@ne .
+
+nepalica:1#ne000075 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000076 ;
+    ontolex:canonicalForm nepalica:1#ne000075_form .
+
+nepalica:1#ne000075_form a ontolex:Form ;
+    ontolex:writtenRep "तीर्न्या"@ne .
+
+nepalica:1#ne000076 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000077 ;
+    ontolex:canonicalForm nepalica:1#ne000076_form .
+
+nepalica:1#ne000076_form a ontolex:Form ;
+    ontolex:writtenRep "स्मेत्‌"@ne .
+
+nepalica:1#ne000077 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000078 ;
+    ontolex:canonicalForm nepalica:1#ne000077_form .
+
+nepalica:1#ne000077_form a ontolex:Form ;
+    ontolex:writtenRep "माफ"@ne .
+
+nepalica:1#ne000078 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000079 ;
+    ontolex:canonicalForm nepalica:1#ne000078_form .
+
+nepalica:1#ne000078_form a ontolex:Form ;
+    ontolex:writtenRep "ग"@ne .
+
+nepalica:1#ne000079 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000080 ;
+    ontolex:canonicalForm nepalica:1#ne000079_form .
+
+nepalica:1#ne000079_form a ontolex:Form ;
+    ontolex:writtenRep "घर"@ne .
+
+nepalica:1#ne000080 a dbr:Number ;
+    :followedBy nepalica:1#ne000081 ;
+    ontolex:canonicalForm nepalica:1#ne000080_form ;
+    ontolex:writtenRep "१"@en .
+
+nepalica:1#ne000080_form a ontolex:Form ;
+    ontolex:writtenRep "१"@ne .
+
+nepalica:1#ne000081 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000082 ;
+    ontolex:canonicalForm nepalica:1#ne000081_form .
+
+nepalica:1#ne000081_form a ontolex:Form ;
+    ontolex:writtenRep "के"@ne .
+
+nepalica:1#ne000082 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000083 ;
+    ontolex:canonicalForm nepalica:1#ne000082_form .
+
+nepalica:1#ne000082_form a ontolex:Form ;
+    ontolex:writtenRep "मुरी"@ne .
+
+nepalica:1#ne000083 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000084 ;
+    ontolex:canonicalForm nepalica:1#ne000083_form .
+
+nepalica:1#ne000083_form a ontolex:Form ;
+    ontolex:writtenRep "कमाउंनु"@ne .
+
+nepalica:1#ne000084 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000085 ;
+    ontolex:canonicalForm nepalica:1#ne000084_form .
+
+nepalica:1#ne000084_form a ontolex:Form ;
+    ontolex:writtenRep "वंधेज"@ne .
+
+nepalica:1#ne000085 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000086 ;
+    ontolex:canonicalForm nepalica:1#ne000085_form .
+
+nepalica:1#ne000085_form a ontolex:Form ;
+    ontolex:writtenRep "वाँधी"@ne .
+
+nepalica:1#ne000086 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000087 ;
+    ontolex:canonicalForm nepalica:1#ne000086_form .
+
+nepalica:1#ne000086_form a ontolex:Form ;
+    ontolex:writtenRep "वक्स्य"@ne .
+
+nepalica:1#ne000087 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000088 ;
+    ontolex:canonicalForm nepalica:1#ne000087_form .
+
+nepalica:1#ne000087_form a ontolex:Form ;
+    ontolex:writtenRep "ये"@ne .
+
+nepalica:1#ne000088 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000089 ;
+    ontolex:canonicalForm nepalica:1#ne000088_form .
+
+nepalica:1#ne000088_form a ontolex:Form ;
+    ontolex:writtenRep "रुक्का"@ne .
+
+nepalica:1#ne000089 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000090 ;
+    ontolex:canonicalForm nepalica:1#ne000089_form .
+
+nepalica:1#ne000089_form a ontolex:Form ;
+    ontolex:writtenRep "लेषी"@ne .
+
+nepalica:1#ne000090 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000091 ;
+    ontolex:canonicalForm nepalica:1#ne000090_form .
+
+nepalica:1#ne000090_form a ontolex:Form ;
+    ontolex:writtenRep "अघीलो"@ne .
+
+nepalica:1#ne000091 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000092 ;
+    ontolex:canonicalForm nepalica:1#ne000091_form .
+
+nepalica:1#ne000091_form a ontolex:Form ;
+    ontolex:writtenRep "ह"@ne .
+
+nepalica:1#ne000092 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000093 ;
+    ontolex:canonicalForm nepalica:1#ne000092_form .
+
+nepalica:1#ne000092_form a ontolex:Form ;
+    ontolex:writtenRep "चर्‍हाईपठाउंनु"@ne .
+
+nepalica:1#ne000093 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000094 ;
+    ontolex:canonicalForm nepalica:1#ne000093_form .
+
+nepalica:1#ne000093_form a ontolex:Form ;
+    ontolex:writtenRep "गरीवक्सी"@ne .
+
+nepalica:1#ne000094 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000095 ;
+    ontolex:canonicalForm nepalica:1#ne000094_form .
+
+nepalica:1#ne000094_form a ontolex:Form ;
+    ontolex:writtenRep "पठा"@ne .
+
+nepalica:1#ne000095 a dbr:Number ;
+    :followedBy nepalica:1#ne000096 ;
+    ontolex:canonicalForm nepalica:1#ne000095_form ;
+    ontolex:writtenRep "445"@en .
+
+nepalica:1#ne000095_form a ontolex:Form ;
+    ontolex:writtenRep "445"@ne .
+
+nepalica:1#ne000096 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000097 ;
+    ontolex:canonicalForm nepalica:1#ne000096_form .
+
+nepalica:1#ne000096_form a ontolex:Form ;
+    ontolex:writtenRep "दोश्रा"@ne .
+
+nepalica:1#ne000097 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000098 ;
+    ontolex:canonicalForm nepalica:1#ne000097_form .
+
+nepalica:1#ne000097_form a ontolex:Form ;
+    ontolex:writtenRep "चीठीपत्र"@ne .
+
+nepalica:1#ne000098 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000099 ;
+    ontolex:canonicalForm nepalica:1#ne000098_form .
+
+nepalica:1#ne000098_form a ontolex:Form ;
+    ontolex:writtenRep "कागजको"@ne .
+
+nepalica:1#ne000099 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000100 ;
+    ontolex:canonicalForm nepalica:1#ne000099_form .
+
+nepalica:1#ne000099_form a ontolex:Form ;
+    ontolex:writtenRep "चलाउंन्य"@ne .
+
+nepalica:1#ne000100 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000101 ;
+    ontolex:canonicalForm nepalica:1#ne000100_form .
+
+nepalica:1#ne000100_form a ontolex:Form ;
+    ontolex:writtenRep "अ"@ne .
+
+nepalica:1#ne000101 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000102 ;
+    ontolex:canonicalForm nepalica:1#ne000101_form .
+
+nepalica:1#ne000101_form a ontolex:Form ;
+    ontolex:writtenRep "मोहरमा"@ne .
+
+nepalica:1#ne000102 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000103 ;
+    ontolex:canonicalForm nepalica:1#ne000102_form .
+
+nepalica:1#ne000102_form a ontolex:Form ;
+    ontolex:writtenRep "लेष्य"@ne .
+
+nepalica:1#ne000103 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000104 ;
+    ontolex:canonicalForm nepalica:1#ne000103_form .
+
+nepalica:1#ne000103_form a ontolex:Form ;
+    ontolex:writtenRep "रकं"@ne .
+
+nepalica:1#ne000104 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000105 ;
+    ontolex:canonicalForm nepalica:1#ne000104_form .
+
+nepalica:1#ne000104_form a ontolex:Form ;
+    ontolex:writtenRep "र"@ne .
+
+nepalica:1#ne000105 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000106 ;
+    ontolex:canonicalForm nepalica:1#ne000105_form .
+
+nepalica:1#ne000105_form a ontolex:Form ;
+    ontolex:writtenRep "जगाअनुसार"@ne .
+
+nepalica:1#ne000106 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000107 ;
+    ontolex:canonicalForm nepalica:1#ne000106_form .
+
+nepalica:1#ne000106_form a ontolex:Form ;
+    ontolex:writtenRep "सालका"@ne .
+
+nepalica:1#ne000107 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000108 ;
+    ontolex:canonicalForm nepalica:1#ne000107_form .
+
+nepalica:1#ne000107_form a ontolex:Form ;
+    ontolex:writtenRep "वंदेज"@ne .
+
+nepalica:1#ne000108 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000109 ;
+    ontolex:canonicalForm nepalica:1#ne000108_form .
+
+nepalica:1#ne000108_form a ontolex:Form ;
+    ontolex:writtenRep "चाहीन्या"@ne .
+
+nepalica:1#ne000109 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000110 ;
+    ontolex:canonicalForm nepalica:1#ne000109_form .
+
+nepalica:1#ne000109_form a ontolex:Form ;
+    ontolex:writtenRep "रकंको"@ne .
+
+nepalica:1#ne000110 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000111 ;
+    ontolex:canonicalForm nepalica:1#ne000110_form .
+
+nepalica:1#ne000110_form a ontolex:Form ;
+    ontolex:writtenRep "व"@ne .
+
+nepalica:1#ne000111 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000112 ;
+    ontolex:canonicalForm nepalica:1#ne000111_form .
+
+nepalica:1#ne000111_form a ontolex:Form ;
+    ontolex:writtenRep "मीलाई"@ne .
+
+nepalica:1#ne000112 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000113 ;
+    ontolex:canonicalForm nepalica:1#ne000112_form .
+
+nepalica:1#ne000112_form a ontolex:Form ;
+    ontolex:writtenRep "हजु"@ne .
+
+nepalica:1#ne000113 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000114 ;
+    ontolex:canonicalForm nepalica:1#ne000113_form .
+
+nepalica:1#ne000113_form a ontolex:Form ;
+    ontolex:writtenRep "चढाईपठाउनु"@ne .
+
+nepalica:1#ne000114 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000115 ;
+    ontolex:canonicalForm nepalica:1#ne000114_form .
+
+nepalica:1#ne000114_form a ontolex:Form ;
+    ontolex:writtenRep "पठाउंला"@ne .
+
+nepalica:1#ne000115 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000116 ;
+    ontolex:canonicalForm nepalica:1#ne000115_form .
+
+nepalica:1#ne000115_form a ontolex:Form ;
+    ontolex:writtenRep "तेस्रो"@ne .
+
+nepalica:1#ne000116 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000117 ;
+    ontolex:canonicalForm nepalica:1#ne000116_form .
+
+nepalica:1#ne000116_form a ontolex:Form ;
+    ontolex:writtenRep "मुल"@ne .
+
+nepalica:1#ne000117 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000118 ;
+    ontolex:canonicalForm nepalica:1#ne000117_form .
+
+nepalica:1#ne000117_form a ontolex:Form ;
+    ontolex:writtenRep "रास्ताका"@ne .
+
+nepalica:1#ne000118 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000119 ;
+    ontolex:canonicalForm nepalica:1#ne000118_form .
+
+nepalica:1#ne000118_form a ontolex:Form ;
+    ontolex:writtenRep "चलदो"@ne .
+
+nepalica:1#ne000119 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000120 ;
+    ontolex:canonicalForm nepalica:1#ne000119_form .
+
+nepalica:1#ne000119_form a ontolex:Form ;
+    ontolex:writtenRep "मील्दो"@ne .
+
+nepalica:1#ne000120 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000121 ;
+    ontolex:canonicalForm nepalica:1#ne000120_form .
+
+nepalica:1#ne000120_form a ontolex:Form ;
+    ontolex:writtenRep "भारीका"@ne .
+
+nepalica:1#ne000121 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000122 ;
+    ontolex:canonicalForm nepalica:1#ne000121_form .
+
+nepalica:1#ne000121_form a ontolex:Form ;
+    ontolex:writtenRep "वोक्‌नालाई"@ne .
+
+nepalica:1#ne000122 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000123 ;
+    ontolex:canonicalForm nepalica:1#ne000122_form .
+
+nepalica:1#ne000122_form a ontolex:Form ;
+    ontolex:writtenRep "दीं"@ne .
+
+nepalica:1#ne000123 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000124 ;
+    ontolex:canonicalForm nepalica:1#ne000123_form .
+
+nepalica:1#ne000123_form a ontolex:Form ;
+    ontolex:writtenRep "को"@ne .
+
+nepalica:1#ne000124 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000125 ;
+    ontolex:canonicalForm nepalica:1#ne000124_form .
+
+nepalica:1#ne000124_form a ontolex:Form ;
+    ontolex:writtenRep "वाटमा"@ne .
+
+nepalica:1#ne000125 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000126 ;
+    ontolex:canonicalForm nepalica:1#ne000125_form .
+
+nepalica:1#ne000125_form a ontolex:Form ;
+    ontolex:writtenRep "राषनु"@ne .
+
+nepalica:1#ne000126 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000127 ;
+    ontolex:canonicalForm nepalica:1#ne000126_form .
+
+nepalica:1#ne000126_form a ontolex:Form ;
+    ontolex:writtenRep "जगाका"@ne .
+
+nepalica:1#ne000127 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000128 ;
+    ontolex:canonicalForm nepalica:1#ne000127_form .
+
+nepalica:1#ne000127_form a ontolex:Form ;
+    ontolex:writtenRep "हुलाकमा"@ne .
+
+nepalica:1#ne000128 a dbr:Number ;
+    :followedBy nepalica:1#ne000129 ;
+    ontolex:canonicalForm nepalica:1#ne000128_form ;
+    ontolex:writtenRep "२०"@en .
+
+nepalica:1#ne000128_form a ontolex:Form ;
+    ontolex:writtenRep "२०"@ne .
+
+nepalica:1#ne000129 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000130 ;
+    ontolex:canonicalForm nepalica:1#ne000129_form .
+
+nepalica:1#ne000129_form a ontolex:Form ;
+    ontolex:writtenRep "वीस"@ne .
+
+nepalica:1#ne000130 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000131 ;
+    ontolex:canonicalForm nepalica:1#ne000130_form .
+
+nepalica:1#ne000130_form a ontolex:Form ;
+    ontolex:writtenRep "राषी"@ne .
+
+nepalica:1#ne000131 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000132 ;
+    ontolex:canonicalForm nepalica:1#ne000131_form .
+
+nepalica:1#ne000131_form a ontolex:Form ;
+    ontolex:writtenRep "राषेको"@ne .
+
+nepalica:1#ne000132 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000133 ;
+    ontolex:canonicalForm nepalica:1#ne000132_form .
+
+nepalica:1#ne000132_form a ontolex:Form ;
+    ontolex:writtenRep "भारी"@ne .
+
+nepalica:1#ne000133 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000134 ;
+    ontolex:canonicalForm nepalica:1#ne000133_form .
+
+nepalica:1#ne000133_form a ontolex:Form ;
+    ontolex:writtenRep "वोक्‌ने"@ne .
+
+nepalica:1#ne000134 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000135 ;
+    ontolex:canonicalForm nepalica:1#ne000134_form .
+
+nepalica:1#ne000134_form a ontolex:Form ;
+    ontolex:writtenRep "हुलाकीको"@ne .
+
+nepalica:1#ne000135 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000136 ;
+    ontolex:canonicalForm nepalica:1#ne000135_form .
+
+nepalica:1#ne000135_form a ontolex:Form ;
+    ontolex:writtenRep "उंघाउंनी"@ne .
+
+nepalica:1#ne000136 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000137 ;
+    ontolex:canonicalForm nepalica:1#ne000136_form .
+
+nepalica:1#ne000136_form a ontolex:Form ;
+    ontolex:writtenRep "पघाउंनी"@ne .
+
+nepalica:1#ne000137 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000138 ;
+    ontolex:canonicalForm nepalica:1#ne000137_form .
+
+nepalica:1#ne000137_form a ontolex:Form ;
+    ontolex:writtenRep "झारा"@ne .
+
+nepalica:1#ne000138 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000139 ;
+    ontolex:canonicalForm nepalica:1#ne000138_form .
+
+nepalica:1#ne000138_form a ontolex:Form ;
+    ontolex:writtenRep "वेठ"@ne .
+
+nepalica:1#ne000139 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000140 ;
+    ontolex:canonicalForm nepalica:1#ne000139_form .
+
+nepalica:1#ne000139_form a ontolex:Form ;
+    ontolex:writtenRep "छ"@ne .
+
+nepalica:1#ne000140 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000141 ;
+    ontolex:canonicalForm nepalica:1#ne000140_form .
+
+nepalica:1#ne000140_form a ontolex:Form ;
+    ontolex:writtenRep "ताहा"@ne .
+
+nepalica:1#ne000141 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000142 ;
+    ontolex:canonicalForm nepalica:1#ne000141_form .
+
+nepalica:1#ne000141_form a ontolex:Form ;
+    ontolex:writtenRep "वंदोवस्त"@ne .
+
+nepalica:1#ne000142 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000143 ;
+    ontolex:canonicalForm nepalica:1#ne000142_form .
+
+nepalica:1#ne000142_form a ontolex:Form ;
+    ontolex:writtenRep "हजुर"@ne .
+
+nepalica:1#ne000143 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000144 ;
+    ontolex:canonicalForm nepalica:1#ne000143_form .
+
+nepalica:1#ne000143_form a ontolex:Form ;
+    ontolex:writtenRep "चढाईपठाउ"@ne .
+
+nepalica:1#ne000144 a dbr:Number ;
+    :followedBy nepalica:1#ne000145 ;
+    ontolex:canonicalForm nepalica:1#ne000144_form ;
+    ontolex:writtenRep "१९५"@en .
+
+nepalica:1#ne000144_form a ontolex:Form ;
+    ontolex:writtenRep "१९५"@ne .
+
+nepalica:1#ne000145 a dbr:Number ;
+    :followedBy nepalica:1#ne000146 ;
+    ontolex:canonicalForm nepalica:1#ne000145_form ;
+    ontolex:writtenRep "446"@en .
+
+nepalica:1#ne000145_form a ontolex:Form ;
+    ontolex:writtenRep "446"@ne .
+
+nepalica:1#ne000146 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000147 ;
+    ontolex:canonicalForm nepalica:1#ne000146_form .
+
+nepalica:1#ne000146_form a ontolex:Form ;
+    ontolex:writtenRep "नु"@ne .
+
+nepalica:1#ne000147 a dbr:Number ;
+    :followedBy nepalica:1#ne000148 ;
+    ontolex:canonicalForm nepalica:1#ne000147_form ;
+    ontolex:writtenRep "३"@en .
+
+nepalica:1#ne000147_form a ontolex:Form ;
+    ontolex:writtenRep "३"@ne .
+
+nepalica:1#ne000148 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000149 ;
+    ontolex:canonicalForm nepalica:1#ne000148_form .
+
+nepalica:1#ne000148_form a ontolex:Form ;
+    ontolex:writtenRep "चौथा"@ne .
+
+nepalica:1#ne000149 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000150 ;
+    ontolex:canonicalForm nepalica:1#ne000149_form .
+
+nepalica:1#ne000149_form a ontolex:Form ;
+    ontolex:writtenRep "हुलाकका"@ne .
+
+nepalica:1#ne000150 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000151 ;
+    ontolex:canonicalForm nepalica:1#ne000150_form .
+
+nepalica:1#ne000150_form a ontolex:Form ;
+    ontolex:writtenRep "वोक्दा"@ne .
+
+nepalica:1#ne000151 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000152 ;
+    ontolex:canonicalForm nepalica:1#ne000151_form .
+
+nepalica:1#ne000151_form a ontolex:Form ;
+    ontolex:writtenRep "ञाहा"@ne .
+
+nepalica:1#ne000152 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000153 ;
+    ontolex:canonicalForm nepalica:1#ne000152_form .
+
+nepalica:1#ne000152_form a ontolex:Form ;
+    ontolex:writtenRep "जान्य"@ne .
+
+nepalica:1#ne000153 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000154 ;
+    ontolex:canonicalForm nepalica:1#ne000153_form .
+
+nepalica:1#ne000153_form a ontolex:Form ;
+    ontolex:writtenRep "पस्चींवाट"@ne .
+
+nepalica:1#ne000154 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000155 ;
+    ontolex:canonicalForm nepalica:1#ne000154_form .
+
+nepalica:1#ne000154_form a ontolex:Form ;
+    ontolex:writtenRep "आउं"@ne .
+
+nepalica:1#ne000155 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000156 ;
+    ontolex:canonicalForm nepalica:1#ne000155_form .
+
+nepalica:1#ne000155_form a ontolex:Form ;
+    ontolex:writtenRep "जंगी"@ne .
+
+nepalica:1#ne000156 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000157 ;
+    ontolex:canonicalForm nepalica:1#ne000156_form .
+
+nepalica:1#ne000156_form a ontolex:Form ;
+    ontolex:writtenRep "कांको"@ne .
+
+nepalica:1#ne000157 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000158 ;
+    ontolex:canonicalForm nepalica:1#ne000157_form .
+
+nepalica:1#ne000157_form a ontolex:Form ;
+    ontolex:writtenRep "वीरामी"@ne .
+
+nepalica:1#ne000158 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000159 ;
+    ontolex:canonicalForm nepalica:1#ne000158_form .
+
+nepalica:1#ne000158_form a ontolex:Form ;
+    ontolex:writtenRep "वाहीक"@ne .
+
+nepalica:1#ne000159 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000160 ;
+    ontolex:canonicalForm nepalica:1#ne000159_form .
+
+nepalica:1#ne000159_form a ontolex:Form ;
+    ontolex:writtenRep "वीना"@ne .
+
+nepalica:1#ne000160 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000161 ;
+    ontolex:canonicalForm nepalica:1#ne000160_form .
+
+nepalica:1#ne000160_form a ontolex:Form ;
+    ontolex:writtenRep "लालमोहर"@ne .
+
+nepalica:1#ne000161 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000162 ;
+    ontolex:canonicalForm nepalica:1#ne000161_form .
+
+nepalica:1#ne000161_form a ontolex:Form ;
+    ontolex:writtenRep "काजी"@ne .
+
+nepalica:1#ne000162 a ontolex:LexicalEntry ,
+        ontolex:Word ,
+        foaf:Person ;
+    rdfs:label "Bhīṃsīṃ Thāpā"@ne ;
+    :followedBy nepalica:1#ne000163 ;
+    schema1:gender schema1:Male ;
+    rdfs:comment "also known as: Bhimsen Thapa; born: August 1775; died: 28 July 1839;  father: Amara Siṃha Thāpā; details: held the titles of general , kājī (appointed April 1804; M.C. Regmi 1995: 59 n. 6) , prime minister (mukhtiyāra) and regent for the infant kings Girvāṇayuddha and Surendra from 1806 to 1837 , later also addressed as svāmī; normdata:"@ne ;
+    rdfs:devanagariLabel "भींसीं थापाको"@ne ;
+    rdfs:seeAlso dbr:Bhimsen_Thapa ,
+        gnd:1024044661 ,
+        nepalica_reg:29 ,
+        viaf:53634994 ,
+        wiki:Bhimsen_Thapa ;
+    skos:altLabel "Bhīmasena Thāpā" ;
+    ontolex:canonicalForm nepalica:1#ne000162_form ;
+    foaf:name "Bhīṃsīṃ Thāpā"@ne ;
+    gndo:surname "Thāpā"@ne .
+
+nepalica:1#ne000162_form a ontolex:Form ;
+    ontolex:writtenRep "भींसीं"@ne .
+
+nepalica:1#ne000163 a ontolex:LexicalEntry ,
+        ontolex:Word ,
+        foaf:Person ;
+    rdfs:label "Bhīṃsīṃ Thāpā"@ne ;
+    :followedBy nepalica:1#ne000164 ;
+    schema1:gender schema1:Male ;
+    rdfs:comment "also known as: Bhimsen Thapa; born: August 1775; died: 28 July 1839;  father: Amara Siṃha Thāpā; details: held the titles of general , kājī (appointed April 1804; M.C. Regmi 1995: 59 n. 6) , prime minister (mukhtiyāra) and regent for the infant kings Girvāṇayuddha and Surendra from 1806 to 1837 , later also addressed as svāmī; normdata:"@ne ;
+    rdfs:devanagariLabel "भींसीं थापाको"@ne ;
+    rdfs:seeAlso dbr:Bhimsen_Thapa ,
+        gnd:1024044661 ,
+        nepalica_reg:29 ,
+        viaf:53634994 ,
+        wiki:Bhimsen_Thapa ;
+    skos:altLabel "Bhīmasena Thāpā" ;
+    ontolex:canonicalForm nepalica:1#ne000163_form ;
+    foaf:name "Bhīṃsīṃ Thāpā"@ne ;
+    gndo:surname "Thāpā"@ne .
+
+nepalica:1#ne000163_form a ontolex:Form ;
+    ontolex:writtenRep "थापाको"@ne .
+
+nepalica:1#ne000164 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000165 ;
+    ontolex:canonicalForm nepalica:1#ne000164_form .
+
+nepalica:1#ne000164_form a ontolex:Form ;
+    ontolex:writtenRep "दसषत्‌"@ne .
+
+nepalica:1#ne000165 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000166 ;
+    ontolex:canonicalForm nepalica:1#ne000165_form .
+
+nepalica:1#ne000165_form a ontolex:Form ;
+    ontolex:writtenRep "चलाई"@ne .
+
+nepalica:1#ne000166 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000167 ;
+    ontolex:canonicalForm nepalica:1#ne000166_form .
+
+nepalica:1#ne000166_form a ontolex:Form ;
+    ontolex:writtenRep "देउ"@ne .
+
+nepalica:1#ne000167 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000168 ;
+    ontolex:canonicalForm nepalica:1#ne000167_form .
+
+nepalica:1#ne000167_form a ontolex:Form ;
+    ontolex:writtenRep "भंन्य"@ne .
+
+nepalica:1#ne000168 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000169 ;
+    ontolex:canonicalForm nepalica:1#ne000168_form .
+
+nepalica:1#ne000168_form a ontolex:Form ;
+    ontolex:writtenRep "नदेषी"@ne .
+
+nepalica:1#ne000169 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000170 ;
+    ontolex:canonicalForm nepalica:1#ne000169_form .
+
+nepalica:1#ne000169_form a ontolex:Form ;
+    ontolex:writtenRep "गुरु"@ne .
+
+nepalica:1#ne000170 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000171 ;
+    ontolex:canonicalForm nepalica:1#ne000170_form .
+
+nepalica:1#ne000170_form a ontolex:Form ;
+    ontolex:writtenRep "प्रोहित"@ne .
+
+nepalica:1#ne000171 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000172 ;
+    ontolex:canonicalForm nepalica:1#ne000171_form .
+
+nepalica:1#ne000171_form a ontolex:Form ;
+    ontolex:writtenRep "चौतरीय"@ne .
+
+nepalica:1#ne000172 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000173 ;
+    ontolex:canonicalForm nepalica:1#ne000172_form .
+
+nepalica:1#ne000172_form a ontolex:Form ;
+    ontolex:writtenRep "सर्दार"@ne .
+
+nepalica:1#ne000173 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000174 ;
+    ontolex:canonicalForm nepalica:1#ne000173_form .
+
+nepalica:1#ne000173_form a ontolex:Form ;
+    ontolex:writtenRep "सु"@ne .
+
+nepalica:1#ne000174 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000175 ;
+    ontolex:canonicalForm nepalica:1#ne000174_form .
+
+nepalica:1#ne000174_form a ontolex:Form ;
+    ontolex:writtenRep "जमादार"@ne .
+
+nepalica:1#ne000175 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000176 ;
+    ontolex:canonicalForm nepalica:1#ne000175_form .
+
+nepalica:1#ne000175_form a ontolex:Form ;
+    ontolex:writtenRep "सीपाही"@ne .
+
+nepalica:1#ne000176 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000177 ;
+    ontolex:canonicalForm nepalica:1#ne000176_form .
+
+nepalica:1#ne000176_form a ontolex:Form ;
+    ontolex:writtenRep "चार"@ne .
+
+nepalica:1#ne000177 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000178 ;
+    ontolex:canonicalForm nepalica:1#ne000177_form .
+
+nepalica:1#ne000177_form a ontolex:Form ;
+    ontolex:writtenRep "वर्ण"@ne .
+
+nepalica:1#ne000178 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000179 ;
+    ontolex:canonicalForm nepalica:1#ne000178_form .
+
+nepalica:1#ne000178_form a ontolex:Form ;
+    ontolex:writtenRep "जात्‌"@ne .
+
+nepalica:1#ne000179 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000180 ;
+    ontolex:canonicalForm nepalica:1#ne000179_form .
+
+nepalica:1#ne000179_form a ontolex:Form ;
+    ontolex:writtenRep "नवोकनु"@ne .
+
+nepalica:1#ne000180 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000181 ;
+    ontolex:canonicalForm nepalica:1#ne000180_form .
+
+nepalica:1#ne000180_form a ontolex:Form ;
+    ontolex:writtenRep "य"@ne .
+
+nepalica:1#ne000181 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000182 ;
+    ontolex:canonicalForm nepalica:1#ne000181_form .
+
+nepalica:1#ne000181_form a ontolex:Form ;
+    ontolex:writtenRep "दर्वार "@ne .
+
+nepalica:1#ne000182 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000183 ;
+    ontolex:canonicalForm nepalica:1#ne000182_form .
+
+nepalica:1#ne000182_form a ontolex:Form ;
+    ontolex:writtenRep "ढाटी"@ne .
+
+nepalica:1#ne000183 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000184 ;
+    ontolex:canonicalForm nepalica:1#ne000183_form .
+
+nepalica:1#ne000183_form a ontolex:Form ;
+    ontolex:writtenRep "कसैले"@ne .
+
+nepalica:1#ne000184 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000185 ;
+    ontolex:canonicalForm nepalica:1#ne000184_form .
+
+nepalica:1#ne000184_form a ontolex:Form ;
+    ontolex:writtenRep "चलाय"@ne .
+
+nepalica:1#ne000185 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000186 ;
+    ontolex:canonicalForm nepalica:1#ne000185_form .
+
+nepalica:1#ne000185_form a ontolex:Form ;
+    ontolex:writtenRep "भने"@ne .
+
+nepalica:1#ne000186 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000187 ;
+    ontolex:canonicalForm nepalica:1#ne000186_form .
+
+nepalica:1#ne000186_form a ontolex:Form ;
+    ontolex:writtenRep "आ"@ne .
+
+nepalica:1#ne000187 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000188 ;
+    ontolex:canonicalForm nepalica:1#ne000187_form .
+
+nepalica:1#ne000187_form a ontolex:Form ;
+    ontolex:writtenRep "मानीस"@ne .
+
+nepalica:1#ne000188 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000189 ;
+    ontolex:canonicalForm nepalica:1#ne000188_form .
+
+nepalica:1#ne000188_form a ontolex:Form ;
+    ontolex:writtenRep "स्मेत"@ne .
+
+nepalica:1#ne000189 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000190 ;
+    ontolex:canonicalForm nepalica:1#ne000189_form .
+
+nepalica:1#ne000189_form a ontolex:Form ;
+    ontolex:writtenRep "पक्री"@ne .
+
+nepalica:1#ne000190 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000191 ;
+    ontolex:canonicalForm nepalica:1#ne000190_form .
+
+nepalica:1#ne000190_form a ontolex:Form ;
+    ontolex:writtenRep "वींती"@ne .
+
+nepalica:1#ne000191 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000192 ;
+    ontolex:canonicalForm nepalica:1#ne000191_form .
+
+nepalica:1#ne000191_form a ontolex:Form ;
+    ontolex:writtenRep "पठाउनु"@ne .
+
+nepalica:1#ne000192 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000193 ;
+    ontolex:canonicalForm nepalica:1#ne000192_form .
+
+nepalica:1#ne000192_form a ontolex:Form ;
+    ontolex:writtenRep "हुकुम"@ne .
+
+nepalica:1#ne000193 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000194 ;
+    ontolex:canonicalForm nepalica:1#ne000193_form .
+
+nepalica:1#ne000193_form a ontolex:Form ;
+    ontolex:writtenRep "गर्‍या"@ne .
+
+nepalica:1#ne000194 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000195 ;
+    ontolex:canonicalForm nepalica:1#ne000194_form .
+
+nepalica:1#ne000194_form a ontolex:Form ;
+    ontolex:writtenRep "गर्नु"@ne .
+
+nepalica:1#ne000195 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000196 ;
+    ontolex:canonicalForm nepalica:1#ne000195_form .
+
+nepalica:1#ne000195_form a ontolex:Form ;
+    ontolex:writtenRep "ऊर्दी"@ne .
+
+nepalica:1#ne000196 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000197 ;
+    ontolex:canonicalForm nepalica:1#ne000196_form .
+
+nepalica:1#ne000196_form a ontolex:Form ;
+    ontolex:writtenRep "सवैला"@ne .
+
+nepalica:1#ne000197 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000198 ;
+    ontolex:canonicalForm nepalica:1#ne000197_form .
+
+nepalica:1#ne000197_form a ontolex:Form ;
+    ontolex:writtenRep "सुनाईदीनु"@ne .
+
+nepalica:1#ne000198 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000199 ;
+    ontolex:canonicalForm nepalica:1#ne000198_form .
+
+nepalica:1#ne000198_form a ontolex:Form ;
+    ontolex:writtenRep "पाचौ"@ne .
+
+nepalica:1#ne000199 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000200 ;
+    ontolex:canonicalForm nepalica:1#ne000199_form .
+
+nepalica:1#ne000199_form a ontolex:Form ;
+    ontolex:writtenRep "चीठीपत्रका"@ne .
+
+nepalica:1#ne000200 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000201 ;
+    ontolex:canonicalForm nepalica:1#ne000200_form .
+
+nepalica:1#ne000200_form a ontolex:Form ;
+    ontolex:writtenRep "कागत्य"@ne .
+
+nepalica:1#ne000201 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000202 ;
+    ontolex:canonicalForm nepalica:1#ne000201_form .
+
+nepalica:1#ne000201_form a ontolex:Form ;
+    ontolex:writtenRep "हुलाकी"@ne .
+
+nepalica:1#ne000202 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000203 ;
+    ontolex:canonicalForm nepalica:1#ne000202_form .
+
+nepalica:1#ne000202_form a ontolex:Form ;
+    ontolex:writtenRep "भा"@ne .
+
+nepalica:1#ne000203 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000204 ;
+    ontolex:canonicalForm nepalica:1#ne000203_form .
+
+nepalica:1#ne000203_form a ontolex:Form ;
+    ontolex:writtenRep "वोक्न्य"@ne .
+
+nepalica:1#ne000204 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000205 ;
+    ontolex:canonicalForm nepalica:1#ne000204_form .
+
+nepalica:1#ne000204_form a ontolex:Form ;
+    ontolex:writtenRep "वंद्येज"@ne .
+
+nepalica:1#ne000205 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000206 ;
+    ontolex:canonicalForm nepalica:1#ne000205_form .
+
+nepalica:1#ne000205_form a ontolex:Form ;
+    ontolex:writtenRep "वाधीवक्सेको"@ne .
+
+nepalica:1#ne000206 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000207 ;
+    ontolex:canonicalForm nepalica:1#ne000206_form .
+
+nepalica:1#ne000206_form a ontolex:Form ;
+    ontolex:writtenRep "वमोजींमा"@ne .
+
+nepalica:1#ne000207 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000208 ;
+    ontolex:canonicalForm nepalica:1#ne000207_form .
+
+nepalica:1#ne000207_form a ontolex:Form ;
+    ontolex:writtenRep "वीथीती"@ne .
+
+nepalica:1#ne000208 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000209 ;
+    ontolex:canonicalForm nepalica:1#ne000208_form .
+
+nepalica:1#ne000208_form a ontolex:Form ;
+    ontolex:writtenRep "जवरजस्ती"@ne .
+
+nepalica:1#ne000209 a dbr:Number ;
+    :followedBy nepalica:1#ne000210 ;
+    ontolex:canonicalForm nepalica:1#ne000209_form ;
+    ontolex:writtenRep "447"@en .
+
+nepalica:1#ne000209_form a ontolex:Form ;
+    ontolex:writtenRep "447"@ne .
+
+nepalica:1#ne000210 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000211 ;
+    ontolex:canonicalForm nepalica:1#ne000210_form .
+
+nepalica:1#ne000210_form a ontolex:Form ;
+    ontolex:writtenRep "अंन्य"@ne .
+
+nepalica:1#ne000211 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000212 ;
+    ontolex:canonicalForm nepalica:1#ne000211_form .
+
+nepalica:1#ne000211_form a ontolex:Form ;
+    ontolex:writtenRep "गर्‍य"@ne .
+
+nepalica:1#ne000212 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000213 ;
+    ontolex:canonicalForm nepalica:1#ne000212_form .
+
+nepalica:1#ne000212_form a ontolex:Form ;
+    ontolex:writtenRep "तेस"@ne .
+
+nepalica:1#ne000213 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000214 ;
+    ontolex:canonicalForm nepalica:1#ne000213_form .
+
+nepalica:1#ne000213_form a ontolex:Form ;
+    ontolex:writtenRep "मानीसलाई"@ne .
+
+nepalica:1#ne000214 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000215 ;
+    ontolex:canonicalForm nepalica:1#ne000214_form .
+
+nepalica:1#ne000214_form a ontolex:Form ;
+    ontolex:writtenRep "हा"@ne .
+
+nepalica:1#ne000215 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000216 ;
+    ontolex:canonicalForm nepalica:1#ne000215_form .
+
+nepalica:1#ne000215_form a ontolex:Form ;
+    ontolex:writtenRep "हजुर्मा"@ne .
+
+nepalica:1#ne000216 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000217 ;
+    ontolex:canonicalForm nepalica:1#ne000216_form .
+
+nepalica:1#ne000216_form a ontolex:Form ;
+    ontolex:writtenRep "गरीपठाउंनु"@ne .
+
+nepalica:1#ne000217 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000218 ;
+    ontolex:canonicalForm nepalica:1#ne000217_form .
+
+nepalica:1#ne000217_form a ontolex:Form ;
+    ontolex:writtenRep "अडा"@ne .
+
+nepalica:1#ne000218 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000219 ;
+    ontolex:canonicalForm nepalica:1#ne000218_form .
+
+nepalica:1#ne000218_form a ontolex:Form ;
+    ontolex:writtenRep "भारा"@ne .
+
+nepalica:1#ne000219 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000220 ;
+    ontolex:canonicalForm nepalica:1#ne000219_form .
+
+nepalica:1#ne000219_form a ontolex:Form ;
+    ontolex:writtenRep "सुवा"@ne .
+
+nepalica:1#ne000220 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000221 ;
+    ontolex:canonicalForm nepalica:1#ne000220_form .
+
+nepalica:1#ne000220_form a ontolex:Form ;
+    ontolex:writtenRep "गैरका"@ne .
+
+nepalica:1#ne000221 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000222 ;
+    ontolex:canonicalForm nepalica:1#ne000221_form .
+
+nepalica:1#ne000221_form a ontolex:Form ;
+    ontolex:writtenRep "नाउंमा"@ne .
+
+nepalica:1#ne000222 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000223 ;
+    ontolex:canonicalForm nepalica:1#ne000222_form .
+
+nepalica:1#ne000222_form a ontolex:Form ;
+    ontolex:writtenRep "तस"@ne .
+
+nepalica:1#ne000223 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000224 ;
+    ontolex:canonicalForm nepalica:1#ne000223_form .
+
+nepalica:1#ne000223_form a ontolex:Form ;
+    ontolex:writtenRep "अर्थ"@ne .
+
+nepalica:1#ne000224 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000225 ;
+    ontolex:canonicalForm nepalica:1#ne000224_form .
+
+nepalica:1#ne000224_form a ontolex:Form ;
+    ontolex:writtenRep "मर्स्यागदी"@ne .
+
+nepalica:1#ne000225 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000226 ;
+    ontolex:canonicalForm nepalica:1#ne000225_form .
+
+nepalica:1#ne000225_form a ontolex:Form ;
+    ontolex:writtenRep "काली"@ne .
+
+nepalica:1#ne000226 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000227 ;
+    ontolex:canonicalForm nepalica:1#ne000226_form .
+
+nepalica:1#ne000226_form a ontolex:Form ;
+    ontolex:writtenRep "तालुक"@ne .
+
+nepalica:1#ne000227 a gn:Feature ,
+        ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000228 ;
+    gn:name ""@ne ;
+    rdfs:comment "a city in Kaski district on one of the important trading routes between China and India; formerly in the Kingdom of Kaski; now an important tourism hub of Nepal;"@en ;
+    rdfs:seeAlso geonames:1282898 ,
+        gnd:4046492-1 ,
+        nepalica_reg:179 ,
+        viaf:131375293 ,
+        wiki:Pokhara ;
+    skos:altLabel "Pokhara"@ne ;
+    ontolex:canonicalForm nepalica:1#ne000227_form .
+
+nepalica:1#ne000227_form a ontolex:Form ;
+    ontolex:writtenRep "पोषरा"@ne .
+
+nepalica:1#ne000228 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000229 ;
+    ontolex:canonicalForm nepalica:1#ne000228_form .
+
+nepalica:1#ne000228_form a ontolex:Form ;
+    ontolex:writtenRep "सषी"@ne .
+
+nepalica:1#ne000229 a gn:Feature ,
+        ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000230 ;
+    gn:name "Pyuthana"@ne ;
+    rdfs:comment "also known as: Piyuṭhānā , Pīuṭhānā , Pīūṭhānā , Pyuṭhāṃ , Pyuṭhāna , Pyuṭhānā , Pyuṃṭhānā , Pyūṭhānā , Pyū̃ṭhānā , Pyauṭhānā; a municipality and district in the Lumbini Province , South-Western Nepal. former principality and one of the Caubīsī Rājya; conquered by the Gorkhālīs in 1786 (VS 1843 kārt 19 gate , Panta 2022: 37);"@en ;
+    rdfs:seeAlso nepalica_reg:573 ,
+        wiki:Kingdom_of_Pyuthan ,
+        wiki:Pyuthan_District ,
+        wiki:Pyuthan_Municipality ;
+    ontolex:canonicalForm nepalica:1#ne000229_form .
+
+nepalica:1#ne000229_form a ontolex:Form ;
+    ontolex:writtenRep "प्यु"@ne .
+
+nepalica:1#ne000230 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000231 ;
+    ontolex:canonicalForm nepalica:1#ne000230_form .
+
+nepalica:1#ne000230_form a ontolex:Form ;
+    ontolex:writtenRep "ता"@ne .
+
+nepalica:1#ne000231 a gn:Feature ,
+        ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000232 ;
+    gn:name ""@ne ;
+    rdfs:comment "not to be confused with Salyan in Dhading; also known as: a) in historical documents: Salyānā , Salyāna , Sallyānā , Śalyānā etc. , b) modern spellings: Sallyāna or Salyāna; details: city and region at the rim of Dang in mid-west Nepal; a district in far-Western Nepal , part of the Karnali province; during Rana rule (1885-1950) one of the 32 districts; former principality and one of the Bāīse Rājya , sometimes also listed among the Caubīsī Rājya , ruled by: - ... - Śrīkṛṣṇa Śāha (abdicated 1793); - Raṇabhīma Śāha (1793-1809); - annexed in 1809 , with Rudravīra Śāha appointed as subbā (Regmi 1971; see also Bouillier 1993: 37); - Teja Bahādura Śāha (flourished 1827–47 , Regmi 1974: 161–62); - Nārendra Bahādura Śāha (r. 1847– , Regmi 1974: 162–63); - Toraṇa Divyeśvarī Devī , daughter of Dhīra Śamśera Kũvara Rāṇā (r. 1871 , Regmi 1974: 163); - Lakṣmīnārāyaṇa Śāha (r. 1871–72 , Regmi 1974: 163); - personally controlled by Dhīra Śamśera Kũvara Rāṇā through Subbā Jayaśaṅkara Pāṇḍe in 1872 (Regmi 1974: 163); - Śamśera Bahādura Śāha (r. 1896– , Regmi 1974: 163); - abolished as rājya in 1961 , but with the rāja being allowed to retain the title Rāja of Salyan on an inheritable basis (r. 1896– , Regmi 1974: 164). _Nepal;"@en ;
+    rdfs:seeAlso nepalica_reg:6 ,
+        wiki:Salyan_District ,
+        wiki:Salyan_Khalanga ;
+    skos:altLabel "Salyan"@ne ;
+    ontolex:canonicalForm nepalica:1#ne000231_form .
+
+nepalica:1#ne000231_form a ontolex:Form ;
+    ontolex:writtenRep "सल्यां"@ne .
+
+nepalica:1#ne000232 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000233 ;
+    ontolex:canonicalForm nepalica:1#ne000232_form .
+
+nepalica:1#ne000232_form a ontolex:Form ;
+    ontolex:writtenRep "कर्नाली"@ne .
+
+nepalica:1#ne000233 a gn:Feature ,
+        ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000234 ;
+    ontolex:canonicalForm nepalica:1#ne000233_form .
+
+nepalica:1#ne000233_form a ontolex:Form ;
+    ontolex:writtenRep "दुल्लु"@ne .
+
+nepalica:1#ne000234 a gn:Feature ,
+        ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000235 ;
+    ontolex:canonicalForm nepalica:1#ne000234_form .
+
+nepalica:1#ne000234_form a ontolex:Form ;
+    ontolex:writtenRep "दैलेख"@ne .
+
+nepalica:1#ne000235 a gn:Feature ,
+        ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000236 ;
+    ontolex:canonicalForm nepalica:1#ne000235_form .
+
+nepalica:1#ne000235_form a ontolex:Form ;
+    ontolex:writtenRep "डोटीका"@ne .
+
+nepalica:1#ne000236 a gn:Feature ,
+        ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000237 ;
+    ontolex:canonicalForm nepalica:1#ne000236_form .
+
+nepalica:1#ne000236_form a ontolex:Form ;
+    ontolex:writtenRep "काढा"@ne .
+
+nepalica:1#ne000237 a gn:Feature ,
+        ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000238 ;
+    ontolex:canonicalForm nepalica:1#ne000237_form .
+
+nepalica:1#ne000237_form a ontolex:Form ;
+    ontolex:writtenRep "गाउ"@ne .
+
+nepalica:1#ne000238 a gn:Feature ,
+        ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000239 ;
+    gn:name "Doti"@ne ;
+    rdfs:comment "a district in far-Western Nepal , part of the Sudurpashchim Province; one of three \"first courts of appeal\" known as gauḍās (Kumar 1967: 130); former principality and one of the Bāīse Rājya;"@en ;
+    rdfs:seeAlso dbr:Doti ,
+        dbr:Doti_District; ,
+        nepalica_reg:4 ,
+        viaf:143113926 ,
+        wiki:Doti ,
+        wiki:Doti_District ;
+    ontolex:canonicalForm nepalica:1#ne000238_form .
+
+nepalica:1#ne000238_form a ontolex:Form ;
+    ontolex:writtenRep "दोटीका"@ne .
+
+nepalica:1#ne000239 a gn:Feature ,
+        ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000240 ;
+    gn:name "Kāḍhā Gāũ"@ne ;
+    rdfs:comment "location needs to be verified; document suggests a village in Doti district."@en ;
+    rdfs:seeAlso nepalica_reg:1083 ;
+    ontolex:canonicalForm nepalica:1#ne000239_form .
+
+nepalica:1#ne000239_form a ontolex:Form ;
+    ontolex:writtenRep "गाउं"@ne .
+
+nepalica:1#ne000240 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000241 ;
+    ontolex:canonicalForm nepalica:1#ne000240_form .
+
+nepalica:1#ne000240_form a ontolex:Form ;
+    ontolex:writtenRep "माहाकाली"@ne .
+
+nepalica:1#ne000241 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000242 ;
+    ontolex:canonicalForm nepalica:1#ne000241_form .
+
+nepalica:1#ne000241_form a ontolex:Form ;
+    ontolex:writtenRep "पु"@ne .
+
+nepalica:1#ne000242 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000243 ;
+    ontolex:canonicalForm nepalica:1#ne000242_form .
+
+nepalica:1#ne000242_form a ontolex:Form ;
+    ontolex:writtenRep "डोटी"@ne .
+
+nepalica:1#ne000243 a gn:Feature ,
+        ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000244 ;
+    gn:name ""@ne ;
+    rdfs:comment "also known as Dipayal Silgadhi; a town (now district headquarters) and municipality in Doti district;"@en ;
+    rdfs:seeAlso geonames:6254845 ,
+        nepalica_reg:1081 ,
+        viaf:158259099 ,
+        wiki:Dipayal_Silgadhi ;
+    skos:altLabel "Dipayal"@ne ;
+    ontolex:canonicalForm nepalica:1#ne000243_form .
+
+nepalica:1#ne000243_form a ontolex:Form ;
+    ontolex:writtenRep "दीपाये"@ne .
+
+nepalica:1#ne000244 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000245 ;
+    ontolex:canonicalForm nepalica:1#ne000244_form .
+
+nepalica:1#ne000244_form a ontolex:Form ;
+    ontolex:writtenRep "गढका"@ne .
+
+nepalica:1#ne000245 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000246 ;
+    ontolex:canonicalForm nepalica:1#ne000245_form .
+
+nepalica:1#ne000245_form a ontolex:Form ;
+    ontolex:writtenRep "सीमना"@ne .
+
+nepalica:1#ne000246 a gn:Feature ,
+        ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000247 ;
+    gn:name ""@ne ;
+    rdfs:comment "also Alamoḍā , Almoḍā; a city in the state of Uttarakhand , India;"@en ;
+    rdfs:seeAlso gnd:4521311-2 ,
+        nepalica_reg:604 ,
+        viaf:156061615 ,
+        wiki:Almora ;
+    skos:altLabel "Almora"@ne ;
+    ontolex:canonicalForm nepalica:1#ne000246_form .
+
+nepalica:1#ne000246_form a ontolex:Form ;
+    ontolex:writtenRep "अलमोडा"@ne .
+
+nepalica:1#ne000247 a gn:Feature ,
+        ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000248 ;
+    gn:name "Kumaun"@ne ;
+    rdfs:comment "also Kumāu , Kumaun; a region in the Indian State of Uttarakhand; formerly an independent kingdom , under Nepalese rule from 1791–1816;"@en ;
+    rdfs:seeAlso nepalica_reg:223 ,
+        wiki:Kumaon_Kingdom ,
+        wiki:Kumaon_division ;
+    ontolex:canonicalForm nepalica:1#ne000247_form .
+
+nepalica:1#ne000247_form a ontolex:Form ;
+    ontolex:writtenRep "कुमाउं"@ne .
+
+nepalica:1#ne000248 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000249 ;
+    ontolex:canonicalForm nepalica:1#ne000248_form .
+
+nepalica:1#ne000248_form a ontolex:Form ;
+    ontolex:writtenRep "साँध"@ne .
+
+nepalica:1#ne000249 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000250 ;
+    ontolex:canonicalForm nepalica:1#ne000249_form .
+
+nepalica:1#ne000249_form a ontolex:Form ;
+    ontolex:writtenRep "भागीर्थी"@ne .
+
+nepalica:1#ne000250 a gn:Feature ,
+        ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000251 ;
+    gn:name ""@ne ;
+    rdfs:comment "also Srinagar; a city in Garhwal in the modern Indian state of Uttarakhand; _Uttarakhand."@en ;
+    rdfs:seeAlso nepalica_reg:13 ,
+        wiki:Srinagar ;
+    skos:altLabel "Srinagar"@ne ;
+    ontolex:canonicalForm nepalica:1#ne000250_form .
+
+nepalica:1#ne000250_form a ontolex:Form ;
+    ontolex:writtenRep "श्रीनगर"@ne .
+
+nepalica:1#ne000251 a gn:Feature ,
+        ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000252 ;
+    gn:name "Dun"@ne ;
+    rdfs:comment "the capital , largest and most populated city in Uttarakhand state , India;"@en ;
+    rdfs:seeAlso geonames:9072830 ,
+        gnd:4431739-6 ,
+        nepalica_reg:1082 ,
+        viaf:158306466 ,
+        wiki:Dehradun ;
+    ontolex:canonicalForm nepalica:1#ne000251_form .
+
+nepalica:1#ne000251_form a ontolex:Form ;
+    ontolex:writtenRep "दुन"@ne .
+
+nepalica:1#ne000252 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000253 ;
+    ontolex:canonicalForm nepalica:1#ne000252_form .
+
+nepalica:1#ne000252_form a ontolex:Form ;
+    ontolex:writtenRep "सोई"@ne .
+
+nepalica:1#ne000253 a dbr:Number ;
+    :followedBy nepalica:1#ne000254 ;
+    ontolex:canonicalForm nepalica:1#ne000253_form ;
+    ontolex:writtenRep "५"@en .
+
+nepalica:1#ne000253_form a ontolex:Form ;
+    ontolex:writtenRep "५"@ne .
+
+nepalica:1#ne000254 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000255 ;
+    ontolex:canonicalForm nepalica:1#ne000254_form .
+
+nepalica:1#ne000254_form a ontolex:Form ;
+    ontolex:writtenRep "छठमा"@ne .
+
+nepalica:1#ne000255 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000256 ;
+    ontolex:canonicalForm nepalica:1#ne000255_form .
+
+nepalica:1#ne000255_form a ontolex:Form ;
+    ontolex:writtenRep "गढी"@ne .
+
+nepalica:1#ne000256 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000257 ;
+    ontolex:canonicalForm nepalica:1#ne000256_form .
+
+nepalica:1#ne000256_form a ontolex:Form ;
+    ontolex:writtenRep "कीला"@ne .
+
+nepalica:1#ne000257 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000258 ;
+    ontolex:canonicalForm nepalica:1#ne000257_form .
+
+nepalica:1#ne000257_form a ontolex:Form ;
+    ontolex:writtenRep "वंन्य"@ne .
+
+nepalica:1#ne000258 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000259 ;
+    ontolex:canonicalForm nepalica:1#ne000258_form .
+
+nepalica:1#ne000258_form a ontolex:Form ;
+    ontolex:writtenRep "नवंन्य"@ne .
+
+nepalica:1#ne000259 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000260 ;
+    ontolex:canonicalForm nepalica:1#ne000259_form .
+
+nepalica:1#ne000259_form a ontolex:Form ;
+    ontolex:writtenRep "हेर्नु"@ne .
+
+nepalica:1#ne000260 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000261 ;
+    ontolex:canonicalForm nepalica:1#ne000260_form .
+
+nepalica:1#ne000260_form a ontolex:Form ;
+    ontolex:writtenRep "कुरन्य"@ne .
+
+nepalica:1#ne000261 a dbr:Number ;
+    :followedBy nepalica:1#ne000262 ;
+    ontolex:canonicalForm nepalica:1#ne000261_form ;
+    ontolex:writtenRep "१९७"@en .
+
+nepalica:1#ne000261_form a ontolex:Form ;
+    ontolex:writtenRep "१९७"@ne .
+
+nepalica:1#ne000262 a dbr:Number ;
+    :followedBy nepalica:1#ne000263 ;
+    ontolex:canonicalForm nepalica:1#ne000262_form ;
+    ontolex:writtenRep "448"@en .
+
+nepalica:1#ne000262_form a ontolex:Form ;
+    ontolex:writtenRep "448"@ne .
+
+nepalica:1#ne000263 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000264 ;
+    ontolex:canonicalForm nepalica:1#ne000263_form .
+
+nepalica:1#ne000263_form a ontolex:Form ;
+    ontolex:writtenRep "जाचनु"@ne .
+
+nepalica:1#ne000264 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000265 ;
+    ontolex:canonicalForm nepalica:1#ne000264_form .
+
+nepalica:1#ne000264_form a ontolex:Form ;
+    ontolex:writtenRep "नवन्य"@ne .
+
+nepalica:1#ne000265 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000266 ;
+    ontolex:canonicalForm nepalica:1#ne000265_form .
+
+nepalica:1#ne000265_form a ontolex:Form ;
+    ontolex:writtenRep "वीगरेको"@ne .
+
+nepalica:1#ne000266 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000267 ;
+    ontolex:canonicalForm nepalica:1#ne000266_form .
+
+nepalica:1#ne000266_form a ontolex:Form ;
+    ontolex:writtenRep "भय"@ne .
+
+nepalica:1#ne000267 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000268 ;
+    ontolex:canonicalForm nepalica:1#ne000267_form .
+
+nepalica:1#ne000267_form a ontolex:Form ;
+    ontolex:writtenRep "वनाउना"@ne .
+
+nepalica:1#ne000268 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000269 ;
+    ontolex:canonicalForm nepalica:1#ne000268_form .
+
+nepalica:1#ne000268_form a ontolex:Form ;
+    ontolex:writtenRep "ताकीती"@ne .
+
+nepalica:1#ne000269 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000270 ;
+    ontolex:canonicalForm nepalica:1#ne000269_form .
+
+nepalica:1#ne000269_form a ontolex:Form ;
+    ontolex:writtenRep "कैफीये"@ne .
+
+nepalica:1#ne000270 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000271 ;
+    ontolex:canonicalForm nepalica:1#ne000270_form .
+
+nepalica:1#ne000270_form a ontolex:Form ;
+    ontolex:writtenRep "गरीपठाउनु"@ne .
+
+nepalica:1#ne000271 a dbr:Number ;
+    :followedBy nepalica:1#ne000272 ;
+    ontolex:canonicalForm nepalica:1#ne000271_form ;
+    ontolex:writtenRep "६"@en .
+
+nepalica:1#ne000271_form a ontolex:Form ;
+    ontolex:writtenRep "६"@ne .
+
+nepalica:1#ne000272 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000273 ;
+    ontolex:canonicalForm nepalica:1#ne000272_form .
+
+nepalica:1#ne000272_form a ontolex:Form ;
+    ontolex:writtenRep "सातव"@ne .
+
+nepalica:1#ne000273 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000274 ;
+    ontolex:canonicalForm nepalica:1#ne000273_form .
+
+nepalica:1#ne000273_form a ontolex:Form ;
+    ontolex:writtenRep "जगाको"@ne .
+
+nepalica:1#ne000274 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000275 ;
+    ontolex:canonicalForm nepalica:1#ne000274_form .
+
+nepalica:1#ne000274_form a ontolex:Form ;
+    ontolex:writtenRep "तारघाट"@ne .
+
+nepalica:1#ne000275 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000276 ;
+    ontolex:canonicalForm nepalica:1#ne000275_form .
+
+nepalica:1#ne000275_form a ontolex:Form ;
+    ontolex:writtenRep "वीग"@ne .
+
+nepalica:1#ne000276 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000277 ;
+    ontolex:canonicalForm nepalica:1#ne000276_form .
+
+nepalica:1#ne000276_form a ontolex:Form ;
+    ontolex:writtenRep "ठाउंमा"@ne .
+
+nepalica:1#ne000277 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000278 ;
+    ontolex:canonicalForm nepalica:1#ne000277_form .
+
+nepalica:1#ne000277_form a ontolex:Form ;
+    ontolex:writtenRep "उस"@ne .
+
+nepalica:1#ne000278 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000279 ;
+    ontolex:canonicalForm nepalica:1#ne000278_form .
+
+nepalica:1#ne000278_form a ontolex:Form ;
+    ontolex:writtenRep "भारादार"@ne .
+
+nepalica:1#ne000279 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000280 ;
+    ontolex:canonicalForm nepalica:1#ne000279_form .
+
+nepalica:1#ne000279_form a ontolex:Form ;
+    ontolex:writtenRep "अमालीदारलाई"@ne .
+
+nepalica:1#ne000280 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000281 ;
+    ontolex:canonicalForm nepalica:1#ne000280_form .
+
+nepalica:1#ne000280_form a ontolex:Form ;
+    ontolex:writtenRep "षै"@ne .
+
+nepalica:1#ne000281 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000282 ;
+    ontolex:canonicalForm nepalica:1#ne000281_form .
+
+nepalica:1#ne000281_form a ontolex:Form ;
+    ontolex:writtenRep "गरि"@ne .
+
+nepalica:1#ne000282 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000283 ;
+    ontolex:canonicalForm nepalica:1#ne000282_form .
+
+nepalica:1#ne000282_form a ontolex:Form ;
+    ontolex:writtenRep "वनाउंन"@ne .
+
+nepalica:1#ne000283 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000284 ;
+    ontolex:canonicalForm nepalica:1#ne000283_form .
+
+nepalica:1#ne000283_form a ontolex:Form ;
+    ontolex:writtenRep "लाउंनु"@ne .
+
+nepalica:1#ne000284 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000285 ;
+    ontolex:canonicalForm nepalica:1#ne000284_form .
+
+nepalica:1#ne000284_form a ontolex:Form ;
+    ontolex:writtenRep "वनाय"@ne .
+
+nepalica:1#ne000285 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000286 ;
+    ontolex:canonicalForm nepalica:1#ne000285_form .
+
+nepalica:1#ne000285_form a ontolex:Form ;
+    ontolex:writtenRep "नवनाय"@ne .
+
+nepalica:1#ne000286 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000287 ;
+    ontolex:canonicalForm nepalica:1#ne000286_form .
+
+nepalica:1#ne000286_form a ontolex:Form ;
+    ontolex:writtenRep "वीस्तार"@ne .
+
+nepalica:1#ne000287 a dbr:Number ;
+    :followedBy nepalica:1#ne000288 ;
+    ontolex:canonicalForm nepalica:1#ne000287_form ;
+    ontolex:writtenRep "७"@en .
+
+nepalica:1#ne000287_form a ontolex:Form ;
+    ontolex:writtenRep "७"@ne .
+
+nepalica:1#ne000288 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000289 ;
+    ontolex:canonicalForm nepalica:1#ne000288_form .
+
+nepalica:1#ne000288_form a ontolex:Form ;
+    ontolex:writtenRep "आठमा"@ne .
+
+nepalica:1#ne000289 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000290 ;
+    ontolex:canonicalForm nepalica:1#ne000289_form .
+
+nepalica:1#ne000289_form a ontolex:Form ;
+    ontolex:writtenRep "वस्न्य"@ne .
+
+nepalica:1#ne000290 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000291 ;
+    ontolex:canonicalForm nepalica:1#ne000290_form .
+
+nepalica:1#ne000290_form a ontolex:Form ;
+    ontolex:writtenRep "साथमा"@ne .
+
+nepalica:1#ne000291 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000292 ;
+    ontolex:canonicalForm nepalica:1#ne000291_form .
+
+nepalica:1#ne000291_form a ontolex:Form ;
+    ontolex:writtenRep "छोटा"@ne .
+
+nepalica:1#ne000292 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000293 ;
+    ontolex:canonicalForm nepalica:1#ne000292_form .
+
+nepalica:1#ne000292_form a ontolex:Form ;
+    ontolex:writtenRep "वडा"@ne .
+
+nepalica:1#ne000293 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000294 ;
+    ontolex:canonicalForm nepalica:1#ne000293_form .
+
+nepalica:1#ne000293_form a ontolex:Form ;
+    ontolex:writtenRep "क"@ne .
+
+nepalica:1#ne000294 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000295 ;
+    ontolex:canonicalForm nepalica:1#ne000294_form .
+
+nepalica:1#ne000294_form a ontolex:Form ;
+    ontolex:writtenRep "रह्य"@ne .
+
+nepalica:1#ne000295 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000296 ;
+    ontolex:canonicalForm nepalica:1#ne000295_form .
+
+nepalica:1#ne000295_form a ontolex:Form ;
+    ontolex:writtenRep "छं"@ne .
+
+nepalica:1#ne000296 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000297 ;
+    ontolex:canonicalForm nepalica:1#ne000296_form .
+
+nepalica:1#ne000296_form a ontolex:Form ;
+    ontolex:writtenRep "क्या"@ne .
+
+nepalica:1#ne000297 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000298 ;
+    ontolex:canonicalForm nepalica:1#ne000297_form .
+
+nepalica:1#ne000297_form a ontolex:Form ;
+    ontolex:writtenRep "तद्वीर"@ne .
+
+nepalica:1#ne000298 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000299 ;
+    ontolex:canonicalForm nepalica:1#ne000298_form .
+
+nepalica:1#ne000298_form a ontolex:Form ;
+    ontolex:writtenRep "रहेछ"@ne .
+
+nepalica:1#ne000299 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000300 ;
+    ontolex:canonicalForm nepalica:1#ne000299_form .
+
+nepalica:1#ne000299_form a ontolex:Form ;
+    ontolex:writtenRep "ले"@ne .
+
+nepalica:1#ne000300 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000301 ;
+    ontolex:canonicalForm nepalica:1#ne000300_form .
+
+nepalica:1#ne000300_form a ontolex:Form ;
+    ontolex:writtenRep "चडाईपठाउंनु"@ne .
+
+nepalica:1#ne000301 a dbr:Number ;
+    :followedBy nepalica:1#ne000302 ;
+    ontolex:canonicalForm nepalica:1#ne000301_form ;
+    ontolex:writtenRep "८"@en .
+
+nepalica:1#ne000301_form a ontolex:Form ;
+    ontolex:writtenRep "८"@ne .
+
+nepalica:1#ne000302 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000303 ;
+    ontolex:canonicalForm nepalica:1#ne000302_form .
+
+nepalica:1#ne000302_form a ontolex:Form ;
+    ontolex:writtenRep "नौमा"@ne .
+
+nepalica:1#ne000303 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000304 ;
+    ontolex:canonicalForm nepalica:1#ne000303_form .
+
+nepalica:1#ne000303_form a ontolex:Form ;
+    ontolex:writtenRep "वारदषाना"@ne .
+
+nepalica:1#ne000304 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000305 ;
+    ontolex:canonicalForm nepalica:1#ne000304_form .
+
+nepalica:1#ne000304_form a ontolex:Form ;
+    ontolex:writtenRep "मेगजींमा"@ne .
+
+nepalica:1#ne000305 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000306 ;
+    ontolex:canonicalForm nepalica:1#ne000305_form .
+
+nepalica:1#ne000305_form a ontolex:Form ;
+    ontolex:writtenRep "का"@ne .
+
+nepalica:1#ne000306 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000307 ;
+    ontolex:canonicalForm nepalica:1#ne000306_form .
+
+nepalica:1#ne000306_form a ontolex:Form ;
+    ontolex:writtenRep "पुरो"@ne .
+
+nepalica:1#ne000307 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000308 ;
+    ontolex:canonicalForm nepalica:1#ne000307_form .
+
+nepalica:1#ne000307_form a ontolex:Form ;
+    ontolex:writtenRep "चल्य"@ne .
+
+nepalica:1#ne000308 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000309 ;
+    ontolex:canonicalForm nepalica:1#ne000308_form .
+
+nepalica:1#ne000308_form a ontolex:Form ;
+    ontolex:writtenRep "नचल्य"@ne .
+
+nepalica:1#ne000309 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000310 ;
+    ontolex:canonicalForm nepalica:1#ne000309_form .
+
+nepalica:1#ne000309_form a ontolex:Form ;
+    ontolex:writtenRep "तय"@ne .
+
+nepalica:1#ne000310 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000311 ;
+    ontolex:canonicalForm nepalica:1#ne000310_form .
+
+nepalica:1#ne000310_form a ontolex:Form ;
+    ontolex:writtenRep "वंदुक"@ne .
+
+nepalica:1#ne000311 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000312 ;
+    ontolex:canonicalForm nepalica:1#ne000311_form .
+
+nepalica:1#ne000311_form a ontolex:Form ;
+    ontolex:writtenRep "वारूद"@ne .
+
+nepalica:1#ne000312 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000313 ;
+    ontolex:canonicalForm nepalica:1#ne000312_form .
+
+nepalica:1#ne000312_form a ontolex:Form ;
+    ontolex:writtenRep "कालीगढ"@ne .
+
+nepalica:1#ne000313 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000314 ;
+    ontolex:canonicalForm nepalica:1#ne000313_form .
+
+nepalica:1#ne000313_form a ontolex:Form ;
+    ontolex:writtenRep "जना"@ne .
+
+nepalica:1#ne000314 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000315 ;
+    ontolex:canonicalForm nepalica:1#ne000314_form .
+
+nepalica:1#ne000314_form a ontolex:Form ;
+    ontolex:writtenRep "जात"@ne .
+
+nepalica:1#ne000315 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000316 ;
+    ontolex:canonicalForm nepalica:1#ne000315_form .
+
+nepalica:1#ne000315_form a ontolex:Form ;
+    ontolex:writtenRep "फर्द"@ne .
+
+nepalica:1#ne000316 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000317 ;
+    ontolex:canonicalForm nepalica:1#ne000316_form .
+
+nepalica:1#ne000316_form a ontolex:Form ;
+    ontolex:writtenRep "चढाईप"@ne .
+
+nepalica:1#ne000317 a dbr:Number ;
+    :followedBy nepalica:1#ne000318 ;
+    ontolex:canonicalForm nepalica:1#ne000317_form ;
+    ontolex:writtenRep "९"@en .
+
+nepalica:1#ne000317_form a ontolex:Form ;
+    ontolex:writtenRep "९"@ne .
+
+nepalica:1#ne000318 a dbr:Number ;
+    :followedBy nepalica:1#ne000319 ;
+    ontolex:canonicalForm nepalica:1#ne000318_form ;
+    ontolex:writtenRep "449"@en .
+
+nepalica:1#ne000318_form a ontolex:Form ;
+    ontolex:writtenRep "449"@ne .
+
+nepalica:1#ne000319 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000320 ;
+    ontolex:canonicalForm nepalica:1#ne000319_form .
+
+nepalica:1#ne000319_form a ontolex:Form ;
+    ontolex:writtenRep "दसमा"@ne .
+
+nepalica:1#ne000320 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000321 ;
+    ontolex:canonicalForm nepalica:1#ne000320_form .
+
+nepalica:1#ne000320_form a ontolex:Form ;
+    ontolex:writtenRep "कुमाउंवाट"@ne .
+
+nepalica:1#ne000321 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000322 ;
+    ontolex:canonicalForm nepalica:1#ne000321_form .
+
+nepalica:1#ne000321_form a ontolex:Form ;
+    ontolex:writtenRep "षजाना"@ne .
+
+nepalica:1#ne000322 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000323 ;
+    ontolex:canonicalForm nepalica:1#ne000322_form .
+
+nepalica:1#ne000322_form a ontolex:Form ;
+    ontolex:writtenRep "मु"@ne .
+
+nepalica:1#ne000323 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000324 ;
+    ontolex:canonicalForm nepalica:1#ne000323_form .
+
+nepalica:1#ne000323_form a ontolex:Form ;
+    ontolex:writtenRep "कती"@ne .
+
+nepalica:1#ne000324 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000325 ;
+    ontolex:canonicalForm nepalica:1#ne000324_form .
+
+nepalica:1#ne000324_form a ontolex:Form ;
+    ontolex:writtenRep "गये"@ne .
+
+nepalica:1#ne000325 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000326 ;
+    ontolex:canonicalForm nepalica:1#ne000325_form .
+
+nepalica:1#ne000325_form a ontolex:Form ;
+    ontolex:writtenRep "ञाहावाट"@ne .
+
+nepalica:1#ne000326 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000327 ;
+    ontolex:canonicalForm nepalica:1#ne000326_form .
+
+nepalica:1#ne000326_form a ontolex:Form ;
+    ontolex:writtenRep "मुहुडामा"@ne .
+
+nepalica:1#ne000327 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000328 ;
+    ontolex:canonicalForm nepalica:1#ne000327_form .
+
+nepalica:1#ne000327_form a ontolex:Form ;
+    ontolex:writtenRep "गय"@ne .
+
+nepalica:1#ne000328 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000329 ;
+    ontolex:canonicalForm nepalica:1#ne000328_form .
+
+nepalica:1#ne000328_form a ontolex:Form ;
+    ontolex:writtenRep "काहा"@ne .
+
+nepalica:1#ne000329 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000330 ;
+    ontolex:canonicalForm nepalica:1#ne000329_form .
+
+nepalica:1#ne000329_form a ontolex:Form ;
+    ontolex:writtenRep "क्य"@ne .
+
+nepalica:1#ne000330 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000331 ;
+    ontolex:canonicalForm nepalica:1#ne000330_form .
+
+nepalica:1#ne000330_form a ontolex:Form ;
+    ontolex:writtenRep "अर्थले"@ne .
+
+nepalica:1#ne000331 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000332 ;
+    ontolex:canonicalForm nepalica:1#ne000331_form .
+
+nepalica:1#ne000331_form a ontolex:Form ;
+    ontolex:writtenRep "अटकदो"@ne .
+
+nepalica:1#ne000332 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000333 ;
+    ontolex:canonicalForm nepalica:1#ne000332_form .
+
+nepalica:1#ne000332_form a ontolex:Form ;
+    ontolex:writtenRep "जस्ताको"@ne .
+
+nepalica:1#ne000333 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000334 ;
+    ontolex:canonicalForm nepalica:1#ne000333_form .
+
+nepalica:1#ne000333_form a ontolex:Form ;
+    ontolex:writtenRep "तस्तो"@ne .
+
+nepalica:1#ne000334 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000335 ;
+    ontolex:canonicalForm nepalica:1#ne000334_form .
+
+nepalica:1#ne000334_form a ontolex:Form ;
+    ontolex:writtenRep "अटक्य"@ne .
+
+nepalica:1#ne000335 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000336 ;
+    ontolex:canonicalForm nepalica:1#ne000335_form .
+
+nepalica:1#ne000335_form a ontolex:Form ;
+    ontolex:writtenRep "वा"@ne .
+
+nepalica:1#ne000336 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000337 ;
+    ontolex:canonicalForm nepalica:1#ne000336_form .
+
+nepalica:1#ne000336_form a ontolex:Form ;
+    ontolex:writtenRep "सेगुता"@ne .
+
+nepalica:1#ne000337 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000338 ;
+    ontolex:canonicalForm nepalica:1#ne000337_form .
+
+nepalica:1#ne000337_form a ontolex:Form ;
+    ontolex:writtenRep "अमालीलाई"@ne .
+
+nepalica:1#ne000338 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000339 ;
+    ontolex:canonicalForm nepalica:1#ne000338_form .
+
+nepalica:1#ne000338_form a ontolex:Form ;
+    ontolex:writtenRep "चाडो"@ne .
+
+nepalica:1#ne000339 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000340 ;
+    ontolex:canonicalForm nepalica:1#ne000339_form .
+
+nepalica:1#ne000339_form a ontolex:Form ;
+    ontolex:writtenRep "हीडाउंनु"@ne .
+
+nepalica:1#ne000340 a dbr:Number ;
+    :followedBy nepalica:1#ne000341 ;
+    ontolex:canonicalForm nepalica:1#ne000340_form ;
+    ontolex:writtenRep "१०"@en .
+
+nepalica:1#ne000340_form a ontolex:Form ;
+    ontolex:writtenRep "१०"@ne .
+
+nepalica:1#ne000341 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000342 ;
+    ontolex:canonicalForm nepalica:1#ne000341_form .
+
+nepalica:1#ne000341_form a ontolex:Form ;
+    ontolex:writtenRep "वाटका"@ne .
+
+nepalica:1#ne000342 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000343 ;
+    ontolex:canonicalForm nepalica:1#ne000342_form .
+
+nepalica:1#ne000342_form a ontolex:Form ;
+    ontolex:writtenRep "गाउंमा"@ne .
+
+nepalica:1#ne000343 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000344 ;
+    ontolex:canonicalForm nepalica:1#ne000343_form .
+
+nepalica:1#ne000343_form a ontolex:Form ;
+    ontolex:writtenRep "वीद्दतले"@ne .
+
+nepalica:1#ne000344 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000345 ;
+    ontolex:canonicalForm nepalica:1#ne000344_form .
+
+nepalica:1#ne000344_form a ontolex:Form ;
+    ontolex:writtenRep "उठ्य"@ne .
+
+nepalica:1#ne000345 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000346 ;
+    ontolex:canonicalForm nepalica:1#ne000345_form .
+
+nepalica:1#ne000345_form a ontolex:Form ;
+    ontolex:writtenRep "कुरीय"@ne .
+
+nepalica:1#ne000346 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000347 ;
+    ontolex:canonicalForm nepalica:1#ne000346_form .
+
+nepalica:1#ne000346_form a ontolex:Form ;
+    ontolex:writtenRep "तसलह"@ne .
+
+nepalica:1#ne000347 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000348 ;
+    ontolex:canonicalForm nepalica:1#ne000347_form .
+
+nepalica:1#ne000347_form a ontolex:Form ;
+    ontolex:writtenRep "झीकाई"@ne .
+
+nepalica:1#ne000348 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000349 ;
+    ontolex:canonicalForm nepalica:1#ne000348_form .
+
+nepalica:1#ne000348_form a ontolex:Form ;
+    ontolex:writtenRep "वसाउंनु"@ne .
+
+nepalica:1#ne000349 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000350 ;
+    ontolex:canonicalForm nepalica:1#ne000349_form .
+
+nepalica:1#ne000349_form a ontolex:Form ;
+    ontolex:writtenRep "रह्या"@ne .
+
+nepalica:1#ne000350 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000351 ;
+    ontolex:canonicalForm nepalica:1#ne000350_form .
+
+nepalica:1#ne000350_form a ontolex:Form ;
+    ontolex:writtenRep "कंपनी"@ne .
+
+nepalica:1#ne000351 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000352 ;
+    ontolex:canonicalForm nepalica:1#ne000351_form .
+
+nepalica:1#ne000351_form a ontolex:Form ;
+    ontolex:writtenRep "गांउ"@ne .
+
+nepalica:1#ne000352 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000353 ;
+    ontolex:canonicalForm nepalica:1#ne000352_form .
+
+nepalica:1#ne000352_form a ontolex:Form ;
+    ontolex:writtenRep "दर्वारको"@ne .
+
+nepalica:1#ne000353 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000354 ;
+    ontolex:canonicalForm nepalica:1#ne000353_form .
+
+nepalica:1#ne000353_form a ontolex:Form ;
+    ontolex:writtenRep "काजले"@ne .
+
+nepalica:1#ne000354 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000355 ;
+    ontolex:canonicalForm nepalica:1#ne000354_form .
+
+nepalica:1#ne000354_form a ontolex:Form ;
+    ontolex:writtenRep "हुकुं"@ne .
+
+nepalica:1#ne000355 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000356 ;
+    ontolex:canonicalForm nepalica:1#ne000355_form .
+
+nepalica:1#ne000355_form a ontolex:Form ;
+    ontolex:writtenRep "आउने"@ne .
+
+nepalica:1#ne000356 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000357 ;
+    ontolex:canonicalForm nepalica:1#ne000356_form .
+
+nepalica:1#ne000356_form a ontolex:Form ;
+    ontolex:writtenRep "आफ्ना"@ne .
+
+nepalica:1#ne000357 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000358 ;
+    ontolex:canonicalForm nepalica:1#ne000357_form .
+
+nepalica:1#ne000357_form a ontolex:Form ;
+    ontolex:writtenRep "वेगारी"@ne .
+
+nepalica:1#ne000358 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000359 ;
+    ontolex:canonicalForm nepalica:1#ne000358_form .
+
+nepalica:1#ne000358_form a ontolex:Form ;
+    ontolex:writtenRep "वैकरको"@ne .
+
+nepalica:1#ne000359 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000360 ;
+    ontolex:canonicalForm nepalica:1#ne000359_form .
+
+nepalica:1#ne000359_form a ontolex:Form ;
+    ontolex:writtenRep "टंटा"@ne .
+
+nepalica:1#ne000360 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000361 ;
+    ontolex:canonicalForm nepalica:1#ne000360_form .
+
+nepalica:1#ne000360_form a ontolex:Form ;
+    ontolex:writtenRep "लाउंन"@ne .
+
+nepalica:1#ne000361 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000362 ;
+    ontolex:canonicalForm nepalica:1#ne000361_form .
+
+nepalica:1#ne000361_form a ontolex:Form ;
+    ontolex:writtenRep "नदीनु"@ne .
+
+nepalica:1#ne000362 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000363 ;
+    ontolex:canonicalForm nepalica:1#ne000362_form .
+
+nepalica:1#ne000362_form a ontolex:Form ;
+    ontolex:writtenRep "उर्दी"@ne .
+
+nepalica:1#ne000363 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000364 ;
+    ontolex:canonicalForm nepalica:1#ne000363_form .
+
+nepalica:1#ne000363_form a ontolex:Form ;
+    ontolex:writtenRep "औ"@ne .
+
+nepalica:1#ne000364 a dbr:Number ;
+    :followedBy nepalica:1#ne000365 ;
+    ontolex:canonicalForm nepalica:1#ne000364_form ;
+    ontolex:writtenRep "१९९"@en .
+
+nepalica:1#ne000364_form a ontolex:Form ;
+    ontolex:writtenRep "१९९"@ne .
+
+nepalica:1#ne000365 a dbr:Number ;
+    :followedBy nepalica:1#ne000366 ;
+    ontolex:canonicalForm nepalica:1#ne000365_form ;
+    ontolex:writtenRep "450"@en .
+
+nepalica:1#ne000365_form a ontolex:Form ;
+    ontolex:writtenRep "450"@ne .
+
+nepalica:1#ne000366 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000367 ;
+    ontolex:canonicalForm nepalica:1#ne000366_form .
+
+nepalica:1#ne000366_form a ontolex:Form ;
+    ontolex:writtenRep "साफ"@ne .
+
+nepalica:1#ne000367 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000368 ;
+    ontolex:canonicalForm nepalica:1#ne000367_form .
+
+nepalica:1#ne000367_form a ontolex:Form ;
+    ontolex:writtenRep "तैले"@ne .
+
+nepalica:1#ne000368 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000369 ;
+    ontolex:canonicalForm nepalica:1#ne000368_form .
+
+nepalica:1#ne000368_form a ontolex:Form ;
+    ontolex:writtenRep "चढाईपठाउंनु"@ne .
+
+nepalica:1#ne000369 a dbr:Number ;
+    :followedBy nepalica:1#ne000370 ;
+    ontolex:canonicalForm nepalica:1#ne000369_form ;
+    ontolex:writtenRep "११"@en .
+
+nepalica:1#ne000369_form a ontolex:Form ;
+    ontolex:writtenRep "११"@ne .
+
+nepalica:1#ne000370 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000371 ;
+    ontolex:canonicalForm nepalica:1#ne000370_form .
+
+nepalica:1#ne000370_form a ontolex:Form ;
+    ontolex:writtenRep "वारौ"@ne .
+
+nepalica:1#ne000371 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000372 ;
+    ontolex:canonicalForm nepalica:1#ne000371_form .
+
+nepalica:1#ne000371_form a ontolex:Form ;
+    ontolex:writtenRep "कंपनीको"@ne .
+
+nepalica:1#ne000372 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000373 ;
+    ontolex:canonicalForm nepalica:1#ne000372_form .
+
+nepalica:1#ne000372_form a ontolex:Form ;
+    ontolex:writtenRep "हाजीर"@ne .
+
+nepalica:1#ne000373 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000374 ;
+    ontolex:canonicalForm nepalica:1#ne000373_form .
+
+nepalica:1#ne000373_form a ontolex:Form ;
+    ontolex:writtenRep "लीनु"@ne .
+
+nepalica:1#ne000374 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000375 ;
+    ontolex:canonicalForm nepalica:1#ne000374_form .
+
+nepalica:1#ne000374_form a ontolex:Form ;
+    ontolex:writtenRep "लीदा"@ne .
+
+nepalica:1#ne000375 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000376 ;
+    ontolex:canonicalForm nepalica:1#ne000375_form .
+
+nepalica:1#ne000375_form a ontolex:Form ;
+    ontolex:writtenRep "रैवंदी"@ne .
+
+nepalica:1#ne000376 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000377 ;
+    ontolex:canonicalForm nepalica:1#ne000376_form .
+
+nepalica:1#ne000376_form a ontolex:Form ;
+    ontolex:writtenRep "जुं"@ne .
+
+nepalica:1#ne000377 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000378 ;
+    ontolex:canonicalForm nepalica:1#ne000377_form .
+
+nepalica:1#ne000377_form a ontolex:Form ;
+    ontolex:writtenRep "कंपनीमा"@ne .
+
+nepalica:1#ne000378 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000379 ;
+    ontolex:canonicalForm nepalica:1#ne000378_form .
+
+nepalica:1#ne000378_form a ontolex:Form ;
+    ontolex:writtenRep "जती"@ne .
+
+nepalica:1#ne000379 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000380 ;
+    ontolex:canonicalForm nepalica:1#ne000379_form .
+
+nepalica:1#ne000379_form a ontolex:Form ;
+    ontolex:writtenRep "भर्ना"@ne .
+
+nepalica:1#ne000380 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000381 ;
+    ontolex:canonicalForm nepalica:1#ne000380_form .
+
+nepalica:1#ne000380_form a ontolex:Form ;
+    ontolex:writtenRep "छैन"@ne .
+
+nepalica:1#ne000381 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000382 ;
+    ontolex:canonicalForm nepalica:1#ne000381_form .
+
+nepalica:1#ne000381_form a ontolex:Form ;
+    ontolex:writtenRep "षेत"@ne .
+
+nepalica:1#ne000382 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000383 ;
+    ontolex:canonicalForm nepalica:1#ne000382_form .
+
+nepalica:1#ne000382_form a ontolex:Form ;
+    ontolex:writtenRep "रुपैया"@ne .
+
+nepalica:1#ne000383 a dbr:Number ;
+    :followedBy nepalica:1#ne000384 ;
+    ontolex:canonicalForm nepalica:1#ne000383_form ;
+    ontolex:writtenRep "२५"@en .
+
+nepalica:1#ne000383_form a ontolex:Form ;
+    ontolex:writtenRep "२५"@ne .
+
+nepalica:1#ne000384 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000385 ;
+    ontolex:canonicalForm nepalica:1#ne000384_form .
+
+nepalica:1#ne000384_form a ontolex:Form ;
+    ontolex:writtenRep "दर"@ne .
+
+nepalica:1#ne000385 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000386 ;
+    ontolex:canonicalForm nepalica:1#ne000385_form .
+
+nepalica:1#ne000385_form a ontolex:Form ;
+    ontolex:writtenRep "जस्का"@ne .
+
+nepalica:1#ne000386 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000387 ;
+    ontolex:canonicalForm nepalica:1#ne000386_form .
+
+nepalica:1#ne000386_form a ontolex:Form ;
+    ontolex:writtenRep "तैनाथी"@ne .
+
+nepalica:1#ne000387 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000388 ;
+    ontolex:canonicalForm nepalica:1#ne000387_form .
+
+nepalica:1#ne000387_form a ontolex:Form ;
+    ontolex:writtenRep "उसैसंग"@ne .
+
+nepalica:1#ne000388 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000389 ;
+    ontolex:canonicalForm nepalica:1#ne000388_form .
+
+nepalica:1#ne000388_form a ontolex:Form ;
+    ontolex:writtenRep "भरी"@ne .
+
+nepalica:1#ne000389 a dbr:Number ;
+    :followedBy nepalica:1#ne000390 ;
+    ontolex:canonicalForm nepalica:1#ne000389_form ;
+    ontolex:writtenRep "१२"@en .
+
+nepalica:1#ne000389_form a ontolex:Form ;
+    ontolex:writtenRep "१२"@ne .
+
+nepalica:1#ne000390 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000391 ;
+    ontolex:canonicalForm nepalica:1#ne000390_form .
+
+nepalica:1#ne000390_form a ontolex:Form ;
+    ontolex:writtenRep "तेरौ"@ne .
+
+nepalica:1#ne000391 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000392 ;
+    ontolex:canonicalForm nepalica:1#ne000391_form .
+
+nepalica:1#ne000391_form a ontolex:Form ;
+    ontolex:writtenRep "दर्वारवाट"@ne .
+
+nepalica:1#ne000392 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000393 ;
+    ontolex:canonicalForm nepalica:1#ne000392_form .
+
+nepalica:1#ne000392_form a ontolex:Form ;
+    ontolex:writtenRep "मुहुडावाट"@ne .
+
+nepalica:1#ne000393 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000394 ;
+    ontolex:canonicalForm nepalica:1#ne000393_form .
+
+nepalica:1#ne000393_form a ontolex:Form ;
+    ontolex:writtenRep "तो"@ne .
+
+nepalica:1#ne000394 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000395 ;
+    ontolex:canonicalForm nepalica:1#ne000394_form .
+
+nepalica:1#ne000394_form a ontolex:Form ;
+    ontolex:writtenRep "गोली"@ne .
+
+nepalica:1#ne000395 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000396 ;
+    ontolex:canonicalForm nepalica:1#ne000395_form .
+
+nepalica:1#ne000395_form a ontolex:Form ;
+    ontolex:writtenRep "पथर"@ne .
+
+nepalica:1#ne000396 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000397 ;
+    ontolex:canonicalForm nepalica:1#ne000396_form .
+
+nepalica:1#ne000396_form a ontolex:Form ;
+    ontolex:writtenRep "वारुद"@ne .
+
+nepalica:1#ne000397 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000398 ;
+    ontolex:canonicalForm nepalica:1#ne000397_form .
+
+nepalica:1#ne000397_form a ontolex:Form ;
+    ontolex:writtenRep "अमलमा"@ne .
+
+nepalica:1#ne000398 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000399 ;
+    ontolex:canonicalForm nepalica:1#ne000398_form .
+
+nepalica:1#ne000398_form a ontolex:Form ;
+    ontolex:writtenRep "अट्"@ne .
+
+nepalica:1#ne000399 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000400 ;
+    ontolex:canonicalForm nepalica:1#ne000399_form .
+
+nepalica:1#ne000399_form a ontolex:Form ;
+    ontolex:writtenRep "अट्काउंनेलाइ"@ne .
+
+nepalica:1#ne000400 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000401 ;
+    ontolex:canonicalForm nepalica:1#ne000400_form .
+
+nepalica:1#ne000400_form a ontolex:Form ;
+    ontolex:writtenRep "दंड"@ne .
+
+nepalica:1#ne000401 a dbr:Number ;
+    :followedBy nepalica:1#ne000402 ;
+    ontolex:canonicalForm nepalica:1#ne000401_form ;
+    ontolex:writtenRep "१३"@en .
+
+nepalica:1#ne000401_form a ontolex:Form ;
+    ontolex:writtenRep "१३"@ne .
+
+nepalica:1#ne000402 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000403 ;
+    ontolex:canonicalForm nepalica:1#ne000402_form .
+
+nepalica:1#ne000402_form a ontolex:Form ;
+    ontolex:writtenRep "चौधौ"@ne .
+
+nepalica:1#ne000403 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000404 ;
+    ontolex:canonicalForm nepalica:1#ne000403_form .
+
+nepalica:1#ne000403_form a ontolex:Form ;
+    ontolex:writtenRep "हुलाकीका"@ne .
+
+nepalica:1#ne000404 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000405 ;
+    ontolex:canonicalForm nepalica:1#ne000404_form .
+
+nepalica:1#ne000404_form a ontolex:Form ;
+    ontolex:writtenRep "घरलाई"@ne .
+
+nepalica:1#ne000405 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000406 ;
+    ontolex:canonicalForm nepalica:1#ne000405_form .
+
+nepalica:1#ne000405_form a ontolex:Form ;
+    ontolex:writtenRep "षे"@ne .
+
+nepalica:1#ne000406 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000407 ;
+    ontolex:canonicalForm nepalica:1#ne000406_form .
+
+nepalica:1#ne000406_form a ontolex:Form ;
+    ontolex:writtenRep "दीदा"@ne .
+
+nepalica:1#ne000407 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000408 ;
+    ontolex:canonicalForm nepalica:1#ne000407_form .
+
+nepalica:1#ne000407_form a ontolex:Form ;
+    ontolex:writtenRep "समेत्‌"@ne .
+
+nepalica:1#ne000408 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000409 ;
+    ontolex:canonicalForm nepalica:1#ne000408_form .
+
+nepalica:1#ne000408_form a ontolex:Form ;
+    ontolex:writtenRep "उंधो"@ne .
+
+nepalica:1#ne000409 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000410 ;
+    ontolex:canonicalForm nepalica:1#ne000409_form .
+
+nepalica:1#ne000409_form a ontolex:Form ;
+    ontolex:writtenRep "चाली"@ne .
+
+nepalica:1#ne000410 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000411 ;
+    ontolex:canonicalForm nepalica:1#ne000410_form .
+
+nepalica:1#ne000410_form a ontolex:Form ;
+    ontolex:writtenRep "मुरीदेषी"@ne .
+
+nepalica:1#ne000411 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000412 ;
+    ontolex:canonicalForm nepalica:1#ne000411_form .
+
+nepalica:1#ne000411_form a ontolex:Form ;
+    ontolex:writtenRep "उंभो"@ne .
+
+nepalica:1#ne000412 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000413 ;
+    ontolex:canonicalForm nepalica:1#ne000412_form .
+
+nepalica:1#ne000412_form a ontolex:Form ;
+    ontolex:writtenRep "जाहां"@ne .
+
+nepalica:1#ne000413 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000414 ;
+    ontolex:canonicalForm nepalica:1#ne000413_form .
+
+nepalica:1#ne000413_form a ontolex:Form ;
+    ontolex:writtenRep "हेरी"@ne .
+
+nepalica:1#ne000414 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000415 ;
+    ontolex:canonicalForm nepalica:1#ne000414_form .
+
+nepalica:1#ne000414_form a ontolex:Form ;
+    ontolex:writtenRep "गरीदीनु"@ne .
+
+nepalica:1#ne000415 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000416 ;
+    ontolex:canonicalForm nepalica:1#ne000415_form .
+
+nepalica:1#ne000415_form a ontolex:Form ;
+    ontolex:writtenRep "दीन "@ne .
+
+nepalica:1#ne000416 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000417 ;
+    ontolex:canonicalForm nepalica:1#ne000416_form .
+
+nepalica:1#ne000416_form a ontolex:Form ;
+    ontolex:writtenRep "वाटामा"@ne .
+
+nepalica:1#ne000417 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000418 ;
+    ontolex:canonicalForm nepalica:1#ne000417_form .
+
+nepalica:1#ne000417_form a ontolex:Form ;
+    ontolex:writtenRep "वोकने"@ne .
+
+nepalica:1#ne000418 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000419 ;
+    ontolex:canonicalForm nepalica:1#ne000418_form .
+
+nepalica:1#ne000418_form a ontolex:Form ;
+    ontolex:writtenRep "रा"@ne .
+
+nepalica:1#ne000419 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000420 ;
+    ontolex:canonicalForm nepalica:1#ne000419_form .
+
+nepalica:1#ne000419_form a ontolex:Form ;
+    ontolex:writtenRep "चर्‍ह्य"@ne .
+
+nepalica:1#ne000420 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000421 ;
+    ontolex:canonicalForm nepalica:1#ne000420_form .
+
+nepalica:1#ne000420_form a ontolex:Form ;
+    ontolex:writtenRep "तसर्थ"@ne .
+
+nepalica:1#ne000421 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000422 ;
+    ontolex:canonicalForm nepalica:1#ne000421_form .
+
+nepalica:1#ne000421_form a ontolex:Form ;
+    ontolex:writtenRep "तीमी"@ne .
+
+nepalica:1#ne000422 a dbr:Number ;
+    :followedBy nepalica:1#ne000423 ;
+    ontolex:canonicalForm nepalica:1#ne000422_form ;
+    ontolex:writtenRep "451"@en .
+
+nepalica:1#ne000422_form a ontolex:Form ;
+    ontolex:writtenRep "451"@ne .
+
+nepalica:1#ne000423 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000424 ;
+    ontolex:canonicalForm nepalica:1#ne000423_form .
+
+nepalica:1#ne000423_form a ontolex:Form ;
+    ontolex:writtenRep "हरूले"@ne .
+
+nepalica:1#ne000424 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000425 ;
+    ontolex:canonicalForm nepalica:1#ne000424_form .
+
+nepalica:1#ne000424_form a ontolex:Form ;
+    ontolex:writtenRep "लामो"@ne .
+
+nepalica:1#ne000425 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000426 ;
+    ontolex:canonicalForm nepalica:1#ne000425_form .
+
+nepalica:1#ne000425_form a ontolex:Form ;
+    ontolex:writtenRep "वास"@ne .
+
+nepalica:1#ne000426 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000427 ;
+    ontolex:canonicalForm nepalica:1#ne000426_form .
+
+nepalica:1#ne000426_form a ontolex:Form ;
+    ontolex:writtenRep "छोटो"@ne .
+
+nepalica:1#ne000427 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000428 ;
+    ontolex:canonicalForm nepalica:1#ne000427_form .
+
+nepalica:1#ne000427_form a ontolex:Form ;
+    ontolex:writtenRep "दींका"@ne .
+
+nepalica:1#ne000428 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000429 ;
+    ontolex:canonicalForm nepalica:1#ne000428_form .
+
+nepalica:1#ne000428_form a ontolex:Form ;
+    ontolex:writtenRep "चा"@ne .
+
+nepalica:1#ne000429 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000430 ;
+    ontolex:canonicalForm nepalica:1#ne000429_form .
+
+nepalica:1#ne000429_form a ontolex:Form ;
+    ontolex:writtenRep "हुलाकदेषी"@ne .
+
+nepalica:1#ne000430 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000431 ;
+    ontolex:canonicalForm nepalica:1#ne000430_form .
+
+nepalica:1#ne000430_form a ontolex:Form ;
+    ontolex:writtenRep "उं"@ne .
+
+nepalica:1#ne000431 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000432 ;
+    ontolex:canonicalForm nepalica:1#ne000431_form .
+
+nepalica:1#ne000431_form a ontolex:Form ;
+    ontolex:writtenRep "दुइ"@ne .
+
+nepalica:1#ne000432 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000433 ;
+    ontolex:canonicalForm nepalica:1#ne000432_form .
+
+nepalica:1#ne000432_form a ontolex:Form ;
+    ontolex:writtenRep """
+"""@ne .
+
+nepalica:1#ne000433 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000434 ;
+    ontolex:canonicalForm nepalica:1#ne000433_form .
+
+nepalica:1#ne000433_form a ontolex:Form ;
+    ontolex:writtenRep "चढा"@ne .
+
+nepalica:1#ne000434 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000435 ;
+    ontolex:canonicalForm nepalica:1#ne000434_form .
+
+nepalica:1#ne000434_form a ontolex:Form ;
+    ontolex:writtenRep "वक्सीपठाउंला"@ne .
+
+nepalica:1#ne000435 a dbr:Number ;
+    :followedBy nepalica:1#ne000436 ;
+    ontolex:canonicalForm nepalica:1#ne000435_form ;
+    ontolex:writtenRep "१४"@en .
+
+nepalica:1#ne000435_form a ontolex:Form ;
+    ontolex:writtenRep "१४"@ne .
+
+nepalica:1#ne000436 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000437 ;
+    ontolex:canonicalForm nepalica:1#ne000436_form .
+
+nepalica:1#ne000436_form a ontolex:Form ;
+    ontolex:writtenRep "पंध्रौ"@ne .
+
+nepalica:1#ne000437 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000438 ;
+    ontolex:canonicalForm nepalica:1#ne000437_form .
+
+nepalica:1#ne000437_form a ontolex:Form ;
+    ontolex:writtenRep "गरीवक्स्य"@ne .
+
+nepalica:1#ne000438 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000439 ;
+    ontolex:canonicalForm nepalica:1#ne000438_form .
+
+nepalica:1#ne000438_form a ontolex:Form ;
+    ontolex:writtenRep "रकंकलं"@ne .
+
+nepalica:1#ne000439 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000440 ;
+    ontolex:canonicalForm nepalica:1#ne000439_form .
+
+nepalica:1#ne000439_form a ontolex:Form ;
+    ontolex:writtenRep "अघी"@ne .
+
+nepalica:1#ne000440 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000441 ;
+    ontolex:canonicalForm nepalica:1#ne000440_form .
+
+nepalica:1#ne000440_form a ontolex:Form ;
+    ontolex:writtenRep "वसाय"@ne .
+
+nepalica:1#ne000441 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000442 ;
+    ontolex:canonicalForm nepalica:1#ne000441_form .
+
+nepalica:1#ne000441_form a ontolex:Form ;
+    ontolex:writtenRep "केही"@ne .
+
+nepalica:1#ne000442 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000443 ;
+    ontolex:canonicalForm nepalica:1#ne000442_form .
+
+nepalica:1#ne000442_form a ontolex:Form ;
+    ontolex:writtenRep "मीन्हा"@ne .
+
+nepalica:1#ne000443 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000444 ;
+    ontolex:canonicalForm nepalica:1#ne000443_form .
+
+nepalica:1#ne000443_form a ontolex:Form ;
+    ontolex:writtenRep "अव"@ne .
+
+nepalica:1#ne000444 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000445 ;
+    ontolex:canonicalForm nepalica:1#ne000444_form .
+
+nepalica:1#ne000444_form a ontolex:Form ;
+    ontolex:writtenRep "जस"@ne .
+
+nepalica:1#ne000445 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000446 ;
+    ontolex:canonicalForm nepalica:1#ne000445_form .
+
+nepalica:1#ne000445_form a ontolex:Form ;
+    ontolex:writtenRep "जसका"@ne .
+
+nepalica:1#ne000446 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000447 ;
+    ontolex:canonicalForm nepalica:1#ne000446_form .
+
+nepalica:1#ne000446_form a ontolex:Form ;
+    ontolex:writtenRep "षांगीमा"@ne .
+
+nepalica:1#ne000447 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000448 ;
+    ontolex:canonicalForm nepalica:1#ne000447_form .
+
+nepalica:1#ne000447_form a ontolex:Form ;
+    ontolex:writtenRep "काटींछ"@ne .
+
+nepalica:1#ne000448 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000449 ;
+    ontolex:canonicalForm nepalica:1#ne000448_form .
+
+nepalica:1#ne000448_form a ontolex:Form ;
+    ontolex:writtenRep "रुपैञाको"@ne .
+
+nepalica:1#ne000449 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000450 ;
+    ontolex:canonicalForm nepalica:1#ne000449_form .
+
+nepalica:1#ne000449_form a ontolex:Form ;
+    ontolex:writtenRep "च"@ne .
+
+nepalica:1#ne000450 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000451 ;
+    ontolex:canonicalForm nepalica:1#ne000450_form .
+
+nepalica:1#ne000450_form a ontolex:Form ;
+    ontolex:writtenRep "गरीवक्सौला"@ne .
+
+nepalica:1#ne000451 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000452 ;
+    ontolex:canonicalForm nepalica:1#ne000451_form .
+
+nepalica:1#ne000451_form a ontolex:Form ;
+    ontolex:writtenRep "सोरौ"@ne .
+
+nepalica:1#ne000452 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000453 ;
+    ontolex:canonicalForm nepalica:1#ne000452_form .
+
+nepalica:1#ne000452_form a ontolex:Form ;
+    ontolex:writtenRep "हुलाकको"@ne .
+
+nepalica:1#ne000453 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000454 ;
+    ontolex:canonicalForm nepalica:1#ne000453_form .
+
+nepalica:1#ne000453_form a ontolex:Form ;
+    ontolex:writtenRep " घरको"@ne .
+
+nepalica:1#ne000454 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000455 ;
+    ontolex:canonicalForm nepalica:1#ne000454_form .
+
+nepalica:1#ne000454_form a ontolex:Form ;
+    ontolex:writtenRep "रुपैञा"@ne .
+
+nepalica:1#ne000455 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000456 ;
+    ontolex:canonicalForm nepalica:1#ne000455_form .
+
+nepalica:1#ne000455_form a ontolex:Form ;
+    ontolex:writtenRep "मोहोर"@ne .
+
+nepalica:1#ne000456 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000457 ;
+    ontolex:canonicalForm nepalica:1#ne000456_form .
+
+nepalica:1#ne000456_form a ontolex:Form ;
+    ontolex:writtenRep " मीती"@ne .
+
+nepalica:1#ne000457 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000458 ;
+    ontolex:canonicalForm nepalica:1#ne000457_form .
+
+nepalica:1#ne000457_form a ontolex:Form ;
+    ontolex:writtenRep "सदर"@ne .
+
+nepalica:1#ne000458 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#ne000459 ;
+    ontolex:canonicalForm nepalica:1#ne000458_form .
+
+nepalica:1#ne000458_form a ontolex:Form ;
+    ontolex:writtenRep "आषाढ"@ne .
+
+nepalica:1#ne000459 a dbr:Number ;
+    :followedBy nepalica:1#ne000460 ;
+    ontolex:canonicalForm nepalica:1#ne000459_form ;
+    ontolex:writtenRep "१८६६"@en .
+
+nepalica:1#ne000459_form a ontolex:Form ;
+    ontolex:writtenRep "१८६६"@ne .
+

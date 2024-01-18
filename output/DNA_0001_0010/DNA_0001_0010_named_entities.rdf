@@ -9,36 +9,36 @@
    xmlns:ontolex="http://www.w3.org/ns/lemon/ontolex#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-   xmlns:schema="http://schema.org/"
+   xmlns:schema1="http://schema.org/"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000532">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000532_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000533"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000526">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000526_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000527"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000586">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000586_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000587"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000559_form">
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
     <ontolex:writtenRep xml:lang="en">tied</ontolex:writtenRep>
   </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000556_form">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">elephant</ontolex:writtenRep>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000603">
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000557">
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000603_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000604"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000584">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000584_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000585"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000539_form">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">request</ontolex:writtenRep>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000530_form">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">big</ontolex:writtenRep>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000557_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000558"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1">
     <rdf:type rdf:resource="http://purl.org/dc/terms/Document"/>
@@ -59,22 +59,110 @@
     <dct:publisher xml:lang="en">Bhadrakālī; card no. 10; Po. no. 15 Gu. Bam.</dct:publisher>
     <dct:source xml:lang="en">NGMPP catalogue card; Microfilmed on 18/8/1995 as NGMPP K 469/9</dct:source>
     <dct:hasPart xml:lang="en">K 30544; 1</dct:hasPart>
-    <schema:created xml:lang="en">4/6/16, 12:56 PM; 6/11/21, 11:28 AM; 12</schema:created>
+    <schema1:created xml:lang="en">4/6/16, 12:56 PM; 6/11/21, 11:28 AM; 12</schema1:created>
     <dct:subject xml:lang="en">jogī, ānā</dct:subject>
   </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000527">
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000561">
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000527_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000528"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000561_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000562"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000547_form">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">measuring</ontolex:writtenRep>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000596">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000596_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000597"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000534_form">
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000530">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000530_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000531"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000582_form">
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">elephant</ontolex:writtenRep>
+    <ontolex:writtenRep xml:lang="en">of</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000528">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000528_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000529"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000579_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="en">the</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000587">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000587_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000588"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000604_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="en">of</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000556">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000556_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000557"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000606">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000606_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000607"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000594">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000594_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000595"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000550">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000550_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000551"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000608_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="en">be</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000529">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000529_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000530"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000564">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name xml:lang="ne">Sundarīprasāda</foaf:name>
+    <rdfs:label xml:lang="ne">Sundarīprasāda</rdfs:label>
+    <rdfs:label xml:lang="ne">सुन्दरीप्रसाद</rdfs:label>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/120"/>
+    <schema1:gender rdf:resource="http://schema.org/Male"/>
+    <gndo:surname xml:lang="ne"></gndo:surname>
+    <rdfs:comment xml:lang="ne">flourished: 1840 (VS 1897, DNA_0001_0010);  details: elephant in the stable of Pālhi.</rdfs:comment>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000565"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000592">
+    <rdf:type rdf:resource="https://dbpedia.org/resource/Number"/>
+    <ontolex:writtenRep xml:lang="en">1897</ontolex:writtenRep>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000593"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000584">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000584_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000585"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000530_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="en">big</ontolex:writtenRep>
   </rdf:Description>
   <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000590">
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
@@ -82,22 +170,281 @@
     <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000590_form"/>
     <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000591"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000574">
-    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <foaf:name xml:lang="ne">Lachiman Adhikāri</foaf:name>
-    <rdfs:label xml:lang="ne">Lachiman Adhikāri</rdfs:label>
-    <rdfs:label xml:lang="ne">लछिमन् अधिकारिले</rdfs:label>
-    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/1443"/>
-    <schema:gender rdf:resource="http://schema.org/Male"/>
-    <gndo:surname xml:lang="ne">Adhikāri</gndo:surname>
-    <rdfs:comment xml:lang="ne">flourished: 1840 (VS 1897) – 1851 (VS 1908);  details: resided in Śrīgāũ, Dang; held the title of jamadāra; sacrificed buffaloes at Mūlacoka, Kathmandu in 1851 (VS 1908); remarks: note that these might be two different persons.</rdfs:comment>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000575"/>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000562_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="en">pole</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000563">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="ne">khamāri</skos:prefLabel>
+    <rdfs:comment xml:lang="en">n. pole to tie elephants; see Locke 2006: 181ff. and Bajracharya/Khatiwoda/Michaels 2015: 96-105. t.t.</rdfs:comment>
+    <skos:related rdf:resource="https://nepalica.hadw-bw.de/nepal/words/viewitem/1909"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000564"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000562">
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
     <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000562_form"/>
     <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000563"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000583_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="en">the</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000597">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000597_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000598"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000545">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000545_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000546"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000551_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="en">sent</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000553">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000553_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000554"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000591">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000591_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000592"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000542">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000542_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000543"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000613_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="en">salutations</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000523">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000523_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000524"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000548">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000548_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000549"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000556_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="en">elephant</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000575">
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000576"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000570">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000570_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000571"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000522">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="ne">Arjī</skos:prefLabel>
+    <rdfs:comment xml:lang="en">var. arji; n. 1) request, petition, application. 2) a respectful letter to a superior authority, especially the king. t.t.</rdfs:comment>
+    <skos:related rdf:resource="https://nepalica.hadw-bw.de/nepal/words/viewitem/855"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000523"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000583">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000583_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000584"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000557_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="en">has</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000533">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000533_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000534"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000538">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000538_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000539"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000612_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="en">eightfold</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000604">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000604_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000605"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000572">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name xml:lang="ne">Jasivaṃta Kãvara</foaf:name>
+    <rdfs:label xml:lang="ne">Jasivaṃta Kãvara</rdfs:label>
+    <rdfs:label xml:lang="ne">जसिवंत कँव</rdfs:label>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/1442"/>
+    <schema1:gender rdf:resource="http://schema.org/Male"/>
+    <gndo:surname xml:lang="ne">Kãvara</gndo:surname>
+    <rdfs:comment xml:lang="ne">flourished: 1840 (VS1897);  details: resided in Śrīgāũ, Dang; held the title of subedāra.</rdfs:comment>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000573"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000578">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000578_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000579"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000527_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="en">arrived</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000540_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="en">letter</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000540">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000540_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000541"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000589_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="en">the</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000555_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="en">the</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000559">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000559_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000560"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000531">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000531_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000532"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000612">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000612_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000613"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000544">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000544_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000545"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000552">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000552_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000553"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000611">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000611_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000612"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000527">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000527_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000528"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000568">
+    <rdf:type rdf:resource="http://www.geonames.org/ontology#Feature"/>
+    <gn:name xml:lang="ne">Banjariyā</gn:name>
+    <rdfs:label xml:lang="ne">Banjariyā</rdfs:label>
+    <rdfs:label xml:lang="ne">वंजरियामा</rdfs:label>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/1098"/>
+    <rdfs:comment xml:lang="en">location needs to be verified; document suggests a locality in the area of Palhi.</rdfs:comment>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000569"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000613">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000613_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000614"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000544_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="en">stating</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000538_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="en">A</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000545_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="en">that</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000539">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000539_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000540"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000610">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000610_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000611"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000573">
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000574"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000608">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000608_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000609"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000589">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000589_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000590"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000526_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="en">News</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000534_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="en">elephant</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000605">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000605_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000606"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000543_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="en">sent</ontolex:writtenRep>
   </rdf:Description>
   <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000569">
     <rdf:type rdf:resource="http://www.geonames.org/ontology#Feature"/>
@@ -111,21 +458,19 @@
     <rdfs:comment xml:lang="en">also known as: Pālhi; a settlement in Nawalparasi district;</rdfs:comment>
     <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000570"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000548">
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000524">
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000548_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000549"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000524_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000525"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000560_form">
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000591_form">
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">to</ontolex:writtenRep>
+    <ontolex:writtenRep xml:lang="en">era</ontolex:writtenRep>
   </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000555">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000555_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000556"/>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000610_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="en">As</ontolex:writtenRep>
   </rdf:Description>
   <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000600">
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
@@ -133,385 +478,19 @@
     <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000600_form"/>
     <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000601"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000607_form">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">there</ontolex:writtenRep>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000591_form">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">era</ontolex:writtenRep>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000609">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000609_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000610"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000609_form">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">auspiciousness</ontolex:writtenRep>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000531_form">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">ruttish</ontolex:writtenRep>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000584_form">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">bright</ontolex:writtenRep>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000525">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000525_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000526"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000545">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000545_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000546"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000540_form">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">letter</ontolex:writtenRep>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000602">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000602_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000603"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000528_form">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">that</ontolex:writtenRep>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000544">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000544_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000545"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000571">
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000572"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000551_form">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">sent</ontolex:writtenRep>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000591">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000591_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000592"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000568">
-    <rdf:type rdf:resource="http://www.geonames.org/ontology#Feature"/>
-    <gn:name xml:lang="ne">Banjariyā</gn:name>
-    <rdfs:label xml:lang="ne">Banjariyā</rdfs:label>
-    <rdfs:label xml:lang="ne">वंजरियामा</rdfs:label>
-    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/1098"/>
-    <rdfs:comment xml:lang="en">location needs to be verified; document suggests a locality in the area of Palhi.</rdfs:comment>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000569"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000538">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000538_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000539"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000580">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000580_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000581"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000597_form">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">residence</ontolex:writtenRep>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000522">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel xml:lang="ne">Arjī</skos:prefLabel>
-    <rdfs:comment xml:lang="en">var. arji; n. 1) request, petition, application. 2) a respectful letter to a superior authority, especially the king. t.t.</rdfs:comment>
-    <skos:related rdf:resource="https://nepalica.hadw-bw.de/nepal/words/viewitem/855"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000523"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000550">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000550_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000551"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000555_form">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">the</ontolex:writtenRep>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000541">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000541_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000542"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000529_form">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">a</ontolex:writtenRep>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000581">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000581_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000582"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000533">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000533_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000534"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000606">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000606_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000607"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000523_form">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">Regarding</ontolex:writtenRep>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000579">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000579_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000580"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000542">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000542_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000543"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000596">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000596_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000597"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000547">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000547_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000548"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000552">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000552_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000553"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000552_form">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">to</ontolex:writtenRep>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000535">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000535_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000536"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000536">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000536_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000537"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000605">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000605_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000606"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000595_form">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">from</ontolex:writtenRep>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000614">
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000615"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000560">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000560_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000561"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000529">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000529_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000530"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000572">
-    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <foaf:name xml:lang="ne">Jasivaṃta Kãvara</foaf:name>
-    <rdfs:label xml:lang="ne">Jasivaṃta Kãvara</rdfs:label>
-    <rdfs:label xml:lang="ne">जसिवंत कँव</rdfs:label>
-    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/1442"/>
-    <schema:gender rdf:resource="http://schema.org/Male"/>
-    <gndo:surname xml:lang="ne">Kãvara</gndo:surname>
-    <rdfs:comment xml:lang="ne">flourished: 1840 (VS1897);  details: resided in Śrīgāũ, Dang; held the title of subedāra.</rdfs:comment>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000573"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000543">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000543_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000544"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000582">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000582_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000583"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000526">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000526_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000527"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000588_form">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">in</ontolex:writtenRep>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000586">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000586_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000587"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000526_form">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">News</ontolex:writtenRep>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000535_form">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">has</ontolex:writtenRep>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000541_form">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">was</ontolex:writtenRep>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000565_form">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">cakra</ontolex:writtenRep>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000530">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000530_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000531"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000610">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000610_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000611"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000598">
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
     <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000598_form"/>
     <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000599"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000600_form">
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000588_form">
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">elephant</ontolex:writtenRep>
+    <ontolex:writtenRep xml:lang="en">in</ontolex:writtenRep>
   </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000576">
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000577"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000553">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000553_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000554"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000610_form">
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000590_form">
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">As</ontolex:writtenRep>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000564">
-    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <foaf:name xml:lang="ne">Sundarīprasāda</foaf:name>
-    <rdfs:label xml:lang="ne">Sundarīprasāda</rdfs:label>
-    <rdfs:label xml:lang="ne">सुन्दरीप्रसाद</rdfs:label>
-    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/120"/>
-    <schema:gender rdf:resource="http://schema.org/Male"/>
-    <gndo:surname xml:lang="ne"></gndo:surname>
-    <rdfs:comment xml:lang="ne">flourished: 1840 (VS 1897, DNA_0001_0010);  details: elephant in the stable of Pālhi.</rdfs:comment>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000565"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000588">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000588_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000589"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000550_form">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">be</ontolex:writtenRep>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000544_form">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">stating</ontolex:writtenRep>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000532">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000532_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000533"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000557">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000557_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000558"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000563">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel xml:lang="ne">khamāri</skos:prefLabel>
-    <rdfs:comment xml:lang="en">n. pole to tie elephants; see Locke 2006: 181ff. and Bajracharya/Khatiwoda/Michaels 2015: 96-105. t.t.</rdfs:comment>
-    <skos:related rdf:resource="https://nepalica.hadw-bw.de/nepal/words/viewitem/1909"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000564"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000589_form">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">the</ontolex:writtenRep>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000601">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000601_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000602"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000613_form">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">salutations</ontolex:writtenRep>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000561">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000561_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000562"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000598_form">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">at</ontolex:writtenRep>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000523">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000523_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000524"/>
+    <ontolex:writtenRep xml:lang="en">Vikrama</ontolex:writtenRep>
   </rdf:Description>
   <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000558">
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
@@ -519,182 +498,75 @@
     <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000558_form"/>
     <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000559"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000581_form">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">day</ontolex:writtenRep>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000593">
-    <rdf:type rdf:resource="https://dbpedia.org/resource/Number"/>
-    <ontolex:writtenRep xml:lang="en">1840</ontolex:writtenRep>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000594"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000527_form">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">arrived</ontolex:writtenRep>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000548_form">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">rope</ontolex:writtenRep>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000565">
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000560">
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000565_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000566"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000554_form">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">after</ontolex:writtenRep>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000599_form">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">the</ontolex:writtenRep>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000570">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000570_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000571"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000585">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000585_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000586"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000531">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000531_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000532"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000546_form">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">the</ontolex:writtenRep>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000580_form">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">6th</ontolex:writtenRep>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000604">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000604_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000605"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000538_form">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">A</ontolex:writtenRep>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000596_form">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">the</ontolex:writtenRep>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000597">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000597_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000598"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000578">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000578_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000579"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000556">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000556_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000557"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000534">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000534_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000535"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000540">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000540_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000541"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000543_form">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">sent</ontolex:writtenRep>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000585_form">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">fortnight</ontolex:writtenRep>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000560_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000561"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000594_form">
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
     <ontolex:writtenRep xml:lang="en">CE</ontolex:writtenRep>
   </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000615">
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000616"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000575">
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000576"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000537">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000537_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000538"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000589">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000589_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000590"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000613">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000613_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000614"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000611">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000611_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000612"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000549_form">
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000558_form">
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">would</ontolex:writtenRep>
+    <ontolex:writtenRep xml:lang="en">been</ontolex:writtenRep>
   </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000608">
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000609">
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000608_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000609"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000609_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000610"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000549">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000549_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000550"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000583">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000583_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000584"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000590_form">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">Vikrama</ontolex:writtenRep>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000561_form">
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000524_form">
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
     <ontolex:writtenRep xml:lang="en">the</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000574">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name xml:lang="ne">Lachiman Adhikāri</foaf:name>
+    <rdfs:label xml:lang="ne">Lachiman Adhikāri</rdfs:label>
+    <rdfs:label xml:lang="ne">लछिमन् अधिकारिले</rdfs:label>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/1443"/>
+    <schema1:gender rdf:resource="http://schema.org/Male"/>
+    <gndo:surname xml:lang="ne">Adhikāri</gndo:surname>
+    <rdfs:comment xml:lang="ne">flourished: 1840 (VS 1897) – 1851 (VS 1908);  details: resided in Śrīgāũ, Dang; held the title of jamadāra; sacrificed buffaloes at Mūlacoka, Kathmandu in 1851 (VS 1908); remarks: note that these might be two different persons.</rdfs:comment>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000575"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000535">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000535_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000536"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000536_form">
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
     <ontolex:writtenRep xml:lang="en">been</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000566">
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000567"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000602">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000602_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000603"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000535_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="en">has</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000570_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="en">bijinis</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000532_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="en">two</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000541_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="en">was</ontolex:writtenRep>
   </rdf:Description>
   <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000607">
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
@@ -702,92 +574,100 @@
     <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000607_form"/>
     <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000608"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000524">
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000585">
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000524_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000525"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000585_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000586"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000559">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000559_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000560"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000554">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000554_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000555"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000551">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000551_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000552"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000539">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000539_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000540"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000608_form">
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000595_form">
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">be</ontolex:writtenRep>
+    <ontolex:writtenRep xml:lang="en">from</ontolex:writtenRep>
   </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000579_form">
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000599_form">
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
     <ontolex:writtenRep xml:lang="en">the</ontolex:writtenRep>
   </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000570_form">
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000601_form">
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">bijinis</ontolex:writtenRep>
+    <ontolex:writtenRep xml:lang="en">stable</ontolex:writtenRep>
   </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000583_form">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">the</ontolex:writtenRep>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000602_form">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">of</ontolex:writtenRep>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000566">
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000567"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000532_form">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">two</ontolex:writtenRep>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000599">
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000534">
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000599_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000600"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000534_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000535"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000537_form">
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
     <ontolex:writtenRep xml:lang="en">caught</ontolex:writtenRep>
   </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000605_form">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">Pālhi</ontolex:writtenRep>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000576">
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000577"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000603_form">
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000542_form">
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">Banjariyā</ontolex:writtenRep>
+    <ontolex:writtenRep xml:lang="en">previously</ontolex:writtenRep>
   </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000582_form">
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000600_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="en">elephant</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000586_form">
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
     <ontolex:writtenRep xml:lang="en">of</ontolex:writtenRep>
   </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000612_form">
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000547">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000547_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000548"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000523_form">
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">eightfold</ontolex:writtenRep>
+    <ontolex:writtenRep xml:lang="en">Regarding</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000593">
+    <rdf:type rdf:resource="https://dbpedia.org/resource/Number"/>
+    <ontolex:writtenRep xml:lang="en">1840</ontolex:writtenRep>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000594"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000560_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="en">to</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000615">
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000616"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000554_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="en">after</ontolex:writtenRep>
   </rdf:Description>
   <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000525_form">
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
     <ontolex:writtenRep xml:lang="en">following</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000541">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000541_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000542"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000609_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="en">auspiciousness</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000580_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="en">6th</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000533_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="en">tusked</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000603_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="en">Banjariyā</ontolex:writtenRep>
   </rdf:Description>
   <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000595">
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
@@ -795,52 +675,51 @@
     <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000595_form"/>
     <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000596"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000553_form">
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000548_form">
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">you</ontolex:writtenRep>
+    <ontolex:writtenRep xml:lang="en">rope</ontolex:writtenRep>
   </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000528">
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000555">
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000528_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000529"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000555_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000556"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000562_form">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">pole</ontolex:writtenRep>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000533_form">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">tusked</ontolex:writtenRep>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000601_form">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">stable</ontolex:writtenRep>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000592">
-    <rdf:type rdf:resource="https://dbpedia.org/resource/Number"/>
-    <ontolex:writtenRep xml:lang="en">1897</ontolex:writtenRep>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000593"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000557_form">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">has</ontolex:writtenRep>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000587">
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000551">
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000587_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000588"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000551_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000552"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000612">
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000585_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="en">fortnight</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000581">
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000612_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000613"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000581_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000582"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000606_form">
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000580">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000580_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000581"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000554">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000554_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000555"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000529_form">
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">Let</ontolex:writtenRep>
+    <ontolex:writtenRep xml:lang="en">a</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000584_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="en">bright</ontolex:writtenRep>
   </rdf:Description>
   <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000546">
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
@@ -848,55 +727,176 @@
     <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000546_form"/>
     <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000547"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000604_form">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">of</ontolex:writtenRep>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000586_form">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">of</ontolex:writtenRep>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000524_form">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">the</ontolex:writtenRep>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000558_form">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">been</ontolex:writtenRep>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000542_form">
-    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">previously</ontolex:writtenRep>
-  </rdf:Description>
   <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000577">
     <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000578"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000594">
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000537">
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
-    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000594_form"/>
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000595"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000537_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000538"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000545_form">
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000547_form">
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">that</ontolex:writtenRep>
+    <ontolex:writtenRep xml:lang="en">measuring</ontolex:writtenRep>
   </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000578_form">
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000553_form">
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
-    <ontolex:writtenRep xml:lang="en">Wednesday</ontolex:writtenRep>
+    <ontolex:writtenRep xml:lang="en">you</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000565">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000565_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000566"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000550_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="en">be</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000561_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="en">the</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000525">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000525_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000526"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000596_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="en">the</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000607_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="en">there</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000552_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="en">to</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000601">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000601_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000602"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000605_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="en">Pālhi</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000543">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000543_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000544"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000598_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="en">at</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000567">
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000568"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000602_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="en">of</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000597_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="en">residence</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000588">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000588_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000589"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000531_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="en">ruttish</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000565_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="en">cakra</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000539_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="en">request</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000536">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000536_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000537"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000582">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000582_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000583"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000587_form">
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
     <ontolex:writtenRep xml:lang="en">Pauṣa</ontolex:writtenRep>
   </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000606_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="en">Let</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000549_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="en">would</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000579">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000579_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000580"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000599">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000599_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000600"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000549">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000549_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000550"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000546_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="en">the</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000581_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="en">day</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000528_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="en">that</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000571">
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000572"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000603">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000603_form"/>
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000604"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000611_form">
     <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
     <ontolex:writtenRep xml:lang="en">ever</ontolex:writtenRep>
   </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000573">
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000574"/>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000578_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="en">Wednesday</ontolex:writtenRep>
   </rdf:Description>
-  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000567">
-    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000568"/>
+  <rdf:Description rdf:about="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000614">
+    <followedBy rdf:resource="https://nepalica.hadw-bw.de/nepal/editions/show/1#en000615"/>
   </rdf:Description>
 </rdf:RDF>

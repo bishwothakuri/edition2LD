@@ -1,0 +1,860 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns="http://example.org/"
+   xmlns:foaf="http://xmlns.com/foaf/0.1/"
+   xmlns:gndo="https://d-nb.info/standards/elementset/gnd#"
+   xmlns:ontolex="http://www.w3.org/ns/lemon/ontolex#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:schema1="http://schema.org/"
+>
+  <rdf:Description rdf:about="nepalica:32212#ne000017_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">श्रीमद्राजकुमारकुमारात्मजश्रीकम्यांडरईनचिफ्‌जनरलभीमसम्सेरजङ्गवहादुरराणाकस्य</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000028_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">षाने</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000011_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">पुर्णेश्वर</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000050_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">अडालाई</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000069">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000069_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000070"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000070">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000070_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000071"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000056">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000056_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000057"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000067">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000067_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000068"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000021">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000021_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000022"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000038_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">घ्यू</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000013">
+    <rdf:type rdf:resource="https://dbpedia.org/resource/Number"/>
+    <ontolex:writtenRep xml:lang="en">३</ontolex:writtenRep>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000013_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000014"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000054">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000054_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000055"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000056_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">पर्दैन</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000009">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <foaf:name xml:lang="ne">Narotamadhara</foaf:name>
+    <rdfs:label xml:lang="ne">Narotamadhara</rdfs:label>
+    <rdfs:devanagariLabel xml:lang="ne">नरोतमधर</rdfs:devanagariLabel>
+    <rdfs:seeAlso rdf:resource="https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/502"/>
+    <schema1:gender rdf:resource="http://schema.org/Male"/>
+    <gndo:surname xml:lang="ne"></gndo:surname>
+    <rdfs:comment xml:lang="ne">flourished: ?;  details: scribe (nausindā) involved in copying documents.</rdfs:comment>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000009_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000010"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000013_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">३</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000058">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000058_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000059"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000068">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000068_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000069"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000078_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">ईती</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000079">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000079_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000080"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000033_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">मो</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000066">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000066_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000067"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000047">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000047_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000048"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000009_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">नरोतमधर</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000039">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000039_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000040"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000015">
+    <rdf:type rdf:resource="https://dbpedia.org/resource/Number"/>
+    <ontolex:writtenRep xml:lang="en">१</ontolex:writtenRep>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000015_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000016"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000040">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000040_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000041"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000026">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000026_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000027"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000061">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000061_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000062"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000010">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000010_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000011"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000034">
+    <rdf:type rdf:resource="https://dbpedia.org/resource/Number"/>
+    <ontolex:writtenRep xml:lang="en">२४</ontolex:writtenRep>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000034_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000035"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000032">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000032_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000033"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000015_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">१</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000051">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000051_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000052"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000034_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">२४</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000049_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">तेस</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000045">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000045_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000046"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000043">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000043_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000044"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000020">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000020_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000021"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000055">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000055_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000056"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000074">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000074_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000075"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000030">
+    <rdf:type rdf:resource="https://dbpedia.org/resource/Number"/>
+    <ontolex:writtenRep xml:lang="en">६७</ontolex:writtenRep>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000030_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000031"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000014">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000014_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000082">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000082_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000083"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000022_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">हाकिं</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000023_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">कारींदाहरुके</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000022">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000022_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000023"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000003_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">वमोजिम्‌</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000071">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000071_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000072"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000025">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000025_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000026"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000084">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000084_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000085"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000057">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000057_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000058"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000054_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">सो</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000019_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">None</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000053">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000053_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000054"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000055_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">ष्वाउन</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000049">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000049_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000050"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000033">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000033_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000034"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000036">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000036_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000037"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000042">
+    <rdf:type rdf:resource="https://dbpedia.org/resource/Number"/>
+    <ontolex:writtenRep xml:lang="en">२७</ontolex:writtenRep>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000042_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000043"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000046">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000046_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000047"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000066_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">षरीद</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000029_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">यो</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000010_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">श्री</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000078">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000078_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000079"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000016">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000016_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000017"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000076">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000076_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000077"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000063">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000063_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000064"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000060_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">मोहरु</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000012">
+    <rdf:type rdf:resource="https://dbpedia.org/resource/Number"/>
+    <ontolex:writtenRep xml:lang="en">२</ontolex:writtenRep>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000012_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000013"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000060">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000060_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000061"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000044_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">भंन्या</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000019">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000019_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000020"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000007">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000007_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000008"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000080">
+    <rdf:type rdf:resource="https://dbpedia.org/resource/Number"/>
+    <ontolex:writtenRep xml:lang="en">१९६७</ontolex:writtenRep>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000080_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000081"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000024">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000024_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000025"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000052_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">वक्सेको</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000044">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000044_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000045"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000064">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000064_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000065"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000037_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">मोरु</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000028">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000028_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000029"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000072">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000072_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000073"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000037">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000037_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000038"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000059">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000059_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000060"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000045_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">साल</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000027_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">भात</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000077_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">ग</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000001">
+    <rdf:type rdf:resource="https://dbpedia.org/resource/Number"/>
+    <ontolex:writtenRep xml:lang="en">55</ontolex:writtenRep>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000001_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000043_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">दिनु</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000084_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">शुभ्म्</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000008_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">नौ</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000035">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000035_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000036"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000042_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">२७</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000053_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">तापनि</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000081_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">मीती</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000008">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000008_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000009"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000006">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000006_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000007"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000081">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000081_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000082"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000083">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000083_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000084"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000039_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">मसला</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000077">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000077_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000078"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000036_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">षसी</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000046_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">अस्वीण</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000002">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000002_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000003"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000011">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000011_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000012"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000083_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">रोज</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000007_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">स्ही</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000031">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000031_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000032"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000004">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000004_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000075_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">ने</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000017">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000017_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000018"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000029">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000029_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000030"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000018">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000018_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000019"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000020_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">षर्च</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000073">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000073_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000074"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000076_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">काम</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000072_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">नवमी</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000035_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">को</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000005_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">दुरुस्ट</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000059_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">र</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000038">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000038_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000039"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000062_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">मालपुवा</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000001_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">55</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000040_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">ज्मा</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000006_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">छ</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000061_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">सताइसके</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000041_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">मोहरू</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000064_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">मीठाई</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000074_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">दीन</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000003">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000003_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000004"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000052">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000052_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000053"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000065">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000065_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000066"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000065_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">दहि</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000050">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000050_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000051"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000057_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">दर</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000047_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">गते</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000075">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000075_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000076"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000023">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000023_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000024"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000082_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">कार्तिक</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000073_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">दसमी</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000025_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">उप्रांत</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000058_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">वमोजिम</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000026_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">पाक्साला</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000002_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">सकल</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000027">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000027_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000028"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000031_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">सालका</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000024_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">पुर्जि</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000012_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">२</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000069_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">जाच</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000005">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000005_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000006"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000048_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">मा</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000016_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">स्वस्ति</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000021_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">अडा</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000048">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000048_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000049"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000062">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000062_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000063"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000068_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">गुठी</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000014_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">सर्कार</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000071_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">अष्टमी</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000080_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">१९६७</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000063_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">स्वाहरी</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000041">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#LexicalEntry"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Word"/>
+    <ontolex:canonicalForm rdf:resource="nepalica:32212#ne000041_form"/>
+    <followedBy rdf:resource="nepalica:32212#ne000042"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000030_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">६७</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000067_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">गरी</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000051_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">सनद</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000032_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">मांनालाई</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000004_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">नकल</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000079_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">सम्वत</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000070_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">अडाका</ontolex:writtenRep>
+  </rdf:Description>
+  <rdf:Description rdf:about="nepalica:32212#ne000018_form">
+    <rdf:type rdf:resource="http://www.w3.org/ns/lemon/ontolex#Form"/>
+    <ontolex:writtenRep xml:lang="ne">
+</ontolex:writtenRep>
+  </rdf:Description>
+</rdf:RDF>
