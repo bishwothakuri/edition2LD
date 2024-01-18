@@ -1,0 +1,453 @@
+@prefix : <http://example.org/> .
+@prefix dbr: <https://dbpedia.org/resource/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix gndo: <https://d-nb.info/standards/elementset/gnd#> .
+@prefix lime: <http://www.w3.org/ns/lemon/lime#> .
+@prefix nepalica: <https://nepalica.hadw-bw.de/nepal/editions/show/> .
+@prefix nepalica_reg: <https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix geonames: <https://sws.geonames.org/> .
+@prefix dbr: <https://dbpedia.org/resource/> .
+@prefix wiki: <https://de.wikipedia.org/wiki/> .
+@prefix viaf: <https://viaf.org/viaf/> .
+@prefix gnd: <https://d-nb.info/gnd/> .
+@prefix wikidata: <https://www.wikidata.org/wiki/> .
+@prefix nepalica_gloss: <https://nepalica.hadw-bw.de/nepal/words/viewitem/> .
+@prefix lime: <http://www.w3.org/ns/lemon/lime#> .
+@prefix lexvo: <http://lexvo.org/id/iso639-3/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+
+
+nepalica:431 a dct:Document ,
+        lime:Lexicon ;
+    dct:abstract "It is the letter of Jaspāu Thāpā from Arkī to authority concerned stating about the war in which Raṇvīra Simha was unable to get victory."@en ;
+    dct:date "VS 1871 Śrāvaṇa bright 6 Friday"@en ;
+    dct:description "This is a text edition of the project “Documents on the History of Religion and Law of Pre-modern Nepal”, Heidelberg Academy of Sciences and Humanities, https://www.hadw-bw.de/nepal.”@en" ;
+    dct:extent "damaged by breaking; complete"@en ;
+    dct:format "26; 16.5; cm"@en ;
+    dct:hasPart "21"@en ;
+    dct:identifier "DNA_0001_0021"@en ;
+    dct:language lexvo:en ,
+        lexvo:ne ;
+    dct:publisher "National Archives Kathmandu; Ms. no. 21"@en ;
+    dct:source "NGMPP catalogue card; Microfilmed on 22/02/2000 as NGMPP DNA 1/21"@en ;
+    dct:title "An arjī from Jasapāu Thāpā re Raṇajit Siṃ's failure to gain victory (VS 1871)"@en ;
+    dct:type "ciṭṭhīpatra, arjī; unspecified"@en ;
+    schema:created "10/22/18, 9:37 AM"@en ;
+    lime:language "unspecified; Devanagari"@en .
+
+nepalica:431#en000664 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:431#en000665 ;
+    ontolex:canonicalForm nepalica:431#en000664_form .
+
+nepalica:431#en000664_form a ontolex:Form ;
+    ontolex:writtenRep "Number"@en .
+
+nepalica:431#en000665 a dbr:Number ;
+    :followedBy nepalica:431#en000666 ;
+    ontolex:writtenRep "21"@en .
+
+nepalica:431#en000666 a skos:Concept ;
+    :followedBy nepalica:431#en000667 ;
+    rdfs:comment "var. uprāṃta, ūprāṃnta, ūprā̃nta, prāṃta; also yathocita uprānta; conj. after that, besides, in addition to, hereafter. In earlier prose and official documents, this word marked the beginning of a text or paragraph. It has no equivalent in English (Clark 1989: 231). In some (mostly Rāṇā period?) documents, it takes the form of yathocita uprānta. t.t."@en ;
+    skos:prefLabel "Uprānta"@ne ;
+    skos:related nepalica_gloss:1997 .
+
+nepalica:431#en000667 :followedBy nepalica:431#en000668 .
+
+nepalica:431#en000668 :followedBy nepalica:431#en000669 .
+
+nepalica:431#en000669 :followedBy nepalica:431#en000670 .
+
+nepalica:431#en000670 :followedBy nepalica:431#en000671 .
+
+nepalica:431#en000671 :followedBy nepalica:431#en000672 .
+
+nepalica:431#en000672 :followedBy nepalica:431#en000673 .
+
+nepalica:431#en000673 a gn:Feature ;
+    rdfs:label "Kashmir"@ne ,
+        "काश्मेरको"@ne ;
+    :followedBy nepalica:431#en000674 ;
+    gn:name "Kashmir"@ne ;
+    rdfs:seeAlso nepalica_reg:241 .
+
+nepalica:431#en000674 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:431#en000675 ;
+    ontolex:canonicalForm nepalica:431#en000674_form .
+
+nepalica:431#en000674_form a ontolex:Form ;
+    ontolex:writtenRep "ḍerā"@en .
+
+nepalica:431#en000675 a skos:Concept ;
+    :followedBy nepalica:431#en000676 ;
+    rdfs:comment "None"@en ;
+    skos:prefLabel "birtā"@ne ;
+    skos:related nepalica_gloss:891 .
+
+nepalica:431#en000676 a skos:Concept ;
+    :followedBy nepalica:431#en000677 ;
+    rdfs:comment "var. darmāha; monthly salary t.t."@en ;
+    skos:prefLabel "darmāha"@ne ;
+    skos:related nepalica_gloss:1821 .
+
+nepalica:431#en000677 a foaf:Person ;
+    rdfs:label "Kāvela"@ne ,
+        "कावेलको"@ne ;
+    :followedBy nepalica:431#en000678 ;
+    schema:gender schema:Male ;
+    rdfs:comment "also known as: Kāvela; born: 23 January 1826; died: 9 February 1903;  details: the first professor of Sanskrit at Cambridge University and a noted translator of Persian poetry; lived in Calcutta as a professor of English history at Presidency College between 1856 and 1867 and as principal of the Sanskrit College (1858-1864);"@ne ;
+    rdfs:seeAlso gnd:116706015 ,
+        nepalica_reg:1270 ,
+        viaf:19752874 ,
+        wiki:Edward_Byles_Cowell ;
+    skos:altLabel "E.B. Cowell" ;
+    foaf:name "Kāvela"@ne ;
+    gndo:surname "Cowell"@ne .
+
+nepalica:431#en000678 :followedBy nepalica:431#en000679 .
+
+nepalica:431#en000679 :followedBy nepalica:431#en000680 .
+
+nepalica:431#en000680 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:431#en000681 ;
+    ontolex:canonicalForm nepalica:431#en000680_form .
+
+nepalica:431#en000680_form a ontolex:Form ;
+    ontolex:writtenRep "As"@en .
+
+nepalica:431#en000681 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:431#en000682 ;
+    ontolex:canonicalForm nepalica:431#en000681_form .
+
+nepalica:431#en000681_form a ontolex:Form ;
+    ontolex:writtenRep "for"@en .
+
+nepalica:431#en000682 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:431#en000683 ;
+    ontolex:canonicalForm nepalica:431#en000682_form .
+
+nepalica:431#en000682_form a ontolex:Form ;
+    ontolex:writtenRep "the"@en .
+
+nepalica:431#en000683 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:431#en000684 ;
+    ontolex:canonicalForm nepalica:431#en000683_form .
+
+nepalica:431#en000683_form a ontolex:Form ;
+    ontolex:writtenRep "rest"@en .
+
+nepalica:431#en000684 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:431#en000685 ;
+    ontolex:canonicalForm nepalica:431#en000684_form .
+
+nepalica:431#en000684_form a ontolex:Form ;
+    ontolex:writtenRep "the"@en .
+
+nepalica:431#en000685 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:431#en000686 ;
+    ontolex:canonicalForm nepalica:431#en000685_form .
+
+nepalica:431#en000685_form a ontolex:Form ;
+    ontolex:writtenRep "letter"@en .
+
+nepalica:431#en000686 a gn:Feature ;
+    rdfs:label "Butwal"@ne ,
+        "वटौल"@ne ;
+    :followedBy nepalica:431#en000687 ;
+    gn:name "Butwal"@ne ;
+    rdfs:comment "also Buṭavāla; city in Rupandehi district, South-Western Nepal; former principality located in the Lumbini Province and one of the Caubīsī Rājya;"@en ;
+    rdfs:seeAlso nepalica_reg:433 ,
+        viaf:148905873 ,
+        wiki:Butwal ,
+        wiki:Kingdom_of_Butwal .
+
+nepalica:431#en000687 a gn:Feature ;
+    rdfs:label "Śivarāja"@ne ,
+        "सिउराजमा"@ne ;
+    :followedBy nepalica:431#en000688 ;
+    gn:name "Śivarāja"@ne ;
+    rdfs:comment "also known as: Śivarāja, Siurāja; an administrative region in Kapilvastu district, Western Nepal;"@en ;
+    rdfs:seeAlso nepalica_reg:748 ,
+        wiki:Shivaraj_Municipality .
+
+nepalica:431#en000688 a skos:Concept ;
+    :followedBy nepalica:431#en000689 ;
+    rdfs:comment "var. arji; n. 1) request, petition, application. 2) a respectful letter to a superior authority, especially the king. t.t."@en ;
+    skos:prefLabel "arjī"@ne ;
+    skos:related nepalica_gloss:855 .
+
+nepalica:431#en000689 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:431#en000690 ;
+    ontolex:canonicalForm nepalica:431#en000689_form .
+
+nepalica:431#en000689_form a ontolex:Form ;
+    ontolex:writtenRep "Friday"@en .
+
+nepalica:431#en000690 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:431#en000691 ;
+    ontolex:canonicalForm nepalica:431#en000690_form .
+
+nepalica:431#en000690_form a ontolex:Form ;
+    ontolex:writtenRep "the"@en .
+
+nepalica:431#en000691 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:431#en000692 ;
+    ontolex:canonicalForm nepalica:431#en000691_form .
+
+nepalica:431#en000691_form a ontolex:Form ;
+    ontolex:writtenRep "6th"@en .
+
+nepalica:431#en000692 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:431#en000693 ;
+    ontolex:canonicalForm nepalica:431#en000692_form .
+
+nepalica:431#en000692_form a ontolex:Form ;
+    ontolex:writtenRep "of"@en .
+
+nepalica:431#en000693 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:431#en000694 ;
+    ontolex:canonicalForm nepalica:431#en000693_form .
+
+nepalica:431#en000693_form a ontolex:Form ;
+    ontolex:writtenRep "the"@en .
+
+nepalica:431#en000694 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:431#en000695 ;
+    ontolex:canonicalForm nepalica:431#en000694_form .
+
+nepalica:431#en000694_form a ontolex:Form ;
+    ontolex:writtenRep "bright"@en .
+
+nepalica:431#en000695 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:431#en000696 ;
+    ontolex:canonicalForm nepalica:431#en000695_form .
+
+nepalica:431#en000695_form a ontolex:Form ;
+    ontolex:writtenRep "fortnight"@en .
+
+nepalica:431#en000696 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:431#en000697 ;
+    ontolex:canonicalForm nepalica:431#en000696_form .
+
+nepalica:431#en000696_form a ontolex:Form ;
+    ontolex:writtenRep "of"@en .
+
+nepalica:431#en000697 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:431#en000698 ;
+    ontolex:canonicalForm nepalica:431#en000697_form .
+
+nepalica:431#en000697_form a ontolex:Form ;
+    ontolex:writtenRep "Śrāvaṇa"@en .
+
+nepalica:431#en000698 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:431#en000699 ;
+    ontolex:canonicalForm nepalica:431#en000698_form .
+
+nepalica:431#en000698_form a ontolex:Form ;
+    ontolex:writtenRep "in"@en .
+
+nepalica:431#en000699 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:431#en000700 ;
+    ontolex:canonicalForm nepalica:431#en000699_form .
+
+nepalica:431#en000699_form a ontolex:Form ;
+    ontolex:writtenRep "the"@en .
+
+nepalica:431#en000700 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:431#en000701 ;
+    ontolex:canonicalForm nepalica:431#en000700_form .
+
+nepalica:431#en000700_form a ontolex:Form ;
+    ontolex:writtenRep "Vikrama"@en .
+
+nepalica:431#en000701 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:431#en000702 ;
+    ontolex:canonicalForm nepalica:431#en000701_form .
+
+nepalica:431#en000701_form a ontolex:Form ;
+    ontolex:writtenRep "era"@en .
+
+nepalica:431#en000702 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:431#en000703 ;
+    ontolex:canonicalForm nepalica:431#en000702_form .
+
+nepalica:431#en000702_form a ontolex:Form ;
+    ontolex:writtenRep "year"@en .
+
+nepalica:431#en000703 a dbr:Number ;
+    :followedBy nepalica:431#en000704 ;
+    ontolex:writtenRep "1871"@en .
+
+nepalica:431#en000704 a dbr:Number ;
+    :followedBy nepalica:431#en000705 ;
+    ontolex:writtenRep "1814"@en .
+
+nepalica:431#en000705 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:431#en000706 ;
+    ontolex:canonicalForm nepalica:431#en000705_form .
+
+nepalica:431#en000705_form a ontolex:Form ;
+    ontolex:writtenRep "CE"@en .
+
+nepalica:431#en000706 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:431#en000707 ;
+    ontolex:canonicalForm nepalica:431#en000706_form .
+
+nepalica:431#en000706_form a ontolex:Form ;
+    ontolex:writtenRep "from"@en .
+
+nepalica:431#en000707 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:431#en000708 ;
+    ontolex:canonicalForm nepalica:431#en000707_form .
+
+nepalica:431#en000707_form a ontolex:Form ;
+    ontolex:writtenRep "the"@en .
+
+nepalica:431#en000708 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:431#en000709 ;
+    ontolex:canonicalForm nepalica:431#en000708_form .
+
+nepalica:431#en000708_form a ontolex:Form ;
+    ontolex:writtenRep "station"@en .
+
+nepalica:431#en000709 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:431#en000710 ;
+    ontolex:canonicalForm nepalica:431#en000709_form .
+
+nepalica:431#en000709_form a ontolex:Form ;
+    ontolex:writtenRep "at"@en .
+
+nepalica:431#en000710 a gn:Feature ;
+    rdfs:label "Arki"@ne ,
+        "अर्कि"@ne ;
+    :followedBy nepalica:431#en000711 ;
+    gn:name "Arki"@ne ;
+    rdfs:comment "a town in Himachal Pradesh, India; formerly capital of the princely state of Baghal, captured by the Gorkhas in 1806 until the end of Anglo-Nepalese war in 1816;  _India."@en ;
+    rdfs:seeAlso geonames:1278389 ,
+        nepalica_reg:751 ,
+        wiki:Arki .
+
+nepalica:431#en000711 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:431#en000712 ;
+    ontolex:canonicalForm nepalica:431#en000711_form .
+
+nepalica:431#en000711_form a ontolex:Form ;
+    ontolex:writtenRep "From"@en .
+
+nepalica:431#en000712 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:431#en000713 ;
+    ontolex:canonicalForm nepalica:431#en000712_form .
+
+nepalica:431#en000712_form a ontolex:Form ;
+    ontolex:writtenRep "here"@en .
+
+nepalica:431#en000713 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:431#en000714 ;
+    ontolex:canonicalForm nepalica:431#en000713_form .
+
+nepalica:431#en000713_form a ontolex:Form ;
+    ontolex:writtenRep "praises"@en .
+
+nepalica:431#en000714 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:431#en000715 ;
+    ontolex:canonicalForm nepalica:431#en000714_form .
+
+nepalica:431#en000714_form a ontolex:Form ;
+    ontolex:writtenRep "bows"@en .
+
+nepalica:431#en000715 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:431#en000716 ;
+    ontolex:canonicalForm nepalica:431#en000715_form .
+
+nepalica:431#en000715_form a ontolex:Form ;
+    ontolex:writtenRep "salutation"@en .
+
+nepalica:431#en000716 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:431#en000717 ;
+    ontolex:canonicalForm nepalica:431#en000716_form .
+
+nepalica:431#en000716_form a ontolex:Form ;
+    ontolex:writtenRep "salutation"@en .
+
+nepalica:431#en000717 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:431#en000718 ;
+    ontolex:canonicalForm nepalica:431#en000717_form .
+
+nepalica:431#en000717_form a ontolex:Form ;
+    ontolex:writtenRep "salutation"@en .
+
+nepalica:431#en000718 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:431#en000719 ;
+    ontolex:canonicalForm nepalica:431#en000718_form .
+
+nepalica:431#en000718_form a ontolex:Form ;
+    ontolex:writtenRep "of"@en .
+
+nepalica:431#en000719 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:431#en000720 ;
+    ontolex:canonicalForm nepalica:431#en000719_form .
+
+nepalica:431#en000719_form a ontolex:Form ;
+    ontolex:writtenRep "your"@en .
+
+nepalica:431#en000720 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:431#en000721 ;
+    ontolex:canonicalForm nepalica:431#en000720_form .
+
+nepalica:431#en000720_form a ontolex:Form ;
+    ontolex:writtenRep "servant"@en .
+
+nepalica:431#en000721 :followedBy nepalica:431#en000722 .
+
+nepalica:431#en000722 a foaf:Person ;
+    rdfs:label "Amvara Siṃha Thāpā"@ne ;
+    schema:gender schema:Male ;
+    rdfs:comment "not to be confused with Amara Siṃha Thāpā, father of Bhīmasena Thāpā; also known as: Ambara/Aṃvara Siṃ/Sīṃ; born: 1751 at Sirhanchowk; died: 1816 at Gosainkunda;  children: Raṇadhvaja Thāpā, Bhaktavīra Thāpā, Narasiṃha Thāpā, Rāmadāsa Thāpā, Raṇajora Thāpā; details: held the title of commander of the Gorkhali army; known as Būḍhā-, or Baḍākājī; (elder kājī); further literature: M.R. Pant 1966: 48 n. 2; normdata:"@ne ;
+    rdfs:seeAlso nepalica_reg:384 ,
+        wiki:Amar_Singh_Thapa ;
+    foaf:name "Amvara Siṃha Thāpā"@ne ;
+    gndo:surname "Thāpā"@ne .
+

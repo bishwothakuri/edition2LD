@@ -1,0 +1,234 @@
+{
+    "words": [
+        {
+            "token_id": "en_000001",
+            "text": "Śrī",
+            "tag_name": "term"
+        },
+        {
+            "token_id": "en_000002",
+            "text": "Hail"
+        },
+        {
+            "token_id": "en_000003",
+            "text": "Written"
+        },
+        {
+            "token_id": "en_000004",
+            "text": "on"
+        },
+        {
+            "token_id": "en_000005",
+            "text": "Monday"
+        },
+        {
+            "token_id": "en_000006",
+            "text": "the"
+        },
+        {
+            "token_id": "en_000007",
+            "text": "7th"
+        },
+        {
+            "token_id": "en_000008",
+            "text": "of"
+        },
+        {
+            "token_id": "en_000009",
+            "text": "the"
+        },
+        {
+            "token_id": "en_000010",
+            "text": "bright"
+        },
+        {
+            "token_id": "en_000011",
+            "text": "fortnight"
+        },
+        {
+            "token_id": "en_000012",
+            "text": "of"
+        },
+        {
+            "token_id": "en_000013",
+            "text": "Śrāvaṇa"
+        },
+        {
+            "token_id": "en_000014",
+            "text": "in"
+        },
+        {
+            "token_id": "en_000015",
+            "text": "the"
+        },
+        {
+            "token_id": "en_000016",
+            "text": "Vikarama"
+        },
+        {
+            "token_id": "en_000017",
+            "text": "era"
+        },
+        {
+            "token_id": "en_000018",
+            "text": "year"
+        },
+        {
+            "token_id": "en_000019",
+            "text": "1942"
+        },
+        {
+            "token_id": "en_000020",
+            "text": "1885"
+        },
+        {
+            "token_id": "en_000021",
+            "text": "CE"
+        },
+        {
+            "token_id": "en_000022",
+            "text": "I"
+        },
+        {
+            "token_id": "en_000023",
+            "text": "the"
+        },
+        {
+            "token_id": "en_000024",
+            "text": "debtor"
+        },
+        {
+            "token_id": "en_000025",
+            "text": "named"
+        },
+        {
+            "token_id": "en_000026",
+            "text": "Bhānidās",
+            "tag_name": "persName"
+        },
+        {
+            "token_id": "en_000027",
+            "text": "Vāchu",
+            "tag_name": "placeName"
+        },
+        {
+            "token_id": "en_000028",
+            "text": "Nani",
+            "tag_name": "placeName"
+        },
+        {
+            "token_id": "en_000029",
+            "text": "Patan",
+            "tag_name": "placeName"
+        },
+        {
+            "token_id": "en_000030",
+            "text": "mohara",
+            "tag_name": "term"
+        },
+        {
+            "token_id": "en_000031",
+            "text": "rupaiyā",
+            "tag_name": "term"
+        },
+        {
+            "token_id": "en_000032",
+            "text": "lihalagata",
+            "tag_name": "term"
+        },
+        {
+            "token_id": "en_000033",
+            "text": "Munidhaṃ",
+            "tag_name": "persName"
+        },
+        {
+            "token_id": "en_000034",
+            "text": "Bāḍā",
+            "tag_name": "persName"
+        },
+        {
+            "token_id": "en_000035",
+            "text": "Guital",
+            "tag_name": "placeName"
+        },
+        {
+            "token_id": "en_000036",
+            "text": "Tebh",
+            "tag_name": "placeName"
+        },
+        {
+            "token_id": "en_000037",
+            "text": "bartaman"
+        },
+        {
+            "token_id": "en_000038",
+            "text": "tamasuka",
+            "tag_name": "term"
+        },
+        {
+            "token_id": "en_000039",
+            "text": "The"
+        },
+        {
+            "token_id": "en_000040",
+            "text": "witnesses"
+        },
+        {
+            "token_id": "en_000041",
+            "text": "to"
+        },
+        {
+            "token_id": "en_000042",
+            "text": "this"
+        },
+        {
+            "token_id": "en_000043",
+            "text": "deed"
+        },
+        {
+            "token_id": "en_000044",
+            "text": "are"
+        },
+        {
+            "token_id": "en_000045",
+            "text": "my"
+        },
+        {
+            "token_id": "en_000046",
+            "text": "father"
+        },
+        {
+            "token_id": "en_000047",
+            "text": "younger"
+        },
+        {
+            "token_id": "en_000048",
+            "text": "brother"
+        },
+        {
+            "token_id": "en_000049",
+            "text": "Dhivasiṃ",
+            "tag_name": "persName"
+        },
+        {
+            "token_id": "en_000050",
+            "text": "Bāḍā",
+            "tag_name": "persName"
+        },
+        {
+            "token_id": "en_000051",
+            "text": "Nhusidhaṃ",
+            "tag_name": "persName"
+        },
+        {
+            "token_id": "en_000052",
+            "text": "Bāḍā",
+            "tag_name": "persName"
+        },
+        {
+            "token_id": "en_000053",
+            "text": "Sitidās",
+            "tag_name": "persName"
+        }
+    ]
+}

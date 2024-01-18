@@ -1,0 +1,1051 @@
+@prefix : <http://example.org/> .
+@prefix dbr: <https://dbpedia.org/resource/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix gndo: <https://d-nb.info/standards/elementset/gnd#> .
+@prefix lime: <http://www.w3.org/ns/lemon/lime#> .
+@prefix nepalica: <https://nepalica.hadw-bw.de/nepal/editions/show/> .
+@prefix nepalica_reg: <https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix geonames: <https://sws.geonames.org/> .
+@prefix dbr: <https://dbpedia.org/resource/> .
+@prefix wiki: <https://de.wikipedia.org/wiki/> .
+@prefix viaf: <https://viaf.org/viaf/> .
+@prefix gnd: <https://d-nb.info/gnd/> .
+@prefix wikidata: <https://www.wikidata.org/wiki/> .
+@prefix nepalica_gloss: <https://nepalica.hadw-bw.de/nepal/words/viewitem/> .
+@prefix lime: <http://www.w3.org/ns/lemon/lime#> .
+@prefix lexvo: <http://lexvo.org/id/iso639-3/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+
+
+nepalica:1 a dct:Document ,
+        lime:Lexicon ;
+    dct:abstract "This Lāla Mohar of the king directs the various castes to pay to the jogis at the rate of anna 1 per family."@en ;
+    dct:date "VS 1827 Kārttika bright 15 Saturday"@en ;
+    dct:description "This is a text edition of the project “Documents on the History of Religion and Law of Pre-modern Nepal”, Heidelberg Academy of Sciences and Humanities, https://www.hadw-bw.de/nepal.”@en" ;
+    dct:extent "fair; complete"@en ;
+    dct:format "18; 16.5; cm"@en ;
+    dct:hasPart "K 30544; 1"@en ;
+    dct:identifier "K_0469_0009"@en ;
+    dct:issued_by "Pṛthvīnārāyaṇa; the Gosain Siddha Bhagavanta Nātha"@en ;
+    dct:language lexvo:en ,
+        lexvo:ne ;
+    dct:place "Sallyāna; Śaiva"@en ;
+    dct:publisher "Bhadrakālī; card no. 10; Po. no. 15 Gu. Bam."@en ;
+    dct:source "NGMPP catalogue card; Microfilmed on 18/8/1995 as NGMPP K 469/9"@en ;
+    dct:subject "jogī, ānā"@en ;
+    dct:title "A copy of a lālamohara from King Pṛthvīnārāyaṇa appointing Gosāī̃ Bhagavantanātha as central overseer of jogīs (VS 1827)"@en ;
+    dct:type "lālamohara; copy"@en ;
+    schema:created "4/6/16, 12:56 PM; 6/11/21, 11:28 AM; 12"@en ;
+    lime:language "Nepali; Devanagari"@en .
+
+nepalica:1#en000394 a skos:Concept ;
+    :followedBy nepalica:1#en000395 ;
+    rdfs:comment "[S.] n. word of blessing, can be used as apprecatio, in which case it means 'good fortune' (Pant and Pierce 1989: 12), can be used as a prefix to names of persons and gods, in which case it means 'venerable' or 'glorious' respectively. The number of śrīs used varies, depending on context. t.t."@en ;
+    skos:prefLabel "Śrī"@ne ;
+    skos:related nepalica_gloss:1869 .
+
+nepalica:1#en000395 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000396 ;
+    ontolex:canonicalForm nepalica:1#en000395_form .
+
+nepalica:1#en000395_form a ontolex:Form ;
+    ontolex:writtenRep "No"@en .
+
+nepalica:1#en000396 a dbr:Number ;
+    :followedBy nepalica:1#en000397 ;
+    ontolex:writtenRep "1"@en .
+
+nepalica:1#en000397 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000398 ;
+    ontolex:canonicalForm nepalica:1#en000397_form .
+
+nepalica:1#en000397_form a ontolex:Form ;
+    ontolex:writtenRep "Glorious"@en .
+
+nepalica:1#en000398 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000399 ;
+    ontolex:canonicalForm nepalica:1#en000398_form .
+
+nepalica:1#en000398_form a ontolex:Form ;
+    ontolex:writtenRep "Saṃkaṭā"@en .
+
+nepalica:1#en000399 a dbr:Number ;
+    :followedBy nepalica:1#en000400 ;
+    ontolex:writtenRep "3"@en .
+
+nepalica:1#en000400 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000401 ;
+    ontolex:canonicalForm nepalica:1#en000400_form .
+
+nepalica:1#en000400_form a ontolex:Form ;
+    ontolex:writtenRep "Venerable"@en .
+
+nepalica:1#en000401 a skos:Concept ;
+    :followedBy nepalica:1#en000402 ;
+    rdfs:comment "n. government; head of government; king; term used to refer indistinctly to the king and/or to his government (Lecomte-Tilouine 2015: 211). t.t."@en ;
+    skos:prefLabel "Sarkāra"@ne ;
+    skos:related nepalica_gloss:1963 .
+
+nepalica:1#en000402 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000403 ;
+    ontolex:canonicalForm nepalica:1#en000402_form .
+
+nepalica:1#en000402_form a ontolex:Form ;
+    ontolex:writtenRep "The"@en .
+
+nepalica:1#en000403 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000404 ;
+    ontolex:canonicalForm nepalica:1#en000403_form .
+
+nepalica:1#en000403_form a ontolex:Form ;
+    ontolex:writtenRep "fivefold"@en .
+
+nepalica:1#en000404 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000405 ;
+    ontolex:canonicalForm nepalica:1#en000404_form .
+
+nepalica:1#en000404_form a ontolex:Form ;
+    ontolex:writtenRep "venerable"@en .
+
+nepalica:1#en000405 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000406 ;
+    ontolex:canonicalForm nepalica:1#en000405_form .
+
+nepalica:1#en000405_form a ontolex:Form ;
+    ontolex:writtenRep "great"@en .
+
+nepalica:1#en000406 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000407 ;
+    ontolex:canonicalForm nepalica:1#en000406_form .
+
+nepalica:1#en000406_form a ontolex:Form ;
+    ontolex:writtenRep "king"@en .
+
+nepalica:1#en000407 a dbr:Number ;
+    :followedBy nepalica:1#en000408 ;
+    ontolex:writtenRep "2"@en .
+
+nepalica:1#en000408 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000409 ;
+    ontolex:canonicalForm nepalica:1#en000408_form .
+
+nepalica:1#en000408_form a ontolex:Form ;
+    ontolex:writtenRep "Hail"@en .
+
+nepalica:1#en000409 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000410 ;
+    ontolex:canonicalForm nepalica:1#en000409_form .
+
+nepalica:1#en000409_form a ontolex:Form ;
+    ontolex:writtenRep "This"@en .
+
+nepalica:1#en000410 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000411 ;
+    ontolex:canonicalForm nepalica:1#en000410_form .
+
+nepalica:1#en000410_form a ontolex:Form ;
+    ontolex:writtenRep "letter"@en .
+
+nepalica:1#en000411 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000412 ;
+    ontolex:canonicalForm nepalica:1#en000411_form .
+
+nepalica:1#en000411_form a ontolex:Form ;
+    ontolex:writtenRep "of"@en .
+
+nepalica:1#en000412 :followedBy nepalica:1#en000413 .
+
+nepalica:1#en000413 a foaf:Person ;
+    rdfs:label "Aravindanātha Gajuryāla"@ne ,
+        "अरविन्दना गजुर्यालको"@ne ;
+    :followedBy nepalica:1#en000414 ;
+    schema:gender schema:Male ;
+    rdfs:comment "flourished: 1821–1822;  details: astrologer studying in Varanasi."@ne ;
+    rdfs:seeAlso nepalica_reg:498 ;
+    foaf:name "Aravindanātha Gajuryāla"@ne ;
+    gndo:surname "Gajuryāla"@ne .
+
+nepalica:1#en000414 :followedBy nepalica:1#en000415 .
+
+nepalica:1#en000415 a foaf:Person ;
+    rdfs:label "Bhīmasena Thāpā"@ne ,
+        "श्रीश्रीश्रीजनरलसाहेवभीमसेनथापाकैषु"@ne ;
+    :followedBy nepalica:1#en000416 ;
+    schema:gender schema:Male ;
+    rdfs:comment "also known as: Bhimsen Thapa; born: August 1775; died: 28 July 1839;  father: Amara Siṃha Thāpā; details: held the titles of general, kājī (appointed April 1804; M.C. Regmi 1995: 59 n. 6), prime minister (mukhtiyāra) and regent for the infant kings Girvāṇayuddha and Surendra from 1806 to 1837, later also addressed as svāmī; normdata:"@ne ;
+    rdfs:seeAlso dbr:Bhimsen_Thapa ,
+        gnd:1024044661 ,
+        nepalica_reg:29 ,
+        viaf:53634994 ,
+        wiki:Bhimsen_Thapa ;
+    foaf:name "Bhīmasena Thāpā"@ne ;
+    gndo:surname "Thāpā"@ne .
+
+nepalica:1#en000416 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000417 ;
+    ontolex:canonicalForm nepalica:1#en000416_form .
+
+nepalica:1#en000416_form a ontolex:Form ;
+    ontolex:writtenRep "Here"@en .
+
+nepalica:1#en000417 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000418 ;
+    ontolex:canonicalForm nepalica:1#en000417_form .
+
+nepalica:1#en000417_form a ontolex:Form ;
+    ontolex:writtenRep "everything"@en .
+
+nepalica:1#en000418 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000419 ;
+    ontolex:canonicalForm nepalica:1#en000418_form .
+
+nepalica:1#en000418_form a ontolex:Form ;
+    ontolex:writtenRep "is"@en .
+
+nepalica:1#en000419 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000420 ;
+    ontolex:canonicalForm nepalica:1#en000419_form .
+
+nepalica:1#en000419_form a ontolex:Form ;
+    ontolex:writtenRep "fine"@en .
+
+nepalica:1#en000420 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000421 ;
+    ontolex:canonicalForm nepalica:1#en000420_form .
+
+nepalica:1#en000420_form a ontolex:Form ;
+    ontolex:writtenRep "We"@en .
+
+nepalica:1#en000421 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000422 ;
+    ontolex:canonicalForm nepalica:1#en000421_form .
+
+nepalica:1#en000421_form a ontolex:Form ;
+    ontolex:writtenRep "daily"@en .
+
+nepalica:1#en000422 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000423 ;
+    ontolex:canonicalForm nepalica:1#en000422_form .
+
+nepalica:1#en000422_form a ontolex:Form ;
+    ontolex:writtenRep "carry"@en .
+
+nepalica:1#en000423 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000424 ;
+    ontolex:canonicalForm nepalica:1#en000423_form .
+
+nepalica:1#en000423_form a ontolex:Form ;
+    ontolex:writtenRep "the"@en .
+
+nepalica:1#en000424 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000425 ;
+    ontolex:canonicalForm nepalica:1#en000424_form .
+
+nepalica:1#en000424_form a ontolex:Form ;
+    ontolex:writtenRep "welfare"@en .
+
+nepalica:1#en000425 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000426 ;
+    ontolex:canonicalForm nepalica:1#en000425_form .
+
+nepalica:1#en000425_form a ontolex:Form ;
+    ontolex:writtenRep "of"@en .
+
+nepalica:1#en000426 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000427 ;
+    ontolex:canonicalForm nepalica:1#en000426_form .
+
+nepalica:1#en000426_form a ontolex:Form ;
+    ontolex:writtenRep "your"@en .
+
+nepalica:1#en000427 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000428 ;
+    ontolex:canonicalForm nepalica:1#en000427_form .
+
+nepalica:1#en000427_form a ontolex:Form ;
+    ontolex:writtenRep "feet"@en .
+
+nepalica:1#en000428 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000429 ;
+    ontolex:canonicalForm nepalica:1#en000428_form .
+
+nepalica:1#en000428_form a ontolex:Form ;
+    ontolex:writtenRep "in"@en .
+
+nepalica:1#en000429 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000430 ;
+    ontolex:canonicalForm nepalica:1#en000429_form .
+
+nepalica:1#en000429_form a ontolex:Form ;
+    ontolex:writtenRep "our"@en .
+
+nepalica:1#en000430 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000431 ;
+    ontolex:canonicalForm nepalica:1#en000430_form .
+
+nepalica:1#en000430_form a ontolex:Form ;
+    ontolex:writtenRep "thoughts"@en .
+
+nepalica:1#en000431 a skos:Concept ;
+    :followedBy nepalica:1#en000432 ;
+    rdfs:comment "var. uprāṃta, ūprāṃnta, ūprā̃nta, prāṃta; also yathocita uprānta; conj. after that, besides, in addition to, hereafter. In earlier prose and official documents, this word marked the beginning of a text or paragraph. It has no equivalent in English (Clark 1989: 231). In some (mostly Rāṇā period?) documents, it takes the form of yathocita uprānta. t.t."@en ;
+    skos:prefLabel "Uprānta"@ne ;
+    skos:related nepalica_gloss:1997 .
+
+nepalica:1#en000432 a gn:Feature ;
+    rdfs:label "Vārāṇasī"@ne ,
+        "वाराणसी"@ne ;
+    :followedBy nepalica:1#en000433 ;
+    gn:name "Vārāṇasī"@ne ;
+    rdfs:comment "also known as: Benares, Banaras, Kāśī; a city and famous pilgrimage centre on the Ganges river in northern India;"@en ;
+    rdfs:seeAlso gnd:4062337-3 ,
+        nepalica_reg:230 ,
+        viaf:168498951 ,
+        wiki:Varanasi .
+
+nepalica:1#en000433 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000434 ;
+    ontolex:canonicalForm nepalica:1#en000433_form .
+
+nepalica:1#en000433_form a ontolex:Form ;
+    ontolex:writtenRep "anuṣṭhāna"@en .
+
+nepalica:1#en000434 a foaf:Person ;
+    rdfs:label "Lalitatripurasundarī"@ne ;
+    :followedBy nepalica:1#en000435 ;
+    rdfs:comment "b. 1794, d. 6 April 1832 of cholera at Kathmandu; daughter of Nayana Siṃha Thāpā and Rānā Kumārī Pā̃ḍe, sister of Māthavara Siṃha Thāpā; sixth Mahārānī of King Raṇabahādura Śāha (m. 1805); regent from 25th April 1806 until her death; wrote a treatise on Rājadharma (commentary to the Mahābhārata); had the Dhārahara tower constructed usually attributed to Bhīmasena Thāpā, and the Tripureśvara Mahādeva temple at Tripureshwar, South Kathmandu; bibl.: http://www.royalark.net/Nepal/nepal6.htm;"@ne ;
+    rdfs:seeAlso nepalica_reg:190 ,
+        viaf:13579330 ,
+        wiki:Queen_Tripurasundari_of_Nepal ;
+    foaf:name "Lalitatripurasundarī"@ne ;
+    gndo:surname ""@ne .
+
+nepalica:1#en000435 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000436 ;
+    ontolex:canonicalForm nepalica:1#en000435_form .
+
+nepalica:1#en000435_form a ontolex:Form ;
+    ontolex:writtenRep "anuṣṭhāna"@en .
+
+nepalica:1#en000436 a gn:Feature ;
+    rdfs:label "Kathmandu"@ne ;
+    :followedBy nepalica:1#en000437 ;
+    gn:name "Kathmandu"@ne ;
+    rdfs:comment "also known as: Kāḍamāḍau, Kantipur, Kāṣthamaṇḍapa, Kāṭhamāḍau, Kāṭhmāḍu, Yẽ; capital of Nepal, declared capital by Pṛthvīnārāyaṇa Śāha on 21 March 1770; a district in Central Nepal, part of Bagmati Province;"@en ;
+    rdfs:seeAlso dbr:Kathmandu ,
+        geonames:12095484 ,
+        geonames:1283240 ,
+        gnd:4030036-5 ,
+        nepalica_reg:26 ,
+        viaf:158284130 ,
+        wiki:Kathmandu ,
+        wiki:Kathmandu_District ,
+        wikidata:testont_wikidata_1232 .
+
+nepalica:1#en000437 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000438 ;
+    ontolex:canonicalForm nepalica:1#en000437_form .
+
+nepalica:1#en000437_form a ontolex:Form ;
+    ontolex:writtenRep "Siddhāntakaumudī"@en .
+
+nepalica:1#en000438 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000439 ;
+    ontolex:canonicalForm nepalica:1#en000438_form .
+
+nepalica:1#en000438_form a ontolex:Form ;
+    ontolex:writtenRep "Sūryasiddhānta"@en .
+
+nepalica:1#en000439 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000440 ;
+    ontolex:canonicalForm nepalica:1#en000439_form .
+
+nepalica:1#en000439_form a ontolex:Form ;
+    ontolex:writtenRep "Līlāvatī"@en .
+
+nepalica:1#en000440 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000441 ;
+    ontolex:canonicalForm nepalica:1#en000440_form .
+
+nepalica:1#en000440_form a ontolex:Form ;
+    ontolex:writtenRep "Bījagaṇita"@en .
+
+nepalica:1#en000441 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000442 ;
+    ontolex:canonicalForm nepalica:1#en000441_form .
+
+nepalica:1#en000441_form a ontolex:Form ;
+    ontolex:writtenRep "Muhūrttacintāmaṇi"@en .
+
+nepalica:1#en000442 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000443 ;
+    ontolex:canonicalForm nepalica:1#en000442_form .
+
+nepalica:1#en000442_form a ontolex:Form ;
+    ontolex:writtenRep "Karṇakutūhala"@en .
+
+nepalica:1#en000443 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000444 ;
+    ontolex:canonicalForm nepalica:1#en000443_form .
+
+nepalica:1#en000443_form a ontolex:Form ;
+    ontolex:writtenRep "Makaranda"@en .
+
+nepalica:1#en000444 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000445 ;
+    ontolex:canonicalForm nepalica:1#en000444_form .
+
+nepalica:1#en000444_form a ontolex:Form ;
+    ontolex:writtenRep "Grahalāghava"@en .
+
+nepalica:1#en000445 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000446 ;
+    ontolex:canonicalForm nepalica:1#en000445_form .
+
+nepalica:1#en000445_form a ontolex:Form ;
+    ontolex:writtenRep "Ratnamālā"@en .
+
+nepalica:1#en000446 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000447 ;
+    ontolex:canonicalForm nepalica:1#en000446_form .
+
+nepalica:1#en000446_form a ontolex:Form ;
+    ontolex:writtenRep "Bṛhajjātaka"@en .
+
+nepalica:1#en000447 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000448 ;
+    ontolex:canonicalForm nepalica:1#en000447_form .
+
+nepalica:1#en000447_form a ontolex:Form ;
+    ontolex:writtenRep "Keśavīpaddhati"@en .
+
+nepalica:1#en000448 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000449 ;
+    ontolex:canonicalForm nepalica:1#en000448_form .
+
+nepalica:1#en000448_form a ontolex:Form ;
+    ontolex:writtenRep "Śrīpatipaddhati"@en .
+
+nepalica:1#en000449 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000450 ;
+    ontolex:canonicalForm nepalica:1#en000449_form .
+
+nepalica:1#en000449_form a ontolex:Form ;
+    ontolex:writtenRep "Viṭṭhalapaddhati"@en .
+
+nepalica:1#en000450 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000451 ;
+    ontolex:canonicalForm nepalica:1#en000450_form .
+
+nepalica:1#en000450_form a ontolex:Form ;
+    ontolex:writtenRep "Siddhāntatattvaviveka"@en .
+
+nepalica:1#en000451 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000452 ;
+    ontolex:canonicalForm nepalica:1#en000451_form .
+
+nepalica:1#en000451_form a ontolex:Form ;
+    ontolex:writtenRep "Śabdenduśekhara"@en .
+
+nepalica:1#en000452 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000453 ;
+    ontolex:canonicalForm nepalica:1#en000452_form .
+
+nepalica:1#en000452_form a ontolex:Form ;
+    ontolex:writtenRep "Manoramā"@en .
+
+nepalica:1#en000453 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000454 ;
+    ontolex:canonicalForm nepalica:1#en000453_form .
+
+nepalica:1#en000453_form a ontolex:Form ;
+    ontolex:writtenRep "Samrāṭsiddhānta"@en .
+
+nepalica:1#en000454 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000455 ;
+    ontolex:canonicalForm nepalica:1#en000454_form .
+
+nepalica:1#en000454_form a ontolex:Form ;
+    ontolex:writtenRep "Vaśiṣṭhasiddhānta"@en .
+
+nepalica:1#en000455 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000456 ;
+    ontolex:canonicalForm nepalica:1#en000455_form .
+
+nepalica:1#en000455_form a ontolex:Form ;
+    ontolex:writtenRep "Brahmasiddhānta"@en .
+
+nepalica:1#en000456 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000457 ;
+    ontolex:canonicalForm nepalica:1#en000456_form .
+
+nepalica:1#en000456_form a ontolex:Form ;
+    ontolex:writtenRep "Somasiddhānta"@en .
+
+nepalica:1#en000457 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000458 ;
+    ontolex:canonicalForm nepalica:1#en000457_form .
+
+nepalica:1#en000457_form a ontolex:Form ;
+    ontolex:writtenRep "Muktāvalī"@en .
+
+nepalica:1#en000458 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000459 ;
+    ontolex:canonicalForm nepalica:1#en000458_form .
+
+nepalica:1#en000458_form a ontolex:Form ;
+    ontolex:writtenRep "Monday"@en .
+
+nepalica:1#en000459 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000460 ;
+    ontolex:canonicalForm nepalica:1#en000459_form .
+
+nepalica:1#en000459_form a ontolex:Form ;
+    ontolex:writtenRep "the"@en .
+
+nepalica:1#en000460 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000461 ;
+    ontolex:canonicalForm nepalica:1#en000460_form .
+
+nepalica:1#en000460_form a ontolex:Form ;
+    ontolex:writtenRep "6th"@en .
+
+nepalica:1#en000461 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000462 ;
+    ontolex:canonicalForm nepalica:1#en000461_form .
+
+nepalica:1#en000461_form a ontolex:Form ;
+    ontolex:writtenRep "of"@en .
+
+nepalica:1#en000462 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000463 ;
+    ontolex:canonicalForm nepalica:1#en000462_form .
+
+nepalica:1#en000462_form a ontolex:Form ;
+    ontolex:writtenRep "the"@en .
+
+nepalica:1#en000463 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000464 ;
+    ontolex:canonicalForm nepalica:1#en000463_form .
+
+nepalica:1#en000463_form a ontolex:Form ;
+    ontolex:writtenRep "dark"@en .
+
+nepalica:1#en000464 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000465 ;
+    ontolex:canonicalForm nepalica:1#en000464_form .
+
+nepalica:1#en000464_form a ontolex:Form ;
+    ontolex:writtenRep "fortnight"@en .
+
+nepalica:1#en000465 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000466 ;
+    ontolex:canonicalForm nepalica:1#en000465_form .
+
+nepalica:1#en000465_form a ontolex:Form ;
+    ontolex:writtenRep "of"@en .
+
+nepalica:1#en000466 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000467 ;
+    ontolex:canonicalForm nepalica:1#en000466_form .
+
+nepalica:1#en000466_form a ontolex:Form ;
+    ontolex:writtenRep "Āśvina"@en .
+
+nepalica:1#en000467 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000468 ;
+    ontolex:canonicalForm nepalica:1#en000467_form .
+
+nepalica:1#en000467_form a ontolex:Form ;
+    ontolex:writtenRep "in"@en .
+
+nepalica:1#en000468 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000469 ;
+    ontolex:canonicalForm nepalica:1#en000468_form .
+
+nepalica:1#en000468_form a ontolex:Form ;
+    ontolex:writtenRep "the"@en .
+
+nepalica:1#en000469 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000470 ;
+    ontolex:canonicalForm nepalica:1#en000469_form .
+
+nepalica:1#en000469_form a ontolex:Form ;
+    ontolex:writtenRep "Vikrama"@en .
+
+nepalica:1#en000470 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000471 ;
+    ontolex:canonicalForm nepalica:1#en000470_form .
+
+nepalica:1#en000470_form a ontolex:Form ;
+    ontolex:writtenRep "era"@en .
+
+nepalica:1#en000471 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000472 ;
+    ontolex:canonicalForm nepalica:1#en000471_form .
+
+nepalica:1#en000471_form a ontolex:Form ;
+    ontolex:writtenRep "year"@en .
+
+nepalica:1#en000472 a dbr:Number ;
+    :followedBy nepalica:1#en000473 ;
+    ontolex:writtenRep "1878"@en .
+
+nepalica:1#en000473 a dbr:Number ;
+    :followedBy nepalica:1#en000474 ;
+    ontolex:writtenRep "1821"@en .
+
+nepalica:1#en000474 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000475 ;
+    ontolex:canonicalForm nepalica:1#en000474_form .
+
+nepalica:1#en000474_form a ontolex:Form ;
+    ontolex:writtenRep "CE"@en .
+
+nepalica:1#en000475 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000476 ;
+    ontolex:canonicalForm nepalica:1#en000475_form .
+
+nepalica:1#en000475_form a ontolex:Form ;
+    ontolex:writtenRep "Residence"@en .
+
+nepalica:1#en000476 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000477 ;
+    ontolex:canonicalForm nepalica:1#en000476_form .
+
+nepalica:1#en000476_form a ontolex:Form ;
+    ontolex:writtenRep "Vārāṇasī"@en .
+
+nepalica:1#en000477 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000478 ;
+    ontolex:canonicalForm nepalica:1#en000477_form .
+
+nepalica:1#en000477_form a ontolex:Form ;
+    ontolex:writtenRep "city"@en .
+
+nepalica:1#en000478 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000479 ;
+    ontolex:canonicalForm nepalica:1#en000478_form .
+
+nepalica:1#en000478_form a ontolex:Form ;
+    ontolex:writtenRep "Auspiciousness"@en .
+
+nepalica:1#en000479 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000480 ;
+    ontolex:canonicalForm nepalica:1#en000479_form .
+
+nepalica:1#en000479_form a ontolex:Form ;
+    ontolex:writtenRep "For"@en .
+
+nepalica:1#en000480 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000481 ;
+    ontolex:canonicalForm nepalica:1#en000480_form .
+
+nepalica:1#en000480_form a ontolex:Form ;
+    ontolex:writtenRep "you"@en .
+
+nepalica:1#en000481 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000482 ;
+    ontolex:canonicalForm nepalica:1#en000481_form .
+
+nepalica:1#en000481_form a ontolex:Form ;
+    ontolex:writtenRep "there"@en .
+
+nepalica:1#en000482 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000483 ;
+    ontolex:canonicalForm nepalica:1#en000482_form .
+
+nepalica:1#en000482_form a ontolex:Form ;
+    ontolex:writtenRep "are"@en .
+
+nepalica:1#en000483 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000484 ;
+    ontolex:canonicalForm nepalica:1#en000483_form .
+
+nepalica:1#en000483_form a ontolex:Form ;
+    ontolex:writtenRep "many"@en .
+
+nepalica:1#en000484 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000485 ;
+    ontolex:canonicalForm nepalica:1#en000484_form .
+
+nepalica:1#en000484_form a ontolex:Form ;
+    ontolex:writtenRep "like"@en .
+
+nepalica:1#en000485 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000486 ;
+    ontolex:canonicalForm nepalica:1#en000485_form .
+
+nepalica:1#en000485_form a ontolex:Form ;
+    ontolex:writtenRep "me"@en .
+
+nepalica:1#en000486 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000487 ;
+    ontolex:canonicalForm nepalica:1#en000486_form .
+
+nepalica:1#en000486_form a ontolex:Form ;
+    ontolex:writtenRep "but"@en .
+
+nepalica:1#en000487 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000488 ;
+    ontolex:canonicalForm nepalica:1#en000487_form .
+
+nepalica:1#en000487_form a ontolex:Form ;
+    ontolex:writtenRep "for"@en .
+
+nepalica:1#en000488 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000489 ;
+    ontolex:canonicalForm nepalica:1#en000488_form .
+
+nepalica:1#en000488_form a ontolex:Form ;
+    ontolex:writtenRep "me"@en .
+
+nepalica:1#en000489 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000490 ;
+    ontolex:canonicalForm nepalica:1#en000489_form .
+
+nepalica:1#en000489_form a ontolex:Form ;
+    ontolex:writtenRep "there"@en .
+
+nepalica:1#en000490 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000491 ;
+    ontolex:canonicalForm nepalica:1#en000490_form .
+
+nepalica:1#en000490_form a ontolex:Form ;
+    ontolex:writtenRep "is"@en .
+
+nepalica:1#en000491 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000492 ;
+    ontolex:canonicalForm nepalica:1#en000491_form .
+
+nepalica:1#en000491_form a ontolex:Form ;
+    ontolex:writtenRep "only"@en .
+
+nepalica:1#en000492 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000493 ;
+    ontolex:canonicalForm nepalica:1#en000492_form .
+
+nepalica:1#en000492_form a ontolex:Form ;
+    ontolex:writtenRep "one"@en .
+
+nepalica:1#en000493 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000494 ;
+    ontolex:canonicalForm nepalica:1#en000493_form .
+
+nepalica:1#en000493_form a ontolex:Form ;
+    ontolex:writtenRep "like"@en .
+
+nepalica:1#en000494 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000495 ;
+    ontolex:canonicalForm nepalica:1#en000494_form .
+
+nepalica:1#en000494_form a ontolex:Form ;
+    ontolex:writtenRep "you"@en .
+
+nepalica:1#en000495 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000496 ;
+    ontolex:canonicalForm nepalica:1#en000495_form .
+
+nepalica:1#en000495_form a ontolex:Form ;
+    ontolex:writtenRep "namely"@en .
+
+nepalica:1#en000496 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000497 ;
+    ontolex:canonicalForm nepalica:1#en000496_form .
+
+nepalica:1#en000496_form a ontolex:Form ;
+    ontolex:writtenRep "you"@en .
+
+nepalica:1#en000497 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000498 ;
+    ontolex:canonicalForm nepalica:1#en000497_form .
+
+nepalica:1#en000497_form a ontolex:Form ;
+    ontolex:writtenRep "yourself"@en .
+
+nepalica:1#en000498 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000499 ;
+    ontolex:canonicalForm nepalica:1#en000498_form .
+
+nepalica:1#en000498_form a ontolex:Form ;
+    ontolex:writtenRep "Are"@en .
+
+nepalica:1#en000499 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000500 ;
+    ontolex:canonicalForm nepalica:1#en000499_form .
+
+nepalica:1#en000499_form a ontolex:Form ;
+    ontolex:writtenRep "there"@en .
+
+nepalica:1#en000500 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000501 ;
+    ontolex:canonicalForm nepalica:1#en000500_form .
+
+nepalica:1#en000500_form a ontolex:Form ;
+    ontolex:writtenRep "not"@en .
+
+nepalica:1#en000501 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000502 ;
+    ontolex:canonicalForm nepalica:1#en000501_form .
+
+nepalica:1#en000501_form a ontolex:Form ;
+    ontolex:writtenRep "numerous"@en .
+
+nepalica:1#en000502 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000503 ;
+    ontolex:canonicalForm nepalica:1#en000502_form .
+
+nepalica:1#en000502_form a ontolex:Form ;
+    ontolex:writtenRep "water"@en .
+
+nepalica:1#en000503 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000504 ;
+    ontolex:canonicalForm nepalica:1#en000503_form .
+
+nepalica:1#en000503_form a ontolex:Form ;
+    ontolex:writtenRep "lilies"@en .
+
+nepalica:1#en000504 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000505 ;
+    ontolex:canonicalForm nepalica:1#en000504_form .
+
+nepalica:1#en000504_form a ontolex:Form ;
+    ontolex:writtenRep "for"@en .
+
+nepalica:1#en000505 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000506 ;
+    ontolex:canonicalForm nepalica:1#en000505_form .
+
+nepalica:1#en000505_form a ontolex:Form ;
+    ontolex:writtenRep "the"@en .
+
+nepalica:1#en000506 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000507 ;
+    ontolex:canonicalForm nepalica:1#en000506_form .
+
+nepalica:1#en000506_form a ontolex:Form ;
+    ontolex:writtenRep "moon"@en .
+
+nepalica:1#en000507 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000508 ;
+    ontolex:canonicalForm nepalica:1#en000507_form .
+
+nepalica:1#en000507_form a ontolex:Form ;
+    ontolex:writtenRep "But"@en .
+
+nepalica:1#en000508 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000509 ;
+    ontolex:canonicalForm nepalica:1#en000508_form .
+
+nepalica:1#en000508_form a ontolex:Form ;
+    ontolex:writtenRep "for"@en .
+
+nepalica:1#en000509 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000510 ;
+    ontolex:canonicalForm nepalica:1#en000509_form .
+
+nepalica:1#en000509_form a ontolex:Form ;
+    ontolex:writtenRep "water"@en .
+
+nepalica:1#en000510 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000511 ;
+    ontolex:canonicalForm nepalica:1#en000510_form .
+
+nepalica:1#en000510_form a ontolex:Form ;
+    ontolex:writtenRep "lilies"@en .
+
+nepalica:1#en000511 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000512 ;
+    ontolex:canonicalForm nepalica:1#en000511_form .
+
+nepalica:1#en000511_form a ontolex:Form ;
+    ontolex:writtenRep "there"@en .
+
+nepalica:1#en000512 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000513 ;
+    ontolex:canonicalForm nepalica:1#en000512_form .
+
+nepalica:1#en000512_form a ontolex:Form ;
+    ontolex:writtenRep "is"@en .
+
+nepalica:1#en000513 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000514 ;
+    ontolex:canonicalForm nepalica:1#en000513_form .
+
+nepalica:1#en000513_form a ontolex:Form ;
+    ontolex:writtenRep "only"@en .
+
+nepalica:1#en000514 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000515 ;
+    ontolex:canonicalForm nepalica:1#en000514_form .
+
+nepalica:1#en000514_form a ontolex:Form ;
+    ontolex:writtenRep "one"@en .
+
+nepalica:1#en000515 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000516 ;
+    ontolex:canonicalForm nepalica:1#en000515_form .
+
+nepalica:1#en000515_form a ontolex:Form ;
+    ontolex:writtenRep "like"@en .
+
+nepalica:1#en000516 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000517 ;
+    ontolex:canonicalForm nepalica:1#en000516_form .
+
+nepalica:1#en000516_form a ontolex:Form ;
+    ontolex:writtenRep "the"@en .
+
+nepalica:1#en000517 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000518 ;
+    ontolex:canonicalForm nepalica:1#en000517_form .
+
+nepalica:1#en000517_form a ontolex:Form ;
+    ontolex:writtenRep "moon"@en .
+
+nepalica:1#en000518 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000519 ;
+    ontolex:canonicalForm nepalica:1#en000518_form .
+
+nepalica:1#en000518_form a ontolex:Form ;
+    ontolex:writtenRep "namely"@en .
+
+nepalica:1#en000519 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000520 ;
+    ontolex:canonicalForm nepalica:1#en000519_form .
+
+nepalica:1#en000519_form a ontolex:Form ;
+    ontolex:writtenRep "the"@en .
+
+nepalica:1#en000520 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    :followedBy nepalica:1#en000521 ;
+    ontolex:canonicalForm nepalica:1#en000520_form .
+
+nepalica:1#en000520_form a ontolex:Form ;
+    ontolex:writtenRep "moon"@en .
+
+nepalica:1#en000521 a ontolex:LexicalEntry ,
+        ontolex:Word ;
+    ontolex:canonicalForm nepalica:1#en000521_form .
+
+nepalica:1#en000521_form a ontolex:Form ;
+    ontolex:writtenRep "itself"@en .
+

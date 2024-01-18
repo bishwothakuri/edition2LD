@@ -1,0 +1,153 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix gndo: <https://d-nb.info/standards/elementset/gnd#> .
+@prefix nepalica_reg: <https://nepalica.hadw-bw.de/nepal/ontologies/viewitem/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix geonames: <https://sws.geonames.org/> .
+@prefix dbr: <https://dbpedia.org/resource/> .
+@prefix wiki: <https://de.wikipedia.org/wiki/> .
+@prefix viaf: <https://viaf.org/viaf/> .
+@prefix gnd: <https://d-nb.info/gnd/> .
+@prefix wikidata: <https://www.wikidata.org/wiki/> .
+@prefix nepalica_gloss: <https://nepalica.hadw-bw.de/nepal/words/viewitem/> .
+@prefix lime: <http://www.w3.org/ns/lemon/lime#> .
+@prefix lexvo: <http://lexvo.org/id/iso639-3/> .
+@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
+
+
+nepalica:431#Amvara_Siṃha_Thāpā a foaf:Person ;
+    rdfs:label "Amvara Siṃha Thāpā"@ne ;
+    schema:gender schema:Male ;
+    rdfs:comment "not to be confused with Amara Siṃha Thāpā, father of Bhīmasena Thāpā; also known as: Ambara/Aṃvara Siṃ/Sīṃ; born: 1751 at Sirhanchowk; died: 1816 at Gosainkunda;  children: Raṇadhvaja Thāpā, Bhaktavīra Thāpā, Narasiṃha Thāpā, Rāmadāsa Thāpā, Raṇajora Thāpā; details: held the title of commander of the Gorkhali army; known as Būḍhā-, or Baḍākājī; (elder kājī); further literature: M.R. Pant 1966: 48 n. 2; normdata:"@ne ;
+    rdfs:seeAlso nepalica_reg:384 ,
+        wiki:Amar_Singh_Thapa ;
+    foaf:name "Amvara Siṃha Thāpā"@ne ;
+    gndo:surname "Thāpā"@ne .
+
+nepalica:431#Arki a gn:Feature ;
+    rdfs:label "Arki"@ne ,
+        "अर्कि"@ne ;
+    gn:name "Arki"@ne ;
+    rdfs:comment "a town in Himachal Pradesh, India; formerly capital of the princely state of Baghal, captured by the Gorkhas in 1806 until the end of Anglo-Nepalese war in 1816;  _India."@en ;
+    rdfs:seeAlso geonames:1278389 ,
+        nepalica_reg:751 ,
+        wiki:Arki .
+
+nepalica:431#Baghal a gn:Feature ;
+    rdfs:label "Baghal"@ne ;
+    gn:name "Baghal"@ne ;
+    rdfs:comment "one of the princely states of India, now part of the Himachal Pradesh state; was captured by the Gorkhas in 1806 until the end of Anglo-Nepalese war in 1816."@en ;
+    rdfs:seeAlso nepalica_reg:750 .
+
+nepalica:431#Bharama_Gaḍha a gn:Feature ;
+    rdfs:label "Bharama Gaḍha"@ne ,
+        "भरमगढ"@ne ;
+    gn:name "Bharama Gaḍha"@ne ;
+    rdfs:comment "location needs to be verified; the document suggests a locality in Kashmir (DNA_0001_0021)."@en ;
+    rdfs:seeAlso nepalica_reg:1444 .
+
+nepalica:431#Bhīmasena_Thāpā a foaf:Person ;
+    rdfs:label "Bhīmasena Thāpā"@ne ;
+    schema:gender schema:Male ;
+    rdfs:comment "also known as: Bhimsen Thapa; born: August 1775; died: 28 July 1839;  father: Amara Siṃha Thāpā; details: held the titles of general, kājī (appointed April 1804; M.C. Regmi 1995: 59 n. 6), prime minister (mukhtiyāra) and regent for the infant kings Girvāṇayuddha and Surendra from 1806 to 1837, later also addressed as svāmī; normdata:"@ne ;
+    rdfs:seeAlso dbr:Bhimsen_Thapa ,
+        gnd:1024044661 ,
+        nepalica_reg:29 ,
+        viaf:53634994 ,
+        wiki:Bhimsen_Thapa ;
+    foaf:name "Bhīmasena Thāpā"@ne ;
+    gndo:surname "Thāpā"@ne .
+
+nepalica:431#Butwal a gn:Feature ;
+    rdfs:label "Butwal"@ne ,
+        "वटौल"@ne ;
+    gn:name "Butwal"@ne ;
+    rdfs:comment "also Buṭavāla; city in Rupandehi district, South-Western Nepal; former principality located in the Lumbini Province and one of the Caubīsī Rājya;"@en ;
+    rdfs:seeAlso nepalica_reg:433 ,
+        viaf:148905873 ,
+        wiki:Butwal ,
+        wiki:Kingdom_of_Butwal .
+
+nepalica:431#Himachal_Pradesh a gn:Feature ;
+    rdfs:label "Himachal Pradesh"@ne ;
+    gn:name "Himachal Pradesh"@ne ;
+    rdfs:comment "a mountainous state in North-western India;"@en ;
+    rdfs:seeAlso geonames:1270101 ,
+        nepalica_reg:626 ,
+        viaf:234677620 ,
+        wiki:Himachal_Pradesh .
+
+nepalica:431#Jasapāu_Thāpā a foaf:Person ;
+    rdfs:label "Jasapāu Thāpā"@ne ,
+        "जसपाऊ थापाको"@ne ;
+    schema:gender schema:Male ;
+    rdfs:comment "flourished: 1814 (VS 1871);  details: held the title of kājī during Bhīmasena Thāpā's rule; resided in Arki."@ne ;
+    rdfs:seeAlso nepalica_reg:1448 ;
+    foaf:name "Jasapāu Thāpā"@ne ;
+    gndo:surname "Thāpā"@ne .
+
+nepalica:431#Kashmir a gn:Feature ;
+    rdfs:label "Kashmir"@ne ,
+        "काश्मेरको"@ne ;
+    gn:name "Kashmir"@ne ;
+    rdfs:seeAlso nepalica_reg:241 .
+
+nepalica:431#Kāvela a foaf:Person ;
+    rdfs:label "Kāvela"@ne ,
+        "कावेलको"@ne ;
+    schema:gender schema:Male ;
+    rdfs:comment "also known as: Kāvela; born: 23 January 1826; died: 9 February 1903;  details: the first professor of Sanskrit at Cambridge University and a noted translator of Persian poetry; lived in Calcutta as a professor of English history at Presidency College between 1856 and 1867 and as principal of the Sanskrit College (1858-1864);"@ne ;
+    rdfs:seeAlso gnd:116706015 ,
+        nepalica_reg:1270 ,
+        viaf:19752874 ,
+        wiki:Edward_Byles_Cowell ;
+    skos:altLabel "E.B. Cowell" ;
+    foaf:name "Kāvela"@ne ;
+    gndo:surname "Cowell"@ne .
+
+nepalica:431#Raṇajit_Siṃ a foaf:Person ;
+    rdfs:label "Raṇajit Siṃ"@ne ,
+        "रनजीत सिं"@ne ;
+    schema:gender schema:Male ;
+    rdfs:comment "also known as Ranajīta Siṃha; born: 13 November 1780; died: 27 June 1839;  details: first Maharaja (r. 1801–1839) of the Sikh Empire, which ruled the northwest Indian subcontinent in the early half of the 19th century; normdata:"@ne ;
+    rdfs:seeAlso dbr:Ranjit_Singh ,
+        nepalica_reg:57 ,
+        wiki:Ranjit_Singh ;
+    foaf:name "Raṇajit Siṃ"@ne ;
+    gndo:surname "Singh"@ne .
+
+nepalica:431#Uprānta a skos:Concept ;
+    rdfs:comment "var. uprāṃta, ūprāṃnta, ūprā̃nta, prāṃta; also yathocita uprānta; conj. after that, besides, in addition to, hereafter. In earlier prose and official documents, this word marked the beginning of a text or paragraph. It has no equivalent in English (Clark 1989: 231). In some (mostly Rāṇā period?) documents, it takes the form of yathocita uprānta. t.t."@en ;
+    skos:prefLabel "Uprānta"@ne ;
+    skos:related nepalica_gloss:1997 .
+
+nepalica:431#arjī a skos:Concept ;
+    rdfs:comment "var. arji; n. 1) request, petition, application. 2) a respectful letter to a superior authority, especially the king. t.t."@en ;
+    skos:prefLabel "arjī"@ne ;
+    skos:related nepalica_gloss:855 .
+
+nepalica:431#birtā a skos:Concept ;
+    rdfs:comment "None"@en ;
+    skos:prefLabel "birtā"@ne ;
+    skos:related nepalica_gloss:891 .
+
+nepalica:431#darmāha a skos:Concept ;
+    rdfs:comment "var. darmāha; monthly salary t.t."@en ;
+    skos:prefLabel "darmāha"@ne ;
+    skos:related nepalica_gloss:1821 .
+
+nepalica:431#kājī a skos:Concept ;
+    rdfs:comment "var. kāji; n. “an officer of ministerial rank superintending civil and military affairs“ (M.R. Pant 2002: 133; cp. Edwards 1975: 105). t.t."@en ;
+    skos:prefLabel "kājī"@ne ;
+    skos:related nepalica_gloss:960 .
+
+nepalica:431#Śivarāja a gn:Feature ;
+    rdfs:label "Śivarāja"@ne ,
+        "सिउराजमा"@ne ;
+    gn:name "Śivarāja"@ne ;
+    rdfs:comment "also known as: Śivarāja, Siurāja; an administrative region in Kapilvastu district, Western Nepal;"@en ;
+    rdfs:seeAlso nepalica_reg:748 ,
+        wiki:Shivaraj_Municipality .
+
