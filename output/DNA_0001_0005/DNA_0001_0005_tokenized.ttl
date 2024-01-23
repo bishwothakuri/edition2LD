@@ -18,7 +18,6 @@
 @prefix gnd: <https://d-nb.info/gnd/> .
 @prefix wikidata: <https://www.wikidata.org/wiki/> .
 @prefix nepalica_gloss: <https://nepalica.hadw-bw.de/nepal/words/viewitem/> .
-@prefix lime: <http://www.w3.org/ns/lemon/lime#> .
 @prefix lexvo: <http://lexvo.org/id/iso639-3/> .
 @prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
 
@@ -27,7 +26,7 @@ nepalica:1100 a dct:Document ,
         lime:Lexicon ;
     dct:abstract "Raṇa Dala Pā̃ḍe writes this letter to the authority concerned in respect of offering an elephant named Raṇa Prakāśā from Citavana."@en ;
     dct:date "VS 1894 Caitra bright 15 Monday"@en ;
-    dct:description "This is a text edition of the project “Documents on the History of Religion and Law of Pre-modern Nepal”, Heidelberg Academy of Sciences and Humanities, https://www.hadw-bw.de/nepal.”@en" ;
+    dct:description "This is a text edition of the project 'Documents on the History of Religion and Law of Pre-modern Nepal', Heidelberg Academy of Sciences and Humanities, https://www.hadw-bw.de/nepal."@en ;
     dct:extent "damaged by moths; complete"@en ;
     dct:format "30; 21; cm"@en ;
     dct:hasPart "5"@en ;
@@ -128,9 +127,7 @@ nepalica:1100#en000627 a gn:Feature ;
     rdfs:seeAlso geonames:1283304 ,
         gnd:4394798-0 ,
         nepalica_reg:9 ,
-        viaf:126724905 ,
-        wiki:Chitwan_District ,
-        wiki:Chitwan_Valley .
+        viaf:126724905 .
 
 nepalica:1100#en000628 :followedBy nepalica:1100#en000629 .
 
@@ -184,9 +181,7 @@ nepalica:1100#en000637 a gn:Feature ;
     :followedBy nepalica:1100#en000638 ;
     gn:name "Pālpā"@ne ;
     rdfs:comment "also known as: Pālapā, Pālpā; a district in Western Nepal, part of the Lumbini Province province; former principality and last of the independent Caubīsī Rājya, annexed by Raṇabahādura Śāha after his return from exile in 1804 (Kumar 1967: 12); one of three \"first courts of appeal\" known as gauḍās (Kumar 1967: 130)."@en ;
-    rdfs:seeAlso nepalica_reg:5 ,
-        wiki:Kingdom_of_Palpa ,
-        wiki:Palpa_District .
+    rdfs:seeAlso nepalica_reg:5 .
 
 nepalica:1100#en000638 a ontolex:LexicalEntry ,
         ontolex:Word ;
@@ -318,8 +313,7 @@ nepalica:1100#en000654 a gn:Feature ;
     :followedBy nepalica:1100#en000655 ;
     gn:name "Tānasen"@ne ;
     rdfs:comment "also known as Tānasiṃ, Tānaseṃ, Tānasena; a municipality and the administrative centre of Palpa district; _Nepal."@en ;
-    rdfs:seeAlso nepalica_reg:20 ,
-        wiki:Tansen .
+    rdfs:seeAlso nepalica_reg:20 .
 
 nepalica:1100#en000655 a ontolex:LexicalEntry ,
         ontolex:Word ;

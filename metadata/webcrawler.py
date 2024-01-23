@@ -143,13 +143,13 @@ def extract_additional_info_from_note(note_text):
     dbr_content_cleaned = []
 
     # Loop through the lists and clean each string
-    for content in wiki_content:
-        cleaned_content = re.sub(underscore_pattern, r'\1', content)
-        wiki_content_cleaned.append(cleaned_content)
+    # for content in wiki_content:
+        # cleaned_content = re.sub(underscore_pattern, r'\1', content)
+        # wiki_content_cleaned.append(cleaned_content)
 
-    for content in dbr_content:
-        cleaned_content = re.sub(underscore_pattern, r'\1', content)
-        dbr_content_cleaned.append(cleaned_content)
+    # for content in dbr_content:
+    #     cleaned_content = re.sub(underscore_pattern, r'\1', content)
+    #     dbr_content_cleaned.append(cleaned_content)
 
     #Delete #... until end of entry-no matter what comes after it
     checked_index = note_text.find("#")

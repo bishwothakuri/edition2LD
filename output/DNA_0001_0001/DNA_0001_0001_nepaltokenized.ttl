@@ -14,7 +14,6 @@
 @prefix gnd: <https://d-nb.info/gnd/> .
 @prefix wikidata: <https://www.wikidata.org/wiki/> .
 @prefix nepalica_gloss: <https://nepalica.hadw-bw.de/nepal/words/viewitem/> .
-@prefix lime: <http://www.w3.org/ns/lemon/lime#> .
 @prefix lexvo: <http://lexvo.org/id/iso639-3/> .
 @prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
 
@@ -119,11 +118,9 @@ nepalica:1#ne000013 a ontolex:LexicalEntry ,
     schema:gender schema:Male ;
     rdfs:comment "also known as: Bhimsen Thapa; born: August 1775; died: 28 July 1839;  father: Amara Siṃha Thāpā; details: held the titles of general, kājī (appointed April 1804; M.C. Regmi 1995: 59 n. 6), prime minister (mukhtiyāra) and regent for the infant kings Girvāṇayuddha and Surendra from 1806 to 1837, later also addressed as svāmī; normdata:"@ne ;
     rdfs:devanagariLabel "श्रीश्रीश्रीजनरलसाहेवभीमसेनथापाकैषु"@ne ;
-    rdfs:seeAlso dbr:Bhimsen_Thapa ,
-        gnd:1024044661 ,
+    rdfs:seeAlso gnd:1024044661 ,
         nepalica_reg:29 ,
-        viaf:53634994 ,
-        wiki:Bhimsen_Thapa ;
+        viaf:53634994 ;
     ontolex:canonicalForm nepalica:1#ne000013_form ;
     foaf:name "Bhīmasena Thāpā"@ne ;
     gndo:surname "Thāpā"@ne .
@@ -1234,8 +1231,7 @@ nepalica:1#ne000149 a gn:Feature ,
     rdfs:comment "also known as: Benares, Banaras, Kāśī; a city and famous pilgrimage centre on the Ganges river in northern India;"@en ;
     rdfs:seeAlso gnd:4062337-3 ,
         nepalica_reg:230 ,
-        viaf:168498951 ,
-        wiki:Varanasi ;
+        viaf:168498951 ;
     ontolex:canonicalForm nepalica:1#ne000149_form .
 
 nepalica:1#ne000149_form a ontolex:Form ;

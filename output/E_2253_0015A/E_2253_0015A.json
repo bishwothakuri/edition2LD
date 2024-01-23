@@ -33,13 +33,9 @@
             ],
             "gnd": [],
             "viaf": [],
-            "wiki": [
-                "Bam_Shah"
-            ],
+            "wiki": [],
             "wikidata": [],
-            "dbr": [
-                "Bam_Shah"
-            ],
+            "dbr": [],
             "geonames": [],
             "gender": [
                 "male"
@@ -56,9 +52,7 @@
             "viaf": [
                 "252190742"
             ],
-            "wiki": [
-                "Girvan_Yuddha_Bikram_Shah"
-            ],
+            "wiki": [],
             "wikidata": [],
             "dbr": [],
             "geonames": [],
@@ -102,10 +96,7 @@
             "place_name": "Kumaun",
             "gnd": [],
             "viaf": [],
-            "wiki": [
-                "Kumaon_division",
-                "Kumaon_Kingdom"
-            ],
+            "wiki": [],
             "wikidata": [],
             "dbr": [],
             "geonames": [],
@@ -116,10 +107,7 @@
             "place_name": "Salyan",
             "gnd": [],
             "viaf": [],
-            "wiki": [
-                "Salyan_District",
-                "Salyan_Khalanga"
-            ],
+            "wiki": [],
             "wikidata": [],
             "dbr": [],
             "geonames": [],
@@ -135,14 +123,13 @@
                 "158284130"
             ],
             "wiki": [
-                "Kathmandu",
-                "Kathmandu_District"
+                "testont_wiki_1232"
             ],
             "wikidata": [
                 "testont_wikidata_1232"
             ],
             "dbr": [
-                "Kathmandu"
+                "testont_dbr_1232"
             ],
             "geonames": [
                 "1283240",
@@ -166,13 +153,9 @@
             "place_name": "Patan",
             "gnd": [],
             "viaf": [],
-            "wiki": [
-                "Lalitpur,Nepal"
-            ],
+            "wiki": [],
             "wikidata": [],
-            "dbr": [
-                "Lalitpur"
-            ],
+            "dbr": [],
             "geonames": [],
             "note_text": "also known as Lalitpur, Lalitapura; one of the three major cities in the Kathmandu Valley; a district in Central Nepal, part of the Bagmati Province;  _Nepal."
         },

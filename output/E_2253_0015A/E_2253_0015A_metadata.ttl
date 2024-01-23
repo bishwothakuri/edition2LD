@@ -12,7 +12,6 @@
 @prefix gnd: <https://d-nb.info/gnd/> .
 @prefix wikidata: <https://www.wikidata.org/wiki/> .
 @prefix nepalica_gloss: <https://nepalica.hadw-bw.de/nepal/words/viewitem/> .
-@prefix lime: <http://www.w3.org/ns/lemon/lime#> .
 @prefix lexvo: <http://lexvo.org/id/iso639-3/> .
 @prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
 
@@ -22,9 +21,7 @@ nepalica:person#Baṃba_Sāha a foaf:Person ;
         "वंव साहथि"@ne ;
     schema:gender schema:Male ;
     rdfs:comment "also known as: Baṃba Śāha, Bamma Sāhī; flourished: 1802–1818;  father: Vīrabāhu Śāha; sibling: Dilip Śāha, Hastidala Śāhī, Rudravīra Śāha / Śāhī; details: held the title of cautariyā; appointed Governor (subbā) of Kumaon in 1797 (RRS 4(4): 64"@ne ;
-    rdfs:seeAlso dbr:Bam_Shah ,
-        nepalica_reg:799 ,
-        wiki:Bam_Shah ;
+    rdfs:seeAlso nepalica_reg:799 ;
     skos:altLabel "Bam Sāha" ;
     foaf:name "Baṃba Sāha"@ne ;
     gndo:surname "Śāha"@ne .
@@ -34,8 +31,7 @@ nepalica:person#Gīrvāṇayuddha_Vikrama_Śāha a foaf:Person ;
     rdfs:comment "born: 1 October 1797 (VS 1854 āśv 19 gate / āśv śu 11 Sunday, according to Panta VS 2023a: 50), according to Buyers 19 October; died: 20 November 1816; father: King Raṇabahādura; mother: Queen Kāntavatī; spouses: Siddhilakṣmī, Gorakṣya Rājyalakṣmī; children: Nārendra Vikrama, King Rājendra Vikrama, Satyarūpā Rājyalakṣmī Devī, Subhāgyasundarī Rājyalakṣmī Devī; details: King of Nepal (r. 8 March 1799 (VS 1855 phāl 28 gate / phāl śu 2 Friday) – 20 November 1816); his vratabandha and marriage took place in May 1808 (VS 1865 pūrvāṅga on vai 23 gate, beginning vivāha 26 gate, Panta VS 2023b: 37-39, bāṭo chekne ritual VS 1865 vai śu 15, DNA_0015_0076); normdata:"@ne ;
     rdfs:seeAlso gnd:1024019136 ,
         nepalica_reg:209 ,
-        viaf:252190742 ,
-        wiki:Girvan_Yuddha_Bikram_Shah ;
+        viaf:252190742 ;
     foaf:name "Gīrvāṇayuddha Vikrama Śāha"@ne ;
     gndo:surname "Śāha"@ne .
 
@@ -68,23 +64,20 @@ nepalica:place#Kathmandu a gn:Feature ;
     rdfs:label "Kathmandu"@ne ;
     gn:name "Kathmandu"@ne ;
     rdfs:comment "also known as: Kāḍamāḍau, Kantipur, Kāṣthamaṇḍapa, Kāṭhamāḍau, Kāṭhmāḍu, Yẽ; capital of Nepal, declared capital by Pṛthvīnārāyaṇa Śāha on 21 March 1770; a district in Central Nepal, part of Bagmati Province;"@en ;
-    rdfs:seeAlso dbr:Kathmandu ,
+    rdfs:seeAlso dbr:testont_dbr_1232 ,
         geonames:12095484 ,
         geonames:1283240 ,
         gnd:4030036-5 ,
         nepalica_reg:26 ,
         viaf:158284130 ,
-        wiki:Kathmandu ,
-        wiki:Kathmandu_District ,
+        wiki:testont_wiki_1232 ,
         wikidata:testont_wikidata_1232 .
 
 nepalica:place#Kumaun a gn:Feature ;
     rdfs:label "Kumaun"@ne ;
     gn:name "Kumaun"@ne ;
     rdfs:comment "also Kumāu, Kumaun; a region in the Indian State of Uttarakhand; formerly an independent kingdom, under Nepalese rule from 1791–1816;"@en ;
-    rdfs:seeAlso nepalica_reg:223 ,
-        wiki:Kumaon_Kingdom ,
-        wiki:Kumaon_division .
+    rdfs:seeAlso nepalica_reg:223 .
 
 nepalica:place#Mahābuddha_Bāhāla a gn:Feature ;
     rdfs:label "Mahābuddha Bāhāla"@ne ;
@@ -102,17 +95,13 @@ nepalica:place#Patan a gn:Feature ;
     rdfs:label "Patan"@ne ;
     gn:name "Patan"@ne ;
     rdfs:comment "also known as Lalitpur, Lalitapura; one of the three major cities in the Kathmandu Valley; a district in Central Nepal, part of the Bagmati Province;  _Nepal."@en ;
-    rdfs:seeAlso dbr:Lalitpur ,
-        nepalica_reg:27 ,
-        wiki:Lalitpur,Nepal .
+    rdfs:seeAlso nepalica_reg:27 .
 
 nepalica:place#Salyan a gn:Feature ;
     rdfs:label "Salyan"@ne ;
     gn:name "Salyan"@ne ;
     rdfs:comment "not to be confused with Salyan in Dhading; also known as: a) in historical documents: Salyānā, Salyāna, Sallyānā, Śalyānā etc., b) modern spellings: Sallyāna or Salyāna; details: city and region at the rim of Dang in mid-west Nepal; a district in far-Western Nepal, part of the Karnali province; during Rana rule (1885-1950) one of the 32 districts; former principality and one of the Bāīse Rājya, sometimes also listed among the Caubīsī Rājya, ruled by: - ... - Śrīkṛṣṇa Śāha (abdicated 1793); - Raṇabhīma Śāha (1793-1809); - annexed in 1809, with Rudravīra Śāha appointed as subbā (Regmi 1971; see also Bouillier 1993: 37); - Teja Bahādura Śāha (flourished 1827–47, Regmi 1974: 161–62); - Nārendra Bahādura Śāha (r. 1847–, Regmi 1974: 162–63); - Toraṇa Divyeśvarī Devī, daughter of Dhīra Śamśera Kũvara Rāṇā (r. 1871, Regmi 1974: 163); - Lakṣmīnārāyaṇa Śāha (r. 1871–72, Regmi 1974: 163); - personally controlled by Dhīra Śamśera Kũvara Rāṇā through Subbā Jayaśaṅkara Pāṇḍe in 1872 (Regmi 1974: 163); - Śamśera Bahādura Śāha (r. 1896–, Regmi 1974: 163); - abolished as rājya in 1961, but with the rāja being allowed to retain the title Rāja of Salyan on an inheritable basis (r. 1896–, Regmi 1974: 164). _Nepal;"@en ;
-    rdfs:seeAlso nepalica_reg:6 ,
-        wiki:Salyan_District ,
-        wiki:Salyan_Khalanga .
+    rdfs:seeAlso nepalica_reg:6 .
 
 nepalica:term#Cautariyā a skos:Concept ;
     rdfs:comment "var. cautarīyā; n. 1) in the early Shah period, a royal collateral appointed as principal officer of the state, often kings' second and third sons; 2) later a title with no specific functions attached, granted to several male descendents of the Śāha kings at a time. Cautarīyās held different higher administrative posts, like governors (cf. Adhikari 1984: 98–99; Kumar 1967: 164-165; J.C. Regmi 1981: 32–35; M.C. Regmi 1995: 42-43); descendents of different Śāha kings of earlier periods could be nominated thus. t.t."@en ;

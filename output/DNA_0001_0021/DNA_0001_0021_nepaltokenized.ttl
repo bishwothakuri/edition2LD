@@ -15,7 +15,6 @@
 @prefix gnd: <https://d-nb.info/gnd/> .
 @prefix wikidata: <https://www.wikidata.org/wiki/> .
 @prefix nepalica_gloss: <https://nepalica.hadw-bw.de/nepal/words/viewitem/> .
-@prefix lime: <http://www.w3.org/ns/lemon/lime#> .
 @prefix lexvo: <http://lexvo.org/id/iso639-3/> .
 @prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
 
@@ -118,9 +117,7 @@ nepalica:431#ne000012 a ontolex:LexicalEntry ,
     schema:gender schema:Male ;
     rdfs:comment "also known as Ranajīta Siṃha; born: 13 November 1780; died: 27 June 1839;  details: first Maharaja (r. 1801–1839) of the Sikh Empire, which ruled the northwest Indian subcontinent in the early half of the 19th century; normdata:"@ne ;
     rdfs:devanagariLabel "रनजीत सिं"@ne ;
-    rdfs:seeAlso dbr:Ranjit_Singh ,
-        nepalica_reg:57 ,
-        wiki:Ranjit_Singh ;
+    rdfs:seeAlso nepalica_reg:57 ;
     ontolex:canonicalForm nepalica:431#ne000012_form ;
     foaf:name "Raṇajit Siṃ"@ne ;
     gndo:surname "Singh"@ne .
@@ -136,9 +133,7 @@ nepalica:431#ne000013 a ontolex:LexicalEntry ,
     schema:gender schema:Male ;
     rdfs:comment "also known as Ranajīta Siṃha; born: 13 November 1780; died: 27 June 1839;  details: first Maharaja (r. 1801–1839) of the Sikh Empire, which ruled the northwest Indian subcontinent in the early half of the 19th century; normdata:"@ne ;
     rdfs:devanagariLabel "रनजीत सिं"@ne ;
-    rdfs:seeAlso dbr:Ranjit_Singh ,
-        nepalica_reg:57 ,
-        wiki:Ranjit_Singh ;
+    rdfs:seeAlso nepalica_reg:57 ;
     ontolex:canonicalForm nepalica:431#ne000013_form ;
     foaf:name "Raṇajit Siṃ"@ne ;
     gndo:surname "Singh"@ne .
@@ -225,9 +220,7 @@ nepalica:431#ne000022 a ontolex:LexicalEntry ,
     schema:gender schema:Male ;
     rdfs:comment "also known as Ranajīta Siṃha; born: 13 November 1780; died: 27 June 1839;  details: first Maharaja (r. 1801–1839) of the Sikh Empire, which ruled the northwest Indian subcontinent in the early half of the 19th century; normdata:"@ne ;
     rdfs:devanagariLabel "रनजीत सिं"@ne ;
-    rdfs:seeAlso dbr:Ranjit_Singh ,
-        nepalica_reg:57 ,
-        wiki:Ranjit_Singh ;
+    rdfs:seeAlso nepalica_reg:57 ;
     ontolex:canonicalForm nepalica:431#ne000022_form ;
     foaf:name "Raṇajit Siṃ"@ne ;
     gndo:surname "Singh"@ne .
@@ -243,9 +236,7 @@ nepalica:431#ne000023 a ontolex:LexicalEntry ,
     schema:gender schema:Male ;
     rdfs:comment "also known as Ranajīta Siṃha; born: 13 November 1780; died: 27 June 1839;  details: first Maharaja (r. 1801–1839) of the Sikh Empire, which ruled the northwest Indian subcontinent in the early half of the 19th century; normdata:"@ne ;
     rdfs:devanagariLabel "रनजीत सिं"@ne ;
-    rdfs:seeAlso dbr:Ranjit_Singh ,
-        nepalica_reg:57 ,
-        wiki:Ranjit_Singh ;
+    rdfs:seeAlso nepalica_reg:57 ;
     ontolex:canonicalForm nepalica:431#ne000023_form ;
     foaf:name "Raṇajit Siṃ"@ne ;
     gndo:surname "Singh"@ne .
@@ -333,9 +324,7 @@ nepalica:431#ne000033 a ontolex:LexicalEntry ,
     schema:gender schema:Male ;
     rdfs:comment "also known as Ranajīta Siṃha; born: 13 November 1780; died: 27 June 1839;  details: first Maharaja (r. 1801–1839) of the Sikh Empire, which ruled the northwest Indian subcontinent in the early half of the 19th century; normdata:"@ne ;
     rdfs:devanagariLabel "रनजीत सिं"@ne ;
-    rdfs:seeAlso dbr:Ranjit_Singh ,
-        nepalica_reg:57 ,
-        wiki:Ranjit_Singh ;
+    rdfs:seeAlso nepalica_reg:57 ;
     ontolex:canonicalForm nepalica:431#ne000033_form ;
     foaf:name "Raṇajit Siṃ"@ne ;
     gndo:surname "Singh"@ne .
@@ -609,8 +598,7 @@ nepalica:431#ne000066 a ontolex:LexicalEntry ,
     rdfs:devanagariLabel "कावेलको"@ne ;
     rdfs:seeAlso gnd:116706015 ,
         nepalica_reg:1270 ,
-        viaf:19752874 ,
-        wiki:Edward_Byles_Cowell ;
+        viaf:19752874 ;
     skos:altLabel "E.B. Cowell" ;
     ontolex:canonicalForm nepalica:431#ne000066_form ;
     foaf:name "Kāvela"@ne ;
@@ -866,9 +854,7 @@ nepalica:431#ne000097 a gn:Feature ,
     gn:name "Butwal"@ne ;
     rdfs:comment "also Buṭavāla; city in Rupandehi district, South-Western Nepal; former principality located in the Lumbini Province and one of the Caubīsī Rājya;"@en ;
     rdfs:seeAlso nepalica_reg:433 ,
-        viaf:148905873 ,
-        wiki:Butwal ,
-        wiki:Kingdom_of_Butwal ;
+        viaf:148905873 ;
     ontolex:canonicalForm nepalica:431#ne000097_form .
 
 nepalica:431#ne000097_form a ontolex:Form ;
@@ -880,8 +866,7 @@ nepalica:431#ne000098 a gn:Feature ,
     :followedBy nepalica:431#ne000099 ;
     gn:name "Śivarāja"@ne ;
     rdfs:comment "also known as: Śivarāja, Siurāja; an administrative region in Kapilvastu district, Western Nepal;"@en ;
-    rdfs:seeAlso nepalica_reg:748 ,
-        wiki:Shivaraj_Municipality ;
+    rdfs:seeAlso nepalica_reg:748 ;
     ontolex:canonicalForm nepalica:431#ne000098_form .
 
 nepalica:431#ne000098_form a ontolex:Form ;
@@ -1229,8 +1214,7 @@ nepalica:431#ne000141 a gn:Feature ,
     gn:name "Arki"@ne ;
     rdfs:comment "a town in Himachal Pradesh, India; formerly capital of the princely state of Baghal, captured by the Gorkhas in 1806 until the end of Anglo-Nepalese war in 1816;  _India."@en ;
     rdfs:seeAlso geonames:1278389 ,
-        nepalica_reg:751 ,
-        wiki:Arki ;
+        nepalica_reg:751 ;
     ontolex:canonicalForm nepalica:431#ne000141_form .
 
 nepalica:431#ne000141_form a ontolex:Form ;

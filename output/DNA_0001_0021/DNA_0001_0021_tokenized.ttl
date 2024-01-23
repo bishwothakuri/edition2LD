@@ -18,7 +18,6 @@
 @prefix gnd: <https://d-nb.info/gnd/> .
 @prefix wikidata: <https://www.wikidata.org/wiki/> .
 @prefix nepalica_gloss: <https://nepalica.hadw-bw.de/nepal/words/viewitem/> .
-@prefix lime: <http://www.w3.org/ns/lemon/lime#> .
 @prefix lexvo: <http://lexvo.org/id/iso639-3/> .
 @prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
 
@@ -27,7 +26,7 @@ nepalica:431 a dct:Document ,
         lime:Lexicon ;
     dct:abstract "It is the letter of Jaspāu Thāpā from Arkī to authority concerned stating about the war in which Raṇvīra Simha was unable to get victory."@en ;
     dct:date "VS 1871 Śrāvaṇa bright 6 Friday"@en ;
-    dct:description "This is a text edition of the project “Documents on the History of Religion and Law of Pre-modern Nepal”, Heidelberg Academy of Sciences and Humanities, https://www.hadw-bw.de/nepal.”@en" ;
+    dct:description "This is a text edition of the project 'Documents on the History of Religion and Law of Pre-modern Nepal', Heidelberg Academy of Sciences and Humanities, https://www.hadw-bw.de/nepal."@en ;
     dct:extent "damaged by breaking; complete"@en ;
     dct:format "26; 16.5; cm"@en ;
     dct:hasPart "21"@en ;
@@ -106,8 +105,7 @@ nepalica:431#en000677 a foaf:Person ;
     rdfs:comment "also known as: Kāvela; born: 23 January 1826; died: 9 February 1903;  details: the first professor of Sanskrit at Cambridge University and a noted translator of Persian poetry; lived in Calcutta as a professor of English history at Presidency College between 1856 and 1867 and as principal of the Sanskrit College (1858-1864);"@ne ;
     rdfs:seeAlso gnd:116706015 ,
         nepalica_reg:1270 ,
-        viaf:19752874 ,
-        wiki:Edward_Byles_Cowell ;
+        viaf:19752874 ;
     skos:altLabel "E.B. Cowell" ;
     foaf:name "Kāvela"@ne ;
     gndo:surname "Cowell"@ne .
@@ -171,9 +169,7 @@ nepalica:431#en000686 a gn:Feature ;
     gn:name "Butwal"@ne ;
     rdfs:comment "also Buṭavāla; city in Rupandehi district, South-Western Nepal; former principality located in the Lumbini Province and one of the Caubīsī Rājya;"@en ;
     rdfs:seeAlso nepalica_reg:433 ,
-        viaf:148905873 ,
-        wiki:Butwal ,
-        wiki:Kingdom_of_Butwal .
+        viaf:148905873 .
 
 nepalica:431#en000687 a gn:Feature ;
     rdfs:label "Śivarāja"@ne ,
@@ -181,8 +177,7 @@ nepalica:431#en000687 a gn:Feature ;
     :followedBy nepalica:431#en000688 ;
     gn:name "Śivarāja"@ne ;
     rdfs:comment "also known as: Śivarāja, Siurāja; an administrative region in Kapilvastu district, Western Nepal;"@en ;
-    rdfs:seeAlso nepalica_reg:748 ,
-        wiki:Shivaraj_Municipality .
+    rdfs:seeAlso nepalica_reg:748 .
 
 nepalica:431#en000688 a skos:Concept ;
     :followedBy nepalica:431#en000689 ;
@@ -357,8 +352,7 @@ nepalica:431#en000710 a gn:Feature ;
     gn:name "Arki"@ne ;
     rdfs:comment "a town in Himachal Pradesh, India; formerly capital of the princely state of Baghal, captured by the Gorkhas in 1806 until the end of Anglo-Nepalese war in 1816;  _India."@en ;
     rdfs:seeAlso geonames:1278389 ,
-        nepalica_reg:751 ,
-        wiki:Arki .
+        nepalica_reg:751 .
 
 nepalica:431#en000711 a ontolex:LexicalEntry ,
         ontolex:Word ;
@@ -443,11 +437,11 @@ nepalica:431#en000720_form a ontolex:Form ;
 nepalica:431#en000721 :followedBy nepalica:431#en000722 .
 
 nepalica:431#en000722 a foaf:Person ;
-    rdfs:label "Amvara Siṃha Thāpā"@ne ;
+    rdfs:label "Jasapāu Thāpā"@ne ,
+        "जसपाऊ थापाको"@ne ;
     schema:gender schema:Male ;
-    rdfs:comment "not to be confused with Amara Siṃha Thāpā, father of Bhīmasena Thāpā; also known as: Ambara/Aṃvara Siṃ/Sīṃ; born: 1751 at Sirhanchowk; died: 1816 at Gosainkunda;  children: Raṇadhvaja Thāpā, Bhaktavīra Thāpā, Narasiṃha Thāpā, Rāmadāsa Thāpā, Raṇajora Thāpā; details: held the title of commander of the Gorkhali army; known as Būḍhā-, or Baḍākājī; (elder kājī); further literature: M.R. Pant 1966: 48 n. 2; normdata:"@ne ;
-    rdfs:seeAlso nepalica_reg:384 ,
-        wiki:Amar_Singh_Thapa ;
-    foaf:name "Amvara Siṃha Thāpā"@ne ;
+    rdfs:comment "flourished: 1814 (VS 1871);  details: held the title of kājī during Bhīmasena Thāpā's rule; resided in Arki."@ne ;
+    rdfs:seeAlso nepalica_reg:1448 ;
+    foaf:name "Jasapāu Thāpā"@ne ;
     gndo:surname "Thāpā"@ne .
 

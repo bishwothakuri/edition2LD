@@ -14,7 +14,6 @@
 @prefix gnd: <https://d-nb.info/gnd/> .
 @prefix wikidata: <https://www.wikidata.org/wiki/> .
 @prefix nepalica_gloss: <https://nepalica.hadw-bw.de/nepal/words/viewitem/> .
-@prefix lime: <http://www.w3.org/ns/lemon/lime#> .
 @prefix lexvo: <http://lexvo.org/id/iso639-3/> .
 @prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
 
@@ -60,9 +59,7 @@ nepalica:1100#ne000005 a gn:Feature ,
     rdfs:seeAlso geonames:1283304 ,
         gnd:4394798-0 ,
         nepalica_reg:9 ,
-        viaf:126724905 ,
-        wiki:Chitwan_District ,
-        wiki:Chitwan_Valley ;
+        viaf:126724905 ;
     ontolex:canonicalForm nepalica:1100#ne000005_form .
 
 nepalica:1100#ne000005_form a ontolex:Form ;
@@ -337,9 +334,7 @@ nepalica:1100#ne000036 a gn:Feature ,
     :followedBy nepalica:1100#ne000037 ;
     gn:name "Pālpā"@ne ;
     rdfs:comment "also known as: Pālapā, Pālpā; a district in Western Nepal, part of the Lumbini Province province; former principality and last of the independent Caubīsī Rājya, annexed by Raṇabahādura Śāha after his return from exile in 1804 (Kumar 1967: 12); one of three \"first courts of appeal\" known as gauḍās (Kumar 1967: 130)."@en ;
-    rdfs:seeAlso nepalica_reg:5 ,
-        wiki:Kingdom_of_Palpa ,
-        wiki:Palpa_District ;
+    rdfs:seeAlso nepalica_reg:5 ;
     ontolex:canonicalForm nepalica:1100#ne000036_form .
 
 nepalica:1100#ne000036_form a ontolex:Form ;
@@ -717,8 +712,7 @@ nepalica:1100#ne000081 a gn:Feature ,
     :followedBy nepalica:1100#ne000082 ;
     gn:name "Tānasen"@ne ;
     rdfs:comment "also known as Tānasiṃ, Tānaseṃ, Tānasena; a municipality and the administrative centre of Palpa district; _Nepal."@en ;
-    rdfs:seeAlso nepalica_reg:20 ,
-        wiki:Tansen ;
+    rdfs:seeAlso nepalica_reg:20 ;
     ontolex:canonicalForm nepalica:1100#ne000081_form .
 
 nepalica:1100#ne000081_form a ontolex:Form ;

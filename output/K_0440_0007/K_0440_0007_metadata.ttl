@@ -12,7 +12,6 @@
 @prefix gnd: <https://d-nb.info/gnd/> .
 @prefix wikidata: <https://www.wikidata.org/wiki/> .
 @prefix nepalica_gloss: <https://nepalica.hadw-bw.de/nepal/words/viewitem/> .
-@prefix lime: <http://www.w3.org/ns/lemon/lime#> .
 @prefix lexvo: <http://lexvo.org/id/iso639-3/> .
 @prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
 
@@ -22,12 +21,12 @@ nepalica:8637#Asaṃ_Ṭol a gn:Feature ;
         "असंटोल्‌का"@ne ;
     gn:name "Asaṃ Ṭol"@ne ;
     rdfs:comment "also known as: Asan Ṭol, Asana Ṭola, Asaṃ; a city quarter (ṭola) in upper (thane) Kathmandu and a central market place whose prices formed a reference point for official pricing in Nepal;"@en ;
-    rdfs:seeAlso dbr:Asan,Kathmandu ,
+    rdfs:seeAlso dbr:Asan,_Kathmandu ,
         geonames:7962207 ,
         gnd:testont_gnd_304 ,
         nepalica_reg:304 ,
         viaf:testont_viaf_304 ,
-        wiki:Asan,Kathmandu ,
+        wiki:Asan,_Kathmandu ,
         wikidata:testont_wikidata_304 ;
     skos:altLabel "Asan Ṭol"@ne ,
         "Asaṃ Ṭola"@ne .
@@ -36,9 +35,7 @@ nepalica:8637#Bengal a gn:Feature ;
     rdfs:label "Bengal"@ne ;
     gn:name "Bengal"@ne ;
     rdfs:comment "a region in the Indian subcontinent, now shared between India (West Bengal) and Bangladesh;"@en ;
-    rdfs:seeAlso dbr:Bengal ,
-        nepalica_reg:610 ,
-        wiki:Bengal .
+    rdfs:seeAlso nepalica_reg:610 .
 
 nepalica:8637#Bhadrakālī a gn:Feature ;
     rdfs:label "Bhadrakālī"@ne ;
@@ -122,9 +119,7 @@ nepalica:8637#Dharaṃthalī a gn:Feature ;
         "धरंथलीछेउको"@ne ;
     gn:name "Dharaṃthalī"@ne ;
     rdfs:comment "also known as Dharaṃthalī, Dharmathalī; a village and former village development committee in Kathmandu district, north west of Kathmandu;"@en ;
-    rdfs:seeAlso dbr:Dharmasthali ,
-        nepalica_reg:519 ,
-        wiki:Dharmasthali ;
+    rdfs:seeAlso nepalica_reg:519 ;
     skos:altLabel "Dharaṃthali"@ne .
 
 nepalica:8637#Dhārīnātha a foaf:Person ;
@@ -160,7 +155,7 @@ nepalica:8637#Jayaprakāśa_Malla a foaf:Person ;
         gnd:120152622 ,
         nepalica_reg:556 ,
         viaf:8211319 ,
-        wiki:Jaya_Prakash_Malla ,
+        wiki:second_priority_when_data_is_not_Null ,
         wikidata:second_priority_when_data_is_Null ;
     foaf:name "Jayaprakāśa Malla"@ne ;
     gndo:surname "Malla"@ne .
@@ -179,8 +174,7 @@ nepalica:8637#Kathmandu_Valley a gn:Feature ;
     rdfs:comment "also known as: Nepāla, Nepālakhalaṭā, Nepālamaṇḍala, Nepāla Upatyakā; details: a bowl-shaped valley of 665 square km with a lower altitude of 1,425 metres (4,675 ft) above sea level consisting of the areas of Kathmandu, Patan, Bhaktapur, Kirtipur and Thimi and a number of smaller municipalities; normdata:"@en ;
     rdfs:seeAlso gnd:4030037-7 ,
         nepalica_reg:113 ,
-        viaf:315526926 ,
-        wiki:Kathmandu_Valley .
+        viaf:315526926 .
 
 nepalica:8637#Kiṃḍol a gn:Feature ;
     rdfs:label "Kiṃḍol"@ne ,
@@ -212,14 +206,13 @@ nepalica:8637#Kāntīpura a gn:Feature ;
         "कांतीपुर"@ne ;
     gn:name "Kāntīpura"@ne ;
     rdfs:comment "also known as: Kāḍamāḍau, Kantipur, Kāṣthamaṇḍapa, Kāṭhamāḍau, Kāṭhmāḍu, Yẽ; capital of Nepal, declared capital by Pṛthvīnārāyaṇa Śāha on 21 March 1770; a district in Central Nepal, part of Bagmati Province;"@en ;
-    rdfs:seeAlso dbr:Kathmandu ,
+    rdfs:seeAlso dbr:testont_dbr_1232 ,
         geonames:12095484 ,
         geonames:1283240 ,
         gnd:4030036-5 ,
         nepalica_reg:26 ,
         viaf:158284130 ,
-        wiki:Kathmandu ,
-        wiki:Kathmandu_District ,
+        wiki:testont_wiki_1232 ,
         wikidata:testont_wikidata_1232 ;
     skos:altLabel "Kathmandu"@ne .
 
@@ -276,9 +269,7 @@ nepalica:8637#Patan a gn:Feature ;
     rdfs:label "Patan"@ne ;
     gn:name "Patan"@ne ;
     rdfs:comment "also known as Lalitpur, Lalitapura; one of the three major cities in the Kathmandu Valley; a district in Central Nepal, part of the Bagmati Province;  _Nepal."@en ;
-    rdfs:seeAlso dbr:Lalitpur ,
-        nepalica_reg:27 ,
-        wiki:Lalitpur,Nepal .
+    rdfs:seeAlso nepalica_reg:27 .
 
 nepalica:8637#Paṃbhu a gn:Feature ;
     rdfs:label "Paṃbhu"@ne ,
@@ -329,7 +320,6 @@ nepalica:8637#Pṛthvīnārāyaṇa_Śāha a foaf:Person ;
         gnd:119173816 ,
         nepalica_reg:178 ,
         viaf:5735314 ,
-        wiki:Prithvi_Narayan_Shah ,
         wikidata:second_priority_when_data_is_Null ;
     foaf:name "Pṛthvīnārāyaṇa Śāha"@ne ;
     gndo:surname "Śāha"@ne .
@@ -357,8 +347,7 @@ nepalica:8637#Sāṃlā a gn:Feature ;
     gn:name "Sāṃlā"@ne ;
     rdfs:comment "also known as Sāṅlā or Sāṅglā; a village and former Village Development Committee in Kathmandu district;  _Nepal."@en ;
     rdfs:seeAlso gnd:7962433 ,
-        nepalica_reg:1243 ,
-        wiki:Sangla ;
+        nepalica_reg:1243 ;
     skos:altLabel "Sāṅglā"@ne ,
         "Sāṅlā"@ne .
 

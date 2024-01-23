@@ -9,7 +9,6 @@
 @prefix gnd: <https://d-nb.info/gnd/> .
 @prefix wikidata: <https://www.wikidata.org/wiki/> .
 @prefix nepalica_gloss: <https://nepalica.hadw-bw.de/nepal/words/viewitem/> .
-@prefix lime: <http://www.w3.org/ns/lemon/lime#> .
 @prefix lexvo: <http://lexvo.org/id/iso639-3/> .
 @prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
 
@@ -20,8 +19,7 @@ nepalica:1#Kerong a gn:Feature ;
     rdfs:comment "also known as Kyirong, Gyirong, Keru, Kerung; a town and county in Tibet, located near the China-Nepal border and Rasuwa Fort;  Gyirong_County,"@en ;
     rdfs:seeAlso geonames:1281092 ,
         nepalica_reg:849 ,
-        viaf:136504915 ,
-        wiki:Gyirong_Town .
+        viaf:136504915 .
 
 nepalica:1#Lhasa a gn:Feature ;
     rdfs:label "Lhasa"@ne ,

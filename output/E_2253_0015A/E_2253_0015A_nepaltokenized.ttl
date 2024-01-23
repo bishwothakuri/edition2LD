@@ -14,7 +14,6 @@
 @prefix gnd: <https://d-nb.info/gnd/> .
 @prefix wikidata: <https://www.wikidata.org/wiki/> .
 @prefix nepalica_gloss: <https://nepalica.hadw-bw.de/nepal/words/viewitem/> .
-@prefix lime: <http://www.w3.org/ns/lemon/lime#> .
 @prefix lexvo: <http://lexvo.org/id/iso639-3/> .
 @prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
 
@@ -858,9 +857,7 @@ nepalica:#ne000103 a ontolex:LexicalEntry ,
     schema:gender schema:Male ;
     rdfs:comment "also known as: Baṃba Śāha, Bamma Sāhī; flourished: 1802–1818;  father: Vīrabāhu Śāha; sibling: Dilip Śāha, Hastidala Śāhī, Rudravīra Śāha / Śāhī; details: held the title of cautariyā; appointed Governor (subbā) of Kumaon in 1797 (RRS 4(4): 64"@ne ;
     rdfs:devanagariLabel "वंव साहथि"@ne ;
-    rdfs:seeAlso dbr:Bam_Shah ,
-        nepalica_reg:799 ,
-        wiki:Bam_Shah ;
+    rdfs:seeAlso nepalica_reg:799 ;
     skos:altLabel "Bam Sāha" ;
     ontolex:canonicalForm nepalica:#ne000103_form ;
     foaf:name "Baṃba Sāha"@ne ;

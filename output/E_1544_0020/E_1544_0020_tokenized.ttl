@@ -16,7 +16,6 @@
 @prefix gnd: <https://d-nb.info/gnd/> .
 @prefix wikidata: <https://www.wikidata.org/wiki/> .
 @prefix nepalica_gloss: <https://nepalica.hadw-bw.de/nepal/words/viewitem/> .
-@prefix lime: <http://www.w3.org/ns/lemon/lime#> .
 @prefix lexvo: <http://lexvo.org/id/iso639-3/> .
 @prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
 
@@ -25,7 +24,7 @@ nepalica:26422 a dct:Document ,
         lime:Lexicon ;
     dct:abstract "A document that someone deposited his son for security of a loan."@en ;
     dct:date "VS 1942 unspecified unspecified unspecified unspecified"@en ;
-    dct:description "This is a text edition of the project “Documents on the History of Religion and Law of Pre-modern Nepal”, Heidelberg Academy of Sciences and Humanities, https://www.hadw-bw.de/nepal.”@en" ;
+    dct:description "This is a text edition of the project 'Documents on the History of Religion and Law of Pre-modern Nepal', Heidelberg Academy of Sciences and Humanities, https://www.hadw-bw.de/nepal."@en ;
     dct:extent "damaged; complete"@en ;
     dct:format "26.00; 18.50; cm"@en ;
     dct:hasPart "E 29994"@en ;
@@ -241,9 +240,7 @@ nepalica:26422#en001188 a gn:Feature ;
     :followedBy nepalica:26422#en001189 ;
     gn:name "Patan"@ne ;
     rdfs:comment "also known as Lalitpur, Lalitapura; one of the three major cities in the Kathmandu Valley; a district in Central Nepal, part of the Bagmati Province;  _Nepal."@en ;
-    rdfs:seeAlso dbr:Lalitpur ,
-        nepalica_reg:27 ,
-        wiki:Lalitpur,Nepal .
+    rdfs:seeAlso nepalica_reg:27 .
 
 nepalica:26422#en001189 :followedBy nepalica:26422#en001190 .
 

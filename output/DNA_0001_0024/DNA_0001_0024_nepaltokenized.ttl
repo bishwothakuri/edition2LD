@@ -15,7 +15,6 @@
 @prefix gnd: <https://d-nb.info/gnd/> .
 @prefix wikidata: <https://www.wikidata.org/wiki/> .
 @prefix nepalica_gloss: <https://nepalica.hadw-bw.de/nepal/words/viewitem/> .
-@prefix lime: <http://www.w3.org/ns/lemon/lime#> .
 @prefix lexvo: <http://lexvo.org/id/iso639-3/> .
 @prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
 
@@ -416,8 +415,7 @@ nepalica:1#ne000050 a ontolex:LexicalEntry ,
     schema:gender schema:Male ;
     rdfs:comment "also known as: Yuvraj Kunwar Nau Nihal Singh, Bhanwar Singh, Bhanwar Sa, Kunwar Sa; born: 9 March 1821 in Lahore; died: 5 November 1840 in Lahore;  details: the third Maharaja of the Sikh Empire (r. 8 October 1839 – 5 November 1840); in nominal command of the Sikh army during the Battle of Peshawar in 1834 (Cunningham 1853: 204); normdata:"@ne ;
     rdfs:devanagariLabel "नौनि सिंलाई"@ne ;
-    rdfs:seeAlso nepalica_reg:1336 ,
-        wiki:Nau_Nihal_Singh ;
+    rdfs:seeAlso nepalica_reg:1336 ;
     ontolex:canonicalForm nepalica:1#ne000050_form ;
     foaf:name "Naunihāla Siṃ"@ne ;
     gndo:surname "Singh"@ne .
@@ -433,8 +431,7 @@ nepalica:1#ne000051 a ontolex:LexicalEntry ,
     schema:gender schema:Male ;
     rdfs:comment "also known as: Yuvraj Kunwar Nau Nihal Singh, Bhanwar Singh, Bhanwar Sa, Kunwar Sa; born: 9 March 1821 in Lahore; died: 5 November 1840 in Lahore;  details: the third Maharaja of the Sikh Empire (r. 8 October 1839 – 5 November 1840); in nominal command of the Sikh army during the Battle of Peshawar in 1834 (Cunningham 1853: 204); normdata:"@ne ;
     rdfs:devanagariLabel "नौनि सिंलाई"@ne ;
-    rdfs:seeAlso nepalica_reg:1336 ,
-        wiki:Nau_Nihal_Singh ;
+    rdfs:seeAlso nepalica_reg:1336 ;
     ontolex:canonicalForm nepalica:1#ne000051_form ;
     foaf:name "Naunihāla Siṃ"@ne ;
     gndo:surname "Singh"@ne .
@@ -571,9 +568,7 @@ nepalica:1#ne000067 a ontolex:LexicalEntry ,
     schema:gender schema:Male ;
     rdfs:comment "also known as Ranajīta Siṃha; born: 13 November 1780; died: 27 June 1839;  details: first Maharaja (r. 1801–1839) of the Sikh Empire, which ruled the northwest Indian subcontinent in the early half of the 19th century; normdata:"@ne ;
     rdfs:devanagariLabel "रंजित सिं"@ne ;
-    rdfs:seeAlso dbr:Ranjit_Singh ,
-        nepalica_reg:57 ,
-        wiki:Ranjit_Singh ;
+    rdfs:seeAlso nepalica_reg:57 ;
     ontolex:canonicalForm nepalica:1#ne000067_form ;
     foaf:name "Raṇajita Siṃ"@ne ;
     gndo:surname "Singh"@ne .
@@ -621,9 +616,7 @@ nepalica:1#ne000072 a ontolex:LexicalEntry ,
     schema:gender schema:Male ;
     rdfs:comment "also known as Ranajīta Siṃha; born: 13 November 1780; died: 27 June 1839;  details: first Maharaja (r. 1801–1839) of the Sikh Empire, which ruled the northwest Indian subcontinent in the early half of the 19th century; normdata:"@ne ;
     rdfs:devanagariLabel "रंजित सिं"@ne ;
-    rdfs:seeAlso dbr:Ranjit_Singh ,
-        nepalica_reg:57 ,
-        wiki:Ranjit_Singh ;
+    rdfs:seeAlso nepalica_reg:57 ;
     ontolex:canonicalForm nepalica:1#ne000072_form ;
     foaf:name "Raṇajita Siṃ"@ne ;
     gndo:surname "Singh"@ne .
@@ -639,9 +632,7 @@ nepalica:1#ne000073 a ontolex:LexicalEntry ,
     schema:gender schema:Male ;
     rdfs:comment "also known as Ranajīta Siṃha; born: 13 November 1780; died: 27 June 1839;  details: first Maharaja (r. 1801–1839) of the Sikh Empire, which ruled the northwest Indian subcontinent in the early half of the 19th century; normdata:"@ne ;
     rdfs:devanagariLabel "रंजित सिं"@ne ;
-    rdfs:seeAlso dbr:Ranjit_Singh ,
-        nepalica_reg:57 ,
-        wiki:Ranjit_Singh ;
+    rdfs:seeAlso nepalica_reg:57 ;
     ontolex:canonicalForm nepalica:1#ne000073_form ;
     foaf:name "Raṇajita Siṃ"@ne ;
     gndo:surname "Singh"@ne .
@@ -945,8 +936,7 @@ nepalica:1#ne000110 a gn:Feature ,
     gn:name "Ambara city"@ne ;
     rdfs:comment "also Ambara Sahara?, Ambarsar, Amṛtasara; a city in the state of Punjab, India;"@en ;
     rdfs:seeAlso gnd:4079760-0 ,
-        nepalica_reg:606 ,
-        wiki:Amritsar ;
+        nepalica_reg:606 ;
     skos:altLabel "Amritsar"@ne ;
     ontolex:canonicalForm nepalica:1#ne000110_form .
 
@@ -960,8 +950,7 @@ nepalica:1#ne000111 a gn:Feature ,
     gn:name "Ambara city"@ne ;
     rdfs:comment "also Ambara Sahara?, Ambarsar, Amṛtasara; a city in the state of Punjab, India;"@en ;
     rdfs:seeAlso gnd:4079760-0 ,
-        nepalica_reg:606 ,
-        wiki:Amritsar ;
+        nepalica_reg:606 ;
     skos:altLabel "Amritsar"@ne ;
     ontolex:canonicalForm nepalica:1#ne000111_form .
 
@@ -1014,9 +1003,7 @@ nepalica:1#ne000117 a gn:Feature ,
     :followedBy nepalica:1#ne000118 ;
     gn:name "Lahore"@ne ;
     rdfs:comment "a city in Pakistan; capital of the Pakistani province of Punjab;"@en ;
-    rdfs:seeAlso dbr:Lahore ,
-        nepalica_reg:50 ,
-        wiki:Lahore ;
+    rdfs:seeAlso nepalica_reg:50 ;
     ontolex:canonicalForm nepalica:1#ne000117_form .
 
 nepalica:1#ne000117_form a ontolex:Form ;

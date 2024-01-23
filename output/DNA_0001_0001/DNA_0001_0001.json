@@ -44,13 +44,9 @@
             "viaf": [
                 "53634994"
             ],
-            "wiki": [
-                "Bhimsen_Thapa"
-            ],
+            "wiki": [],
             "wikidata": [],
-            "dbr": [
-                "Bhimsen_Thapa"
-            ],
+            "dbr": [],
             "geonames": [],
             "gender": [
                 "male"
@@ -81,9 +77,7 @@
             "viaf": [
                 "13579330"
             ],
-            "wiki": [
-                "Queen_Tripurasundari_of_Nepal"
-            ],
+            "wiki": [],
             "wikidata": [],
             "dbr": [],
             "geonames": [],
@@ -97,9 +91,7 @@
             "viaf": [
                 "11114849"
             ],
-            "wiki": [
-                "Rajendra_Bikram_Shah"
-            ],
+            "wiki": [],
             "wikidata": [],
             "dbr": [],
             "geonames": [],
@@ -120,7 +112,7 @@
                 "5735314"
             ],
             "wiki": [
-                "Prithvi_Narayan_Shah"
+                ""
             ],
             "wikidata": [
                 "second_priority_when_data_is_Null"
@@ -172,9 +164,7 @@
             "anglicized_name": "Raṇa Bahādura",
             "gnd": [],
             "viaf": [],
-            "wiki": [
-                "Rana_Bahadur_Shah"
-            ],
+            "wiki": [],
             "wikidata": [],
             "dbr": [],
             "geonames": [],
@@ -193,9 +183,7 @@
             "viaf": [
                 "252190742"
             ],
-            "wiki": [
-                "Girvan_Yuddha_Bikram_Shah"
-            ],
+            "wiki": [],
             "wikidata": [],
             "dbr": [],
             "geonames": [],
@@ -229,9 +217,7 @@
             "viaf": [
                 "168498951"
             ],
-            "wiki": [
-                "Varanasi"
-            ],
+            "wiki": [],
             "wikidata": [],
             "dbr": [],
             "geonames": [],
@@ -247,14 +233,13 @@
                 "158284130"
             ],
             "wiki": [
-                "Kathmandu",
-                "Kathmandu_District"
+                "testont_wiki_1232"
             ],
             "wikidata": [
                 "testont_wikidata_1232"
             ],
             "dbr": [
-                "Kathmandu"
+                "testont_dbr_1232"
             ],
             "geonames": [
                 "1283240",

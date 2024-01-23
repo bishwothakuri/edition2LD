@@ -10,9 +10,8 @@ custom_namespaces = {
     'gnd': Namespace("https://d-nb.info/gnd/"),
     'wikidata': Namespace("https://www.wikidata.org/wiki/"),
     'nepalica_gloss': Namespace("https://nepalica.hadw-bw.de/nepal/words/viewitem/"),
-    'lime': Namespace("http://www.w3.org/ns/lemon/lime#"),
     'lexvo': Namespace("http://lexvo.org/id/iso639-3/"),
-    'ontolex': Namespace("http://www.w3.org/ns/lemon/ontolex#")
+    'ontolex': Namespace("http://www.w3.org/ns/lemon/ontolex#"),
 }
 
 def save_turtle_serialization(graph: Graph, file_path: str) -> None:

@@ -34,7 +34,7 @@ lime = Namespace("http://www.w3.org/ns/lemon/lime#")
 lexvo = Namespace("http://lexvo.org/id/iso639-3/")
 ex = Namespace("http://example.org/")
 
-project_description = "This is a text edition of the project “Documents on the History of Religion and Law of Pre-modern Nepal”, Heidelberg Academy of Sciences and Humanities, https://www.hadw-bw.de/nepal."
+project_description = "This is a text edition of the project 'Documents on the History of Religion and Law of Pre-modern Nepal', Heidelberg Academy of Sciences and Humanities, https://www.hadw-bw.de/nepal."
 
 def bind_namespaces(g):
     # Bind RDF namespaces for use in the graph
@@ -72,7 +72,7 @@ def copy_rdf_section_by_text(rdf_graph, text):
             return section_triples
     return None
 
-document_description = "This is a text edition of the project “Documents on the History of Religion and Law of Pre-modern Nepal”, Heidelberg Academy of Sciences and Humanities, https://www.hadw-bw.de/nepal.”@en"
+document_description = "This is a text edition of the project 'Documents on the History of Religion and Law of Pre-modern Nepal', Heidelberg Academy of Sciences and Humanities, https://www.hadw-bw.de/nepal."
 id_counter = count(start=1)
 
 def add_lexical_entry_information(g, token_node, word, rdf_graph):
@@ -130,7 +130,7 @@ def create_rdf_graph_from_tokenized_word(metadata: Dict[str, list], token_dict: 
         document_node = URIRef(f"{nepalica}{physDesc_ref_target}")
         g.add((document_node, RDF.type, DC_NS.Document))
         g.add((document_node, RDF.type, lime.Lexicon))
-        g.add((document_node, DC_NS.description, Literal(document_description)))
+        g.add((document_node, DC_NS.description, Literal(document_description, lang='en')))
         g.add((document_node, DC_NS.language, lexvo.ne))
         g.add((document_node, DC_NS.language, lexvo.en))
 

@@ -102,7 +102,7 @@
                 "5735314"
             ],
             "wiki": [
-                "Prithvi_Narayan_Shah"
+                ""
             ],
             "wikidata": [
                 "second_priority_when_data_is_Null"
@@ -129,7 +129,7 @@
                 "8211319"
             ],
             "wiki": [
-                "Jaya_Prakash_Malla"
+                "second_priority_when_data_is_not_Null"
             ],
             "wikidata": [
                 "second_priority_when_data_is_Null"
@@ -561,13 +561,13 @@
                 "testont_viaf_304"
             ],
             "wiki": [
-                "Asan,Kathmandu"
+                "Asan,_Kathmandu"
             ],
             "wikidata": [
                 "testont_wikidata_304"
             ],
             "dbr": [
-                "Asan,Kathmandu"
+                "Asan,_Kathmandu"
             ],
             "geonames": [
                 "7962207"
@@ -583,13 +583,9 @@
             ],
             "gnd": [],
             "viaf": [],
-            "wiki": [
-                "Dharmasthali"
-            ],
+            "wiki": [],
             "wikidata": [],
-            "dbr": [
-                "Dharmasthali"
-            ],
+            "dbr": [],
             "geonames": [],
             "note_text": "also known as Dharaṃthalī, Dharmathalī; a village and former village development committee in Kathmandu district, north west of Kathmandu;"
         },
@@ -763,9 +759,7 @@
                 "7962433"
             ],
             "viaf": [],
-            "wiki": [
-                "Sangla"
-            ],
+            "wiki": [],
             "wikidata": [],
             "dbr": [],
             "geonames": [],
@@ -841,14 +835,13 @@
                 "158284130"
             ],
             "wiki": [
-                "Kathmandu",
-                "Kathmandu_District"
+                "testont_wiki_1232"
             ],
             "wikidata": [
                 "testont_wikidata_1232"
             ],
             "dbr": [
-                "Kathmandu"
+                "testont_dbr_1232"
             ],
             "geonames": [
                 "1283240",
@@ -887,9 +880,7 @@
             "viaf": [
                 "315526926"
             ],
-            "wiki": [
-                "Kathmandu_Valley"
-            ],
+            "wiki": [],
             "wikidata": [],
             "dbr": [],
             "geonames": [],
@@ -911,13 +902,9 @@
             "place_name": "Bengal",
             "gnd": [],
             "viaf": [],
-            "wiki": [
-                "Bengal"
-            ],
+            "wiki": [],
             "wikidata": [],
-            "dbr": [
-                "Bengal"
-            ],
+            "dbr": [],
             "geonames": [],
             "note_text": "a region in the Indian subcontinent, now shared between India (West Bengal) and Bangladesh;"
         },
@@ -948,13 +935,9 @@
             "place_name": "Patan",
             "gnd": [],
             "viaf": [],
-            "wiki": [
-                "Lalitpur,Nepal"
-            ],
+            "wiki": [],
             "wikidata": [],
-            "dbr": [
-                "Lalitpur"
-            ],
+            "dbr": [],
             "geonames": [],
             "note_text": "also known as Lalitpur, Lalitapura; one of the three major cities in the Kathmandu Valley; a district in Central Nepal, part of the Bagmati Province;  _Nepal."
         },

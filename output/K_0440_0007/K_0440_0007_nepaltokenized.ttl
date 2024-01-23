@@ -15,7 +15,6 @@
 @prefix gnd: <https://d-nb.info/gnd/> .
 @prefix wikidata: <https://www.wikidata.org/wiki/> .
 @prefix nepalica_gloss: <https://nepalica.hadw-bw.de/nepal/words/viewitem/> .
-@prefix lime: <http://www.w3.org/ns/lemon/lime#> .
 @prefix lexvo: <http://lexvo.org/id/iso639-3/> .
 @prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
 
@@ -768,12 +767,12 @@ nepalica:8637#ne000075 a gn:Feature ,
     :followedBy nepalica:8637#ne000076 ;
     gn:name "Asaṃ Ṭol"@ne ;
     rdfs:comment "also known as: Asan Ṭol, Asana Ṭola, Asaṃ; a city quarter (ṭola) in upper (thane) Kathmandu and a central market place whose prices formed a reference point for official pricing in Nepal;"@en ;
-    rdfs:seeAlso dbr:Asan,Kathmandu ,
+    rdfs:seeAlso dbr:Asan,_Kathmandu ,
         geonames:7962207 ,
         gnd:testont_gnd_304 ,
         nepalica_reg:304 ,
         viaf:testont_viaf_304 ,
-        wiki:Asan,Kathmandu ,
+        wiki:Asan,_Kathmandu ,
         wikidata:testont_wikidata_304 ;
     skos:altLabel "Asan Ṭol"@ne ,
         "Asaṃ Ṭola"@ne ;
@@ -795,9 +794,7 @@ nepalica:8637#ne000077 a gn:Feature ,
     :followedBy nepalica:8637#ne000078 ;
     gn:name "Dharaṃthalī"@ne ;
     rdfs:comment "also known as Dharaṃthalī, Dharmathalī; a village and former village development committee in Kathmandu district, north west of Kathmandu;"@en ;
-    rdfs:seeAlso dbr:Dharmasthali ,
-        nepalica_reg:519 ,
-        wiki:Dharmasthali ;
+    rdfs:seeAlso nepalica_reg:519 ;
     skos:altLabel "Dharaṃthali"@ne ;
     ontolex:canonicalForm nepalica:8637#ne000077_form .
 
@@ -1065,8 +1062,7 @@ nepalica:8637#ne000103 a gn:Feature ,
     gn:name "Sāṃlā"@ne ;
     rdfs:comment "also known as Sāṅlā or Sāṅglā; a village and former Village Development Committee in Kathmandu district;  _Nepal."@en ;
     rdfs:seeAlso gnd:7962433 ,
-        nepalica_reg:1243 ,
-        wiki:Sangla ;
+        nepalica_reg:1243 ;
     skos:altLabel "Sāṅglā"@ne ,
         "Sāṅlā"@ne ;
     ontolex:canonicalForm nepalica:8637#ne000103_form .
@@ -1290,14 +1286,13 @@ nepalica:8637#ne000127 a gn:Feature ,
     :followedBy nepalica:8637#ne000128 ;
     gn:name "Kāntīpura"@ne ;
     rdfs:comment "also known as: Kāḍamāḍau, Kantipur, Kāṣthamaṇḍapa, Kāṭhamāḍau, Kāṭhmāḍu, Yẽ; capital of Nepal, declared capital by Pṛthvīnārāyaṇa Śāha on 21 March 1770; a district in Central Nepal, part of Bagmati Province;"@en ;
-    rdfs:seeAlso dbr:Kathmandu ,
+    rdfs:seeAlso dbr:testont_dbr_1232 ,
         geonames:12095484 ,
         geonames:1283240 ,
         gnd:4030036-5 ,
         nepalica_reg:26 ,
         viaf:158284130 ,
-        wiki:Kathmandu ,
-        wiki:Kathmandu_District ,
+        wiki:testont_wiki_1232 ,
         wikidata:testont_wikidata_1232 ;
     skos:altLabel "Kathmandu"@ne ;
     ontolex:canonicalForm nepalica:8637#ne000127_form .

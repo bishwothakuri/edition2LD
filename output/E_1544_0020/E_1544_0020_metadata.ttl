@@ -9,7 +9,6 @@
 @prefix gnd: <https://d-nb.info/gnd/> .
 @prefix wikidata: <https://www.wikidata.org/wiki/> .
 @prefix nepalica_gloss: <https://nepalica.hadw-bw.de/nepal/words/viewitem/> .
-@prefix lime: <http://www.w3.org/ns/lemon/lime#> .
 @prefix lexvo: <http://lexvo.org/id/iso639-3/> .
 @prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
 
@@ -26,9 +25,7 @@ nepalica:26422#Patan a gn:Feature ;
         "पाटन्‌"@ne ;
     gn:name "Patan"@ne ;
     rdfs:comment "also known as Lalitpur, Lalitapura; one of the three major cities in the Kathmandu Valley; a district in Central Nepal, part of the Bagmati Province;  _Nepal."@en ;
-    rdfs:seeAlso dbr:Lalitpur ,
-        nepalica_reg:27 ,
-        wiki:Lalitpur,Nepal .
+    rdfs:seeAlso nepalica_reg:27 .
 
 nepalica:26422#Vāchu_Nani a gn:Feature ;
     rdfs:label "Vāchu Nani"@ne ,

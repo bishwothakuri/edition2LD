@@ -18,7 +18,6 @@
 @prefix gnd: <https://d-nb.info/gnd/> .
 @prefix wikidata: <https://www.wikidata.org/wiki/> .
 @prefix nepalica_gloss: <https://nepalica.hadw-bw.de/nepal/words/viewitem/> .
-@prefix lime: <http://www.w3.org/ns/lemon/lime#> .
 @prefix lexvo: <http://lexvo.org/id/iso639-3/> .
 @prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
 
@@ -27,7 +26,7 @@ nepalica:1 a dct:Document ,
         lime:Lexicon ;
     dct:abstract "This Lāla Mohar of the king directs the various castes to pay to the jogis at the rate of anna 1 per family."@en ;
     dct:date "VS 1827 Kārttika bright 15 Saturday"@en ;
-    dct:description "This is a text edition of the project “Documents on the History of Religion and Law of Pre-modern Nepal”, Heidelberg Academy of Sciences and Humanities, https://www.hadw-bw.de/nepal.”@en" ;
+    dct:description "This is a text edition of the project 'Documents on the History of Religion and Law of Pre-modern Nepal', Heidelberg Academy of Sciences and Humanities, https://www.hadw-bw.de/nepal."@en ;
     dct:extent "fair; complete"@en ;
     dct:format "18; 16.5; cm"@en ;
     dct:hasPart "K 30544; 1"@en ;
@@ -192,11 +191,9 @@ nepalica:1#en000415 a foaf:Person ;
     :followedBy nepalica:1#en000416 ;
     schema:gender schema:Male ;
     rdfs:comment "also known as: Bhimsen Thapa; born: August 1775; died: 28 July 1839;  father: Amara Siṃha Thāpā; details: held the titles of general, kājī (appointed April 1804; M.C. Regmi 1995: 59 n. 6), prime minister (mukhtiyāra) and regent for the infant kings Girvāṇayuddha and Surendra from 1806 to 1837, later also addressed as svāmī; normdata:"@ne ;
-    rdfs:seeAlso dbr:Bhimsen_Thapa ,
-        gnd:1024044661 ,
+    rdfs:seeAlso gnd:1024044661 ,
         nepalica_reg:29 ,
-        viaf:53634994 ,
-        wiki:Bhimsen_Thapa ;
+        viaf:53634994 ;
     foaf:name "Bhīmasena Thāpā"@ne ;
     gndo:surname "Thāpā"@ne .
 
@@ -334,8 +331,7 @@ nepalica:1#en000432 a gn:Feature ;
     rdfs:comment "also known as: Benares, Banaras, Kāśī; a city and famous pilgrimage centre on the Ganges river in northern India;"@en ;
     rdfs:seeAlso gnd:4062337-3 ,
         nepalica_reg:230 ,
-        viaf:168498951 ,
-        wiki:Varanasi .
+        viaf:168498951 .
 
 nepalica:1#en000433 a ontolex:LexicalEntry ,
         ontolex:Word ;
@@ -350,8 +346,7 @@ nepalica:1#en000434 a foaf:Person ;
     :followedBy nepalica:1#en000435 ;
     rdfs:comment "b. 1794, d. 6 April 1832 of cholera at Kathmandu; daughter of Nayana Siṃha Thāpā and Rānā Kumārī Pā̃ḍe, sister of Māthavara Siṃha Thāpā; sixth Mahārānī of King Raṇabahādura Śāha (m. 1805); regent from 25th April 1806 until her death; wrote a treatise on Rājadharma (commentary to the Mahābhārata); had the Dhārahara tower constructed usually attributed to Bhīmasena Thāpā, and the Tripureśvara Mahādeva temple at Tripureshwar, South Kathmandu; bibl.: http://www.royalark.net/Nepal/nepal6.htm;"@ne ;
     rdfs:seeAlso nepalica_reg:190 ,
-        viaf:13579330 ,
-        wiki:Queen_Tripurasundari_of_Nepal ;
+        viaf:13579330 ;
     foaf:name "Lalitatripurasundarī"@ne ;
     gndo:surname ""@ne .
 
@@ -368,14 +363,13 @@ nepalica:1#en000436 a gn:Feature ;
     :followedBy nepalica:1#en000437 ;
     gn:name "Kathmandu"@ne ;
     rdfs:comment "also known as: Kāḍamāḍau, Kantipur, Kāṣthamaṇḍapa, Kāṭhamāḍau, Kāṭhmāḍu, Yẽ; capital of Nepal, declared capital by Pṛthvīnārāyaṇa Śāha on 21 March 1770; a district in Central Nepal, part of Bagmati Province;"@en ;
-    rdfs:seeAlso dbr:Kathmandu ,
+    rdfs:seeAlso dbr:testont_dbr_1232 ,
         geonames:12095484 ,
         geonames:1283240 ,
         gnd:4030036-5 ,
         nepalica_reg:26 ,
         viaf:158284130 ,
-        wiki:Kathmandu ,
-        wiki:Kathmandu_District ,
+        wiki:testont_wiki_1232 ,
         wikidata:testont_wikidata_1232 .
 
 nepalica:1#en000437 a ontolex:LexicalEntry ,

@@ -18,7 +18,6 @@
 @prefix gnd: <https://d-nb.info/gnd/> .
 @prefix wikidata: <https://www.wikidata.org/wiki/> .
 @prefix nepalica_gloss: <https://nepalica.hadw-bw.de/nepal/words/viewitem/> .
-@prefix lime: <http://www.w3.org/ns/lemon/lime#> .
 @prefix lexvo: <http://lexvo.org/id/iso639-3/> .
 @prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
 
@@ -28,7 +27,7 @@ nepalica:8637 a dct:Document ,
     dct:abstract "This lālamohara dated VS 1826 Kārttika śudi 4 Thursday deals with grants of land for the support of the cakra pūjā of Gorakhanātha located at different localities as specified in the document."@en ;
     dct:amount_of_endowment "219 ropanis, 12 ānnās"@en ;
     dct:date "VS 1826 Kārttika bright 4 Thursday"@en ;
-    dct:description "This is a text edition of the project “Documents on the History of Religion and Law of Pre-modern Nepal”, Heidelberg Academy of Sciences and Humanities, https://www.hadw-bw.de/nepal.”@en" ;
+    dct:description "This is a text edition of the project 'Documents on the History of Religion and Law of Pre-modern Nepal', Heidelberg Academy of Sciences and Humanities, https://www.hadw-bw.de/nepal."@en ;
     dct:donor "King Pṛthvi Nārāyaṇa Śāha"@en ;
     dct:extent "good; complete"@en ;
     dct:format "23.5; 48; cm"@en ;
@@ -650,7 +649,6 @@ nepalica:8637#en000868 a foaf:Person ;
         gnd:119173816 ,
         nepalica_reg:178 ,
         viaf:5735314 ,
-        wiki:Prithvi_Narayan_Shah ,
         wikidata:second_priority_when_data_is_Null ;
     foaf:name "Pṛthvīnārāyaṇa Śāha"@ne ;
     gndo:surname "Śāha"@ne .
@@ -1561,9 +1559,7 @@ nepalica:8637#en000999 a gn:Feature ;
     :followedBy nepalica:8637#en001000 ;
     gn:name "Dharaṃthalī"@ne ;
     rdfs:comment "also known as Dharaṃthalī, Dharmathalī; a village and former village development committee in Kathmandu district, north west of Kathmandu;"@en ;
-    rdfs:seeAlso dbr:Dharmasthali ,
-        nepalica_reg:519 ,
-        wiki:Dharmasthali ;
+    rdfs:seeAlso nepalica_reg:519 ;
     skos:altLabel "Dharaṃthali"@ne .
 
 nepalica:8637#en001000 a gn:Feature ;
@@ -1572,9 +1568,7 @@ nepalica:8637#en001000 a gn:Feature ;
     :followedBy nepalica:8637#en001001 ;
     gn:name "Dharaṃthalī"@ne ;
     rdfs:comment "also known as Dharaṃthalī, Dharmathalī; a village and former village development committee in Kathmandu district, north west of Kathmandu;"@en ;
-    rdfs:seeAlso dbr:Dharmasthali ,
-        nepalica_reg:519 ,
-        wiki:Dharmasthali ;
+    rdfs:seeAlso nepalica_reg:519 ;
     skos:altLabel "Dharaṃthali"@ne .
 
 nepalica:8637#en001001 a dbr:Number ;
@@ -1973,8 +1967,7 @@ nepalica:8637#en001051 a gn:Feature ;
     gn:name "Sāṃlā"@ne ;
     rdfs:comment "also known as Sāṅlā or Sāṅglā; a village and former Village Development Committee in Kathmandu district;  _Nepal."@en ;
     rdfs:seeAlso gnd:7962433 ,
-        nepalica_reg:1243 ,
-        wiki:Sangla ;
+        nepalica_reg:1243 ;
     skos:altLabel "Sāṅglā"@ne ,
         "Sāṅlā"@ne .
 
@@ -1985,8 +1978,7 @@ nepalica:8637#en001052 a gn:Feature ;
     gn:name "Sāṃlā"@ne ;
     rdfs:comment "also known as Sāṅlā or Sāṅglā; a village and former Village Development Committee in Kathmandu district;  _Nepal."@en ;
     rdfs:seeAlso gnd:7962433 ,
-        nepalica_reg:1243 ,
-        wiki:Sangla ;
+        nepalica_reg:1243 ;
     skos:altLabel "Sāṅglā"@ne ,
         "Sāṅlā"@ne .
 
@@ -2398,14 +2390,13 @@ nepalica:8637#en001108 a gn:Feature ;
         "कांतीपुर"@ne ;
     gn:name "Kāntīpura"@ne ;
     rdfs:comment "also known as: Kāḍamāḍau, Kantipur, Kāṣthamaṇḍapa, Kāṭhamāḍau, Kāṭhmāḍu, Yẽ; capital of Nepal, declared capital by Pṛthvīnārāyaṇa Śāha on 21 March 1770; a district in Central Nepal, part of Bagmati Province;"@en ;
-    rdfs:seeAlso dbr:Kathmandu ,
+    rdfs:seeAlso dbr:testont_dbr_1232 ,
         geonames:12095484 ,
         geonames:1283240 ,
         gnd:4030036-5 ,
         nepalica_reg:26 ,
         viaf:158284130 ,
-        wiki:Kathmandu ,
-        wiki:Kathmandu_District ,
+        wiki:testont_wiki_1232 ,
         wikidata:testont_wikidata_1232 ;
     skos:altLabel "Kathmandu"@ne .
 

@@ -12,7 +12,6 @@
 @prefix gnd: <https://d-nb.info/gnd/> .
 @prefix wikidata: <https://www.wikidata.org/wiki/> .
 @prefix nepalica_gloss: <https://nepalica.hadw-bw.de/nepal/words/viewitem/> .
-@prefix lime: <http://www.w3.org/ns/lemon/lime#> .
 @prefix lexvo: <http://lexvo.org/id/iso639-3/> .
 @prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
 
@@ -31,11 +30,9 @@ nepalica:1#Bhīmasena_Thāpā a foaf:Person ;
     rdfs:label "Bhīmasena Thāpā"@ne ;
     schema:gender schema:Male ;
     rdfs:comment "also known as: Bhimsen Thapa; born: August 1775; died: 28 July 1839;  father: Amara Siṃha Thāpā; details: held the titles of general, kājī (appointed April 1804; M.C. Regmi 1995: 59 n. 6), prime minister (mukhtiyāra) and regent for the infant kings Girvāṇayuddha and Surendra from 1806 to 1837, later also addressed as svāmī; normdata:"@ne ;
-    rdfs:seeAlso dbr:Bhimsen_Thapa ,
-        gnd:1024044661 ,
+    rdfs:seeAlso gnd:1024044661 ,
         nepalica_reg:29 ,
-        viaf:53634994 ,
-        wiki:Bhimsen_Thapa ;
+        viaf:53634994 ;
     foaf:name "Bhīmasena Thāpā"@ne ;
     gndo:surname "Thāpā"@ne .
 
@@ -62,15 +59,13 @@ nepalica:1#Pokhara a gn:Feature ;
     rdfs:seeAlso geonames:1282898 ,
         gnd:4046492-1 ,
         nepalica_reg:179 ,
-        viaf:131375293 ,
-        wiki:Pokhara .
+        viaf:131375293 .
 
 nepalica:1#Rājendra a foaf:Person ;
     rdfs:label "Rājendra"@ne ;
     rdfs:comment "b. December 3, 1813 (VS 1870 Maṅgsīra 24); d. July 12, 1881 [July 10, 1881 according to Buyers] (VS 1938 Āṣāḍha 26); Queens: Sāmrājyalakṣmī Devī, Rājyalakṣmī Devī Offspring with Sāmrājyalakṣmī Devī: Surendra, Upendra, Devendra; with Rājyalakṣmī Devī: Raṇendra, Bīrendra; enthroned November 20, 1816 (VS 1873 Maṅgsīra 8) after the death of his father Gīrvāṇayuddha; abdicated after the Koṭ massacre May 12, 1847 (VS 1904 Vaiśākha 31) in favour of his eldest son Surendra; Regents: Queen Lalitatripurasundarī and Bhīmasena Thāpā (1816-1837); bibl.: Rājabhaṇḍārī 2002: 27–29; http://www.royalark.net/Nepal/nepal7.htm;"@ne ;
     rdfs:seeAlso nepalica_reg:140 ,
-        viaf:11114849 ,
-        wiki:Rajendra_Bikram_Shah ;
+        viaf:11114849 ;
     foaf:name "Rājendra"@ne ;
     gndo:surname "Śāha"@ne .
 

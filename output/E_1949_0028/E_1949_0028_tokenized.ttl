@@ -18,7 +18,6 @@
 @prefix gnd: <https://d-nb.info/gnd/> .
 @prefix wikidata: <https://www.wikidata.org/wiki/> .
 @prefix nepalica_gloss: <https://nepalica.hadw-bw.de/nepal/words/viewitem/> .
-@prefix lime: <http://www.w3.org/ns/lemon/lime#> .
 @prefix lexvo: <http://lexvo.org/id/iso639-3/> .
 @prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
 
@@ -27,7 +26,7 @@ nepalica:1 a dct:Document ,
         lime:Lexicon ;
     dct:abstract "This Lāla Mohar of the king directs the various castes to pay to the jogis at the rate of anna 1 per family."@en ;
     dct:date "VS 1827 Kārttika bright 15 Saturday"@en ;
-    dct:description "This is a text edition of the project “Documents on the History of Religion and Law of Pre-modern Nepal”, Heidelberg Academy of Sciences and Humanities, https://www.hadw-bw.de/nepal.”@en" ;
+    dct:description "This is a text edition of the project 'Documents on the History of Religion and Law of Pre-modern Nepal', Heidelberg Academy of Sciences and Humanities, https://www.hadw-bw.de/nepal."@en ;
     dct:extent "fair; complete"@en ;
     dct:format "18; 16.5; cm"@en ;
     dct:hasPart "K 30544; 1"@en ;
@@ -127,9 +126,7 @@ nepalica:1#en001119 a foaf:Person ;
     :followedBy nepalica:1#en001120 ;
     schema:gender schema:Male ;
     rdfs:comment "also known as: Raṅganātha Paṇḍita, Raṃganāth Paṃḍita, Raṃganātha Paṃḍīta; born: 1773;  father: Vrajanātha Pauḍyāla; siblings: Kṛṣṇa Pauḍyāla, Viṣṇu Pauḍyāla, Nārāyaṇa Pauḍyāla (Pauḍela VS 2072: 4); details: grew up in India; established ties to Raṇabahādura Śāha in 1800 and returned with him to Kathmandu in 1804; became the personal guru to Queen Regent Lalitatripurasundarī (cf. Whelpton 1991: 37); sold (together with his brothers) several birtās in Salyan for 3.201 rupees to Mahanta Rūpanātha in 1854 (VS 1910 Naraharinātha VS 2022: 462), a transaction offcially confirmed by King Surendra in 1872 (VS 1929) only (Naraharinātha VS 2022: 464f., K_0469_0020); normdata:"@ne ;
-    rdfs:seeAlso dbr:Ranga_Nath_Poudyal ,
-        nepalica_reg:510 ,
-        wiki:Ranga_Nath_Poudyal ;
+    rdfs:seeAlso nepalica_reg:510 ;
     skos:altLabel "Raṅganātha Paṇḍita" ;
     foaf:name "Raṅganātha Pauḍyāla"@ne ;
     gndo:surname "Pauḍyāla"@ne .
@@ -265,9 +262,7 @@ nepalica:1#en001137 a gn:Feature ;
     :followedBy nepalica:1#en001138 ;
     gn:name "Patan"@ne ;
     rdfs:comment "also known as Lalitpur, Lalitapura; one of the three major cities in the Kathmandu Valley; a district in Central Nepal, part of the Bagmati Province;  _Nepal."@en ;
-    rdfs:seeAlso dbr:Lalitpur ,
-        nepalica_reg:27 ,
-        wiki:Lalitpur,Nepal .
+    rdfs:seeAlso nepalica_reg:27 .
 
 nepalica:1#en001138 :followedBy nepalica:1#en001139 .
 

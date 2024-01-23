@@ -12,7 +12,6 @@
 @prefix gnd: <https://d-nb.info/gnd/> .
 @prefix wikidata: <https://www.wikidata.org/wiki/> .
 @prefix nepalica_gloss: <https://nepalica.hadw-bw.de/nepal/words/viewitem/> .
-@prefix lime: <http://www.w3.org/ns/lemon/lime#> .
 @prefix lexvo: <http://lexvo.org/id/iso639-3/> .
 @prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
 
@@ -45,9 +44,7 @@ nepalica:1#Dā̃g a gn:Feature ;
     rdfs:comment "also known as: Dāṅ, Dāga, Dāṅga, Dāñ, Dāṃ, Dā̃g; a valley located in the Inner Tarai in midwest Nepal (north of Deukhurī valley) that was prior to the conquest by the Gorkha troops in 1786 divided among small principalities belonging to the Bāīse Rājya: Dang and Chilli in the valley itself, and Salyan and Phalabang in the hills (cf. Bouillier 1993: 30); conquered by the Gorkhālīs in 1786 (VS 1843 kārt 29 gate, Panta VS 2022: 37); a district in Western Nepal, part of the Lumbini Province; until 1961 together with Deukhurī one of the 32 districts formed in the Rana period;"@en ;
     rdfs:seeAlso gnd:4716250-8 ,
         nepalica_reg:389 ,
-        viaf:249412462 ,
-        wiki:Dang_District,Nepal ,
-        wiki:Inner_Terai_Valleys_of_Nepal#Dang_and_Deukhuri_Valleys .
+        viaf:249412462 .
 
 nepalica:1#Jasivaṃta_Kãvara a foaf:Person ;
     rdfs:label "Jasivaṃta Kãvara"@ne ,
@@ -72,10 +69,8 @@ nepalica:1#Pālhi a gn:Feature ;
         "पाल्हि"@ne ;
     gn:name "Pālhi"@ne ;
     rdfs:comment "also known as: Pālhi; a settlement in Nawalparasi district;"@en ;
-    rdfs:seeAlso dbr:Palhi ,
-        geonames:7800984 ,
-        nepalica_reg:746 ,
-        wiki:Palhi .
+    rdfs:seeAlso geonames:7800984 ,
+        nepalica_reg:746 .
 
 nepalica:1#Raṇadala_Pā̃ḍe a foaf:Person ;
     rdfs:label "Raṇadala Pā̃ḍe"@ne ,
@@ -92,8 +87,7 @@ nepalica:1#Siragāũ a gn:Feature ;
     gn:name "Siragāũ"@ne ;
     rdfs:comment "also known as Śrīgāū, Sīragāū, see also under its old name (? cf. discussion in Bouillier 1991: 13 and 19 note 19): Kharkākoṭa; according to K_0469_0045 a village (maujā) in Dang district (jillā) according to other sources (e.g. = K_0469_0018) in the ambala of Pachilla Dang; details: Bhagavantanātha founded his second monastery (maṭha) there (Bouillier 1991: 13, Bouillier 1991: 155f.); according to a copperplate inscription from that maṭha dated Śāke 1764 / VS 1899 (1842 CE) ), the king [Śrīkṛṣṇa Śāha]—being satisfied that Dang was conquered and given as dowry [in the mariage of his son Raṇabhīma Śāha with Vilāsa Kumārī Śāha]—gave the guru (i.e. Bhagavantanātha) a village in Dang which received the name Śrīgāũ (śirgā nāu dharyā, Naraharinātha VS 2022: 414, see also Bouillier 1991: 13); Bhagavantanātha took samādhi there in 1786/87 (VS 1843, Bouillier 1991: 15, Naraharinātha n.d.: 88, Unbescheid 1980: 27); according to the Yogivaṃśāvalī his immediate successor, Bhuvaneśvaranātha, built a \"samādhi temple\" (samādhimandira) for his guru (Naraharinātha n.d.: 88) and, in 1842 (VS 1899), Bhagavantanātha's third successor, Lokanātha, added further buildings to the site (Naraharinātha n.d.: 88, see also Naraharinātha VS 2022: 414; Bouillier 1991: 161f.)."@en ;
     rdfs:seeAlso geonames:7938381 ,
-        nepalica_reg:390 ,
-        wiki:Srigaun; .
+        nepalica_reg:390 .
 
 nepalica:1#Sundarīprasāda a foaf:Person ;
     rdfs:label "Sundarīprasāda"@ne ,

@@ -15,7 +15,6 @@
 @prefix gnd: <https://d-nb.info/gnd/> .
 @prefix wikidata: <https://www.wikidata.org/wiki/> .
 @prefix nepalica_gloss: <https://nepalica.hadw-bw.de/nepal/words/viewitem/> .
-@prefix lime: <http://www.w3.org/ns/lemon/lime#> .
 @prefix lexvo: <http://lexvo.org/id/iso639-3/> .
 @prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
 
@@ -163,8 +162,7 @@ nepalica:1#ne000013 a gn:Feature ,
     rdfs:seeAlso geonames:1282898 ,
         gnd:4046492-1 ,
         nepalica_reg:179 ,
-        viaf:131375293 ,
-        wiki:Pokhara ;
+        viaf:131375293 ;
     ontolex:canonicalForm nepalica:1#ne000013_form .
 
 nepalica:1#ne000013_form a ontolex:Form ;

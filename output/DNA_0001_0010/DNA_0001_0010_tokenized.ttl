@@ -18,7 +18,6 @@
 @prefix gnd: <https://d-nb.info/gnd/> .
 @prefix wikidata: <https://www.wikidata.org/wiki/> .
 @prefix nepalica_gloss: <https://nepalica.hadw-bw.de/nepal/words/viewitem/> .
-@prefix lime: <http://www.w3.org/ns/lemon/lime#> .
 @prefix lexvo: <http://lexvo.org/id/iso639-3/> .
 @prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .
 
@@ -27,7 +26,7 @@ nepalica:1 a dct:Document ,
         lime:Lexicon ;
     dct:abstract "This Lāla Mohar of the king directs the various castes to pay to the jogis at the rate of anna 1 per family."@en ;
     dct:date "VS 1827 Kārttika bright 15 Saturday"@en ;
-    dct:description "This is a text edition of the project “Documents on the History of Religion and Law of Pre-modern Nepal”, Heidelberg Academy of Sciences and Humanities, https://www.hadw-bw.de/nepal.”@en" ;
+    dct:description "This is a text edition of the project 'Documents on the History of Religion and Law of Pre-modern Nepal', Heidelberg Academy of Sciences and Humanities, https://www.hadw-bw.de/nepal."@en ;
     dct:extent "fair; complete"@en ;
     dct:format "18; 16.5; cm"@en ;
     dct:hasPart "K 30544; 1"@en ;
@@ -412,10 +411,8 @@ nepalica:1#en000569 a gn:Feature ;
     :followedBy nepalica:1#en000570 ;
     gn:name "Pālhi"@ne ;
     rdfs:comment "also known as: Pālhi; a settlement in Nawalparasi district;"@en ;
-    rdfs:seeAlso dbr:Palhi ,
-        geonames:7800984 ,
-        nepalica_reg:746 ,
-        wiki:Palhi .
+    rdfs:seeAlso geonames:7800984 ,
+        nepalica_reg:746 .
 
 nepalica:1#en000570 a ontolex:LexicalEntry ,
         ontolex:Word ;
